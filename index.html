@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ariel — Personalised Story Intelligence for Screen</title>
+<meta name="description" content="Bespoke scouting for film and TV that learns and improves as you use it. The Ariel surfaces books, articles and true stories with screen potential — filtered to your taste.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@700&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ─── VARIABLES ─── */
+:root {
+  --ink: #1B1F3B;
+  --logo-navy: #001733;
+  --ivory: #F8F5F0;
+  --gold: #B8965A;
+  --gold-light: #D4B87A;
+  --mist: #8E9AAF;
+  --burgundy: #722F37;
+  --body: #2D2D3A;
+  --soft-line: #D8D4CC;
+  --deep-ivory: #EFEAE2;
+  --cream: #FFFDF8;
+}
+
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Lato', -apple-system, sans-serif;
+  color: var(--body);
+  background: var(--ivory);
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+/* ─── SCROLL ANIMATIONS ─── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── STICKY NAV ─── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--logo-navy);
+  border-bottom: 1px solid rgba(184, 150, 90, 0.3);
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.site-nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mist);
+  text-decoration: none;
+  padding: 14px 20px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+  position: relative;
+}
+.site-nav a:hover {
+  color: var(--gold);
+}
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.site-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* ─── SCROLL OFFSET FOR STICKY NAV ─── */
+[id] { scroll-margin-top: 52px; }
+
+/* ─── HERO ─── */
+.hero {
+  background: var(--logo-navy);
+  text-align: center;
+  padding: 80px 24px 64px;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: var(--gold);
+}
+.hero-logo {
+  width: 200px;
+  margin: 0 auto 32px;
+  display: block;
+}
+.hero-tagline {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 32px;
+}
+.hero-sub {
+  color: #C8CDD8;
+  font-size: 19px;
+  font-weight: 300;
+  max-width: 540px;
+  margin: 0 auto 14px;
+  line-height: 1.6;
+}
+.hero-detail {
+  color: var(--mist);
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 520px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+.hero-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--logo-navy);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 16px 44px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  border: 1px solid var(--gold);
+}
+.hero-cta:hover {
+  background: var(--gold-light);
+  box-shadow: 0 0 20px rgba(184, 150, 90, 0.3);
+}
+.hero-cta:focus-visible {
+  outline: 2px solid var(--ivory);
+  outline-offset: 4px;
+}
+
+/* ─── SECTIONS ─── */
+section {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+.section-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+section h2 {
+  font-size: 38px;
+  line-height: 1.22;
+  margin-bottom: 24px;
+}
+section p {
+  margin-bottom: 20px;
+  max-width: 640px;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+
+/* ─── PULL QUOTE ─── */
+.pull-quote {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 26px;
+  color: var(--ink);
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 56px 24px;
+  line-height: 1.5;
+}
+
+/* ─── TWO-COL CARDS ─── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 8px;
+}
+
+.card {
+  border: 1px solid var(--soft-line);
+  padding: 40px 32px;
+  border-radius: 3px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(27, 31, 59, 0.06);
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 28px;
+  width: 40px; height: 2px;
+  background: var(--gold);
+}
+.card h3 { font-size: 24px; margin-bottom: 16px; }
+.card p { font-size: 16px; line-height: 1.7; }
+
+/* ─── STEPS ─── */
+.steps { margin-top: 40px; }
+.step {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+.step-num {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: var(--gold);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.step:hover .step-num {
+  background: var(--gold);
+  color: var(--ivory);
+}
+.step-content h4 { font-size: 20px; margin-bottom: 8px; }
+.step-content p { font-size: 16px; margin-bottom: 0; line-height: 1.7; }
+
+/* ─── SAMPLE BRIEF ─── */
+.sample-section {
+  background: var(--logo-navy);
+  padding: 80px 24px;
+  position: relative;
+}
+.sample-section::before, .sample-section::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--gold);
+}
+.sample-section::before { top: 0; }
+.sample-section::after { bottom: 0; }
+.sample-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.sample-section .section-label { color: var(--gold); }
+.sample-section h2 {
+  color: var(--ivory);
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+.sample-section > .sample-inner > p {
+  color: var(--mist);
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+.story-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.story-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(184,150,90,0.2);
+  border-radius: 4px;
+  padding: 28px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+.story-card:hover {
+  border-color: rgba(184,150,90,0.4);
+  background: rgba(255,255,255,0.06);
+}
+.story-card .story-source {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.story-card .story-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  color: var(--ivory);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.story-card .story-desc {
+  font-size: 14px;
+  color: #9499AD;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.story-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.story-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border: 1px solid rgba(184,150,90,0.3);
+  color: var(--gold);
+  border-radius: 2px;
+}
+.story-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid rgba(184,150,90,0.12);
+}
+.story-action-btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 2px;
+  border: 1px solid rgba(184,150,90,0.3);
+  background: transparent;
+  color: var(--mist);
+  cursor: default;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+}
+.story-action-btn.primary {
+  background: rgba(184,150,90,0.12);
+  color: var(--gold);
+  border-color: var(--gold);
+  cursor: pointer;
+}
+.story-action-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+/* ─── DELIVERY ─── */
+.delivery-section {
+  background: var(--logo-navy);
+  padding: 56px 24px 80px;
+}
+.delivery-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.delivery-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 36px;
+}
+.delivery-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(184,150,90,0.15);
+  border-radius: 4px;
+  padding: 36px 28px;
+  transition: border-color 0.3s ease;
+}
+.delivery-card:hover {
+  border-color: rgba(184,150,90,0.35);
+}
+.delivery-card h4 {
+  color: var(--gold);
+  font-size: 19px;
+  margin-bottom: 14px;
+}
+.delivery-card p {
+  color: #9499AD;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ─── DASHBOARD SHOWCASE ─── */
+.showcase-section {
+  background: var(--logo-navy);
+  padding: 80px 24px;
+  position: relative;
+}
+.showcase-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: var(--gold);
+}
+.showcase-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.showcase-section .section-label { color: var(--gold); }
+.showcase-section h2 {
+  color: var(--ivory);
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+.showcase-section > .showcase-inner > p.showcase-intro {
+  color: var(--mist);
+  font-size: 15px;
+  margin-bottom: 48px;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.dashboard-preview {
+  margin-bottom: 56px;
+}
+.dashboard-preview:last-child { margin-bottom: 0; }
+.dashboard-preview .dash-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.dashboard-preview .dash-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  color: var(--ivory);
+  margin-bottom: 8px;
+}
+.dashboard-preview .dash-desc {
+  font-size: 14px;
+  color: var(--mist);
+  margin-bottom: 24px;
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+/* Mini dashboard mockup */
+.dash-mockup {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(184,150,90,0.2);
+  transition: border-color 0.3s ease;
+}
+.dash-mockup:hover {
+  border-color: rgba(184,150,90,0.4);
+}
+.dash-mockup-header {
+  padding: 20px 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.dash-mockup-header h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.dash-mockup-header .dash-subtitle {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.dash-mockup-header .dash-tabs {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.dash-mockup-header .dash-tab-active {
+  opacity: 1;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+}
+.dash-mockup-header .dash-tab-dim {
+  opacity: 0.4;
+}
+.dash-mockup-body {
+  padding: 0 24px 20px;
+}
+.dash-entry {
+  padding: 14px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.dash-entry + .dash-entry {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.dash-entry-genre {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.dash-entry-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  flex: 1;
+  min-width: 180px;
+}
+.dash-entry-score {
+  font-size: 11px;
+  opacity: 0.5;
+}
+.dash-entry-meta {
+  font-size: 11px;
+  opacity: 0.4;
+  width: 100%;
+}
+
+/* Variant 1: Peter Morgan — William Morris wallpaper */
+.dash-v-doc {
+  background-image: url('peter%20morgan%20wallpaper.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+}
+.dash-v-doc .dash-inner {
+  background: rgba(255,255,255,0.94);
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+.dash-v-doc .dash-mockup-header {
+  background: transparent;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid #D8D2C8;
+}
+.dash-v-doc .dash-mockup-header h3 {
+  color: #1A1714;
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+}
+.dash-v-doc .dash-mockup-header .dash-subtitle {
+  color: #6B6560;
+  font-style: italic;
+  opacity: 1;
+}
+.dash-v-doc .dash-mockup-header .dash-date {
+  font-size: 11px;
+  color: #9C9488;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+.dash-v-doc .dash-mockup-header .dash-tabs { color: #6B6560; }
+.dash-v-doc .dash-mockup-header .dash-tab-active {
+  color: #1A1714;
+  border-color: #1A1714;
+  background: rgba(0,0,0,0.04);
+  padding: 3px 10px;
+  border-radius: 3px;
+  border-bottom: none;
+}
+.dash-v-doc .dash-mockup-header .dash-tab-dim {
+  padding: 3px 10px;
+}
+.dash-v-doc .dash-genre-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 24px 0;
+  background: transparent;
+}
+.dash-v-doc .dash-genre-pill {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid #C8C0B4;
+  color: #6B6560;
+  font-family: 'Lato', sans-serif;
+}
+.dash-v-doc .dash-genre-pill.active {
+  background: #1A1714;
+  color: #F4EFE6;
+  border-color: #1A1714;
+}
+.dash-v-doc .dash-mockup-body {
+  background: transparent;
+}
+.dash-v-doc .dash-entry { color: #2E2A24; }
+.dash-v-doc .dash-entry + .dash-entry { border-color: #E8E2D8; }
+.dash-v-doc .dash-entry-genre {
+  padding: 2px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+.dash-v-doc .dash-entry-genre.political { background: #5C6B4A; color: #fff; }
+.dash-v-doc .dash-entry-genre.biography { background: #C4453C; color: #fff; }
+.dash-v-doc .dash-entry-genre.hidden { background: #7A6544; color: #fff; }
+.dash-v-doc .dash-entry-title {
+  color: #1A1714;
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+}
+.dash-v-doc .dash-entry-actions {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+.dash-v-doc .dash-entry-btn {
+  font-size: 10px;
+  padding: 3px 10px;
+  border: 1px solid #C8C0B4;
+  border-radius: 3px;
+  color: #6B6560;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* Variant 2: Why Now — dark/orange */
+.dash-v-music .dash-mockup-header { background: #111; }
+.dash-v-music .dash-mockup-header h3 {
+  color: #fff;
+  font-size: 0;
+}
+.dash-v-music .dash-mockup-header h3 img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+.dash-v-music .dash-mockup-header .dash-subtitle {
+  color: #999;
+  opacity: 1;
+  letter-spacing: 0.18em;
+  font-size: 9px;
+}
+.dash-v-music .dash-mockup-header .dash-tabs { color: #666; }
+.dash-v-music .dash-mockup-header .dash-tab-active { color: #E8662A; border-color: #E8662A; }
+.dash-v-music .dash-mockup-body { background: #1A1A1A; }
+.dash-v-music .dash-entry { color: #ccc; }
+.dash-v-music .dash-entry + .dash-entry { border-color: rgba(255,255,255,0.08); }
+.dash-v-music .dash-entry-genre { background: rgba(232,102,42,0.12); color: #E8662A; }
+.dash-v-music .dash-entry-title { color: #fff; }
+.dash-v-music .dash-entry-roster {
+  font-size: 11px;
+  color: #888;
+  width: 100%;
+}
+.dash-v-music .dash-entry-roster span { color: #E8662A; }
+.dash-v-music .dash-entry-actions {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+.dash-v-music .dash-entry-btn {
+  font-size: 10px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.04em;
+}
+.dash-v-music .dash-entry-btn.primary {
+  background: #E8662A;
+  color: #fff;
+}
+.dash-v-music .dash-entry-btn.secondary {
+  border: 1px solid #444;
+  color: #999;
+}
+
+/* Variant 3: Concept — minimal editorial */
+.dash-v-arts .dash-mockup-header { background: #0C1220; }
+.dash-v-arts .dash-mockup-header h3 { color: #E8E4DC; font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 0.1em; }
+.dash-v-arts .dash-mockup-header .dash-subtitle { color: #7A8090; opacity: 1; }
+.dash-v-arts .dash-mockup-header .dash-tabs { color: #556070; }
+.dash-v-arts .dash-mockup-header .dash-tab-active { color: #B8965A; border-color: #B8965A; }
+.dash-v-arts .dash-mockup-body { background: #111827; }
+.dash-v-arts .dash-entry { color: #A0AAB8; }
+.dash-v-arts .dash-entry + .dash-entry { border-color: rgba(255,255,255,0.06); }
+.dash-v-arts .dash-entry-genre { background: rgba(184,150,90,0.12); color: #B8965A; }
+.dash-v-arts .dash-entry-title { color: #E8E4DC; font-family: 'Cormorant Garamond', serif; }
+
+.showcase-cta-line {
+  text-align: center;
+  margin-top: 56px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 21px;
+  color: var(--mist);
+  line-height: 1.5;
+}
+
+/* ─── AUDIENCE / PRICING ─── */
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+.audience-card {
+  background: var(--ink);
+  padding: 40px 32px;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+.audience-card:hover { transform: translateY(-2px); }
+.audience-card.burgundy { background: var(--burgundy); }
+
+.audience-card.gold-border {
+  background: var(--ink);
+  border: 1px solid var(--gold);
+}
+
+.audience-card h3 {
+  color: var(--gold);
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+.audience-card p {
+  color: #C8CDD8;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.audience-card .price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  color: var(--ivory);
+  margin: 18px 0 4px;
+}
+.audience-card .price-note {
+  color: var(--mist);
+  font-size: 13px;
+}
+
+/* ─── ABOUT ─── */
+.about-section {
+  background: var(--cream);
+  padding: 80px 24px;
+}
+.about-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.about-initial {
+  flex-shrink: 0;
+  width: 68px; height: 68px;
+  background: var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  color: var(--gold);
+}
+.about-text h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  max-width: 620px;
+}
+
+/* ─── FAQ ─── */
+.faq-item {
+  border-bottom: 1px solid var(--soft-line);
+  padding: 0;
+}
+.faq-item:first-child { border-top: 1px solid var(--soft-line); }
+.faq-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 21px;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+.faq-q:hover { color: var(--burgundy); }
+.faq-q:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.faq-q .faq-icon {
+  font-size: 24px;
+  color: var(--gold);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+  line-height: 1;
+}
+.faq-item[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease, padding 0.35s ease;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.faq-item[aria-expanded="true"] .faq-a {
+  max-height: 400px;
+  padding-bottom: 24px;
+}
+
+/* ─── CTA SECTION ─── */
+.cta-section {
+  text-align: center;
+  padding: 96px 24px;
+  background: var(--ink);
+  position: relative;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: var(--gold);
+}
+.cta-section h2 {
+  font-size: 40px;
+  margin-bottom: 18px;
+  color: var(--ivory);
+}
+.cta-section p {
+  margin: 0 auto 36px;
+  max-width: 520px;
+  color: var(--mist);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.cta-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--logo-navy);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 18px 52px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  border: 1px solid var(--gold);
+}
+.cta-btn:hover {
+  background: var(--gold-light);
+  box-shadow: 0 0 24px rgba(184, 150, 90, 0.35);
+}
+.cta-btn:focus-visible {
+  outline: 2px solid var(--ivory);
+  outline-offset: 4px;
+}
+.cta-note {
+  margin-top: 24px !important;
+  font-size: 14px !important;
+  color: var(--mist) !important;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--logo-navy);
+  color: var(--mist);
+  text-align: center;
+  padding: 52px 24px;
+  font-size: 14px;
+  position: relative;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: var(--gold);
+}
+footer .footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  color: var(--ivory);
+  margin-bottom: 8px;
+}
+footer a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+footer a:hover { color: var(--gold-light); }
+footer a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ─── MOBILE RESPONSIVENESS ─── */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+
+  .site-nav { gap: 0; justify-content: flex-start; }
+  .site-nav a { padding: 12px 14px; font-size: 11px; }
+
+  .hero { padding: 60px 20px 48px; }
+  .hero-logo { width: 160px; margin-bottom: 24px; }
+  .hero-tagline { font-size: 11px; margin-bottom: 24px; }
+  .hero-sub { font-size: 17px; }
+  .hero-detail { font-size: 14px; }
+  .hero-cta { padding: 14px 36px; font-size: 14px; min-height: 48px; }
+
+  section { padding: 60px 20px; }
+  section h2 { font-size: 30px; }
+
+  .two-col { grid-template-columns: 1fr; gap: 24px; }
+  .card { padding: 32px 24px; }
+
+  .step { gap: 16px; }
+  .step-num { width: 44px; height: 44px; font-size: 18px; }
+  .step-content h4 { font-size: 18px; }
+
+  .pull-quote { font-size: 22px; padding: 48px 20px; }
+
+  .sample-section { padding: 60px 20px; }
+  .sample-section h2 { font-size: 30px; }
+  .story-cards { grid-template-columns: 1fr; }
+
+  .delivery-section { padding: 48px 20px 64px; }
+  .delivery-cols { grid-template-columns: 1fr; gap: 20px; }
+
+  .showcase-section { padding: 60px 20px; }
+  .showcase-section h2 { font-size: 30px; }
+  .dash-mockup-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .dash-v-doc .dash-mockup-header { align-items: center; }
+  .dash-entry { flex-direction: column; gap: 6px; }
+  .dash-entry-actions { margin-left: 0 !important; }
+  .dash-genre-pills { padding: 8px 12px 0 !important; }
+  .dash-genre-pill { font-size: 8px !important; padding: 2px 7px !important; }
+
+  .audience-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  .about-inner { flex-direction: column; gap: 24px; }
+
+  .cta-section { padding: 72px 20px; }
+  .cta-section h2 { font-size: 30px; }
+  .cta-btn { padding: 16px 40px; min-height: 48px; }
+
+  .faq-q { font-size: 19px; min-height: 56px; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 48px 16px 40px; }
+  .hero-logo { width: 140px; }
+  .hero-sub { font-size: 16px; }
+  .hero-cta { padding: 14px 28px; display: block; text-align: center; max-width: 300px; margin: 0 auto; }
+
+  section { padding: 48px 16px; }
+  section h2 { font-size: 26px; }
+
+  .card { padding: 28px 20px; }
+
+  .story-card { padding: 20px; }
+  .story-card .story-title { font-size: 19px; }
+
+  .audience-card { padding: 32px 24px; }
+  .audience-card .price { font-size: 28px; }
+
+  .cta-section h2 { font-size: 26px; }
+  .cta-btn { display: block; text-align: center; max-width: 300px; margin: 0 auto; }
+
+  .dash-v-doc { padding: 10px; }
+}
+
+/* ─── PRINT ─── */
+@media print {
+  .hero-cta, .cta-section, .faq-q .faq-icon { display: none; }
+  .fade-in { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" role="banner">
+  <img src="the_ariel_logo_transparent_cropped.png" alt="The Ariel" class="hero-logo">
+  <p class="hero-tagline">Personalised story intelligence for screen</p>
+  <p class="hero-sub">The best stories get optioned by whoever sees them first.</p>
+  <p class="hero-detail">Bespoke scouting for film and TV that learns and improves as you use it. Books, journalism and true stories with screen potential — filtered to your taste, delivered daily.</p>
+  <a href="#book" class="hero-cta" aria-label="Book a conversation about The Ariel">Book a conversation</a>
+</header>
+
+<!-- ═══ NAV ═══ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <a href="#what">What &amp; Why</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="#about">About</a>
+  <a href="#book">Book a Call</a>
+</nav>
+
+<!-- ═══ WHAT & WHY ═══ -->
+<section id="what" class="fade-in" aria-label="What and why">
+  <div class="two-col">
+    <div class="card">
+      <h3>What it is</h3>
+      <p>A daily feed of books, long-form journalism and true stories matched to your development interests — with rights intelligence attached, so you can move fast on what matters.</p>
+      <p>Your feed sharpens as you use it. The more your team saves, rejects and comments, the better it understands your slate.</p>
+    </div>
+    <div class="card">
+      <h3>Why it exists</h3>
+      <p>Premium literary scouts charge &#163;30&#8211;150K a year. Most independent producers can&#8217;t justify that. Low-cost newsletters are static and generic. Rights databases are broad, but they are not built around a producer&#8217;s taste, slate and development priorities.</p>
+      <p>The Ariel sits in the gap — personalised story intelligence at a price smaller teams can actually test.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="separator"></div>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section id="how-it-works" class="fade-in" aria-label="How it works">
+  <div class="section-label">How it works</div>
+  <h2>Your stories, surfaced daily</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num" aria-hidden="true">1</div>
+      <div class="step-content">
+        <h4>We learn what you&#8217;re looking for</h4>
+        <p>A calibration call to understand your genre interests, development slate and the kinds of stories that catch your eye — true crime, historical, investigative, international, or something more specific.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" aria-hidden="true">2</div>
+      <div class="step-content">
+        <h4>Your dashboard goes live</h4>
+        <p>Within a week, you have a private, branded web app — designed around your identity, your genres and your workflow. Your daily email digest matches the look and feel of your dashboard from day one.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" aria-hidden="true">3</div>
+      <div class="step-content">
+        <h4>Stories arrive daily</h4>
+        <p>Each morning, new stories land in your inbox and dashboard — sourced from literary trade, broadsheet journalism, specialist magazines, international publishers and more. Want to add a source? Just ask — we&#8217;ll plug it in.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num" aria-hidden="true">4</div>
+      <div class="step-content">
+        <h4>Your feed gets sharper</h4>
+        <p>Every time you research, save or archive a story, your feed learns. Over time, the intelligence becomes deeply attuned to what your team actually wants to develop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ POSITIONING PULL-QUOTE ═══ -->
+<div class="fade-in" role="presentation">
+  <p class="pull-quote">&#8220;Think of it as having a tireless research assistant with very good judgement — one that reads everything, every day, and only tells you about the stories that matter to you.&#8221;</p>
+</div>
+
+<div class="divider" role="separator"></div>
+
+<!-- ═══ SAMPLE BRIEF ═══ -->
+<div class="sample-section" role="region" aria-label="Sample daily brief">
+  <div class="sample-inner fade-in">
+    <div class="section-label">A taste of your daily brief</div>
+    <h2>Stories matched to one producer&#8217;s interests</h2>
+    <p>Each card represents a story surfaced by The Ariel, complete with source, tags, rights context and one-click actions. This is what lands in your inbox and dashboard every morning.</p>
+    <div class="story-cards">
+      <div class="story-card">
+        <div class="story-source">The Bookseller &#183; Pre-publication</div>
+        <div class="story-title">The Silence of the Bees</div>
+        <div class="story-desc">A debut novel about a beekeeper in the Welsh borders who uncovers a decades-old murder through patterns in her hive behaviour. Longlisted for the Desmond Elliott Prize. Film rights available via agent.</div>
+        <div class="story-tags">
+          <span class="story-tag">Literary Crime</span>
+          <span class="story-tag">Rural</span>
+          <span class="story-tag">Debut</span>
+        </div>
+        <div class="story-actions">
+          <span class="story-action-btn primary">Go to source</span>
+          <span class="story-action-btn">Research</span>
+          <span class="story-action-btn">More like this</span>
+          <span class="story-action-btn">Archive</span>
+        </div>
+      </div>
+      <div class="story-card">
+        <div class="story-source">The Guardian Long Read &#183; Investigative</div>
+        <div class="story-title">The Billions That Vanished in Beirut</div>
+        <div class="story-desc">A year-long investigation into how Lebanon&#8217;s central bank siphoned billions through fictitious bond trades — and the British lawyers, auditors and fixers who helped make it happen.</div>
+        <div class="story-tags">
+          <span class="story-tag">Financial Crime</span>
+          <span class="story-tag">International</span>
+          <span class="story-tag">Documentary</span>
+        </div>
+        <div class="story-actions">
+          <span class="story-action-btn primary">Go to source</span>
+          <span class="story-action-btn">Research</span>
+          <span class="story-action-btn">More like this</span>
+          <span class="story-action-btn">Archive</span>
+        </div>
+      </div>
+      <div class="story-card">
+        <div class="story-source">Atlantic Books &#183; Historical</div>
+        <div class="story-title">The Last Cartographer</div>
+        <div class="story-desc">The true story of a Jewish mapmaker in occupied Warsaw who hid coded resistance routes inside official Nazi survey maps. Based on newly discovered letters. Publication September 2026.</div>
+        <div class="story-tags">
+          <span class="story-tag">Historical</span>
+          <span class="story-tag">WWII</span>
+          <span class="story-tag">Pre-publication</span>
+        </div>
+        <div class="story-actions">
+          <span class="story-action-btn primary">Go to source</span>
+          <span class="story-action-btn">Research</span>
+          <span class="story-action-btn">More like this</span>
+          <span class="story-action-btn">Archive</span>
+        </div>
+      </div>
+      <div class="story-card">
+        <div class="story-source">Substack &#183; Investigative</div>
+        <div class="story-title">Inside the World&#8217;s Most Dangerous Cheese</div>
+        <div class="story-desc">A Sardinian journalist&#8217;s deep dive into casu marzu — an illegal, maggot-infested cheese and the black market, family traditions and EU regulations surrounding it.</div>
+        <div class="story-tags">
+          <span class="story-tag">Food &amp; Culture</span>
+          <span class="story-tag">International</span>
+          <span class="story-tag">Quirky</span>
+        </div>
+        <div class="story-actions">
+          <span class="story-action-btn primary">Go to source</span>
+          <span class="story-action-btn">Research</span>
+          <span class="story-action-btn">More like this</span>
+          <span class="story-action-btn">Archive</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HOW IT'S DELIVERED ═══ -->
+<div class="delivery-section" role="region" aria-label="How it reaches you">
+  <div class="delivery-inner fade-in">
+    <div class="section-label" style="color: var(--gold);">How it reaches you</div>
+    <h2 style="color: var(--ivory); font-family: 'Cormorant Garamond', serif; font-size: 32px; margin-bottom: 10px;">A daily email, a living dashboard</h2>
+    <p style="color: var(--mist); font-size: 15px; max-width: 640px; line-height: 1.7;">Each morning, a curated email digest lands in your inbox with the day&#8217;s most relevant stories. Every email links straight to your personalised dashboard — a private web app where you can dig deeper, take action, and train your feed.</p>
+    <div class="delivery-cols">
+      <div class="delivery-card">
+        <h4>The morning email</h4>
+        <p>A concise summary of new stories matched to your brief, designed to scan in under two minutes. Styled to your dashboard&#8217;s look and feel — not a generic newsletter. Click any story to open it directly in your dashboard.</p>
+      </div>
+      <div class="delivery-card">
+        <h4>Your personalised dashboard</h4>
+        <p>A private web app with your full feed, expanded pitch notes, rights intelligence and &#8220;Why Now&#8221; context. Use <strong style="color: var(--gold);">Research</strong> to flag stories for your development team, <strong style="color: var(--gold);">More like this</strong> to sharpen your feed, or <strong style="color: var(--gold);">Archive</strong> to clear the noise. Every action teaches your dashboard what you want to see next.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DASHBOARD SHOWCASE ═══ -->
+<div class="showcase-section" role="region" aria-label="Dashboard showcase">
+  <div class="showcase-inner fade-in">
+    <div class="section-label">Your dashboard, your identity</div>
+    <h2>Every client gets a bespoke dashboard</h2>
+    <p class="showcase-intro">No two dashboards look the same. We design each one around your brand, your genre interests, and the way your team works. Here are three examples of what that looks like in practice.</p>
+
+    <!-- Dashboard 1: Peter Morgan — William Morris wallpaper -->
+    <div class="dashboard-preview">
+      <div class="dash-label">Documentary producer</div>
+      <div class="dash-name">The Radar — Peter Morgan</div>
+      <div class="dash-desc">A William Morris wallpaper background with white content cards floating on top. Serif typography, genre filter pills, and expandable book entries with Research and Archive actions.</div>
+      <div class="dash-mockup dash-v-doc">
+        <div class="dash-inner">
+          <div class="dash-mockup-header">
+            <div>
+              <h3>THE RADAR</h3>
+              <div class="dash-subtitle">A private briefing on books worth knowing about</div>
+              <div class="dash-date">7 MAY 2026</div>
+            </div>
+            <div class="dash-tabs">
+              <span class="dash-tab-active">INBOX (5)</span>
+              <span class="dash-tab-dim">RESEARCHED (3)</span>
+              <span class="dash-tab-dim">ARCHIVED (8)</span>
+            </div>
+          </div>
+          <div class="dash-genre-pills">
+            <span class="dash-genre-pill active">All</span>
+            <span class="dash-genre-pill">Political Power</span>
+            <span class="dash-genre-pill">Biography</span>
+            <span class="dash-genre-pill">Hidden History</span>
+            <span class="dash-genre-pill">Cultural Reckoning</span>
+          </div>
+          <div class="dash-mockup-body">
+            <div class="dash-entry">
+              <span class="dash-entry-genre political">Political Power</span>
+              <span class="dash-entry-title">Smak at 10</span>
+              <span class="dash-entry-score">Rights available</span>
+              <span class="dash-entry-actions"><span class="dash-entry-btn">Research</span><span class="dash-entry-btn">Archive</span></span>
+              <span class="dash-entry-meta">Anthony Seldon — Atlantic Books, Aug 2026</span>
+            </div>
+            <div class="dash-entry">
+              <span class="dash-entry-genre biography">Biography</span>
+              <span class="dash-entry-title">Angela Rayner: Untitled Memoir</span>
+              <span class="dash-entry-score">Rights available</span>
+              <span class="dash-entry-actions"><span class="dash-entry-btn">Research</span><span class="dash-entry-btn">Archive</span></span>
+              <span class="dash-entry-meta">Angela Rayner — Profile, Autumn 2026</span>
+            </div>
+            <div class="dash-entry">
+              <span class="dash-entry-genre hidden">Hidden History</span>
+              <span class="dash-entry-title">Hotel Exile</span>
+              <span class="dash-entry-score">Rights unknown</span>
+              <span class="dash-entry-actions"><span class="dash-entry-btn">Research</span><span class="dash-entry-btn">Archive</span></span>
+              <span class="dash-entry-meta">Paris, 1940 — A city torn between flight and occupation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard 2: Why Now — dark/orange -->
+    <div class="dashboard-preview">
+      <div class="dash-label">Music &amp; documentary</div>
+      <div class="dash-name">Why Now — Documentary Radar</div>
+      <div class="dash-desc">Dark interface with orange accents, built for a music documentary producer. Roster-linked entries, &#8220;Why Now&#8221; analysis for each opportunity, and one-click research pack downloads.</div>
+      <div class="dash-mockup dash-v-music">
+        <div class="dash-mockup-header">
+          <div>
+            <h3><img src="why-now%20logo.png" alt="WhyNow" loading="lazy"></h3>
+            <div class="dash-subtitle">DOCUMENTARY RADAR</div>
+          </div>
+          <div class="dash-tabs">
+            <span class="dash-tab-active">New Ideas</span>
+            <span class="dash-tab-dim">Researched</span>
+            <span class="dash-tab-dim">In Development</span>
+            <span class="dash-tab-dim">Archived</span>
+          </div>
+        </div>
+        <div class="dash-mockup-body">
+          <div class="dash-entry">
+            <span class="dash-entry-genre">Last Music</span>
+            <span class="dash-entry-title">The Rolling Stones: The Final Tape</span>
+            <span class="dash-entry-score">9.0</span>
+            <span class="dash-entry-actions"><span class="dash-entry-btn primary">Research It</span><span class="dash-entry-btn secondary">Archive</span></span>
+            <span class="dash-entry-roster"><span>ROSTER</span> — Mick Jagger</span>
+          </div>
+          <div class="dash-entry">
+            <span class="dash-entry-genre">Legacy</span>
+            <span class="dash-entry-title">Whitney Houston: The Ghost in the Machine</span>
+            <span class="dash-entry-score">8.6</span>
+            <span class="dash-entry-actions"><span class="dash-entry-btn primary">Research It</span><span class="dash-entry-btn secondary">Archive</span></span>
+            <span class="dash-entry-roster"><span>ROSTER</span> — Whitney Houston Estate</span>
+          </div>
+          <div class="dash-entry">
+            <span class="dash-entry-genre">Culture</span>
+            <span class="dash-entry-title">The Sound That Built Brixton</span>
+            <span class="dash-entry-score">7.8</span>
+            <span class="dash-entry-actions"><span class="dash-entry-btn primary">Research It</span><span class="dash-entry-btn secondary">Archive</span></span>
+            <span class="dash-entry-roster"><span>ROSTER</span> — Various Artists</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard 3: Concept — minimal midnight editorial -->
+    <div class="dashboard-preview">
+      <div class="dash-label">Your design, your rules</div>
+      <div class="dash-name">Whatever world you work in</div>
+      <div class="dash-desc">Whether you want heritage wallpaper, a dark cinematic interface, or something entirely different — we design each dashboard as a reflection of who you are and how you work.</div>
+      <div class="dash-mockup dash-v-arts">
+        <div class="dash-mockup-header">
+          <div>
+            <h3>THE DOSSIER</h3>
+            <div class="dash-subtitle">True crime &amp; investigative</div>
+          </div>
+          <div class="dash-tabs">
+            <span class="dash-tab-active">Active (6)</span>
+            <span class="dash-tab-dim">Deep Dive (2)</span>
+            <span class="dash-tab-dim">Parked (9)</span>
+          </div>
+        </div>
+        <div class="dash-mockup-body">
+          <div class="dash-entry">
+            <span class="dash-entry-genre">Cold Case</span>
+            <span class="dash-entry-title">The Vanishing at Marchmont Hall</span>
+            <span class="dash-entry-score">9.2</span>
+            <span class="dash-entry-meta">Unpublished manuscript — Rights available — BBC interest</span>
+          </div>
+          <div class="dash-entry">
+            <span class="dash-entry-genre">Fraud</span>
+            <span class="dash-entry-title">The Charity That Ate Itself</span>
+            <span class="dash-entry-score">8.4</span>
+            <span class="dash-entry-meta">Financial Times — Long-form investigation — Unoptioned</span>
+          </div>
+          <div class="dash-entry">
+            <span class="dash-entry-genre">Scandal</span>
+            <span class="dash-entry-title">Inside the Whitehall Leak Machine</span>
+            <span class="dash-entry-score">7.7</span>
+            <span class="dash-entry-meta">Private Eye — Serial coverage — Documentary potential flagged</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="showcase-cta-line">Your dashboard is designed around you — your genres, your brand, your workflow.<br>Complete creative control is part of the service.</p>
+  </div>
+</div>
+
+<!-- ═══ WHO IT'S FOR ═══ -->
+<section id="pricing" class="fade-in" aria-label="Who it is for and pricing">
+  <div class="section-label">Who it&#8217;s for</div>
+  <h2>Built for people who make things</h2>
+  <p>Whether you&#8217;re an independent producer developing your next project or a production company running multiple development tracks, The Ariel adapts to how you work.</p>
+  <div class="audience-grid">
+    <div class="audience-card gold-border">
+      <h3>Individual producers</h3>
+      <p>A single, personalised feed tuned to your genre interests. See what a literary scout sees — at a fraction of the cost.</p>
+      <div class="price">&#163;75&#8211;99 <span style="font-size:18px;color:var(--mist)">/month</span></div>
+      <p class="price-note">&#163;250 onboarding &#183; Founding rate &#163;75/month, locked in</p>
+    </div>
+    <div class="audience-card">
+      <h3>Production companies</h3>
+      <p>Team access, multiple genre tracks, shared saves and a deep-dive workflow for your development team. Build a living IP pipeline around your development slate.</p>
+      <div class="price">From &#163;850 <span style="font-size:18px;color:var(--mist)">/month</span></div>
+      <p class="price-note">Paid pilots from &#163;3&#8211;5K &#183; Annual plans typically &#163;10&#8211;25K depending on seats, tracks and research depth</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEMPEST DIVIDER ═══ -->
+<div class="fade-in" style="text-align: center; padding: 48px 24px 44px; position: relative;">
+  <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: var(--gold);"></div>
+  <p style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 22px; color: var(--ink); letter-spacing: 0.01em; line-height: 1.5; margin-bottom: 10px;">
+    &ldquo;This will I tell my master.&rdquo;
+  </p>
+  <p style="font-family: 'Lato', sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist);">
+    Ariel, overhearing a plot &mdash; <em style="text-transform: none; font-style: italic;">The Tempest</em>
+  </p>
+  <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: var(--gold);"></div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<div id="about" class="about-section" role="region" aria-label="About the founder">
+  <div class="about-inner fade-in">
+    <div class="about-initial" aria-hidden="true">TB</div>
+    <div class="about-text">
+      <div class="section-label">Who&#8217;s behind it</div>
+      <p>Built by author and entrepreneur Tara Button, in collaboration with BAFTA and Emmy award-winning film producers.</p>
+      <p style="color: var(--mist); font-size: 14px; margin-top: 10px;">Previously: founder of BuyMeOnce (featured in the FT, BBC, and Vogue) &#183; author &#183; content intelligence consultant</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ EARLY SIGNAL ═══ -->
+<section class="fade-in" style="text-align: center; padding: 60px 24px;" aria-label="Founding rate">
+  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--ink); max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">Currently onboarding our first producers. Founding rate available for early clients.</p>
+  <p style="color: var(--mist); font-size: 14px;">Interested in being one of the first? <a href="#book" style="color: var(--gold);">Let&#8217;s talk.</a></p>
+</section>
+
+<div class="divider" role="separator"></div>
+
+<!-- ═══ FAQ ═══ -->
+<section id="faq" class="fade-in" aria-label="Frequently asked questions">
+  <div class="section-label">Questions</div>
+  <h2>What people ask</h2>
+
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-1">
+      How is this different from a literary scout?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-1" role="region">A traditional scout is a person — brilliant, but expensive and limited by what one individual can read. The Ariel scans a much wider range of sources systematically, every day, filtered to your specific tastes. Think of it as having a tireless research assistant with very good judgement.</div>
+  </div>
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-2">
+      What sources does it cover?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-2" role="region">Literary trade publications, broadsheet long-form journalism, specialist magazines, relevant Substacks, international book trade sources and more. The exact mix depends on your genre interests — we configure it during onboarding and expand based on what proves useful. You can also request new sources at any time. If there&#8217;s a publication, newsletter, or niche outlet you rely on, we&#8217;ll add it to your feed.</div>
+  </div>
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-3">
+      How quickly do stories appear?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-3" role="region">New stories are surfaced within hours of publication. Your daily brief is waiting for you each morning. If something significant breaks during the day, it appears in your feed the same day.</div>
+  </div>
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-4">
+      What does the onboarding involve?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-4" role="region">A calibration call where we learn about your development interests, the kinds of stories you respond to, and any current priorities. We use that to configure your dashboard before it goes live. Most clients are up and running within a week.</div>
+  </div>
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-5">
+      Can I try it before committing?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-5" role="region">For production companies, we offer a paid pilot — typically 8&#8211;12 weeks at &#163;3&#8211;5K — so you can test it with your team before committing to an annual plan. For individual producers, our founding rate of &#163;75/month is deliberately accessible.</div>
+  </div>
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-6">
+      What happens after the founding rate?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-6" role="region">Founding clients keep their rate for as long as they stay subscribed. The standard rate for new clients will be &#163;99/month once we move past the founding phase.</div>
+  </div>
+  <div class="faq-item" aria-expanded="false">
+    <button class="faq-q" aria-controls="faq-7">
+      How quickly will I see results?
+      <span class="faq-icon" aria-hidden="true">+</span>
+    </button>
+    <div class="faq-a" id="faq-7" role="region">Your first curated brief arrives within days of onboarding. The feed improves continuously as you interact with it. Most clients tell us it becomes indispensable within the first month.</div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<div class="cta-section" id="book" role="region" aria-label="Book a conversation">
+  <div class="fade-in">
+    <h2>Start seeing stories first</h2>
+    <p>Book a 20-minute call to discuss your development interests and see if The Ariel is the right fit.</p>
+    <!-- NOTE: Replace PLACEHOLDER with actual Calendly URL before launch -->
+    <a href="https://calendly.com/PLACEHOLDER" class="cta-btn" aria-label="Book a conversation via Calendly">Book a conversation</a>
+    <p class="cta-note">No commitment. No hard sell. Just a conversation about what you&#8217;re looking for.</p>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="footer-brand">The Ariel</div>
+  <p>Personalised story intelligence for screen</p>
+  <p style="margin-top: 14px; font-size: 13px;">
+    <a href="mailto:hello@theariel.tv">hello@theariel.tv</a>
+    &nbsp;&#183;&nbsp; <a href="https://theariel.tv">theariel.tv</a>
+  </p>
+  <p style="margin-top: 24px; font-size: 12px; color: #5A6080;">&#169; 2026 The Ariel. All rights reserved.</p>
+</footer>
+
+<script>
+/* ─── FAQ ACCORDION ─── */
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = btn.parentElement;
+    var isOpen = item.getAttribute('aria-expanded') === 'true';
+
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(function(i) {
+      i.setAttribute('aria-expanded', 'false');
+    });
+
+    // Toggle current
+    if (!isOpen) {
+      item.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Keyboard support
+  btn.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      btn.click();
+    }
+  });
+});
+
+/* ─── SCROLL FADE-IN (Intersection Observer) ─── */
+(function() {
+  var targets = document.querySelectorAll('.fade-in');
+  if (!targets.length) return;
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    targets.forEach(function(el) {
+      observer.observe(el);
+    });
+  } else {
+    // Fallback: show everything
+    targets.forEach(function(el) {
+      el.classList.add('visible');
+    });
+  }
+})();
+</script>
+</body>
+</html>
