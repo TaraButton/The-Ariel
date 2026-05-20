@@ -635,7 +635,7 @@ section p {
 }
 .dash-v-doc .dash-mockup-header .dash-date {
   font-size: 11px;
-  color: #9C9488;
+  color: #6B6560;
   letter-spacing: 0.08em;
   margin-top: 2px;
 }
@@ -723,7 +723,7 @@ section p {
   letter-spacing: 0.18em;
   font-size: 9px;
 }
-.dash-v-music .dash-mockup-header .dash-tabs { color: #666; }
+.dash-v-music .dash-mockup-header .dash-tabs { color: #A0A0A0; }
 .dash-v-music .dash-mockup-header .dash-tab-active { color: #E8662A; border-color: #E8662A; }
 .dash-v-music .dash-mockup-body { background: #1A1A1A; }
 .dash-v-music .dash-entry { color: #ccc; }
@@ -760,8 +760,8 @@ section p {
 /* Variant 3: Concept - minimal editorial */
 .dash-v-arts .dash-mockup-header { background: #0C1220; }
 .dash-v-arts .dash-mockup-header h3 { color: #E8E4DC; font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing: 0.1em; }
-.dash-v-arts .dash-mockup-header .dash-subtitle { color: #7A8090; opacity: 1; }
-.dash-v-arts .dash-mockup-header .dash-tabs { color: #556070; }
+.dash-v-arts .dash-mockup-header .dash-subtitle { color: #A0AAB8; opacity: 1; }
+.dash-v-arts .dash-mockup-header .dash-tabs { color: #8A95A8; }
 .dash-v-arts .dash-mockup-header .dash-tab-active { color: #B8965A; border-color: #B8965A; }
 .dash-v-arts .dash-mockup-body { background: #111827; }
 .dash-v-arts .dash-entry { color: #A0AAB8; }
@@ -837,15 +837,17 @@ section p {
 }
 .about-initial {
   flex-shrink: 0;
-  width: 68px; height: 68px;
-  background: var(--ink);
+  width: 96px; height: 96px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
-  color: var(--gold);
+  overflow: hidden;
+  background: var(--ink);
+  border: 1px solid var(--soft-line);
+}
+.about-initial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .about-text h3 {
   font-size: 26px;
@@ -1439,7 +1441,7 @@ footer a:focus-visible {
 <!-- ═══ ABOUT ═══ -->
 <div id="about" class="about-section" role="region" aria-label="About the founder">
   <div class="about-inner fade-in">
-    <div class="about-initial" aria-hidden="true">TB</div>
+    <div class="about-initial"><img src="tara button headshot.jpeg" alt="Tara Button" loading="lazy"></div>
     <div class="about-text">
       <div class="section-label">Who&#8217;s behind it</div>
       <p>Built by Tara Button - published author with an MA in Creative Writing - in collaboration with a BAFTA award-winning film producer.</p>
