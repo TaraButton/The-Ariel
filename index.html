@@ -17,7 +17,7 @@
   --gold: #B8965A;
   --gold-light: #D4B87A;
   --gold-deep: #7A5F33;
-  --mist: #8E9AAF;
+  --mist: #A8B0C4;
   --mist-deep: #5A6378;
   --burgundy: #722F37;
   --body: #2D2D3A;
@@ -379,7 +379,7 @@ section p {
 }
 .story-card .story-desc {
   font-size: 14px;
-  color: #9499AD;
+  color: #C8CDD8;
   line-height: 1.65;
   margin-bottom: 14px;
 }
@@ -401,7 +401,7 @@ section p {
   gap: 8px;
   flex-wrap: wrap;
   padding-top: 14px;
-  border-top: 1px solid rgba(184,150,90,0.12);
+  border-top: 1px solid rgba(184,150,90,0.28);
 }
 .story-action-btn {
   font-family: 'Lato', sans-serif;
@@ -409,9 +409,9 @@ section p {
   letter-spacing: 0.04em;
   padding: 6px 14px;
   border-radius: 2px;
-  border: 1px solid rgba(184,150,90,0.3);
+  border: 1px solid rgba(184,150,90,0.55);
   background: transparent;
-  color: var(--mist);
+  color: #C8CDD8;
   cursor: default;
   transition: all 0.25s ease;
   text-transform: uppercase;
@@ -629,17 +629,17 @@ section p {
   letter-spacing: 0.15em;
 }
 .dash-v-doc .dash-mockup-header .dash-subtitle {
-  color: #6B6560;
+  color: #4A4640;
   font-style: italic;
   opacity: 1;
 }
 .dash-v-doc .dash-mockup-header .dash-date {
   font-size: 11px;
-  color: #6B6560;
+  color: #4A4640;
   letter-spacing: 0.08em;
   margin-top: 2px;
 }
-.dash-v-doc .dash-mockup-header .dash-tabs { color: #6B6560; }
+.dash-v-doc .dash-mockup-header .dash-tabs { color: #4A4640; }
 .dash-v-doc .dash-mockup-header .dash-tab-active {
   color: #1A1714;
   border-color: #1A1714;
@@ -666,7 +666,7 @@ section p {
   padding: 3px 10px;
   border-radius: 12px;
   border: 1px solid #C8C0B4;
-  color: #6B6560;
+  color: #4A4640;
   font-family: 'Lato', sans-serif;
 }
 .dash-v-doc .dash-genre-pill.active {
@@ -701,7 +701,7 @@ section p {
   padding: 3px 10px;
   border: 1px solid #C8C0B4;
   border-radius: 3px;
-  color: #6B6560;
+  color: #4A4640;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.04em;
 }
@@ -732,7 +732,7 @@ section p {
 .dash-v-music .dash-entry-title { color: #fff; }
 .dash-v-music .dash-entry-roster {
   font-size: 11px;
-  color: #888;
+  color: #A8A8A8;
   width: 100%;
 }
 .dash-v-music .dash-entry-roster span { color: #E8662A; }
@@ -750,7 +750,8 @@ section p {
 }
 .dash-v-music .dash-entry-btn.primary {
   background: #E8662A;
-  color: #fff;
+  color: #1A1A1A;
+  font-weight: 600;
 }
 .dash-v-music .dash-entry-btn.secondary {
   border: 1px solid #444;
@@ -822,6 +823,7 @@ section p {
   color: var(--mist);
   font-size: 13px;
 }
+.audience-card.burgundy .price-note { color: #E8E0CC; }
 
 /* ─── ABOUT ─── */
 .about-section {
@@ -1000,8 +1002,14 @@ footer a:focus-visible {
 @media (max-width: 768px) {
   body { font-size: 16px; }
 
-  .site-nav { gap: 0; justify-content: flex-start; }
-  .site-nav a { padding: 12px 14px; font-size: 11px; }
+  .site-nav {
+    gap: 0;
+    justify-content: flex-start;
+    -webkit-mask-image: linear-gradient(to right, #000 0%, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to right, #000 0%, #000 88%, transparent 100%);
+  }
+  .site-nav a { padding: 12px 16px; font-size: 11px; color: #C8CDD8; }
+  .site-nav a:first-child { padding-left: 20px; }
 
   .hero { padding: 60px 20px 48px; }
   .hero-logo { width: 160px; margin-bottom: 24px; }
@@ -1072,9 +1080,218 @@ footer a:focus-visible {
   .dash-v-doc { padding: 10px; }
 }
 
+/* ─── FOR AGENTS & PUBLISHERS ─── */
+.agents-section {
+  background: var(--deep-ivory);
+  padding: 80px 24px;
+}
+.agents-inner {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.agents-section .section-label { text-align: center; }
+.agents-section h2 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-size: 34px;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.agents-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  color: var(--body);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.agent-card {
+  background: var(--cream);
+  border: 1px solid var(--soft-line);
+  padding: 32px 28px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.agent-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.agent-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--body);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+.agent-card .agent-hint {
+  font-size: 12px;
+  color: var(--mist-deep);
+  margin-top: 12px;
+  margin-bottom: 0;
+  flex-grow: 0;
+}
+.agent-cta {
+  display: inline-block;
+  padding: 11px 22px;
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  transition: background 0.2s ease;
+  align-self: flex-start;
+}
+.agent-cta:hover { background: var(--logo-navy); }
+
+/* ─── MODAL ─── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,23,51,0.55);
+  z-index: 200;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 16px;
+  overflow-y: auto;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--ivory);
+  max-width: 580px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 36px 36px 32px;
+  position: relative;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.25);
+  margin: auto;
+}
+.modal-close {
+  position: absolute;
+  top: 10px; right: 14px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--mist-deep);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+}
+.modal-close:hover { color: var(--ink); }
+.modal h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.modal .modal-sub {
+  font-size: 13px;
+  color: var(--mist-deep);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.modal .modal-sub .req { color: var(--burgundy); }
+.modal form { display: flex; flex-direction: column; gap: 14px; }
+.modal label {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.modal label .req { color: var(--burgundy); }
+.modal input[type="text"],
+.modal input[type="email"],
+.modal input[type="url"],
+.modal input[type="date"],
+.modal select,
+.modal textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--soft-line);
+  background: var(--cream);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: var(--body);
+  border-radius: 2px;
+}
+.modal textarea { resize: vertical; min-height: 72px; }
+.modal input:focus,
+.modal select:focus,
+.modal textarea:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 1px;
+  border-color: var(--gold);
+}
+.modal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.modal-divider {
+  border: 0;
+  border-top: 1px solid var(--soft-line);
+  margin: 6px 0 2px;
+}
+.modal-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.modal button[type="submit"] {
+  margin-top: 8px;
+  padding: 13px 24px;
+  background: var(--ink);
+  color: var(--ivory);
+  border: none;
+  border-radius: 2px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.modal button[type="submit"]:hover { background: var(--logo-navy); }
+.modal button[type="submit"]:disabled { opacity: 0.55; cursor: progress; }
+.modal-status {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+  min-height: 20px;
+}
+.modal-status.error { color: var(--burgundy); }
+.modal-status.success { color: #3D6B4A; }
+
+@media (max-width: 768px) {
+  .agents-grid { grid-template-columns: 1fr; gap: 16px; }
+  .modal-row { grid-template-columns: 1fr; }
+  .modal { padding: 28px 22px; }
+}
+
 /* ─── PRINT ─── */
 @media print {
-  .hero-cta, .cta-section, .faq-q .faq-icon { display: none; }
+  .hero-cta, .cta-section, .faq-q .faq-icon, .modal-overlay { display: none; }
   .fade-in { opacity: 1; transform: none; }
 }
 </style>
@@ -1432,7 +1649,7 @@ footer a:focus-visible {
     <div class="audience-card burgundy">
       <h3>Studios &amp; broadcasters</h3>
       <p>Bulk seat licensing for studios, broadcasters and larger production groups. Custom sources, dedicated setup, and account management. Built around the way your development teams already work.</p>
-      <div class="price">Bulk pricing <span style="font-size:18px;color:var(--mist)">/ 10+ seats</span></div>
+      <div class="price">Bulk pricing <span style="font-size:18px;color:#E8E0CC">/ 10+ seats</span></div>
       <p class="price-note">Annual plans typically &#163;10&#8211;25K depending on seats, tracks and research depth &#183; <a href="#book" style="color: var(--gold-light);">Speak to us</a></p>
     </div>
   </div>
@@ -1458,6 +1675,34 @@ footer a:focus-visible {
 </section>
 
 <div class="divider" role="separator"></div>
+
+<!-- ═══ FOR AGENTS & PUBLISHERS ═══ -->
+<div id="agents" class="agents-section fade-in" role="region" aria-label="For agents and publishers">
+  <div class="agents-inner">
+    <div class="section-label">For agents &amp; publishers</div>
+    <h2>Get your titles in front of producers</h2>
+    <p class="agents-intro">The Ariel surfaces stories to a curated audience of film and TV producers. Three ways for agents and publishers to submit upcoming books, articles or rights-available material. All submissions are editorially reviewed before reaching any client dashboard. Free for submitters.</p>
+
+    <div class="agents-grid">
+      <div class="agent-card">
+        <h3>Single submission</h3>
+        <p>Tell us about one book, article or story you'd like to put in front of producers.</p>
+        <button class="agent-cta" type="button" data-modal="submission">Submit a story</button>
+      </div>
+      <div class="agent-card">
+        <h3>Bulk catalogue</h3>
+        <p>For agencies and publishers with a list of titles. Download the template, fill it in, and email it across.</p>
+        <a class="agent-cta" href="ariel-submissions-template.csv" download>Download CSV template</a>
+        <p class="agent-hint">Email completed file to <a href="mailto:tara@buymeonce.com?subject=Ariel%20bulk%20submission" style="color: var(--gold-deep);">tara@buymeonce.com</a></p>
+      </div>
+      <div class="agent-card">
+        <h3>API &amp; webhooks</h3>
+        <p>For publishers integrating directly from a catalogue system. Push titles to The Ariel automatically. Currently in development - register interest and we'll be in touch.</p>
+        <button class="agent-cta" type="button" data-modal="api-waitlist">Register interest</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ═══ FAQ ═══ -->
 <section id="faq" class="fade-in" aria-label="Frequently asked questions">
@@ -1533,8 +1778,142 @@ footer a:focus-visible {
     <a href="mailto:hello@theariel.tv">hello@theariel.tv</a>
     &nbsp;&#183;&nbsp; <a href="https://theariel.tv">theariel.tv</a>
   </p>
-  <p style="margin-top: 24px; font-size: 12px; color: #5A6080;">&#169; 2026 The Ariel. All rights reserved.</p>
+  <p style="margin-top: 24px; font-size: 12px; color: var(--mist);">&#169; 2026 The Ariel. All rights reserved.</p>
 </footer>
+
+<!-- ═══ SUBMISSION MODAL ═══ -->
+<div class="modal-overlay" id="modal-submission" role="dialog" aria-modal="true" aria-labelledby="modal-submission-title">
+  <div class="modal">
+    <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <h3 id="modal-submission-title">Submit a story</h3>
+    <p class="modal-sub">All fields marked <span class="req">*</span> are required.</p>
+    <form id="form-submission" autocomplete="on" novalidate>
+      <input type="text" name="hp_field" class="modal-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <label>Title <span class="req">*</span></label>
+        <input type="text" name="title" required>
+      </div>
+      <div>
+        <label>Author <span class="req">*</span></label>
+        <input type="text" name="author" required>
+      </div>
+      <div>
+        <label>Publisher / Agency <span class="req">*</span></label>
+        <input type="text" name="publisher_or_agency" required>
+      </div>
+      <div>
+        <label>Logline / pitch <span class="req">*</span></label>
+        <textarea name="logline" required maxlength="500" placeholder="2-3 sentences."></textarea>
+      </div>
+      <div>
+        <label>Genre <span class="req">*</span></label>
+        <select name="genre" id="genre-select" required>
+          <option value="">- choose -</option>
+          <option value="true crime">True crime</option>
+          <option value="historical">Historical</option>
+          <option value="investigative journalism">Investigative journalism</option>
+          <option value="memoir">Memoir</option>
+          <option value="science/nature">Science / nature</option>
+          <option value="culture">Culture</option>
+          <option value="politics">Politics</option>
+          <option value="sport">Sport</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div id="genre-other-wrap" style="display: none;">
+        <label>Specify genres <span class="req">*</span></label>
+        <input type="text" name="genre_other" id="genre-other-input" placeholder="comma-separated, e.g. aviation, disaster, faith">
+      </div>
+      <div class="modal-row">
+        <div>
+          <label>Publication date</label>
+          <input type="date" name="publication_date">
+        </div>
+        <div>
+          <label>Rights status</label>
+          <select name="rights_status">
+            <option value="">- unknown -</option>
+            <option value="available">Available</option>
+            <option value="under option">Under option</option>
+            <option value="in negotiation">In negotiation</option>
+            <option value="unknown">Unknown</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label>Link to material</label>
+        <input type="url" name="link" placeholder="https://...">
+      </div>
+      <div>
+        <label>Region / market</label>
+        <input type="text" name="region" placeholder="UK, US, International, etc.">
+      </div>
+      <div>
+        <label>Why now</label>
+        <textarea name="why_now" placeholder="Why is this story timely?"></textarea>
+      </div>
+      <div>
+        <label>Embargo date</label>
+        <input type="date" name="embargo_date">
+      </div>
+
+      <hr class="modal-divider">
+
+      <div>
+        <label>Your name <span class="req">*</span></label>
+        <input type="text" name="submitter_name" required>
+      </div>
+      <div>
+        <label>Your email <span class="req">*</span></label>
+        <input type="email" name="submitter_email" required>
+      </div>
+      <div>
+        <label>Your website or LinkedIn <span class="req">*</span></label>
+        <input type="url" name="submitter_website" required placeholder="https://...">
+      </div>
+
+      <button type="submit">Send submission</button>
+      <div class="modal-status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ═══ API WAITLIST MODAL ═══ -->
+<div class="modal-overlay" id="modal-api-waitlist" role="dialog" aria-modal="true" aria-labelledby="modal-api-title">
+  <div class="modal">
+    <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <h3 id="modal-api-title">API &amp; webhook waitlist</h3>
+    <p class="modal-sub">Tell us a little about your catalogue system - we'll be in touch when the API opens to third parties.</p>
+    <form id="form-api-waitlist" novalidate>
+      <input type="text" name="hp_field" class="modal-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <label>Your name <span class="req">*</span></label>
+        <input type="text" name="submitter_name" required>
+      </div>
+      <div>
+        <label>Your email <span class="req">*</span></label>
+        <input type="email" name="submitter_email" required>
+      </div>
+      <div>
+        <label>Publisher / Agency <span class="req">*</span></label>
+        <input type="text" name="publisher_or_agency" required>
+      </div>
+      <div>
+        <label>Catalogue system or platform</label>
+        <input type="text" name="catalog_system" placeholder="e.g. Klopotek, Biblio, custom CMS...">
+      </div>
+      <div>
+        <label>Approx. titles per month</label>
+        <input type="text" name="volume" placeholder="e.g. 5, 50, 500">
+      </div>
+
+      <button type="submit">Join waitlist</button>
+      <div class="modal-status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
 
 <script>
 /* ─── FAQ ACCORDION ─── */
@@ -1590,6 +1969,170 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
       el.classList.add('visible');
     });
   }
+})();
+
+/* ─── MODAL & SUBMISSION FORMS ─── */
+(function() {
+  // PASTE the deployed Apps Script Web App URL between the quotes below.
+  // It should look like: https://script.google.com/macros/s/AKfycb.../exec
+  var APPS_SCRIPT_URL = 'PASTE_DEPLOYED_WEB_APP_URL_HERE';
+
+  // Open modal
+  document.querySelectorAll('[data-modal]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var id = 'modal-' + btn.getAttribute('data-modal');
+      var modal = document.getElementById(id);
+      if (!modal) return;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      var firstInput = modal.querySelector('input:not([type=hidden]):not(.modal-honeypot), select, textarea');
+      if (firstInput) setTimeout(function() { firstInput.focus(); }, 60);
+    });
+  });
+
+  // Close modal
+  function closeModal(overlay) {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal-close]').forEach(function(btn) {
+    btn.addEventListener('click', function() { closeModal(btn.closest('.modal-overlay')); });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeModal(overlay);
+    });
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(closeModal);
+    }
+  });
+
+  // Genre "Other" toggle
+  var genreSelect = document.getElementById('genre-select');
+  var genreOtherWrap = document.getElementById('genre-other-wrap');
+  var genreOtherInput = document.getElementById('genre-other-input');
+  if (genreSelect && genreOtherWrap && genreOtherInput) {
+    genreSelect.addEventListener('change', function() {
+      var isOther = genreSelect.value === 'other';
+      genreOtherWrap.style.display = isOther ? 'block' : 'none';
+      if (isOther) {
+        genreOtherInput.setAttribute('required', '');
+      } else {
+        genreOtherInput.removeAttribute('required');
+        genreOtherInput.value = '';
+      }
+    });
+  }
+
+  // Submission helper
+  function wireForm(form, payloadBuilder, labels) {
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var status = form.querySelector('.modal-status');
+      var btn = form.querySelector('button[type="submit"]');
+
+      // Honeypot check
+      var hp = form.querySelector('[name="hp_field"]');
+      if (hp && hp.value) return;
+
+      // Native validation
+      if (!form.checkValidity()) {
+        status.className = 'modal-status error';
+        status.textContent = 'Please fill in the required fields.';
+        form.reportValidity();
+        return;
+      }
+
+      status.className = 'modal-status';
+      status.textContent = '';
+      btn.disabled = true;
+      btn.textContent = labels.sending;
+
+      var data = new FormData(form);
+      var payload = payloadBuilder(data);
+
+      fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {'Content-Type': 'text/plain;charset=utf-8'},
+        body: JSON.stringify(payload)
+      }).then(function() {
+        status.className = 'modal-status success';
+        status.textContent = labels.success;
+        form.reset();
+        if (genreOtherWrap) genreOtherWrap.style.display = 'none';
+        btn.disabled = false;
+        btn.textContent = labels.idle;
+        setTimeout(function() {
+          var overlay = form.closest('.modal-overlay');
+          if (overlay) closeModal(overlay);
+          status.textContent = '';
+          status.className = 'modal-status';
+        }, 2400);
+      }).catch(function() {
+        status.className = 'modal-status error';
+        status.textContent = 'Something went wrong. Please email tara@buymeonce.com directly.';
+        btn.disabled = false;
+        btn.textContent = labels.idle;
+      });
+    });
+  }
+
+  // Single submission form
+  wireForm(
+    document.getElementById('form-submission'),
+    function(data) {
+      var genre = data.get('genre');
+      var genreOther = data.get('genre_other') || '';
+      var contextParts = [];
+      if (data.get('publication_date')) contextParts.push('Publication date: ' + data.get('publication_date'));
+      if (data.get('rights_status')) contextParts.push('Rights status: ' + data.get('rights_status'));
+      if (data.get('why_now')) contextParts.push('Why now: ' + data.get('why_now'));
+      if (data.get('embargo_date')) contextParts.push('Embargo: ' + data.get('embargo_date'));
+
+      return {
+        source: 'submission-form',
+        entries: [{
+          title: data.get('title'),
+          summary: data.get('logline'),
+          source_name: data.get('publisher_or_agency'),
+          people_mentioned: data.get('author'),
+          category_hint: genre,
+          category_other: genre === 'other' ? genreOther : '',
+          source_url: data.get('link') || '',
+          region: data.get('region') || '',
+          full_text_snippet: contextParts.join(' | ')
+        }],
+        submitter: {
+          name: data.get('submitter_name'),
+          email: data.get('submitter_email'),
+          website_or_linkedin: data.get('submitter_website')
+        }
+      };
+    },
+    { idle: 'Send submission', sending: 'Sending...', success: 'Thank you. We’ll review and be in touch.' }
+  );
+
+  // API waitlist form
+  wireForm(
+    document.getElementById('form-api-waitlist'),
+    function(data) {
+      return {
+        source: 'api-waitlist',
+        submitter: {
+          name: data.get('submitter_name'),
+          email: data.get('submitter_email'),
+          publisher_or_agency: data.get('publisher_or_agency'),
+          catalog_system: data.get('catalog_system') || '',
+          volume: data.get('volume') || ''
+        }
+      };
+    },
+    { idle: 'Join waitlist', sending: 'Joining...', success: 'Thank you. You’re on the waitlist.' }
+  );
 })();
 </script>
 </body>
