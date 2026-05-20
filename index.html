@@ -214,6 +214,49 @@ section p {
   line-height: 1.5;
 }
 
+/* ─── TEMPEST FEATURE ─── */
+.tempest-feature {
+  background: var(--logo-navy);
+  padding: 110px 24px;
+  text-align: center;
+}
+.tempest-rule {
+  width: 80px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto;
+}
+.tempest-quote {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.25;
+  color: var(--ivory);
+  letter-spacing: 0.005em;
+  max-width: 760px;
+  margin: 36px auto 22px;
+}
+.tempest-cite {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 auto 36px;
+}
+.tempest-cite em {
+  text-transform: none;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 700px) {
+  .tempest-feature { padding: 80px 24px; }
+  .tempest-quote { font-size: 32px; margin: 28px auto 18px; }
+  .tempest-cite { margin-bottom: 28px; }
+}
+
 /* ─── TWO-COL CARDS ─── */
 .two-col {
   display: grid;
@@ -1052,6 +1095,14 @@ footer a:focus-visible {
   <a href="#book">Book a Call</a>
 </nav>
 
+<!-- ═══ TEMPEST FEATURE ═══ -->
+<div class="tempest-feature fade-in" role="region" aria-label="From The Tempest">
+  <div class="tempest-rule"></div>
+  <p class="tempest-quote">&ldquo;This will I tell my master.&rdquo;</p>
+  <p class="tempest-cite">Ariel, overhearing a plot &mdash; <em>The Tempest</em></p>
+  <div class="tempest-rule"></div>
+</div>
+
 <!-- ═══ WHAT & WHY ═══ -->
 <section id="what" class="fade-in" aria-label="What and why">
   <div class="two-col">
@@ -1216,8 +1267,8 @@ footer a:focus-visible {
 
     <!-- Dashboard 1: Peter Morgan — William Morris wallpaper -->
     <div class="dashboard-preview">
-      <div class="dash-label">Documentary producer</div>
-      <div class="dash-name">The Radar — Peter Morgan</div>
+      <div class="dash-label">Historical filmmaker</div>
+      <div class="dash-name">The Radar &mdash; a historical filmmaker&#8217;s brief</div>
       <div class="dash-desc">A William Morris wallpaper background with white content cards floating on top. Serif typography, genre filter pills, and expandable book entries with Research and Archive actions.</div>
       <div class="dash-mockup dash-v-doc">
         <div class="dash-inner">
@@ -1376,25 +1427,13 @@ footer a:focus-visible {
   </div>
 </section>
 
-<!-- ═══ TEMPEST DIVIDER ═══ -->
-<div class="fade-in" style="text-align: center; padding: 48px 24px 44px; position: relative;">
-  <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: var(--gold);"></div>
-  <p style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 22px; color: var(--ink); letter-spacing: 0.01em; line-height: 1.5; margin-bottom: 10px;">
-    &ldquo;This will I tell my master.&rdquo;
-  </p>
-  <p style="font-family: 'Lato', sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist);">
-    Ariel, overhearing a plot &mdash; <em style="text-transform: none; font-style: italic;">The Tempest</em>
-  </p>
-  <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: var(--gold);"></div>
-</div>
-
 <!-- ═══ ABOUT ═══ -->
 <div id="about" class="about-section" role="region" aria-label="About the founder">
   <div class="about-inner fade-in">
     <div class="about-initial" aria-hidden="true">TB</div>
     <div class="about-text">
       <div class="section-label">Who&#8217;s behind it</div>
-      <p>Built by Tara Button &mdash; published author with an MA in Creative Writing &mdash; in collaboration with BAFTA and Emmy award-winning film producers.</p>
+      <p>Built by Tara Button &mdash; published author with an MA in Creative Writing &mdash; in collaboration with a BAFTA award-winning film producer.</p>
       <p style="color: var(--mist); font-size: 14px; margin-top: 10px;">A career spent working with stories and screen: writer and subeditor at the BBC &#183; Egmont Publishers &#183; television campaigns for brands including Nutella and Fiat &#183; founder of BuyMeOnce (featured in the FT, BBC and Vogue).</p>
       <p style="color: var(--ink); font-size: 15px; margin-top: 14px; font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.5;">&ldquo;Stories &mdash; and the right influences at the right moment &mdash; are the foundation of every spectacular film. The Ariel is built to find them, so the people making things can spend more time making them.&rdquo;</p>
     </div>
