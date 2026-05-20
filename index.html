@@ -16,7 +16,9 @@
   --ivory: #F8F5F0;
   --gold: #B8965A;
   --gold-light: #D4B87A;
+  --gold-deep: #7A5F33;
   --mist: #8E9AAF;
+  --mist-deep: #5A6378;
   --burgundy: #722F37;
   --body: #2D2D3A;
   --soft-line: #D8D4CC;
@@ -181,7 +183,7 @@ section {
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-deep);
   margin-bottom: 12px;
 }
 section h2 {
@@ -780,8 +782,8 @@ section p {
 /* ─── AUDIENCE / PRICING ─── */
 .audience-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin-top: 36px;
 }
 
@@ -801,9 +803,10 @@ section p {
 
 .audience-card h3 {
   color: var(--gold);
-  font-size: 23px;
+  font-size: 22px;
   margin-bottom: 14px;
 }
+.audience-card.burgundy h3 { color: var(--gold-light); }
 .audience-card p {
   color: #C8CDD8;
   font-size: 15px;
@@ -1410,7 +1413,7 @@ footer a:focus-visible {
 <section id="pricing" class="fade-in" aria-label="Who it is for and pricing">
   <div class="section-label">Who it&#8217;s for</div>
   <h2>Built for people who make things</h2>
-  <p>Whether you&#8217;re an independent producer developing your next project or a production company running multiple development tracks, The Ariel adapts to how you work.</p>
+  <p>Whether you&#8217;re a solo producer, a small development team, or a studio running many tracks at once, The Ariel adapts to how you work.</p>
   <div class="audience-grid">
     <div class="audience-card gold-border">
       <h3>Individual producers</h3>
@@ -1419,10 +1422,16 @@ footer a:focus-visible {
       <p class="price-note">&#163;250 onboarding &#183; Founding rate &#163;75/month, locked in</p>
     </div>
     <div class="audience-card">
-      <h3>Production companies</h3>
-      <p>Team access, multiple genre tracks, shared saves and a deep-dive workflow for your development team. Build a living IP pipeline around your development slate.</p>
-      <div class="price">From &#163;850 <span style="font-size:18px;color:var(--mist)">/month</span></div>
-      <p class="price-note">Paid pilots from &#163;3&#8211;5K &#183; Annual plans typically &#163;10&#8211;25K depending on seats, tracks and research depth</p>
+      <h3>Production teams</h3>
+      <p>Per-seat pricing for small development teams. Shared dashboard, multiple genre tracks, team saves and comments. Add or remove seats as your slate changes.</p>
+      <div class="price">&#163;95 <span style="font-size:18px;color:var(--mist)">/ seat / month</span></div>
+      <p class="price-note">Minimum 2 seats &#183; Paid pilots from &#163;3&#8211;5K &#183; Annual billing available</p>
+    </div>
+    <div class="audience-card burgundy">
+      <h3>Studios &amp; broadcasters</h3>
+      <p>Bulk seat licensing for studios, broadcasters and larger production groups. Custom sources, dedicated setup, and account management. Built around the way your development teams already work.</p>
+      <div class="price">Bulk pricing <span style="font-size:18px;color:var(--mist)">/ 10+ seats</span></div>
+      <p class="price-note">Annual plans typically &#163;10&#8211;25K depending on seats, tracks and research depth &#183; <a href="#book" style="color: var(--gold-light);">Speak to us</a></p>
     </div>
   </div>
 </section>
@@ -1434,7 +1443,7 @@ footer a:focus-visible {
     <div class="about-text">
       <div class="section-label">Who&#8217;s behind it</div>
       <p>Built by Tara Button - published author with an MA in Creative Writing - in collaboration with a BAFTA award-winning film producer.</p>
-      <p style="color: var(--mist); font-size: 14px; margin-top: 10px;">A career spent working with stories and screen: writer and subeditor at the BBC &#183; Egmont Publishers &#183; television campaigns for brands including Nutella and Fiat &#183; founder of BuyMeOnce (featured in the FT, BBC and Vogue).</p>
+      <p style="color: var(--mist-deep); font-size: 14px; margin-top: 10px;">A career spent working with stories and screen: writer and subeditor at the BBC &#183; Egmont Publishers &#183; television campaigns for brands including Nutella and Fiat &#183; founder of BuyMeOnce (featured in the FT, BBC and Vogue).</p>
       <p style="color: var(--ink); font-size: 15px; margin-top: 14px; font-style: italic; font-family: 'Cormorant Garamond', serif; line-height: 1.5;">&ldquo;Stories - and the right influences at the right moment - are the foundation of every spectacular film. The Ariel is built to find them, so the people making things can spend more time making them.&rdquo;</p>
     </div>
   </div>
@@ -1443,7 +1452,7 @@ footer a:focus-visible {
 <!-- ═══ EARLY SIGNAL ═══ -->
 <section class="fade-in" style="text-align: center; padding: 60px 24px;" aria-label="Founding rate">
   <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--ink); max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">Currently onboarding our first producers. Founding rate available for early clients.</p>
-  <p style="color: var(--mist); font-size: 14px;">Interested in being one of the first? <a href="#book" style="color: var(--gold);">Let&#8217;s talk.</a></p>
+  <p style="color: var(--mist-deep); font-size: 14px;">Interested in being one of the first? <a href="#book" style="color: var(--gold-deep);">Let&#8217;s talk.</a></p>
 </section>
 
 <div class="divider" role="separator"></div>
