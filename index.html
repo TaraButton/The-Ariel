@@ -2135,13 +2135,18 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
     }).join('');
   }
 
-  // Agency application
+  // Agency application (email includes a one-click Approve button)
+  var APPROVE_URL = 'https://hook.eu2.make.com/mcwo4tt8u9k9o5s81ld3dpibf4njlvf1';
   wireForm(document.getElementById('form-agency-apply'), function(data){
-    var name=data.get('contact_name'), email=data.get('work_email');
+    var name=data.get('contact_name'), email=data.get('work_email'), agency=data.get('agency_name');
+    var domain=(String(email).split('@')[1]||'').toLowerCase();
+    var approve=APPROVE_URL+'?agency='+encodeURIComponent(agency)+'&domain='+encodeURIComponent(domain)+'&contact='+encodeURIComponent(name);
+    var btn='<div style="margin-top:20px;"><a href="'+approve+'" style="display:inline-block;background:#1A1714;color:#F4EFE6;text-decoration:none;padding:12px 26px;border-radius:3px;font-family:Georgia,serif;font-size:15px;">Approve '+esc(agency)+' &rarr;</a></div>'
+      +'<p style="margin-top:8px;font-size:12px;color:#9C9488;">One click adds <strong>'+esc(domain)+'</strong> to your approved agencies - they can then submit straight to rights@theariel.tv.</p>';
     return { source:'Agency application', name:name, email:email, summary:buildSummary([
-      ['Agency', data.get('agency_name')], ['Contact', name], ['Work email', email],
+      ['Agency', agency], ['Contact', name], ['Work email', email],
       ['Website', data.get('agency_website')], ['Represents', data.get('areas')], ['Note', data.get('note')]
-    ]) };
+    ])+btn };
   }, { idle:'Send application', sending:'Sending...', success:'Thank you. Your application is with us - we read every one and will be in touch.' });
 
   // Producer application
