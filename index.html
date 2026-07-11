@@ -1357,7 +1357,7 @@ footer a:focus-visible {
   <p class="hero-tagline">Personalised story intelligence for screen</p>
   <p class="hero-sub">The best stories get optioned by whoever sees them first.</p>
   <p class="hero-detail">Bespoke scouting for film and TV that learns and improves as you use it. Books, journalism and true stories with screen potential - filtered to your taste, delivered daily.</p>
-  <a href="#book" class="hero-cta" aria-label="Book a conversation about The Ariel">Book a conversation</a>
+  <a href="#book" class="hero-cta" aria-label="Apply to join The Ariel">Apply to join</a>
 </header>
 
 <!-- ═══ NAV ═══ -->
@@ -1368,7 +1368,7 @@ footer a:focus-visible {
   <a href="#about">About</a>
   <a href="#agents">For Agents</a>
   <a href="#faq">FAQ</a>
-  <a href="#book">Book a Call</a>
+  <a href="#book">Apply</a>
 </nav>
 
 <!-- ═══ TEMPEST FEATURE ═══ -->
@@ -1661,26 +1661,12 @@ footer a:focus-visible {
 <div id="agents" class="agents-section fade-in" role="region" aria-label="For agents and publishers">
   <div class="agents-inner">
     <div class="section-label">For agents &amp; publishers</div>
-    <h2>Get your titles in front of producers</h2>
-    <p class="agents-intro">The Ariel surfaces stories to a curated audience of film and TV producers. Three ways for agents and publishers to submit upcoming books, articles or rights-available material. All submissions are editorially reviewed before reaching any client dashboard. Free for submitters.</p>
+    <h2>Get your IP seen by the producers most likely to option it</h2>
+    <p class="agents-intro">The Ariel doesn&#8217;t blast your titles to a mailing list. It matches each submission to the individual producers whose taste it fits, so your book or story reaches the few actively looking for exactly that - with a warm introduction the moment one of them wants to take it further. Access is selective: agencies apply and are approved one by one. Once you&#8217;re in, it&#8217;s free, it takes minutes to submit, and your titles reach only the producers they genuinely fit - never a mailing list.</p>
 
-    <div class="agents-grid">
-      <div class="agent-card">
-        <h3>Single submission</h3>
-        <p>Tell us about one book, article or story you'd like to put in front of producers.</p>
-        <button class="agent-cta" type="button" data-modal="submission">Submit a story</button>
-      </div>
-      <div class="agent-card">
-        <h3>Bulk catalogue</h3>
-        <p>For agencies and publishers with a list of titles. Download the template, fill it in, and email it across.</p>
-        <a class="agent-cta" href="ariel-submissions-template.csv" download>Download CSV template</a>
-        <p class="agent-hint">Email completed file to <a href="mailto:tara@buymeonce.com?subject=Ariel%20bulk%20submission" style="color: var(--gold-deep);">tara@buymeonce.com</a></p>
-      </div>
-      <div class="agent-card">
-        <h3>API &amp; webhooks</h3>
-        <p>For publishers integrating directly from a catalogue system. Push titles to The Ariel automatically. Currently in development - register interest and we'll be in touch.</p>
-        <button class="agent-cta" type="button" data-modal="api-waitlist">Register interest</button>
-      </div>
+    <div class="agents-apply" style="text-align: center; margin-top: 36px;">
+      <button type="button" class="cta-btn" data-modal="agency" style="cursor: pointer;" aria-label="Open the agency application form">Apply for access</button>
+      <p class="cta-note" style="margin-top: 16px;">Free for agencies. Every application is read personally. Prefer to talk first? <a href="https://calendly.com/tarabutton/15min" style="color: var(--gold-deep);">Book a call</a>.</p>
     </div>
   </div>
 </div>
@@ -1742,12 +1728,12 @@ footer a:focus-visible {
 </section>
 
 <!-- ═══ CTA ═══ -->
-<div class="cta-section" id="book" role="region" aria-label="Book a conversation">
+<div class="cta-section" id="book" role="region" aria-label="Apply to join The Ariel">
   <div class="fade-in">
-    <h2>Start seeing stories first</h2>
-    <p>Book a 20-minute call to discuss your development interests and see if The Ariel is the right fit.</p>
-    <a href="https://calendly.com/tarabutton/15min" class="cta-btn" aria-label="Book a conversation via Calendly">Book a conversation</a>
-    <p class="cta-note">No commitment. No hard sell. Just a conversation about what you&#8217;re looking for.</p>
+    <h2>Apply to join</h2>
+    <p>The Ariel is offered to a curated group of producers and development teams, with a limited number of places in each area of interest. Tell us a little about your work and we&#8217;ll be in touch about a fit.</p>
+    <button type="button" class="cta-btn" data-modal="apply" style="cursor: pointer;" aria-label="Open the application form">Apply to join</button>
+    <p class="cta-note">Every application is read personally. If it&#8217;s a fit, the next step is a short conversation - no hard sell. Prefer to talk first? <a href="https://calendly.com/tarabutton/15min" style="color: var(--gold-light);">Book a call</a>.</p>
   </div>
 </div>
 
@@ -1761,6 +1747,80 @@ footer a:focus-visible {
   </p>
   <p style="margin-top: 24px; font-size: 12px; color: var(--mist);">&#169; 2026 The Ariel. All rights reserved.</p>
 </footer>
+
+<!-- ═══ APPLY TO JOIN MODAL ═══ -->
+<div class="modal-overlay" id="modal-apply" role="dialog" aria-modal="true" aria-labelledby="modal-apply-title">
+  <div class="modal">
+    <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <h3 id="modal-apply-title">Apply to join</h3>
+    <p class="modal-sub">Places are limited and each application is read personally. A few details are all we need - the rest we&#8217;ll pick up from your profile. Fields marked <span class="req">*</span> are required.</p>
+    <form id="form-apply" autocomplete="on" novalidate>
+      <input type="text" name="hp_field" class="modal-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <label>Your name <span class="req">*</span></label>
+        <input type="text" name="applicant_name" required>
+      </div>
+      <div>
+        <label>Your email <span class="req">*</span></label>
+        <input type="email" name="applicant_email" required>
+      </div>
+      <div>
+        <label>Job title <span class="req">*</span></label>
+        <input type="text" name="job_title" required placeholder="e.g. Producer, Head of Development, Executive Producer">
+      </div>
+      <div>
+        <label>Company / production company</label>
+        <input type="text" name="company" placeholder="Where you work (optional)">
+      </div>
+      <div>
+        <label>IMDb or profile link <span class="req">*</span></label>
+        <input type="url" name="profile_link" required placeholder="https://www.imdb.com/name/... or LinkedIn">
+      </div>
+      <div>
+        <label>Unique IP projects you option in a typical year <span class="req">*</span></label>
+        <select name="projects_optioned" required>
+          <option value="">- choose -</option>
+          <option value="None yet">None yet</option>
+          <option value="1-2">1-2</option>
+          <option value="3-5">3-5</option>
+          <option value="6+">6+</option>
+        </select>
+      </div>
+      <div>
+        <label>Your areas of interest <span class="req">*</span></label>
+        <textarea name="areas_of_interest" required maxlength="400" placeholder="The genres, subjects and kinds of stories you develop - e.g. true crime, historical, music documentary, investigative."></textarea>
+      </div>
+      <div>
+        <label>How did you hear about The Ariel?</label>
+        <input type="text" name="referral" placeholder="A name, a link, or where you saw us (optional)">
+      </div>
+
+      <button type="submit">Send application</button>
+      <div class="modal-status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ═══ AGENCY APPLICATION MODAL ═══ -->
+<div class="modal-overlay" id="modal-agency" role="dialog" aria-modal="true" aria-labelledby="modal-agency-title">
+  <div class="modal">
+    <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <h3 id="modal-agency-title">Apply for access</h3>
+    <p class="modal-sub">For literary agencies, publishers and rights holders. A few details and we&#8217;ll be in touch about approving your agency. Fields marked <span class="req">*</span> are required.</p>
+    <form id="form-agency-apply" autocomplete="on" novalidate>
+      <input type="text" name="hp_field" class="modal-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label>Agency / publisher <span class="req">*</span></label><input type="text" name="agency_name" required></div>
+      <div><label>Your name <span class="req">*</span></label><input type="text" name="contact_name" required></div>
+      <div><label>Work email <span class="req">*</span></label><input type="email" name="work_email" required placeholder="you@youragency.com"></div>
+      <div><label>Agency website <span class="req">*</span></label><input type="url" name="agency_website" required placeholder="https://..."></div>
+      <div><label>What do you represent? <span class="req">*</span></label><textarea name="areas" required maxlength="400" placeholder="The genres and kinds of authors or titles you&#8217;d bring - e.g. true crime, narrative non-fiction, investigative journalism."></textarea></div>
+      <div><label>Anything else</label><textarea name="note" maxlength="400" placeholder="Optional - a note, a couple of titles you have in mind, or how you heard about us."></textarea></div>
+      <button type="submit">Send application</button>
+      <div class="modal-status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
 
 <!-- ═══ SUBMISSION MODAL ═══ -->
 <div class="modal-overlay" id="modal-submission" role="dialog" aria-modal="true" aria-labelledby="modal-submission-title">
@@ -1956,7 +2016,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
 (function() {
   // PASTE the deployed Apps Script Web App URL between the quotes below.
   // It should look like: https://script.google.com/macros/s/AKfycb.../exec
-  var APPS_SCRIPT_URL = 'PASTE_DEPLOYED_WEB_APP_URL_HERE';
+  var APPS_SCRIPT_URL = 'https://hook.eu2.make.com/l7oksow2yvqbo88ugqspknmsvccv6agh';
 
   // Open modal
   document.querySelectorAll('[data-modal]').forEach(function(btn) {
@@ -2035,11 +2095,16 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
       var data = new FormData(form);
       var payload = payloadBuilder(data);
 
+      // Form-encoded so Make parses each field separately (text/plain arrives as
+      // one blob). All three are CORS-simple, so no-cors still works.
+      var params = new URLSearchParams();
+      Object.keys(payload).forEach(function(k){ params.append(k, payload[k] == null ? '' : payload[k]); });
+
       fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
-        headers: {'Content-Type': 'text/plain;charset=utf-8'},
-        body: JSON.stringify(payload)
+        headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'},
+        body: params.toString()
       }).then(function() {
         status.className = 'modal-status success';
         status.textContent = labels.success;
@@ -2062,58 +2127,57 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
     });
   }
 
-  // Single submission form
-  wireForm(
-    document.getElementById('form-submission'),
-    function(data) {
-      var genre = data.get('genre');
-      var genreOther = data.get('genre_other') || '';
-      var contextParts = [];
-      if (data.get('publication_date')) contextParts.push('Publication date: ' + data.get('publication_date'));
-      if (data.get('rights_status')) contextParts.push('Rights status: ' + data.get('rights_status'));
-      if (data.get('why_now')) contextParts.push('Why now: ' + data.get('why_now'));
-      if (data.get('embargo_date')) contextParts.push('Embargo: ' + data.get('embargo_date'));
+  // Build a flat, email-friendly payload the Make webhook renders directly.
+  function esc(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function buildSummary(rows){
+    return rows.filter(function(r){return r[1];}).map(function(r){
+      return '<p style="margin:0 0 6px;"><strong>'+esc(r[0])+':</strong> '+esc(r[1])+'</p>';
+    }).join('');
+  }
 
-      return {
-        source: 'submission-form',
-        entries: [{
-          title: data.get('title'),
-          summary: data.get('logline'),
-          source_name: data.get('publisher_or_agency'),
-          people_mentioned: data.get('author'),
-          category_hint: genre,
-          category_other: genre === 'other' ? genreOther : '',
-          source_url: data.get('link') || '',
-          region: data.get('region') || '',
-          full_text_snippet: contextParts.join(' | ')
-        }],
-        submitter: {
-          name: data.get('submitter_name'),
-          email: data.get('submitter_email'),
-          website_or_linkedin: data.get('submitter_website')
-        }
-      };
-    },
-    { idle: 'Send submission', sending: 'Sending...', success: 'Thank you. We’ll review and be in touch.' }
-  );
+  // Agency application
+  wireForm(document.getElementById('form-agency-apply'), function(data){
+    var name=data.get('contact_name'), email=data.get('work_email');
+    return { source:'Agency application', name:name, email:email, summary:buildSummary([
+      ['Agency', data.get('agency_name')], ['Contact', name], ['Work email', email],
+      ['Website', data.get('agency_website')], ['Represents', data.get('areas')], ['Note', data.get('note')]
+    ]) };
+  }, { idle:'Send application', sending:'Sending...', success:'Thank you. Your application is with us - we read every one and will be in touch.' });
 
-  // API waitlist form
-  wireForm(
-    document.getElementById('form-api-waitlist'),
-    function(data) {
-      return {
-        source: 'api-waitlist',
-        submitter: {
-          name: data.get('submitter_name'),
-          email: data.get('submitter_email'),
-          publisher_or_agency: data.get('publisher_or_agency'),
-          catalog_system: data.get('catalog_system') || '',
-          volume: data.get('volume') || ''
-        }
-      };
-    },
-    { idle: 'Join waitlist', sending: 'Joining...', success: 'Thank you. You’re on the waitlist.' }
-  );
+  // Producer application
+  wireForm(document.getElementById('form-apply'), function(data){
+    var name=data.get('applicant_name'), email=data.get('applicant_email');
+    return { source:'Producer application', name:name, email:email, summary:buildSummary([
+      ['Name', name], ['Email', email], ['Job title', data.get('job_title')],
+      ['Company', data.get('company')], ['Profile', data.get('profile_link')],
+      ['Projects optioned / year', data.get('projects_optioned')],
+      ['Areas of interest', data.get('areas_of_interest')], ['Heard via', data.get('referral')]
+    ]) };
+  }, { idle:'Send application', sending:'Sending...', success:'Thank you. Your application is with us - we read every one and will be in touch.' });
+
+  // Story submission
+  wireForm(document.getElementById('form-submission'), function(data){
+    var name=data.get('submitter_name'), email=data.get('submitter_email');
+    var genre=data.get('genre'), genreOther=data.get('genre_other')||'';
+    return { source:'Story submission', name:name, email:email, summary:buildSummary([
+      ['Title', data.get('title')], ['Author', data.get('author')],
+      ['Publisher / Agency', data.get('publisher_or_agency')], ['Logline', data.get('logline')],
+      ['Genre', genre==='other'?genreOther:genre], ['Publication date', data.get('publication_date')],
+      ['Rights status', data.get('rights_status')], ['Link', data.get('link')],
+      ['Region', data.get('region')], ['Why now', data.get('why_now')], ['Embargo', data.get('embargo_date')],
+      ['Submitter', name], ['Submitter email', email], ['Submitter site', data.get('submitter_website')]
+    ]) };
+  }, { idle:'Send submission', sending:'Sending...', success:'Thank you. We\u2019ll review and be in touch.' });
+
+  // API waitlist
+  wireForm(document.getElementById('form-api-waitlist'), function(data){
+    var name=data.get('submitter_name'), email=data.get('submitter_email');
+    return { source:'API waitlist', name:name, email:email, summary:buildSummary([
+      ['Name', name], ['Email', email], ['Publisher / Agency', data.get('publisher_or_agency')],
+      ['Catalogue system', data.get('catalog_system')], ['Volume', data.get('volume')]
+    ]) };
+  }, { idle:'Join waitlist', sending:'Joining...', success:'Thank you. You\u2019re on the waitlist.' });
+
 })();
 </script>
 </body>
