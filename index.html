@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Ariel - Personalised Story Intelligence for Screen</title>
 <meta name="description" content="Personalised story intelligence for film and TV. Books, journalism and true stories - filtered to your taste, calibrated to your slate.">
+<link rel="canonical" href="https://theariel.tv/">
 
 <!-- ── Open Graph (LinkedIn, Facebook, iMessage, etc) ── -->
 <meta property="og:type" content="website">
@@ -143,6 +144,8 @@ h1, h2, h3, h4 {
 }
 .hero-tagline {
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1415,13 +1418,25 @@ footer a:focus-visible {
   .fade-in { opacity: 1; transform: none; }
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Ariel",
+  "url": "https://theariel.tv/",
+  "logo": "https://theariel.tv/the_ariel_logo_no_tagline.png",
+  "description": "Personalised story intelligence for film and TV producers - books, journalism and true stories, calibrated to your slate.",
+  "email": "hello@theariel.tv",
+  "founder": { "@type": "Person", "name": "Tara Button" }
+}
+</script>
 </head>
 <body>
 
 <!-- ═══ HERO ═══ -->
 <header class="hero" role="banner">
   <img src="the_ariel_logo_no_tagline.png" alt="The Ariel" class="hero-logo">
-  <p class="hero-tagline">Personalised story intelligence for screen</p>
+  <h1 class="hero-tagline">Personalised story intelligence for screen</h1>
   <p class="hero-sub">The best stories get optioned by whoever sees them first.</p>
   <p class="hero-detail">Bespoke scouting for film and TV that learns and improves as you use it. Books, journalism and true stories with screen potential - filtered to your taste, delivered daily.</p>
   <a href="#book" class="hero-cta" aria-label="Apply to join The Ariel">Apply to join</a>
@@ -1752,7 +1767,7 @@ footer a:focus-visible {
 
 <!-- ═══ EARLY SIGNAL ═══ -->
 <section class="fade-in" style="text-align: center; padding: 60px 24px;" aria-label="Founding rate">
-  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--ink); max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">Currently onboarding our first producers. Founding rate available for early clients.</p>
+  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--ink); max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">A limited number of founding places remain. Founding rate held for as long as you stay.</p>
   <p style="color: var(--mist-deep); font-size: 14px;">Interested in being one of the first? <a href="#book" style="color: var(--gold-deep);">Let&#8217;s talk.</a></p>
 </section>
 
@@ -1763,9 +1778,28 @@ footer a:focus-visible {
   <div class="agents-inner">
     <div class="section-label">For agents &amp; publishers</div>
     <h2>Get your IP seen by the producers most likely to option it</h2>
-    <p class="agents-intro">The Ariel doesn&#8217;t blast your titles to a mailing list. It matches each submission to the individual producers whose taste it fits, so your book or story reaches the few actively looking for exactly that - with a warm introduction the moment one of them wants to take it further. Access is selective: agencies apply and are approved one by one. Once you&#8217;re in, it&#8217;s free, it takes minutes to submit, and your titles reach only the producers they genuinely fit - never a mailing list.</p>
+    <p class="agents-intro">The Ariel doesn&#8217;t blast your titles to a mailing list. Each submission is matched to the individual producers whose taste it fits, so your book or story reaches the few actively looking for exactly that - with a warm introduction the moment one of them wants to take it further.</p>
+
+    <div class="agents-grid">
+      <div class="agent-card">
+        <h3>Fourteen titles placed since July</h3>
+        <p>Fourteen titles from rights-holders have gone into a producer&#8217;s feed since 10 July, and the first two arrived on the producer&#8217;s dashboard the same day they were sent to us. The most recent went in this month.</p>
+        <p class="agent-hint">Free to submit, and it takes minutes.</p>
+      </div>
+      <div class="agent-card">
+        <h3>Read properly, not forwarded</h3>
+        <p>Ninety-eight titles from rights catalogues were read in the same period. The ones that didn&#8217;t fit a producer&#8217;s brief weren&#8217;t sent on. That restraint is exactly why the ones that do arrive get opened.</p>
+        <p class="agent-hint">Your titles reach only the producers they genuinely fit.</p>
+      </div>
+      <div class="agent-card">
+        <h3>Selective on both sides</h3>
+        <p>Agencies and publishers apply and are approved one by one, and the producers on the other side are a small, curated group rather than a list. Both halves stay small on purpose.</p>
+        <p class="agent-hint">Every application is read personally.</p>
+      </div>
+    </div>
 
     <div class="agents-apply" style="text-align: center; margin-top: 36px;">
+      <p style="max-width: 640px; margin: 0 auto 24px; color: var(--body); font-size: 15px; line-height: 1.7;">On the other side is a curated group of non-fiction and documentary producers working in the UK and the United States, among them an Emmy-winning documentary maker and a New York executive producer.</p>
       <button type="button" class="cta-btn" data-modal="agency" style="cursor: pointer;" aria-label="Open the agency application form">Apply for access</button>
       <p class="cta-note" style="margin-top: 16px;">Free for agencies and publishers. Every application is read personally. Prefer to talk first? <a href="https://calendly.com/tarabutton/15min" style="color: var(--gold-deep);">Book a call</a>.</p>
     </div>
