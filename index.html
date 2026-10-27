@@ -2203,7 +2203,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
   }
 
   // Submission helper
-  function wireForm(form, payloadBuilder, labels) {
+  function wireForm(form, payloadBuilder, labels, endpoint) {
     if (!form) return;
     form.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -2235,7 +2235,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
       var params = new URLSearchParams();
       Object.keys(payload).forEach(function(k){ params.append(k, payload[k] == null ? '' : payload[k]); });
 
-      fetch(APPS_SCRIPT_URL, {
+      fetch(endpoint || APPS_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
         headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'},
@@ -2270,19 +2270,18 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
     }).join('');
   }
 
-  // Agency application (email includes a one-click Approve button)
-  var APPROVE_URL = 'https://hook.eu2.make.com/mcwo4tt8u9k9o5s81ld3dpibf4njlvf1';
+  // Agency application -> The Ariel agency-approve Apps Script (Platform/agency-approve in The Ariel HQ).
+  // It stores the application, emails Tara a tokenised Review-and-approve link, and on Approve
+  // sends the agency its welcome note. No approve link is built here any more (it was forgeable).
+  var AGENCY_APPLY_URL = 'https://script.google.com/macros/s/AKfycbz-aUiSIJzp9PeceC8mpC8Z0mM0pssm-5fk8_kcvu2P49oyAmwtm-sq3Z-e2QOFf1OJ/exec';
   wireForm(document.getElementById('form-agency-apply'), function(data){
-    var name=data.get('contact_name'), email=data.get('work_email'), agency=data.get('agency_name');
-    var domain=(String(email).split('@')[1]||'').toLowerCase();
-    var approve=APPROVE_URL+'?agency='+encodeURIComponent(agency)+'&domain='+encodeURIComponent(domain)+'&contact='+encodeURIComponent(name);
-    var btn='<div style="margin-top:20px;"><a href="'+approve+'" style="display:inline-block;background:#1A1714;color:#F4EFE6;text-decoration:none;padding:12px 26px;border-radius:3px;font-family:Georgia,serif;font-size:15px;">Approve '+esc(agency)+' &rarr;</a></div>'
-      +'<p style="margin-top:8px;font-size:12px;color:#9C9488;">One click adds <strong>'+esc(domain)+'</strong> to your approved agencies - they can then submit straight to rights@theariel.tv.</p>';
-    return { source:'Agency application', name:name, email:email, summary:buildSummary([
-      ['Agency', agency], ['Contact', name], ['Work email', email],
-      ['Website', data.get('agency_website')], ['Represents', data.get('areas')], ['Note', data.get('note')]
-    ])+btn };
-  }, { idle:'Send application', sending:'Sending...', success:'Thank you. Your application is with us - we read every one and will be in touch.' });
+    return {
+      source:'Agency application',
+      agency_name:data.get('agency_name'), contact_name:data.get('contact_name'),
+      work_email:data.get('work_email'), agency_website:data.get('agency_website'),
+      areas:data.get('areas'), note:data.get('note'), hp_field:data.get('hp_field')
+    };
+  }, { idle:'Send application', sending:'Sending...', success:'Thank you. Your application is with us - we read every one and will be in touch.' }, AGENCY_APPLY_URL);
 
   // Producer application
   wireForm(document.getElementById('form-apply'), function(data){
