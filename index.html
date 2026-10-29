@@ -234,6 +234,18 @@ section p {
   padding: 56px 24px;
   line-height: 1.5;
 }
+.pull-quote cite {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 18px;
+}
+.pull-quote-section { padding: 56px 24px; }
+.pull-quote-section .pull-quote { padding: 0; }
 
 /* ─── TEMPEST FEATURE ─── */
 .tempest-feature {
@@ -1515,10 +1527,13 @@ footer a:focus-visible {
   </div>
 </section>
 
-<!-- ═══ POSITIONING PULL-QUOTE ═══ -->
-<div class="fade-in" role="presentation">
-  <p class="pull-quote">&#8220;More of what's worth reading. Less of what isn't. Calibrated to your slate.&#8221;</p>
-</div>
+<!-- ═══ CLIENT TESTIMONIAL ═══ -->
+<section class="pull-quote-section fade-in" aria-label="What clients say">
+  <blockquote class="pull-quote">
+    &#8220;I love seeing The Ariel in my inbox every morning. I love the range of stories and the wide net it casts.&#8221;
+    <cite>Executive Producer, Netflix</cite>
+  </blockquote>
+</section>
 
 <!-- ═══ HOW IT'S DELIVERED ═══ -->
 <div class="delivery-section" role="region" aria-label="How it reaches you">
