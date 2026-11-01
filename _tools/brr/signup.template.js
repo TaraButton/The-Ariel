@@ -72,10 +72,17 @@
     document.body.style.overflow = 'hidden';
     store(KEY_DISMISS, String(Date.now()));
     window.removeEventListener('scroll', onScroll);
+    var first = pop.querySelector('input[type=email]');
+    if (first) setTimeout(function () { first.focus(); }, 60);
   }
+  var settle;
   function onScroll() {
-    var h = document.documentElement;
-    if ((h.scrollTop + window.innerHeight) / h.scrollHeight > 0.5) show();
+    // wait until scrolling stops (anchor links scroll smoothly) before deciding
+    clearTimeout(settle);
+    settle = setTimeout(function () {
+      var h = document.documentElement;
+      if ((h.scrollTop + window.innerHeight) / h.scrollHeight > 0.5) show();
+    }, 600);
   }
   setTimeout(show, 25000);
   window.addEventListener('scroll', onScroll, { passive: true });

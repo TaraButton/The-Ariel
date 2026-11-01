@@ -480,8 +480,8 @@ function aliasOk_() {
 
 /* ───────────────────────── email rendering ───────────────────────── */
 
-var C = { ink: '#1B1F3B', ivory: '#F8F5F0', cream: '#FFFDF8', gold: '#B8965A', goldDeep: '#7A5F33',
-  mist: '#5A6378', line: '#D8D4CC', body: '#2D2D3A', tint: '#F3EDE2' };
+var C = { ink: '#1B1F3B', ivory: '#F8F5F0', cream: '#FFFFFF', gold: '#B8965A', goldDeep: '#6E5428',
+  mist: '#454D60', line: '#CFC9BE', body: '#1E2233', tint: '#F4ECDD' };
 var SERIF = "'Cormorant Garamond', Georgia, 'Times New Roman', serif";
 var SANS = "Lato, 'Helvetica Neue', Arial, sans-serif";
 
@@ -505,18 +505,18 @@ function renderEmail_(ed, sub, isWelcome) {
   var webVersion = CONFIG.SITE + (ed.edition_id ? ed.edition_id + '.html' : '');
 
   var h = [];
-  h.push('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+  h.push('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<meta name="color-scheme" content="light"><title>' + esc_(subject) + '</title></head>');
   h.push('<body style="margin:0;padding:0;background-color:' + C.ivory + ';" bgcolor="' + C.ivory + '">');
   h.push('<div style="display:none;max-height:0;overflow:hidden;">' + esc_(ed.preheader || ('Every non-fiction book reviewed in the British papers this week, one line each.')) + '</div>');
-  h.push('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + C.ivory + '" style="background-color:' + C.ivory + ';"><tr><td align="center" style="padding:24px 12px;">');
+  h.push('<div role="main" aria-label="' + CONFIG.NAME + '"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + C.ivory + '" style="background-color:' + C.ivory + ';"><tr><td align="center" style="padding:24px 12px;">');
   h.push('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;">');
 
   // masthead
   h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px 28px 22px;">' +
-    '<div style="font-family:' + SANS + ';font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:' + C.gold + ';">The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
-    '<div style="font-family:' + SERIF + ';font-size:34px;line-height:1.1;color:' + C.ivory + ';margin-top:10px;">British Review <i>of</i> Reviews</div>' +
-    '<div style="font-family:' + SANS + ';font-size:14px;line-height:1.5;color:#C9CEDC;margin-top:10px;">Every non-fiction book reviewed in the week’s papers and literary magazines, one line each. ' + n + ' books this week.</div>' +
+    '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:#E2C891;">Free every Monday from The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
+    '<h1 style="margin:10px 0 0;font-weight:normal;font-family:' + SERIF + ';font-size:36px;line-height:1.1;color:#FFFFFF;">British Review <i>of</i> Reviews</h1>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.5;color:#E6E9F1;margin-top:10px;">Every non-fiction book reviewed in the week’s papers and literary magazines, one line each. ' + n + ' books this week.</div>' +
     '</td></tr>');
 
   if (isWelcome) {
@@ -527,9 +527,9 @@ function renderEmail_(ed, sub, isWelcome) {
   // picks
   if (picks.books.length) {
     h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:22px 28px 10px;">' +
-      '<div style="font-family:' + SANS + ';font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:' + C.goldDeep + ';font-weight:bold;">' +
+      '<div style="font-family:' + SANS + ';font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:' + C.goldDeep + ';font-weight:bold;">' +
       (picks.mine ? '&#9733; Picked for you: ' + esc_(sub.subjects.join(', ')) : '&#9733; This week’s leads') + '</div>' +
-      '<div style="font-family:' + SANS + ';font-size:13px;color:' + C.mist + ';margin-top:4px;">' +
+      '<div style="font-family:' + SANS + ';font-size:15px;color:' + C.mist + ';margin-top:4px;">' +
       (picks.mine ? 'Books in your subjects with the makings of a screen project, and why.' : 'Books with the makings of a screen project, and why. <a href="' + prefs + '" style="color:' + C.goldDeep + ';">Choose your subjects</a> to get your own picks.') +
       '</div></td></tr>');
     picks.books.forEach(function (b) {
@@ -553,13 +553,15 @@ function renderEmail_(ed, sub, isWelcome) {
   // Ariel CTA
   h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px;">' +
     '<div style="font-family:' + SERIF + ';font-size:24px;line-height:1.2;color:' + C.ivory + ';">This is one week of books.</div>' +
-    '<div style="font-family:' + SANS + ';font-size:14px;line-height:1.6;color:#C9CEDC;margin-top:10px;">The Ariel does this every day, for your slate: books, journalism, rights deals and agents’ lists, filtered to what you develop, with research briefs on the stories you want to chase.</div>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.6;color:#E6E9F1;margin-top:10px;">The Ariel does this every day, for your slate: books, journalism, rights deals and agents’ lists, filtered to what you develop, with research briefs on the stories you want to chase.</div>' +
     '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;"><tr><td bgcolor="' + C.gold + '" style="background-color:' + C.gold + ';border-radius:2px;">' +
     '<a href="' + CONFIG.ARIEL_SITE + '?utm_source=review-of-reviews&utm_medium=email" style="display:inline-block;padding:12px 22px;font-family:' + SANS + ';font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:' + C.ink + ';text-decoration:none;font-weight:bold;">See what The Ariel does</a>' +
     '</td></tr></table></td></tr>');
 
   // footer
-  h.push('<tr><td style="padding:22px 28px;font-family:' + SANS + ';font-size:12px;line-height:1.6;color:' + C.mist + ';">' +
+  h.push('<tr><td style="padding:20px 28px 0;font-family:' + SANS + ';font-size:16px;line-height:1.5;color:' + C.body + ';">' +
+    '<b>Know someone who\u2019d like this?</b> Forward it on. They can sign up free at <a href="' + CONFIG.SITE + '" style="color:' + C.goldDeep + ';">theariel.tv/reviews</a>.</td></tr>');
+  h.push('<tr><td style="padding:16px 28px 22px;font-family:' + SANS + ';font-size:14px;line-height:1.6;color:' + C.mist + ';">' +
     'Summaries are our own one-line descriptions of each review. Follow the links to read the reviews in full.<br>' +
     'Not yet covered: the Telegraph, TLS and New Statesman.<br><br>' +
     'You’re getting this because you signed up at theariel.tv. ' +
@@ -568,7 +570,7 @@ function renderEmail_(ed, sub, isWelcome) {
     '<a href="' + unsub + '" style="color:' + C.mist + ';">Unsubscribe</a><br>' +
     'The Ariel &middot; <a href="mailto:hello@theariel.tv" style="color:' + C.mist + ';">hello@theariel.tv</a></td></tr>');
 
-  h.push('</table></td></tr></table></body></html>');
+  h.push('</table></td></tr></table></div></body></html>');
 
   var t = [CONFIG.NAME + ' - ' + dateLabel, ''];
   if (picks.books.length) {
@@ -593,12 +595,12 @@ function bookBlock_(b, withWhy) {
   var links = b.reviews.map(function (r) {
     return '<a href="' + esc_(r.url) + '" style="color:' + C.goldDeep + ';text-decoration:underline;">' + esc_(r.pub) + '</a>';
   }).join(' &middot; ');
-  return '<div style="font-family:' + SANS + ';font-size:15px;line-height:1.4;color:' + C.ink + ';font-weight:bold;">' +
+  return '<div style="font-family:' + SANS + ';font-size:17px;line-height:1.35;color:' + C.ink + ';font-weight:bold;">' +
     (withWhy || !b.lead ? '' : '<span style="color:' + C.gold + ';">&#9733; </span>') + esc_(b.book) +
-    (b.author ? ' <span style="font-weight:normal;color:' + C.mist + ';font-size:13px;">' + esc_(b.author) + '</span>' : '') + '</div>' +
-    '<div style="font-family:' + SANS + ';font-size:14px;line-height:1.5;color:' + C.body + ';margin-top:3px;">' + esc_(b.line) + '</div>' +
-    (withWhy && b.why ? '<div style="font-family:' + SANS + ';font-size:13px;line-height:1.5;color:' + C.ink + ';margin-top:4px;"><b style="color:' + C.goldDeep + ';">Why it’s a lead:</b> ' + esc_(b.why) + '</div>' : '') +
-    '<div style="font-family:' + SANS + ';font-size:12px;color:' + C.mist + ';margin-top:4px;">Reviewed in ' + links +
+    (b.author ? ' <span style="font-weight:normal;color:' + C.mist + ';font-size:15px;">' + esc_(b.author) + '</span>' : '') + '</div>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.55;color:' + C.body + ';margin-top:4px;">' + esc_(b.line) + '</div>' +
+    (withWhy && b.why ? '<div style="font-family:' + SANS + ';font-size:15px;line-height:1.5;color:' + C.ink + ';margin-top:6px;padding:8px 10px;background-color:#FFFFFF;border-left:3px solid ' + C.gold + ';"><b style="color:' + C.goldDeep + ';">Why it’s a lead:</b> ' + esc_(b.why) + '</div>' : '') +
+    '<div style="font-family:' + SANS + ';font-size:14px;color:' + C.mist + ';margin-top:6px;">Reviewed in ' + links +
     (b.reviews.length > 1 ? ' <span style="color:' + C.goldDeep + ';font-weight:bold;">(' + b.reviews.length + ' papers)</span>' : '') + '</div>';
 }
 
@@ -635,16 +637,16 @@ function admin_(b) {
 /* ───────────────────────── pages ───────────────────────── */
 
 function page_(o) {
-  var html = '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<title>' + esc_(o.title) + ' - ' + CONFIG.NAME + '</title>' +
+  var html = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+    '<base target="_top"><title>' + esc_(o.title) + ' - ' + CONFIG.NAME + '</title>' +
     '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">' +
-    '<style>body{margin:0;background:' + C.ivory + ';color:' + C.body + ';font-family:Lato,Arial,sans-serif;font-weight:300;font-size:17px;line-height:1.6}' +
-    '.top{background:' + C.ink + ';color:' + C.ivory + ';padding:22px 16px}.top a{color:' + C.gold + ';text-decoration:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase}' +
+    '<style>body{margin:0;background:' + C.ivory + ';color:' + C.body + ';font-family:Lato,Arial,sans-serif;font-weight:400;font-size:18px;line-height:1.6}' +
+    '.top{background:' + C.ink + ';color:#FFFFFF;padding:22px 16px}.top a{color:#E2C891;text-decoration:none;font-size:15px;font-weight:700;letter-spacing:.04em}' +
     '.wrap{max-width:560px;margin:0 auto;padding:36px 16px}h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.1;color:' + C.ink + ';margin:0 0 14px}' +
-    'a{color:' + C.goldDeep + '}.btn{display:inline-block;background:' + C.ink + ';color:' + C.ivory + ';padding:12px 22px;text-decoration:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:0;border-radius:2px;cursor:pointer;font-family:Lato,Arial,sans-serif}' +
-    '.small{font-size:14px;color:' + C.mist + '}.chks{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;margin:16px 0 20px}.chk{font-size:15px}</style></head><body>' +
-    '<div class="top"><div style="max-width:560px;margin:0 auto"><a href="' + CONFIG.SITE + '">British Review of Reviews &middot; The Ariel</a></div></div>' +
-    '<div class="wrap"><h1>' + esc_(o.title) + '</h1>' + o.body + '</div></body></html>';
+    'a{color:' + C.goldDeep + '}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid ' + C.gold + ';outline-offset:2px}.btn{display:inline-block;background:' + C.gold + ';color:' + C.ink + ';padding:14px 22px;text-decoration:none;font-size:17px;font-weight:900;border:0;border-radius:3px;cursor:pointer;font-family:Lato,Arial,sans-serif;min-height:48px}' +
+    '.small{font-size:16px;color:' + C.mist + '}.chks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:16px 0 20px}.chk{font-size:17px;display:flex;gap:8px;align-items:center}.chk input{width:22px;height:22px}</style></head><body>' +
+    '<header class="top"><div style="max-width:560px;margin:0 auto"><a href="' + CONFIG.SITE + '" target="_top">British Review of Reviews &middot; The Ariel</a></div></header>' +
+    '<main class="wrap"><h1>' + esc_(o.title) + '</h1>' + o.body + '</main></body></html>';
   return HtmlService.createHtmlOutput(html).setTitle(o.title).addMetaTag('viewport', 'width=device-width, initial-scale=1');
 }
 
