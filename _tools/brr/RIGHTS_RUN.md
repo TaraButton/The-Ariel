@@ -44,5 +44,11 @@ screen rights readers asked about, records what agents told us, and lets the bac
    For `pass_interest` requests: tell Tara (the Rights Pass link may not be live yet).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open
    request: queue one short, friendly chaser. Never more than one chaser per agency per book.
-5. **Summary** to Tara (SendUserMessage): answers recorded, requesters told, emails queued (and when they
+5. **Rights Pass holders.** If the Stripe connector is available, list subscriptions/checkout sessions for the
+   Rights Pass payment link (https://buy.stripe.com/3cI28j9neam4fwidKn3ks05, £29/month). Add each new paying
+   customer's email with `op: add_member`, type `pass`. If a subscription has ended, re-add with `until`
+   set to its end date. If Stripe is not reachable, look for Stripe payment emails in Tara's Gmail
+   (from:stripe.com "Rights Pass" newer_than:3d) and do the same. Send each new holder a short welcome
+   from tara@theariel.tv via `op: queue_email` (kind `pass_welcome`).
+6. **Summary** to Tara (SendUserMessage): answers recorded, requesters told, emails queued (and when they
    send), introductions drafted, anything that needs her.
