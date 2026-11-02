@@ -381,7 +381,7 @@ def page(ed, eds, is_index):
         </div>
         <div class="brr-row">
           <div><label for="rq-company">Company</label><input type="text" id="rq-company" name="company" autocomplete="organization"></div>
-          <div><label for="rq-role">What do you do?</label><select id="rq-role" name="role"><option value="">Choose (optional)</option>{"".join(f'<option value="{E(r)}">{E(r)}</option>' for r in ROLES)}</select></div>
+          <div><label for="rq-role">What do you do? <span class="req">*</span></label><select id="rq-role" name="role" required><option value="">Choose one</option>{"".join(f'<option value="{E(r)}">{E(r)}</option>' for r in ROLES)}</select></div>
         </div>
         <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit" class="brr-submit">Check the rights</button>

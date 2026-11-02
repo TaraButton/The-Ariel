@@ -65,6 +65,8 @@
     var email = (form.querySelector('[name=email]').value || '').trim();
     status.className = 'rights-status';
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { status.textContent = 'Please enter a valid email address.'; status.classList.add('error'); form.querySelector('[name=email]').focus(); return; }
+    var roleSel = form.querySelector('[name=role]');
+    if (!roleSel.value) { status.textContent = 'Please tell us what you do.'; status.classList.add('error'); roleSel.focus(); return; }
     store('brr_email', email);
     var payload = {
       action: 'check_rights', book_id: current.id, book: current.book, author: current.author, email: email,

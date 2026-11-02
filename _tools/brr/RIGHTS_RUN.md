@@ -40,7 +40,8 @@ screen rights readers asked about, records what agents told us, and lets the bac
    `asked_at`, and an agent with a verified email in the agents file, queue one warm email per agency
    (`op: queue_email`, kind `agent_ask`, ref = comma-separated book_ids). Wording: open with "Our producers have asked us to find out the film rights status for <book>." ONLY when
    a requester is a producer/development exec/commissioner or member/pass holder (use the real count:
-   "Two of our producers..."); otherwise "Readers of the British Review of Reviews have asked us...".
+   "Two of our producers..."); otherwise lead with "We're finding out the film rights status of the books in this week's British Review of
+   Reviews for the producers we work with, and <book> is one of them." Never use "readers".
    See agent_email_template.md. One line back is plenty.
    For `pass_interest` requests: tell Tara (the Rights Pass link may not be live yet).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open
