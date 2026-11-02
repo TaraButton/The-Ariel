@@ -372,17 +372,11 @@ def page(ed, eds, is_index):
     <div data-pane="form">
       <h2 id="rights-title">Check the screen rights</h2>
       <p class="rights-book"><span data-fill="book"></span></p>
-      <p>We&#8217;ll ask the author&#8217;s agent whether film and TV rights are available and email you the answer, usually within a week. If they are, we can introduce you.</p>
+      <p>We&#8217;ll ask the author&#8217;s agent whether film and TV rights are available and email you the answer, usually within a week. If they are free, we can introduce you.</p>
       <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks: just use the email address your Ariel emails come to. No password needed.</p>
       <form novalidate>
-        <div class="brr-row">
-          <div><label for="rq-email">Email <span class="req">*</span></label><input type="email" id="rq-email" name="email" required autocomplete="email"></div>
-          <div><label for="rq-name">Name</label><input type="text" id="rq-name" name="name" autocomplete="name"></div>
-        </div>
-        <div class="brr-row">
-          <div><label for="rq-company">Company</label><input type="text" id="rq-company" name="company" autocomplete="organization"></div>
-          <div><label for="rq-role">What do you do? <span class="req">*</span></label><select id="rq-role" name="role" required><option value="">Choose one</option>{"".join(f'<option value="{E(r)}">{E(r)}</option>' for r in ROLES)}</select></div>
-        </div>
+        <label for="rq-email">Your email <span class="req">*</span></label>
+        <input type="email" id="rq-email" name="email" required autocomplete="email" placeholder="We&#8217;ll email you the answer">
         <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit" class="brr-submit">Check the rights</button>
         <p class="rights-status" role="status" aria-live="polite"></p>

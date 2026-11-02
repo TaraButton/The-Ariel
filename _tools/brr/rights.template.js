@@ -42,7 +42,7 @@
     pane('form');
     var em = form.querySelector('[name=email]');
     if (!em.value && store('brr_email')) em.value = store('brr_email');
-    setTimeout(function () { (em.value ? form.querySelector('[name=name]') : em).focus(); }, 30);
+    setTimeout(function () { (em.value ? form.querySelector('button[type=submit]') : em).focus(); }, 30);
     beacon({ book_id: current.id, kind: 'check_rights_open', where: TOKEN ? 'email' : 'page' });
   }
   function close() {
@@ -65,13 +65,10 @@
     var email = (form.querySelector('[name=email]').value || '').trim();
     status.className = 'rights-status';
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { status.textContent = 'Please enter a valid email address.'; status.classList.add('error'); form.querySelector('[name=email]').focus(); return; }
-    var roleSel = form.querySelector('[name=role]');
-    if (!roleSel.value) { status.textContent = 'Please tell us what you do.'; status.classList.add('error'); roleSel.focus(); return; }
     store('brr_email', email);
     var payload = {
       action: 'check_rights', book_id: current.id, book: current.book, author: current.author, email: email,
-      name: form.querySelector('[name=name]').value, company: form.querySelector('[name=company]').value,
-      role: form.querySelector('[name=role]').value, website: form.querySelector('[name=website]').value,
+      name: '', company: '', role: '', website: form.querySelector('[name=website]').value,
       source: TOKEN ? 'email' : 'page', edition_id: EDITION, t: TOKEN, want: want || ''
     };
     var btn = form.querySelector('button[type=submit]');
