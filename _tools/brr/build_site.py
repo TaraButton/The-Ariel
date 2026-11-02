@@ -59,7 +59,7 @@ def signup_form(fid, source):
     <div><label for="{fid}-email">Email <span class="req">*</span></label><input type="email" id="{fid}-email" name="email" required autocomplete="email" placeholder="you@company.com"></div>
     <div><label for="{fid}-role">What do you do?</label><select id="{fid}-role" name="role"><option value="">Choose (optional)</option>{roles}</select></div>
   </div>
-  <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the best leads for these at the top of your email.</span></legend>{chips}</fieldset>
+  <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend>{chips}</fieldset>
   <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
   <button type="submit" class="brr-submit">Sign up free</button>
   <p class="brr-status" role="status" aria-live="polite"></p>
@@ -184,7 +184,7 @@ FILTER_JS = r"""
     var info=document.getElementById('pickinfo');
     if(info){
       var c=document.querySelectorAll('.book.picked:not([hidden])').length;
-      info.textContent = picks.length ? (c+' lead'+(c===1?'':'s')+' in your subjects, with why each could be a screen project.') : 'Choose what you develop to see the leads for you, with why each could be a screen project.';
+      info.textContent = picks.length ? (c+' book'+(c===1?'':'s')+' with screen potential in your subjects. Rights not checked: for rights-available books from agents, sign up to The Ariel.') : 'Choose what you develop to see the books with screen potential, and why.';
     }
   }
   document.querySelectorAll('[data-pick]').forEach(function(b){
@@ -225,9 +225,9 @@ def example_card(ed):
     b = leads[0]
     au = f' <span class="au">{E(b.get("author"))}</span>' if b.get("author") else ""
     revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener">{E(r["pub"])}</a>' for r in b["reviews"])
-    return (f'<div class="example"><p class="example-label">Example from this week: a lead for {E(b["subject"].lower())} producers</p>'
+    return (f'<div class="example"><p class="example-label">Example from this week: a {E(b["subject"].lower())} pick</p>'
             f'<p class="ex-title"><span class="star" aria-hidden="true">&#9733;</span> {E(b["book"])}{au}</p><p class="line">{E(b["line"])}</p>'
-            f'<p class="why"><b>Why it&#8217;s a lead</b>{E(b["why"])}</p><p class="revs">Reviewed in {revs}</p></div>')
+            f'<p class="why"><b>Screen potential</b>{E(b["why"])}</p><p class="revs">Reviewed in {revs}</p></div>')
 
 
 def book_li(b):
@@ -235,8 +235,8 @@ def book_li(b):
     revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener">{E(r["pub"])}</a>' for r in b["reviews"])
     multi = f'<span class="multi">{len(b["reviews"])} papers</span>' if len(b["reviews"]) > 1 else ""
     au = f' <span class="au">{E(b.get("author"))}</span>' if b.get("author") else ""
-    star = '<span class="star" aria-hidden="true">&#9733;</span> <span class="sr-only">Lead: </span>' if b.get("lead") else ""
-    why = f'<p class="why"><b>Why it&#8217;s a lead</b>{E(b.get("why"))}</p>' if b.get("lead") and b.get("why") else ""
+    star = '<span class="star" aria-hidden="true">&#9733;</span> <span class="sr-only">Screen potential: </span>' if b.get("lead") else ""
+    why = f'<p class="why"><b>Screen potential</b>{E(b.get("why"))}</p>' if b.get("lead") and b.get("why") else ""
     cls = "book lead" if b.get("lead") else "book"
     return (f'<li class="{cls}" data-subject="{E(b["subject"])}" data-papers="{papers}">'
             f'<h3>{star}<span>{E(b["book"])}</span>{au}</h3><p class="line">{E(b["line"])}</p>{why}'
@@ -262,7 +262,7 @@ def edition_body(ed):
         secs.append(f'<section class="subject" id="{slug(s)}"><header><h2>{E(s)}</h2><span class="n">{len(lst)}</span></header>'
                     f'<ol>{"".join(book_li(b) for b in lst)}</ol></section>')
     return f'''<div class="controls">
-  <div class="crow" role="group" aria-labelledby="lbl-pick"><span class="lbl" id="lbl-pick">Show the leads for what I develop</span>{pick_btns}</div>
+  <div class="crow" role="group" aria-labelledby="lbl-pick"><span class="lbl" id="lbl-pick">Show the books with screen potential for what I develop</span>{pick_btns}</div>
   <p class="pickinfo" id="pickinfo"></p>
   <div class="crow" role="group" aria-labelledby="lbl-paper"><span class="lbl" id="lbl-paper">Filter by paper</span>{paper_btns}</div>
   <nav class="crow gnav" aria-label="Jump to subject"><span class="lbl">Jump to a subject</span>{gnav}</nav>
@@ -312,7 +312,7 @@ def page(ed, eds, is_index):
     <ul class="promises">
       <li>Free to everyone, every week</li>
       <li>{n} books this week from {len(papers_of(ed))} publications</li>
-      <li>Tell us what you develop and we flag the leads for you, with why each could be a screen project</li>
+      <li>Tell us what you develop and we flag the books with screen potential, and why</li>
     </ul>
   </div>
   <div class="hero-example">{example_card(ed)}</div>
@@ -322,13 +322,13 @@ def page(ed, eds, is_index):
   <div class="edition-head"><h2>This week&#8217;s books</h2><p class="meta">{n} books &middot; {E(ed.get("window", ""))}</p></div>
   {edition_body(ed)}
   <div class="cta">
-    <h2>This is one week of books.</h2>
-    <p>The Ariel does this every day, for your slate: books, journalism, rights deals and agents&#8217; lists, filtered to what you develop, with research briefs on the stories you want to chase.</p>
-    <a href="/?utm_source=review-of-reviews&amp;utm_medium=web#what">See what The Ariel does</a>
+    <h2>Want books whose rights are available?</h2>
+    <p>We don&#8217;t check rights for the Review. Sign up to The Ariel and get a first look at rights-available books directly from literary agents, matched to what you develop, plus books, journalism and rights deals every day for your slate.</p>
+    <a href="/?utm_source=review-of-reviews&amp;utm_medium=web#book">Sign up to The Ariel</a>
   </div>
   <div class="inline-signup brr-card"><h2>Get next Monday&#8217;s edition free</h2><p class="card-sub">Free, every week. Unsubscribe in one click.</p>{form_bottom}</div>
   <div class="archive"><h2>Past editions</h2><ul>{archive}</ul></div>
-  <p class="note">Summaries are our own one-line descriptions of each review; follow the links to read the reviews in full. Sources this week: {E(", ".join(sorted({r["pub"] for b in ed["books"] for r in b["reviews"]})))}. Not yet covered: the Telegraph, TLS and New Statesman.</p>
+  <p class="note">Summaries are our own one-line descriptions of each review; follow the links to read the reviews in full. &#9733; marks books we think have screen potential. We haven&#8217;t checked who holds the film and TV rights, and some may already be optioned. For a first look at rights-available books directly from agents, <a href="/#book">sign up to The Ariel</a>. Sources this week: {E(", ".join(sorted({r["pub"] for b in ed["books"] for r in b["reviews"]})))}. Not yet covered: the Telegraph, TLS and New Statesman.</p>
 </div></main>
 <footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="mailto:hello@theariel.tv">hello@theariel.tv</a></footer>
 <script>{FILTER_JS}</script>

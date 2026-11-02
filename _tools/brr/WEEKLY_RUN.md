@@ -43,8 +43,10 @@ The Ariel HQ/Platform/review-of-reviews/.
    - **lead**: true only if the book has the makings of a film or TV project (a strong central
      figure, a crime or mystery, a secret world, an untold story, a dramatic event). Aim for
      10-20% of books, spread across subjects.
-   - **why** (leads only): one short sentence on why it could be a screen project, drawn from the
-     page, not invented facts.
+   - **why** (leads only): one short sentence on its screen potential (character, world, event,
+     untold angle), drawn from the page, not invented facts. Shown to readers as "Screen potential".
+     NEVER say or hint that rights are available, unoptioned, "worth checking", or that the author's
+     books get adapted. We have not checked rights; the page and email say so.
    Merge the same book reviewed in several papers into one entry with all its review links (order:
    FT, Times/Sunday Times, Guardian/Observer, Spectator, Economist, LRB, Literary Review). Literary
    Review is monthly: include its new issue in the first edition after it appears.

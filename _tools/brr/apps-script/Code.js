@@ -528,9 +528,9 @@ function renderEmail_(ed, sub, isWelcome) {
   if (picks.books.length) {
     h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:22px 28px 10px;">' +
       '<div style="font-family:' + SANS + ';font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:' + C.goldDeep + ';font-weight:bold;">' +
-      (picks.mine ? '&#9733; Picked for you: ' + esc_(sub.subjects.join(', ')) : '&#9733; This week’s leads') + '</div>' +
+      (picks.mine ? '&#9733; Picked for you: ' + esc_(sub.subjects.join(', ')) : '&#9733; This week’s screen picks') + '</div>' +
       '<div style="font-family:' + SANS + ';font-size:15px;color:' + C.mist + ';margin-top:4px;">' +
-      (picks.mine ? 'Books in your subjects with the makings of a screen project, and why.' : 'Books with the makings of a screen project, and why. <a href="' + prefs + '" style="color:' + C.goldDeep + ';">Choose your subjects</a> to get your own picks.') +
+      (picks.mine ? 'Books in your subjects with screen potential, and why. We haven\u2019t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">sign up to The Ariel</a>.' : 'Books with screen potential, and why. We haven\u2019t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">sign up to The Ariel</a>. <a href="' + prefs + '" style="color:' + C.goldDeep + ';">Choose your subjects</a> to get your own picks.') +
       '</div></td></tr>');
     picks.books.forEach(function (b) {
       h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:10px 28px;">' + bookBlock_(b, true) + '</td></tr>');
@@ -552,17 +552,17 @@ function renderEmail_(ed, sub, isWelcome) {
 
   // Ariel CTA
   h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px;">' +
-    '<div style="font-family:' + SERIF + ';font-size:24px;line-height:1.2;color:' + C.ivory + ';">This is one week of books.</div>' +
-    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.6;color:#E6E9F1;margin-top:10px;">The Ariel does this every day, for your slate: books, journalism, rights deals and agents’ lists, filtered to what you develop, with research briefs on the stories you want to chase.</div>' +
+    '<div style="font-family:' + SERIF + ';font-size:24px;line-height:1.2;color:' + C.ivory + ';">Want books whose rights are available?</div>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.6;color:#E6E9F1;margin-top:10px;">We don’t check rights for the Review. Sign up to The Ariel and get a first look at rights-available books directly from literary agents, matched to what you develop, plus books, journalism and rights deals every day for your slate.</div>' +
     '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;"><tr><td bgcolor="' + C.gold + '" style="background-color:' + C.gold + ';border-radius:2px;">' +
-    '<a href="' + CONFIG.ARIEL_SITE + '?utm_source=review-of-reviews&utm_medium=email" style="display:inline-block;padding:12px 22px;font-family:' + SANS + ';font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:' + C.ink + ';text-decoration:none;font-weight:bold;">See what The Ariel does</a>' +
+    '<a href="' + CONFIG.ARIEL_SITE + '?utm_source=review-of-reviews&utm_medium=email#book" style="display:inline-block;padding:13px 22px;font-family:' + SANS + ';font-size:16px;color:' + C.ink + ';text-decoration:none;font-weight:bold;">Sign up to The Ariel</a>' +
     '</td></tr></table></td></tr>');
 
   // footer
   h.push('<tr><td style="padding:20px 28px 0;font-family:' + SANS + ';font-size:16px;line-height:1.5;color:' + C.body + ';">' +
     '<b>Know someone who\u2019d like this?</b> Forward it on. They can sign up free at <a href="' + CONFIG.SITE + '" style="color:' + C.goldDeep + ';">theariel.tv/reviews</a>.</td></tr>');
   h.push('<tr><td style="padding:16px 28px 22px;font-family:' + SANS + ';font-size:14px;line-height:1.6;color:' + C.mist + ';">' +
-    'Summaries are our own one-line descriptions of each review. Follow the links to read the reviews in full.<br>' +
+    'Summaries are our own one-line descriptions of each review. Follow the links to read the reviews in full. &#9733; marks books we think have screen potential; we haven\u2019t checked who holds the film and TV rights, and some may already be optioned. For a first look at rights-available books directly from agents, sign up to The Ariel.<br>' +
     'Not yet covered: the Telegraph, TLS and New Statesman.<br><br>' +
     'You’re getting this because you signed up at theariel.tv. ' +
     '<a href="' + webVersion + '" style="color:' + C.mist + ';">View on the web</a> &middot; ' +
@@ -574,8 +574,8 @@ function renderEmail_(ed, sub, isWelcome) {
 
   var t = [CONFIG.NAME + ' - ' + dateLabel, ''];
   if (picks.books.length) {
-    t.push(picks.mine ? 'PICKED FOR YOU (' + sub.subjects.join(', ') + ')' : 'THIS WEEK’S LEADS');
-    picks.books.forEach(function (b) { t.push('* ' + b.book + (b.author ? ' - ' + b.author : '') + ': ' + b.line + (b.why ? ' Why: ' + b.why : '') + ' ' + b.reviews[0].url); });
+    t.push(picks.mine ? 'PICKED FOR YOU (' + sub.subjects.join(', ') + ')' : 'THIS WEEK’S SCREEN PICKS');
+    picks.books.forEach(function (b) { t.push('* ' + b.book + (b.author ? ' - ' + b.author : '') + ': ' + b.line + (b.why ? ' Screen potential: ' + b.why : '') + ' ' + b.reviews[0].url); });
     t.push('');
   }
   SUBJECTS.forEach(function (s) {
@@ -585,7 +585,7 @@ function renderEmail_(ed, sub, isWelcome) {
     list.forEach(function (b) { t.push('- ' + b.book + (b.author ? ' - ' + b.author : '') + ': ' + b.line + ' ' + b.reviews[0].url); });
     t.push('');
   });
-  t.push('See what The Ariel does: ' + CONFIG.ARIEL_SITE);
+  t.push('Want books whose rights are available? Get a first look directly from literary agents: sign up to The Ariel at ' + CONFIG.APPLY_URL);
   t.push('Change your subjects: ' + prefs);
   t.push('Unsubscribe: ' + unsub);
   return { subject: subject, html: h.join(''), text: t.join('\n') };
@@ -599,7 +599,7 @@ function bookBlock_(b, withWhy) {
     (withWhy || !b.lead ? '' : '<span style="color:' + C.gold + ';">&#9733; </span>') + esc_(b.book) +
     (b.author ? ' <span style="font-weight:normal;color:' + C.mist + ';font-size:15px;">' + esc_(b.author) + '</span>' : '') + '</div>' +
     '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.55;color:' + C.body + ';margin-top:4px;">' + esc_(b.line) + '</div>' +
-    (withWhy && b.why ? '<div style="font-family:' + SANS + ';font-size:15px;line-height:1.5;color:' + C.ink + ';margin-top:6px;padding:8px 10px;background-color:#FFFFFF;border-left:3px solid ' + C.gold + ';"><b style="color:' + C.goldDeep + ';">Why it’s a lead:</b> ' + esc_(b.why) + '</div>' : '') +
+    (withWhy && b.why ? '<div style="font-family:' + SANS + ';font-size:15px;line-height:1.5;color:' + C.ink + ';margin-top:6px;padding:8px 10px;background-color:#FFFFFF;border-left:3px solid ' + C.gold + ';"><b style="color:' + C.goldDeep + ';">Screen potential:</b> ' + esc_(b.why) + '</div>' : '') +
     '<div style="font-family:' + SANS + ';font-size:14px;color:' + C.mist + ';margin-top:6px;">Reviewed in ' + links +
     (b.reviews.length > 1 ? ' <span style="color:' + C.goldDeep + ';font-weight:bold;">(' + b.reviews.length + ' papers)</span>' : '') + '</div>';
 }
