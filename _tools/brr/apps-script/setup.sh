@@ -13,7 +13,10 @@ OUT=$(clasp deploy --description "Review of Reviews v1")
 echo "$OUT"
 DEPLOY_ID=$(echo "$OUT" | grep -oE 'AKfycb[A-Za-z0-9_-]+' | head -1)
 echo "$DEPLOY_ID" > .deployment-id
+URL="https://script.google.com/macros/s/$DEPLOY_ID/exec"
+HQ="$HOME/Cowork/AI_Consulting/The Ariel HQ/Platform/review-of-reviews"
+mkdir -p "$HQ" && echo "$URL" > "$HQ/backend-url.txt"
 echo ""
-echo "=== Done ==="
-echo "Web app URL: https://script.google.com/macros/s/$DEPLOY_ID/exec"
-echo "Next: run   clasp open   then in the editor run setupSheet, then installTriggers (approve the permission prompts)."
+echo "=== Done. The address is saved for Claude in The Ariel HQ. ==="
+echo "Opening the script editor now..."
+clasp open || true
