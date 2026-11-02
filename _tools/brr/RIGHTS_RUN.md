@@ -38,9 +38,10 @@ screen rights readers asked about, records what agents told us, and lets the bac
    the Rights row notes.
 3. **Open requests.** `op: open_requests`. For each open request whose book has status `unknown` and no
    `asked_at`, and an agent with a verified email in the agents file, queue one warm email per agency
-   (`op: queue_email`, kind `agent_ask`, ref = comma-separated book_ids). Wording: a reader of the
-   British Review of Reviews has asked whether the screen rights to <book> are available; use the real
-   role/number per the rules above ("a producer has asked" only when true). One line back is plenty.
+   (`op: queue_email`, kind `agent_ask`, ref = comma-separated book_ids). Wording: open with "Our producers have asked us to find out the film rights status for <book>." ONLY when
+   a requester is a producer/development exec/commissioner or member/pass holder (use the real count:
+   "Two of our producers..."); otherwise "Readers of the British Review of Reviews have asked us...".
+   See agent_email_template.md. One line back is plenty.
    For `pass_interest` requests: tell Tara (the Rights Pass link may not be live yet).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open
    request: queue one short, friendly chaser. Never more than one chaser per agency per book.
