@@ -74,6 +74,7 @@ function setupSheet() {
     props.setProperty('TEST_ONLY_TO', CONFIG.ALERT_TO);
   }
   ss.setSpreadsheetTimeZone('Europe/London');
+  setupRights_();
   Logger.log('PUBLISH_SECRET=' + props.getProperty('PUBLISH_SECRET'));
   Logger.log('TEST_ONLY_TO=' + props.getProperty('TEST_ONLY_TO'));
   Logger.log('From alias available: ' + aliasOk_());
@@ -116,6 +117,8 @@ function doPost(e) {
   var action = String(body.action || '');
   try {
     if (action === 'subscribe') return json_(subscribe_(body));
+    if (action === 'click') return json_(logClick_(body));
+    if (action === 'check_rights') return json_(checkRights_(body));
     if (action === 'publish_edition') return json_(publishEdition_(body));
     if (action === 'admin') return json_(admin_(body));
     return json_({ ok: false, error: 'unknown_action' });
@@ -135,6 +138,7 @@ function doGet(e) {
     if (action === 'prefs') return page_(prefsPage_(p.t));
     if (action === 'saveprefs') return page_(savePrefs_(p.t, p.s));
     if (action === 'preview') return previewEmail_(p);
+    if (action === 'rights_status') return json_(rightsStatus_());
     if (action === 'health') return json_({ ok: true, name: CONFIG.NAME, alias_ok: aliasOk_(), test_only_to: testOnly_() });
     return page_({ title: CONFIG.NAME, body: '<p>Read the latest edition at <a href="' + CONFIG.SITE + '">theariel.tv/reviews</a>.</p>' });
   } catch (err) {
@@ -387,6 +391,7 @@ function sendDueEditions() {
   if (!lock.tryLock(1000)) return;
   try {
     var start = Date.now();
+    try { if (!SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Config')) setupRights_(); else ensureTriggers_(); } catch (err) { log_('error', 'setupRights: ' + err); }
     try { pullLatestEdition(); } catch (err) { log_('error', 'pull: ' + err); }
     var esh = sheet_('Editions');
     var now = new Date();
@@ -533,7 +538,7 @@ function renderEmail_(ed, sub, isWelcome) {
       (picks.mine ? 'Books in your subjects with screen potential, and why. We haven\u2019t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">sign up to The Ariel</a>.' : 'Books with screen potential, and why. We haven\u2019t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">sign up to The Ariel</a>. <a href="' + prefs + '" style="color:' + C.goldDeep + ';">Choose your subjects</a> to get your own picks.') +
       '</div></td></tr>');
     picks.books.forEach(function (b) {
-      h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:10px 28px;">' + bookBlock_(b, true) + '</td></tr>');
+      h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:10px 28px;">' + bookBlock_(b, true, { edition_id: ed.edition_id, token: sub.token }) + '</td></tr>');
     });
     h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:6px 28px 22px;"></td></tr>');
   }
@@ -546,7 +551,7 @@ function renderEmail_(ed, sub, isWelcome) {
       '<div style="font-family:' + SERIF + ';font-style:italic;font-size:24px;color:' + C.ink + ';border-bottom:2px solid ' + C.ink + ';padding-bottom:4px;">' +
       esc_(s) + ' <span style="font-family:' + SANS + ';font-style:normal;font-size:12px;color:' + C.mist + ';">' + list.length + '</span></div></td></tr>');
     list.forEach(function (b) {
-      h.push('<tr><td bgcolor="' + C.cream + '" style="background-color:' + C.cream + ';padding:10px 28px;border-bottom:1px solid ' + C.line + ';">' + bookBlock_(b, false) + '</td></tr>');
+      h.push('<tr><td bgcolor="' + C.cream + '" style="background-color:' + C.cream + ';padding:10px 28px;border-bottom:1px solid ' + C.line + ';">' + bookBlock_(b, false, { edition_id: ed.edition_id, token: sub.token }) + '</td></tr>');
     });
   });
 
@@ -591,17 +596,29 @@ function renderEmail_(ed, sub, isWelcome) {
   return { subject: subject, html: h.join(''), text: t.join('\n') };
 }
 
-function bookBlock_(b, withWhy) {
-  var links = b.reviews.map(function (r) {
-    return '<a href="' + esc_(r.url) + '" style="color:' + C.goldDeep + ';text-decoration:underline;">' + esc_(r.pub) + '</a>';
+function bookId_(b) {
+  return b.book_id || String((b.book || '') + ' ' + (b.author || '')).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
+}
+
+function bookBlock_(b, withWhy, ctx) {
+  ctx = ctx || {};
+  var bid = bookId_(b);
+  var go = function (i) {
+    return CONFIG.SITE + 'go.html?e=' + encodeURIComponent(ctx.edition_id || '') + '&b=' + encodeURIComponent(bid) + '&u=' + i +
+      (ctx.token ? '&t=' + encodeURIComponent(ctx.token) : '');
+  };
+  var links = b.reviews.map(function (r, i) {
+    return '<a href="' + esc_(ctx.edition_id ? go(i) : r.url) + '" style="color:' + C.goldDeep + ';text-decoration:underline;">' + esc_(r.pub) + '</a>';
   }).join(' &middot; ');
+  var check = CONFIG.SITE + (ctx.edition_id ? ctx.edition_id + '.html' : '') + '?check=' + encodeURIComponent(bid) + (ctx.token ? '&t=' + encodeURIComponent(ctx.token) : '') + '#b-' + bid;
   return '<div style="font-family:' + SANS + ';font-size:17px;line-height:1.35;color:' + C.ink + ';font-weight:bold;">' +
     (withWhy || !b.lead ? '' : '<span style="color:' + C.gold + ';">&#9733; </span>') + esc_(b.book) +
     (b.author ? ' <span style="font-weight:normal;color:' + C.mist + ';font-size:15px;">' + esc_(b.author) + '</span>' : '') + '</div>' +
     '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.55;color:' + C.body + ';margin-top:4px;">' + esc_(b.line) + '</div>' +
     (withWhy && b.why ? '<div style="font-family:' + SANS + ';font-size:15px;line-height:1.5;color:' + C.ink + ';margin-top:6px;padding:8px 10px;background-color:#FFFFFF;border-left:3px solid ' + C.gold + ';"><b style="color:' + C.goldDeep + ';">Screen potential:</b> ' + esc_(b.why) + '</div>' : '') +
     '<div style="font-family:' + SANS + ';font-size:14px;color:' + C.mist + ';margin-top:6px;">Reviewed in ' + links +
-    (b.reviews.length > 1 ? ' <span style="color:' + C.goldDeep + ';font-weight:bold;">(' + b.reviews.length + ' papers)</span>' : '') + '</div>';
+    (b.reviews.length > 1 ? ' <span style="color:' + C.goldDeep + ';font-weight:bold;">(' + b.reviews.length + ' papers)</span>' : '') +
+    ' &middot; <a href="' + esc_(check) + '" style="color:' + C.ink + ';font-weight:bold;text-decoration:underline;">Check rights</a></div>';
 }
 
 function previewEmail_(p) {
@@ -631,6 +648,8 @@ function admin_(b) {
     return { ok: true, counts: c, test_only_to: testOnly_(), alias_ok: aliasOk_(), quota: MailApp.getRemainingDailyQuota() };
   }
   if (b.op === 'send_now') { sendDueEditions(); return { ok: true }; }
+  var ra = rightsAdmin_(b);
+  if (ra) return ra;
   return { ok: false, error: 'unknown_op' };
 }
 

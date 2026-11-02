@@ -160,6 +160,31 @@ ol{list-style:none;margin:0;padding:0}
 .archive{margin-top:44px}
 .archive h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:var(--ink);margin:0 0 8px}
 .archive ul{padding-left:20px} .archive li{padding:4px 0}
+.book-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px;margin-top:8px}
+.book-foot .revs{margin:0}
+.check-rights{font:inherit;font-size:16px;font-weight:700;color:var(--ink);background:#FFFFFF;border:2px solid var(--ink);border-radius:3px;padding:7px 14px;min-height:44px;cursor:pointer}
+.check-rights:hover{background:var(--ink);color:#FFFFFF}
+.check-rights.available{background:var(--ok);border-color:var(--ok);color:#FFFFFF}
+.rights-modal{position:fixed;inset:0;background:rgba(0,23,51,.6);z-index:50;display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:24px max(16px,env(safe-area-inset-left,0px))}
+.rights-modal[hidden]{display:none}
+.rights-box{position:relative;background:#FFFFFF;max-width:600px;width:100%;margin:auto;border-radius:4px;padding:30px 28px;box-shadow:0 12px 48px rgba(0,0,0,.3)}
+.rights-box h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:32px;line-height:1.1;color:var(--ink);margin:0 0 8px}
+.rights-box h2:focus{outline:none}
+.rights-box p{margin:0 0 12px}
+.rights-book{font-weight:700;font-size:19px;color:var(--ink)}
+.rights-free{background:var(--tint);border-left:4px solid var(--gold);padding:8px 12px}
+.rights-close{position:absolute;top:8px;right:10px;font-size:30px;line-height:1;background:none;border:0;color:var(--muted);cursor:pointer;padding:6px 10px}
+.rights-box form{display:flex;flex-direction:column;gap:12px}
+.rights-box label{display:block;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.rights-box input[type=email],.rights-box input[type=text],.rights-box select{width:100%;min-height:48px;padding:10px 12px;border:2px solid #9AA0AE;background:#FFFFFF;font:inherit;font-size:17px;color:var(--text);border-radius:3px}
+.rights-status{font-weight:700;margin:0}.rights-status:empty{display:none}.rights-status.error{color:var(--burgundy)}
+.upsell-opt{border:2px solid var(--line);border-radius:4px;padding:16px 18px;margin-top:14px}
+.upsell-opt.best{border-color:var(--gold);background:var(--tint)}
+.upsell-opt h3{margin:0 0 6px;font-size:20px;color:var(--ink)}
+.upsell-opt ul{margin:0 0 14px;padding-left:20px}
+.upsell-tag{display:inline-block;background:var(--gold);color:var(--ink);font-size:13px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin:0 0 8px!important}
+.as-link{display:inline-block;text-decoration:none;text-align:center}
+.brr-ghost{display:inline-block;min-height:48px;padding:12px 20px;border:2px solid var(--ink);color:var(--ink);font-weight:900;text-decoration:none;border-radius:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .note{margin-top:28px;font-size:16px;color:var(--muted)}
 footer{background:var(--ink);color:#E6E9F1;text-align:center;padding:28px 16px;font-size:16px}
@@ -230,17 +255,22 @@ def example_card(ed):
             f'<p class="why"><b>Screen potential</b>{E(b["why"])}</p><p class="revs">Reviewed in {revs}</p></div>')
 
 
+def book_id(b):
+    return re.sub(r"[^a-z0-9]+", "-", (b["book"] + " " + (b.get("author") or "")).lower()).strip("-")[:80]
+
+
 def book_li(b):
     papers = " ".join(slug(r["pub"]) for r in b["reviews"])
-    revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener">{E(r["pub"])}</a>' for r in b["reviews"])
+    revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener" data-pub="{E(r["pub"])}">{E(r["pub"])}</a>' for r in b["reviews"])
     multi = f'<span class="multi">{len(b["reviews"])} papers</span>' if len(b["reviews"]) > 1 else ""
     au = f' <span class="au">{E(b.get("author"))}</span>' if b.get("author") else ""
     star = '<span class="star" aria-hidden="true">&#9733;</span> <span class="sr-only">Screen potential: </span>' if b.get("lead") else ""
     why = f'<p class="why"><b>Screen potential</b>{E(b.get("why"))}</p>' if b.get("lead") and b.get("why") else ""
     cls = "book lead" if b.get("lead") else "book"
-    return (f'<li class="{cls}" data-subject="{E(b["subject"])}" data-papers="{papers}">'
+    return (f'<li class="{cls}" id="b-{E(b["book_id"])}" data-book="{E(b["book"])}" data-author="{E(b.get("author") or "")}" data-subject="{E(b["subject"])}" data-papers="{papers}">'
             f'<h3>{star}<span>{E(b["book"])}</span>{au}</h3><p class="line">{E(b["line"])}</p>{why}'
-            f'<p class="revs">Reviewed in {revs}{multi}</p></li>')
+            f'<div class="book-foot"><p class="revs">Reviewed in {revs}{multi}</p>'
+            f'<button type="button" class="check-rights" aria-haspopup="dialog">Check rights<span class="sr-only"> for {E(b["book"])}</span></button></div></li>')
 
 
 def edition_body(ed):
@@ -301,7 +331,7 @@ def page(ed, eds, is_index):
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 <style>{CSS}</style>
 </head>
-<body>
+<body data-edition="{E(ed["edition_id"])}">
 <a class="skip" href="#edition">Skip to this week&#8217;s books</a>
 <header class="bar"><div class="bar-in"><a href="/">The Ariel</a><a class="bar-cta" href="/#what">What The Ariel does</a></div></header>
 <section class="hero" aria-labelledby="page-title"><div class="hero-in">
@@ -332,16 +362,100 @@ def page(ed, eds, is_index):
 </div></main>
 <footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="mailto:hello@theariel.tv">hello@theariel.tv</a></footer>
 <script>{FILTER_JS}</script>
+<div class="rights-modal" id="modal-rights" role="dialog" aria-modal="true" aria-labelledby="rights-title" hidden>
+  <div class="rights-box">
+    <button type="button" class="rights-close" data-close aria-label="Close">&times;</button>
+    <div data-pane="form">
+      <h2 id="rights-title">Check the screen rights</h2>
+      <p class="rights-book"><span data-fill="book"></span></p>
+      <p>We&#8217;ll ask the author&#8217;s agent whether film and TV rights are available and email you the answer, usually within a week. If they are, we can introduce you.</p>
+      <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks.</p>
+      <form novalidate>
+        <div class="brr-row">
+          <div><label for="rq-email">Email <span class="req">*</span></label><input type="email" id="rq-email" name="email" required autocomplete="email"></div>
+          <div><label for="rq-name">Name</label><input type="text" id="rq-name" name="name" autocomplete="name"></div>
+        </div>
+        <div class="brr-row">
+          <div><label for="rq-company">Company</label><input type="text" id="rq-company" name="company" autocomplete="organization"></div>
+          <div><label for="rq-role">What do you do?</label><select id="rq-role" name="role"><option value="">Choose (optional)</option>{"".join(f'<option value="{E(r)}">{E(r)}</option>' for r in ROLES)}</select></div>
+        </div>
+        <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="brr-submit">Check the rights</button>
+        <p class="rights-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div data-pane="done" hidden>
+      <h2>We&#8217;re on it</h2>
+      <p>We&#8217;re asking about <b data-fill="book"></b> and will email you the answer. Check your inbox for a confirmation.</p>
+      <button type="button" class="brr-submit" data-close>Back to the Review</button>
+    </div>
+    <div data-pane="answered" hidden>
+      <h2>We already know</h2>
+      <p>We&#8217;ve just emailed you what we know about the rights to <b data-fill="book"></b>.</p>
+      <button type="button" class="brr-submit" data-close>Back to the Review</button>
+    </div>
+    <div data-pane="upsell" hidden>
+      <h2>You&#8217;ve used your free rights check</h2>
+      <p>Choose how you&#8217;d like to keep checking rights on <b data-fill="book"></b> and every book in the Review.</p>
+      <div class="upsell-opt best">
+        <p class="upsell-tag">Recommended</p>
+        <h3>Join The Ariel</h3>
+        <ul><li>Unlimited rights checks and introductions to agents</li><li>A first look at rights-available books, sent to us directly by literary agents</li><li>Books, journalism and rights deals every day, chosen for your slate</li></ul>
+        <a class="brr-submit as-link" href="/#book">Apply to join The Ariel</a>
+      </div>
+      <div class="upsell-opt">
+        <h3>Rights Pass, &#163;29 a month</h3>
+        <ul><li>Unlimited rights checks on every book in the Review</li><li>Introductions to the agent when rights are available</li><li>Cancel any time</li></ul>
+        <a class="brr-ghost" href="#" data-pass>Get the Rights Pass</a>
+      </div>
+    </div>
+    <div data-pane="pass" hidden>
+      <h2>Thank you</h2>
+      <p>We&#8217;ll email you today to set up your Rights Pass, and start on <b data-fill="book"></b> straight away.</p>
+      <button type="button" class="brr-submit" data-close>Back to the Review</button>
+    </div>
+  </div>
+</div>
 <script src="/reviews/signup.js"></script>
+<script src="/reviews/rights.js"></script>
 </body>
 </html>
 '''
+
+
+GO_HTML = r"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Opening the review - British Review of Reviews</title>
+<style>body{margin:0;font-family:Lato,Arial,sans-serif;background:#F8F5F0;color:#1E2233;font-size:18px}main{max-width:560px;margin:0 auto;padding:48px 16px}a{color:#6E5428}</style></head>
+<body><main><h1 style="font-family:Georgia,serif;font-weight:500">Opening the review...</h1><p id="msg">If nothing happens, <a href="/reviews/" id="fallback">go back to the Review</a>.</p></main>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search), e=q.get('e')||'', b=q.get('b')||'', u=parseInt(q.get('u')||'0',10), t=q.get('t')||'';
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(e)){location.replace('/reviews/');return;}
+  fetch('/reviews/editions/'+e+'.json').then(function(r){return r.json()}).then(function(ed){
+    var bk=(ed.books||[]).filter(function(x){return x.book_id===b})[0];
+    var r=bk&&bk.reviews&&bk.reviews[u];
+    if(!r||!/^https:\/\//.test(r.url)){location.replace('/reviews/'+e+'.html');return;}
+    document.getElementById('fallback').href=r.url;
+    var body=JSON.stringify({action:'click',edition_id:e,book_id:b,kind:'review',where:'email',pub:r.pub,t:t});
+    var sent=false;try{sent=navigator.sendBeacon('__BRR_ENDPOINT__',new Blob([body],{type:'text/plain'}))}catch(x){}
+    setTimeout(function(){location.replace(r.url)},sent?60:400);
+  }).catch(function(){location.replace('/reviews/')});
+})();
+</script></body></html>
+"""
 
 
 def main():
     eds = load_editions()
     for ed in eds:
         check(ed)
+        changed = False
+        for b in ed["books"]:
+            if not b.get("book_id"):
+                b["book_id"] = book_id(b); changed = True
+        if changed:
+            json.dump(ed, open(os.path.join(ED_DIR, ed["edition_id"] + ".json"), "w"), ensure_ascii=False, indent=1)
     latest = eds[-1]
     for ed in eds:
         open(os.path.join(OUT_DIR, ed["edition_id"] + ".html"), "w").write(page(ed, eds, False))
@@ -350,6 +464,9 @@ def main():
     # signup.js gets the backend URL from config
     js = open(os.path.join(os.path.dirname(__file__), "signup.template.js")).read().replace("__BRR_ENDPOINT__", CFG["endpoint"])
     open(os.path.join(OUT_DIR, "signup.js"), "w").write(js)
+    rj = open(os.path.join(os.path.dirname(__file__), "rights.template.js")).read().replace("__BRR_ENDPOINT__", CFG["endpoint"]).replace("__BRR_PASS_URL__", CFG.get("rights_pass_url", ""))
+    open(os.path.join(OUT_DIR, "rights.js"), "w").write(rj)
+    open(os.path.join(OUT_DIR, "go.html"), "w").write(GO_HTML.replace("__BRR_ENDPOINT__", CFG["endpoint"]))
     # sitemap
     sm_path = os.path.join(ROOT, "sitemap.xml")
     sm = open(sm_path).read()

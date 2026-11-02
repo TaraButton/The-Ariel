@@ -1,4 +1,5 @@
 {
   "site": "https://theariel.tv/reviews/",
-  "endpoint": "https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec"
+  "endpoint": "https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec",
+  "rights_pass_url": ""
 }
