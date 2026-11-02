@@ -16,7 +16,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/f006c111-e683-4dbb-8104-40a8df131ee6"
     }
-   ]
+   ],
+   "book_id": "killer-app-darren-loucaides"
   },
   {
    "book": "Felled",
@@ -30,7 +31,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf"
     }
-   ]
+   ],
+   "book_id": "felled-andrew-hankinson"
   },
   {
    "book": "No One Tells You: The Last Years of Edna O'Brien",
@@ -44,7 +46,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/773a9c71-4ea4-4c79-be9b-f0bc24424864"
     }
-   ]
+   ],
+   "book_id": "no-one-tells-you-the-last-years-of-edna-o-brien-carlo-g-bler"
   },
   {
    "book": "The Cauldron",
@@ -58,7 +61,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/dfc50238-3672-4a3d-af3a-dd674aea4710"
     }
-   ]
+   ],
+   "book_id": "the-cauldron-simon-sebag-montefiore"
   },
   {
    "book": "Two new books on Europe",
@@ -72,7 +76,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/a7edc935-51b1-4f05-b41e-63fd8514538e"
     }
-   ]
+   ],
+   "book_id": "two-new-books-on-europe"
   },
   {
    "book": "Liz Truss's new book",
@@ -86,7 +91,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/7df6f936-b7c5-4ea3-9b9b-81c33706d945"
     }
-   ]
+   ],
+   "book_id": "liz-truss-s-new-book-liz-truss"
   },
   {
    "book": "New memoir by Luiz Schwarcz",
@@ -100,7 +106,8 @@
      "pub": "FT",
      "url": "https://www.ft.com/content/bf1814f5-d3bc-4df6-adbf-0fb980e22235"
     }
-   ]
+   ],
+   "book_id": "new-memoir-by-luiz-schwarcz-luiz-schwarcz"
   },
   {
    "book": "War Is Interested in You",
@@ -114,7 +121,8 @@
      "pub": "Guardian/Observer",
      "url": "https://www.theguardian.com/books/2026/oct/26/war-is-interested-in-you-by-gideon-rachman-review-how-close-is-world-war-three"
     }
-   ]
+   ],
+   "book_id": "war-is-interested-in-you-gideon-rachman"
   },
   {
    "book": "Michael Gambon: The Authorised Biography",
@@ -128,7 +136,8 @@
      "pub": "Guardian/Observer",
      "url": "https://www.theguardian.com/books/2026/oct/27/michael-gambon-the-authorised-biography-review-a-brilliant-actor-and-a-master-deceiver"
     }
-   ]
+   ],
+   "book_id": "michael-gambon-the-authorised-biography"
   },
   {
    "book": "Is It Too Late to Make a Run for It?",
@@ -142,7 +151,8 @@
      "pub": "Guardian/Observer",
      "url": "https://www.theguardian.com/books/2026/oct/28/is-it-too-late-to-make-a-run-for-it-by-judi-dench-review-whatever-you-do-dont-call-her-a-national-treasure"
     }
-   ]
+   ],
+   "book_id": "is-it-too-late-to-make-a-run-for-it-judi-dench"
   },
   {
    "book": "The Best Kind of American",
@@ -164,7 +174,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/between-haven-hell"
     }
-   ]
+   ],
+   "book_id": "the-best-kind-of-american-kim-ghattas"
   },
   {
    "book": "The Stay Behinds: Sweden's Cold War Guardians",
@@ -178,7 +189,8 @@
      "pub": "Spectator",
      "url": "https://spectator.com/article/how-sweden-has-kept-communism-at-bay/"
     }
-   ]
+   ],
+   "book_id": "the-stay-behinds-sweden-s-cold-war-guardians-johan-wennstr-m"
   },
   {
    "book": "Napoleon and his Marshals",
@@ -196,7 +208,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/winner-takes-it-all"
     }
-   ]
+   ],
+   "book_id": "napoleon-and-his-marshals-andrew-roberts"
   },
   {
    "book": "In Rome's Long Shadow",
@@ -210,7 +223,8 @@
      "pub": "Spectator",
      "url": "https://spectator.com/article/drawing-inspiration-from-the-roman-republic-to-discourage-tyranny/"
     }
-   ]
+   ],
+   "book_id": "in-rome-s-long-shadow-jamie-gianoutsos"
   },
   {
    "book": "The Book Was Better",
@@ -224,7 +238,8 @@
      "pub": "Spectator",
      "url": "https://spectator.com/article/why-a-frothy-jane-austen-adaptation-is-always-imminent/"
     }
-   ]
+   ],
+   "book_id": "the-book-was-better-louise-willder"
   },
   {
    "book": "Tojo",
@@ -238,7 +253,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/christopher-harding/sometimes-a-man-has-to-jump"
     }
-   ]
+   ],
+   "book_id": "tojo-peter-mauch"
   },
   {
    "book": "HH: Helenio Herrera",
@@ -252,7 +268,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/john-foot/superstar-or-supervillain"
     }
-   ]
+   ],
+   "book_id": "hh-helenio-herrera-richard-fitzpatrick"
   },
   {
    "book": "Borrowed Land: A Highland Story",
@@ -266,7 +283,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/fraser-macdonald/who-owns-the-glen"
     }
-   ]
+   ],
+   "book_id": "borrowed-land-a-highland-story-kapka-kassabova"
   },
   {
    "book": "The Oak and the Larch",
@@ -280,7 +298,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/miriam-dobson/not-all-trees-are-useful"
     }
-   ]
+   ],
+   "book_id": "the-oak-and-the-larch-sophie-pinkham"
   },
   {
    "book": "Surviving Rome",
@@ -294,7 +313,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/emma-dench/how-to-keep-count"
     }
-   ]
+   ],
+   "book_id": "surviving-rome-kim-bowes"
   },
   {
    "book": "Michael Andrews: Painter of Masterpieces",
@@ -308,7 +328,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/julian-bell/not-quite-at-homeness"
     }
-   ]
+   ],
+   "book_id": "michael-andrews-painter-of-masterpieces-christopher-lloyd"
   },
   {
    "book": "Music's Odyssey",
@@ -322,7 +343,8 @@
      "pub": "LRB",
      "url": "https://www.lrb.co.uk/the-paper/v48/n20/nicholas-spice/eat-your-thesaurus-barthes"
     }
-   ]
+   ],
+   "book_id": "music-s-odyssey-robin-holloway"
   },
   {
    "book": "The Family Man: Blood and Betrayal in the House of Murdaugh",
@@ -336,7 +358,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/csi-lowcountry"
     }
-   ]
+   ],
+   "book_id": "the-family-man-blood-and-betrayal-in-the-house-of-murdaugh-james-lasdun"
   },
   {
    "book": "Redwood",
@@ -350,7 +373,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/tradecraft-in-tehran"
     }
-   ]
+   ],
+   "book_id": "redwood-ben-macintyre"
   },
   {
    "book": "American Scoundrel",
@@ -364,7 +388,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/give-me-the-judge"
     }
-   ]
+   ],
+   "book_id": "american-scoundrel-kai-bird-with-susan-goldmark"
   },
   {
    "book": "Sleuth-Hound",
@@ -378,7 +403,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/patient-deductions"
     }
-   ]
+   ],
+   "book_id": "sleuth-hound-lindsey-fitzharris"
   },
   {
    "book": "This Cursed Beautiful Land",
@@ -392,7 +418,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/caught-reporting"
     }
-   ]
+   ],
+   "book_id": "this-cursed-beautiful-land-evan-gershkovich"
   },
   {
    "book": "Blood Will Flow",
@@ -406,7 +433,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/inhuman-resources"
     }
-   ]
+   ],
+   "book_id": "blood-will-flow-alex-perry"
   },
   {
    "book": "Justice for Jehanne",
@@ -420,7 +448,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/sex-lies-in-dijon"
     }
-   ]
+   ],
+   "book_id": "justice-for-jehanne-sara-mcdougall"
   },
   {
    "book": "Empire at the Edge of the World",
@@ -434,7 +463,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/northward-ho"
     }
-   ]
+   ],
+   "book_id": "empire-at-the-edge-of-the-world-giles-milton"
   },
   {
    "book": "Guilty Pleasure",
@@ -448,7 +478,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/sex-sells"
     }
-   ]
+   ],
+   "book_id": "guilty-pleasure-patricia-nilsson"
   },
   {
    "book": "Mapping Britain",
@@ -462,7 +493,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/unruly-folded-sheets"
     }
-   ]
+   ],
+   "book_id": "mapping-britain-will-millard"
   },
   {
    "book": "King's Secretary",
@@ -476,7 +508,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/catchpole-to-the-king"
     }
-   ]
+   ],
+   "book_id": "king-s-secretary-andrew-johnston"
   },
   {
    "book": "Great Powers",
@@ -490,7 +523,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/out-of-the-duchies"
     }
-   ]
+   ],
+   "book_id": "great-powers-jan-r-ger"
   },
   {
    "book": "The Last Invasion of England",
@@ -504,7 +538,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/1688-and-all-that"
     }
-   ]
+   ],
+   "book_id": "the-last-invasion-of-england-arthur-der-weduwen"
   },
   {
    "book": "Imperial Predator",
@@ -518,7 +553,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/scavenger-hunt"
     }
-   ]
+   ],
+   "book_id": "imperial-predator-david-s-tonge"
   },
   {
    "book": "An Injury to All",
@@ -532,7 +568,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/marxism-yesterday"
     }
-   ]
+   ],
+   "book_id": "an-injury-to-all-ewan-gibbs"
   },
   {
    "book": "The Age of Confiscation",
@@ -546,7 +583,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/states-on-the-take"
     }
-   ]
+   ],
+   "book_id": "the-age-of-confiscation-nicholas-mulder"
   },
   {
    "book": "Europe in 7½ Chapters; A Concise History of the European Union",
@@ -560,7 +598,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/europe-abridged"
     }
-   ]
+   ],
+   "book_id": "europe-in-7-chapters-a-concise-history-of-the-european-union-timothy-garton-ash-"
   },
   {
    "book": "A History of the Novel in Britain",
@@ -574,7 +613,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/all-the-write-stuff"
     }
-   ]
+   ],
+   "book_id": "a-history-of-the-novel-in-britain-philip-hensher"
   },
   {
    "book": "John McGahern: A Writing Life",
@@ -588,7 +628,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/dangerous-activity"
     }
-   ]
+   ],
+   "book_id": "john-mcgahern-a-writing-life-frank-shovlin"
   },
   {
    "book": "The Bookshop",
@@ -602,7 +643,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/balancing-the-books-2"
     }
-   ]
+   ],
+   "book_id": "the-bookshop-andrew-pettegree"
   },
   {
    "book": "In the Scholar's Workshop",
@@ -616,7 +658,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/peak-dictation"
     }
-   ]
+   ],
+   "book_id": "in-the-scholar-s-workshop-ann-blair"
   },
   {
    "book": "Peasants: Makers of the Modern World",
@@ -630,7 +673,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/guardians-of-the-planet"
     }
-   ]
+   ],
+   "book_id": "peasants-makers-of-the-modern-world-maryam-aslany"
   },
   {
    "book": "Castles",
@@ -644,7 +688,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/bastions-of-tradition"
     }
-   ]
+   ],
+   "book_id": "castles-dan-jones"
   },
   {
    "book": "Wine: A Global History",
@@ -658,7 +703,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/grapes-of-cloth"
     }
-   ]
+   ],
+   "book_id": "wine-a-global-history-kathleen-burk"
   },
   {
    "book": "Yap!",
@@ -672,7 +718,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/fur-from-reasonable"
     }
-   ]
+   ],
+   "book_id": "yap-stephanie-howard-smith"
   },
   {
    "book": "Totem",
@@ -686,7 +733,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/dwelling-on-significance"
     }
-   ]
+   ],
+   "book_id": "totem-jo-baring"
   },
   {
    "book": "William Morris & his Gardens",
@@ -700,7 +748,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/vegetal-living"
     }
-   ]
+   ],
+   "book_id": "william-morris-his-gardens-gavin-francis-stoneystreet"
   },
   {
    "book": "Baillie Scott: Architect and Author",
@@ -714,7 +763,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/open-up-the-cells"
     }
-   ]
+   ],
+   "book_id": "baillie-scott-architect-and-author-william-fawcett-diane-haigh"
   },
   {
    "book": "Lavinia Fontana: Erotic Paintings",
@@ -728,7 +778,8 @@
      "pub": "Literary Review",
      "url": "https://literaryreview.co.uk/bottoms-to-the-fore"
     }
-   ]
+   ],
+   "book_id": "lavinia-fontana-erotic-paintings-enrico-maria-dal-pozzolo"
   }
  ]
 }
