@@ -44,6 +44,7 @@
 }
 
 /* ─── RESET & BASE ─── */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -241,7 +242,7 @@ section p {
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-deep);
   margin-top: 18px;
 }
 .pull-quote-section { padding: 56px 24px; }
@@ -344,7 +345,7 @@ section p {
   background: var(--gold);
   color: var(--ivory);
 }
-.step-content h4 { font-size: 20px; margin-bottom: 8px; }
+.step-content h3 { font-size: 20px; margin-bottom: 8px; }
 .step-content p { font-size: 16px; margin-bottom: 0; line-height: 1.7; }
 
 /* ─── SAMPLE BRIEF ─── */
@@ -483,7 +484,7 @@ section p {
 .delivery-card:hover {
   border-color: rgba(184,150,90,0.35);
 }
-.delivery-card h4 {
+.delivery-card h3 {
   color: var(--gold);
   font-size: 19px;
   margin-bottom: 14px;
@@ -890,7 +891,7 @@ section p {
 .dash-v-arts .dash-entry.agent { box-shadow: inset 3px 0 0 #B8965A; background: rgba(184,150,90,0.07); }
 .dash-v-arts .dash-entry-star { color: #D4B87A; }
 .dash-v-arts .dash-rights-chip { color: #D4B87A; background: rgba(184,150,90,0.14); border: 1px solid rgba(184,150,90,0.45); }
-.dash-v-arts .dash-entry-byline { color: #8A95A8; }
+.dash-v-arts .dash-entry-byline { color: #9AA5B8; }
 .dash-v-arts .dash-entry-btn.contact { border-color: #D4B87A; color: #E8D5A3; font-weight: 600; }
 
 .showcase-cta-line {
@@ -1021,7 +1022,7 @@ section p {
   margin-left: 16px;
   line-height: 1;
 }
-.faq-item[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
 .faq-a {
   max-height: 0;
   overflow: hidden;
@@ -1029,7 +1030,7 @@ section p {
   font-size: 16px;
   line-height: 1.7;
 }
-.faq-item[aria-expanded="true"] .faq-a {
+.faq-item.open .faq-a {
   max-height: 400px;
   padding-bottom: 24px;
 }
@@ -1151,7 +1152,7 @@ footer a:focus-visible {
 
   .step { gap: 16px; }
   .step-num { width: 44px; height: 44px; font-size: 18px; }
-  .step-content h4 { font-size: 18px; }
+  .step-content h3 { font-size: 18px; }
 
   .pull-quote { font-size: 22px; padding: 48px 20px; }
 
@@ -1424,6 +1425,67 @@ footer a:focus-visible {
   .modal { padding: 28px 22px; }
 }
 
+/* ─── BRITISH REVIEW OF REVIEWS ─── */
+.brr-section { background: var(--ink); color: #FFFFFF; padding: 72px 24px; font-weight: 400; }
+.brr-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.brr-inner > * { min-width: 0; }
+.brr-free { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.brr-free-badge { display: inline-block; background: var(--gold); color: var(--ink); font-weight: 900; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 14px; border-radius: 3px; }
+.brr-free-when { font-size: 16px; font-weight: 700; color: #E2C891; }
+.brr-section h2 { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 46px; line-height: 1.02; color: #FFFFFF; margin: 14px 0 14px; }
+.brr-section h2 em { font-style: italic; font-weight: 500; }
+.brr-lede { color: #E6E9F1; font-size: 19px; line-height: 1.55; margin-bottom: 20px; }
+.brr-example { background: #FFFFFF; color: #1E2233; border-radius: 4px; padding: 18px 20px; margin-bottom: 22px; }
+.brr-section .brr-example .brr-example-label { font-size: 13px; line-height: 1.4; margin-top: 0; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #6E5428; margin-bottom: 6px; }
+.brr-example h3 { font-family: 'Lato', sans-serif; font-size: 19px; font-weight: 700; color: var(--ink); margin: 0; }
+.brr-example h3 span { font-weight: 400; color: #454D60; font-size: 17px; }
+.brr-section .brr-example p { margin: 6px 0 0; font-size: 17px; line-height: 1.5; }
+.brr-example .brr-why { background: #F4ECDD; border-left: 4px solid var(--gold); padding: 8px 12px; margin-top: 10px; }
+.brr-example .brr-why b { display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #6E5428; }
+.brr-rights { color: #E6E9F1; font-size: 17px; line-height: 1.5; margin-bottom: 20px; }
+.brr-rights a { color: #E2C891; font-weight: 700; }
+.brr-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.brr-btn { display: inline-block; min-height: 48px; padding: 13px 22px; background: var(--gold); color: var(--ink); border: 2px solid var(--gold); border-radius: 3px; font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 900; cursor: pointer; text-decoration: none; }
+.brr-btn.ghost { background: transparent; color: #FFFFFF; border-color: #FFFFFF; }
+.brr-card-home { background: #FFFFFF; color: #1E2233; border-radius: 4px; padding: 26px; }
+.brr-card-home h3 { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 600; color: var(--ink); margin: 0 0 4px; }
+.brr-card-home .brr-card-sub { font-size: 16px; color: #454D60; margin: 0 0 14px; }
+.brr-form { display: flex; flex-direction: column; gap: 14px; }
+.brr-form label, .brr-form legend { display: block; font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 6px; letter-spacing: 0; text-transform: none; }
+.brr-form .req { color: #8A2F3A; }
+.brr-form input[type=email], .brr-form select { width: 100%; min-height: 48px; padding: 10px 12px; border: 2px solid #9AA0AE; background: #FFFFFF; font-family: 'Lato', sans-serif; font-size: 17px; color: #1E2233; border-radius: 3px; }
+.brr-form input:focus, .brr-form select:focus { outline: 3px solid var(--gold); outline-offset: 2px; border-color: var(--ink); }
+.brr-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.brr-row > * { min-width: 0; }
+.brr-subjects { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.brr-subjects legend { margin-bottom: 8px; padding: 0; }
+.brr-subjects .hint { display: block; font-weight: 400; color: #454D60; font-size: 15px; margin-top: 2px; }
+.brr-chip { margin: 0 !important; font-weight: 400 !important; font-size: 16px !important; cursor: pointer; position: relative; }
+.brr-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.brr-chip span { display: inline-block; border: 2px solid #9AA0AE; background: #FFFFFF; border-radius: 999px; padding: 7px 14px; color: #1E2233; }
+.brr-chip input:checked + span { background: var(--ink); border-color: var(--ink); color: #FFFFFF; }
+.brr-chip input:checked + span::before { content: "\2713  "; font-weight: 900; }
+.brr-chip input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 2px; }
+.brr-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.brr-submit { min-height: 52px; padding: 14px 24px; background: var(--gold); color: var(--ink); border: 0; border-radius: 3px; font-family: 'Lato', sans-serif; font-size: 17px; font-weight: 900; cursor: pointer; }
+.brr-submit:hover { background: #D4B87A; }
+.brr-submit:disabled { opacity: 0.6; cursor: progress; }
+.brr-status { margin: 0; font-size: 16px; font-weight: 700; }
+.brr-status:empty { display: none; }
+.brr-status.error { color: #8A2F3A; }
+.brr-status.success { color: #245C36; }
+.brr-small { margin: 0; font-size: 15px; color: #454D60; line-height: 1.5; }
+#modal-brr .modal { max-width: 620px; font-weight: 400; }
+#modal-brr .brr-submit { background: var(--gold); color: var(--ink); font-size: 17px; font-weight: 900; letter-spacing: 0.02em; text-transform: none; padding: 14px 24px; margin-top: 0; border-radius: 3px; }
+#modal-brr .brr-submit:hover { background: #D4B87A; }
+#modal-brr h3 { font-size: 32px; font-weight: 600; line-height: 1.1; margin-top: 10px; }
+#modal-brr h3 em { font-style: italic; }
+#modal-brr .modal-sub { font-size: 17px; color: #1E2233; line-height: 1.5; margin-bottom: 16px; }
+#modal-brr .modal-sub a { color: #6E5428; }
+#modal-brr .brr-pop-example { font-size: 16px; background: #F4ECDD; border-left: 4px solid var(--gold); padding: 8px 12px; margin: 0 0 16px; color: #1E2233; line-height: 1.5; }
+#modal-brr .brr-pop-example b { color: var(--ink); }
+@media (max-width: 820px) { .brr-inner { grid-template-columns: 1fr; gap: 28px; } .brr-row { grid-template-columns: 1fr; } .brr-section h2 { font-size: 38px; } .brr-section { padding: 52px 16px; } }
+
 /* ─── PRINT ─── */
 @media print {
   .hero-cta, .cta-section, .faq-q .faq-icon, .modal-overlay { display: none; }
@@ -1461,10 +1523,12 @@ footer a:focus-visible {
   <a href="#pricing">Pricing</a>
   <a href="#about">About</a>
   <a href="#agents">For Agents</a>
+  <a href="/reviews/">Review of Reviews</a>
   <a href="#faq">FAQ</a>
   <a href="#book">Apply</a>
 </nav>
 
+<main id="main">
 <!-- ═══ TEMPEST FEATURE ═══ -->
 <div class="tempest-feature fade-in" role="region" aria-label="From The Tempest">
   <div class="tempest-rule"></div>
@@ -1475,6 +1539,7 @@ footer a:focus-visible {
 
 <!-- ═══ WHAT & WHY ═══ -->
 <section id="what" class="fade-in" aria-label="What and why">
+  <h2 class="sr-only">What The Ariel is and why it exists</h2>
   <div class="two-col">
     <div class="card">
       <h3>What it is</h3>
@@ -1499,28 +1564,28 @@ footer a:focus-visible {
     <div class="step">
       <div class="step-num" aria-hidden="true">1</div>
       <div class="step-content">
-        <h4>We learn what you&#8217;re looking for</h4>
+        <h3>We learn what you&#8217;re looking for</h3>
         <p>A calibration call to understand your genre interests, development slate and the kinds of stories that catch your eye - true crime, historical, investigative, international, or something more specific.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num" aria-hidden="true">2</div>
       <div class="step-content">
-        <h4>Your dashboard goes live</h4>
+        <h3>Your dashboard goes live</h3>
         <p>Within a week, you have a private, branded web app - designed around your identity, your genres and your workflow. Your daily email digest matches the look and feel of your dashboard from day one.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num" aria-hidden="true">3</div>
       <div class="step-content">
-        <h4>Stories arrive at your rhythm - from sources you choose</h4>
+        <h3>Stories arrive at your rhythm - from sources you choose</h3>
         <p>New stories land in your inbox and dashboard at the cadence that suits you - daily, weekly, every other Thursday, whatever your team actually uses. Sourced from literary trade, broadsheet journalism, specialist magazines and international publishers. Got a Substack you rate, or a trade newsletter no one else reads? Tell us - we'll add it to your source list. For paid subscriptions, we'll work out access together.</p>
       </div>
     </div>
     <div class="step">
       <div class="step-num" aria-hidden="true">4</div>
       <div class="step-content">
-        <h4>Your feed gets sharper</h4>
+        <h3>Your feed gets sharper</h3>
         <p>Every time you research, save or archive a story, your feed learns. Over time, the intelligence becomes deeply attuned to what your team actually wants to develop.</p>
       </div>
     </div>
@@ -1543,11 +1608,11 @@ footer a:focus-visible {
     <p style="color: var(--mist); font-size: 15px; max-width: 640px; line-height: 1.7;">Each morning, a curated email digest lands in your inbox with the day&#8217;s most relevant stories. Every email links straight to your personalised dashboard - a private web app where you can dig deeper, take action, and train your feed.</p>
     <div class="delivery-cols">
       <div class="delivery-card">
-        <h4>The morning email</h4>
+        <h3>The morning email</h3>
         <p>A concise summary of new stories matched to your brief, designed to scan in under two minutes. Styled to your dashboard&#8217;s look and feel - not a generic newsletter. Click any story to open it directly in your dashboard.</p>
       </div>
       <div class="delivery-card">
-        <h4>Your personalised dashboard</h4>
+        <h3>Your personalised dashboard</h3>
         <p>A private web app with your full feed, expanded pitch notes, rights intelligence and &#8220;Why Now&#8221; context. Use <strong style="color: var(--gold);">Research</strong> to flag stories for your development team, <strong style="color: var(--gold);">More like this</strong> to sharpen your feed, or <strong style="color: var(--gold);">Archive</strong> to clear the noise. Every action teaches your dashboard what you want to see next.</p>
       </div>
     </div>
@@ -1822,58 +1887,94 @@ footer a:focus-visible {
 </div>
 
 <!-- ═══ FAQ ═══ -->
+<!-- ═══ BRITISH REVIEW OF REVIEWS ═══ -->
+<div class="brr-section fade-in" id="review-of-reviews" role="region" aria-labelledby="brr-title">
+  <div class="brr-inner">
+    <div>
+      <p class="brr-free"><span class="brr-free-badge">Free</span><span class="brr-free-when">A weekly email from The Ariel</span></p>
+      <h2 id="brr-title">British Review <em>of</em> Reviews</h2>
+      <p class="brr-lede">Every non-fiction book reviewed in the week&#8217;s British papers and literary magazines, sorted by subject, one line each. Tell us what you develop and we flag the books with screen potential.</p>
+      <div class="brr-example">
+        <p class="brr-example-label">Example: a true crime pick</p>
+        <h3><span aria-hidden="true" style="color:#9A7631">&#9733;</span> Felled <span>Andrew Hankinson</span></h3>
+        <p>Reconstructs the felling of the Sycamore Gap tree, setting the overlooked, hard-up lives of those behind it against the nation&#8217;s grief.</p>
+        <p class="brr-why"><b>Screen potential</b>A crime the whole country followed; this tells the side nobody heard.</p>
+      </div>
+      <p class="brr-rights">We don&#8217;t check rights for the Review. For a first look at rights-available books directly from literary agents, <a href="#book">sign up to The Ariel</a>.</p>
+      <div class="brr-actions">
+        <a class="brr-btn" href="/reviews/">Read this week&#8217;s edition</a>
+      </div>
+    </div>
+    <div class="brr-card-home">
+      <h3>Get it free every Monday</h3>
+      <p class="brr-card-sub">Takes ten seconds. Just your email.</p>
+      <form class="brr-form" id="brr-home" data-source="homepage-panel" novalidate>
+      <div class="brr-row">
+        <div><label for="brr-home-email">Email <span class="req">*</span></label><input type="email" id="brr-home-email" name="email" required autocomplete="email" placeholder="you@company.com"></div>
+        <div><label for="brr-home-role">What do you do?</label><select id="brr-home-role" name="role"><option value="">Choose (optional)</option><option value="Producer">Producer</option><option value="Development executive">Development executive</option><option value="Commissioner">Commissioner</option><option value="Agent or publisher">Agent or publisher</option><option value="Writer">Writer</option><option value="Other">Other</option></select></div>
+      </div>
+      <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend><label class="brr-chip"><input type="checkbox" name="subjects" value="True crime"><span>True crime</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Espionage"><span>Espionage</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Politics &amp; world affairs"><span>Politics &amp; world affairs</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Business &amp; power"><span>Business &amp; power</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Biography &amp; memoir"><span>Biography &amp; memoir</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="History"><span>History</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Society &amp; ideas"><span>Society &amp; ideas</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Nature &amp; place"><span>Nature &amp; place</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Arts &amp; culture"><span>Arts &amp; culture</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Books &amp; writing"><span>Books &amp; writing</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Life &amp; leisure"><span>Life &amp; leisure</span></label></fieldset>
+      <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="brr-submit">Sign up free</button>
+      <p class="brr-status" role="status" aria-live="polite"></p>
+      <p class="brr-small">Free, no card, no catch. One email every Monday. Unsubscribe in one click. We use your email only to send the Review.</p>
+    </form>
+    </div>
+  </div>
+</div>
+
 <section id="faq" class="fade-in" aria-label="Frequently asked questions">
   <div class="section-label">Questions</div>
   <h2>What people ask</h2>
 
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-1">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-1" aria-expanded="false">
       How is this different from a literary scout?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-1" role="region">A scout reads, judges and recommends. The Ariel does the first part at scale - surfacing more books, articles and stories than any one person can read in a day, filtered to your interests. The judgement stays with you.<br><br>For producers with a scout, The Ariel widens what reaches their desk. For producers without one, it's a way to start. For scouts themselves, it's a first-pass surfacing layer - your reading widened, your judgement unchanged.</div>
+    <div class="faq-a" id="faq-1">A scout reads, judges and recommends. The Ariel does the first part at scale - surfacing more books, articles and stories than any one person can read in a day, filtered to your interests. The judgement stays with you.<br><br>For producers with a scout, The Ariel widens what reaches their desk. For producers without one, it's a way to start. For scouts themselves, it's a first-pass surfacing layer - your reading widened, your judgement unchanged.</div>
   </div>
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-2">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-2" aria-expanded="false">
       What sources does it cover?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-2" role="region">Literary trade publications, broadsheet long-form journalism, specialist magazines, relevant Substacks, international book trade sources and more. The exact mix depends on your genre interests - we configure it during onboarding and expand based on what proves useful. You can also request new sources at any time. If there&#8217;s a publication, newsletter, or niche outlet you rely on, we&#8217;ll add it to your feed.</div>
+    <div class="faq-a" id="faq-2">Literary trade publications, broadsheet long-form journalism, specialist magazines, relevant Substacks, international book trade sources and more. The exact mix depends on your genre interests - we configure it during onboarding and expand based on what proves useful. You can also request new sources at any time. If there&#8217;s a publication, newsletter, or niche outlet you rely on, we&#8217;ll add it to your feed.</div>
   </div>
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-3">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-3" aria-expanded="false">
       How quickly do stories appear?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-3" role="region">New stories are surfaced within hours of publication. Your daily brief is waiting for you each morning. If something significant breaks during the day, it appears in your feed the same day.</div>
+    <div class="faq-a" id="faq-3">New stories are surfaced within hours of publication. Your daily brief is waiting for you each morning. If something significant breaks during the day, it appears in your feed the same day.</div>
   </div>
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-4">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-4" aria-expanded="false">
       What does the onboarding involve?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-4" role="region">A calibration call where we learn about your development interests, the kinds of stories you respond to, and any current priorities. We use that to configure your dashboard before it goes live. Most clients are up and running within a week.</div>
+    <div class="faq-a" id="faq-4">A calibration call where we learn about your development interests, the kinds of stories you respond to, and any current priorities. We use that to configure your dashboard before it goes live. Most clients are up and running within a week.</div>
   </div>
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-5">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-5" aria-expanded="false">
       Can I try it before committing?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-5" role="region">For production companies, we offer a paid pilot - typically 8&#8211;12 weeks at &#163;3&#8211;5K - so you can test it with your team before committing to an annual plan. For individual producers, our founding rate of &#163;75/month is deliberately accessible.</div>
+    <div class="faq-a" id="faq-5">For production companies, we offer a paid pilot - typically 8&#8211;12 weeks at &#163;3&#8211;5K - so you can test it with your team before committing to an annual plan. For individual producers, our founding rate of &#163;75/month is deliberately accessible.</div>
   </div>
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-6">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-6" aria-expanded="false">
       What happens after the founding rate?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-6" role="region">Founding clients keep their rate for as long as they stay subscribed. The standard rate for new clients will be &#163;99/month once we move past the founding phase.</div>
+    <div class="faq-a" id="faq-6">Founding clients keep their rate for as long as they stay subscribed. The standard rate for new clients will be &#163;99/month once we move past the founding phase.</div>
   </div>
-  <div class="faq-item" aria-expanded="false">
-    <button class="faq-q" aria-controls="faq-7">
+  <div class="faq-item">
+    <button class="faq-q" aria-controls="faq-7" aria-expanded="false">
       How quickly will I see results?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-7" role="region">Your first curated brief arrives within days of onboarding. The feed improves continuously as you interact with it. Most clients tell us it becomes indispensable within the first month.</div>
+    <div class="faq-a" id="faq-7">Your first curated brief arrives within days of onboarding. The feed improves continuously as you interact with it. Most clients tell us it becomes indispensable within the first month.</div>
   </div>
 </section>
 
@@ -1887,6 +1988,8 @@ footer a:focus-visible {
   </div>
 </div>
 
+</main>
+
 <!-- ═══ FOOTER ═══ -->
 <footer role="contentinfo">
   <div class="footer-brand">The Ariel</div>
@@ -1897,6 +2000,28 @@ footer a:focus-visible {
   </p>
   <p style="margin-top: 24px; font-size: 12px; color: var(--mist);">&#169; 2026 The Ariel. All rights reserved.</p>
 </footer>
+
+<!-- ═══ REVIEW OF REVIEWS POP-UP ═══ -->
+<div class="modal-overlay" id="modal-brr" role="dialog" aria-modal="true" aria-labelledby="modal-brr-title">
+  <div class="modal">
+    <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <p class="brr-free"><span class="brr-free-badge">Free</span></p>
+    <h3 id="modal-brr-title">British Review <em>of</em> Reviews</h3>
+    <p class="modal-sub">Every non-fiction book reviewed in the British papers each week, one line each, in your inbox every Monday. <a href="/reviews/">See this week&#8217;s edition</a>.</p>
+    <p class="brr-pop-example"><b>&#9733; Felled</b> by Andrew Hankinson. Screen potential: a crime the whole country followed; this tells the side nobody heard.</p>
+    <form class="brr-form" id="brr-pop" data-source="popup" novalidate>
+      <div class="brr-row">
+        <div><label for="brr-pop-email">Email <span class="req">*</span></label><input type="email" id="brr-pop-email" name="email" required autocomplete="email" placeholder="you@company.com"></div>
+        <div><label for="brr-pop-role">What do you do?</label><select id="brr-pop-role" name="role"><option value="">Choose (optional)</option><option value="Producer">Producer</option><option value="Development executive">Development executive</option><option value="Commissioner">Commissioner</option><option value="Agent or publisher">Agent or publisher</option><option value="Writer">Writer</option><option value="Other">Other</option></select></div>
+      </div>
+      <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend><label class="brr-chip"><input type="checkbox" name="subjects" value="True crime"><span>True crime</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Espionage"><span>Espionage</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Politics &amp; world affairs"><span>Politics &amp; world affairs</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Business &amp; power"><span>Business &amp; power</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Biography &amp; memoir"><span>Biography &amp; memoir</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="History"><span>History</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Society &amp; ideas"><span>Society &amp; ideas</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Nature &amp; place"><span>Nature &amp; place</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Arts &amp; culture"><span>Arts &amp; culture</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Books &amp; writing"><span>Books &amp; writing</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Life &amp; leisure"><span>Life &amp; leisure</span></label></fieldset>
+      <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="brr-submit">Sign up free</button>
+      <p class="brr-status" role="status" aria-live="polite"></p>
+      <p class="brr-small">Free, no card, no catch. Unsubscribe in one click. We use your email only to send the Review.</p>
+    </form>
+  </div>
+</div>
 
 <!-- ═══ APPLY TO JOIN MODAL ═══ -->
 <div class="modal-overlay" id="modal-apply" role="dialog" aria-modal="true" aria-labelledby="modal-apply-title">
@@ -2111,16 +2236,19 @@ footer a:focus-visible {
 document.querySelectorAll('.faq-q').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var item = btn.parentElement;
-    var isOpen = item.getAttribute('aria-expanded') === 'true';
+    var isOpen = item.classList.contains('open');
 
     // Close all
     document.querySelectorAll('.faq-item').forEach(function(i) {
-      i.setAttribute('aria-expanded', 'false');
+      i.classList.remove('open');
+      var q = i.querySelector('.faq-q');
+      if (q) q.setAttribute('aria-expanded', 'false');
     });
 
     // Toggle current
     if (!isOpen) {
-      item.setAttribute('aria-expanded', 'true');
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
     }
   });
 
@@ -2334,5 +2462,6 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
 
 })();
 </script>
+<script src="/reviews/signup.js"></script>
 </body>
 </html>

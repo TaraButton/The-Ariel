@@ -1,0 +1,734 @@
+{
+ "edition_id": "2026-11-02",
+ "date_label": "2 November 2026",
+ "window": "Reviews published 23 October - 1 November 2026",
+ "preheader": "51 non-fiction books reviewed in the British papers this week, one line each.",
+ "books": [
+  {
+   "book": "Killer App",
+   "author": "Darren Loucaides",
+   "subject": "Business & power",
+   "line": "Investigation into Pavel Durov, the elusive Russian founder of Telegram, and the rebel image that drew a billion users.",
+   "lead": true,
+   "why": "A secretive living founder at the centre of a story still unfolding.",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/f006c111-e683-4dbb-8104-40a8df131ee6"
+    }
+   ]
+  },
+  {
+   "book": "Felled",
+   "author": "Andrew Hankinson",
+   "subject": "True crime",
+   "line": "Reconstructs the felling of the Sycamore Gap tree, setting the overlooked, hard-up lives of those behind it against the nation's grief.",
+   "lead": true,
+   "why": "A crime the whole country followed; this tells the side nobody heard.",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf"
+    }
+   ]
+  },
+  {
+   "book": "No One Tells You: The Last Years of Edna O'Brien",
+   "author": "Carlo Gébler",
+   "subject": "Biography & memoir",
+   "line": "O'Brien's son on his mother's long final decline - an intimate family biography.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/773a9c71-4ea4-4c79-be9b-f0bc24424864"
+    }
+   ]
+  },
+  {
+   "book": "The Cauldron",
+   "author": "Simon Sebag Montefiore",
+   "subject": "History",
+   "line": "Sweeping history of how the modern Middle East was forged from its cultures, creeds and rivalries.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/dfc50238-3672-4a3d-af3a-dd674aea4710"
+    }
+   ]
+  },
+  {
+   "book": "Two new books on Europe",
+   "author": "",
+   "subject": "Politics & world affairs",
+   "line": "Paired review of two books arguing a threatened, fragmenting EU can still pull together.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/a7edc935-51b1-4f05-b41e-63fd8514538e"
+    }
+   ]
+  },
+  {
+   "book": "Liz Truss's new book",
+   "author": "Liz Truss",
+   "subject": "Politics & world affairs",
+   "line": "The former prime minister's own account of her time in power, read sceptically.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/7df6f936-b7c5-4ea3-9b9b-81c33706d945"
+    }
+   ]
+  },
+  {
+   "book": "New memoir by Luiz Schwarcz",
+   "author": "Luiz Schwarcz",
+   "subject": "Books & writing",
+   "line": "A leading Brazilian publisher on why books feel like living companions, an idea with very old roots.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "FT",
+     "url": "https://www.ft.com/content/bf1814f5-d3bc-4df6-adbf-0fb980e22235"
+    }
+   ]
+  },
+  {
+   "book": "War Is Interested in You",
+   "author": "Gideon Rachman",
+   "subject": "Politics & world affairs",
+   "line": "The FT's foreign affairs commentator weighs how close the world now is to a third world war.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian/Observer",
+     "url": "https://www.theguardian.com/books/2026/oct/26/war-is-interested-in-you-by-gideon-rachman-review-how-close-is-world-war-three"
+    }
+   ]
+  },
+  {
+   "book": "Michael Gambon: The Authorised Biography",
+   "author": "",
+   "subject": "Biography & memoir",
+   "line": "Life of the shape-shifting actor, from the National to Dumbledore, that leaves his habit of invention largely unsolved.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian/Observer",
+     "url": "https://www.theguardian.com/books/2026/oct/27/michael-gambon-the-authorised-biography-review-a-brilliant-actor-and-a-master-deceiver"
+    }
+   ]
+  },
+  {
+   "book": "Is It Too Late to Make a Run for It?",
+   "author": "Judi Dench",
+   "subject": "Biography & memoir",
+   "line": "Dench on directors, ageing and her dislike of being treated as a national monument.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian/Observer",
+     "url": "https://www.theguardian.com/books/2026/oct/28/is-it-too-late-to-make-a-run-for-it-by-judi-dench-review-whatever-you-do-dont-call-her-a-national-treasure"
+    }
+   ]
+  },
+  {
+   "book": "The Best Kind of American",
+   "author": "Kim Ghattas",
+   "subject": "Politics & world affairs",
+   "line": "The 1984 assassination of Malcolm Kerr in Beirut, and how it set the course of US-Iran enmity.",
+   "lead": true,
+   "why": "One killing that unlocks a 40-year geopolitical story. Three papers reviewed it.",
+   "reviews": [
+    {
+     "pub": "Spectator",
+     "url": "https://spectator.com/article/theres-a-50-50-chance-ill-get-bumped-off-an-american-scholar-foresees-his-death/"
+    },
+    {
+     "pub": "Economist",
+     "url": "https://www.economist.com/culture/2026/10/29/how-lebanons-civil-war-shaped-americas-rivalry-with-iran"
+    },
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/between-haven-hell"
+    }
+   ]
+  },
+  {
+   "book": "The Stay Behinds: Sweden's Cold War Guardians",
+   "author": "Johan Wennström",
+   "subject": "Espionage",
+   "line": "Sweden's secret Cold War stay-behind guardians, stood down once war seemed unthinkable.",
+   "lead": true,
+   "why": "A secret network almost unknown outside Sweden.",
+   "reviews": [
+    {
+     "pub": "Spectator",
+     "url": "https://spectator.com/article/how-sweden-has-kept-communism-at-bay/"
+    }
+   ]
+  },
+  {
+   "book": "Napoleon and his Marshals",
+   "author": "Andrew Roberts",
+   "subject": "History",
+   "line": "Napoleon's dealings with the 26 men he made marshals: loyalty, jealousy and betrayal at the top.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Spectator",
+     "url": "https://spectator.com/article/a-history-of-napoleons-marshals-has-all-the-dash-and-vigour-of-a-cavalry-charge/"
+    },
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/winner-takes-it-all"
+    }
+   ]
+  },
+  {
+   "book": "In Rome's Long Shadow",
+   "author": "Jamie Gianoutsos",
+   "subject": "History",
+   "line": "How the Roman Republic, not the emperors, shaped later thinking about liberty and tyranny.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Spectator",
+     "url": "https://spectator.com/article/drawing-inspiration-from-the-roman-republic-to-discourage-tyranny/"
+    }
+   ]
+  },
+  {
+   "book": "The Book Was Better",
+   "author": "Louise Willder",
+   "subject": "Arts & culture",
+   "line": "Why page-to-screen adaptations so often disappoint, and what the rare successes get right.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Spectator",
+     "url": "https://spectator.com/article/why-a-frothy-jane-austen-adaptation-is-always-imminent/"
+    }
+   ]
+  },
+  {
+   "book": "Tojo",
+   "author": "Peter Mauch",
+   "subject": "Biography & memoir",
+   "line": "Biography of Japan's wartime prime minister and general, the war's most argued-over Japanese leader.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/christopher-harding/sometimes-a-man-has-to-jump"
+    }
+   ]
+  },
+  {
+   "book": "HH: Helenio Herrera",
+   "author": "Richard Fitzpatrick",
+   "subject": "Biography & memoir",
+   "line": "The self-mythologising football manager who even lied about his birth date, and the dark arts of his teams.",
+   "lead": true,
+   "why": "A larger-than-life figure who invented half his own story.",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/john-foot/superstar-or-supervillain"
+    }
+   ]
+  },
+  {
+   "book": "Borrowed Land: A Highland Story",
+   "author": "Kapka Kassabova",
+   "subject": "Nature & place",
+   "line": "A Highland glen remade by hydro power and land ownership, and who gets a say in it.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/fraser-macdonald/who-owns-the-glen"
+    }
+   ]
+  },
+  {
+   "book": "The Oak and the Larch",
+   "author": "Sophie Pinkham",
+   "subject": "History",
+   "line": "Russian imperial history told through its forests, felled for fleets and empire.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/miriam-dobson/not-all-trees-are-useful"
+    }
+   ]
+  },
+  {
+   "book": "Surviving Rome",
+   "author": "Kim Bowes",
+   "subject": "History",
+   "line": "The working lives of the ordinary 90 per cent in the Roman Empire.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/emma-dench/how-to-keep-count"
+    }
+   ]
+  },
+  {
+   "book": "Michael Andrews: Painter of Masterpieces",
+   "author": "Christopher Lloyd",
+   "subject": "Arts & culture",
+   "line": "Monograph on the painter who stood in the shadow of his friends Bacon and Freud.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/julian-bell/not-quite-at-homeness"
+    }
+   ]
+  },
+  {
+   "book": "Music's Odyssey",
+   "author": "Robin Holloway",
+   "subject": "Arts & culture",
+   "line": "A 1,100-page invitation to Western classical music.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n20/nicholas-spice/eat-your-thesaurus-barthes"
+    }
+   ]
+  },
+  {
+   "book": "The Family Man: Blood and Betrayal in the House of Murdaugh",
+   "author": "James Lasdun",
+   "subject": "True crime",
+   "line": "The Murdaugh murders and the South Carolina legal dynasty they brought down.",
+   "lead": true,
+   "why": "A notorious case, now told at book length.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/csi-lowcountry"
+    }
+   ]
+  },
+  {
+   "book": "Redwood",
+   "author": "Ben Macintyre",
+   "subject": "Espionage",
+   "line": "Macintyre's untold story of one of the Cold War's most extraordinary spies.",
+   "lead": true,
+   "why": "An untold Cold War spy story, told by a writer who knows how to pace one.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/tradecraft-in-tehran"
+    }
+   ]
+  },
+  {
+   "book": "American Scoundrel",
+   "author": "Kai Bird with Susan Goldmark",
+   "subject": "Biography & memoir",
+   "line": "Roy Cohn's path from McCarthy's hearings to mentoring Donald Trump.",
+   "lead": true,
+   "why": "A direct line from McCarthy to Trump.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/give-me-the-judge"
+    }
+   ]
+  },
+  {
+   "book": "Sleuth-Hound",
+   "author": "Lindsey Fitzharris",
+   "subject": "True crime",
+   "line": "The real-life model for Sherlock Holmes.",
+   "lead": true,
+   "why": "The real person behind one of the world's best-known characters.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/patient-deductions"
+    }
+   ]
+  },
+  {
+   "book": "This Cursed Beautiful Land",
+   "author": "Evan Gershkovich",
+   "subject": "Biography & memoir",
+   "line": "Gershkovich's own Russian story.",
+   "lead": true,
+   "why": "The reporter's own account, from the inside.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/caught-reporting"
+    }
+   ]
+  },
+  {
+   "book": "Blood Will Flow",
+   "author": "Alex Perry",
+   "subject": "Business & power",
+   "line": "The violence that follows the oil and gas business around the world.",
+   "lead": true,
+   "why": "Investigative reporting on violence in the energy trade.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/inhuman-resources"
+    }
+   ]
+  },
+  {
+   "book": "Justice for Jehanne",
+   "author": "Sara McDougall",
+   "subject": "History",
+   "line": "The story of a medieval woman who survived and sought justice.",
+   "lead": true,
+   "why": "A medieval case told from the survivor's side.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/sex-lies-in-dijon"
+    }
+   ]
+  },
+  {
+   "book": "Empire at the Edge of the World",
+   "author": "Giles Milton",
+   "subject": "History",
+   "line": "Empire, endurance and madness in the high Arctic.",
+   "lead": true,
+   "why": "Endurance and madness at the edge of the map.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/northward-ho"
+    }
+   ]
+  },
+  {
+   "book": "Guilty Pleasure",
+   "author": "Patricia Nilsson",
+   "subject": "Society & ideas",
+   "line": "How pornography seeped into the internet, the economy and everything else.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/sex-sells"
+    }
+   ]
+  },
+  {
+   "book": "Mapping Britain",
+   "author": "Will Millard",
+   "subject": "Nature & place",
+   "line": "Britain's story told through the Ordnance Survey archives.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/unruly-folded-sheets"
+    }
+   ]
+  },
+  {
+   "book": "King's Secretary",
+   "author": "Andrew Johnston",
+   "subject": "History",
+   "line": "William Paget and the last years of Henry VIII.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/catchpole-to-the-king"
+    }
+   ]
+  },
+  {
+   "book": "Great Powers",
+   "author": "Jan Rüger",
+   "subject": "History",
+   "line": "A history of Britain and Germany's intertwined rivalry.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/out-of-the-duchies"
+    }
+   ]
+  },
+  {
+   "book": "The Last Invasion of England",
+   "author": "Arthur der Weduwen",
+   "subject": "History",
+   "line": "1688 and the Dutch armada that put William on the throne.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/1688-and-all-that"
+    }
+   ]
+  },
+  {
+   "book": "Imperial Predator",
+   "author": "David S Tonge",
+   "subject": "History",
+   "line": "Britain's role in tearing apart the Ottoman Empire.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/scavenger-hunt"
+    }
+   ]
+  },
+  {
+   "book": "An Injury to All",
+   "author": "Ewan Gibbs",
+   "subject": "Society & ideas",
+   "line": "The unmaking of the British working class.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/marxism-yesterday"
+    }
+   ]
+  },
+  {
+   "book": "The Age of Confiscation",
+   "author": "Nicholas Mulder",
+   "subject": "History",
+   "line": "How states seizing property built the modern world.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/states-on-the-take"
+    }
+   ]
+  },
+  {
+   "book": "Europe in 7½ Chapters; A Concise History of the European Union",
+   "author": "Timothy Garton Ash; Kiran Klaus Patel",
+   "subject": "Politics & world affairs",
+   "line": "Two short histories of Europe and the EU, reviewed together.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/europe-abridged"
+    }
+   ]
+  },
+  {
+   "book": "A History of the Novel in Britain",
+   "author": "Philip Hensher",
+   "subject": "Books & writing",
+   "line": "Hensher's history of the British novel.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/all-the-write-stuff"
+    }
+   ]
+  },
+  {
+   "book": "John McGahern: A Writing Life",
+   "author": "Frank Shovlin",
+   "subject": "Biography & memoir",
+   "line": "Literary life of the Irish novelist McGahern.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/dangerous-activity"
+    }
+   ]
+  },
+  {
+   "book": "The Bookshop",
+   "author": "Andrew Pettegree",
+   "subject": "Books & writing",
+   "line": "Bookselling from the dawn of print to now.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/balancing-the-books-2"
+    }
+   ]
+  },
+  {
+   "book": "In the Scholar's Workshop",
+   "author": "Ann Blair",
+   "subject": "Books & writing",
+   "line": "The hidden helpers behind early modern scholarship.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/peak-dictation"
+    }
+   ]
+  },
+  {
+   "book": "Peasants: Makers of the Modern World",
+   "author": "Maryam Aslany",
+   "subject": "Society & ideas",
+   "line": "The case for peasants as shapers of modernity.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/guardians-of-the-planet"
+    }
+   ]
+  },
+  {
+   "book": "Castles",
+   "author": "Dan Jones",
+   "subject": "History",
+   "line": "A fortified history of the world.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/bastions-of-tradition"
+    }
+   ]
+  },
+  {
+   "book": "Wine: A Global History",
+   "author": "Kathleen Burk",
+   "subject": "Life & leisure",
+   "line": "Wine's spread around the world.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/grapes-of-cloth"
+    }
+   ]
+  },
+  {
+   "book": "Yap!",
+   "author": "Stephanie Howard-Smith",
+   "subject": "Life & leisure",
+   "line": "A short history of small dogs.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/fur-from-reasonable"
+    }
+   ]
+  },
+  {
+   "book": "Totem",
+   "author": "Jo Baring",
+   "subject": "Arts & culture",
+   "line": "The untold story of sculpture.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/dwelling-on-significance"
+    }
+   ]
+  },
+  {
+   "book": "William Morris & his Gardens",
+   "author": "Gavin Francis Stoneystreet",
+   "subject": "Arts & culture",
+   "line": "Morris through the gardens he made and drew.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/vegetal-living"
+    }
+   ]
+  },
+  {
+   "book": "Baillie Scott: Architect and Author",
+   "author": "William Fawcett & Diane Haigh",
+   "subject": "Arts & culture",
+   "line": "The Arts and Crafts architect and writer.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/open-up-the-cells"
+    }
+   ]
+  },
+  {
+   "book": "Lavinia Fontana: Erotic Paintings",
+   "author": "Enrico Maria Dal Pozzolo",
+   "subject": "Arts & culture",
+   "line": "The Renaissance painter's erotic work.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/bottoms-to-the-fore"
+    }
+   ]
+  }
+ ]
+}
