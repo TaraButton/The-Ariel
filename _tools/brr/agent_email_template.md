@@ -27,7 +27,7 @@ its review in <publication>.
 - Optional extra, only if true: "It was one of the most-read reviews in this week's edition."
 
 Could you tell me whether the film and TV rights are available, or who handles them if that's a
-colleague or co-agent? One line back is plenty. If they are available, may we show our readers that
+colleague or co-agent? One line back is plenty. If they are available, may we show that
 they are? We'd only ever share your details when a producer asks for an introduction.
 
 If you'd like producers on The Ariel to hear about other titles with rights available, you're welcome to
