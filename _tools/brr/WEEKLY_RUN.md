@@ -55,7 +55,7 @@ The Ariel HQ/Platform/review-of-reviews/.
    {"edition_id":"2026-11-09","date_label":"9 November 2026",
     "window":"Reviews published 31 October - 8 November 2026",
     "preheader":"NN non-fiction books reviewed in the British papers this week, one line each.",
-    "books":[{"book":"...","author":"...","subject":"History","line":"...","lead":false,"why":"",
+    "books":[{"book":"...","author":"...","subject":"History","line":"...","lead":false,"why":"", (book_id is added by build_site.py)
               "reviews":[{"pub":"FT","url":"https://..."}]}]}
    ```
    Publication short names: FT, Times/Sunday Times, Guardian/Observer, Spectator, Economist, LRB,
@@ -76,3 +76,22 @@ The Ariel HQ/Platform/review-of-reviews/.
 - Each subscriber gets their own version: leads in the subjects they chose come first with the
   "why"; with no subjects (or no matching leads) they get the week's top leads.
 - While the script property TEST_ONLY_TO is set, it only emails those addresses. `goLive()` clears it.
+
+## Agents and rights (added 2026-11-02)
+After step 7 (the edition is published):
+8. **Agent research.** For every book in the new edition, find the author's literary agent/agency and the
+   best email for a screen-rights enquiry, verified on the agency's (or author's) own live site that day,
+   with the source URL. Prefer a named screen/film agent or rights department if the agency lists one.
+   Never guess an address from a pattern. Reuse earlier `reviews/agents/*.json` entries for the same
+   author when the source URL still shows them. Write `reviews/agents/<edition_id>.json` (fields:
+   book_id, book, author, agency, agent_name, agent_email, email_source_url, agent_source_url,
+   screen_contact, screen_email, screen_source_url, contact_page, agency_type, confidence, notes) and
+   push it with the edition. Then `op: set_rights` the agency/agent fields into the Rights tab
+   (status stays `unknown`).
+9. **Agent emails (Wednesday, not Sunday).** The weekly run only prepares; the rights run on Wednesday
+   morning sends, so three days of real click data exist. One email per agency covering all its titles
+   in the edition; skip agencies emailed in the last 14 days unless they have a new title (then mention
+   it briefly in a new thread). Corporates included (Tara's decision 2026-11-02): address their screen
+   or film/TV desk when one is listed. Queue with `op: queue_email` (kind `agent_ask`), 30-minute hold.
+   Content and rules: see RIGHTS_RUN.md "Hard rules" and the template in
+   `_tools/brr/agent_email_template.md`.
