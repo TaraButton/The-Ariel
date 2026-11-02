@@ -110,6 +110,8 @@ ol{list-style:none;margin:0;padding:0}
 .archive{margin-top:44px}
 .archive h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:var(--ink);margin:0 0 8px}
 .archive ul{padding-left:20px} .archive li{padding:4px 0}
+.ex-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.ex-read{display:inline-flex;align-items:center;min-height:44px;padding:7px 14px;border:2px solid var(--line);border-radius:3px;font-weight:700;color:var(--ink);text-decoration:none}
 .book-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px;margin-top:8px}
 .book-foot .revs{margin:0}
 .check-rights{font:inherit;font-size:16px;font-weight:700;color:var(--ink);background:#FFFFFF;border:2px solid var(--ink);border-radius:3px;padding:7px 14px;min-height:44px;cursor:pointer}
@@ -157,7 +159,7 @@ footer a{color:var(--gold-light)}
       <li>Tell us what you develop and we flag the books with screen potential, and why</li>
     </ul>
   </div>
-  <div class="hero-example"><div class="example"><p class="example-label">Example from this week: a true crime pick</p><p class="ex-title"><span class="star" aria-hidden="true">&#9733;</span> Felled <span class="au">Andrew Hankinson</span></p><p class="line">Reconstructs the felling of the Sycamore Gap tree, setting the overlooked, hard-up lives of those behind it against the nation&#x27;s grief.</p><p class="why"><b>Screen potential</b>A crime the whole country followed; this tells the side nobody heard.</p><p class="revs">Reviewed in <a href="https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf" target="_blank" rel="noopener">FT</a></p></div></div>
+  <div class="hero-example"><div class="example"><p class="example-label">Example from this week: a true crime pick</p><p class="ex-title"><span class="star" aria-hidden="true">&#9733;</span> Felled <span class="au">Andrew Hankinson</span></p><p class="line">Reconstructs the felling of the Sycamore Gap tree, setting the overlooked, hard-up lives of those behind it against the nation&#x27;s grief.</p><p class="why"><b>Screen potential</b>A crime the whole country followed; this tells the side nobody heard.</p><p class="revs">Reviewed in <a href="https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf" target="_blank" rel="noopener">FT</a></p><div class="ex-actions"><button type="button" class="check-rights" data-check-target="b-felled-andrew-hankinson">Check rights<span class="sr-only"> for Felled</span></button><a class="ex-read" href="https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf" target="_blank" rel="noopener">Read the FT review</a></div></div></div>
   <div class="brr-card hero-form"><h2>Get it free every Monday</h2><p class="card-sub">Takes ten seconds. Just your email.</p><form class="brr-form" id="brr-top" data-source="reviews-page" novalidate>
   <div class="brr-row">
     <div><label for="brr-top-email">Email <span class="req">*</span></label><input type="email" id="brr-top-email" name="email" required autocomplete="email" placeholder="you@company.com"></div>
@@ -244,7 +246,7 @@ footer a{color:var(--gold-light)}
       <h2 id="rights-title">Check the screen rights</h2>
       <p class="rights-book"><span data-fill="book"></span></p>
       <p>We&#8217;ll ask the author&#8217;s agent whether film and TV rights are available and email you the answer, usually within a week. If they are, we can introduce you.</p>
-      <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks.</p>
+      <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks: just use the email address your Ariel emails come to. No password needed.</p>
       <form novalidate>
         <div class="brr-row">
           <div><label for="rq-email">Email <span class="req">*</span></label><input type="email" id="rq-email" name="email" required autocomplete="email"></div>

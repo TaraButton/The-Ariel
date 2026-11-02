@@ -54,7 +54,10 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
 
   document.querySelectorAll('.check-rights').forEach(function (btn) {
-    btn.addEventListener('click', function () { open(btn.closest('.book')); });
+    btn.addEventListener('click', function () {
+      var li = btn.dataset.checkTarget ? document.getElementById(btn.dataset.checkTarget) : btn.closest('.book');
+      if (li) open(li);
+    });
   });
 
   function submit(want) {
@@ -98,9 +101,10 @@
     Object.keys(res.books).forEach(function (id) {
       var li = document.getElementById('b-' + id);
       if (!li) return;
-      var b = li.querySelector('.check-rights');
-      b.classList.add('available');
-      b.textContent = 'Rights available: ask for an introduction';
+      document.querySelectorAll('#b-' + id + ' .check-rights, [data-check-target="b-' + id + '"]').forEach(function (b) {
+        b.classList.add('available');
+        b.textContent = 'Rights available: ask for an introduction';
+      });
     });
   }).catch(function () {});
 

@@ -160,6 +160,8 @@ ol{list-style:none;margin:0;padding:0}
 .archive{margin-top:44px}
 .archive h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:var(--ink);margin:0 0 8px}
 .archive ul{padding-left:20px} .archive li{padding:4px 0}
+.ex-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.ex-read{display:inline-flex;align-items:center;min-height:44px;padding:7px 14px;border:2px solid var(--line);border-radius:3px;font-weight:700;color:var(--ink);text-decoration:none}
 .book-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px;margin-top:8px}
 .book-foot .revs{margin:0}
 .check-rights{font:inherit;font-size:16px;font-weight:700;color:var(--ink);background:#FFFFFF;border:2px solid var(--ink);border-radius:3px;padding:7px 14px;min-height:44px;cursor:pointer}
@@ -252,7 +254,9 @@ def example_card(ed):
     revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener">{E(r["pub"])}</a>' for r in b["reviews"])
     return (f'<div class="example"><p class="example-label">Example from this week: a {E(b["subject"].lower())} pick</p>'
             f'<p class="ex-title"><span class="star" aria-hidden="true">&#9733;</span> {E(b["book"])}{au}</p><p class="line">{E(b["line"])}</p>'
-            f'<p class="why"><b>Screen potential</b>{E(b["why"])}</p><p class="revs">Reviewed in {revs}</p></div>')
+            f'<p class="why"><b>Screen potential</b>{E(b["why"])}</p><p class="revs">Reviewed in {revs}</p>'
+            f'<div class="ex-actions"><button type="button" class="check-rights" data-check-target="b-{E(b["book_id"])}">Check rights<span class="sr-only"> for {E(b["book"])}</span></button>'
+            f'<a class="ex-read" href="{E(b["reviews"][0]["url"])}" target="_blank" rel="noopener">Read the {E(b["reviews"][0]["pub"])} review</a></div></div>')
 
 
 def book_id(b):
@@ -369,7 +373,7 @@ def page(ed, eds, is_index):
       <h2 id="rights-title">Check the screen rights</h2>
       <p class="rights-book"><span data-fill="book"></span></p>
       <p>We&#8217;ll ask the author&#8217;s agent whether film and TV rights are available and email you the answer, usually within a week. If they are, we can introduce you.</p>
-      <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks.</p>
+      <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks: just use the email address your Ariel emails come to. No password needed.</p>
       <form novalidate>
         <div class="brr-row">
           <div><label for="rq-email">Email <span class="req">*</span></label><input type="email" id="rq-email" name="email" required autocomplete="email"></div>
@@ -446,6 +450,38 @@ GO_HTML = r"""<!DOCTYPE html>
 """
 
 
+def home_panels(ed):
+    """Rewrite the Review panel + pop-up blocks in the homepage from the latest edition."""
+    n = len(ed["books"]); pubs = papers_of(ed)
+    leads = [b for b in ed["books"] if b.get("lead") and b.get("why")]
+    leads.sort(key=lambda b: SUBJECTS.index(b["subject"]))
+    stats = f'<p class="brr-stats">This week: {n} books from {len(pubs)} publications &middot; {E(ed["date_label"])}</p>'
+    ex = ""
+    pop_ex = ""
+    if leads:
+        b = leads[0]
+        bid = b["book_id"]
+        au = f' <span>{E(b.get("author"))}</span>' if b.get("author") else ""
+        ex = (f'<div class="brr-example">\n        <p class="brr-example-label">From this week: a {E(b["subject"].lower())} pick</p>\n'
+              f'        <h3><span aria-hidden="true" style="color:#9A7631">&#9733;</span> {E(b["book"])}{au}</h3>\n'
+              f'        <p>{E(b["line"])}</p>\n'
+              f'        <p class="brr-why"><b>Screen potential</b>{E(b["why"])}</p>\n'
+              f'        <div class="brr-example-actions"><a class="ex-rights" href="/reviews/?check={E(bid)}#b-{E(bid)}">Check rights<span class="sr-only"> for {E(b["book"])}</span></a>'
+              f'<a class="ex-review" href="{E(b["reviews"][0]["url"])}" target="_blank" rel="noopener">Read the {E(b["reviews"][0]["pub"])} review</a></div>\n'
+              f'      </div>\n')
+        pop_ex = f'\n    <p class="brr-pop-example"><b>&#9733; {E(b["book"])}</b>{" by " + E(b.get("author")) if b.get("author") else ""}. Screen potential: {E(b["why"][0].lower() + b["why"][1:])}</p>'
+    panel = (f'      <!-- BRR:PANEL:START -->\n      {stats}\n      {ex}'
+             '      <p class="brr-rights">We don&#8217;t check rights for the Review. For a first look at rights-available books directly from literary agents, <a href="#book">sign up to The Ariel</a>.</p>\n'
+             f'      <div class="brr-actions">\n        <a class="brr-btn" href="/reviews/">Read this week&#8217;s {n} books</a>\n      </div>\n      <!-- BRR:PANEL:END -->')
+    pop = (f'    <!-- BRR:POP:START -->\n    <p class="modal-sub">Every non-fiction book reviewed in the British papers, one line each, in your inbox every Monday. '
+           f'This week: {n} books from {len(pubs)} publications. <a href="/reviews/">See this week&#8217;s edition</a>.</p>{pop_ex}\n    <!-- BRR:POP:END -->')
+    hp = os.path.join(ROOT, "index.html")
+    h = open(hp).read()
+    h = re.sub(r"      <!-- BRR:PANEL:START -->.*?<!-- BRR:PANEL:END -->", lambda m: panel, h, flags=re.S)
+    h = re.sub(r"    <!-- BRR:POP:START -->.*?<!-- BRR:POP:END -->", lambda m: pop, h, flags=re.S)
+    open(hp, "w").write(h)
+
+
 def main():
     eds = load_editions()
     for ed in eds:
@@ -461,6 +497,7 @@ def main():
         open(os.path.join(OUT_DIR, ed["edition_id"] + ".html"), "w").write(page(ed, eds, False))
     open(os.path.join(OUT_DIR, "index.html"), "w").write(page(latest, eds, True))
     json.dump(latest, open(os.path.join(ED_DIR, "latest.json"), "w"), ensure_ascii=False, indent=1)
+    home_panels(latest)
     # signup.js gets the backend URL from config
     js = open(os.path.join(os.path.dirname(__file__), "signup.template.js")).read().replace("__BRR_ENDPOINT__", CFG["endpoint"])
     open(os.path.join(OUT_DIR, "signup.js"), "w").write(js)
