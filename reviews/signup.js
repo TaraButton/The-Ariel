@@ -1,7 +1,7 @@
 /* British Review of Reviews - sign-up forms + homepage pop-up (The Ariel).
    Built from _tools/brr/signup.template.js by build_site.py; do not edit reviews/signup.js by hand. */
 (function () {
-  var ENDPOINT = 'PENDING_WEB_APP_URL';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec';
   var KEY_DISMISS = 'brr_dismissed_at', KEY_SUB = 'brr_subscribed';
 
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
