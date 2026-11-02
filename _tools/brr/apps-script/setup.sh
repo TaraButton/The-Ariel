@@ -19,4 +19,4 @@ mkdir -p "$HQ" && echo "$URL" > "$HQ/backend-url.txt"
 echo ""
 echo "=== Done. The address is saved for Claude in The Ariel HQ. ==="
 echo "Opening the script editor now..."
-clasp open || true
+clasp open-script || clasp open || true
