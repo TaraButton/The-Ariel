@@ -14,10 +14,10 @@ screen rights readers asked about, records what agents told us, and lets the bac
 - Agent research for each edition: `reviews/agents/<edition_id>.json` in the repo (written by the weekly run).
 
 ## Hard rules
-- **Only real numbers.** Any demand line in an agent email comes from `op: demand` for that book. Describe
-  people only as what they told us: "producers" only for requests whose role is Producer / Development
-  executive / Commissioner or whose tier is member/pass; otherwise "readers". Never round up, never imply
-  a number we do not have. If the numbers are zero, leave the line out.
+- **Only real numbers.** Any demand line in an agent email comes from `op: demand` for that book. Always lead with
+  producers (Tara, 2 Nov). Say "our producers have asked" only for requests whose role is Producer /
+  Development executive / Commissioner or whose tier is member/pass; otherwise use the "for the producers
+  we work with" opening. Never "readers". Never round up, never imply a number we do not have.
 - Never invent an agent, email address or rights status. Email only addresses recorded with a source URL
   in the agents file (verified on the agency's own site), or the address an agent has written from.
 - Never write as if The Ariel were a commissioner or buyer. No editorial verdicts on the book. No decks or
