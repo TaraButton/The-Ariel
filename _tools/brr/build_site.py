@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""British Review of Reviews - static site builder (The Ariel).
+"""London Review of Reviews - static site builder (The Ariel).
 
 Reads every edition JSON in reviews/editions/ (YYYY-MM-DD.json) and writes:
   reviews/index.html          latest edition + sign-up + archive
@@ -306,7 +306,7 @@ def edition_body(ed):
 
 def page(ed, eds, is_index):
     n = len(ed["books"])
-    title = "British Review of Reviews" if is_index else f'British Review of Reviews, {ed["date_label"]}'
+    title = "London Review of Reviews" if is_index else f'London Review of Reviews, {ed["date_label"]}'
     canon = CFG["site"] + ("" if is_index else ed["edition_id"] + ".html")
     desc = f'Every non-fiction book reviewed in the British papers and literary magazines this week, one line each. {n} books, {ed["date_label"]}. Free every Monday from The Ariel.'
     archive = "".join(
@@ -341,7 +341,7 @@ def page(ed, eds, is_index):
 <section class="hero" aria-labelledby="page-title"><div class="hero-in">
   <div class="hero-intro">
     <p class="free"><span class="free-badge">Free</span><span class="free-when">Every Monday &middot; {E(ed["date_label"])}</span></p>
-    <h1 id="page-title">British Review <em>of</em> Reviews</h1>
+    <h1 id="page-title">London Review <em>of</em> Reviews</h1>
     <p class="dek">Every non-fiction book reviewed in the week&#8217;s British papers and literary magazines, sorted by subject, one line each.</p>
     <ul class="promises">
       <li>Free to everyone, every week</li>
@@ -429,7 +429,7 @@ def page(ed, eds, is_index):
 
 GO_HTML = r"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
-<title>Opening the review - British Review of Reviews</title>
+<title>Opening the review - London Review of Reviews</title>
 <style>body{margin:0;font-family:Lato,Arial,sans-serif;background:#F8F5F0;color:#1E2233;font-size:18px}main{max-width:560px;margin:0 auto;padding:48px 16px}a{color:#6E5428}</style></head>
 <body><main><h1 style="font-family:Georgia,serif;font-weight:500">Opening the review...</h1><p id="msg">If nothing happens, <a href="/reviews/" id="fallback">go back to the Review</a>.</p></main>
 <script>

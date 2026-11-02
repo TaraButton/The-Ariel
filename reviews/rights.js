@@ -1,4 +1,4 @@
-/* British Review of Reviews - Check Rights button, upsell, click tracking (The Ariel).
+/* London Review of Reviews - Check Rights button, upsell, click tracking (The Ariel).
    Built from _tools/brr/rights.template.js by build_site.py; do not edit reviews/rights.js by hand. */
 (function () {
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec';

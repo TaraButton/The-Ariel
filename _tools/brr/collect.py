@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""British Review of Reviews - collector (v1, 2026-11-01).
+"""London Review of Reviews - collector (v1, 2026-11-01).
 
 Pulls the week's book reviews from open, sanctioned sources (RSS feeds and
 public section pages) and writes candidate rows to JSON. It does NOT write
@@ -82,11 +82,11 @@ def guardian(since):
         if cats & NON_BOOK_CATS and not any(NONFICTION_CATS_RE.search(c) for c in cats):
             return False  # film/TV adaptations tagged Books
         return True
-    rows = from_rss("guardian-books", "The Guardian / Observer",
+    rows = from_rss("guardian-books", "The Guardian",
                     "https://www.theguardian.com/books/books+tone/reviews/rss", since, keep)
     seen = {r["url"] for r in rows}
     # history reviews feed catches extra non-fiction the main feed rolls off
-    for r in from_rss("guardian-books", "The Guardian / Observer",
+    for r in from_rss("guardian-books", "The Guardian",
                       "https://www.theguardian.com/books/history+tone/reviews/rss", since, keep):
         if r["url"] not in seen:
             rows.append(r)

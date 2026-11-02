@@ -1,10 +1,10 @@
-# Agent email template - British Review of Reviews (v1, 2026-11-02)
+# Agent email template - London Review of Reviews (v1, 2026-11-02)
 
 From: Tara Button <tara@theariel.tv>. One email per agency per edition. Plain, short, warm. HTML body
 with every link under descriptive text (never a bare URL). No em dashes.
 
-**Subject (one title):** <Book> in this week's British Review of Reviews
-**Subject (several):** <Agency> titles in this week's British Review of Reviews
+**Subject (one title):** <Book> in this week's London Review of Reviews
+**Subject (several):** <Agency> titles in this week's London Review of Reviews
 
 ---
 
@@ -13,7 +13,7 @@ Dear <first name>,
 <OPENING LINE, see below>
 
 I'm Tara Button, founder of The Ariel, which helps film and TV producers find stories early. Every Monday
-we publish the [British Review of Reviews](https://theariel.tv/reviews/), a free round-up of every
+we publish the [London Review of Reviews](https://theariel.tv/reviews/), a free round-up of every
 non-fiction book reviewed in the British papers, and <Author>'s <Book> is in this week's edition after
 its review in <publication>.
 
@@ -22,7 +22,7 @@ its review in <publication>.
   Commissioner, or from an Ariel member or Rights Pass holder): "Our producers have asked us to find out
   the film rights status for <Book>." More than one: "Two of our producers have asked..." (real count).
 - **Otherwise** (no request, or the requester chose Writer / Agent or publisher / Other): "We're finding
-  out the film rights status of the books in this week's British Review of Reviews for the producers we
+  out the film rights status of the books in this week's London Review of Reviews for the producers we
   work with, and <Book> is one of them." Never say a producer asked when none did. Never say "readers".
 - Optional extra, only if true: "It was one of the most-read reviews in this week's edition."
 
@@ -47,7 +47,7 @@ The Ariel | [theariel.tv](https://theariel.tv)
 
 **Existing relationship** (agency already Active in the Agent Outreach tracker or already sends to
 rights@): drop the introduction and the rights@ paragraph; open with "Lovely to see <Book> in this
-week's British Review of Reviews."
+week's London Review of Reviews."
 
 **Never:** praise or judge the book, say what commissioners want, ask for decks/excerpts/pitches, promise
 follow-up work Tara hasn't agreed, or claim partners/clients we don't have.

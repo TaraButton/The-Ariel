@@ -1,4 +1,4 @@
-/* British Review of Reviews - sign-up forms + homepage pop-up (The Ariel).
+/* London Review of Reviews - sign-up forms + homepage pop-up (The Ariel).
    Built from _tools/brr/signup.template.js by build_site.py; do not edit reviews/signup.js by hand. */
 (function () {
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec';

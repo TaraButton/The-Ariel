@@ -1,5 +1,5 @@
 /**
- * British Review of Reviews - Check Rights, click tracking, rights store, outbox.
+ * London Review of Reviews - Check Rights, click tracking, rights store, outbox.
  * v1.0 2026-11-02
  *
  * Tabs (auto-created):
@@ -172,7 +172,7 @@ function sendRightsAck_(email, name, bookTitle, tier) {
   var body = (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
     'Thanks for asking about the screen rights to <b>' + esc_(bookTitle) + '</b>. We’re finding out from the author’s agent and will email you the answer, ' +
     RIGHTS_CFG.ANSWER_PROMISE + '.<br><br>' +
-    (tier === 'free' ? 'This is your free rights check from the British Review of Reviews. ' +
+    (tier === 'free' ? 'This is your free rights check from the London Review of Reviews. ' +
       'Ariel members get unlimited rights checks and introductions to agents, plus a first look at rights-available books sent to us directly by literary agents. ' +
       '<a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">See what The Ariel does</a>.<br><br>' : '') +
     'If the rights are available and you’d like an introduction to the agent, just reply to this email.';
@@ -199,7 +199,7 @@ function sendBranded_(to, subject, heading, bodyHtml) {
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' + C.ivory + '"><tr><td align="center" style="padding:24px 12px;">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:580px;">' +
     '<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:22px 28px;">' +
-    '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:#E2C891;">The Ariel &middot; British Review of Reviews</div>' +
+    '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:#E2C891;">The Ariel &middot; London Review of Reviews</div>' +
     '<div style="font-family:' + SERIF + ';font-size:28px;line-height:1.15;color:#FFFFFF;margin-top:8px;">' + esc_(heading) + '</div></td></tr>' +
     '<tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:24px 28px;font-family:' + SANS + ';font-size:16px;line-height:1.6;color:' + C.body + ';">' + bodyHtml + '</td></tr>' +
     '</table></td></tr></table></body></html>';

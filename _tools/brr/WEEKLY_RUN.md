@@ -1,4 +1,4 @@
-# British Review of Reviews - weekly run (spec v1, 2026-11-01)
+# London Review of Reviews - weekly run (spec v1, 2026-11-01)
 
 Runs every **Sunday evening (UK)** in the cloud. Produces Monday's edition, publishes it to
 theariel.tv/reviews/, and the newsletter backend (Apps Script, "British Review of Reviews" sheet)
@@ -48,7 +48,7 @@ The Ariel HQ/Platform/review-of-reviews/.
      NEVER say or hint that rights are available, unoptioned, "worth checking", or that the author's
      books get adapted. We have not checked rights; the page and email say so.
    Merge the same book reviewed in several papers into one entry with all its review links (order:
-   FT, Times/Sunday Times, Guardian/Observer, Spectator, Economist, LRB, Literary Review). Literary
+   FT, Times/Sunday Times, Guardian, Observer (Tortoise, observer.co.uk, separate since 2025), Spectator, Economist, LRB, Literary Review). Literary
    Review is monthly: include its new issue in the first edition after it appears.
 5. **Write** `reviews/editions/YYYY-MM-DD.json` named for **Monday's date**:
    ```json
@@ -58,7 +58,7 @@ The Ariel HQ/Platform/review-of-reviews/.
     "books":[{"book":"...","author":"...","subject":"History","line":"...","lead":false,"why":"", (book_id is added by build_site.py)
               "reviews":[{"pub":"FT","url":"https://..."}]}]}
    ```
-   Publication short names: FT, Times/Sunday Times, Guardian/Observer, Spectator, Economist, LRB,
+   Publication short names: FT, Times/Sunday Times, Guardian, Observer (Tortoise, observer.co.uk, separate since 2025), Spectator, Economist, LRB,
    Literary Review.
 6. **Check.** Open every review URL you are unsure of. Then `python3 -I _tools/brr/build_site.py`
    (it refuses an edition with a bad subject, a non-https link or an em dash). If fewer than 15

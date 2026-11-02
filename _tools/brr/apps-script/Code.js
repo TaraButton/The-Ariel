@@ -1,5 +1,5 @@
 /**
- * British Review of Reviews - newsletter backend (The Ariel)
+ * London Review of Reviews - newsletter backend (The Ariel)
  * v1.0 2026-11-01
  *
  * Container-bound to the "British Review of Reviews" Google Sheet.
@@ -31,7 +31,7 @@
  */
 
 var CONFIG = {
-  NAME: 'British Review of Reviews',
+  NAME: 'London Review of Reviews',
   FROM_ALIAS: 'tara@theariel.tv',
   SENDER_NAME: 'The Ariel',
   REPLY_TO: 'hello@theariel.tv',
@@ -57,7 +57,7 @@ var SUB_HEADERS = ['email', 'name', 'role', 'subjects', 'status', 'token', 'crea
 var ED_HEADERS = ['edition_id', 'status', 'send_after', 'created_at', 'sent_at', 'sent_count',
   'json_1', 'json_2', 'json_3', 'json_4', 'json_5'];
 
-var CONSENT_TEXT = 'Weekly British Review of Reviews email from The Ariel. Unsubscribe any time.';
+var CONSENT_TEXT = 'Weekly London Review of Reviews email from The Ariel. Unsubscribe any time.';
 
 /* ───────────────────────── setup ───────────────────────── */
 
@@ -223,7 +223,7 @@ function confirm_(token) {
   var subjects = cell_(sh, row, 'subjects');
   return {
     title: 'You’re subscribed',
-    body: '<p>The British Review of Reviews will arrive every Monday morning' +
+    body: '<p>The London Review of Reviews will arrive every Monday morning' +
       (subjects ? ', with books for <strong>' + esc_(subjects) + '</strong> picked out at the top.' : '.') + '</p>' +
       (latestEdition_('sent') ? '<p>We’ve just sent you the latest edition so you don’t have to wait.</p>' : '') +
       '<p><a class="btn" href="' + CONFIG.SITE + '">Read this week’s edition</a></p>' +
@@ -237,7 +237,7 @@ function unsubscribe_(token) {
   if (!row) return { title: 'Link not recognised', body: '<p>We couldn’t find that subscription. If emails keep arriving, reply to one and we’ll remove you by hand.</p>' };
   setCells_(sh, row, { status: 'unsubscribed', unsubscribed_at: new Date() });
   log_('unsubscribe', cell_(sh, row, 'email'));
-  return { title: 'You’re unsubscribed', body: '<p>You won’t receive the British Review of Reviews any more.</p>' +
+  return { title: 'You’re unsubscribed', body: '<p>You won’t receive the London Review of Reviews any more.</p>' +
     '<p class="small">Changed your mind? <a href="' + webUrl_() + '?action=resubscribe&t=' + encodeURIComponent(token) + '">Resubscribe</a></p>' };
 }
 
@@ -520,7 +520,7 @@ function renderEmail_(ed, sub, isWelcome) {
   // masthead
   h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px 28px 22px;">' +
     '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:#E2C891;">Free every Monday from The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
-    '<h1 style="margin:10px 0 0;font-weight:normal;font-family:' + SERIF + ';font-size:36px;line-height:1.1;color:#FFFFFF;">British Review <i>of</i> Reviews</h1>' +
+    '<h1 style="margin:10px 0 0;font-weight:normal;font-family:' + SERIF + ';font-size:36px;line-height:1.1;color:#FFFFFF;">London Review <i>of</i> Reviews</h1>' +
     '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.5;color:#E6E9F1;margin-top:10px;">Every non-fiction book reviewed in the week’s papers and literary magazines, one line each. ' + n + ' books this week.</div>' +
     '</td></tr>');
 
@@ -664,7 +664,7 @@ function page_(o) {
     '.wrap{max-width:560px;margin:0 auto;padding:36px 16px}h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.1;color:' + C.ink + ';margin:0 0 14px}' +
     'a{color:' + C.goldDeep + '}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid ' + C.gold + ';outline-offset:2px}.btn{display:inline-block;background:' + C.gold + ';color:' + C.ink + ';padding:14px 22px;text-decoration:none;font-size:17px;font-weight:900;border:0;border-radius:3px;cursor:pointer;font-family:Lato,Arial,sans-serif;min-height:48px}' +
     '.small{font-size:16px;color:' + C.mist + '}.chks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:16px 0 20px}.chk{font-size:17px;display:flex;gap:8px;align-items:center}.chk input{width:22px;height:22px}</style></head><body>' +
-    '<header class="top"><div style="max-width:560px;margin:0 auto"><a href="' + CONFIG.SITE + '" target="_top">British Review of Reviews &middot; The Ariel</a></div></header>' +
+    '<header class="top"><div style="max-width:560px;margin:0 auto"><a href="' + CONFIG.SITE + '" target="_top">London Review of Reviews &middot; The Ariel</a></div></header>' +
     '<main class="wrap"><h1>' + esc_(o.title) + '</h1>' + o.body + '</main></body></html>';
   return HtmlService.createHtmlOutput(html).setTitle(o.title).addMetaTag('viewport', 'width=device-width, initial-scale=1');
 }
@@ -711,17 +711,17 @@ function sendConfirm_(email, name, token) {
   var html = '<!doctype html><html><body style="margin:0;background:' + C.ivory + ';" bgcolor="' + C.ivory + '">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' + C.ivory + '"><tr><td align="center" style="padding:24px 12px;">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">' +
-    '<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:24px 28px;font-family:' + SERIF + ';font-size:28px;color:' + C.ivory + ';">British Review <i>of</i> Reviews</td></tr>' +
+    '<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:24px 28px;font-family:' + SERIF + ';font-size:28px;color:' + C.ivory + ';">London Review <i>of</i> Reviews</td></tr>' +
     '<tr><td bgcolor="' + C.cream + '" style="background-color:' + C.cream + ';padding:24px 28px;font-family:' + SANS + ';font-size:15px;line-height:1.6;color:' + C.body + ';">' +
     (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
-    'Please confirm you’d like the British Review of Reviews from The Ariel: every non-fiction book reviewed in the week’s papers, one line each, every Monday.<br><br>' +
+    'Please confirm you’d like the London Review of Reviews from The Ariel: every non-fiction book reviewed in the week’s papers, one line each, every Monday.<br><br>' +
     '<table role="presentation" cellpadding="0" cellspacing="0"><tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';border-radius:2px;">' +
     '<a href="' + link + '" style="display:inline-block;padding:12px 22px;font-family:' + SANS + ';font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:' + C.ivory + ';text-decoration:none;">Confirm my subscription</a></td></tr></table><br>' +
     '<span style="font-size:13px;color:' + C.mist + ';">If you didn’t ask for this, ignore this email and you won’t hear from us.</span></td></tr></table></td></tr></table></body></html>';
   var opts = { htmlBody: html, name: CONFIG.SENDER_NAME, replyTo: CONFIG.REPLY_TO };
   if (aliasOk_()) opts.from = CONFIG.FROM_ALIAS;
-  GmailApp.sendEmail(email, 'Confirm your British Review of Reviews subscription',
-    'Please confirm your subscription to the British Review of Reviews from The Ariel: ' + link, opts);
+  GmailApp.sendEmail(email, 'Confirm your London Review of Reviews subscription',
+    'Please confirm your subscription to the London Review of Reviews from The Ariel: ' + link, opts);
 }
 
 function log_(type, detail) {
