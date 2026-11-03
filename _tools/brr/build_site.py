@@ -36,6 +36,14 @@ def load_editions():
     return eds
 
 
+VERDICTS = {"rave": "Rave", "warm": "Warm", "mixed": "Mixed", "pan": "Critical"}
+VERDICT_RANK = {"rave": 0, "warm": 1, "mixed": 2, "": 3, "pan": 4}
+
+
+def best_verdict(b):
+    return min((VERDICT_RANK.get(r.get("verdict") or "", 3) for r in b["reviews"]), default=3)
+
+
 def check(ed):
     probs = []
     for i, b in enumerate(ed["books"]):
@@ -43,6 +51,11 @@ def check(ed):
             probs.append(f"{i}: bad subject {b.get('subject')}")
         if not b.get("reviews") or not all(r["url"].startswith("https://") for r in b["reviews"]):
             probs.append(f"{i}: bad review links")
+        for r in b.get("reviews") or []:
+            if r.get("verdict") and r["verdict"] not in VERDICTS:
+                probs.append(f"{i}: bad verdict {r['verdict']}")
+        if b.get("reviews") and all(r.get("verdict") == "pan" for r in b["reviews"]) and not b.get("lead"):
+            probs.append(f"{i}: panned everywhere and not a screen pick, so drop it")
         if "—" in json.dumps(b, ensure_ascii=False):
             probs.append(f"{i}: em dash")
     if probs:
@@ -152,6 +165,10 @@ ol{list-style:none;margin:0;padding:0}
 .book.picked{background:var(--tint);padding-inline:14px;margin-inline:-14px;border-radius:4px}
 .revs{margin:8px 0 0;font-size:16px;color:var(--muted)}
 .multi{color:var(--gold-deep);font-weight:700;margin-left:6px}
+.verdict{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:3px;padding:1px 7px;margin-left:4px;vertical-align:1px;border:1px solid currentColor}
+.v-rave{color:#FFFFFF;background:#7A5A1E;border-color:#7A5A1E}
+.v-warm{color:#7A5A1E;background:#FBF3E2}
+.v-mixed,.v-pan{color:#4A5060;background:#FFFFFF}
 .cta{background:var(--ink);color:#FFFFFF;padding:32px;border-radius:4px;margin-top:48px}
 .cta h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:34px;line-height:1.1;margin:0 0 10px}
 .cta p{color:#E6E9F1;margin:0 0 20px;max-width:36rem;font-size:18px}
@@ -265,7 +282,10 @@ def book_id(b):
 
 def book_li(b):
     papers = " ".join(slug(r["pub"]) for r in b["reviews"])
-    revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener" data-pub="{E(r["pub"])}">{E(r["pub"])}</a>' for r in b["reviews"])
+    def vtag(r):
+        v = r.get("verdict") or ""
+        return f' <span class="verdict v-{v}" title="The reviewer&#8217;s verdict">{VERDICTS[v]}</span>' if v in VERDICTS else ""
+    revs = " &middot; ".join(f'<a href="{E(r["url"])}" target="_blank" rel="noopener" data-pub="{E(r["pub"])}">{E(r["pub"])}</a>{vtag(r)}' for r in b["reviews"])
     multi = f'<span class="multi">{len(b["reviews"])} papers</span>' if len(b["reviews"]) > 1 else ""
     au = f' <span class="au">{E(b.get("author"))}</span>' if b.get("author") else ""
     star = '<span class="star" aria-hidden="true">&#9733;</span> <span class="sr-only">Screen potential: </span>' if b.get("lead") else ""
@@ -292,7 +312,7 @@ def edition_body(ed):
     secs = []
     for s in present:
         lst = [b for b in books if b["subject"] == s]
-        lst.sort(key=lambda b: not b.get("lead"))
+        lst.sort(key=lambda b: (not b.get("lead"), best_verdict(b), -len(b["reviews"])))
         secs.append(f'<section class="subject" id="{slug(s)}"><header><h2>{E(s)}</h2><span class="n">{len(lst)}</span></header>'
                     f'<ol>{"".join(book_li(b) for b in lst)}</ol></section>')
     return f'''<div class="controls">
@@ -362,7 +382,7 @@ def page(ed, eds, is_index):
   </div>
   <div class="inline-signup brr-card"><h2>Get next Monday&#8217;s edition free</h2><p class="card-sub">Free, every week. Unsubscribe in one click.</p>{form_bottom}</div>
   <div class="archive"><h2>Past editions</h2><ul>{archive}</ul></div>
-  <p class="note">Summaries are our own one-line descriptions of each review; follow the links to read the reviews in full. &#9733; marks books we think have screen potential. We haven&#8217;t checked who holds the film and TV rights, and some may already be optioned. For a first look at rights-available books directly from agents, <a href="/#book">sign up to The Ariel</a>. Sources this week: {E(", ".join(sorted({r["pub"] for b in ed["books"] for r in b["reviews"]})))}. Not yet covered: the Telegraph, TLS and New Statesman.</p>
+  <p class="note">Summaries are our own one-line descriptions of each review. Rave, Warm, Mixed and Critical are the reviewer&#8217;s verdict, not ours, and we only add one when the review makes it clear; follow the links to read the reviews in full. &#9733; marks books we think have screen potential. We haven&#8217;t checked who holds the film and TV rights, and some may already be optioned. For a first look at rights-available books directly from agents, <a href="/#book">sign up to The Ariel</a>. Sources this week: {E(", ".join(sorted({r["pub"] for b in ed["books"] for r in b["reviews"]})))}. Not yet covered: the Telegraph, TLS and New Statesman.</p>
 </div></main>
 <footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="mailto:hello@theariel.tv">hello@theariel.tv</a></footer>
 <script>{FILTER_JS}</script>

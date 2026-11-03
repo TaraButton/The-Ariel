@@ -40,6 +40,13 @@ The Ariel HQ/Platform/review-of-reviews/.
      Biography & memoir, History, Society & ideas, Nature & place, Arts & culture, Books & writing,
      Life & leisure.
    - **line**: one sentence describing the book.
+   - **verdict** (per review, Tara 2 Nov): the REVIEWER's verdict, `rave`, `warm`, `mixed` or `pan`, shown on the
+     page and in the email next to the paper's name. Set it only when the review's own wording makes it
+     clear (standfirst, headline or text; FT is paywalled, so its standfirst is the evidence). Where a paper
+     prints stars: 5 rave, 4 warm, 3 mixed, 1-2 pan, and never show the stars. Unclear: leave it out. Never
+     guess. When unsure between rave and warm, use warm. A book panned in every review is dropped unless it
+     is a screen pick (then its "why" must say why the story still matters); build_site.py enforces this.
+     Within each subject the page sorts screen picks first, then by best verdict, then by number of papers.
    - **lead**: true only if the book has the makings of a film or TV project (a strong central
      figure, a crime or mystery, a secret world, an untold story, a dramatic event). Aim for
      10-20% of books, spread across subjects.
@@ -56,7 +63,7 @@ The Ariel HQ/Platform/review-of-reviews/.
     "window":"Reviews published 31 October - 8 November 2026",
     "preheader":"NN non-fiction books reviewed in the British papers this week, one line each.",
     "books":[{"book":"...","author":"...","subject":"History","line":"...","lead":false,"why":"", (book_id is added by build_site.py)
-              "reviews":[{"pub":"FT","url":"https://..."}]}]}
+              "reviews":[{"pub":"FT","url":"https://...","verdict":"rave"}]}]}
    ```
    Publication short names: FT, Times/Sunday Times, Guardian, Observer (Tortoise, observer.co.uk, separate since 2025), Spectator, Economist, LRB,
    Literary Review.

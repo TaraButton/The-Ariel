@@ -30,8 +30,10 @@ Could you tell me whether the film and TV rights are available, or who handles t
 colleague or co-agent? One line back is plenty. If they are available, may we show that
 they are? We'd only ever share your details when a producer asks for an introduction.
 
-If you'd like producers on The Ariel to hear about other titles with rights available, you're welcome to
-send them to rights@theariel.tv at any time. It's free for agencies, and a line and a link is all we need.
+To save you answering us book by book, could you add rights@theariel.tv to the list you send your film
+and TV rights guide to? We'll check every request against it first and only come back to you about
+titles that aren't on it, and the titles on it reach the producers on The Ariel they fit. Whenever you
+update it is perfect, and it's free for agencies.
 
 With best wishes,
 Tara
@@ -46,8 +48,43 @@ The Ariel | [theariel.tv](https://theariel.tv)
 (reviewed in <publication>). Ask about rights "for any of these".
 
 **Existing relationship** (agency already Active in the Agent Outreach tracker or already sends to
-rights@): drop the introduction and the rights@ paragraph; open with "Lovely to see <Book> in this
-week's London Review of Reviews."
+rights@): drop the introduction; open with "Lovely to see <Book> in this week's London Review of Reviews."
+Keep the rights guide paragraph unless `reviews/agents/lists.json` shows we already get their guide; then
+replace the rights question with "Is <Book> on your current rights guide?" only if it is NOT on the copy
+we hold, and skip the email entirely if it is (answer from the guide instead).
+
+---
+
+## Thank-you after an agent answers (kind `agent_thanks`, once per agency)
+
+Sent by the rights run as a reply in the agent's thread, the first time an agency answers a rights
+question and we don't yet hold their rights guide. Subject: keep the thread's.
+
+Thank you, that's really helpful, and I've passed it on.
+
+One thing that would save you these one-off questions: if you have a film and TV rights guide, could
+you add rights@theariel.tv to the list you send it to? Whenever it changes is perfect. If you don't
+keep one, I'm happy to send you a sheet of your titles we already know about, so you'd only need to
+correct it.
+
+With best wishes,
+Tara
+
+(If they take up the sheet offer, tell Tara: it follows the Northbank opt-out sheet playbook and needs
+her approval before it goes.)
+
+## Guide refresh (kind `list_refresh`, at most once a quarter per agency)
+
+Subject: Your latest film and TV rights guide
+
+Dear <first name>,
+
+Thank you again for sending us your rights guide. The copy we're working from is dated <month year>.
+If there's a newer one, could you send it over, or just let me know if it's still current? One line
+back is plenty.
+
+With best wishes,
+Tara
 
 **Never:** praise or judge the book, say what commissioners want, ask for decks/excerpts/pitches, promise
 follow-up work Tara hasn't agreed, or claim partners/clients we don't have.

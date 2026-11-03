@@ -608,7 +608,9 @@ function bookBlock_(b, withWhy, ctx) {
       (ctx.token ? '&t=' + encodeURIComponent(ctx.token) : '');
   };
   var links = b.reviews.map(function (r, i) {
-    return '<a href="' + esc_(ctx.edition_id ? go(i) : r.url) + '" style="color:' + C.goldDeep + ';text-decoration:underline;">' + esc_(r.pub) + '</a>';
+    var VL = { rave: 'rave', warm: 'warm', mixed: 'mixed', pan: 'critical' };
+    return '<a href="' + esc_(ctx.edition_id ? go(i) : r.url) + '" style="color:' + C.goldDeep + ';text-decoration:underline;">' + esc_(r.pub) + '</a>' +
+      (VL[r.verdict] ? ' <span style="font-size:13px;color:' + C.goldDeep + ';">(' + VL[r.verdict] + ')</span>' : '');
   }).join(' &middot; ');
   var check = CONFIG.SITE + (ctx.edition_id ? ctx.edition_id + '.html' : '') + '?check=' + encodeURIComponent(bid) + (ctx.token ? '&t=' + encodeURIComponent(ctx.token) : '') + '#b-' + bid;
   return '<div style="font-family:' + SANS + ';font-size:17px;line-height:1.35;color:' + C.ink + ';font-weight:bold;">' +

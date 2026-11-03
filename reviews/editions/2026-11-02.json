@@ -2,7 +2,7 @@
  "edition_id": "2026-11-02",
  "date_label": "2 November 2026",
  "window": "Reviews published 23 October - 1 November 2026",
- "preheader": "51 non-fiction books reviewed in the British papers this week, one line each.",
+ "preheader": "50 non-fiction books reviewed in the British papers this week, one line each.",
  "books": [
   {
    "book": "Killer App",
@@ -29,7 +29,8 @@
    "reviews": [
     {
      "pub": "FT",
-     "url": "https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf"
+     "url": "https://www.ft.com/content/6edc8759-18ca-4fdb-b610-261e28af2bdf",
+     "verdict": "rave"
     }
    ],
    "book_id": "felled-andrew-hankinson"
@@ -59,7 +60,8 @@
    "reviews": [
     {
      "pub": "FT",
-     "url": "https://www.ft.com/content/dfc50238-3672-4a3d-af3a-dd674aea4710"
+     "url": "https://www.ft.com/content/dfc50238-3672-4a3d-af3a-dd674aea4710",
+     "verdict": "rave"
     }
    ],
    "book_id": "the-cauldron-simon-sebag-montefiore"
@@ -78,21 +80,6 @@
     }
    ],
    "book_id": "two-new-books-on-europe"
-  },
-  {
-   "book": "Liz Truss's new book",
-   "author": "Liz Truss",
-   "subject": "Politics & world affairs",
-   "line": "The former prime minister's own account of her time in power, read sceptically.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/7df6f936-b7c5-4ea3-9b9b-81c33706d945"
-    }
-   ],
-   "book_id": "liz-truss-s-new-book-liz-truss"
   },
   {
    "book": "New memoir by Luiz Schwarcz",
@@ -164,7 +151,8 @@
    "reviews": [
     {
      "pub": "Spectator",
-     "url": "https://spectator.com/article/theres-a-50-50-chance-ill-get-bumped-off-an-american-scholar-foresees-his-death/"
+     "url": "https://spectator.com/article/theres-a-50-50-chance-ill-get-bumped-off-an-american-scholar-foresees-his-death/",
+     "verdict": "warm"
     },
     {
      "pub": "Economist",
@@ -172,7 +160,8 @@
     },
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/between-haven-hell"
+     "url": "https://literaryreview.co.uk/between-haven-hell",
+     "verdict": "warm"
     }
    ],
    "book_id": "the-best-kind-of-american-kim-ghattas"
@@ -187,7 +176,8 @@
    "reviews": [
     {
      "pub": "Spectator",
-     "url": "https://spectator.com/article/how-sweden-has-kept-communism-at-bay/"
+     "url": "https://spectator.com/article/how-sweden-has-kept-communism-at-bay/",
+     "verdict": "warm"
     }
    ],
    "book_id": "the-stay-behinds-sweden-s-cold-war-guardians-johan-wennstr-m"
@@ -202,11 +192,13 @@
    "reviews": [
     {
      "pub": "Spectator",
-     "url": "https://spectator.com/article/a-history-of-napoleons-marshals-has-all-the-dash-and-vigour-of-a-cavalry-charge/"
+     "url": "https://spectator.com/article/a-history-of-napoleons-marshals-has-all-the-dash-and-vigour-of-a-cavalry-charge/",
+     "verdict": "warm"
     },
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/winner-takes-it-all"
+     "url": "https://literaryreview.co.uk/winner-takes-it-all",
+     "verdict": "warm"
     }
    ],
    "book_id": "napoleon-and-his-marshals-andrew-roberts"
@@ -236,7 +228,8 @@
    "reviews": [
     {
      "pub": "Spectator",
-     "url": "https://spectator.com/article/why-a-frothy-jane-austen-adaptation-is-always-imminent/"
+     "url": "https://spectator.com/article/why-a-frothy-jane-austen-adaptation-is-always-imminent/",
+     "verdict": "mixed"
     }
    ],
    "book_id": "the-book-was-better-louise-willder"
@@ -386,7 +379,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/give-me-the-judge"
+     "url": "https://literaryreview.co.uk/give-me-the-judge",
+     "verdict": "warm"
     }
    ],
    "book_id": "american-scoundrel-kai-bird-with-susan-goldmark"
@@ -416,7 +410,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/caught-reporting"
+     "url": "https://literaryreview.co.uk/caught-reporting",
+     "verdict": "warm"
     }
    ],
    "book_id": "this-cursed-beautiful-land-evan-gershkovich"
@@ -506,7 +501,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/catchpole-to-the-king"
+     "url": "https://literaryreview.co.uk/catchpole-to-the-king",
+     "verdict": "warm"
     }
    ],
    "book_id": "king-s-secretary-andrew-johnston"
@@ -521,7 +517,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/out-of-the-duchies"
+     "url": "https://literaryreview.co.uk/out-of-the-duchies",
+     "verdict": "warm"
     }
    ],
    "book_id": "great-powers-jan-r-ger"
@@ -536,7 +533,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/1688-and-all-that"
+     "url": "https://literaryreview.co.uk/1688-and-all-that",
+     "verdict": "warm"
     }
    ],
    "book_id": "the-last-invasion-of-england-arthur-der-weduwen"
@@ -551,7 +549,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/scavenger-hunt"
+     "url": "https://literaryreview.co.uk/scavenger-hunt",
+     "verdict": "warm"
     }
    ],
    "book_id": "imperial-predator-david-s-tonge"
@@ -611,7 +610,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/all-the-write-stuff"
+     "url": "https://literaryreview.co.uk/all-the-write-stuff",
+     "verdict": "warm"
     }
    ],
    "book_id": "a-history-of-the-novel-in-britain-philip-hensher"
@@ -641,7 +641,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/balancing-the-books-2"
+     "url": "https://literaryreview.co.uk/balancing-the-books-2",
+     "verdict": "rave"
     }
    ],
    "book_id": "the-bookshop-andrew-pettegree"
@@ -671,7 +672,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/guardians-of-the-planet"
+     "url": "https://literaryreview.co.uk/guardians-of-the-planet",
+     "verdict": "rave"
     }
    ],
    "book_id": "peasants-makers-of-the-modern-world-maryam-aslany"
@@ -686,7 +688,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/bastions-of-tradition"
+     "url": "https://literaryreview.co.uk/bastions-of-tradition",
+     "verdict": "warm"
     }
    ],
    "book_id": "castles-dan-jones"
@@ -701,7 +704,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/grapes-of-cloth"
+     "url": "https://literaryreview.co.uk/grapes-of-cloth",
+     "verdict": "rave"
     }
    ],
    "book_id": "wine-a-global-history-kathleen-burk"
@@ -716,7 +720,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/fur-from-reasonable"
+     "url": "https://literaryreview.co.uk/fur-from-reasonable",
+     "verdict": "warm"
     }
    ],
    "book_id": "yap-stephanie-howard-smith"
@@ -746,7 +751,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/vegetal-living"
+     "url": "https://literaryreview.co.uk/vegetal-living",
+     "verdict": "warm"
     }
    ],
    "book_id": "william-morris-his-gardens-gavin-francis-stoneystreet"
@@ -776,7 +782,8 @@
    "reviews": [
     {
      "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/bottoms-to-the-fore"
+     "url": "https://literaryreview.co.uk/bottoms-to-the-fore",
+     "verdict": "rave"
     }
    ],
    "book_id": "lavinia-fontana-erotic-paintings-enrico-maria-dal-pozzolo"
