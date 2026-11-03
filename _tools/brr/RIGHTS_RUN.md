@@ -26,7 +26,20 @@ screen rights readers asked about, records what agents told us, and lets the bac
 - Mark a book `available` only when the agent (or rights holder) has said so in writing. `show_public` is
   `yes` only if they said we may show it.
 
+## The promise (Tara, 2 Nov)
+The Check Rights modal tells readers they'll get the rights status and the agent's contact details "anywhere
+from instant to a day or so". The backend sends contact details instantly when a verified agent email is
+already in the Rights tab, and sends the rights status instantly when it is already known. Everything else
+depends on this run, so step 0 comes first and must clear every request that has no contact yet.
+
 ## Steps
+0. **Same-day contacts.** `op: open_requests`. For each request with status `open` (not `contact_sent`), look
+   the book up in `reviews/agents/*.json`. If there is no verified agent/screen email, research one now
+   (same rules as WEEKLY_RUN step 8: verified on the agency's or author's own live site today, with the source
+   URL; if the author has no agent, the publisher's rights contact). Then `op: set_rights` with agency,
+   agent_name, agent_email/screen_email and source_url. The backend emails every open requester for that book
+   the contact details automatically (`requesters_sent_contact` in the reply). If you truly cannot find a
+   contact, tell Tara in the summary so she can reply to the requester by hand.
 1. **Replies.** Search Gmail: `to:tara@theariel.tv newer_than:3d -from:me` plus any thread whose subject
    starts "Screen rights" or "<book> in this week's London Review of Reviews". For each agent reply,
    decide the status per book: available / optioned / not_available / handled_elsewhere (+ handled_by) /

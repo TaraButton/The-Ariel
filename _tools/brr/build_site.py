@@ -372,7 +372,7 @@ def page(ed, eds, is_index):
     <div data-pane="form">
       <h2 id="rights-title">Check the screen rights</h2>
       <p class="rights-book"><span data-fill="book"></span></p>
-      <p>We&#8217;ll ask the author&#8217;s agent whether film and TV rights are available and email you the answer, usually within a week. If they are free, we can introduce you.</p>
+      <p>We&#8217;ll email you the film and TV rights status and the contact details for the author&#8217;s agent, as far as we have them. Depending on what we already know, that&#8217;s anywhere from instant to a day or so. If you&#8217;d like an introduction, we can make it.</p>
       <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks: just use the email address your Ariel emails come to. No password needed.</p>
       <form novalidate>
         <label for="rq-email">Your email <span class="req">*</span></label>
@@ -384,12 +384,17 @@ def page(ed, eds, is_index):
     </div>
     <div data-pane="done" hidden>
       <h2>We&#8217;re on it</h2>
-      <p>We&#8217;re asking about <b data-fill="book"></b> and will email you the answer. Check your inbox for a confirmation.</p>
+      <p>We&#8217;re tracking down who represents the author of <b data-fill="book"></b>. We&#8217;ll email you their contact details, with the rights status if we have it, within a day or so.</p>
+      <button type="button" class="brr-submit" data-close>Back to the Review</button>
+    </div>
+    <div data-pane="contact" hidden>
+      <h2>Check your inbox</h2>
+      <p>We&#8217;ve just emailed you the agent&#8217;s contact details for <b data-fill="book"></b>. We&#8217;re asking them about the rights now and will email you the status as soon as we hear.</p>
       <button type="button" class="brr-submit" data-close>Back to the Review</button>
     </div>
     <div data-pane="answered" hidden>
       <h2>We already know</h2>
-      <p>We&#8217;ve just emailed you what we know about the rights to <b data-fill="book"></b>.</p>
+      <p>We&#8217;ve just emailed you the rights status for <b data-fill="book"></b>, with the agent&#8217;s contact details where we have them.</p>
       <button type="button" class="brr-submit" data-close>Back to the Review</button>
     </div>
     <div data-pane="upsell" hidden>

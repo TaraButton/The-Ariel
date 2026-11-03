@@ -84,6 +84,7 @@
           pane('upsell');
         } else if (res.outcome === 'pass_interest') { pane('pass'); }
         else if (res.outcome === 'answered') { pane('answered'); }
+        else if (res.outcome === 'contact') { pane('contact'); }
         else { pane('done'); }
       })
       .catch(function () { btn.disabled = false; status.textContent = 'We couldn’t reach the service just now. Please try again in a minute.'; status.classList.add('error'); });

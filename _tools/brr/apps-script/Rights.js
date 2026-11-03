@@ -26,7 +26,7 @@ var RIGHTS_CFG = {
   HOLD_MIN: 30,
   OUTBOX_DAILY_CAP: 40,
   PASS_PRICE: '£29 a month',
-  ANSWER_PROMISE: 'usually within a week, depending on how quickly the agent replies'
+  ANSWER_PROMISE: 'within a working day'
 };
 
 var RIGHTS_STATUS_TEXT = {
@@ -158,10 +158,18 @@ function checkRights_(b) {
       req.getRange(req.getLastRow(), 9, 1, 2).setValues([['answered', now]]);
       return { ok: true, outcome: 'answered' };
     }
+    if (rr.row && contactOf_(rr.sh, rr.row)) {
+      sendRightsContact_(email, name, bookTitle, rr.sh, rr.row, tier);
+      req.getRange(req.getLastRow(), 9, 1, 2).setValues([['contact_sent', now]]);
+      alertTara_('[Review of Reviews] Rights check: ' + bookTitle,
+        (name || email) + (company ? ' (' + company + ')' : '') + (role ? ', ' + role : '') + ' asked about screen rights to "' + bookTitle +
+        '".\nTier: ' + tier + '\nThey were sent the agent contact details instantly. The daily rights run will ask the agent for the rights status.');
+      return { ok: true, outcome: 'contact' };
+    }
     sendRightsAck_(email, name, bookTitle, tier);
     alertTara_('[Review of Reviews] Rights check: ' + bookTitle,
       (name || email) + (company ? ' (' + company + ')' : '') + (role ? ', ' + role : '') + ' asked about screen rights to "' + bookTitle +
-      '".\nTier: ' + tier + '\nRights status on file: ' + (known || 'none') + '\nThe daily rights run will ask the agent and reply to them.');
+      '".\nTier: ' + tier + '\nNo agent contact on file yet. The daily rights run must find the agent today; the backend then emails them automatically.');
     return { ok: true, outcome: 'accepted', tier: tier };
   } finally {
     lock.releaseLock();
@@ -170,13 +178,52 @@ function checkRights_(b) {
 
 function sendRightsAck_(email, name, bookTitle, tier) {
   var body = (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
-    'Thanks for asking about the screen rights to <b>' + esc_(bookTitle) + '</b>. We’re finding out from the author’s agent and will email you the answer, ' +
-    RIGHTS_CFG.ANSWER_PROMISE + '.<br><br>' +
+    'Thanks for asking about the screen rights to <b>' + esc_(bookTitle) + '</b>. We’re tracking down who represents the author and will email you their contact details, ' +
+    'with the rights status if we have it, ' + RIGHTS_CFG.ANSWER_PROMISE + '.<br><br>' +
     (tier === 'free' ? 'This is your free rights check from the London Review of Reviews. ' +
       'Ariel members get unlimited rights checks and introductions to agents, plus a first look at rights-available books sent to us directly by literary agents. ' +
       '<a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">See what The Ariel does</a>.<br><br>' : '') +
-    'If the rights are available and you’d like an introduction to the agent, just reply to this email.';
+    'If you’d like us to introduce you to the agent, just reply to this email.';
   sendBranded_(email, 'Screen rights: ' + bookTitle, 'Checking the rights', body);
+}
+
+/* Agent / rights contact on file for a Rights row, or null. Prefers a named screen contact. */
+function contactOf_(sh, row) {
+  var screen = String(cell_(sh, row, 'screen_email') || '').trim();
+  var agentEmail = String(cell_(sh, row, 'agent_email') || '').trim();
+  var em = screen || agentEmail;
+  if (!em) return null;
+  return {
+    email: em,
+    agency: String(cell_(sh, row, 'agency') || '').trim(),
+    agent: screen ? '' : String(cell_(sh, row, 'agent_name') || '').trim(),
+    screen: !!screen,
+    source: String(cell_(sh, row, 'source_url') || '').trim()
+  };
+}
+
+function contactHtml_(c) {
+  var who = c.screen ? 'Film and TV rights contact' : 'Author’s agent';
+  var line = (c.agent ? esc_(c.agent) + (c.agency ? ', ' + esc_(c.agency) : '') : esc_(c.agency || ''));
+  return '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:4px 0 18px;border-left:3px solid ' + C.goldDeep + ';"><tr><td style="padding:4px 0 4px 14px;">' +
+    '<div style="font-size:13px;text-transform:uppercase;letter-spacing:0.08em;color:' + C.goldDeep + ';">' + who + '</div>' +
+    (line ? '<div style="font-weight:bold;">' + line + '</div>' : '') +
+    '<div><a href="mailto:' + esc_(c.email) + '" style="color:' + C.goldDeep + ';">' + esc_(c.email) + '</a></div>' +
+    (c.source ? '<div style="font-size:14px;"><a href="' + esc_(c.source) + '" style="color:' + C.body + ';">Where this address is listed</a></div>' : '') +
+    '</td></tr></table>';
+}
+
+function sendRightsContact_(email, name, bookTitle, sh, row, tier) {
+  var c = contactOf_(sh, row);
+  if (!c) return false;
+  var body = (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
+    'You asked about the screen rights to <b>' + esc_(bookTitle) + '</b>. Here is who to contact:<br><br>' + contactHtml_(c) +
+    'We haven’t confirmed the rights status yet. We’re asking now and will email you as soon as we hear.<br><br>' +
+    'If you’d rather we introduced you, just reply to this email.' +
+    (tier === 'free' ? '<br><br>This was your free rights check. Ariel members get unlimited checks and introductions, plus rights-available books sent to us directly by literary agents. ' +
+      '<a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">See what The Ariel does</a>.' : '');
+  sendBranded_(email, 'Screen rights: ' + bookTitle, 'Who holds the rights', body);
+  return true;
 }
 
 function sendRightsAnswer_(email, name, bookTitle, sh, row, tier) {
@@ -187,7 +234,8 @@ function sendRightsAnswer_(email, name, bookTitle, sh, row, tier) {
   var body = (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
     'You asked about the screen rights to <b>' + esc_(bookTitle) + '</b>.<br><br>' +
     '<b>' + esc_(line) + '.</b>' + (status === 'handled_elsewhere' && handled ? ' They are handled by ' + esc_(handled) + '.' : '') +
-    (agency && status === 'available' ? ' The author is represented by ' + esc_(agency) + '.' : '') + '<br><br>' +
+    (agency && status === 'available' && !contactOf_(sh, row) ? ' The author is represented by ' + esc_(agency) + '.' : '') + '<br><br>' +
+    (status === 'available' && contactOf_(sh, row) ? contactHtml_(contactOf_(sh, row)) : '') +
     (status === 'available' ? 'Would you like an introduction to the agent? Reply to this email and we’ll introduce you.<br><br>' : '') +
     (tier === 'free' ? 'That was your free rights check. Ariel members get unlimited checks and introductions, plus rights-available books sent to us directly by literary agents. ' +
       '<a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">See what The Ariel does</a>.' : '');
@@ -230,7 +278,7 @@ function rightsAdmin_(b) {
   if (b.op === 'set_rights') {
     var rows = b.rows || [];
     var sh = sheet_('Rights');
-    var updated = 0, answered = 0;
+    var updated = 0, answered = 0, contacted = 0;
     rows.forEach(function (r) {
       if (!r.book_id) return;
       var row = findRow_(sh, 1, r.book_id);
@@ -241,11 +289,14 @@ function rightsAdmin_(b) {
         RIGHTS_HEADERS.forEach(function (h) { if (r[h] !== undefined && h !== 'book_id') setCell_(sh, row, h, r[h]); });
       }
       updated++;
-      if (['available', 'optioned', 'not_available', 'handled_elsewhere'].indexOf(r.status) >= 0) {
+      var st = String(cell_(sh, row, 'status') || '');
+      if (['available', 'optioned', 'not_available', 'handled_elsewhere'].indexOf(st) >= 0) {
         answered += answerOpenRequests_(r.book_id, sh, row);
+      } else if (contactOf_(sh, row)) {
+        contacted += sendContactToOpen_(r.book_id, sh, row);
       }
     });
-    return { ok: true, updated: updated, requesters_answered: answered };
+    return { ok: true, updated: updated, requesters_answered: answered, requesters_sent_contact: contacted };
   }
   if (b.op === 'queue_email') {
     var ob = sheet_('Outbox');
@@ -282,7 +333,7 @@ function rightsAdmin_(b) {
   if (b.op === 'open_requests') {
     var q = sheet_('Requests').getDataRange().getValues();
     var list = [];
-    for (var m = 1; m < q.length; m++) if (q[m][8] === 'open' || q[m][8] === 'pass_interest') list.push({ row: m + 1, time: q[m][0], book_id: q[m][1], book: q[m][2], email: q[m][3], name: q[m][4], company: q[m][5], role: q[m][6], tier: q[m][7], status: q[m][8] });
+    for (var m = 1; m < q.length; m++) if (q[m][8] === 'open' || q[m][8] === 'contact_sent' || q[m][8] === 'pass_interest') list.push({ row: m + 1, time: q[m][0], book_id: q[m][1], book: q[m][2], email: q[m][3], name: q[m][4], company: q[m][5], role: q[m][6], tier: q[m][7], status: q[m][8] });
     return { ok: true, requests: list };
   }
   if (b.op === 'add_member') {
@@ -302,12 +353,29 @@ function answerOpenRequests_(bookId, sh, row) {
   var v = req.getDataRange().getValues();
   var n = 0;
   for (var i = 1; i < v.length; i++) {
-    if (v[i][1] === bookId && v[i][8] === 'open') {
+    if (v[i][1] === bookId && (v[i][8] === 'open' || v[i][8] === 'contact_sent')) {
       try {
         sendRightsAnswer_(v[i][3], v[i][4], v[i][2], sh, row, v[i][7]);
         req.getRange(i + 1, 9, 1, 2).setValues([['answered', new Date()]]);
         n++;
       } catch (e) { log_('error', 'answer ' + v[i][3] + ': ' + e); }
+    }
+  }
+  return n;
+}
+
+function sendContactToOpen_(bookId, sh, row) {
+  var req = sheet_('Requests');
+  var v = req.getDataRange().getValues();
+  var n = 0;
+  for (var i = 1; i < v.length; i++) {
+    if (v[i][1] === bookId && v[i][8] === 'open') {
+      try {
+        if (sendRightsContact_(v[i][3], v[i][4], v[i][2], sh, row, v[i][7])) {
+          req.getRange(i + 1, 9, 1, 2).setValues([['contact_sent', new Date()]]);
+          n++;
+        }
+      } catch (e) { log_('error', 'contact ' + v[i][3] + ': ' + e); }
     }
   }
   return n;
