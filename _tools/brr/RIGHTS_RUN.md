@@ -85,7 +85,7 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    more than 90 days ago, and no agent_ask to that agency in the last 30 days (those already carried the
    ask): queue one `guide_ask` email (agent_email_template.md), most books-to-date first, at most 10 a day,
    and set `guide_ask_sent`. Commit agencies.json.
-3e. **Published guides.** On the first weekday of each month, re-read every `rights_guide.url` of kind
+3e. **Published guides.** Load any film/TV guide in agencies.json that is not yet in lists.json at the next run; and on the first weekday of each month, re-read every `rights_guide.url` of kind
    film/TV in agencies.json and load it into lists.json exactly as step 0b (status `available` only where
    the guide says film/TV rights are available).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open

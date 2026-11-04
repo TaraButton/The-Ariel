@@ -2,9 +2,12 @@
  {
   "agency": "Aevitas Creative Management",
   "aliases": [
-   "Aevitas Creative Management (ACM UK)",
    "ACM UK",
-   "Aevitas"
+   "Aevitas",
+   "Aevitas Creative Management (ACM UK)",
+   "Aevitas Creative Management UK",
+   "The Viney Agency (merged July 2024)",
+   "Toby Mundy Associates"
   ],
   "domain": "aevitascreative.com",
   "film_tv_contact": {
@@ -13,25 +16,27 @@
    "source_url": "https://aevitascreative.com/film-television"
   },
   "general_email": {
-   "email": "",
-   "source_url": ""
+   "email": "ukenquiries@aevitascreative.com",
+   "source_url": "https://www.aevitascreative.com/acm-uk"
   },
   "rights_guide": {
-   "url": "",
-   "kind": "none found",
-   "date": "",
-   "note": "Media Rights and Foreign Rights are web pages, not guides."
+   "url": "https://airtable.com/embed/shrQg9iOFhYc9TBOQ",
+   "kind": "translation only",
+   "date": "Embedded Airtable frontlist catalogue on https://www.aevitascreative.com/foreign; no season."
   },
   "book_ids": [
    "felled-andrew-hankinson"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "UK office lists History & Narrative Non-Fiction, Business & Politics, Memoir & Biography, Science & Technology."
  },
  {
   "agency": "Antony Harwood Limited",
   "aliases": [
+   "Antony Harwood",
+   "Antony Harwood Limited (Antony Harwood Literary Agency)",
    "Antony Harwood Literary Agency",
-   "Antony Harwood Limited (Antony Harwood Literary Agency)"
+   "Antony Harwood Ltd"
   ],
   "domain": "antonyharwood.com",
   "film_tv_contact": {
@@ -51,11 +56,13 @@
   "book_ids": [
    "no-one-tells-you-the-last-years-of-edna-o-brien-carlo-g-bler"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "All genres; no specific non-fiction claim. Email text partly Cloudflare-obfuscated; address read from plain text and meta description - re-check in a browser."
  },
  {
   "agency": "Georgina Capel Associates",
   "aliases": [
+   "Capel & Land (former name)",
    "Georgina Capel Associates Ltd"
   ],
   "domain": "georginacapel.com",
@@ -78,14 +85,15 @@
    "napoleon-and-his-marshals-andrew-roberts",
    "castles-dan-jones"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "Agents cover history, science, psychology, politics, true crime and investigative journalism (about page)."
  },
  {
   "agency": "United Agents",
   "aliases": [
-   "United Agents (likely; James Gill previously at Felicity Bryan Associates)",
+   "UA",
    "United Agents (film/TV/dramatic rights); literary agent not verified",
-   "UA"
+   "United Agents (likely; James Gill previously at Felicity Bryan Associates)"
   ],
   "domain": "unitedagents.co.uk",
   "film_tv_contact": {
@@ -107,7 +115,8 @@
    "redwood-ben-macintyre",
    "mapping-britain-will-millard"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "Books department cites 'acclaimed biography and specialist non-fiction' and Baillie Gifford Prize winners."
  },
  {
   "agency": "Julian Belfrage Associates",
@@ -131,7 +140,8 @@
    "is-it-too-late-to-make-a-run-for-it-judi-dench"
   ],
   "note": "Co-agent on the Dench deal: Tom Reed, Lou Coulson Associates (not researched).",
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "NOT READ: site blocks automated fetch (robots). Believed to be primarily an actors' agency - not confirmed; likely not relevant."
  },
  {
   "agency": "A.M. Heath",
@@ -160,7 +170,8 @@
    "the-family-man-blood-and-betrayal-in-the-house-of-murdaugh-james-lasdun",
    "wine-a-global-history-kathleen-burk"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "Site does not describe non-fiction strengths; administers the Orwell Prizes link."
  },
  {
   "agency": "WME",
@@ -219,8 +230,8 @@
   "agency": "Rogers, Coleridge & White",
   "aliases": [
    "RCW",
-   "Rogers, Coleridge & White (RCW)",
    "RCW (Rogers, Coleridge & White)",
+   "Rogers, Coleridge & White (RCW)",
    "The Cheney Agency (North America); RCW (UK)"
   ],
   "domain": "rcwlitagency.com",
@@ -245,7 +256,8 @@
    "europe-in-7-chapters-a-concise-history-of-the-european-union-timothy-garton-ash-",
    "a-history-of-the-novel-in-britain-philip-hensher"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "Film & TV page says it partners with screen agencies (The Agency, M42, United Agents, CAA etc.); site does not summarise non-fiction strengths."
  },
  {
   "agency": "Casarotto Ramsay & Associates",
@@ -303,8 +315,9 @@
  {
   "agency": "Aitken Alexander Associates",
   "aliases": [
-   "Aitken Alexander",
-   "AA"
+   "AA",
+   "AAA",
+   "Aitken Alexander"
   ],
   "domain": "aitkenalexander.co.uk",
   "film_tv_contact": {
@@ -319,13 +332,13 @@
   "rights_guide": {
    "url": "https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf",
    "kind": "translation only",
-   "date": "London Book Fair 2026",
-   "note": "Frontlist translation-rights guide; it carries a film/TV contact line ('please contact Lesley Thorne's assistant', ariana@) but is not a screen-rights list. Co-agents list Oct 2026: https://aitkenalexander.co.uk/wp-content/uploads/2026/10/Co-Agents-AA-and-Dunn-Fogg_Oct2026.docx.pdf"
+   "date": "London Book Fair 2026 frontlist guide; incidental screen mentions only."
   },
   "book_ids": [
    "the-age-of-confiscation-nicholas-mulder"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "LBF 2026 guide has a Non-Fiction section from p.34."
  },
  {
   "agency": "David Godwin Associates",
@@ -351,13 +364,16 @@
   "book_ids": [
    "peasants-makers-of-the-modern-world-maryam-aslany"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "NOT READ: davidgodwinassociates.com blocks automated fetch; davidgodwinassociates.co.uk is a parked domain. Translation rights reportedly handled by PFD (Bookseller report, not checked on site)."
  },
  {
   "agency": "The Wylie Agency",
   "aliases": [
+   "The Wylie Agency (UK)",
    "Wylie",
-   "Wylie Agency (UK) Ltd"
+   "Wylie Agency (UK) Ltd",
+   "Wylie London"
   ],
   "domain": "wylieagency.co.uk",
   "film_tv_contact": {
@@ -380,7 +396,8 @@
    "borrowed-land-a-highland-story-kapka-kassabova",
    "great-powers-jan-r-ger"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "nonfiction_note": "All emails Cloudflare-obfuscated; no film/TV contact on site."
  },
  {
   "agency": "Calligraph",
@@ -436,6 +453,7 @@
  {
   "agency": "Northbank Talent Management",
   "aliases": [
+   "Diane Banks Associates",
    "Northbank"
   ],
   "domain": "northbanktalent.com",
@@ -445,8 +463,8 @@
    "source_url": "gmail thread 1a05ea88adcd0c0a"
   },
   "general_email": {
-   "email": "",
-   "source_url": ""
+   "email": "info@northbanktalent.com",
+   "source_url": "https://www.northbanktalent.com/contact"
   },
   "rights_guide": {
    "url": "Business Strategy/Agent_Outreach/Northbank_Rights_Guide_Autumn2026_extracted.txt",
@@ -454,6 +472,895 @@
    "date": "2026-09"
   },
   "book_ids": [],
-  "guide_ask_sent": "2026-09-01"
+  "guide_ask_sent": "2026-09-01",
+  "nonfiction_note": "Client sections for Current Affairs & Business, History & True Crime, Science & Psychology."
+ },
+ {
+  "agency": "PFD (Peters Fraser + Dunlop)",
+  "aliases": [
+   "Peters Fraser + Dunlop",
+   "PFD"
+  ],
+  "domain": "petersfraserdunlop.com",
+  "film_tv_contact": {
+   "name": "Jonathan Sissons (Film/TV Agent); also Rosie Gurtovoy (Head of Media Rights, rgurtovoy@pfd.co.uk); cc Millie Sykes (msykes@pfd.co.uk)",
+   "email": "jsissons@pfd.co.uk",
+   "source_url": "https://petersfraserdunlop.com/rights/film-tv/"
+  },
+  "general_email": {
+   "email": "info@pfd.co.uk",
+   "source_url": "https://petersfraserdunlop.com/contact/"
+  },
+  "rights_guide": {
+   "url": "https://petersfraserdunlop.com/wp-content/uploads/2026/10/PFD-Frankfurt-2026-rights-guide-all-titles.pdf",
+   "kind": "translation only",
+   "date": "Frankfurt Book Fair 2026 (also Children's/YA FBF 2026 and Contemporary Classics LBF 2026 guides on https://petersfraserdunlop.com/rights/international/). Screen status mentioned only incidentally in some blurbs (e.g. 'TV rights optioned by...')."
+  },
+  "nonfiction_note": "Frontlist guide has a non-fiction section; site asks film/TV enquiries go to Sissons and Gurtovoy jointly.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Curtis Brown",
+  "aliases": [
+   "Curtis Brown Group",
+   "Conville & Walsh (merged into Curtis Brown 2013)"
+  ],
+  "domain": "curtisbrown.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://www.curtisbrown.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "UNVERIFIED: site is a JavaScript app; WebFetch saw only unrendered templates, no emails, no agent or rights pages. Needs a real browser check.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "David Higham Associates",
+  "aliases": [
+   "DHA"
+  ],
+  "domain": "davidhigham.co.uk",
+  "film_tv_contact": {
+   "name": "None named; 'our agents negotiate screen and stage rights'",
+   "email": null,
+   "source_url": "https://davidhigham.co.uk/film-tv-theatre/"
+  },
+  "general_email": {
+   "email": "reception@davidhigham.co.uk",
+   "source_url": "https://davidhigham.co.uk/contact/"
+  },
+  "rights_guide": {
+   "url": "https://davidhigham.co.uk/wp-content/uploads/FBF-26-Rights-Guide-29th-Sept-digital-text.pdf",
+   "kind": "translation only",
+   "date": "Frankfurt 2026 (filename 29 Sept); also LBF 2026, Estates and Modern Classics guides on https://davidhigham.co.uk/translation/. Entries carry a 'TV/Film Agent: <initials>' line naming the screen agent, not a rights status."
+  },
+  "nonfiction_note": "FBF 2026 guide contents include Politics, History, Science, Biography & Memoir sections.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Janklow & Nesbit UK",
+  "aliases": [
+   "Janklow & Nesbit (UK) Ltd"
+  ],
+  "domain": "janklowandnesbit.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": "queries@janklow.co.uk",
+   "source_url": "https://www.janklowandnesbit.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": "https://janklowandnesbit.co.uk/volumes/rights-guides/FBF26-Rights-Guide.pdf",
+   "kind": "translation only",
+   "date": "Frankfurt 2026 (also London 2026 via https://janklowandnesbit.co.uk/foreign-rights). Only incidental screen mentions (e.g. 'Optioned for TV ... by Kudos')."
+  },
+  "nonfiction_note": "Guide contents list Narrative Non-Fiction, Memoir & Biography, History & Politics sections; no film/TV contact on site.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Felicity Bryan Associates",
+  "aliases": [
+   "FBA"
+  ],
+  "domain": "felicitybryan.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": "submissions@felicitybryan.com (submissions only; no general address printed)",
+   "source_url": "https://www.felicitybryan.com/contact"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Oxford agency; featured authors suggest history, science, travel (e.g. Lucy Worsley, Peter Frankopan) - inferred from homepage, not stated.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Greene & Heaton",
+  "aliases": [],
+  "domain": "greeneheaton.co.uk",
+  "film_tv_contact": {
+   "name": "No individual; page says email info@ to find which agency handles a fiction title for film/TV (co-agents Sayle Screen and Toby Moorcroft Rights) and for non-fiction rights enquiries",
+   "email": "info@greeneheaton.co.uk",
+   "source_url": "https://greeneheaton.co.uk/rights-and-permissions"
+  },
+  "general_email": {
+   "email": "info@greeneheaton.co.uk",
+   "source_url": "https://greeneheaton.co.uk/contact/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Site does not state non-fiction focus; list includes non-fiction and cookery (e.g. River Cottage).",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Johnson & Alcock",
+  "aliases": [],
+  "domain": "johnsonandalcock.co.uk",
+  "film_tv_contact": {
+   "name": "Emily Hayward Whitlock, The Artists Partnership (co-agent, external)",
+   "email": "emily@theartistspartnership.co.uk",
+   "source_url": "https://www.johnsonandalcock.co.uk/translation"
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://www.johnsonandalcock.co.uk/about"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Merged in 2003 with Michael Alcock Management, which had a predominantly non-fiction list. Site gives only a [firstname]@ pattern, no general address.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Lutyens & Rubinstein",
+  "aliases": [
+   "L&R"
+  ],
+  "domain": "lutyensrubinstein.co.uk",
+  "film_tv_contact": {
+   "name": "No film/TV contact named; 'All rights queries' go to Lily (no surname/title given)",
+   "email": "lily@lutyensrubinstein.co.uk",
+   "source_url": "https://lutyensrubinstein.co.uk/foreign-rights"
+  },
+  "general_email": {
+   "email": "info@lutyensrubinstein.co.uk",
+   "source_url": "https://lutyensrubinstein.co.uk/about"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Tightly focused list spanning non-fiction, fiction, cookery, children's (about page).",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Andrew Lownie Literary Agency",
+  "aliases": [
+   "Andrew Lownie"
+  ],
+  "domain": "andrewlownie.co.uk",
+  "film_tv_contact": {
+   "name": "Andrew Lownie (works with film agents/producers to place books as documentaries and dramas); no film email printed",
+   "email": null,
+   "source_url": "https://www.andrewlownie.co.uk/tv_and_film"
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://www.andrewlownie.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": "https://www.andrewlownie.co.uk/tv_and_film",
+   "kind": "film/TV",
+   "date": "Undated web page with 'Rights available' (c.150+ titles), 'Recent Options' and 'Options that have lapsed' sections."
+  },
+  "nonfiction_note": "Around 200 non-fiction authors; history and biography specialist. Contact email is Cloudflare-obfuscated and could not be read.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jonathan Clowes",
+  "aliases": [
+   "Jonathan Clowes Ltd"
+  ],
+  "domain": "jonathanclowes.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": "admin@jonathanclowes.co.uk",
+   "source_url": "https://www.jonathanclowes.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Says it specialises in book, film and TV rights; non-fiction not described on site.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Sheil Land Associates",
+  "aliases": [],
+  "domain": "sheilland.com",
+  "film_tv_contact": {
+   "name": "Lucy Fawcett, head of Film & TV department (no personal email printed; page says contact Lucy or info@)",
+   "email": "info@sheilland.co.uk",
+   "source_url": "https://sheilland.com/filmtvtheatre"
+  },
+  "general_email": {
+   "email": "info@sheilland.co.uk",
+   "source_url": "https://sheilland.com/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": "Film/TV page offers lists of titles available for adaptation on request."
+  },
+  "nonfiction_note": "Site says clients span all genres; no specific non-fiction claim. Note sheilland.co.uk is robots-blocked; sheilland.com is the readable site.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Blake Friedmann",
+  "aliases": [
+   "BFLA"
+  ],
+  "domain": "blakefriedmann.co.uk",
+  "film_tv_contact": {
+   "name": "Leyla Hattabi (book to screen; no title given)",
+   "email": "leyla@blakefriedmann.co.uk",
+   "source_url": "https://blakefriedmann.co.uk/book-to-screen"
+  },
+  "general_email": {
+   "email": "info@blakefriedmann.co.uk",
+   "source_url": "https://blakefriedmann.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": "https://blakefriedmann.co.uk/s/BFLA-Rights-Guide-Autumn-Winter-2026-25092026.pdf",
+   "kind": "film/TV",
+   "date": "Autumn-Winter 2026, updated 25 Sept 2026. Some (not all) entries carry a Film/TV line naming the producer; mainly fiction."
+  },
+  "nonfiction_note": "Mostly fiction; hotlist has one non-fiction title. Over 70 titles under option.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Peony Literary Agency",
+  "aliases": [],
+  "domain": "peonyliteraryagency.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "UNCLEAR: homepage read as a blog of Asian-author news; no contact, rights or location info found. Appears Asia-focused, not a UK non-fiction agency.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Soho Agency",
+  "aliases": [
+   "Soho Agency",
+   "Furniss Lawton (Rowan Lawton now MD here)"
+  ],
+  "domain": "thesohoagency.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": "admin@thesohoagency.co.uk",
+   "source_url": "https://thesohoagency.co.uk/contact-us"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Site does not mention non-fiction; represents authors, illustrators, on-screen talent.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "DHH Literary Agency",
+  "aliases": [
+   "DHH"
+  ],
+  "domain": "dhhliteraryagency.com",
+  "film_tv_contact": {
+   "name": "Emily Hayward-Whitlock, The Artists Partnership (external co-agent, all TV & film queries)",
+   "email": "emily@theartistspartnership.co.uk",
+   "source_url": "https://www.dhhliteraryagency.com/dhh-rights"
+  },
+  "general_email": {
+   "email": "enquiries@dhhliteraryagency.com",
+   "source_url": "https://www.dhhliteraryagency.com/"
+  },
+  "rights_guide": {
+   "url": "https://www.dhhliteraryagency.com/s/RIGHTS-GUIDE.pdf",
+   "kind": "film/TV",
+   "date": "Undated (titles to Winter 2027). Each fiction entry has 'TV & FILM RIGHTS: AVAILABLE/SOLD'; the non-fiction entry checked had no such field."
+  },
+  "nonfiction_note": "Mainly crime/commercial fiction; little non-fiction. Translation queries: rights@dhhliteraryagency.com.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Watson, Little",
+  "aliases": [
+   "Watson Little"
+  ],
+  "domain": "watsonlittle.com",
+  "film_tv_contact": {
+   "name": "Eve Mason, book-to-screen agent",
+   "email": "em@watsonlittle.com",
+   "source_url": "https://www.watsonlittle.com/rights/"
+  },
+  "general_email": {
+   "email": "office@watsonlittle.com",
+   "source_url": "https://www.watsonlittle.com/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Fiction and non-fiction; featured history, science, economics, music titles (inferred from homepage).",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Bell Lomax Moreton",
+  "aliases": [
+   "BLM"
+  ],
+  "domain": "belllomaxmoreton.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://belllomaxmoreton.co.uk/home"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Non-fiction page: memoir, health, money, history, sport, social issues. Email obfuscated and contact page failed to load.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "MBA Literary Agents",
+  "aliases": [
+   "MBA",
+   "Merric Davidson Literary Agency"
+  ],
+  "domain": "mbalit.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Homepage text had no links or emails; represents books plus film/TV/radio/theatre scripts. Needs browser check.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Blair Partnership",
+  "aliases": [
+   "TBP"
+  ],
+  "domain": "blairpartnership.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "NOT READ: site blocks automated fetch.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Madeleine Milburn Literary, TV & Film Agency",
+  "aliases": [
+   "Madeleine Milburn",
+   "MM"
+  ],
+  "domain": "madeleinemilburn.co.uk",
+  "film_tv_contact": {
+   "name": "Hannah Ladds, Head of Film & TV (no personal email; media rights inbox given)",
+   "email": "rights@madeleinemilburn.com",
+   "source_url": "https://www.madeleinemilburn.co.uk/tv-film/"
+  },
+  "general_email": {
+   "email": "info@madeleinemilburn.com",
+   "source_url": "https://madeleinemilburn.co.uk/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Mainly fiction; has a non-fiction category. Note emails use .com while site is .co.uk (as printed).",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jo Unwin Literary Agency",
+  "aliases": [
+   "JULA"
+  ],
+  "domain": "jounwin.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "NOT READ: jounwin.co.uk returned a client error on every attempt.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Kingsford Campbell",
+  "aliases": [
+   "Charlie Campbell Literary Agents",
+   "Julia Kingsford"
+  ],
+  "domain": "kingsfordcampbell.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "NOT READ: site blocks fetch. Bookseller headline says Kingsford and Campbell parted ways; successor agencies not verified.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Toby Eady Associates",
+  "aliases": [],
+  "domain": "tobyeady.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "NOT READ: site blocks fetch. Founder died 2017; current status not verified.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Andrew Nurnberg Associates",
+  "aliases": [
+   "ANA"
+  ],
+  "domain": "andrewnurnberg.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": "info@nurnberg.co.uk",
+   "source_url": "https://www.andrewnurnberg.com/contact-us/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Primarily a translation-rights agency with offices across Europe and Asia; no film/TV contact.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Viney Agency",
+  "aliases": [
+   "Viney Agency"
+  ],
+  "domain": "thevineyagency.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Site says Viney merged with Aevitas Creative Management from July 2024 - see ACM UK entry.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Hardman & Swainson",
+  "aliases": [],
+  "domain": "hardmanswainson.com",
+  "film_tv_contact": {
+   "name": "Co-agents Marc Simonsson (SoloSon Media) and Emily Hayward-Whitlock (The Artists Partnership); no emails printed",
+   "email": null,
+   "source_url": "https://www.hardmanswainson.com/rights/"
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://www.hardmanswainson.com/contact-us/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "'Quality writing of all kinds'; no non-fiction claim. Contact is a form only.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Rachel Mills Literary",
+  "aliases": [
+   "RML"
+  ],
+  "domain": "rachelmillsliterary.co.uk",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://www.rachelmillsliterary.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Specialises in 'books that make a difference' (non-fiction leaning). Handles TV/film rights but no contact named; rights page failed to load.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Robertson Murray Literary Agency",
+  "aliases": [],
+  "domain": "robertsonmurray.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "NOT READ: site blocks fetch.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Mushens Entertainment",
+  "aliases": [],
+  "domain": "mushens-entertainment.com",
+  "film_tv_contact": {
+   "name": "Per-author external co-agents listed (TAP, CAA, WME, UTA etc.); for unlisted authors use info@",
+   "email": "info@mushens-entertainment.com",
+   "source_url": "https://www.mushens-entertainment.com/rights"
+  },
+  "general_email": {
+   "email": "info@mushens-entertainment.com",
+   "source_url": "https://www.mushens-entertainment.com/"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Mainly commercial fiction; site makes no non-fiction claim.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "LBA Books",
+  "aliases": [
+   "Luigi Bonomi Associates"
+  ],
+  "domain": "lbabooks.com",
+  "film_tv_contact": {
+   "name": "No individual; UK/US co-agents; media rights enquiries via info@",
+   "email": "info@lbabooks.com",
+   "source_url": "https://lbabooks.com/rights"
+  },
+  "general_email": {
+   "email": "info@lbabooks.com",
+   "source_url": "https://lbabooks.com/contact"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": "Translation via ILA."
+  },
+  "nonfiction_note": "Represents authors, journalists and academics; non-fiction e.g. Disability: A History of Resistance.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Furniss Lawton",
+  "aliases": [],
+  "domain": null,
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": null,
+   "source_url": null
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "DEFUNCT/absorbed (not verified on any live site): Rowan Lawton is now MD of The Soho Agency and Rachel Mills runs her own agency (Bookseller reports).",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "PEW Literary",
+  "aliases": [
+   "Patrick Walsh (ex-Conville & Walsh)"
+  ],
+  "domain": "pewliterary.com",
+  "film_tv_contact": {
+   "name": "Emily Hayward-Whitlock, Book to Film & Lit, The Artists Partnership (co-agent)",
+   "email": "emily@theartistspartnership.com",
+   "source_url": "https://www.pewliterary.com/rights"
+  },
+  "general_email": {
+   "email": "info@pewliterary.com",
+   "source_url": "https://www.pewliterary.com/contact"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Added: Patrick Walsh's agency, strong in narrative non-fiction (site itself does not state genre). NOTE PEW prints .com for Emily, others print .co.uk.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Curious Minds Agency",
+  "aliases": [
+   "The Science Factory"
+  ],
+  "domain": "curiousmindsagency.com",
+  "film_tv_contact": {
+   "name": null,
+   "email": null,
+   "source_url": null
+  },
+  "general_email": {
+   "email": "info@curiousmindsagency.com",
+   "source_url": "https://curiousmindsagency.com/contact/"
+  },
+  "rights_guide": {
+   "url": "https://curiousmindsagency.com/s/FBF-2026-Curious-Minds-Rights-List-web-version.pdf",
+   "kind": "translation only",
+   "date": "Autumn 2026"
+  },
+  "nonfiction_note": "Added: science, maths, natural history, philosophy, medicine, technology, history - serious non-fiction.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Graham Maw Christie",
+  "aliases": [
+   "GMC"
+  ],
+  "domain": "grahammawchristie.com",
+  "film_tv_contact": {
+   "name": "No individual; 'Other enquiries including TV/film rights'",
+   "email": "enquiries@grahammawchristie.com",
+   "source_url": "https://www.grahammawchristie.com/contact"
+  },
+  "general_email": {
+   "email": "enquiries@grahammawchristie.com",
+   "source_url": "https://www.grahammawchristie.com/contact"
+  },
+  "rights_guide": {
+   "url": "https://www.grahammawchristie.com/s/GMC-RIGHTS-GUIDE-2026.pdf",
+   "kind": "film/TV",
+   "date": "2026 (no season). Every title has a 'Film/TV available' field."
+  },
+  "nonfiction_note": "Added: non-fiction specialist since 2005 - memoir, biography, health, business, popular culture.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Marjacq Scripts",
+  "aliases": [
+   "Marjacq"
+  ],
+  "domain": "marjacq.com",
+  "film_tv_contact": {
+   "name": "Leah (surname not given) - book to screen enquiries",
+   "email": "leah@marjacq.com",
+   "source_url": "https://www.marjacq.com/screen"
+  },
+  "general_email": {
+   "email": null,
+   "source_url": "https://www.marjacq.com/contact-us"
+  },
+  "rights_guide": {
+   "url": null,
+   "kind": "none found",
+   "date": null
+  },
+  "nonfiction_note": "Added: sells film/TV/stage rights in-house; fiction and non-fiction.",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jenny Brown Associates",
+  "aliases": [
+   "JBA"
+  ],
+  "domain": "jennybrownassociates.com",
+  "film_tv_contact": {
+   "name": "Emily Hayward Whitlock, The Artists Partnership (co-agent)",
+   "email": "emily@theartistspartnership.co.uk",
+   "source_url": "https://jennybrownassociates.com/rights"
+  },
+  "general_email": {
+   "email": "info@jennybrownassociates.com",
+   "source_url": "https://jennybrownassociates.com/"
+  },
+  "rights_guide": {
+   "url": "https://jennybrownassociates.com/wp-content/uploads/2026/06/JBA-2026-Spring-Rights-Guide.pdf",
+   "kind": "film/TV",
+   "date": "Spring 2026 ('Rights held ... Film & TV' line per title, i.e. whether agency controls screen rights, not option status). Autumn 2025 guide also linked."
+  },
+  "nonfiction_note": "Added: Scotland's leading agency; history, memoir, narrative non-fiction (e.g. Night Train to Odesa).",
+  "checked": "2026-11-04",
+  "book_ids": [],
+  "guide_ask_sent": ""
  }
 ]
