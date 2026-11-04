@@ -82,9 +82,15 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    `asked_at` (found after Wednesday's emails): queue its agent_ask now, one email per agency.
 3d. **Agency guide asks (the main supply lever, Tara 4 Nov).** For every agency in
    `reviews/agents/agencies.json` with a verified contact, no guide in lists.json, `guide_ask_sent` empty or
-   more than 90 days ago, and no agent_ask to that agency in the last 30 days (those already carried the
-   ask): queue one `guide_ask` email (agent_email_template.md), most books-to-date first, at most 10 a day,
+   more than 90 days ago, no agent_ask to that agency in the last 30 days (those already carried the
+   ask), and NO email from Tara to that agency's domain in the last 21 days (search Gmail `in:sent to:<domain>
+   newer_than:21d`; Tara's own outreach since October already asks for the rights list): queue one `guide_ask` email (agent_email_template.md), most books-to-date first, at most 10 a day,
    and set `guide_ask_sent`. Commit agencies.json.
+   **One follow-up, never more.** If Tara's earlier outreach to an agency (Gmail) is 21+ days old with no
+   reply from that domain, and no follow-up has gone, queue one short reply IN THAT THREAD instead of a new
+   email: "Just following up on this: if you have a film and TV rights guide, adding rights@theariel.tv to
+   its mailing list is all we need. Many thanks, Tara". Record `guide_ask_sent` and stop asking that agency
+   for 90 days. Address a named film/TV contact from agencies.json if the first email went to a general inbox.
 3e. **Published guides.** Load any film/TV guide in agencies.json that is not yet in lists.json at the next run; and on the first weekday of each month, re-read every `rights_guide.url` of kind
    film/TV in agencies.json and load it into lists.json exactly as step 0b (status `available` only where
    the guide says film/TV rights are available).
