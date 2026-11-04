@@ -1,0 +1,459 @@
+[
+ {
+  "agency": "Aevitas Creative Management",
+  "aliases": [
+   "Aevitas Creative Management (ACM UK)",
+   "ACM UK",
+   "Aevitas"
+  ],
+  "domain": "aevitascreative.com",
+  "film_tv_contact": {
+   "name": "Aevitas Media Rights (no individual named)",
+   "email": "film@aevitascreative.com",
+   "source_url": "https://aevitascreative.com/film-television"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": "",
+   "note": "Media Rights and Foreign Rights are web pages, not guides."
+  },
+  "book_ids": [
+   "felled-andrew-hankinson"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Antony Harwood Limited",
+  "aliases": [
+   "Antony Harwood Literary Agency",
+   "Antony Harwood Limited (Antony Harwood Literary Agency)"
+  ],
+  "domain": "antonyharwood.com",
+  "film_tv_contact": {
+   "name": "Antony Harwood (general address covers dramatic rights)",
+   "email": "mail@antonyharwood.com",
+   "source_url": "https://antonyharwood.com/contact/"
+  },
+  "general_email": {
+   "email": "mail@antonyharwood.com",
+   "source_url": "https://antonyharwood.com/contact/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "no-one-tells-you-the-last-years-of-edna-o-brien-carlo-g-bler"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Georgina Capel Associates",
+  "aliases": [
+   "Georgina Capel Associates Ltd"
+  ],
+  "domain": "georginacapel.com",
+  "film_tv_contact": {
+   "name": "Georgina Capel (Literary, Film, Television & Radio); Simon Shaps, Film/TV/Radio consultant (simon@georginacapel.com)",
+   "email": "georgina@georginacapel.com",
+   "source_url": "https://georginacapel.com/about"
+  },
+  "general_email": {
+   "email": "grace@georginacapel.com",
+   "source_url": "https://georginacapel.com/about"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "the-cauldron-simon-sebag-montefiore",
+   "napoleon-and-his-marshals-andrew-roberts",
+   "castles-dan-jones"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "United Agents",
+  "aliases": [
+   "United Agents (likely; James Gill previously at Felicity Bryan Associates)",
+   "United Agents (film/TV/dramatic rights); literary agent not verified",
+   "UA"
+  ],
+  "domain": "unitedagents.co.uk",
+  "film_tv_contact": {
+   "name": "St John Donald (assistants Anthony Joblin, Jessie Rose); Charles Walker named for Jasper Rees",
+   "email": "AJoblin@unitedagents.co.uk",
+   "source_url": "https://www.unitedagents.co.uk/agent/st-john-donald/"
+  },
+  "general_email": {
+   "email": "info@unitedagents.co.uk",
+   "source_url": "https://www.unitedagents.co.uk/agent/st-john-donald/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "michael-gambon-the-authorised-biography",
+   "redwood-ben-macintyre",
+   "mapping-britain-will-millard"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Julian Belfrage Associates",
+  "aliases": [],
+  "domain": "julianbelfrage.co.uk",
+  "film_tv_contact": {
+   "name": "Victoria Belfrage (per Bookseller deal report)",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked - site robots-blocked",
+   "date": ""
+  },
+  "book_ids": [
+   "is-it-too-late-to-make-a-run-for-it-judi-dench"
+  ],
+  "note": "Co-agent on the Dench deal: Tom Reed, Lou Coulson Associates (not researched).",
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "A.M. Heath",
+  "aliases": [
+   "A M Heath",
+   "AM Heath"
+  ],
+  "domain": "amheath.com",
+  "film_tv_contact": {
+   "name": "Via the author's primary agent (Film & TV page names nobody)",
+   "email": "enquiries@amheath.com",
+   "source_url": "https://www.amheath.com/film-tv"
+  },
+  "general_email": {
+   "email": "enquiries@amheath.com",
+   "source_url": "https://www.amheath.com/film-tv"
+  },
+  "rights_guide": {
+   "url": "https://www.amheath.com/translation",
+   "kind": "translation only",
+   "date": "",
+   "note": "Translation guide available by emailing translation@amheath.com; no film/TV guide."
+  },
+  "book_ids": [
+   "hh-helenio-herrera-richard-fitzpatrick",
+   "the-family-man-blood-and-betrayal-in-the-house-of-murdaugh-james-lasdun",
+   "wine-a-global-history-kathleen-burk"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "WME",
+  "aliases": [
+   "WME (William Morris Endeavor)",
+   "William Morris Endeavor"
+  ],
+  "domain": "wmeagency.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked",
+   "date": ""
+  },
+  "book_ids": [
+   "american-scoundrel-kai-bird-with-susan-goldmark"
+  ],
+  "note": "Gail Ross gail@wmeagency.com is from her Publishers Marketplace profile (earlier run, not re-checked today, and PM is not WME's own site).",
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Cheney Agency",
+  "aliases": [
+   "Cheney Agency"
+  ],
+  "domain": "cheneyagency.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "https://theforeignoffice.net/wp-content/uploads/2023/12/tfo-cheney-london-2026.pdf",
+   "kind": "translation only",
+   "date": "London 2026",
+   "note": "Hosted by co-agent The Foreign Office; lists rights team beniamino@ and grace@cheneyagency.com; no film/TV contacts."
+  },
+  "book_ids": [
+   "this-cursed-beautiful-land-evan-gershkovich"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Rogers, Coleridge & White",
+  "aliases": [
+   "RCW",
+   "Rogers, Coleridge & White (RCW)",
+   "RCW (Rogers, Coleridge & White)",
+   "The Cheney Agency (North America); RCW (UK)"
+  ],
+  "domain": "rcwlitagency.com",
+  "film_tv_contact": {
+   "name": "No individual named; RCW co-agents with The Agency, M42, United Agents, Independent, The Artists Partnership, CAA, ICM",
+   "email": "info@rcwlitagency.com",
+   "source_url": "https://www.rcwlitagency.com/film-tv"
+  },
+  "general_email": {
+   "email": "info@rcwlitagency.com",
+   "source_url": "https://www.rcwlitagency.com/film-tv"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": "",
+   "note": "Film & TV page has no guide; /rights page failed to load."
+  },
+  "book_ids": [
+   "this-cursed-beautiful-land-evan-gershkovich",
+   "empire-at-the-edge-of-the-world-giles-milton",
+   "europe-in-7-chapters-a-concise-history-of-the-european-union-timothy-garton-ash-",
+   "a-history-of-the-novel-in-britain-philip-hensher"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Casarotto Ramsay & Associates",
+  "aliases": [
+   "Casarotto"
+  ],
+  "domain": "casarotto.co.uk",
+  "film_tv_contact": {
+   "name": "Rob Kraitt",
+   "email": "rob@casarotto.co.uk",
+   "source_url": "https://www.casarotto.co.uk/film-and-tv/agents"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": "",
+   "note": "Page says it represents film/TV rights for 'a select number of books' but lists none."
+  },
+  "book_ids": [
+   "empire-at-the-edge-of-the-world-giles-milton"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "InkWell Management",
+  "aliases": [
+   "InkWell Management (New York)"
+  ],
+  "domain": "inkwellmanagement.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "info@inkwellmanagement.com",
+   "source_url": "https://inkwellmanagement.com/contact"
+  },
+  "rights_guide": {
+   "url": "https://inkwellmanagement.com/rights-and-permissions/",
+   "kind": "translation only",
+   "date": "",
+   "note": "Foreign-rights newsletter and book-fair guides sent on request to info@; nothing downloadable; no film/TV guide. Contact page shows info as 'info [at] inkwellmanagement [dot] com'."
+  },
+  "book_ids": [
+   "the-last-invasion-of-england-arthur-der-weduwen",
+   "the-bookshop-andrew-pettegree"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Aitken Alexander Associates",
+  "aliases": [
+   "Aitken Alexander",
+   "AA"
+  ],
+  "domain": "aitkenalexander.co.uk",
+  "film_tv_contact": {
+   "name": "Lesley Thorne (Joint MD, Film & TV) via assistant Ariana Crolla",
+   "email": "ariana@aitkenalexander.co.uk",
+   "source_url": "https://www.aitkenalexander.co.uk/film-tv-stage/"
+  },
+  "general_email": {
+   "email": "info@aitkenalexander.co.uk",
+   "source_url": "https://aitkenalexander.co.uk/contact/"
+  },
+  "rights_guide": {
+   "url": "https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf",
+   "kind": "translation only",
+   "date": "London Book Fair 2026",
+   "note": "Frontlist translation-rights guide; it carries a film/TV contact line ('please contact Lesley Thorne's assistant', ariana@) but is not a screen-rights list. Co-agents list Oct 2026: https://aitkenalexander.co.uk/wp-content/uploads/2026/10/Co-Agents-AA-and-Dunn-Fogg_Oct2026.docx.pdf"
+  },
+  "book_ids": [
+   "the-age-of-confiscation-nicholas-mulder"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "David Godwin Associates",
+  "aliases": [
+   "DGA",
+   "David Godwin Associates (DGA)"
+  ],
+  "domain": "davidgodwinassociates.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked - site robots-blocked",
+   "date": ""
+  },
+  "book_ids": [
+   "peasants-makers-of-the-modern-world-maryam-aslany"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Wylie Agency",
+  "aliases": [
+   "Wylie",
+   "Wylie Agency (UK) Ltd"
+  ],
+  "domain": "wylieagency.co.uk",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "mail@wylieagency.co.uk",
+   "source_url": "https://www.wylieagency.co.uk/",
+   "note": "Cloudflare-obfuscated on the page; decoded locally from the link hex. NY office: mail@wylieagency.com."
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "war-is-interested-in-you-gideon-rachman",
+   "borrowed-land-a-highland-story-kapka-kassabova",
+   "great-powers-jan-r-ger"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Calligraph",
+  "aliases": [
+   "Calligraph LLC"
+  ],
+  "domain": "calligraphlit.com",
+  "film_tv_contact": {
+   "name": "Calligraph rights (dramatic rights placed directly or with allied LA/NY agencies)",
+   "email": "rights@calligraphlit.com",
+   "source_url": "https://www.calligraphlit.com/rights"
+  },
+  "general_email": {
+   "email": "mail@calligraphlit.com",
+   "source_url": "https://www.calligraphlit.com/zoe"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": "",
+   "note": "Rights page lists translation subagents only."
+  },
+  "book_ids": [
+   "the-oak-and-the-larch-sophie-pinkham"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "PFD (Peters Fraser + Dunlop)",
+  "aliases": [
+   "PFD",
+   "Peters Fraser Dunlop"
+  ],
+  "domain": "pfd.co.uk",
+  "film_tv_contact": {
+   "name": "Millie Sykes (Film/TV Department; agents Rosie Gurtovoy, Jonathan Sissons)",
+   "email": "msykes@pfd.co.uk",
+   "source_url": "gmail thread 1a1698048f2bbf4f"
+  },
+  "general_email": {
+   "email": "info@pfd.co.uk",
+   "source_url": "gmail thread 1a1698048f2bbf4f"
+  },
+  "rights_guide": {
+   "url": "The Ariel HQ/Business Strategy/Agent_Outreach/PFD/PFD_Film_TV_Rights_Guide_Sept_2026.pdf",
+   "kind": "film/TV",
+   "date": "2026-09"
+  },
+  "book_ids": [],
+  "guide_ask_sent": "2026-10-23",
+  "note": "Added us to their film/TV submissions mailing list 3 Nov 2026"
+ },
+ {
+  "agency": "Northbank Talent Management",
+  "aliases": [
+   "Northbank"
+  ],
+  "domain": "northbanktalent.com",
+  "film_tv_contact": {
+   "name": "Martin Jensen / Joanne McNulty",
+   "email": "screenrights@northbanktalent.com",
+   "source_url": "gmail thread 1a05ea88adcd0c0a"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "Business Strategy/Agent_Outreach/Northbank_Rights_Guide_Autumn2026_extracted.txt",
+   "kind": "film/TV",
+   "date": "2026-09"
+  },
+  "book_ids": [],
+  "guide_ask_sent": "2026-09-01"
+ }
+]

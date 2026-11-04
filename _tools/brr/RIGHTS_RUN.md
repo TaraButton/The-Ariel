@@ -78,6 +78,16 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
 3b. **Use the guides first.** Before asking an agent about a book, check lists.json. If the book is in
    that agency's guide, set_rights from the guide and do not email them. If the agency has a guide but the
    book is not in it, the email asks only "Is <Book> on your current rights guide?".
+3c. **Late contacts.** Any book in the current edition whose Rights row now has a verified contact but no
+   `asked_at` (found after Wednesday's emails): queue its agent_ask now, one email per agency.
+3d. **Agency guide asks (the main supply lever, Tara 4 Nov).** For every agency in
+   `reviews/agents/agencies.json` with a verified contact, no guide in lists.json, `guide_ask_sent` empty or
+   more than 90 days ago, and no agent_ask to that agency in the last 30 days (those already carried the
+   ask): queue one `guide_ask` email (agent_email_template.md), most books-to-date first, at most 10 a day,
+   and set `guide_ask_sent`. Commit agencies.json.
+3e. **Published guides.** On the first weekday of each month, re-read every `rights_guide.url` of kind
+   film/TV in agencies.json and load it into lists.json exactly as step 0b (status `available` only where
+   the guide says film/TV rights are available).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open
    request: queue one short, friendly chaser. Never more than one chaser per agency per book.
 5. **Rights Pass holders.** If the Stripe connector is available, list subscriptions/checkout sessions for the

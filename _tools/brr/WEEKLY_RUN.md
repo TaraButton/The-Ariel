@@ -86,11 +86,28 @@ The Ariel HQ/Platform/review-of-reviews/.
 
 ## Agents and rights (added 2026-11-02)
 After step 7 (the edition is published):
-8. **Agent research.** For every book in the new edition, find the author's literary agent/agency and the
-   best email for a screen-rights enquiry, verified on the agency's (or author's) own live site that day,
-   with the source URL. Prefer a named screen/film agent or rights department if the agency lists one.
-   Never guess an address from a pattern. Reuse earlier `reviews/agents/*.json` entries for the same
-   author when the source URL still shows them. Write `reviews/agents/<edition_id>.json` (fields:
+8. **Agent research (be thorough: the aim is a verified contact for every book, Tara 4 Nov).** For every
+   book in the new edition, find the author's literary agent/agency and the best email for a screen-rights
+   enquiry, with the source URL. Work down this ladder until you have one:
+   a. `reviews/agents/agencies.json` (the registry, below) and earlier `reviews/agents/*.json` entries for
+      the same author. Reuse them; re-check the source URL only if older than 3 months.
+   b. Tara's Gmail: search the agent's name and the agency domain. An address an agent has written from,
+      or that Tara has corresponded with, counts as verified (source: the Gmail thread id).
+   c. The author's own website (contact / about / representation pages).
+   d. The agency's site: `site:<domain> <author surname>`, client lists, the agent's own page.
+   e. Deal announcements: The Bookseller, Publishers Weekly, Publishers Lunch, publisher press releases
+      ("acquired ... rights from X at Y").
+   f. Publisher author pages or Wikipedia naming the agent.
+   g. No agent findable: the UK publisher's rights/contracts contact, with agency_type `publisher_fallback`.
+   Prefer a named film/TV/screen/dramatic-rights agent or department, then the author's named agent, then
+   the agency's general rights or enquiries address. An address must be printed on the live page you cite
+   (or come from Gmail as in b). Never guess an address from a pattern.
+   **Agency registry.** Keep `reviews/agents/agencies.json` up to date every week: one entry per agency
+   under ONE canonical name (`agency`, `aliases`, `domain`, `film_tv_contact {name,email,source_url}`,
+   `general_email {email,source_url}`, `rights_guide {url,kind,date}`, `book_ids`, `guide_ask_sent`).
+   Use the canonical name in every agents file. For each agency new to the registry, look once on its
+   site for a published FILM/TV rights guide or screen-rights list (translation-only guides don't count;
+   record `kind` either way). Commit the registry with the edition. Write `reviews/agents/<edition_id>.json` (fields:
    book_id, book, author, agency, agent_name, agent_email, email_source_url, agent_source_url,
    screen_contact, screen_email, screen_source_url, contact_page, agency_type, confidence, notes) and
    push it with the edition. Then `op: set_rights` the agency/agent fields into the Rights tab

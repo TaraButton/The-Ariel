@@ -73,6 +73,28 @@ Tara
 (If they take up the sheet offer, tell Tara: it follows the Northbank opt-out sheet playbook and needs
 her approval before it goes.)
 
+## Agency guide ask (kind `guide_ask`, not tied to one book)
+
+For agencies whose authors keep appearing in the Review. Use the real count from the agents files.
+Subject: Your film and TV rights guide
+
+Dear <first name, or "Hello," for a desk address>,
+
+I'm Tara Button, founder of The Ariel, which helps documentary and factual producers find stories early.
+<If N >= 2:> <N> of your authors' books have been in our weekly [London Review of Reviews](https://theariel.tv/reviews/)
+since <month>, including <Book> by <Author>, and producers use it to check whether the screen rights are free.
+<If N = 1:> <Author>'s <Book> was in our weekly [London Review of Reviews](https://theariel.tv/reviews/), and our
+producers use it to check whether the screen rights are free.
+
+Rather than ask you book by book, could you add rights@theariel.tv to the list you send your film and TV
+rights guide to? We'd check every producer's question against it first, and the titles on it would reach
+the producers on The Ariel they fit. Whenever you update it is perfect, and it's free for agencies.
+
+If there's someone else I should ask, one line back is plenty.
+
+With best wishes,
+Tara
+
 ## Guide refresh (kind `list_refresh`, at most once a quarter per agency)
 
 Subject: Your latest film and TV rights guide

@@ -1,0 +1,965 @@
+{
+  "books": [
+    {
+      "book_id": "killer-app-darren-loucaides",
+      "book": "Killer App: The Rise of Telegram and the Battle for the Future of the Internet",
+      "author": "Darren Loucaides",
+      "agency": "Faber & Faber (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.faber.co.uk/faqs/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found. Tried: author site darrenloucaides.com (blocked by robots, unreadable), deal-report and agent searches. Faber is the UK publisher (ISBN 9780571396245, https://www.casadellibro.com/ebook-killer-app-ebook/9780571396245/18659999). Faber's FAQ page shows all addresses as Cloudflare-obfuscated and names no rights/contracts address, so no email recorded. Meduza reports a Russian service pulled a Pavel Durov biography in July 2026 (https://meduza.io/en/news/2026/07/31/russia-s-largest-e-book-and-audiobook-service-pulls-a-pavel-durov-biography-days-after-moscow-branded-him-a-terrorist), possibly this book's translation - not checked."
+    },
+    {
+      "book_id": "two-new-books-on-europe",
+      "book": "Two new books on Europe",
+      "author": "",
+      "agency": "",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "",
+      "confidence": "unknown",
+      "notes": "Not identified. The FT review (https://www.ft.com/content/a7edc935-51b1-4f05-b41e-63fd8514538e) is paywalled and the two titles could not be established, so no agent research was possible. Needs the FT article text."
+    },
+    {
+      "book_id": "liz-truss-s-new-book-liz-truss",
+      "book": "Liz Truss's new book",
+      "author": "Liz Truss",
+      "agency": "",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "",
+      "confidence": "unknown",
+      "notes": "Not identified. Searches found no 2026 Truss title, only 'Ten Years to Save the West' (Biteback, 2024, https://Blackwells.co.uk/bookshop/product/Ten-Years-to-Save-the-West-by-Liz-Truss/9781785908576). No agent found. If the FT piece is about a new Biteback book, Biteback is the publisher fallback. Low screen priority."
+    },
+    {
+      "book_id": "new-memoir-by-luiz-schwarcz-luiz-schwarcz",
+      "book": "The First Reader: On Writers and Editors",
+      "author": "Luiz Schwarcz",
+      "agency": "Penguin Press (US) / Companhia das Letras (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.penguinrandomhouse.biz/rights/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found. English edition: Penguin Press, translated by Alison Entrekin (https://www.penguinrandomhouse.com/books/818057/the-first-reader-by-luiz-schwarcz-translated-by-alison-entrekin/9798217062515). Original 'O primeiro leitor' is published by Companhia das Letras, the house Schwarcz founded (https://www.companhiadasletras.com.br/livro/9788535940749/o-primeiro-leitor), which may control rights itself. PRH US rights page sends Penguin-division film/TV enquiries to http://www.penguin.com/subrights/; it shows no Penguin Press email."
+    },
+    {
+      "book_id": "war-is-interested-in-you-gideon-rachman",
+      "book": "War Is Interested in You",
+      "author": "Gideon Rachman",
+      "agency": "The Wylie Agency",
+      "agent_name": "",
+      "agent_email": "mail@wylieagency.co.uk",
+      "email_source_url": "https://www.wylieagency.co.uk/",
+      "agent_source_url": "https://www.wylieagency.co.uk/clients.html",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.wylieagency.co.uk/",
+      "agency_type": "corporate",
+      "confidence": "medium",
+      "notes": "Wylie Agency London client list (https://www.wylieagency.co.uk/clients.html, fetched 2026-11-04) lists 'Gideon Rachman' (between 'Sergey Radchenko' and 'Benjamin Rachlin'). The list names no individual agent per client. Email: the Wylie site shows addresses only Cloudflare-obfuscated. The London-office link on https://www.wylieagency.co.uk/ is /cdn-cgi/l/email-protection#563b373f3a16212f3a3f3337313338352f78353978233d, which decodes deterministically to mail@wylieagency.co.uk (NY office decodes to mail@wylieagency.com). It is the agency's general office address, not a named agent or a film/TV desk; Wylie publishes no film/TV contact. Address the email 'Attn: film/TV rights - <author>'. Publisher: The Bodley Head (UK), Yale UP (US)."
+    },
+    {
+      "book_id": "is-it-too-late-to-make-a-run-for-it-judi-dench",
+      "book": "Is It Too Late to Make a Run for It?",
+      "author": "Judi Dench (with Brendan O'Hea)",
+      "agency": "Julian Belfrage Associates",
+      "agent_name": "Victoria Belfrage",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "https://www.thebookseller.com/rights/pmj-acquires-judi-denchs-funny-honest-and-deeply-inspiring-memoir",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "boutique",
+      "confidence": "medium",
+      "notes": "Agent from the Bookseller deal report (rights from Victoria Belfrage of Julian Belfrage Associates and Tom Reed of Lou Coulson Associates; that Reed acts for co-author Brendan O'Hea is an inference). The Julian Belfrage site (julianbelfrage.co.uk) is robots-blocked to the fetcher and no address was found on any page the agency controls, so the email is blank. Screen interest here is documentary/life rights rather than adaptation."
+    },
+    {
+      "book_id": "the-best-kind-of-american-kim-ghattas",
+      "book": "The Best Kind of American",
+      "author": "Kim Ghattas",
+      "agency": "",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.kimghattas.com/contact",
+      "agency_type": "",
+      "confidence": "unknown",
+      "notes": "No agent found. Checked: her contact page (https://www.kimghattas.com/contact - heading plus Twitter/LinkedIn links, no email, no agent), bio page (https://kimghattas.com/bio - names Henry Holt and Bloomsbury, no agent), Wikipedia (no agent), Wylie client list (not listed), Aevitas client URL (no page), Aevitas Media Rights page (not mentioned), Cheney London 2026 guide (not listed). Strong screen candidate (1984 murder of AUB president Malcolm Kerr); ask Henry Holt subsidiary rights or Bloomsbury."
+    },
+    {
+      "book_id": "the-stay-behinds-sweden-s-cold-war-guardians-johan-wennstr-m",
+      "book": "The Stay Behinds: Sweden's Cold War Guardians",
+      "author": "Johan Wennström",
+      "agency": "Osprey Publishing / Bloomsbury (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.ospreypublishing.com/uk/stay-behinds-9781472877598/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found (English and Swedish searches). Osprey (Bloomsbury group) is the publisher; no rights email was verified. The contact_page is the publisher's book page, not a rights page."
+    },
+    {
+      "book_id": "in-rome-s-long-shadow-jamie-gianoutsos",
+      "book": "In Rome's Long Shadow: How the Classical Tradition Shaped the Modern World",
+      "author": "Jamie Gianoutsos",
+      "agency": "Allen Lane / Penguin (publisher fallback); author direct",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.jamiegianoutsos.com/contact",
+      "agency_type": "publisher_fallback",
+      "confidence": "medium",
+      "notes": "No agent named anywhere: her own contact page (https://www.jamiegianoutsos.com/contact, fetched 2026-11-04) names none and gives the AUTHOR's own address ProfJamieGianoutsos@gmail.com, plus 'UK publicity enquiries' to Louis Cluzan, LCluzan@penguinrandomhouse.co.uk. Author address is in author_email, not agent_email. Publishers: Allen Lane (UK), UC Press (US). Low screen priority.",
+      "author_email": "ProfJamieGianoutsos@gmail.com",
+      "author_email_source_url": "https://www.jamiegianoutsos.com/contact"
+    },
+    {
+      "book_id": "the-book-was-better-louise-willder",
+      "book": "The Book Was Better",
+      "author": "Louise Willder",
+      "agency": "Oneworld (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found. Author site louisewillder.com is robots-blocked to the fetcher. Earlier Bookseller report on her Oneworld deal names no agent, so she may sell direct. No Oneworld rights email verified."
+    },
+    {
+      "book_id": "tojo-peter-mauch",
+      "book": "Tojo: The Rise and Fall of Japan's Most Controversial World War II General",
+      "author": "Peter Mauch",
+      "agency": "Harvard University Press (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "Academic author (Western Sydney University), no agent found; subsidiary rights probably with Harvard UP. HUP rights page (https://www.hup.harvard.edu/rights-permissions) failed to load, so no email or contact page verified."
+    },
+    {
+      "book_id": "borrowed-land-a-highland-story-kapka-kassabova",
+      "book": "Borrowed Land: A Highland Story",
+      "author": "Kapka Kassabova",
+      "agency": "The Wylie Agency",
+      "agent_name": "",
+      "agent_email": "mail@wylieagency.co.uk",
+      "email_source_url": "https://www.wylieagency.co.uk/",
+      "agent_source_url": "https://www.wylieagency.co.uk/clients.html",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.wylieagency.co.uk/",
+      "agency_type": "corporate",
+      "confidence": "medium",
+      "notes": "Wylie Agency London client list (https://www.wylieagency.co.uk/clients.html, fetched 2026-11-04) lists 'Kapka Kassabova' (between 'Ben Katchor' and 'Anne Karpf'). The list names no individual agent per client. Email: the Wylie site shows addresses only Cloudflare-obfuscated. The London-office link on https://www.wylieagency.co.uk/ is /cdn-cgi/l/email-protection#563b373f3a16212f3a3f3337313338352f78353978233d, which decodes deterministically to mail@wylieagency.co.uk (NY office decodes to mail@wylieagency.com). It is the agency's general office address, not a named agent or a film/TV desk; Wylie publishes no film/TV contact. Address the email 'Attn: film/TV rights - <author>'. Her own site kassabova.com is robots-blocked to the fetcher. UK publisher: Jonathan Cape/Vintage."
+    },
+    {
+      "book_id": "the-oak-and-the-larch-sophie-pinkham",
+      "book": "The Oak and the Larch",
+      "author": "Sophie Pinkham",
+      "agency": "Calligraph",
+      "agent_name": "Zoe Pagnamenta",
+      "agent_email": "mail@calligraphlit.com",
+      "email_source_url": "https://www.calligraphlit.com/zoe",
+      "agent_source_url": "https://www.sophiepinkham.com/",
+      "screen_contact": "Calligraph rights (film/TV and podcast requests)",
+      "screen_email": "rights@calligraphlit.com",
+      "screen_source_url": "https://www.calligraphlit.com/rights",
+      "contact_page": "https://www.calligraphlit.com/zoe",
+      "agency_type": "boutique",
+      "confidence": "high",
+      "notes": "Her own site (https://www.sophiepinkham.com/) says 'I am represented by Zoë Pagnamenta at Calligraph'. Zoë's agent page (https://www.calligraphlit.com/zoe) lists Sophie Pinkham under US Clients and has a 'Contact Zoë' link to mail@calligraphlit.com (shared office mailbox, not a personal address). Calligraph's rights page (https://www.calligraphlit.com/rights) says it places dramatic rights directly or with allied LA/NY agencies and 'For these requests [film/TV, podcast], please contact rights@calligraphlit.com'. Calligraph is a US (New York) agency; UK publisher is Allen Lane, US is Norton."
+    },
+    {
+      "book_id": "surviving-rome-kim-bowes",
+      "book": "Surviving Rome",
+      "author": "Kim Bowes",
+      "agency": "Princeton University Press (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "Princeton UP Rights & Intellectual Property - Film & Other Subsidiary Rights",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://press.princeton.edu/node/45351",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; Penn classics professor, Princeton UP title, probably unagented. PUP's Rights & Intellectual Property page (https://press.princeton.edu/node/45351) has a 'Film & Other Subsidiary Rights' section: 'We welcome inquires about film and other subsidiary rights. Please reach out to discuss your project with our team.' The 'Email Inquiries' link's address is not readable in the fetched page, and the Contact Us page (https://press.princeton.edu/contact-us) also shows link labels only, so no email is recorded."
+    },
+    {
+      "book_id": "michael-andrews-painter-of-masterpieces-christopher-lloyd",
+      "book": "Michael Andrews: Painter of Masterpieces",
+      "author": "Christopher Lloyd",
+      "agency": "Modern Art Press (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found. Publisher confirmed by The Art Newspaper: 'Modern Art Press, 320pp ... £30 (hb), published 26 May' (https://www.theartnewspaper.com/2026/07/07/a-new-biography-looks-at-how-michael-andrews-shifted-from-slow-burner-to-innovative-creator). No Modern Art Press contact page or email was checked. Low screen potential."
+    },
+    {
+      "book_id": "music-s-odyssey-robin-holloway",
+      "book": "Music's Odyssey",
+      "author": "Robin Holloway",
+      "agency": "Allen Lane / Penguin (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No literary agent found. Published by Allen Lane (ISBN 9780241183014, https://www.penguin.co.nz/books/musics-odyssey-9780241183014). Boosey & Hawkes is his music publisher (https://www.boosey.com/cr/news/Robin-Holloway-surveys-the-history-of-classical-music/102781), not a book agent. No email verified. Low screen potential."
+    },
+    {
+      "book_id": "sleuth-hound-lindsey-fitzharris",
+      "book": "Sleuth-Hound",
+      "author": "Lindsey Fitzharris",
+      "agency": "",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://drlindseyfitzharris.com/reach-out/",
+      "agency_type": "",
+      "confidence": "unknown",
+      "notes": "No literary or film agent found. Her contact page (re-checked 2026-11-04) names only Macmillan Speakers Bureau for speaking, says she 'is available for hire for film, television, or speaking engagements', and routes media enquiries to a form; no email shown. Not on the Wylie list; no Aevitas client page; Wikipedia page for The Butchering Art names no agent. Publishers: Allen Lane (UK), FSG (US). Use the site form."
+    },
+    {
+      "book_id": "blood-will-flow-alex-perry",
+      "book": "Blood Will Flow",
+      "author": "Alex Perry",
+      "agency": "",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "",
+      "confidence": "unknown",
+      "notes": "No agent found. Author site alexperry.org is robots-blocked to the fetcher; not on the Wylie list or the Tibor Jones home page; Pan Macmillan, TCIJ and Always Take Notes pages name no agent. UK publisher appears to be Swift (ISBN 9781804182727); US W. W. Norton (9781324079491). He has screen form (The Good Mothers series), so a screen agent probably exists but is unverified."
+    },
+    {
+      "book_id": "justice-for-jehanne-sara-mcdougall",
+      "book": "Justice for Jehanne",
+      "author": "Sara McDougall",
+      "agency": "Princeton University Press (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "Princeton UP Rights & Intellectual Property - Film & Other Subsidiary Rights",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://press.princeton.edu/node/45351",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; John Jay College academic, Princeton UP title. PUP's Rights & Intellectual Property page (https://press.princeton.edu/node/45351) has a 'Film & Other Subsidiary Rights' section: 'We welcome inquires about film and other subsidiary rights. Please reach out to discuss your project with our team.' The 'Email Inquiries' link's address is not readable in the fetched page, and the Contact Us page (https://press.princeton.edu/contact-us) also shows link labels only, so no email is recorded."
+    },
+    {
+      "book_id": "guilty-pleasure-patricia-nilsson",
+      "book": "Guilty Pleasure",
+      "author": "Patricia Nilsson",
+      "agency": "Allen Lane / Penguin (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.penguin.co.uk/books/462785/guilty-pleasure-by-nilsson-patricia/9780241711293",
+      "agency_type": "publisher_fallback",
+      "confidence": "unknown",
+      "notes": "Agent not found. A 14-way Allen Lane auction (per earlier Bookseller report) implies an agent, but no source names one; not on the Wylie list. No email verified."
+    },
+    {
+      "book_id": "king-s-secretary-andrew-johnston",
+      "book": "King's Secretary",
+      "author": "Andrew Johnston",
+      "agency": "Yale University Press London (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://yalebooks.co.uk/contact-us/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found (common name). Yale UP title (ISBN 9780300285215). Yale London contact page shows only a Cloudflare-obfuscated address and no rights address, so no email recorded."
+    },
+    {
+      "book_id": "great-powers-jan-r-ger",
+      "book": "Great Powers",
+      "author": "Jan Rüger",
+      "agency": "The Wylie Agency",
+      "agent_name": "",
+      "agent_email": "mail@wylieagency.co.uk",
+      "email_source_url": "https://www.wylieagency.co.uk/",
+      "agent_source_url": "https://www.wylieagency.co.uk/clients.html",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.wylieagency.co.uk/",
+      "agency_type": "corporate",
+      "confidence": "medium",
+      "notes": "Wylie Agency London client list (https://www.wylieagency.co.uk/clients.html, fetched 2026-11-04) lists 'Jan Rüger' (between 'Norman Rush' and 'Neil Rudenstine'). The list names no individual agent per client. Email: the Wylie site shows addresses only Cloudflare-obfuscated. The London-office link on https://www.wylieagency.co.uk/ is /cdn-cgi/l/email-protection#563b373f3a16212f3a3f3337313338352f78353978233d, which decodes deterministically to mail@wylieagency.co.uk (NY office decodes to mail@wylieagency.com). It is the agency's general office address, not a named agent or a film/TV desk; Wylie publishes no film/TV contact. Address the email 'Attn: film/TV rights - <author>'. UK publisher: Allen Lane (ISBN 9780241434376)."
+    },
+    {
+      "book_id": "imperial-predator-david-s-tonge",
+      "book": "Imperial Predator",
+      "author": "David S Tonge",
+      "agency": "Hurst Publishers (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "direct@hurstpub.co.uk",
+      "email_source_url": "https://www.hurstpublishers.com/contact/",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.hurstpublishers.com/contact/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; Hurst author profile (https://www.hurstpublishers.com/profile/david-s-tonge/) names none. Hurst's contact page shows 'Contact:' with a Cloudflare-obfuscated link (#d1b5b8a3b4b2a591b9a4a3a2a5a1a4b3ffb2beffa4ba) that decodes deterministically to direct@hurstpub.co.uk. That is Hurst's general office address, not a rights desk."
+    },
+    {
+      "book_id": "an-injury-to-all-ewan-gibbs",
+      "book": "An Injury to All",
+      "author": "Ewan Gibbs",
+      "agency": "Verso (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.versobooks.com/blogs/authors/gibbs-ewan",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; University of Glasgow historian, Verso title, probably unagented. Verso contact page failed to load, so no rights email verified."
+    },
+    {
+      "book_id": "the-age-of-confiscation-nicholas-mulder",
+      "book": "The Age of Confiscation",
+      "author": "Nicholas Mulder",
+      "agency": "Aitken Alexander Associates",
+      "agent_name": "",
+      "agent_email": "info@aitkenalexander.co.uk",
+      "email_source_url": "https://aitkenalexander.co.uk/contact/",
+      "agent_source_url": "https://www.aitkenalexander.co.uk/authors/nicholas-mulder/",
+      "screen_contact": "Lesley Thorne (Joint MD, runs AA Film & TV) via her assistant Ariana Crolla",
+      "screen_email": "ariana@aitkenalexander.co.uk",
+      "screen_source_url": "https://www.aitkenalexander.co.uk/film-tv-stage/",
+      "contact_page": "https://aitkenalexander.co.uk/contact/",
+      "agency_type": "corporate",
+      "confidence": "medium",
+      "notes": "AA has an author page titled 'Nicholas Mulder' under /authors/ (https://www.aitkenalexander.co.uk/authors/nicholas-mulder/), but its body text is only the name and a date, so the agent is NOT named; he is not on the Wellbelove, Alexander, Paterson or Moore agent pages. Screen contact: the Film, TV, Stage page lists 'Agent: Lesley Thorne' with 'Email Agent Assistant' linked to Ariana@aitkenalexander.co.uk; the LBF 2026 rights guide (https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf) says 'For Film and Television Rights enquiries, please contact Lesley Thorne's assistant' and gives ariana@aitkenalexander.co.uk. Lesley Thorne's page (https://aitkenalexander.co.uk/team/lesley-thorne/) says she founded and runs the Film and TV Department. General address info@aitkenalexander.co.uk is on the contact page."
+    },
+    {
+      "book_id": "john-mcgahern-a-writing-life-frank-shovlin",
+      "book": "John McGahern: A Writing Life",
+      "author": "Frank Shovlin",
+      "agency": "Faber & Faber (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.faber.co.uk/faqs/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; University of Liverpool professor, probably unagented. Faber's FAQ addresses are all Cloudflare-obfuscated and none is labelled rights/contracts, so no email recorded. Screen rights in McGahern's life and work also involve the McGahern estate."
+    },
+    {
+      "book_id": "in-the-scholar-s-workshop-ann-blair",
+      "book": "In the Scholar's Workshop",
+      "author": "Ann Blair",
+      "agency": "Princeton University Press (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "Princeton UP Rights & Intellectual Property - Film & Other Subsidiary Rights",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://press.princeton.edu/node/45351",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; Harvard professor, Princeton UP title. Her Harvard page: https://ablair.hsites.harvard.edu/. PUP's Rights & Intellectual Property page (https://press.princeton.edu/node/45351) has a 'Film & Other Subsidiary Rights' section: 'We welcome inquires about film and other subsidiary rights. Please reach out to discuss your project with our team.' The 'Email Inquiries' link's address is not readable in the fetched page, and the Contact Us page (https://press.princeton.edu/contact-us) also shows link labels only, so no email is recorded."
+    },
+    {
+      "book_id": "peasants-makers-of-the-modern-world-maryam-aslany",
+      "book": "Peasants: Makers of the Modern World",
+      "author": "Maryam Aslany",
+      "agency": "David Godwin Associates (DGA)",
+      "agent_name": "David Godwin (probable)",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "https://www.thebookseller.com/rights/bloomsbury-seizes-aslanys-debut-non-fiction-six-figures-1302487",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "boutique",
+      "confidence": "low",
+      "notes": "Representation is inferred, not confirmed: an earlier read of the Bookseller deal report said 'translation rights from David Godwin'; today's re-fetch returned only paywall text. davidgodwinassociates.com is robots-blocked to the fetcher and davidgodwinassociates.co.uk is a parked domain, so no email or contact page was verified. UK publisher: Bloomsbury."
+    },
+    {
+      "book_id": "yap-stephanie-howard-smith",
+      "book": "Yap!",
+      "author": "Stephanie Howard-Smith",
+      "agency": "Granta Books (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "https://www.thebookseller.com/rights/granta-books-triumphs-in-eight-way-auction-for-book-on-the-history-of-small-dogs",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "publisher_fallback",
+      "confidence": "unknown",
+      "notes": "Agent not established. The Bookseller report of Granta's eight-way auction is paywalled (only the standfirst is readable, which names no agent); Granta's author and book pages (https://granta.com/?p=127152) name none. No email verified."
+    },
+    {
+      "book_id": "totem-jo-baring",
+      "book": "Totem",
+      "author": "Jo Baring",
+      "agency": "Canongate (publisher fallback); author direct",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.jobaring.com/contact",
+      "agency_type": "publisher_fallback",
+      "confidence": "medium",
+      "notes": "No agent found. Her contact page (https://www.jobaring.com/contact, re-checked 2026-11-04) shows jo@jobaring.com and no agent/agency mention. That is the AUTHOR's own address (in author_email). Publishers: Canongate (UK), Ecco (US).",
+      "author_email": "jo@jobaring.com",
+      "author_email_source_url": "https://www.jobaring.com/contact"
+    },
+    {
+      "book_id": "william-morris-his-gardens-gavin-francis-stoneystreet",
+      "book": "William Morris & his Gardens",
+      "author": "Gavin Francis Stoneystreet",
+      "agency": "Yale University Press London (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://yalebooks.co.uk/contact-us/",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found. Author appears to be Dr Gavin Stoneystreet ('Francis' looks like a parsing artefact). Yale UP London title; its contact page email is Cloudflare-obfuscated with no rights label, so no email recorded."
+    },
+    {
+      "book_id": "baillie-scott-architect-and-author-william-fawcett-diane-haigh",
+      "book": "Baillie Scott: Architect and Author",
+      "author": "William Fawcett & Diane Haigh",
+      "agency": "Lund Humphries (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "",
+      "email_source_url": "",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found; specialist architecture monograph (ISBN 9781848227491, Lund Humphries prefix; 'Architectural History of the British Isles' series per https://mitpressbookstore.mit.edu/book/9781848227491). Lund Humphries contact page failed to load; no email verified. Low screen potential."
+    },
+    {
+      "book_id": "lavinia-fontana-erotic-paintings-enrico-maria-dal-pozzolo",
+      "book": "Lavinia Fontana: Erotic Paintings",
+      "author": "Enrico Maria Dal Pozzolo",
+      "agency": "Paul Holberton Publishing (publisher fallback)",
+      "agent_name": "",
+      "agent_email": "press@paulholberton.com",
+      "email_source_url": "https://www.paulholberton.com/contact",
+      "agent_source_url": "",
+      "screen_contact": "",
+      "screen_email": "",
+      "screen_source_url": "",
+      "contact_page": "https://www.paulholberton.com/contact",
+      "agency_type": "publisher_fallback",
+      "confidence": "low",
+      "notes": "No agent found. Publisher: Paul Holberton (https://www.paulholberton.com/product-page/lavinia-fontana-erotic-paintings, ISBN 9781915401298). Its contact page lists sales@paulholberton.com and press@paulholberton.com under 'Editorial & Press Offices'; neither is labelled rights. Low screen potential."
+    }
+  ],
+  "agencies": [
+    {
+      "agency": "Aevitas Creative Management",
+      "aliases": [
+        "Aevitas Creative Management (ACM UK)",
+        "ACM UK",
+        "Aevitas"
+      ],
+      "domain": "aevitascreative.com",
+      "film_tv_contact": {
+        "name": "Aevitas Media Rights (no individual named)",
+        "email": "film@aevitascreative.com",
+        "source_url": "https://aevitascreative.com/film-television"
+      },
+      "general_email": {
+        "email": "",
+        "source_url": ""
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": "",
+        "note": "Media Rights and Foreign Rights are web pages, not guides."
+      },
+      "book_ids": [
+        "felled-andrew-hankinson"
+      ]
+    },
+    {
+      "agency": "Antony Harwood Limited",
+      "aliases": [
+        "Antony Harwood Literary Agency",
+        "Antony Harwood Limited (Antony Harwood Literary Agency)"
+      ],
+      "domain": "antonyharwood.com",
+      "film_tv_contact": {
+        "name": "Antony Harwood (general address covers dramatic rights)",
+        "email": "mail@antonyharwood.com",
+        "source_url": "https://antonyharwood.com/contact/"
+      },
+      "general_email": {
+        "email": "mail@antonyharwood.com",
+        "source_url": "https://antonyharwood.com/contact/"
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": ""
+      },
+      "book_ids": [
+        "no-one-tells-you-the-last-years-of-edna-o-brien-carlo-g-bler"
+      ]
+    },
+    {
+      "agency": "Georgina Capel Associates",
+      "aliases": [
+        "Georgina Capel Associates Ltd"
+      ],
+      "domain": "georginacapel.com",
+      "film_tv_contact": {
+        "name": "Georgina Capel (Literary, Film, Television & Radio); Simon Shaps, Film/TV/Radio consultant (simon@georginacapel.com)",
+        "email": "georgina@georginacapel.com",
+        "source_url": "https://georginacapel.com/about"
+      },
+      "general_email": {
+        "email": "grace@georginacapel.com",
+        "source_url": "https://georginacapel.com/about"
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": ""
+      },
+      "book_ids": [
+        "the-cauldron-simon-sebag-montefiore",
+        "napoleon-and-his-marshals-andrew-roberts",
+        "castles-dan-jones"
+      ]
+    },
+    {
+      "agency": "United Agents",
+      "aliases": [
+        "United Agents (likely; James Gill previously at Felicity Bryan Associates)",
+        "United Agents (film/TV/dramatic rights); literary agent not verified",
+        "UA"
+      ],
+      "domain": "unitedagents.co.uk",
+      "film_tv_contact": {
+        "name": "St John Donald (assistants Anthony Joblin, Jessie Rose); Charles Walker named for Jasper Rees",
+        "email": "AJoblin@unitedagents.co.uk",
+        "source_url": "https://www.unitedagents.co.uk/agent/st-john-donald/"
+      },
+      "general_email": {
+        "email": "info@unitedagents.co.uk",
+        "source_url": "https://www.unitedagents.co.uk/agent/st-john-donald/"
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": ""
+      },
+      "book_ids": [
+        "michael-gambon-the-authorised-biography",
+        "redwood-ben-macintyre",
+        "mapping-britain-will-millard"
+      ]
+    },
+    {
+      "agency": "Julian Belfrage Associates",
+      "aliases": [],
+      "domain": "julianbelfrage.co.uk",
+      "film_tv_contact": {
+        "name": "Victoria Belfrage (per Bookseller deal report)",
+        "email": "",
+        "source_url": ""
+      },
+      "general_email": {
+        "email": "",
+        "source_url": ""
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "not checked - site robots-blocked",
+        "date": ""
+      },
+      "book_ids": [
+        "is-it-too-late-to-make-a-run-for-it-judi-dench"
+      ],
+      "note": "Co-agent on the Dench deal: Tom Reed, Lou Coulson Associates (not researched)."
+    },
+    {
+      "agency": "A.M. Heath",
+      "aliases": [
+        "A M Heath",
+        "AM Heath"
+      ],
+      "domain": "amheath.com",
+      "film_tv_contact": {
+        "name": "Via the author's primary agent (Film & TV page names nobody)",
+        "email": "enquiries@amheath.com",
+        "source_url": "https://www.amheath.com/film-tv"
+      },
+      "general_email": {
+        "email": "enquiries@amheath.com",
+        "source_url": "https://www.amheath.com/film-tv"
+      },
+      "rights_guide": {
+        "url": "https://www.amheath.com/translation",
+        "kind": "translation only",
+        "date": "",
+        "note": "Translation guide available by emailing translation@amheath.com; no film/TV guide."
+      },
+      "book_ids": [
+        "hh-helenio-herrera-richard-fitzpatrick",
+        "the-family-man-blood-and-betrayal-in-the-house-of-murdaugh-james-lasdun",
+        "wine-a-global-history-kathleen-burk"
+      ]
+    },
+    {
+      "agency": "WME",
+      "aliases": [
+        "WME (William Morris Endeavor)",
+        "William Morris Endeavor"
+      ],
+      "domain": "wmeagency.com",
+      "film_tv_contact": {
+        "name": "",
+        "email": "",
+        "source_url": ""
+      },
+      "general_email": {
+        "email": "",
+        "source_url": ""
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "not checked",
+        "date": ""
+      },
+      "book_ids": [
+        "american-scoundrel-kai-bird-with-susan-goldmark"
+      ],
+      "note": "Gail Ross gail@wmeagency.com is from her Publishers Marketplace profile (earlier run, not re-checked today, and PM is not WME's own site)."
+    },
+    {
+      "agency": "The Cheney Agency",
+      "aliases": [
+        "Cheney Agency"
+      ],
+      "domain": "cheneyagency.com",
+      "film_tv_contact": {
+        "name": "",
+        "email": "",
+        "source_url": ""
+      },
+      "general_email": {
+        "email": "",
+        "source_url": ""
+      },
+      "rights_guide": {
+        "url": "https://theforeignoffice.net/wp-content/uploads/2023/12/tfo-cheney-london-2026.pdf",
+        "kind": "translation only",
+        "date": "London 2026",
+        "note": "Hosted by co-agent The Foreign Office; lists rights team beniamino@ and grace@cheneyagency.com; no film/TV contacts."
+      },
+      "book_ids": [
+        "this-cursed-beautiful-land-evan-gershkovich"
+      ]
+    },
+    {
+      "agency": "Rogers, Coleridge & White",
+      "aliases": [
+        "RCW",
+        "Rogers, Coleridge & White (RCW)",
+        "RCW (Rogers, Coleridge & White)",
+        "The Cheney Agency (North America); RCW (UK)"
+      ],
+      "domain": "rcwlitagency.com",
+      "film_tv_contact": {
+        "name": "No individual named; RCW co-agents with The Agency, M42, United Agents, Independent, The Artists Partnership, CAA, ICM",
+        "email": "info@rcwlitagency.com",
+        "source_url": "https://www.rcwlitagency.com/film-tv"
+      },
+      "general_email": {
+        "email": "info@rcwlitagency.com",
+        "source_url": "https://www.rcwlitagency.com/film-tv"
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": "",
+        "note": "Film & TV page has no guide; /rights page failed to load."
+      },
+      "book_ids": [
+        "this-cursed-beautiful-land-evan-gershkovich",
+        "empire-at-the-edge-of-the-world-giles-milton",
+        "europe-in-7-chapters-a-concise-history-of-the-european-union-timothy-garton-ash-",
+        "a-history-of-the-novel-in-britain-philip-hensher"
+      ]
+    },
+    {
+      "agency": "Casarotto Ramsay & Associates",
+      "aliases": [
+        "Casarotto"
+      ],
+      "domain": "casarotto.co.uk",
+      "film_tv_contact": {
+        "name": "Rob Kraitt",
+        "email": "rob@casarotto.co.uk",
+        "source_url": "https://www.casarotto.co.uk/film-and-tv/agents"
+      },
+      "general_email": {
+        "email": "",
+        "source_url": ""
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": "",
+        "note": "Page says it represents film/TV rights for 'a select number of books' but lists none."
+      },
+      "book_ids": [
+        "empire-at-the-edge-of-the-world-giles-milton"
+      ]
+    },
+    {
+      "agency": "InkWell Management",
+      "aliases": [
+        "InkWell Management (New York)"
+      ],
+      "domain": "inkwellmanagement.com",
+      "film_tv_contact": {
+        "name": "",
+        "email": "",
+        "source_url": ""
+      },
+      "general_email": {
+        "email": "info@inkwellmanagement.com",
+        "source_url": "https://inkwellmanagement.com/contact"
+      },
+      "rights_guide": {
+        "url": "https://inkwellmanagement.com/rights-and-permissions/",
+        "kind": "translation only",
+        "date": "",
+        "note": "Foreign-rights newsletter and book-fair guides sent on request to info@; nothing downloadable; no film/TV guide. Contact page shows info as 'info [at] inkwellmanagement [dot] com'."
+      },
+      "book_ids": [
+        "the-last-invasion-of-england-arthur-der-weduwen",
+        "the-bookshop-andrew-pettegree"
+      ]
+    },
+    {
+      "agency": "Aitken Alexander Associates",
+      "aliases": [
+        "Aitken Alexander",
+        "AA"
+      ],
+      "domain": "aitkenalexander.co.uk",
+      "film_tv_contact": {
+        "name": "Lesley Thorne (Joint MD, Film & TV) via assistant Ariana Crolla",
+        "email": "ariana@aitkenalexander.co.uk",
+        "source_url": "https://www.aitkenalexander.co.uk/film-tv-stage/"
+      },
+      "general_email": {
+        "email": "info@aitkenalexander.co.uk",
+        "source_url": "https://aitkenalexander.co.uk/contact/"
+      },
+      "rights_guide": {
+        "url": "https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf",
+        "kind": "translation only",
+        "date": "London Book Fair 2026",
+        "note": "Frontlist translation-rights guide; it carries a film/TV contact line ('please contact Lesley Thorne's assistant', ariana@) but is not a screen-rights list. Co-agents list Oct 2026: https://aitkenalexander.co.uk/wp-content/uploads/2026/10/Co-Agents-AA-and-Dunn-Fogg_Oct2026.docx.pdf"
+      },
+      "book_ids": [
+        "the-age-of-confiscation-nicholas-mulder"
+      ]
+    },
+    {
+      "agency": "David Godwin Associates",
+      "aliases": [
+        "DGA",
+        "David Godwin Associates (DGA)"
+      ],
+      "domain": "davidgodwinassociates.com",
+      "film_tv_contact": {
+        "name": "",
+        "email": "",
+        "source_url": ""
+      },
+      "general_email": {
+        "email": "",
+        "source_url": ""
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "not checked - site robots-blocked",
+        "date": ""
+      },
+      "book_ids": [
+        "peasants-makers-of-the-modern-world-maryam-aslany"
+      ]
+    },
+    {
+      "agency": "The Wylie Agency",
+      "aliases": [
+        "Wylie",
+        "Wylie Agency (UK) Ltd"
+      ],
+      "domain": "wylieagency.co.uk",
+      "film_tv_contact": {
+        "name": "",
+        "email": "",
+        "source_url": ""
+      },
+      "general_email": {
+        "email": "mail@wylieagency.co.uk",
+        "source_url": "https://www.wylieagency.co.uk/",
+        "note": "Cloudflare-obfuscated on the page; decoded locally from the link hex. NY office: mail@wylieagency.com."
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": ""
+      },
+      "book_ids": [
+        "war-is-interested-in-you-gideon-rachman",
+        "borrowed-land-a-highland-story-kapka-kassabova",
+        "great-powers-jan-r-ger"
+      ]
+    },
+    {
+      "agency": "Calligraph",
+      "aliases": [
+        "Calligraph LLC"
+      ],
+      "domain": "calligraphlit.com",
+      "film_tv_contact": {
+        "name": "Calligraph rights (dramatic rights placed directly or with allied LA/NY agencies)",
+        "email": "rights@calligraphlit.com",
+        "source_url": "https://www.calligraphlit.com/rights"
+      },
+      "general_email": {
+        "email": "mail@calligraphlit.com",
+        "source_url": "https://www.calligraphlit.com/zoe"
+      },
+      "rights_guide": {
+        "url": "",
+        "kind": "none found",
+        "date": "",
+        "note": "Rights page lists translation subagents only."
+      },
+      "book_ids": [
+        "the-oak-and-the-larch-sophie-pinkham"
+      ]
+    }
+  ]
+}
