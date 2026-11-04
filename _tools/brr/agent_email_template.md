@@ -86,6 +86,9 @@ since <month>, including <Book> by <Author>, and producers use it to check wheth
 <If N = 1:> <Author>'s <Book> was in our weekly [London Review of Reviews](https://theariel.tv/reviews/), and our
 producers use it to check whether the screen rights are free.
 
+Our producers include BAFTA- and Emmy-winning documentary makers, and agencies including PFD and
+Northbank Talent already send us their film and TV rights guides. (Tara approved naming both, 4 Nov.)
+
 Rather than ask you book by book, could you add rights@theariel.tv to the list you send your film and TV
 rights guide to? We'd check every producer's question against it first, and the titles on it would reach
 the producers on The Ariel they fit. Whenever you update it is perfect, and it's free for agencies.
