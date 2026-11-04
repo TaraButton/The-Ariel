@@ -321,6 +321,7 @@ function publishEdition_(b) {
     sent_at: '', sent_count: 0, json_1: chunks[0] || '', json_2: chunks[1] || '', json_3: chunks[2] || '',
     json_4: chunks[3] || '', json_5: chunks[4] || '' };
   var values = [ED_HEADERS.map(function (h) { return rec[h]; })];
+  values[0][0] = "'" + ed.edition_id;  // keep the id as text
   if (row) sh.getRange(row, 1, 1, ED_HEADERS.length).setValues(values);
   else sh.appendRow(values[0]);
   log_('publish', ed.edition_id + ' books=' + ed.books.length + ' send_after=' + sendAfter.toISOString());
@@ -395,6 +396,14 @@ function sendDueEditions() {
     try { pullLatestEdition(); } catch (err) { log_('error', 'pull: ' + err); }
     var esh = sheet_('Editions');
     var now = new Date();
+    var seen = {};  // one live row per edition: later copies of a sent or already-queued edition are retired
+    for (var q = 2; q <= esh.getLastRow(); q++) {
+      var qid = idText_(cell_(esh, q, 'edition_id')), qst = cell_(esh, q, 'status');
+      if (qst === 'sent' || qst === 'ready' || qst === 'sending') {
+        if (seen[qid]) { setCell_(esh, q, 'status', 'duplicate'); continue; }
+        seen[qid] = true;
+      }
+    }
     for (var r = 2; r <= esh.getLastRow(); r++) {
       var st = cell_(esh, r, 'status');
       if (st !== 'ready' && st !== 'sending') continue;
@@ -431,7 +440,7 @@ function sendBatch_(ed, start) {
     if (Date.now() - start > CONFIG.BATCH_MS) return { sent: sent, errors: errors, finished: false };
     var rowv = data[i];
     if (rowv[idx.status] !== 'active') continue;
-    if (String(rowv[idx.last_sent_edition]) === String(ed.edition_id)) continue;
+    if (idText_(rowv[idx.last_sent_edition]) === idText_(ed.edition_id)) continue;
     var email = String(rowv[idx.email]);
     if (testList && testList.indexOf(email) < 0) continue;
     if (MailApp.getRemainingDailyQuota() < 5) {
@@ -441,7 +450,7 @@ function sendBatch_(ed, start) {
     try {
       sendEditionTo_(ed, { row: i + 1, email: email, name: rowv[idx.name], token: rowv[idx.token],
         subjects: cleanSubjects_(rowv[idx.subjects]) }, false);
-      sh.getRange(i + 1, idx.last_sent_edition + 1).setValue(ed.edition_id);
+      sh.getRange(i + 1, idx.last_sent_edition + 1).setValue("'" + ed.edition_id);
       sent++;
     } catch (err) {
       errors++;
@@ -693,13 +702,19 @@ function cell_(sh, row, h) { return sh.getRange(row, colOf_(sh, h)).getValue(); 
 function setCell_(sh, row, h, v) { sh.getRange(row, colOf_(sh, h)).setValue(v); }
 function setCells_(sh, row, o) { Object.keys(o).forEach(function (k) { setCell_(sh, row, k, o[k]); }); }
 
+/* Sheets turns ids like "2026-11-02" into Dates; compare them as yyyy-MM-dd text. */
+function idText_(v) {
+  if (v instanceof Date) return Utilities.formatDate(v, SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone(), 'yyyy-MM-dd');
+  return String(v);
+}
+
 function findRow_(sh, col, value) {
   if (!value) return 0;
   var last = sh.getLastRow();
   if (last < 2) return 0;
   var vals = sh.getRange(2, col, last - 1, 1).getValues();
-  var want = String(value).toLowerCase();
-  for (var i = 0; i < vals.length; i++) if (String(vals[i][0]).toLowerCase() === want) return i + 2;
+  var want = idText_(value).toLowerCase();
+  for (var i = 0; i < vals.length; i++) if (idText_(vals[i][0]).toLowerCase() === want) return i + 2;
   return 0;
 }
 
