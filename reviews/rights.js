@@ -2,7 +2,7 @@
    Built from _tools/brr/rights.template.js by build_site.py; do not edit reviews/rights.js by hand. */
 (function () {
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec';
-  var PASS_URL = 'https://buy.stripe.com/3cI28j9neam4fwidKn3ks05';
+  var PASS_URL = '/genres/?from=rights';
   var EDITION = document.body.getAttribute('data-edition') || '';
   var params = new URLSearchParams(location.search);
   var TOKEN = params.get('t') || '';
