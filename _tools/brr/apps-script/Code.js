@@ -1,6 +1,6 @@
 /**
  * London Review of Reviews - newsletter backend (The Ariel)
- * v1.0 2026-11-01
+ * v1.0 2026-11-01 · v1.1 2026-11-04: also serves Ariel Genres (see Genres.js)
  *
  * Container-bound to the "British Review of Reviews" Google Sheet.
  * Tabs (created by setupSheet()):
@@ -116,6 +116,8 @@ function doPost(e) {
   }
   var action = String(body.action || '');
   try {
+    var gp = genrePost_(action, body, (e && e.parameter) || {});
+    if (gp) return json_(gp);
     if (action === 'subscribe') return json_(subscribe_(body));
     if (action === 'click') return json_(logClick_(body));
     if (action === 'check_rights') return json_(checkRights_(body));
@@ -132,6 +134,8 @@ function doGet(e) {
   var p = (e && e.parameter) || {};
   var action = String(p.action || '');
   try {
+    var gg = genreGet_(action, p);
+    if (gg) return json_(gg);
     if (action === 'confirm') return page_(confirm_(p.t));
     if (action === 'unsubscribe') return page_(unsubscribe_(p.t));
     if (action === 'resubscribe') return page_(resubscribe_(p.t));
@@ -661,6 +665,8 @@ function admin_(b) {
   if (b.op === 'send_now') { sendDueEditions(); return { ok: true }; }
   var ra = rightsAdmin_(b);
   if (ra) return ra;
+  var ga = genreAdmin_(b);
+  if (ga) return ga;
   return { ok: false, error: 'unknown_op' };
 }
 

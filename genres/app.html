@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>My Ariel</title>
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="/ariel-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1B1F3B;--ivory:#F8F5F0;--paper:#FFFFFF;--gold:#B8965A;--gold-light:#E2C891;--gold-deep:#6E5428;--burgundy:#8A2F3A;--text:#1E2233;--muted:#454D60;--line:#CFC9BE;--tint:#F4ECDD;--ok:#245C36}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Lato',-apple-system,'Segoe UI',sans-serif;color:var(--text);background:var(--ivory);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-deep);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.wrapx{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.in{max-width:1000px;margin:0 auto}
+.bar{background:var(--ink);padding-block:12px}
+.bar .in{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{color:#FFFFFF;text-decoration:none;font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:600;letter-spacing:.04em}
+.brand small{font-family:'Lato',sans-serif;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);margin-left:8px}
+.bar-actions{display:flex;gap:8px;flex-wrap:wrap}
+.bbtn{background:transparent;border:2px solid var(--gold-light);color:var(--gold-light);font:700 14px 'Lato',sans-serif;letter-spacing:.04em;padding:8px 12px;border-radius:3px;cursor:pointer;min-height:40px}
+.bbtn:hover{background:rgba(226,200,145,.12)}
+.banner{background:var(--tint);border-bottom:1px solid var(--line);padding-block:12px;font-size:16px}
+.banner .in{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.banner b{color:var(--ink)}
+.banner .acts{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:var(--ink);padding:10px 16px;text-decoration:none;font-size:15px;font-weight:900;border:0;border-radius:3px;cursor:pointer;font-family:'Lato',sans-serif;min-height:44px}
+.btn:hover{background:#C9A86C}.btn[disabled]{opacity:.6;cursor:wait}
+.btn.ghost{background:transparent;border:2px solid var(--gold);color:var(--ink)}
+.btn.dark{background:var(--ink);color:#FFFFFF}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;color:var(--ink);margin:28px 0 4px}
+.hello{color:var(--muted);margin:0 0 18px;font-size:16px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:2px solid var(--ink)}
+.tab{background:transparent;border:0;border-bottom:4px solid transparent;margin-bottom:-2px;padding:10px 14px;font:700 16px 'Lato',sans-serif;color:var(--muted);cursor:pointer;min-height:44px}
+.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--gold)}
+.tab .n{font-weight:400;font-size:13px;color:var(--muted);margin-left:4px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0 4px}
+.tools input[type=search]{flex:1 1 220px;min-height:44px;padding:8px 12px;border:2px solid #9AA0AE;border-radius:3px;font:16px 'Lato',sans-serif;background:#FFFFFF}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 6px}
+.chip{background:#FFFFFF;border:2px solid var(--line);color:var(--ink);font:700 14px 'Lato',sans-serif;padding:6px 12px;border-radius:16px;cursor:pointer;min-height:36px}
+.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.chip.gold[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.toggle{font-size:15px;display:flex;gap:6px;align-items:center;color:var(--muted)}
+.toggle input{width:18px;height:18px;accent-color:var(--gold-deep)}
+.day{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:var(--ink);margin:22px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.item{background:var(--paper);border-radius:4px;padding:18px 20px;border-left:4px solid transparent}
+.item.agent{border-left-color:var(--gold)}
+.item.saved{border-left-color:var(--ink)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;margin-bottom:4px}
+.lbl{font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep)}
+.rights{background:var(--gold);color:var(--ink);font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:2px}
+.gname{color:var(--muted)}
+.item h3{margin:0;font-size:19px;line-height:1.35;color:var(--ink)}
+.item h3 a{color:var(--ink);text-decoration:none}.item h3 a:hover{text-decoration:underline}
+.src{font-size:14px;color:var(--muted);margin-top:2px}
+.note{margin:8px 0 0;font-size:16px}
+.summary{margin:6px 0 0;font-size:15px;color:var(--muted)}
+.rnote{margin:8px 0 0;font-size:15px;background:var(--tint);padding:8px 10px;border-radius:3px}
+.iacts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.ia{background:#FFFFFF;border:2px solid var(--line);color:var(--ink);font:700 14px 'Lato',sans-serif;padding:7px 12px;border-radius:3px;cursor:pointer;min-height:40px;text-decoration:none;display:inline-flex;align-items:center}
+.ia:hover{border-color:var(--ink)}
+.ia.on{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.ia.intro{border-color:var(--gold);background:var(--tint)}
+.empty{background:var(--paper);padding:28px;border-radius:4px;text-align:center;color:var(--muted);margin-top:16px}
+.empty h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--ink);font-size:28px;margin:0 0 6px}
+.upsell{background:var(--ink);color:#E6E9F1;border-radius:4px;padding:24px;margin:28px 0}
+.upsell h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:#FFFFFF;font-size:26px;margin:0 0 6px}
+.upsell p{margin:0 0 14px}
+footer{padding-block:28px 40px;font-size:14px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#FFFFFF;padding:12px 18px;border-radius:4px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:50;max-width:calc(100vw - 32px)}
+dialog{border:0;border-radius:6px;padding:0;max-width:560px;width:calc(100vw - 32px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(27,31,59,.55)}
+.dlg{padding:24px}
+.dlg h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;line-height:1.1;color:var(--ink);margin:0 0 8px}
+.dlg p{margin:0 0 12px}
+.dlg .close{position:absolute;right:10px;top:8px;background:none;border:0;font-size:28px;line-height:1;cursor:pointer;color:var(--muted);min-width:44px;min-height:44px}
+.opt{border:2px solid var(--line);border-radius:4px;padding:14px;margin:10px 0}
+.opt.best{border-color:var(--gold);background:var(--tint)}
+.opt h3{margin:0 0 4px;font-size:18px;color:var(--ink)}
+.opt p{font-size:15px;margin:0 0 10px}
+.f{display:block;font-weight:700;color:var(--ink);font-size:15px;margin:10px 0 6px}
+select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;padding:8px 12px;border:2px solid #9AA0AE;border-radius:3px;font:16px 'Lato',sans-serif;background:#FFFFFF}
+.radio,.cbx{display:flex;gap:10px;align-items:center;margin:6px 0;font-size:16px}
+.radio input,.cbx input{width:20px;height:20px;accent-color:var(--gold-deep)}
+.status{font-size:15px;min-height:1.3em;margin:8px 0 0}.status.error{color:var(--burgundy);font-weight:700}.status.success{color:var(--ok);font-weight:700}
+.center{max-width:520px;margin:48px auto;background:var(--paper);padding:28px;border-radius:4px}
+@media (max-width:560px){.item{padding:16px}.dlg{padding:20px 16px}.banner{font-size:15px}}
+</style>
+</head>
+<body>
+<header class="bar wrapx"><div class="in"><a class="brand" href="/genres/">The Ariel<small>Genres</small></a>
+  <div class="bar-actions" id="bar-actions" hidden>
+    <button class="bbtn" type="button" data-open="request">Request a genre</button>
+    <button class="bbtn" type="button" data-open="settings">Settings</button>
+  </div></div></header>
+<div class="banner wrapx" id="banner" role="region" aria-label="Your trial" hidden><div class="in"><span id="banner-text"></span><span class="acts"><button class="btn" type="button" data-open="keep">Keep my genres</button><button class="btn ghost" type="button" data-open="upgrade">Make it yours</button></span></div></div>
+<main id="main" class="wrapx"><div class="in" id="root"><p class="hello" style="margin-top:28px">Loading your Ariel...</p></div></main>
+<footer class="wrapx"><div class="in">The Ariel &middot; <a href="/genres/">Ariel Genres</a> &middot; <a href="/reviews/">London Review of Reviews</a> &middot; <a href="mailto:tara@theariel.tv">tara@theariel.tv</a><br>Your link is your key: don&#8217;t share it. Titles marked Rights available come to us directly from the agent; for other stories we haven&#8217;t checked who holds the rights.</div></footer>
+
+<dialog id="dlg-keep" aria-labelledby="k-h"><div class="dlg"><button class="close" type="button" data-close aria-label="Close">&times;</button>
+  <h2 id="k-h">Keep your genres</h2>
+  <p>Carry on getting the daily email and dashboard. Cancel any time.</p>
+  <div class="opt"><h3>One genre, &#163;35 a month</h3><label class="f" for="k-genre">Which genre?</label><select id="k-genre"></select><p></p><button class="btn" type="button" data-keep="one">Keep this genre</button></div>
+  <div class="opt best"><h3>All genres, &#163;49 a month</h3><p>Every Ariel Genre, including new ones as they launch.</p><button class="btn" type="button" data-keep="all">Keep all genres</button></div>
+  <p class="status" role="status" aria-live="polite"></p>
+</div></dialog>
+
+<dialog id="dlg-upgrade" aria-labelledby="u-h"><div class="dlg"><button class="close" type="button" data-close aria-label="Close">&times;</button>
+  <h2 id="u-h">Make it yours</h2>
+  <p>Your own Ariel is built around your projects, your commissioners and your taste. It learns from everything you save and skip, adds <b>Research this</b> briefs on any story (what&#8217;s been made, who the people are, who holds the rights), and can copy in your colleagues.</p>
+  <p id="u-waive"></p>
+  <p>Everything you&#8217;ve saved here comes with you, so it starts from your taste on day one.</p>
+  <button class="btn" type="button" id="u-go">Ask Tara to set it up</button>
+  <p class="status" role="status" aria-live="polite"></p>
+</div></dialog>
+
+<dialog id="dlg-settings" aria-labelledby="s-h"><div class="dlg"><button class="close" type="button" data-close aria-label="Close">&times;</button>
+  <h2 id="s-h">Settings</h2>
+  <form id="s-form">
+    <fieldset style="border:0;padding:0;margin:0"><legend class="f">Your genres</legend><div id="s-genres"></div></fieldset>
+    <fieldset style="border:0;padding:0;margin:0"><legend class="f">Email</legend>
+      <label class="radio"><input type="radio" name="digest" value="daily"> Every morning</label>
+      <label class="radio"><input type="radio" name="digest" value="weekly"> Mondays only</label>
+      <label class="radio"><input type="radio" name="digest" value="off"> No emails, just the dashboard</label>
+    </fieldset>
+    <p></p><button class="btn" type="submit">Save settings</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form>
+</div></dialog>
+
+<dialog id="dlg-request" aria-labelledby="r-h"><div class="dlg"><button class="close" type="button" data-close aria-label="Close">&times;</button>
+  <h2 id="r-h">Request a genre</h2>
+  <p>Tell us what you&#8217;d like next. We build the genres people ask for most, and we&#8217;ll email you when yours launches.</p>
+  <form id="r-form">
+    <label class="f" for="r-genre">Which genre?</label><input id="r-genre" type="text" maxlength="80" placeholder="e.g. Sport" required>
+    <label class="f" for="r-note">Anything specific? (optional)</label><textarea id="r-note" maxlength="500"></textarea>
+    <p></p><button class="btn" type="submit">Request this genre</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form>
+</div></dialog>
+
+<script>
+(function () {
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec';
+  var params = new URLSearchParams(location.search);
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } }
+  var K = params.get('k') || store('ariel_genres_k') || '';
+  if (params.get('k')) store('ariel_genres_k', params.get('k'));
+  // Keep the key out of the address bar once it's remembered
+  if (params.get('k') && store('ariel_genres_k') === params.get('k')) { try { var clean = new URL(location.href); ['k', 'do', 'i'].forEach(function (p) { clean.searchParams.delete(p); }); history.replaceState(null, '', clean.pathname + clean.search + clean.hash); } catch (e) {} }
+
+  var root = document.getElementById('root');
+  var D = null, state = { tab: null, label: '', q: '', rightsOnly: false, showHidden: false };
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (a) { if (a === 'text') n.textContent = attrs[a]; else if (a === 'html') n.innerHTML = attrs[a]; else n.setAttribute(a, attrs[a]); });
+    (kids || []).forEach(function (c) { if (c) n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function post(payload) {
+    payload.k = K;
+    return fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) }).then(function (r) { return r.json(); });
+  }
+  var toastT;
+  function toast(msg) {
+    var t = document.querySelector('.toast'); if (t) t.remove();
+    t = el('div', { class: 'toast', role: 'status', text: msg }); document.body.appendChild(t);
+    clearTimeout(toastT); toastT = setTimeout(function () { t.remove(); }, 3200);
+  }
+  function gname(slug) { var g = (D.all_genres || []).filter(function (x) { return x.slug === slug; })[0]; return g ? g.name : slug; }
+
+  if (!K) { noKey(); return; }
+
+  var pre = Promise.resolve();
+  var doAct = params.get('do'), doItem = params.get('i');
+  if (doAct === 'save' || doAct === 'skip') {
+    pre = post({ action: 'genre_act', item_id: doItem, act: doAct }).then(function (r) { if (r && r.ok) toast(doAct === 'save' ? 'Saved' : 'Got it. We won’t show you that one again.'); }).catch(function () {});
+  } else if (doAct === 'digest_off') {
+    pre = post({ action: 'genre_settings', digest: 'off' }).then(function (r) { if (r && r.ok) toast('Done. No more emails; your dashboard is still here.'); }).catch(function () {});
+  }
+  pre.then(load);
+
+  function load() {
+    fetch(ENDPOINT + '?action=genre_feed&k=' + encodeURIComponent(K)).then(function (r) { return r.json(); }).then(function (res) {
+      if (!res || !res.ok) { if (res && res.error === 'unknown_link') store('ariel_genres_k', null); noKey(res && res.message); return; }
+      D = res; D.actions = D.actions || {};
+      document.getElementById('bar-actions').hidden = false;
+      if (D.ended) { renderEnded(); } else { banner(); render(); }
+      var panel = params.get('panel');
+      if (panel) openDlg(panel);
+    }).catch(function () {
+      root.innerHTML = '';
+      root.appendChild(el('div', { class: 'empty' }, [el('h2', { text: 'We couldn’t load your Ariel' }), el('p', { text: 'Please check your connection and refresh. If it keeps happening, email tara@theariel.tv.' })]));
+    });
+  }
+
+  function banner() {
+    var me = D.me, b = document.getElementById('banner'), t = document.getElementById('banner-text');
+    if (me.plan !== 'trial') { b.hidden = true; return; }
+    b.hidden = false;
+    t.innerHTML = '';
+    t.appendChild(el('span', null, ['Free trial: ', el('b', { text: me.days_left + ' day' + (me.days_left === 1 ? '' : 's') + ' left' }), '. Keep a genre from ' + D.prices.one + ', or make it yours.']));
+  }
+
+  function counts() {
+    var c = { saved: 0 }; (D.me.genres || []).forEach(function (g) { c[g] = 0; });
+    D.items.forEach(function (it) { var a = D.actions[it.id]; if (a === 'skip') return; if (c[it.genre] !== undefined) c[it.genre]++; if (a === 'save') c.saved++; });
+    return c;
+  }
+
+  function render() {
+    root.innerHTML = '';
+    var me = D.me;
+    root.appendChild(el('h1', { text: (me.name ? me.name.split(' ')[0] + '’s' : 'Your') + ' Ariel' }));
+    root.appendChild(el('p', { class: 'hello', text: (me.genres || []).map(gname).join(' · ') + (me.digest === 'off' ? ' · emails off' : me.digest === 'weekly' ? ' · email on Mondays' : ' · email every morning') }));
+    var tabs = (me.genres || []).slice();
+    if (!state.tab || (state.tab !== 'saved' && tabs.indexOf(state.tab) < 0)) state.tab = tabs[0];
+    var c = counts();
+    var tl = el('div', { class: 'tabs', role: 'tablist', 'aria-label': 'Your genres' });
+    tabs.concat(['saved']).forEach(function (t) {
+      var b = el('button', { class: 'tab', role: 'tab', type: 'button', 'aria-selected': String(state.tab === t) }, [t === 'saved' ? 'Saved' : gname(t), el('span', { class: 'n', text: String(c[t] || 0) })]);
+      b.addEventListener('click', function () { state.tab = t; state.label = ''; render(); });
+      tl.appendChild(b);
+    });
+    root.appendChild(tl);
+
+    var tools = el('div', { class: 'tools' });
+    var q = el('input', { type: 'search', placeholder: 'Search your stories', 'aria-label': 'Search your stories' }); q.value = state.q;
+    q.addEventListener('input', function () { state.q = q.value; list(); });
+    tools.appendChild(q);
+    var ro = el('label', { class: 'toggle' }, [el('input', { type: 'checkbox' }), 'Rights available only']);
+    ro.querySelector('input').checked = state.rightsOnly; ro.querySelector('input').addEventListener('change', function (e) { state.rightsOnly = e.target.checked; list(); });
+    var sh = el('label', { class: 'toggle' }, [el('input', { type: 'checkbox' }), 'Show hidden']);
+    sh.querySelector('input').checked = state.showHidden; sh.querySelector('input').addEventListener('change', function (e) { state.showHidden = e.target.checked; list(); });
+    tools.appendChild(ro); tools.appendChild(sh);
+    root.appendChild(tools);
+
+    if (state.tab !== 'saved') {
+      var g = (D.all_genres || []).filter(function (x) { return x.slug === state.tab; })[0];
+      var chips = el('div', { class: 'chips', role: 'group', 'aria-label': 'Filter by theme' });
+      [''].concat(g ? g.labels : []).forEach(function (l) {
+        var b = el('button', { class: 'chip', type: 'button', 'aria-pressed': String(state.label === l), text: l || 'All' });
+        b.addEventListener('click', function () { state.label = l; render(); });
+        chips.appendChild(b);
+      });
+      root.appendChild(chips);
+    }
+    root.appendChild(el('div', { id: 'list' }));
+    list();
+    if (D.me.plan === 'trial' || D.me.plan === 'one' || D.me.plan === 'all') {
+      root.appendChild(el('div', { class: 'upsell' }, [el('h2', { text: 'Want an Ariel that knows your slate?' }),
+        el('p', { text: 'Your own Ariel ranks every story for your projects and commissioners, learns from what you save, and adds research briefs on any story.' + (D.me.plan === 'trial' ? ' Upgrade during your trial and the £250 setup fee is waived.' : '') }),
+        (function () { var b = el('button', { class: 'btn', type: 'button', text: D.me.upgrade_requested ? 'Upgrade requested: we’ll be in touch' : 'Make it yours' }); b.addEventListener('click', function () { openDlg('upgrade'); }); return b; })()]));
+    }
+  }
+
+  function dayLabel(d) {
+    var today = new Date(); var y = new Date(Date.now() - 86400000);
+    var iso = function (x) { return x.toISOString().slice(0, 10); };
+    if (d === iso(today)) return 'Today';
+    if (d === iso(y)) return 'Yesterday';
+    var dt = new Date(d + 'T12:00:00');
+    return isNaN(dt) ? d : dt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+  }
+
+  function list() {
+    var box = document.getElementById('list'); if (!box) return;
+    box.innerHTML = '';
+    var q = state.q.trim().toLowerCase();
+    var items = D.items.filter(function (it) {
+      var a = D.actions[it.id];
+      if (state.tab === 'saved') { if (a !== 'save') return false; }
+      else {
+        if (it.genre !== state.tab) return false;
+        if (a === 'skip' && !state.showHidden) return false;
+        if (state.label && it.label !== state.label) return false;
+      }
+      if (state.rightsOnly && !it.agent) return false;
+      if (q && (it.title + ' ' + it.note + ' ' + it.source_name + ' ' + (it.summary || '')).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    if (!items.length) {
+      var empty = state.tab === 'saved' ? ['Nothing saved yet', 'Press Save on any story, here or in your morning email, and it lands here.']
+        : (D.items.some(function (it) { return it.genre === state.tab; }) ? ['No stories match', 'Try another theme or clear your search.'] : ['Your first stories are on their way', 'New stories arrive every morning, with an email at 7am.']);
+      box.appendChild(el('div', { class: 'empty' }, [el('h2', { text: empty[0] }), el('p', { text: empty[1] })]));
+      return;
+    }
+    // Lead stories first within each day: rights-available, then primary by score
+    items.sort(function (a, b) { return (b.date > a.date ? 1 : b.date < a.date ? -1 : 0) || (b.agent - a.agent) || ((b.tier === 'primary') - (a.tier === 'primary')) || (b.score - a.score); });
+    var cur = null, ul = null;
+    items.forEach(function (it) {
+      if (it.date !== cur) { cur = it.date; box.appendChild(el('h2', { class: 'day', text: dayLabel(it.date) })); ul = el('ul', { class: 'items' }); box.appendChild(ul); }
+      ul.appendChild(card(it));
+    });
+  }
+
+  function card(it) {
+    var a = D.actions[it.id];
+    var li = el('li', { class: 'item' + (it.agent ? ' agent' : '') + (a === 'save' ? ' saved' : ''), id: 'i-' + it.id });
+    var meta = el('div', { class: 'meta' });
+    if (it.agent) meta.appendChild(el('span', { class: 'rights', text: '★ Rights available' + (it.agency ? ' · ' + it.agency : '') }));
+    if (it.label) meta.appendChild(el('span', { class: 'lbl', text: it.label }));
+    if (state.tab === 'saved') meta.appendChild(el('span', { class: 'gname', text: gname(it.genre) }));
+    if (it.tier === 'secondary' && !it.agent) meta.appendChild(el('span', { class: 'gname', text: 'Also on the radar' }));
+    li.appendChild(meta);
+    var h = el('h3'); var t = it.source_url ? el('a', { href: it.source_url, target: '_blank', rel: 'noopener', text: it.title }) : el('span', { text: it.title }); h.appendChild(t); li.appendChild(h);
+    li.appendChild(el('div', { class: 'src', text: (it.source_name || '') + (it.original_language && it.original_language !== 'en' ? ' · translated from the original' : '') }));
+    if (it.note) li.appendChild(el('p', { class: 'note', text: it.note }));
+    else if (it.summary) li.appendChild(el('p', { class: 'summary', text: it.summary }));
+    if (it.agent && it.rights_note) li.appendChild(el('p', { class: 'rnote', text: it.rights_note }));
+    var acts = el('div', { class: 'iacts' });
+    var sv = el('button', { class: 'ia' + (a === 'save' ? ' on' : ''), type: 'button', 'aria-pressed': String(a === 'save'), text: a === 'save' ? '★ Saved' : '☆ Save' });
+    sv.addEventListener('click', function () { act(it, a === 'save' ? 'unsave' : 'save'); });
+    acts.appendChild(sv);
+    if (state.tab !== 'saved') {
+      var sk = el('button', { class: 'ia', type: 'button', text: a === 'skip' ? 'Show again' : 'Not for me' });
+      sk.addEventListener('click', function () { act(it, a === 'skip' ? 'unskip' : 'skip'); });
+      acts.appendChild(sk);
+    }
+    if (it.source_url) acts.appendChild(el('a', { class: 'ia', href: it.source_url, target: '_blank', rel: 'noopener', text: 'Read the story' }));
+    if (it.agent) {
+      var ib = el('button', { class: 'ia intro', type: 'button', text: 'Ask for an introduction' });
+      ib.addEventListener('click', function () {
+        ib.disabled = true; ib.textContent = 'Asking...';
+        post({ action: 'genre_intro', item_id: it.id }).then(function (r) { ib.textContent = r && r.ok ? 'Introduction requested' : 'Please try again'; if (!(r && r.ok)) ib.disabled = false; else toast('We’ll introduce you within a working day.'); })
+          .catch(function () { ib.disabled = false; ib.textContent = 'Please try again'; });
+      });
+      acts.appendChild(ib);
+    }
+    li.appendChild(acts);
+    return li;
+  }
+
+  function act(it, what) {
+    var prev = D.actions[it.id];
+    if (what === 'save') D.actions[it.id] = 'save'; else if (what === 'skip') D.actions[it.id] = 'skip'; else delete D.actions[it.id];
+    render();
+    post({ action: 'genre_act', item_id: it.id, act: what }).then(function (r) {
+      if (!r || !r.ok) throw new Error('fail');
+      if (what === 'skip') toast('Hidden. Tick Show hidden to see it again.');
+    }).catch(function () { if (prev) D.actions[it.id] = prev; else delete D.actions[it.id]; render(); toast('That didn’t save. Please try again.'); });
+  }
+
+  function renderEnded() {
+    root.innerHTML = '';
+    document.getElementById('banner').hidden = true;
+    root.appendChild(el('h1', { text: 'Your free month has ended' }));
+    root.appendChild(el('p', { class: 'hello', text: 'Thank you for trying Ariel Genres. Pick up where you left off whenever you like.' }));
+    var row = el('div', { class: 'iacts' });
+    var k = el('button', { class: 'btn', type: 'button', text: 'Keep my genres' }); k.addEventListener('click', function () { openDlg('keep'); });
+    var u = el('button', { class: 'btn ghost', type: 'button', text: 'Make it yours' }); u.addEventListener('click', function () { openDlg('upgrade'); });
+    row.appendChild(k); row.appendChild(u); root.appendChild(row);
+    if (D.saved && D.saved.length) {
+      root.appendChild(el('h2', { class: 'day', text: 'What you saved' }));
+      var ul = el('ul', { class: 'items' });
+      D.saved.forEach(function (it) {
+        var li = el('li', { class: 'item saved' });
+        var h = el('h3'); h.appendChild(it.source_url ? el('a', { href: it.source_url, target: '_blank', rel: 'noopener', text: it.title }) : el('span', { text: it.title })); li.appendChild(h);
+        li.appendChild(el('div', { class: 'src', text: (it.source_name || '') + ' · ' + gname(it.genre) }));
+        ul.appendChild(li);
+      });
+      root.appendChild(ul);
+    }
+  }
+
+  function noKey(msg) {
+    document.getElementById('banner').hidden = true;
+    root.innerHTML = '';
+    var box = el('div', { class: 'center' });
+    box.appendChild(el('h1', { text: 'Open your Ariel', style: 'margin-top:0' }));
+    box.appendChild(el('p', { text: (msg ? msg + ' ' : '') + 'Enter the email you signed up with and we’ll send you your link. New here? ' }, []));
+    box.lastChild.appendChild(el('a', { href: '/genres/', text: 'Start a free month' }));
+    var f = el('form'); f.setAttribute('novalidate', '');
+    f.appendChild(el('label', { class: 'f', for: 'nk-email', text: 'Email' }));
+    var inp = el('input', { id: 'nk-email', type: 'email', autocomplete: 'email', required: '' }); f.appendChild(inp);
+    f.appendChild(el('p'));
+    f.appendChild(el('button', { class: 'btn', type: 'submit', text: 'Email me my link' }));
+    var st = el('p', { class: 'status', role: 'status', 'aria-live': 'polite' }); f.appendChild(st);
+    f.addEventListener('submit', function (e) {
+      e.preventDefault(); st.className = 'status';
+      var em = inp.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) { st.textContent = 'Please enter a valid email address.'; st.classList.add('error'); return; }
+      st.textContent = 'Sending...';
+      fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action: 'genre_link', email: em }) })
+        .then(function () { st.classList.add('success'); st.textContent = 'If you have an Ariel, your link is on its way. Check your inbox.'; })
+        .catch(function () { st.classList.add('error'); st.textContent = 'We couldn’t reach the service just now. Please try again.'; });
+    });
+    box.appendChild(f);
+    root.appendChild(box);
+  }
+
+  /* dialogs */
+  var lastFocus = null;
+  function openDlg(name) {
+    var d = document.getElementById('dlg-' + name); if (!d || !D) return;
+    lastFocus = document.activeElement;
+    if (name === 'keep') {
+      var sel = document.getElementById('k-genre'); sel.innerHTML = '';
+      (D.all_genres || []).forEach(function (g) { var o = el('option', { value: g.slug, text: g.name }); if ((D.me.genres || [])[0] === g.slug) o.selected = true; sel.appendChild(o); });
+    }
+    if (name === 'upgrade') {
+      document.getElementById('u-waive').textContent = D.me.plan === 'trial' || D.ended ? 'Upgrade during your trial and the £250 setup fee is waived. After that it’s from £75 a month, cancel any time.' : 'From £75 a month after a £250 setup, cancel any time.';
+      if (D.me.upgrade_requested) { var ug = document.getElementById('u-go'); ug.textContent = 'Requested: we’ll be in touch'; }
+    }
+    if (name === 'settings') {
+      var box = document.getElementById('s-genres'); box.innerHTML = '';
+      (D.all_genres || []).forEach(function (g) {
+        var lab = el('label', { class: 'cbx' }, [el('input', { type: 'checkbox', name: 'g', value: g.slug }), g.name]);
+        lab.querySelector('input').checked = (D.me.genres || []).indexOf(g.slug) >= 0;
+        if (D.me.plan === 'one' || D.me.plan === 'all') lab.querySelector('input').disabled = true;
+        box.appendChild(lab);
+      });
+      if (D.me.plan === 'one') box.appendChild(el('p', { class: 'status', text: 'To add genres, move to all genres for £49 a month: reply to any of our emails.' }));
+      document.querySelectorAll('#s-form [name=digest]').forEach(function (r) { r.checked = r.value === (D.me.digest || 'daily'); });
+    }
+    d.querySelectorAll('.status').forEach(function (s) { s.textContent = ''; s.className = 'status'; });
+    if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', '');
+  }
+  function closeDlg(d) { if (d.close) d.close(); else d.removeAttribute('open'); if (lastFocus) lastFocus.focus(); }
+  document.querySelectorAll('[data-open]').forEach(function (b) { b.addEventListener('click', function () { openDlg(b.getAttribute('data-open')); }); });
+  document.querySelectorAll('dialog').forEach(function (d) {
+    d.addEventListener('click', function (e) { if (e.target === d) closeDlg(d); });
+    d.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeDlg(d); }); });
+  });
+
+  document.querySelectorAll('[data-keep]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var dlg = document.getElementById('dlg-keep'), st = dlg.querySelector('.status');
+      var plan = b.getAttribute('data-keep');
+      b.disabled = true; st.className = 'status'; st.textContent = 'One moment...';
+      post({ action: 'genre_keep', plan: plan, genre: document.getElementById('k-genre').value }).then(function (r) {
+        b.disabled = false;
+        if (r && r.url) { location.href = r.url; return; }
+        if (r && r.ok) { st.classList.add('success'); st.textContent = 'Thank you. We’ll email you a payment link within a working day, and your feed stays on meanwhile.'; return; }
+        st.classList.add('error'); st.textContent = 'That didn’t work. Please try again.';
+      }).catch(function () { b.disabled = false; st.classList.add('error'); st.textContent = 'We couldn’t reach the service just now. Please try again.'; });
+    });
+  });
+
+  document.getElementById('u-go').addEventListener('click', function () {
+    var b = this, st = document.getElementById('dlg-upgrade').querySelector('.status');
+    b.disabled = true; st.className = 'status'; st.textContent = 'Sending...';
+    post({ action: 'genre_upgrade' }).then(function (r) {
+      if (!r || !r.ok) throw new Error();
+      D.me.upgrade_requested = true; b.textContent = 'Requested: we’ll be in touch';
+      st.classList.add('success'); st.innerHTML = '';
+      st.appendChild(document.createTextNode('Thank you. Tara will email you within a working day. Or '));
+      st.appendChild(el('a', { href: r.book_url, target: '_blank', rel: 'noopener', text: 'book a 15-minute call now' }));
+      st.appendChild(document.createTextNode('.'));
+    }).catch(function () { b.disabled = false; st.classList.add('error'); st.textContent = 'That didn’t work. Please try again.'; });
+  });
+
+  document.getElementById('s-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var st = this.querySelector('.status'); st.className = 'status';
+    var genres = [].slice.call(this.querySelectorAll('[name=g]:checked')).map(function (i) { return i.value; });
+    var digest = (this.querySelector('[name=digest]:checked') || {}).value || 'daily';
+    var payload = { action: 'genre_settings', digest: digest };
+    if (D.me.plan === 'trial') { if (!genres.length) { st.textContent = 'Keep at least one genre.'; st.classList.add('error'); return; } payload.genres = genres; }
+    st.textContent = 'Saving...';
+    post(payload).then(function (r) {
+      if (!r || !r.ok) { st.classList.add('error'); st.textContent = (r && r.message) || 'That didn’t save.'; return; }
+      st.classList.add('success'); st.textContent = 'Saved.';
+      setTimeout(function () { closeDlg(document.getElementById('dlg-settings')); load(); }, 700);
+    }).catch(function () { st.classList.add('error'); st.textContent = 'We couldn’t reach the service just now.'; });
+  });
+
+  document.getElementById('r-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var st = this.querySelector('.status'); st.className = 'status';
+    var g = document.getElementById('r-genre').value.trim();
+    if (g.length < 2) { st.textContent = 'Tell us which genre you’d like.'; st.classList.add('error'); return; }
+    st.textContent = 'Sending...';
+    post({ action: 'genre_request', genre: g, note: document.getElementById('r-note').value.trim() }).then(function (r) {
+      if (!r || !r.ok) throw new Error();
+      st.classList.add('success'); st.textContent = 'Thank you. ' + (r.count > 1 ? r.count + ' people have now asked for ' + g + '. ' : '') + 'We’ll email you when it launches.';
+      document.getElementById('r-form').reset();
+    }).catch(function () { st.classList.add('error'); st.textContent = 'That didn’t work. Please try again.'; });
+  });
+})();
+</script>
+</body>
+</html>

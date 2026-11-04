@@ -63,6 +63,7 @@ function ensureTriggers_() {
   ScriptApp.getProjectTriggers().forEach(function (t) { have[t.getHandlerFunction()] = true; });
   if (!have.sendDueEditions) ScriptApp.newTrigger('sendDueEditions').timeBased().everyHours(1).create();
   if (!have.sendOutbox) ScriptApp.newTrigger('sendOutbox').timeBased().everyMinutes(15).create();
+  if (!have.genreTick) ScriptApp.newTrigger('genreTick').timeBased().everyHours(1).create();
 }
 
 function cfgValue_(key) {
@@ -138,7 +139,7 @@ function checkRights_(b) {
     logClick_({ book_id: bookId, kind: tier === 'upsell' ? 'check_rights_upsell' : 'check_rights', where: b.source || 'page', edition_id: b.edition_id, t: b.t });
 
     if (tier === 'upsell') {
-      return { ok: true, outcome: 'upsell', pass_url: cfgValue_('rights_pass_url') };
+      return { ok: true, outcome: 'upsell', pass_url: '/genres/?from=rights' };  // Rights Pass folded into Ariel Genres (4 Nov)
     }
     if (tier === 'pass_interest') {
       alertTara_('[Review of Reviews] Rights Pass interest: ' + email,
