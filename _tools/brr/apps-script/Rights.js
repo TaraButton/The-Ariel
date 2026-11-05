@@ -232,7 +232,7 @@ function rightsPaymentsTick_() {
       var body = (m.getPlainBody() || '') + ' ' + m.getSubject();
       var low = body.toLowerCase();
       var unlimited = low.indexOf('unlimited rights checks') >= 0 && new RegExp('£\\s?' + RIGHTS_CFG.PASS_PRICE_NUM + '(\\.00)?\\b').test(body);
-      var single = !unlimited && low.indexOf('rights check') >= 0 && new RegExp('£\\s?' + RIGHTS_CFG.CHECK_PRICE + '(\\.00)?\\b').test(body);
+      var single = !unlimited && /rights? check/.test(low) && new RegExp('£\\s?' + RIGHTS_CFG.CHECK_PRICE + '(\\.00)?\\b').test(body);
       if (!unlimited && !single) return;
       var v = req.getDataRange().getValues();
       var seen = {};

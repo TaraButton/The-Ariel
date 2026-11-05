@@ -458,7 +458,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
       post({ action: 'genre_keep', genres: picked }).then(function (r) {
         b.disabled = false;
         if (r && r.url) {
-          if (r.set_quantity) { st.classList.add('success'); st.textContent = 'Taking you to payment. On the payment page, set "Additional genre" to ' + r.set_quantity + ' so the total is £' + r.price + ' a month.'; setTimeout(function () { location.href = r.url; }, 2500); return; }
+          if (r.set_quantity) { st.classList.add('success'); st.textContent = 'Taking you to payment. On the payment page, press Add next to "Additional Genre" so the total is £' + r.price + ' a month.'; setTimeout(function () { location.href = r.url; }, 2500); return; }
           location.href = r.url; return;
         }
         if (r && r.ok) { st.classList.add('success'); st.textContent = 'Thank you. We’ll email you a payment link within a working day, and your feed stays on meanwhile.'; return; }

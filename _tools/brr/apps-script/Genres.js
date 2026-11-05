@@ -594,14 +594,16 @@ function genreKeep_(b) {
   setCells_(sh, s.row, { keep_interest: new Date() + ' ' + n + ':' + genres.join(','), genres: genres.join(',') });
   noteGenreDemand_(genres.filter(function (x) { return s.genreList.indexOf(x) < 0; }), genreReaders_(), s.email);
   var fixed = cfgValue_('genre_pay_url_' + n);
-  var url = fixed || cfgValue_('genre_pay_url');
+  var base = cfgValue_('genre_pay_url');
+  // The base link covers 1 genre (and 2 via its "Add" cross-sell); for more we need a fixed-count link or Tara sends one by hand
+  var url = fixed || (n <= 2 ? base : '');
   alertTara_('[Ariel Genres] ' + s.email + ' wants to keep ' + n + ' genre' + (n > 1 ? 's' : '') + ' (' + label + ')',
     s.email + (s.name ? ' (' + s.name + (s.company ? ', ' + s.company : '') + ')' : '') + ' clicked Keep: ' + genres.map(gName_).join(', ') + ', ' + label + '.\n' +
-    (url ? 'They were sent to the Stripe link' + (fixed ? '' : ' (quantity step: Additional genres = ' + (n - 1) + ')') + '. Payment is picked up automatically from the Stripe email; if it is not, run admin activate_genre.'
-      : 'No Stripe link is set in the Config tab yet (genre_pay_url), so please email them a payment link today, then activate them (admin op activate_genre).'));
+    (url ? 'They were sent to the Stripe link' + (fixed || n === 1 ? '' : ' (they need to press Add on the Additional Genre cross-sell)') + '. Payment is picked up automatically from the Stripe email; if it is not, run admin activate_genre.'
+      : 'No Stripe link exists for ' + n + ' genres (Config genre_pay_url_' + n + ' is blank), so please email them a payment link today, then activate them (admin op activate_genre).'));
   if (url) {
     var sep = url.indexOf('?') >= 0 ? '&' : '?';
-    return { ok: true, count: n, price: price, label: label, set_quantity: fixed ? 0 : n - 1,
+    return { ok: true, count: n, price: price, label: label, set_quantity: fixed || n === 1 ? 0 : n - 1,
       url: url + sep + 'prefilled_email=' + encodeURIComponent(s.email) + '&client_reference_id=' + encodeURIComponent(s.token.slice(0, 40)) };
   }
   sendGenreNote_(s, 'Keeping ' + genres.map(gName_).join(', '),
@@ -773,7 +775,7 @@ function detectStripePayments_() {
     t.getMessages().forEach(function (m) {
       var body = (m.getPlainBody() || '') + ' ' + m.getSubject();
       var low = body.toLowerCase();
-      if (low.indexOf('ariel genres') < 0) return;  // own-Ariel payments (£75/£99) must never be read as genre payments
+      if (low.indexOf('ariel genres') < 0 && low.indexOf('genre subscription') < 0 && low.indexOf('additional genre') < 0) return;  // own-Ariel payments (£75/£99) must never be read as genre payments
       var count = 0, re = /£\s?(\d{2,3})(?:\.(\d{2}))?\b/g, mm;
       while ((mm = re.exec(body))) {
         var amt = Number(mm[1]);
