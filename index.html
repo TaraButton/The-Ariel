@@ -183,6 +183,10 @@ h1, h2, h3, h4 {
   transition: all 0.35s ease;
   border: 1px solid var(--gold);
 }
+.hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero-cta.ghost { background: transparent; color: var(--gold); }
+.hero-cta.ghost:hover { background: var(--gold); color: var(--logo-navy); }
+.hero-fine { margin: 18px auto 0; max-width: 520px; font-size: 14px; color: var(--mist); line-height: 1.5; }
 .hero-cta:hover {
   background: var(--gold-light);
   box-shadow: 0 0 20px rgba(184, 150, 90, 0.3);
@@ -917,9 +921,14 @@ section p {
   padding: 40px 32px;
   border-radius: 3px;
   transition: transform 0.3s ease;
+  display: flex; flex-direction: column;
 }
+.audience-card .price { margin-top: auto; }
 .audience-card:hover { transform: translateY(-2px); }
 .audience-card.burgundy { background: var(--burgundy); }
+.tier-cta { display:inline-block; padding:12px 22px; border:1px solid var(--gold); color:var(--gold); text-decoration:none; font-size:14px; letter-spacing:.08em; text-transform:uppercase; min-height:44px; box-sizing:border-box; }
+.tier-cta.gold { background: var(--gold); color: var(--logo-navy); }
+.tier-cta:hover, .tier-cta:focus-visible { background: var(--gold); color: var(--logo-navy); }
 
 .audience-card.gold-border {
   background: var(--ink);
@@ -1518,7 +1527,11 @@ footer a:focus-visible {
   <h1 class="hero-tagline">Personalised story intelligence for screen</h1>
   <p class="hero-sub">The best stories get optioned by whoever sees them first.</p>
   <p class="hero-detail">Bespoke scouting for film and TV that learns and improves as you use it. Books, journalism and true stories with screen potential - filtered to your taste, delivered daily.</p>
-  <a href="#book" class="hero-cta" aria-label="Apply to join The Ariel">Apply to join</a>
+  <div class="hero-ctas">
+    <a href="/genres/?from=hero" class="hero-cta" aria-label="Start a free month of Ariel Genres">Start a free month</a>
+    <a href="#pricing" class="hero-cta ghost" aria-label="See the three ways in and pricing">See pricing</a>
+  </div>
+  <p class="hero-fine">Free for 30 days, no card. Or have an Ariel built around your slate from &#163;75 a month.</p>
 </header>
 
 <!-- ═══ NAV ═══ -->
@@ -1810,40 +1823,36 @@ footer a:focus-visible {
   </div>
 </div>
 
-<!-- ═══ WHO IT'S FOR ═══ -->
-<section id="pricing" class="fade-in" aria-label="Who it is for and pricing">
-  <div class="section-label">Who it&#8217;s for</div>
-  <h2>Built for people who make things</h2>
-  <p>Whether you&#8217;re a solo producer, a small development team, or a studio running many tracks at once, The Ariel adapts to how you work.</p>
+<!-- ═══ PRICING: THREE WAYS IN ═══ -->
+<section id="pricing" class="fade-in" aria-label="Pricing: three ways in">
+  <div class="section-label">Pricing</div>
+  <h2>Three ways in</h2>
+  <p>Free weekly. From &#163;29 daily, by genre. &#163;99 for your own. All monthly, cancel any time.</p>
   <div class="audience-grid">
-    <div class="audience-card gold-border">
-      <h3>Individual producers</h3>
-      <p>A single, personalised feed tuned to your genre interests. Wider visibility on books, articles and rights news than any one producer can read alone - focused on what fits your slate.</p>
-      <div class="price">&#163;75&#8211;99 <span style="font-size:18px;color:var(--mist)">/month</span></div>
-      <p class="price-note">&#163;250 onboarding &#183; Founding rate &#163;75/month, locked in</p>
-    </div>
     <div class="audience-card">
-      <h3>Production teams</h3>
-      <p>Per-seat pricing for small development teams. Shared dashboard, multiple genre tracks, team saves and comments. Add or remove seats as your slate changes.</p>
-      <div class="price">&#163;95 <span style="font-size:18px;color:var(--mist)">/ seat / month</span></div>
-      <p class="price-note">Minimum 2 seats &#183; Paid pilots from &#163;3&#8211;5K &#183; Annual billing available</p>
+      <h3>London Review of Reviews</h3>
+      <p>One email a week. Every non-fiction book reviewed in Britain, one line each, with screen potential flagged and a rights check on any book.</p>
+      <div class="price">Free</div>
+      <p class="price-note">Every Monday &#183; No card, one-click unsubscribe</p>
+      <p style="margin-top:18px"><a href="/reviews/" class="tier-cta" aria-label="Sign up free to the London Review of Reviews">Sign up free</a></p>
+    </div>
+    <div class="audience-card gold-border">
+      <h3>Ariel Genres</h3>
+      <p>One email a day. Stories with screen potential in the genres you pick, plus rights-available books sent to us directly by literary agents. Unlimited rights checks.</p>
+      <div class="price">from &#163;29 <span style="font-size:18px;color:var(--mist)">/month</span></div>
+      <p class="price-note">First month free, no card &#183; &#163;29 for one genre, &#163;10 for each extra</p>
+      <p style="margin-top:18px"><a href="/genres/?from=pricing" class="tier-cta gold" aria-label="Start a free month of Ariel Genres">Start a free month</a></p>
     </div>
     <div class="audience-card burgundy">
-      <h3>Studios &amp; broadcasters</h3>
-      <p>Bulk seat licensing for studios, broadcasters and larger production groups. Custom sources, dedicated setup, and account management. Built around the way your development teams already work.</p>
-      <div class="price">Bulk pricing <span style="font-size:18px;color:#E8E0CC">/ 10+ seats</span></div>
-      <p class="price-note">Annual plans typically &#163;10&#8211;25K depending on seats, tracks and research depth &#183; <a href="#book" style="color: var(--gold-light);">Speak to us</a></p>
+      <h3>Your own Ariel</h3>
+      <p>One email a day, built around your slate and commissioners. It learns from what you save, adds research briefs on any story, and copies in your colleagues.</p>
+      <div class="price">&#163;99 <span style="font-size:18px;color:#E8E0CC">/month</span></div>
+      <p class="price-note">Founding rate &#163;75 for the first 20 producers &#183; No setup fee &#183; Extra colleague &#163;35/month</p>
+      <p style="margin-top:18px"><a href="#book" class="tier-cta" aria-label="Apply for your own Ariel">Apply to join</a></p>
     </div>
   </div>
-  <div class="genres-band" style="max-width:900px;margin:36px auto 0;background:var(--ink);color:#E6E9F1;border-radius:4px;padding:26px 28px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;text-align:left;">
-    <div style="flex:1 1 360px;min-width:0;">
-      <p style="margin:0 0 6px;font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);">New &#183; Free for 30 days, no card</p>
-      <h3 style="margin:0 0 6px;font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#FFFFFF;line-height:1.15;">Try an Ariel Genre first</h3>
-      <p style="margin:0;font-size:16px;line-height:1.6;color:#E6E9F1;">Ready-made Ariels for True Crime, Political Scandal and Music &amp; Pop Culture: a daily email of stories with screen potential, plus rights-available titles from literary agents. Then &#163;35 a month, or make it your own.</p>
-    </div>
-    <a href="/genres/?from=home" style="display:inline-block;background:var(--gold);color:var(--ink);font-weight:900;text-decoration:none;padding:14px 22px;border-radius:3px;font-size:16px;">Start a free month</a>
-  </div>
-  <p style="text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--ink); max-width: 620px; margin: 36px auto 0; line-height: 1.5;">Priced so a solo producer can run it on their own slate, and a team can give every seat real value.</p>
+  <p style="text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--ink); max-width: 620px; margin: 36px auto 0; line-height: 1.5;">All eight genres cost &#163;99, the same as your own Ariel. At that point, have one built around you.</p>
+  <p style="text-align:center;color:var(--mist-deep);font-size:14px;margin:12px auto 0;max-width:620px;">Teams, studios and broadcasters: several seats, custom sources and account management. <a href="#book" style="color: var(--gold-deep);">Speak to us.</a></p>
 </section>
 
 <!-- ═══ ABOUT ═══ -->
@@ -1861,7 +1870,7 @@ footer a:focus-visible {
 
 <!-- ═══ EARLY SIGNAL ═══ -->
 <section class="fade-in" style="text-align: center; padding: 60px 24px;" aria-label="Founding rate">
-  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--ink); max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">A limited number of founding places remain. Founding rate held for as long as you stay.</p>
+  <p style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 24px; color: var(--ink); max-width: 600px; margin: 0 auto 16px; line-height: 1.5;">The founding rate, &#163;75 a month, is for the first 20 producers with their own Ariel, and is held for as long as you stay.</p>
   <p style="color: var(--mist-deep); font-size: 14px;">Interested in being one of the first? <a href="#book" style="color: var(--gold-deep);">Let&#8217;s talk.</a></p>
 </section>
 
@@ -1972,21 +1981,21 @@ footer a:focus-visible {
       What does the onboarding involve?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-4">A calibration call where we learn about your development interests, the kinds of stories you respond to, and any current priorities. We use that to configure your dashboard before it goes live. Most clients are up and running within a week.</div>
+    <div class="faq-a" id="faq-4">A calibration call where we learn about your development interests, the kinds of stories you respond to, and any current priorities. We use that to configure your dashboard before it goes live. Most clients are up and running within a week. There is no setup fee.</div>
   </div>
   <div class="faq-item">
     <button class="faq-q" aria-controls="faq-5" aria-expanded="false">
       Can I try it before committing?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-5">For production companies, we offer a paid pilot - typically 8&#8211;12 weeks at &#163;3&#8211;5K - so you can test it with your team before committing to an annual plan. For individual producers, our founding rate of &#163;75/month is deliberately accessible.</div>
+    <div class="faq-a" id="faq-5">Yes. <a href="/genres/">Ariel Genres</a> is free for 30 days with no card: a daily email in up to two genres of your choice. Your own Ariel has no setup fee and no minimum term, so your first month is the trial. Teams can also take a paid pilot: <a href="#book">speak to us</a>.</div>
   </div>
   <div class="faq-item">
     <button class="faq-q" aria-controls="faq-6" aria-expanded="false">
       What happens after the founding rate?
       <span class="faq-icon" aria-hidden="true">+</span>
     </button>
-    <div class="faq-a" id="faq-6">Founding clients keep their rate for as long as they stay subscribed. The standard rate for new clients will be &#163;99/month once we move past the founding phase.</div>
+    <div class="faq-a" id="faq-6">Founding clients keep &#163;75 a month for as long as they stay subscribed. The standard rate is &#163;99 a month once the first 20 founding places are taken.</div>
   </div>
   <div class="faq-item">
     <button class="faq-q" aria-controls="faq-7" aria-expanded="false">

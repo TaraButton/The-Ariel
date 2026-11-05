@@ -1,6 +1,6 @@
 /**
  * Ariel Genres - ready-made genre feeds with a free 30-day trial (The Ariel).
- * v1.0 2026-11-04
+ * v1.1 2026-11-05 - per-genre pricing (GBP 29 first genre + GBP 10 each extra, free month covers up to 2), no setup fee on own Ariel
  *
  * Lives in the same Apps Script project as the London Review of Reviews, so it shares
  * the sheet, the sending alias, the Members tab (unlimited rights checks) and the admin secret.
@@ -10,7 +10,8 @@
  *   GenreSubs     - one row per person: genres, trial dates, plan, token (the token is their dashboard key)
  *   GenreActions  - every Save / Not for me / intro click, per person
  *   GenreRequests - Request a genre
- *   Config keys   - genre_feed_key, genre_one_url, genre_all_url, genre_digest_hour, genre_book_url
+ *   Config keys   - genre_feed_key, genre_pay_url (one Stripe link: GBP 29 base + 'Additional genre' GBP 10 line with adjustable quantity),
+ *                   optional genre_pay_url_2 .. genre_pay_url_8 (fixed-count links, no quantity step for the buyer), genre_digest_hour, genre_book_url
  *
  * Public web API (all JSON):
  *   POST {action:"genre_signup", email, name, role, company, genres[], ror, website, source}
@@ -18,7 +19,7 @@
  *   GET  ?action=genre_sample                       (3 recent real stories per genre, for the landing page)
  *   POST {action:"genre_act", k, item_id, act:"save"|"skip"|"unsave"|"unskip"}
  *   POST {action:"genre_settings", k, genres[], digest:"daily"|"weekly"|"off"}
- *   POST {action:"genre_keep", k, plan:"one"|"all", genre}
+ *   POST {action:"genre_keep", k, genres[]}          (genres they keep; price = 29 + 10 x (n-1))
  *   POST {action:"genre_upgrade", k}
  *   POST {action:"genre_intro", k, item_id}
  *   POST {action:"genre_request", genre, note, email, name, role, k, website}
@@ -30,7 +31,7 @@
  *   GET  <exec>?genre=<slug>&key=<key>&action=preferences  -> lens, labels, items_per_day
  *
  * Admin (POST {action:"admin", secret, op}):
- *   genre_stats, genre_subs, genre_requests, activate_genre {email, plan, months|paid_until, genre}, genre_add {genre, entries}
+ *   genre_stats, genre_subs, genre_requests, activate_genre {email, genres[]|count, months|paid_until, plan:'paid'|'comp'}, genre_add {genre, entries}
  *
  * Hourly trigger genreTick(): activation housekeeping, trial emails (day 21, day 28, end),
  * daily digests at genre_digest_hour London, Stripe payment detection from Gmail.
@@ -105,8 +106,10 @@ var GENRES = {
 
 var GENRE_CFG = {
   TRIAL_DAYS: 30,
-  PRICE_ONE: '£35 a month',
-  PRICE_ALL: '£49 a month',
+  TRIAL_MAX_GENRES: 2,     // the free month covers up to two genres
+  PRICE_FIRST: 29,         // GBP a month for the first genre
+  PRICE_EXTRA: 10,         // GBP a month for each additional genre (8 genres = 99 = your own Ariel)
+  MAX_GENRES: 8,
   APP_URL: 'https://theariel.tv/genres/app.html',
   LANDING_URL: 'https://theariel.tv/genres/',
   BOOK_URL: 'https://calendly.com/tarabutton/15min',
@@ -115,21 +118,46 @@ var GENRE_CFG = {
   DIGEST_HOUR: 7
 };
 
+function genrePrice_(n) { n = Math.max(1, Math.min(GENRE_CFG.MAX_GENRES, Number(n) || 1)); return GENRE_CFG.PRICE_FIRST + GENRE_CFG.PRICE_EXTRA * (n - 1); }
+function genrePriceLabel_(n) { n = Math.max(1, Number(n) || 1); return '£' + genrePrice_(n) + ' a month' + (n > 1 ? ' for ' + n + ' genres' : ''); }
+var PRICE_SENTENCE = '£' + GENRE_CFG.PRICE_FIRST + ' a month for one genre, £' + GENRE_CFG.PRICE_EXTRA + ' for each extra';
+var OWN_ARIEL_SENTENCE = 'No setup fee and no minimum term: £75 a month at the founding rate, cancel any time.';
+/* How many genres a subscriber may have switched on. */
+function allowedGenres_(s) {
+  if (!s) return GENRE_CFG.TRIAL_MAX_GENRES;
+  if (s.plan === 'comp' || s.plan === 'all') return GENRE_CFG.MAX_GENRES;
+  if (s.plan === 'paid') return Math.max(1, Math.min(GENRE_CFG.MAX_GENRES, Number(s.paid_genres) || 1));
+  if (s.plan === 'one') return 1;
+  return GENRE_CFG.TRIAL_MAX_GENRES;
+}
+function isPaidPlan_(plan) { return plan === 'paid' || plan === 'one' || plan === 'all'; }
+
 var GITEM_HEADERS = ['id', 'genre', 'date', 'added_at', 'title', 'summary', 'source_name', 'source_url', 'source_id', 'label',
   'relevance_note', 'score', 'tier', 'agent', 'agency', 'agent_name', 'rights_note', 'original_language', 'original_title', 'status'];
 var GSUB_HEADERS = ['email', 'name', 'role', 'company', 'genres', 'plan', 'status', 'token', 'created_at', 'activated_at',
   'trial_end', 'paid_until', 'digest', 'last_digest', 'day21_sent', 'day28_sent', 'ended_sent', 'keep_interest',
-  'upgrade_interest', 'source', 'ror_optin', 'last_link_sent', 'note'];
+  'upgrade_interest', 'source', 'ror_optin', 'last_link_sent', 'note', 'paid_genres'];
 var GACT_HEADERS = ['time', 'email', 'item_id', 'genre', 'action', 'title'];
 var GREQ_HEADERS = ['time', 'email', 'name', 'role', 'genre', 'note', 'source', 'status'];
 
 var GENRE_ROLES = ['Producer', 'Development executive', 'Commissioner', 'Director', 'Writer', 'Agent or publisher', 'Other'];
 
+var PAY_URL_NOTE = 'Stripe payment link for Ariel Genres: product "Ariel Genres" £' + GENRE_CFG.PRICE_FIRST + '/month plus an "Additional genre" £' + GENRE_CFG.PRICE_EXTRA + '/month line with adjustable quantity (0-7). Optional keys genre_pay_url_2 .. genre_pay_url_8 = fixed-count links (no quantity step). Blank = keep requests are emailed to Tara.';
+
 /* ───────────────────────── setup ───────────────────────── */
 
 function ensureGenres_() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  if (ss.getSheetByName('GenreSubs') && ss.getSheetByName('GenreItems') && ss.getSheetByName('GenreActions') && ss.getSheetByName('GenreRequests')) return;
+  if (ss.getSheetByName('GenreSubs') && ss.getSheetByName('GenreItems') && ss.getSheetByName('GenreActions') && ss.getSheetByName('GenreRequests')) {
+    if (CacheService.getScriptCache().get('genres_v11')) return;
+    var subs = ss.getSheetByName('GenreSubs');
+    var have = subs.getRange(1, 1, 1, Math.max(1, subs.getLastColumn())).getValues()[0].map(String);
+    GSUB_HEADERS.forEach(function (h) { if (have.indexOf(h) < 0) { subs.getRange(1, subs.getLastColumn() + 1).setValue(h); have.push(h); } });
+    var cfg0 = ss.getSheetByName('Config');
+    if (cfg0 && !findRow_(cfg0, 1, 'genre_pay_url')) cfg0.appendRow(['genre_pay_url', '', PAY_URL_NOTE]);
+    CacheService.getScriptCache().put('genres_v11', '1', 21600);
+    return;
+  }
   ensureTab_(ss, 'GenreItems', GITEM_HEADERS);
   ensureTab_(ss, 'GenreSubs', GSUB_HEADERS);
   ensureTab_(ss, 'GenreActions', GACT_HEADERS);
@@ -138,8 +166,7 @@ function ensureGenres_() {
   var cfg = ss.getSheetByName('Config');
   var add = function (k, v, note) { if (!findRow_(cfg, 1, k)) cfg.appendRow([k, v, note]); };
   add('genre_feed_key', Utilities.getUuid().replace(/-/g, ''), 'Key the daily distribution run uses to post stories into the genre feeds. Keep private.');
-  add('genre_one_url', '', 'Stripe payment link for one genre (' + GENRE_CFG.PRICE_ONE + '). Blank = "keep" requests are emailed to Tara instead.');
-  add('genre_all_url', '', 'Stripe payment link for all genres (' + GENRE_CFG.PRICE_ALL + '). Blank = "keep" requests are emailed to Tara instead.');
+  add('genre_pay_url', '', PAY_URL_NOTE);
   add('genre_digest_hour', String(GENRE_CFG.DIGEST_HOUR), 'Hour (London) the daily genre emails go out.');
   add('genre_book_url', GENRE_CFG.BOOK_URL, 'Where "Make it yours" sends people to book the onboarding call.');
 }
@@ -305,7 +332,7 @@ function genreSignup_(b) {
   if (b.website) return { ok: true, status: 'pending' };
   var email = String(b.email || '').trim().toLowerCase();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 254) return { ok: false, error: 'invalid_email', message: 'Please check your email address.' };
-  var genres = cleanGenres_(b.genres);
+  var genres = cleanGenres_(b.genres).slice(0, GENRE_CFG.TRIAL_MAX_GENRES);  // the free month covers up to two genres
   if (!genres.length) return { ok: false, error: 'no_genre', message: 'Please choose at least one genre.' };
   var name = String(b.name || '').trim().slice(0, 80);
   var role = GENRE_ROLES.indexOf(b.role) >= 0 ? b.role : '';
@@ -418,7 +445,7 @@ function subByToken_(k) {
 }
 
 function paidActive_(s) {
-  return (s.plan === 'one' || s.plan === 'all' || s.plan === 'comp') && (!s.paid_until || new Date(s.paid_until).getTime() + 5 * 86400000 > Date.now() || s.plan === 'comp');
+  return (isPaidPlan_(s.plan) || s.plan === 'comp') && (!s.paid_until || new Date(s.paid_until).getTime() + 5 * 86400000 > Date.now() || s.plan === 'comp');
 }
 
 function hasAccess_(s) {
@@ -474,12 +501,12 @@ function genreFeed_(k) {
   if (!s) return { ok: false, error: 'unknown_link', message: 'We don’t recognise that link.' };
   if (s.status === 'pending') s = activateIfPending_(s);
   var me = {
-    name: s.name, email: s.email, genres: s.genreList, plan: s.plan, status: s.status, digest: s.digest || 'daily',
+    name: s.name, email: s.email, genres: s.genreList, plan: s.plan, status: s.status, digest: s.digest || 'daily', allowed_genres: allowedGenres_(s),
     trial_end: s.trial_end ? new Date(s.trial_end).toISOString() : '', days_left: s.plan === 'trial' ? daysLeft_(s) : null,
     paid_until: s.paid_until ? new Date(s.paid_until).toISOString() : '', upgrade_requested: !!s.upgrade_interest, keep_requested: !!s.keep_interest
   };
   var acts = genreActionsFor_(s.email);
-  var base = { ok: true, me: me, all_genres: genreDefsPublic_(), prices: { one: GENRE_CFG.PRICE_ONE, all: GENRE_CFG.PRICE_ALL }, book_url: cfgValue_('genre_book_url') || GENRE_CFG.BOOK_URL };
+  var base = { ok: true, me: me, all_genres: genreDefsPublic_(), prices: { first: GENRE_CFG.PRICE_FIRST, extra: GENRE_CFG.PRICE_EXTRA, trial_max: GENRE_CFG.TRIAL_MAX_GENRES, max: GENRE_CFG.MAX_GENRES, sentence: PRICE_SENTENCE }, book_url: cfgValue_('genre_book_url') || GENRE_CFG.BOOK_URL };
   if (!hasAccess_(s)) {
     if (s.status !== 'ended' && s.status !== 'unsubscribed' && s.plan === 'trial') endTrial_(s);
     base.ended = true;
@@ -541,7 +568,12 @@ function genreSettings_(b) {
   if (b.genres) {
     var g = cleanGenres_(b.genres);
     if (!g.length) return { ok: false, error: 'no_genre', message: 'Keep at least one genre.' };
-    if (s.plan === 'one') g = [g[0]];
+    var allowed = allowedGenres_(s);
+    if (g.length > allowed) {
+      return { ok: false, error: 'too_many', allowed: allowed, message: s.plan === 'trial'
+        ? 'Your free month covers up to ' + allowed + ' genres. You can add more when you keep your Ariel (£' + GENRE_CFG.PRICE_EXTRA + ' a month each).'
+        : 'You have ' + allowed + ' genre' + (allowed > 1 ? 's' : '') + ' on your plan. To add one for £' + GENRE_CFG.PRICE_EXTRA + ' a month, use Change plan.' };
+    }
     upd.genres = g.join(',');
     noteGenreDemand_(g.filter(function (x) { return s.genreList.indexOf(x) < 0; }), genreReaders_(), s.email);
   }
@@ -553,25 +585,29 @@ function genreSettings_(b) {
 function genreKeep_(b) {
   var s = subByToken_(b.k);
   if (!s) return { ok: false, error: 'unknown_link' };
-  var plan = b.plan === 'all' ? 'all' : 'one';
-  var genre = GENRES[b.genre] ? b.genre : (s.genreList[0] || 'true-crime');
+  var genres = cleanGenres_(b.genres);
+  if (!genres.length) genres = s.genreList.slice();
+  if (!genres.length) genres = ['true-crime'];
+  genres = genres.slice(0, GENRE_CFG.MAX_GENRES);
+  var n = genres.length, price = genrePrice_(n), label = genrePriceLabel_(n);
   var sh = genreSheet_('GenreSubs');
-  setCell_(sh, s.row, 'keep_interest', new Date() + ' ' + plan + (plan === 'one' ? ':' + genre : ''));
-  var url = cfgValue_(plan === 'all' ? 'genre_all_url' : 'genre_one_url');
-  alertTara_('[Ariel Genres] ' + s.email + ' wants to keep ' + (plan === 'all' ? 'all genres' : gName_(genre)),
-    s.email + (s.name ? ' (' + s.name + (s.company ? ', ' + s.company : '') + ')' : '') + ' clicked Keep: ' +
-    (plan === 'all' ? 'all genres, ' + GENRE_CFG.PRICE_ALL : gName_(genre) + ', ' + GENRE_CFG.PRICE_ONE) + '.\n' +
-    (url ? 'They were sent to the Stripe link. Payment is picked up automatically from the Stripe email; if it is not, run admin activate_genre.'
-      : 'No Stripe link is set in the Config tab yet, so please email them a payment link today, then activate them (admin op activate_genre).'));
+  setCells_(sh, s.row, { keep_interest: new Date() + ' ' + n + ':' + genres.join(','), genres: genres.join(',') });
+  noteGenreDemand_(genres.filter(function (x) { return s.genreList.indexOf(x) < 0; }), genreReaders_(), s.email);
+  var fixed = cfgValue_('genre_pay_url_' + n);
+  var url = fixed || cfgValue_('genre_pay_url');
+  alertTara_('[Ariel Genres] ' + s.email + ' wants to keep ' + n + ' genre' + (n > 1 ? 's' : '') + ' (' + label + ')',
+    s.email + (s.name ? ' (' + s.name + (s.company ? ', ' + s.company : '') + ')' : '') + ' clicked Keep: ' + genres.map(gName_).join(', ') + ', ' + label + '.\n' +
+    (url ? 'They were sent to the Stripe link' + (fixed ? '' : ' (quantity step: Additional genres = ' + (n - 1) + ')') + '. Payment is picked up automatically from the Stripe email; if it is not, run admin activate_genre.'
+      : 'No Stripe link is set in the Config tab yet (genre_pay_url), so please email them a payment link today, then activate them (admin op activate_genre).'));
   if (url) {
     var sep = url.indexOf('?') >= 0 ? '&' : '?';
-    return { ok: true, url: url + sep + 'prefilled_email=' + encodeURIComponent(s.email) + '&client_reference_id=' + encodeURIComponent(s.token.slice(0, 40)) };
+    return { ok: true, count: n, price: price, label: label, set_quantity: fixed ? 0 : n - 1,
+      url: url + sep + 'prefilled_email=' + encodeURIComponent(s.email) + '&client_reference_id=' + encodeURIComponent(s.token.slice(0, 40)) };
   }
-  sendGenreNote_(s, 'Keeping ' + (plan === 'all' ? 'all your genres' : gName_(genre)),
-    'Thank you. We’ll email you a payment link for ' + (plan === 'all' ? 'all genres (' + GENRE_CFG.PRICE_ALL + ')' : gName_(genre) + ' (' + GENRE_CFG.PRICE_ONE + ')') +
-    ' within a working day. Your feed stays on in the meantime.');
+  sendGenreNote_(s, 'Keeping ' + genres.map(gName_).join(', '),
+    'Thank you. We’ll email you a payment link for ' + genres.map(gName_).join(', ') + ' (' + label + ') within a working day. Your feed stays on in the meantime.');
   extendGrace_(s, 7);
-  return { ok: true, interest: true };
+  return { ok: true, interest: true, count: n, price: price, label: label };
 }
 
 /* Keeps a trial open for a few more days while a keep or upgrade request is being handled. */
@@ -596,12 +632,12 @@ function genreUpgrade_(b) {
   var inTrial = s.plan === 'trial';
   alertTara_('[Ariel Genres] Upgrade request: ' + s.email,
     s.email + (s.name ? ' (' + s.name + (s.company ? ', ' + s.company : '') + (s.role ? ', ' + s.role : '') + ')' : '') +
-    ' wants their own Ariel.\nGenres: ' + s.genreList.map(gName_).join(', ') + '\nPlan: ' + s.plan + (inTrial ? ' (in trial, so the £250 setup is waived)' : '') +
+    ' wants their own Ariel.\nGenres: ' + s.genreList.map(gName_).join(', ') + '\nPlan: ' + s.plan + (inTrial ? ' (in trial)' : '') +
     '\n\nWhat they saved (' + saved.length + '):\n' + (saved.join('\n') || '(nothing yet)') +
     '\n\nNext: book the onboarding call. Their saves seed the new profile.json.');
   var book = cfgValue_('genre_book_url') || GENRE_CFG.BOOK_URL;
   sendGenreNote_(s, 'Your own Ariel',
-    'Thank you. Tara will email you within a working day to set up your own Ariel. ' + (inTrial ? 'Because you’re upgrading during your trial, the £250 setup fee is waived. ' : '') +
+    'Thank you. Tara will email you within a working day to set up your own Ariel. ' + OWN_ARIEL_SENTENCE + ' ' +
     'Everything you’ve saved so far comes with you, so your Ariel starts from your taste on day one.<br><br>' +
     'If you’d like to pick a time now, <a href="' + esc_(book) + '" style="color:' + C.goldDeep + ';">book a 15-minute call</a>.');
   extendGrace_(s, 10);
@@ -690,7 +726,7 @@ function genreTick() {
           else if (left <= 9.2 && !s.day21_sent) { sendTrialMidpoint_(s); setCell_(sh, row, 'day21_sent', new Date()); }
         }
         // Paid plans that look overdue: tell Tara once, never cut someone off automatically
-        if ((s.plan === 'one' || s.plan === 'all') && s.paid_until && new Date(s.paid_until).getTime() + 5 * 86400000 < Date.now() && String(s.note).indexOf('renewal_check') < 0) {
+        if (isPaidPlan_(s.plan) && s.paid_until && new Date(s.paid_until).getTime() + 5 * 86400000 < Date.now() && String(s.note).indexOf('renewal_check') < 0) {
           alertTara_('[Ariel Genres] Renewal not seen: ' + s.email, s.email + ' was paid until ' + s.paid_until + ' and no renewal payment has been seen. They still have access. Check Stripe, then run activate_genre or cancel them.');
           setCell_(sh, row, 'note', String(s.note) + ' renewal_check');
         }
@@ -736,35 +772,48 @@ function detectStripePayments_() {
     t.getMessages().forEach(function (m) {
       var body = (m.getPlainBody() || '') + ' ' + m.getSubject();
       var low = body.toLowerCase();
-      var amountAll = /£\s?49(\.00)?\b/.test(body), amountOne = /£\s?35(\.00)?\b/.test(body);
-      if (!amountAll && !amountOne) return;
+      if (low.indexOf('ariel genres') < 0) return;  // own-Ariel payments (£75/£99) must never be read as genre payments
+      var count = 0, re = /£\s?(\d{2,3})(?:\.(\d{2}))?\b/g, mm;
+      while ((mm = re.exec(body))) {
+        var amt = Number(mm[1]);
+        if (amt >= GENRE_CFG.PRICE_FIRST && (amt - GENRE_CFG.PRICE_FIRST) % GENRE_CFG.PRICE_EXTRA === 0) {
+          var n = (amt - GENRE_CFG.PRICE_FIRST) / GENRE_CFG.PRICE_EXTRA + 1;
+          if (n >= 1 && n <= GENRE_CFG.MAX_GENRES) { count = n; break; }
+        }
+      }
+      if (!count) return;
       Object.keys(emails).forEach(function (em) {
         if (low.indexOf(em) < 0) return;
         var s = gSub_(sh, emails[em]);
-        activateGenrePaid_(s, amountAll ? 'all' : 'one', 1, '');
-        alertTara_('[Ariel Genres] Payment matched: ' + em, 'Stripe email "' + m.getSubject() + '" matched ' + em + '. Plan set to ' + (amountAll ? 'all genres' : 'one genre') + ' for another month.');
+        activateGenrePaid_(s, count, 1, []);
+        alertTara_('[Ariel Genres] Payment matched: ' + em, 'Stripe email "' + m.getSubject() + '" matched ' + em + '. Plan set to ' + count + ' genre' + (count > 1 ? 's' : '') + ' (' + genrePriceLabel_(count) + ') for another month.');
       });
     });
     t.addLabel(label);
   });
 }
 
-function activateGenrePaid_(s, plan, months, genre) {
+/* Switch a subscriber on for `count` paid genres. `genres` (optional list) fixes which ones; otherwise the ones they
+   chose when they clicked Keep, else the first `count` of their current genres. plan 'comp' = free of charge, all genres. */
+function activateGenrePaid_(s, count, months, genres, plan) {
   var sh = genreSheet_('GenreSubs');
+  plan = plan === 'comp' ? 'comp' : 'paid';
+  count = Math.max(1, Math.min(GENRE_CFG.MAX_GENRES, Number(count) || 1));
   var base = s.paid_until && new Date(s.paid_until) > new Date() ? new Date(s.paid_until) : new Date();
   var until = new Date(base.getTime() + (months || 1) * 31 * 86400000);
-  var upd = { plan: plan, paid_until: until, status: 'active', note: String(s.note || '').replace(' renewal_check', '') };
+  var chosen = cleanGenres_(genres);
+  if (!chosen.length && s.keep_interest) chosen = cleanGenres_(String(s.keep_interest).split(':')[1] || '');
+  if (!chosen.length) chosen = s.genreList.slice();
+  if (plan === 'paid') chosen = chosen.slice(0, count);
+  if (!chosen.length) chosen = ['true-crime'];
+  var upd = { plan: plan, paid_until: until, status: 'active', paid_genres: plan === 'paid' ? count : GENRE_CFG.MAX_GENRES, genres: chosen.join(','),
+    note: String(s.note || '').replace(' renewal_check', '') };
   if (s.status === 'pending') upd.activated_at = new Date();
-  if (plan === 'one') {
-    var keep = GENRES[genre] ? genre : (String(s.keep_interest).split(':')[1] || '').trim();
-    if (!GENRES[keep]) keep = s.genreList[0];
-    if (keep) upd.genres = keep;
-  }  // 'all' keeps the genres they chose; they can add any others in Settings at no extra cost
   setCells_(sh, s.row, upd);
-  upsertMember_(s.email, 'genre', until, 'Ariel Genres ' + plan);
+  upsertMember_(s.email, 'genre', until, 'Ariel Genres ' + plan + ' ' + chosen.length);
   if (s.plan === 'trial' || s.status === 'ended') {
     sendGenreNote_(gSub_(sh, s.row), 'You’re all set',
-      'Thank you. ' + (plan === 'all' ? 'All the Ariel Genres are' : gName_(upd.genres) + ' is') + ' yours, and the daily email carries on as before. ' +
+      'Thank you. ' + chosen.map(gName_).join(', ') + (chosen.length > 1 ? ' are' : ' is') + ' yours, and the daily email carries on as before. ' +
       'Unlimited rights checks on the London Review of Reviews carry on too.<br><br>Whenever you’d like an Ariel built around your own slate, just reply to this email.');
   }
 }
@@ -870,7 +919,7 @@ function sendGenreDigest_(s) {
   inner += '<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:24px 28px;font-family:' + SANS + ';font-size:16px;line-height:1.6;color:#E6E9F1;">' +
     '<div style="font-family:' + SERIF + ';font-size:22px;color:#FFFFFF;margin-bottom:6px;">Want an Ariel that knows your slate?</div>' +
     'Your own Ariel is built around your projects, your commissioners and your taste, learns from what you save, and adds research briefs on any story.' +
-    (s.plan === 'trial' ? ' Upgrade during your trial and the £250 setup is waived.' : '') + '<br>' +
+    ' ' + OWN_ARIEL_SENTENCE + '<br>' +
     gBtn_(appLink_(s, '&panel=upgrade'), 'Make it yours', true) + '</td></tr>';
   var names = s.genreList.filter(function (g) { return by[g] && by[g].length; }).map(gName_).join(', ');
   var subject = 'Your Ariel: ' + total + ' new ' + (total === 1 ? 'story' : 'stories') + ' in ' + names;
@@ -913,15 +962,15 @@ function sendTrialMidpoint_(s) {
     '&middot; <b>It learns.</b> Everything you save or skip sharpens what comes next. Your saves from this trial come with you.<br>' +
     '&middot; <b>Research this.</b> One click on any story gets you a brief: what’s been made, who the people are, who holds the rights.<br>' +
     '&middot; <b>Colleagues copied in</b>, and first look at rights-available titles chosen for you.<br><br>' +
-    'Upgrade during your trial and the £250 setup fee is waived.<br>' + gBtn_(appLink_(s, '&panel=upgrade'), 'Make it yours', true) + gBtn_(appLink_(s), 'Open my Ariel', false);
+    OWN_ARIEL_SENTENCE + '<br>' + gBtn_(appLink_(s, '&panel=upgrade'), 'Make it yours', true) + gBtn_(appLink_(s), 'Open my Ariel', false);
   var html = gShell_('The Ariel &middot; Genres', 'What your own Ariel would do', gPara_((s.name ? 'Hello ' + esc_(s.name) + ',<br><br>' : '') + body), gFooter_(s));
   genreMail_(s.email, 'Your Ariel so far, and what comes next', html);
 }
 
 function sendTrialEnding_(s) {
   var body = savedListHtml_(s) + 'Your free trial ends in two days. To keep your daily stories coming:<br><br>' +
-    '&middot; <b>Keep one genre</b> for ' + GENRE_CFG.PRICE_ONE + ', or <b>all the genres</b> for ' + GENRE_CFG.PRICE_ALL + '. Cancel any time.<br>' +
-    '&middot; Or <b>make it yours</b>: an Ariel built around your own slate, with research briefs and colleagues copied in. Upgrade before your trial ends and the £250 setup fee is waived.<br><br>' +
+    '&middot; <b>Keep your genres</b>: ' + PRICE_SENTENCE + '. Cancel any time.<br>' +
+    '&middot; Or <b>make it yours</b>: an Ariel built around your own slate, with research briefs and colleagues copied in. ' + OWN_ARIEL_SENTENCE + '<br><br>' +
     gBtn_(appLink_(s, '&panel=keep'), 'Keep my genres', true) + gBtn_(appLink_(s, '&panel=upgrade'), 'Make it yours', false) +
     '<br><br><span style="font-size:14px;color:' + C.mist + ';">If you do nothing, the daily email simply stops. You’ll still get the free London Review of Reviews if you signed up for it.</span>';
   var html = gShell_('The Ariel &middot; Genres', 'Your trial ends in two days', gPara_((s.name ? 'Hello ' + esc_(s.name) + ',<br><br>' : '') + body), gFooter_(s));
@@ -930,7 +979,7 @@ function sendTrialEnding_(s) {
 
 function sendTrialEnded_(s) {
   var body = 'Your free month of Ariel Genres has ended, so the daily email has stopped. Thank you for trying it.<br><br>' + savedListHtml_(s) +
-    'You can pick up where you left off at any time: keep one genre for ' + GENRE_CFG.PRICE_ONE + ' or all of them for ' + GENRE_CFG.PRICE_ALL + ', or ask us to build an Ariel around your own slate.<br>' +
+    'You can pick up where you left off at any time: keep your genres (' + PRICE_SENTENCE + '), or ask us to build an Ariel around your own slate.<br>' +
     gBtn_(appLink_(s, '&panel=keep'), 'Keep my genres', true) + gBtn_(appLink_(s, '&panel=upgrade'), 'Make it yours', false);
   var html = gShell_('The Ariel &middot; Genres', 'Your free month has ended', gPara_((s.name ? 'Hello ' + esc_(s.name) + ',<br><br>' : '') + body),
     'The Ariel &middot; <a href="mailto:tara@theariel.tv" style="color:' + C.mist + ';">tara@theariel.tv</a>');
@@ -942,11 +991,11 @@ function sendTrialEnded_(s) {
 function genreAdmin_(b) {
   if (b.op === 'genre_stats') {
     var v = genreSheet_('GenreSubs').getDataRange().getValues();
-    var c = { pending: 0, trial: 0, ended: 0, paid_one: 0, paid_all: 0, comp: 0, unsubscribed: 0, keep_interest: 0, upgrade_interest: 0 }, per = {};
+    var c = { pending: 0, trial: 0, ended: 0, paid: 0, comp: 0, unsubscribed: 0, keep_interest: 0, upgrade_interest: 0 }, per = {};
     for (var i = 1; i < v.length; i++) {
       var st = v[i][6], plan = v[i][5];
       if (st === 'pending') c.pending++; else if (st === 'unsubscribed') c.unsubscribed++; else if (st === 'ended') c.ended++;
-      else if (plan === 'trial') c.trial++; else if (plan === 'one') c.paid_one++; else if (plan === 'all') c.paid_all++; else if (plan === 'comp') c.comp++;
+      else if (plan === 'trial') c.trial++; else if (isPaidPlan_(plan)) c.paid++; else if (plan === 'comp') c.comp++;
       if (v[i][17]) c.keep_interest++;
       if (v[i][18]) c.upgrade_interest++;
       String(v[i][4]).split(',').forEach(function (g) { if (g) per[g] = (per[g] || 0) + 1; });
@@ -969,13 +1018,18 @@ function genreAdmin_(b) {
   if (b.op === 'activate_genre') {
     var f = gSubRow_('email', String(b.email || '').toLowerCase().trim());
     if (!f.row) return { ok: false, error: 'unknown_email' };
-    var plan = ['one', 'all', 'comp'].indexOf(b.plan) >= 0 ? b.plan : 'one';
+    var plan = b.plan === 'comp' ? 'comp' : 'paid';
     var s = gSub_(f.sh, f.row);
+    var list = cleanGenres_(b.genres);
+    if (b.genre && !list.length) list = cleanGenres_(b.genre);
+    var count = list.length || Number(b.count) || s.genreList.length || 1;
     if (b.paid_until) {
-      setCells_(f.sh, f.row, { plan: plan, paid_until: new Date(b.paid_until), status: 'active' });
-      upsertMember_(s.email, 'genre', new Date(b.paid_until), 'Ariel Genres ' + plan);
+      var upd = { plan: plan, paid_until: new Date(b.paid_until), status: 'active', paid_genres: plan === 'comp' ? GENRE_CFG.MAX_GENRES : count };
+      if (list.length) upd.genres = list.join(',');
+      setCells_(f.sh, f.row, upd);
+      upsertMember_(s.email, 'genre', new Date(b.paid_until), 'Ariel Genres ' + plan + ' ' + count);
     } else {
-      activateGenrePaid_(s, plan, Number(b.months) || 1, b.genre || '');
+      activateGenrePaid_(s, count, Number(b.months) || 1, list, plan);
     }
     return { ok: true };
   }

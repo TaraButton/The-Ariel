@@ -107,9 +107,11 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
 
 <dialog id="dlg-keep" aria-labelledby="k-h"><div class="dlg"><button class="close" type="button" data-close aria-label="Close">&times;</button>
   <h2 id="k-h">Keep your genres</h2>
-  <p>Carry on getting the daily email and dashboard. Cancel any time.</p>
-  <div class="opt"><h3>One genre, &#163;35 a month</h3><label class="f" for="k-genre">Which genre?</label><select id="k-genre"></select><p></p><button class="btn" type="button" data-keep="one">Keep this genre</button></div>
-  <div class="opt best"><h3>All genres, &#163;49 a month</h3><p>Every Ariel Genre, including new ones as they launch.</p><button class="btn" type="button" data-keep="all">Keep all genres</button></div>
+  <p>&#163;29 a month for one genre, &#163;10 for each extra. Carry on getting the daily email and dashboard; cancel any time.</p>
+  <div class="opt best"><fieldset style="border:0;padding:0;margin:0"><legend class="f">Tick the genres you want</legend><div id="k-genres"></div></fieldset>
+    <p id="k-price" style="font-weight:700;margin:10px 0 0"></p>
+    <p class="small" id="k-note" style="font-size:14px;color:var(--muted);margin:6px 0 10px"></p>
+    <button class="btn" type="button" data-keep="go">Keep these genres</button></div>
   <p class="status" role="status" aria-live="polite"></p>
 </div></dialog>
 
@@ -207,7 +209,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
     if (me.plan !== 'trial') { b.hidden = true; return; }
     b.hidden = false;
     t.innerHTML = '';
-    t.appendChild(el('span', null, ['Free trial: ', el('b', { text: me.days_left + ' day' + (me.days_left === 1 ? '' : 's') + ' left' }), '. Keep a genre from ' + D.prices.one + ', or make it yours.']));
+    t.appendChild(el('span', null, ['Free trial: ', el('b', { text: me.days_left + ' day' + (me.days_left === 1 ? '' : 's') + ' left' }), '. Keep your genres from £' + D.prices.first + ' a month, or make it yours.']));
   }
 
   function counts() {
@@ -255,9 +257,9 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
     }
     root.appendChild(el('div', { id: 'list' }));
     list();
-    if (D.me.plan === 'trial' || D.me.plan === 'one' || D.me.plan === 'all') {
+    if (D.me.plan !== 'comp') {
       root.appendChild(el('div', { class: 'upsell' }, [el('h2', { text: 'Want an Ariel that knows your slate?' }),
-        el('p', { text: 'Your own Ariel ranks every story for your projects and commissioners, learns from what you save, and adds research briefs on any story.' + (D.me.plan === 'trial' ? ' Upgrade during your trial and the £250 setup fee is waived.' : '') }),
+        el('p', { text: 'Your own Ariel ranks every story for your projects and commissioners, learns from what you save, and adds research briefs on any story. No setup fee: £75 a month at the founding rate, cancel any time.' }),
         (function () { var b = el('button', { class: 'btn', type: 'button', text: D.me.upgrade_requested ? 'Upgrade requested: we’ll be in touch' : 'Make it yours' }); b.addEventListener('click', function () { openDlg('upgrade'); }); return b; })()]));
     }
   }
@@ -397,17 +399,31 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
     root.appendChild(box);
   }
 
+  function keepPrice() {
+    var dlg = document.getElementById('dlg-keep');
+    var n = dlg.querySelectorAll('[name=kg]:checked').length;
+    var price = n ? D.prices.first + D.prices.extra * (n - 1) : 0;
+    document.getElementById('k-price').textContent = n ? '£' + price + ' a month for ' + n + ' genre' + (n > 1 ? 's' : '') : 'Tick at least one genre.';
+    document.getElementById('k-note').textContent = n >= (D.prices.max || 8) ? 'All ' + n + ' genres cost the same as your own Ariel, which is built around your slate and learns from you: choose Make it yours instead.' : (n > 1 ? '£' + D.prices.first + ' for the first genre and £' + D.prices.extra + ' for each extra.' : 'Add more genres at £' + D.prices.extra + ' a month each.');
+  }
+
   /* dialogs */
   var lastFocus = null;
   function openDlg(name) {
     var d = document.getElementById('dlg-' + name); if (!d || !D) return;
     lastFocus = document.activeElement;
     if (name === 'keep') {
-      var sel = document.getElementById('k-genre'); sel.innerHTML = '';
-      (D.all_genres || []).forEach(function (g) { var o = el('option', { value: g.slug, text: g.name }); if ((D.me.genres || [])[0] === g.slug) o.selected = true; sel.appendChild(o); });
+      var kb = document.getElementById('k-genres'); kb.innerHTML = '';
+      (D.all_genres || []).forEach(function (g) {
+        var lab = el('label', { class: 'cbx' }, [el('input', { type: 'checkbox', name: 'kg', value: g.slug }), g.name]);
+        lab.querySelector('input').checked = (D.me.genres || []).indexOf(g.slug) >= 0;
+        lab.querySelector('input').addEventListener('change', keepPrice);
+        kb.appendChild(lab);
+      });
+      keepPrice();
     }
     if (name === 'upgrade') {
-      document.getElementById('u-waive').textContent = D.me.plan === 'trial' || D.ended ? 'Upgrade during your trial and the £250 setup fee is waived. After that it’s from £75 a month, cancel any time.' : 'From £75 a month after a £250 setup, cancel any time.';
+      document.getElementById('u-waive').textContent = 'No setup fee and no minimum term: £75 a month at the founding rate (£99 after the founding places go), cancel any time. Everything you have saved here comes with you.';
       if (D.me.upgrade_requested) { var ug = document.getElementById('u-go'); ug.textContent = 'Requested: we’ll be in touch'; }
     }
     if (name === 'settings') {
@@ -415,10 +431,12 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
       (D.all_genres || []).forEach(function (g) {
         var lab = el('label', { class: 'cbx' }, [el('input', { type: 'checkbox', name: 'g', value: g.slug }), g.name]);
         lab.querySelector('input').checked = (D.me.genres || []).indexOf(g.slug) >= 0;
-        if (D.me.plan === 'one') lab.querySelector('input').disabled = true;
         box.appendChild(lab);
       });
-      if (D.me.plan === 'one') box.appendChild(el('p', { class: 'status', text: 'To add genres, move to all genres for £49 a month: reply to any of our emails.' }));
+      var allowed = D.me.allowed_genres || D.prices.trial_max || 2;
+      if (allowed < (D.all_genres || []).length) box.appendChild(el('p', { class: 'status', text: D.me.plan === 'trial'
+        ? 'Your free month covers up to ' + allowed + ' genres. You can add more when you keep your Ariel, at £' + D.prices.extra + ' a month each.'
+        : 'Your plan covers ' + allowed + ' genre' + (allowed > 1 ? 's' : '') + '. To add one for £' + D.prices.extra + ' a month, use Keep my genres and tick the extra genre.' }));
       document.querySelectorAll('#s-form [name=digest]').forEach(function (r) { r.checked = r.value === (D.me.digest || 'daily'); });
     }
     d.querySelectorAll('.status').forEach(function (s) { s.textContent = ''; s.className = 'status'; });
@@ -434,11 +452,15 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
   document.querySelectorAll('[data-keep]').forEach(function (b) {
     b.addEventListener('click', function () {
       var dlg = document.getElementById('dlg-keep'), st = dlg.querySelector('.status');
-      var plan = b.getAttribute('data-keep');
+      var picked = [].slice.call(dlg.querySelectorAll('[name=kg]:checked')).map(function (i) { return i.value; });
+      if (!picked.length) { st.className = 'status error'; st.textContent = 'Tick at least one genre.'; return; }
       b.disabled = true; st.className = 'status'; st.textContent = 'One moment...';
-      post({ action: 'genre_keep', plan: plan, genre: document.getElementById('k-genre').value }).then(function (r) {
+      post({ action: 'genre_keep', genres: picked }).then(function (r) {
         b.disabled = false;
-        if (r && r.url) { location.href = r.url; return; }
+        if (r && r.url) {
+          if (r.set_quantity) { st.classList.add('success'); st.textContent = 'Taking you to payment. On the payment page, set "Additional genre" to ' + r.set_quantity + ' so the total is £' + r.price + ' a month.'; setTimeout(function () { location.href = r.url; }, 2500); return; }
+          location.href = r.url; return;
+        }
         if (r && r.ok) { st.classList.add('success'); st.textContent = 'Thank you. We’ll email you a payment link within a working day, and your feed stays on meanwhile.'; return; }
         st.classList.add('error'); st.textContent = 'That didn’t work. Please try again.';
       }).catch(function () { b.disabled = false; st.classList.add('error'); st.textContent = 'We couldn’t reach the service just now. Please try again.'; });
@@ -464,7 +486,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
     var genres = [].slice.call(this.querySelectorAll('[name=g]:checked')).map(function (i) { return i.value; });
     var digest = (this.querySelector('[name=digest]:checked') || {}).value || 'daily';
     var payload = { action: 'genre_settings', digest: digest };
-    if (D.me.plan !== 'one') { if (!genres.length) { st.textContent = 'Keep at least one genre.'; st.classList.add('error'); return; } payload.genres = genres; }
+    if (!genres.length) { st.textContent = 'Keep at least one genre.'; st.classList.add('error'); return; } payload.genres = genres;
     st.textContent = 'Saving...';
     post(payload).then(function (r) {
       if (!r || !r.ok) { st.classList.add('error'); st.textContent = (r && r.message) || 'That didn’t save.'; return; }

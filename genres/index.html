@@ -121,15 +121,15 @@ footer a{color:var(--gold-light)}
         <li>A short email each morning, and a dashboard to save what you like</li>
         <li>Rights-available titles straight from literary agents, with introductions</li>
         <li>Unlimited rights checks on the London Review of Reviews</li>
-        <li>After 30 days, &#163;35 a month for a genre or &#163;49 for all of them. Cancel any time.</li>
+        <li>After your free month, &#163;29 a month for one genre and &#163;10 for each extra. Cancel any time.</li>
       </ul>
     </div>
     <div class="card" id="signup">
       <h2>Start your free month</h2>
-      <p class="sub">Pick your genres. We&#8217;ll email you a link to your Ariel straight away.</p>
+      <p class="sub">Pick up to two genres for your free month. We&#8217;ll email you a link to your Ariel straight away.</p>
       <form id="signup-form" novalidate>
         <fieldset>
-          <legend class="f">Your genres <span class="small">(choose one or more)</span></legend>
+          <legend class="f">Your genres <span class="small" id="g-count">(choose up to two)</span></legend>
           <div class="gpick" id="gpick">
             <label class="gopt"><input type="checkbox" name="genres" value="true-crime" checked><div><b>True Crime</b><span>Unsolved and contested cases, miscarriages of justice, unseen tapes and archive, new true crime books.</span></div></label>
             <label class="gopt"><input type="checkbox" name="genres" value="political-scandal"><div><b>Political Scandal</b><span>Cover-ups, whistleblowers, institutional failure, power and money.</span></div></label>
@@ -138,6 +138,7 @@ footer a{color:var(--gold-light)}
           <details class="more"><summary>More genres <span class="small">(new: we switch one on the moment you pick it)</span></summary>
           <div class="gpick" style="margin-top:10px"><label class="gopt"><input type="checkbox" name="genres" value="cults"><div><b>Cults</b><span>Coercive groups, high-control churches, wellness and online movements, and the people who got out.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="supernatural-paranormal"><div><b>Supernatural &amp; Paranormal</b><span>Hauntings, the unexplained, believers and sceptics, and the folklore behind them.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="medical-mysteries"><div><b>Medical Mysteries</b><span>Undiagnosed illnesses, medical detectives, malpractice and breakthroughs with a human story.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="celebrity"><div><b>Celebrity</b><span>Rise and fall, secret lives, feuds and scandals, comebacks and revealing memoirs.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="natural-disasters"><div><b>Natural Disasters</b><span>Survival, rescue, warnings ignored and the aftermath of storms, floods, fires and quakes.</span></div></label></div>
           <p class="small" style="margin:8px 0 0">Pick a new genre and its first stories arrive the next morning.</p></details>
+          <p class="small" id="g-price" style="margin:10px 0 0">Free for 30 days. Then &#163;29 a month for one genre, &#163;39 for two; add more later at &#163;10 each.</p>
         </fieldset>
         <div><label class="f" for="su-email">Email</label><input id="su-email" type="email" name="email" autocomplete="email" required></div>
         <div class="row2">
@@ -187,7 +188,7 @@ footer a{color:var(--gold-light)}
         <tr><th scope="row">Scoring that learns from you</th><td>No, one feed for everyone in the genre</td><td><span class="yes">Yes</span></td></tr>
         <tr><th scope="row">Research this briefs</th><td>No</td><td><span class="yes">Yes</span>: what&#8217;s been made, who the people are, who holds the rights</td></tr>
         <tr><th scope="row">Colleagues copied in</th><td>No</td><td><span class="yes">Yes</span></td></tr>
-        <tr><th scope="row">Price</th><td>Free for 30 days, then &#163;35 a month for a genre, &#163;49 for all</td><td>&#163;250 setup, waived if you upgrade during your trial, then from &#163;75 a month</td></tr>
+        <tr><th scope="row">Price</th><td>Free for 30 days (up to two genres), then &#163;29 a month for one genre and &#163;10 for each extra</td><td>&#163;99 a month. Founding rate &#163;75 for the first 20 producers. No setup fee, cancel any time</td></tr>
       </tbody>
     </table>
     </div>
@@ -224,7 +225,7 @@ footer a{color:var(--gold-light)}
       <dt>Do you check the rights?</dt>
       <dd>Titles marked <b>Rights available</b> come to us directly from the literary agent, and we can introduce you. Everything else is a lead: we haven&#8217;t checked who holds the rights, and you can ask us to with a rights check.</dd>
       <dt>What happens after 30 days?</dt>
-      <dd>You choose. Keep one genre for &#163;35 a month or all of them for &#163;49, cancel any time. Or ask us to build your own Ariel; upgrade during your trial and the &#163;250 setup fee is waived. If you do nothing, the daily email simply stops.</dd>
+      <dd>You choose. Keep your genres for &#163;29 a month (one genre) plus &#163;10 for each extra, cancel any time. All eight come to &#163;99, which is the price of your own Ariel, so at that point ask us to build one around your slate: no setup fee, &#163;75 a month at the founding rate. If you do nothing, the daily email simply stops.</dd>
       <dt>Why are some genres &#8220;new&#8221;?</dt>
       <dd>We only read and score a genre once someone has chosen it. Pick a new genre and we switch it on that day; your first stories arrive the next morning.</dd>
       <dt>Can my colleagues see it?</dt>
@@ -252,6 +253,18 @@ footer a{color:var(--gold-light)}
 
   var f = document.getElementById('signup-form');
   var st = f.querySelector('.status');
+  var TRIAL_MAX = 2;
+  function capGenres() {
+    var boxes = [].slice.call(f.querySelectorAll('[name=genres]'));
+    var on = boxes.filter(function (i) { return i.checked; }).length;
+    boxes.forEach(function (i) { i.disabled = !i.checked && on >= TRIAL_MAX; i.closest('label').style.opacity = i.disabled ? '.45' : ''; });
+    var c = document.getElementById('g-count'); if (c) c.textContent = on >= TRIAL_MAX ? '(two chosen: the free month covers two)' : '(choose up to two)';
+    var pr = document.getElementById('g-price');
+    if (pr) pr.textContent = on <= 1 ? 'Free for 30 days. Then £29 a month for one genre, £39 for two; add more later at £10 each.'
+      : 'Free for 30 days. Then £39 a month for your two genres; add more later at £10 each.';
+  }
+  f.querySelectorAll('[name=genres]').forEach(function (i) { i.addEventListener('change', capGenres); });
+  capGenres();
   f.addEventListener('submit', function (e) {
     e.preventDefault();
     st.className = 'status';

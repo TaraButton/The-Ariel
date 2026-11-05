@@ -74,7 +74,7 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    "Two of our producers..."); otherwise lead with "We're finding out the film rights status of the books in this week's London Review of
    Reviews for the producers we work with, and <book> is one of them." Never use "readers".
    See agent_email_template.md. One line back is plenty.
-   For `pass_interest` requests: tell Tara (the Rights Pass link may not be live yet).
+   For `pass_interest` requests: tell Tara and point the person at theariel.tv/genres (the Rights Pass was retired 5 Nov 2026; unlimited checks now come with Ariel Genres, free month then GBP 29 + 10 per extra genre, and with any own Ariel).
 3b. **Use the guides first.** Before asking an agent about a book, check lists.json. If the book is in
    that agency's guide, set_rights from the guide and do not email them. If the agency has a guide but the
    book is not in it, the email asks only "Is <Book> on your current rights guide?".
@@ -96,12 +96,10 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    the guide says film/TV rights are available).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open
    request: queue one short, friendly chaser. Never more than one chaser per agency per book.
-5. **Rights Pass holders.** If the Stripe connector is available, list subscriptions/checkout sessions for the
-   Rights Pass payment link (https://buy.stripe.com/3cI28j9neam4fwidKn3ks05, £29/month). Add each new paying
-   customer's email with `op: add_member`, type `pass`. If a subscription has ended, re-add with `until`
-   set to its end date. If Stripe is not reachable, look for Stripe payment emails in Tara's Gmail
-   (from:stripe.com "Rights Pass" newer_than:3d) and do the same. Send each new holder a short welcome
-   from tara@theariel.tv via `op: queue_email` (kind `pass_welcome`).
+5. **Paid members.** The Rights Pass was retired on 5 Nov 2026 (its Stripe link is unused; do not add `pass` members).
+   Ariel Genres subscribers are added to Members automatically by the Genres backend (type `genre`), and own-Ariel
+   clients are added by hand with `op: add_member`, type `member`, when Tara onboards them. Nothing to do here unless
+   Tara asks.
 5b. **Guide refresh.** On the first weekday of each month: for every agency in lists.json whose guide is
    more than 3 months old and whose `last_refresh_asked` is empty or more than 3 months ago, queue the
    `list_refresh` note and set `last_refresh_asked`. Never more than once a quarter per agency.

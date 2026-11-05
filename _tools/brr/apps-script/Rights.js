@@ -25,7 +25,7 @@ var OUTBOX_HEADERS = ['id', 'queued_at', 'send_after', 'status', 'to', 'cc', 'su
 var RIGHTS_CFG = {
   HOLD_MIN: 30,
   OUTBOX_DAILY_CAP: 40,
-  PASS_PRICE: '£29 a month',
+  PASS_PRICE: 'folded into Ariel Genres: free month, then £29 a month for one genre',
   ANSWER_PROMISE: 'within a working day'
 };
 
@@ -143,8 +143,8 @@ function checkRights_(b) {
     }
     if (tier === 'pass_interest') {
       alertTara_('[Review of Reviews] Rights Pass interest: ' + email,
-        email + (name ? ' (' + name + (company ? ', ' + company : '') + ')' : '') + ' wants the Rights Pass (' + RIGHTS_CFG.PASS_PRICE +
-        ').\nBook they were checking: ' + bookTitle + '\nNo Stripe link is set yet, so please follow up by email.');
+        email + (name ? ' (' + name + (company ? ', ' + company : '') + ')' : '') + ' asked for unlimited rights checks (' + RIGHTS_CFG.PASS_PRICE +
+        ').\nBook they were checking: ' + bookTitle + '\nPoint them at theariel.tv/genres (free month, no card).');
       return { ok: true, outcome: 'pass_interest' };
     }
 
