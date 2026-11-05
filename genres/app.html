@@ -415,7 +415,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
       (D.all_genres || []).forEach(function (g) {
         var lab = el('label', { class: 'cbx' }, [el('input', { type: 'checkbox', name: 'g', value: g.slug }), g.name]);
         lab.querySelector('input').checked = (D.me.genres || []).indexOf(g.slug) >= 0;
-        if (D.me.plan === 'one' || D.me.plan === 'all') lab.querySelector('input').disabled = true;
+        if (D.me.plan === 'one') lab.querySelector('input').disabled = true;
         box.appendChild(lab);
       });
       if (D.me.plan === 'one') box.appendChild(el('p', { class: 'status', text: 'To add genres, move to all genres for £49 a month: reply to any of our emails.' }));
@@ -464,7 +464,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
     var genres = [].slice.call(this.querySelectorAll('[name=g]:checked')).map(function (i) { return i.value; });
     var digest = (this.querySelector('[name=digest]:checked') || {}).value || 'daily';
     var payload = { action: 'genre_settings', digest: digest };
-    if (D.me.plan === 'trial') { if (!genres.length) { st.textContent = 'Keep at least one genre.'; st.classList.add('error'); return; } payload.genres = genres; }
+    if (D.me.plan !== 'one') { if (!genres.length) { st.textContent = 'Keep at least one genre.'; st.classList.add('error'); return; } payload.genres = genres; }
     st.textContent = 'Saving...';
     post(payload).then(function (r) {
       if (!r || !r.ok) { st.classList.add('error'); st.textContent = (r && r.message) || 'That didn’t save.'; return; }

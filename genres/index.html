@@ -60,6 +60,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--ink)}
 .gopt input{width:22px;height:22px;margin-top:3px;flex:none;accent-color:var(--gold-deep)}
 .gopt b{display:block;color:var(--ink);font-size:17px}
 .gopt span{display:block;font-size:15px;color:var(--muted);line-height:1.45}
+.more{margin-top:10px;border-top:1px solid var(--line);padding-top:10px}.more summary{cursor:pointer;font-weight:700;color:var(--ink);font-size:16px;min-height:32px}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--text)}
 .check input{width:20px;height:20px;margin-top:3px;flex:none;accent-color:var(--gold-deep)}
 .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:var(--ink);padding:14px 22px;text-decoration:none;font-size:17px;font-weight:900;border:0;border-radius:3px;cursor:pointer;font-family:'Lato',sans-serif;min-height:48px}
@@ -80,6 +81,7 @@ h2.sec{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:
 .gcard p{margin:0;font-size:16px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:13px;font-weight:700;color:var(--gold-deep);background:var(--tint);padding:3px 9px;border-radius:12px}
+.subsec{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;color:var(--ink);margin:40px 0 6px}.newg{border-top-color:var(--ink)}.newtag{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin:0 !important}.pick{font-weight:700;font-size:15px;margin-top:auto}
 .samples{list-style:none;margin:6px 0 0;padding:12px 0 0;border-top:1px solid var(--line);display:grid;gap:10px}
 .samples li{font-size:15px;line-height:1.4}
 .samples .src{display:block;font-size:13px;color:var(--muted)}
@@ -100,6 +102,7 @@ h2.sec{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:
 footer{background:var(--ink);color:#C9CDD8;padding-block:28px;font-size:15px}
 footer a{color:var(--gold-light)}
 @media (max-width:860px){.hero-in,.request-in{grid-template-columns:1fr;gap:28px}.ggrid{grid-template-columns:1fr}}
+@media (min-width:861px){.ggrid .newg:nth-child(n){min-height:0}}
 @media (max-width:520px){.row2{grid-template-columns:1fr}.card{padding:20px 16px}section{padding-block:40px}.dek{font-size:18px}}
 @media (prefers-reduced-motion:no-preference){.btn{transition:background .15s}}
 </style>
@@ -132,6 +135,9 @@ footer a{color:var(--gold-light)}
             <label class="gopt"><input type="checkbox" name="genres" value="political-scandal"><div><b>Political Scandal</b><span>Cover-ups, whistleblowers, institutional failure, power and money.</span></div></label>
             <label class="gopt"><input type="checkbox" name="genres" value="music-pop-culture"><div><b>Music &amp; Pop Culture</b><span>Music history, fame and its cost, internet and youth culture, behind the scenes.</span></div></label>
           </div>
+          <details class="more"><summary>More genres <span class="small">(new: we switch one on the moment you pick it)</span></summary>
+          <div class="gpick" style="margin-top:10px"><label class="gopt"><input type="checkbox" name="genres" value="cults"><div><b>Cults</b><span>Coercive groups, high-control churches, wellness and online movements, and the people who got out.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="supernatural-paranormal"><div><b>Supernatural &amp; Paranormal</b><span>Hauntings, the unexplained, believers and sceptics, and the folklore behind them.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="medical-mysteries"><div><b>Medical Mysteries</b><span>Undiagnosed illnesses, medical detectives, malpractice and breakthroughs with a human story.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="celebrity"><div><b>Celebrity</b><span>Rise and fall, secret lives, feuds and scandals, comebacks and revealing memoirs.</span></div></label><label class="gopt"><input type="checkbox" name="genres" value="natural-disasters"><div><b>Natural Disasters</b><span>Survival, rescue, warnings ignored and the aftermath of storms, floods, fires and quakes.</span></div></label></div>
+          <p class="small" style="margin:8px 0 0">Pick a new genre and its first stories arrive the next morning.</p></details>
         </fieldset>
         <div><label class="f" for="su-email">Email</label><input id="su-email" type="email" name="email" autocomplete="email" required></div>
         <div class="row2">
@@ -152,13 +158,16 @@ footer a{color:var(--gold-light)}
 <section class="wrapx" aria-labelledby="g-title">
   <div class="in">
     <p class="label">The genres</p>
-    <h2 class="sec" id="g-title">Three ready-made Ariels</h2>
+    <h2 class="sec" id="g-title">Ready-made Ariels</h2>
     <p class="lede">Each genre is read every day from the same sources as our bespoke Ariels, and scored for documentary and drama potential: a named person at the centre, a story that&#8217;s still untold, and no one else already making it.</p>
     <div class="ggrid" id="ggrid">
       <article class="gcard" data-genre="true-crime"><h3>True Crime</h3><p>Unsolved and contested cases, miscarriages of justice, cases with unseen tapes or archive, and new true crime books.</p><div class="chips"><span class="chip">Unsolved</span><span class="chip">Miscarriages of Justice</span><span class="chip">Cons &amp; Cults</span><span class="chip">New Evidence</span><span class="chip">True Crime Books</span></div></article>
       <article class="gcard" data-genre="political-scandal"><h3>Political Scandal</h3><p>Cover-ups, whistleblowers, institutional failure, and power and money, at home and abroad.</p><div class="chips"><span class="chip">Cover-ups</span><span class="chip">Whistleblowers</span><span class="chip">Money &amp; Power</span><span class="chip">Abuse of Office</span><span class="chip">Institutional Failure</span></div></article>
       <article class="gcard" data-genre="music-pop-culture"><h3>Music &amp; Pop Culture</h3><p>Music history, fame and its cost, internet and youth culture, and film and TV behind the scenes.</p><div class="chips"><span class="chip">Big Stories</span><span class="chip">Tours / Albums</span><span class="chip">Anniversaries</span><span class="chip">Fame &amp; Internet Culture</span><span class="chip">Behind the Scenes</span></div></article>
     </div>
+    <h3 class="subsec">New genres, switched on when you pick them</h3>
+    <p class="lede" style="margin-bottom:18px">We only start reading for a genre once someone has chosen it, so pick one of these and your first stories arrive the next morning.</p>
+    <div class="ggrid"><article class="gcard newg" data-genre="cults"><p class="newtag">New</p><h3>Cults</h3><p>Coercive groups, high-control churches, wellness and online movements, and the people who got out.</p><a class="pick" href="?g=cults#signup">Start with this genre</a></article><article class="gcard newg" data-genre="supernatural-paranormal"><p class="newtag">New</p><h3>Supernatural &amp; Paranormal</h3><p>Hauntings, the unexplained, believers and sceptics, and the folklore behind them.</p><a class="pick" href="?g=supernatural-paranormal#signup">Start with this genre</a></article><article class="gcard newg" data-genre="medical-mysteries"><p class="newtag">New</p><h3>Medical Mysteries</h3><p>Undiagnosed illnesses, medical detectives, malpractice and breakthroughs with a human story.</p><a class="pick" href="?g=medical-mysteries#signup">Start with this genre</a></article><article class="gcard newg" data-genre="celebrity"><p class="newtag">New</p><h3>Celebrity</h3><p>Rise and fall, secret lives, feuds and scandals, comebacks and revealing memoirs.</p><a class="pick" href="?g=celebrity#signup">Start with this genre</a></article><article class="gcard newg" data-genre="natural-disasters"><p class="newtag">New</p><h3>Natural Disasters</h3><p>Survival, rescue, warnings ignored and the aftermath of storms, floods, fires and quakes.</p><a class="pick" href="?g=natural-disasters#signup">Start with this genre</a></article></div>
   </div>
 </section>
 
@@ -190,7 +199,7 @@ footer a{color:var(--gold-light)}
     <div>
       <p class="label" style="color:var(--gold-light)">Request a genre</p>
       <h2 class="sec" id="r-title">Missing your genre?</h2>
-      <p class="lede">Sport, science, history, food, anything. Tell us what you&#8217;d like and we&#8217;ll email you when it launches. We build the genres people ask for most.</p>
+      <p class="lede">Sport, science, history, food, anything we don&#8217;t list yet. Tell us what you&#8217;d like and we&#8217;ll email you when it launches. We build the genres people ask for most.</p>
     </div>
     <div class="card">
       <form id="request-form" novalidate>
@@ -216,6 +225,8 @@ footer a{color:var(--gold-light)}
       <dd>Titles marked <b>Rights available</b> come to us directly from the literary agent, and we can introduce you. Everything else is a lead: we haven&#8217;t checked who holds the rights, and you can ask us to with a rights check.</dd>
       <dt>What happens after 30 days?</dt>
       <dd>You choose. Keep one genre for &#163;35 a month or all of them for &#163;49, cancel any time. Or ask us to build your own Ariel; upgrade during your trial and the &#163;250 setup fee is waived. If you do nothing, the daily email simply stops.</dd>
+      <dt>Why are some genres &#8220;new&#8221;?</dt>
+      <dd>We only read and score a genre once someone has chosen it. Pick a new genre and we switch it on that day; your first stories arrive the next morning.</dd>
       <dt>Can my colleagues see it?</dt>
       <dd>Your link is personal, and it&#8217;s your key, so there&#8217;s no password. Each colleague can start their own free month, or ask about your own Ariel, where colleagues can be copied in.</dd>
     </dl>
@@ -237,7 +248,7 @@ footer a{color:var(--gold-light)}
 
   // Preselect a genre from ?g=
   var pre = params.get('g');
-  if (pre) document.querySelectorAll('#gpick input').forEach(function (i) { i.checked = i.value === pre; });
+  if (pre) { document.querySelectorAll('#signup-form [name=genres]').forEach(function (i) { i.checked = i.value === pre; if (i.checked && i.closest('details')) i.closest('details').open = true; }); }
 
   var f = document.getElementById('signup-form');
   var st = f.querySelector('.status');

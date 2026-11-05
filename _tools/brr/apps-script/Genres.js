@@ -60,6 +60,46 @@ var GENRES = {
     items_per_day: 6,
     lens: 'Ready-made Music & Pop Culture feed, built from the Why Now music-documentary lens and widened. Surface raw news leads a viewer would want a whole documentary about: BIG STORIES (untold chapters, resurfacing scandals, newly opened archives, deaths, rediscovered footage, legal sagas, reunions, feuds), TOURS / ALBUMS (major tours or albums filmable as concert or tour docs, ideally with lead time), ANNIVERSARIES (album, event and death milestones at 10/20/25/30/40/50 years with lead time to develop; 2027 is the current sweet spot), FAME & INTERNET CULTURE (creators, fandoms, viral figures and youth scenes with a real human arc) and BEHIND THE SCENES (the making of films, TV and records, and the people behind famous work). Favour a named human story with archive or footage potential and access.',
     avoid: 'Album and gig reviews, celebrity gossip, chart news, trailers and teasers, and anything already made into a documentary or announced as one.'
+  },
+  'cults': {
+    name: 'Cults', on_request: true,
+    blurb: 'Movements, leaders and the people who got out: coercive groups, high-control churches, wellness and online cults.',
+    labels: ['Inside the Group', 'Leaders', 'Survivors', 'Investigations', 'Cult Books'],
+    items_per_day: 6,
+    lens: 'On-request Cults feed. Surface stories about coercive and high-control groups with a named person at the centre: leaders, survivors and defectors, families trying to get someone out, investigations into abuse or money, and wellness, political, religious and online movements. Favour first-hand testimony, leaked material or archive, and groups that are still active or newly exposed.',
+    avoid: 'Opinion and explainers on why people join cults; anything already made into a documentary or series, or announced as one.'
+  },
+  'supernatural-paranormal': {
+    name: 'Supernatural & Paranormal', on_request: true,
+    blurb: 'Hauntings, the unexplained, believers and sceptics, and the folklore and investigations behind them.',
+    labels: ['Hauntings', 'Unexplained', 'Believers & Sceptics', 'Folklore', 'Paranormal Books'],
+    items_per_day: 6,
+    lens: 'On-request Supernatural & Paranormal feed. Surface stories with a named person and a real place at the centre: hauntings and possessions with witnesses, unexplained events and sightings, investigators and debunkers, hoaxes exposed, folklore and rituals still practised, and new books on any of these. Favour stories with archive, recordings or a community still divided about what happened.',
+    avoid: 'Listicles, horoscope and wellness content, and fiction; anything already made into a documentary or series.'
+  },
+  'medical-mysteries': {
+    name: 'Medical Mysteries', on_request: true,
+    blurb: 'Undiagnosed illnesses, medical detectives, malpractice and scandals, and breakthroughs with a human story.',
+    labels: ['Undiagnosed', 'Medical Detectives', 'Scandals & Malpractice', 'Breakthroughs', 'Medical Books'],
+    items_per_day: 6,
+    lens: 'On-request Medical Mysteries feed. Surface stories with a named patient, family or doctor at the centre: undiagnosed and rare conditions, clusters of unexplained illness, doctors and families who cracked a case, malpractice and health scandals, and breakthroughs told through the people they changed. A clear arc and stakes.',
+    avoid: 'Health advice, study round-ups and policy commentary with no human story; anything already made into a documentary or series.'
+  },
+  'celebrity': {
+    name: 'Celebrity', on_request: true,
+    blurb: 'Rise and fall, secret lives, feuds and scandals, comebacks and the memoirs that reveal them.',
+    labels: ['Rise & Fall', 'Secret Lives', 'Feuds & Scandals', 'Comebacks', 'Celebrity Memoirs'],
+    items_per_day: 6,
+    lens: 'On-request Celebrity feed. Surface stories about famous people where there is a real untold story: rise and fall, hidden lives revealed through new material, feuds, scandals and legal fights, comebacks, and memoirs or biographies with genuine revelations. Favour new archive, new testimony or a fresh angle on an iconic figure.',
+    avoid: 'Gossip, red-carpet and promotional interviews, trailers and teasers, and anything already made into a documentary or announced as one.'
+  },
+  'natural-disasters': {
+    name: 'Natural Disasters', on_request: true,
+    blurb: 'Survival, rescue, warnings ignored and the aftermath, from storms and floods to fires, quakes and eruptions.',
+    labels: ['Survival', 'Warnings Ignored', 'Rescue', 'Aftermath', 'Disaster Books'],
+    items_per_day: 6,
+    lens: 'On-request Natural Disasters feed. Surface stories with named survivors, rescuers, scientists or officials at the centre: survival against the odds, rescues, warnings that were ignored and the inquiries that followed, communities rebuilding, and anniversaries of major disasters with lead time. Favour first-hand testimony, footage and an accountability angle.',
+    avoid: 'Live weather updates, casualty-count news with no human story, and climate policy commentary; anything already made into a documentary or series.'
   }
 };
 
@@ -138,6 +178,10 @@ function genreGet_(action, p) {
     if (!GENRES[p.genre]) return { success: false, error: 'unknown_genre' };
     return action === 'items' ? genreFeedItems_(p.genre) : genrePrefs_(p.genre);
   }
+  if (action === 'genre_active') {
+    if (!genreKeyOk_(p.key)) return { success: false, error: 'forbidden' };
+    return genreActive_();
+  }
   if (action === 'genre_feed') return genreFeed_(p.k);
   if (action === 'genre_sample') return genreSample_();
   if (action === 'genre_list') return { ok: true, genres: genreDefsPublic_() };
@@ -152,7 +196,7 @@ function genreKeyOk_(key) {
 function genreDefsPublic_() {
   return Object.keys(GENRES).map(function (slug) {
     var g = GENRES[slug];
-    return { slug: slug, name: g.name, blurb: g.blurb, labels: g.labels };
+    return { slug: slug, name: g.name, blurb: g.blurb, labels: g.labels, on_request: !!g.on_request };
   });
 }
 
@@ -280,6 +324,7 @@ function genreSignup_(b) {
       sendGenreLink_(gSub_(f.sh, f.row), s.status === 'pending' ? 'welcome' : 'relink');
       return { ok: true, status: s.status === 'pending' ? 'pending' : (s.status === 'ended' ? 'ended' : 'already') };
     }
+    var before = genreReaders_();
     var token = newToken_();
     var rec = { email: email, name: name, role: role, company: company, genres: genres.join(','), plan: 'trial', status: 'pending',
       token: token, created_at: now, activated_at: '', trial_end: '', paid_until: '', digest: 'daily', last_digest: '',
@@ -287,7 +332,9 @@ function genreSignup_(b) {
       ror_optin: b.ror === false || b.ror === 'no' ? 'no' : 'yes', last_link_sent: now, note: '' };
     f.sh.appendRow(GSUB_HEADERS.map(function (h) { return rec[h]; }));
     var sub = gSub_(f.sh, f.sh.getLastRow());
+    sub.firstOn = genres.filter(function (g) { return !before[g]; });
     sendGenreLink_(sub, 'welcome');
+    noteGenreDemand_(genres, before, email);
     alertTara_('[Ariel Genres] New sign-up: ' + email,
       'Name: ' + name + '\nRole: ' + role + '\nCompany: ' + company + '\nGenres: ' + genres.map(gName_).join(', ') + '\nSource: ' + rec.source +
       '\n\nTheir trial starts when they open the link in their welcome email.');
@@ -385,6 +432,41 @@ function daysLeft_(s) {
   return Math.max(0, Math.ceil((new Date(s.trial_end).getTime() - Date.now()) / 86400000));
 }
 
+/* ───────────────────────── on-demand genres ───────────────────────── */
+
+/* Genres with at least one reader: anyone with access, or a sign-up in the last 7 days who hasn't opened their link yet.
+   The daily run only processes these, so no genre is read and scored until someone has chosen it. */
+function genreReaders_() {
+  var v = genreSheet_('GenreSubs').getDataRange().getValues();
+  var out = {};
+  Object.keys(GENRES).forEach(function (g) { out[g] = 0; });
+  for (var i = 1; i < v.length; i++) {
+    var s = {}; GSUB_HEADERS.forEach(function (h, j) { s[h] = v[i][j]; });
+    var counts = false;
+    if (s.status === 'pending') counts = s.created_at && Date.now() - new Date(s.created_at).getTime() < 7 * 86400000;
+    else if (s.status === 'active') counts = hasAccess_(s) || paidActive_(s);
+    if (!counts) continue;
+    String(s.genres || '').split(',').forEach(function (g) { g = g.trim(); if (out[g] !== undefined) out[g]++; });
+  }
+  return out;
+}
+
+function genreActive_() {
+  var r = genreReaders_();
+  var list = Object.keys(r).filter(function (g) { return r[g] > 0; }).map(function (g) { return { slug: g, name: GENRES[g].name, readers: r[g] }; });
+  return { success: true, genres: list, inactive: Object.keys(r).filter(function (g) { return !r[g]; }) };
+}
+
+/* Tell Tara when a genre gets its first reader, so she knows the daily run has started on it. */
+function noteGenreDemand_(newGenres, before, who) {
+  newGenres.forEach(function (g) {
+    if (before[g]) return;
+    alertTara_('[Ariel Genres] Switched on: ' + gName_(g),
+      who + ' is the first reader of ' + gName_(g) + '. From the next daily run (overnight) it is read and scored like the others, and their first stories arrive the next morning.' +
+      (GENRES[g].on_request ? '\nThis is a new on-request genre, so its sources are the shared ones: check the first few days look right.' : ''));
+  });
+}
+
 /* ───────────────────────── dashboard API ───────────────────────── */
 
 function genreFeed_(k) {
@@ -461,6 +543,7 @@ function genreSettings_(b) {
     if (!g.length) return { ok: false, error: 'no_genre', message: 'Keep at least one genre.' };
     if (s.plan === 'one') g = [g[0]];
     upd.genres = g.join(',');
+    noteGenreDemand_(g.filter(function (x) { return s.genreList.indexOf(x) < 0; }), genreReaders_(), s.email);
   }
   if (b.digest && ['daily', 'weekly', 'off'].indexOf(b.digest) >= 0) upd.digest = b.digest;
   setCells_(sh, s.row, upd);
@@ -676,9 +759,7 @@ function activateGenrePaid_(s, plan, months, genre) {
     var keep = GENRES[genre] ? genre : (String(s.keep_interest).split(':')[1] || '').trim();
     if (!GENRES[keep]) keep = s.genreList[0];
     if (keep) upd.genres = keep;
-  } else if (plan === 'all') {
-    upd.genres = Object.keys(GENRES).join(',');
-  }
+  }  // 'all' keeps the genres they chose; they can add any others in Settings at no extra cost
   setCells_(sh, s.row, upd);
   upsertMember_(s.email, 'genre', until, 'Ariel Genres ' + plan);
   if (s.plan === 'trial' || s.status === 'ended') {
@@ -733,6 +814,7 @@ function sendGenreLink_(s, kind) {
     (welcome ? 'Welcome to Ariel Genres. Your free month of <b>' + esc_(names) + '</b> starts when you open your Ariel:'
       : 'Here’s the link to your Ariel (' + esc_(names) + '). Keep this email: the link is your key, there’s no password.') +
     '<br>' + gBtn_(appLink_(s), 'Open my Ariel', true) + '<br><br>' +
+    (welcome && s.firstOn && s.firstOn.length ? 'You’re the first to choose ' + esc_(s.firstOn.map(gName_).join(' and ')) + ', so we’re switching ' + (s.firstOn.length > 1 ? 'them' : 'it') + ' on for you now: the first stories arrive tomorrow morning.<br><br>' : '') +
     (welcome ? 'From tomorrow morning you’ll get a short email of the best new stories in your genres: books, investigations and true stories with screen potential, plus rights-available titles sent to us directly by literary agents. ' +
       'Save what interests you and skip what doesn’t, from the email or the dashboard.<br><br>' +
       'Your trial is free for ' + GENRE_CFG.TRIAL_DAYS + ' days, with no card. It also gives you unlimited rights checks on the London Review of Reviews.' : ''));
