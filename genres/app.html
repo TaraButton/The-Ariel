@@ -107,7 +107,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
 
 <dialog id="dlg-keep" aria-labelledby="k-h"><div class="dlg"><button class="close" type="button" data-close aria-label="Close">&times;</button>
   <h2 id="k-h">Keep your genres</h2>
-  <p>&#163;29 a month for one genre, &#163;10 for each extra. Carry on getting the daily email and dashboard; cancel any time.</p>
+  <p>&#163;29.99 a month for one genre, &#163;10 for each extra. Carry on getting the daily email and dashboard; cancel any time.</p>
   <div class="opt best"><fieldset style="border:0;padding:0;margin:0"><legend class="f">Tick the genres you want</legend><div id="k-genres"></div></fieldset>
     <p id="k-price" style="font-weight:700;margin:10px 0 0"></p>
     <p class="small" id="k-note" style="font-size:14px;color:var(--muted);margin:6px 0 10px"></p>
@@ -402,9 +402,10 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
   function keepPrice() {
     var dlg = document.getElementById('dlg-keep');
     var n = dlg.querySelectorAll('[name=kg]:checked').length;
-    var price = n ? D.prices.first + D.prices.extra * (n - 1) : 0;
-    document.getElementById('k-price').textContent = n ? '£' + price + ' a month for ' + n + ' genre' + (n > 1 ? 's' : '') : 'Tick at least one genre.';
-    document.getElementById('k-note').textContent = n >= (D.prices.max || 8) ? 'All ' + n + ' genres cost the same as your own Ariel, which is built around your slate and learns from you: choose Make it yours instead.' : (n > 1 ? '£' + D.prices.first + ' for the first genre and £' + D.prices.extra + ' for each extra.' : 'Add more genres at £' + D.prices.extra + ' a month each.');
+    var price = n ? Math.round((D.prices.first + D.prices.extra * (n - 1)) * 100) / 100 : 0;
+    var gbp = function (x) { return '£' + (Math.round(x * 100) % 100 ? x.toFixed(2) : Math.round(x)); };
+    document.getElementById('k-price').textContent = n ? gbp(price) + ' a month for ' + n + ' genre' + (n > 1 ? 's' : '') : 'Tick at least one genre.';
+    document.getElementById('k-note').textContent = n >= (D.prices.max || 8) ? 'All ' + n + ' genres cost about the same as your own Ariel, which is built around your slate and learns from you: choose Make it yours instead.' : (n > 1 ? gbp(D.prices.first) + ' for the first genre and ' + gbp(D.prices.extra) + ' for each extra.' : 'Add more genres at ' + gbp(D.prices.extra) + ' a month each.');
   }
 
   /* dialogs */
@@ -458,7 +459,7 @@ select,input[type=text],input[type=email],textarea{width:100%;min-height:44px;pa
       post({ action: 'genre_keep', genres: picked }).then(function (r) {
         b.disabled = false;
         if (r && r.url) {
-          if (r.set_quantity) { st.classList.add('success'); st.textContent = 'Taking you to payment. On the payment page, press Add next to "Additional Genre" so the total is £' + r.price + ' a month.'; setTimeout(function () { location.href = r.url; }, 2500); return; }
+          if (r.set_quantity) { st.classList.add('success'); st.textContent = 'Taking you to payment. On the payment page, press Add next to "Additional Genre", then set its Qty to ' + r.set_quantity + ' and Update, so the total is ' + (r.price_label || ('£' + r.price)) + ' a month.'; setTimeout(function () { location.href = r.url; }, 2500); return; }
           location.href = r.url; return;
         }
         if (r && r.ok) { st.classList.add('success'); st.textContent = 'Thank you. We’ll email you a payment link within a working day, and your feed stays on meanwhile.'; return; }

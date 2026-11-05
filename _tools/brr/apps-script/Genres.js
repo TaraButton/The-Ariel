@@ -107,7 +107,7 @@ var GENRES = {
 var GENRE_CFG = {
   TRIAL_DAYS: 30,
   TRIAL_MAX_GENRES: 2,     // the free month covers up to two genres
-  PRICE_FIRST: 29,         // GBP a month for the first genre
+  PRICE_FIRST: 29.99,      // GBP a month for the first genre (Stripe price is 29.99)
   PRICE_EXTRA: 10,         // GBP a month for each additional genre (8 genres = 99 = your own Ariel)
   MAX_GENRES: 8,
   APP_URL: 'https://theariel.tv/genres/app.html',
@@ -118,9 +118,10 @@ var GENRE_CFG = {
   DIGEST_HOUR: 7
 };
 
-function genrePrice_(n) { n = Math.max(1, Math.min(GENRE_CFG.MAX_GENRES, Number(n) || 1)); return GENRE_CFG.PRICE_FIRST + GENRE_CFG.PRICE_EXTRA * (n - 1); }
-function genrePriceLabel_(n) { n = Math.max(1, Number(n) || 1); return '£' + genrePrice_(n) + ' a month' + (n > 1 ? ' for ' + n + ' genres' : ''); }
-var PRICE_SENTENCE = '£' + GENRE_CFG.PRICE_FIRST + ' a month for one genre, £' + GENRE_CFG.PRICE_EXTRA + ' for each extra';
+function genrePrice_(n) { n = Math.max(1, Math.min(GENRE_CFG.MAX_GENRES, Number(n) || 1)); return Math.round((GENRE_CFG.PRICE_FIRST + GENRE_CFG.PRICE_EXTRA * (n - 1)) * 100) / 100; }
+function gbp_(x) { return '£' + (Math.round(x * 100) % 100 ? x.toFixed(2) : String(Math.round(x))); }
+function genrePriceLabel_(n) { n = Math.max(1, Number(n) || 1); return gbp_(genrePrice_(n)) + ' a month' + (n > 1 ? ' for ' + n + ' genres' : ''); }
+var PRICE_SENTENCE = gbp_(GENRE_CFG.PRICE_FIRST) + ' a month for one genre, ' + gbp_(GENRE_CFG.PRICE_EXTRA) + ' for each extra';
 var OWN_ARIEL_SENTENCE = 'No setup fee and no minimum term: £75 a month at the founding rate, cancel any time.';
 /* How many genres a subscriber may have switched on. */
 function allowedGenres_(s) {
@@ -571,8 +572,8 @@ function genreSettings_(b) {
     var allowed = allowedGenres_(s);
     if (g.length > allowed) {
       return { ok: false, error: 'too_many', allowed: allowed, message: s.plan === 'trial'
-        ? 'Your free month covers up to ' + allowed + ' genres. You can add more when you keep your Ariel (£' + GENRE_CFG.PRICE_EXTRA + ' a month each).'
-        : 'You have ' + allowed + ' genre' + (allowed > 1 ? 's' : '') + ' on your plan. To add one for £' + GENRE_CFG.PRICE_EXTRA + ' a month, use Change plan.' };
+        ? 'Your free month covers up to ' + allowed + ' genres. You can add more when you keep your Ariel (' + gbp_(GENRE_CFG.PRICE_EXTRA) + ' a month each).'
+        : 'You have ' + allowed + ' genre' + (allowed > 1 ? 's' : '') + ' on your plan. To add one for ' + gbp_(GENRE_CFG.PRICE_EXTRA) + ' a month, use Keep my genres.' };
     }
     upd.genres = g.join(',');
     noteGenreDemand_(g.filter(function (x) { return s.genreList.indexOf(x) < 0; }), genreReaders_(), s.email);
@@ -596,14 +597,14 @@ function genreKeep_(b) {
   var fixed = cfgValue_('genre_pay_url_' + n);
   var base = cfgValue_('genre_pay_url');
   // The base link covers 1 genre (and 2 via its "Add" cross-sell); for more we need a fixed-count link or Tara sends one by hand
-  var url = fixed || (n <= 2 ? base : '');
+  var url = fixed || base;
   alertTara_('[Ariel Genres] ' + s.email + ' wants to keep ' + n + ' genre' + (n > 1 ? 's' : '') + ' (' + label + ')',
     s.email + (s.name ? ' (' + s.name + (s.company ? ', ' + s.company : '') + ')' : '') + ' clicked Keep: ' + genres.map(gName_).join(', ') + ', ' + label + '.\n' +
-    (url ? 'They were sent to the Stripe link' + (fixed || n === 1 ? '' : ' (they need to press Add on the Additional Genre cross-sell)') + '. Payment is picked up automatically from the Stripe email; if it is not, run admin activate_genre.'
-      : 'No Stripe link exists for ' + n + ' genres (Config genre_pay_url_' + n + ' is blank), so please email them a payment link today, then activate them (admin op activate_genre).'));
+    (url ? 'They were sent to the Stripe link' + (fixed || n === 1 ? '' : ' (they press Add on Additional Genre, then set Qty to ' + (n - 1) + ')') + '. Payment is picked up automatically from the Stripe email; if it is not, run admin activate_genre.'
+      : 'No Stripe link is set in Config (genre_pay_url), so please email them a payment link today, then activate them (admin op activate_genre).'));
   if (url) {
     var sep = url.indexOf('?') >= 0 ? '&' : '?';
-    return { ok: true, count: n, price: price, label: label, set_quantity: fixed || n === 1 ? 0 : n - 1,
+    return { ok: true, count: n, price: price, label: label, set_quantity: fixed || n === 1 ? 0 : n - 1, price_label: gbp_(price),
       url: url + sep + 'prefilled_email=' + encodeURIComponent(s.email) + '&client_reference_id=' + encodeURIComponent(s.token.slice(0, 40)) };
   }
   sendGenreNote_(s, 'Keeping ' + genres.map(gName_).join(', '),
@@ -776,13 +777,11 @@ function detectStripePayments_() {
       var body = (m.getPlainBody() || '') + ' ' + m.getSubject();
       var low = body.toLowerCase();
       if (low.indexOf('ariel genres') < 0 && low.indexOf('genre subscription') < 0 && low.indexOf('additional genre') < 0) return;  // own-Ariel payments (£75/£99) must never be read as genre payments
-      var count = 0, re = /£\s?(\d{2,3})(?:\.(\d{2}))?\b/g, mm;
+      var count = 0, re = /£\s?(\d{2,3}(?:\.\d{2})?)\b/g, mm;
       while ((mm = re.exec(body))) {
         var amt = Number(mm[1]);
-        if (amt >= GENRE_CFG.PRICE_FIRST && (amt - GENRE_CFG.PRICE_FIRST) % GENRE_CFG.PRICE_EXTRA === 0) {
-          var n = (amt - GENRE_CFG.PRICE_FIRST) / GENRE_CFG.PRICE_EXTRA + 1;
-          if (n >= 1 && n <= GENRE_CFG.MAX_GENRES) { count = n; break; }
-        }
+        var n = Math.round((amt - GENRE_CFG.PRICE_FIRST) / GENRE_CFG.PRICE_EXTRA) + 1;
+        if (n >= 1 && n <= GENRE_CFG.MAX_GENRES && Math.abs(genrePrice_(n) - amt) < 0.011) { count = n; break; }
       }
       if (!count) return;
       Object.keys(emails).forEach(function (em) {

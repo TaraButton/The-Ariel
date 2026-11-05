@@ -425,7 +425,7 @@ def page(ed, eds, is_index):
       <div class="upsell-opt best">
         <p class="upsell-tag">Free for 30 days</p>
         <h3>Try Ariel Genres</h3>
-        <ul><li>Three rights checks in your free month, unlimited once you keep it</li><li>A daily email of stories with screen potential in up to two genres of your choice, plus rights-available books straight from literary agents</li><li>No card. Then &#163;29 a month for one genre, &#163;10 for each extra</li></ul>
+        <ul><li>Three rights checks in your free month, unlimited once you keep it</li><li>A daily email of stories with screen potential in up to two genres of your choice, plus rights-available books straight from literary agents</li><li>No card. Then &#163;29.99 a month for one genre, &#163;10 for each extra</li></ul>
         <a class="brr-submit as-link" href="/genres/?from=rights" data-pass>Start my free month</a>
       </div>
       <div class="upsell-opt">
