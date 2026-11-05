@@ -8,7 +8,7 @@ Lives in `_tools/` so GitHub Pages never publishes it. Canonical mirror for Tara
 The Ariel HQ/Platform/review-of-reviews/.
 
 ## Rules that never bend
-- Non-fiction only (fiction may become a separate stream later).
+- Fiction AND non-fiction (Tara, 5 Nov 2026: fiction launched). Poetry, children's and picture books stay out.
 - One line per book (max ~20 words) in our own words, from the review's standfirst and the book
   details the publication lists. **No quotes from reviews. No facts that are not on the page.**
 - Every book links to at least one real review URL (https). Never invent a URL or a title.
@@ -28,17 +28,19 @@ The Ariel HQ/Platform/review-of-reviews/.
 3. **Times books bulletin.** In Gmail, search
    `label:!!Ariel/Ariel-Sources from:(thetimes.com OR thetimes.co.uk) newer_than:8d` and open only
    the books bulletin (books / reading / review in the subject or masthead). Add each reviewed
-   non-fiction book as a candidate with publication "Times/Sunday Times", the headline, standfirst
+   book (fiction or non-fiction) as a candidate with publication "Times/Sunday Times", the headline, standfirst
    and its thetimes.com article link (strip tracking redirects only if the clean URL is visible in
    the email; otherwise use the link as given). Ignore every other Times newsletter.
 4. **Edit.** For every candidate decide:
    - Is it a review of a specific book? (Drop essays, interviews, round-ups whose books are also
      reviewed singly, film/TV reviews filed under Books, diaries, poems, letters.)
-   - Non-fiction? (Drop novels, stories, poetry, children's books.)
+   - A book for grown-ups? (Keep novels and story collections. Drop poetry, children's and picture books.)
    - Book title, author (as the publication lists them).
    - **subject**: exactly one of True crime, Espionage, Politics & world affairs, Business & power,
      Biography & memoir, History, Society & ideas, Nature & place, Arts & culture, Books & writing,
-     Life & leisure.
+     Life & leisure (non-fiction), or Crime & thriller fiction, Literary fiction, Historical fiction,
+     Other fiction (novels and story collections; sci-fi, fantasy, romance, horror and translated fiction
+     with no better home go in Other fiction). The page shows fiction under its own "Fiction" heading.
    - **line**: one sentence describing the book.
    - **verdict** (per review, Tara 2 Nov): the REVIEWER's verdict, `rave`, `warm`, `mixed` or `pan`, shown on the
      page and in the email next to the paper's name. Set it only when the review's own wording makes it
@@ -48,8 +50,9 @@ The Ariel HQ/Platform/review-of-reviews/.
      is a screen pick (then its "why" must say why the story still matters); build_site.py enforces this.
      Within each subject the page sorts screen picks first, then by best verdict, then by number of papers.
    - **lead**: true only if the book has the makings of a film or TV project (a strong central
-     figure, a crime or mystery, a secret world, an untold story, a dramatic event). Aim for
-     10-20% of books, spread across subjects.
+     figure, a crime or mystery, a secret world, an untold story, a dramatic event). For fiction:
+     a premise that can be said in a sentence, a central character worth following, a vivid world
+     or period, series potential, or clear review heat. Aim for 10-20% of books, spread across subjects.
    - **why** (leads only): one short sentence on its screen potential (character, world, event,
      untold angle), drawn from the page, not invented facts. Shown to readers as "Screen potential".
      NEVER say or hint that rights are available, unoptioned, "worth checking", or that the author's
@@ -61,7 +64,7 @@ The Ariel HQ/Platform/review-of-reviews/.
    ```json
    {"edition_id":"2026-11-09","date_label":"9 November 2026",
     "window":"Reviews published 31 October - 8 November 2026",
-    "preheader":"NN non-fiction books reviewed in the British papers this week, one line each.",
+    "preheader":"NN books reviewed in the British papers this week, fiction and non-fiction, one line each.",
     "books":[{"book":"...","author":"...","subject":"History","line":"...","lead":false,"why":"", (book_id is added by build_site.py)
               "reviews":[{"pub":"FT","url":"https://...","verdict":"rave"}]}]}
    ```
@@ -119,3 +122,13 @@ After step 7 (the edition is published):
    or film/TV desk when one is listed. Queue with `op: queue_email` (kind `agent_ask`), 30-minute hold.
    Content and rules: see RIGHTS_RUN.md "Hard rules" and the template in
    `_tools/brr/agent_email_template.md`.
+
+## Fiction genre cross-post (added 5 Nov 2026)
+After the edition is built: GET `<GENRES endpoint>?action=genre_active&key=<genre_feed_key>` (key file
+`Platform/review-of-reviews/genre-feed-key.txt`). If `fiction` is among the active genres, POST this week's
+fiction screen picks (lead = true, subject in the four fiction subjects) to
+`<endpoint>?genre=fiction&key=<key>` as `{"entries":[...]}` in the same entry shape the distribution run uses
+(title "<Book> by <Author>", summary = the line, relevance_note = the why, source_name = the paper, source_url =
+the review link, label from the subject: Crime & thriller fiction -> "Crime & Thriller", Literary -> "Literary",
+Historical -> "Historical", Other -> "Book Club", tier primary, score 6). Dedup is on source_url. If `fiction`
+is not active, skip and log `Fiction genre: not active`.

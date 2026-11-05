@@ -101,6 +101,14 @@ var GENRES = {
     items_per_day: 6,
     lens: 'On-request Natural Disasters feed. Surface stories with named survivors, rescuers, scientists or officials at the centre: survival against the odds, rescues, warnings that were ignored and the inquiries that followed, communities rebuilding, and anniversaries of major disasters with lead time. Favour first-hand testimony, footage and an accountability angle.',
     avoid: 'Live weather updates, casualty-count news with no human story, and climate policy commentary; anything already made into a documentary or series.'
+  },
+  'fiction': {
+    name: 'Fiction', on_request: true,
+    blurb: 'Novels with screen potential: new and forthcoming fiction, debuts with buzz, prize lists, book deals, and rights-available novels sent to us by literary agents.',
+    labels: ['Crime & Thriller', 'Literary', 'Historical', 'Book Club', 'Debuts & Deals'],
+    items_per_day: 6,
+    lens: 'On-request Fiction feed for drama producers and scripted development. Surface novels and short-story collections with adaptation potential: a strong premise that can be said in a sentence, a central character worth following for a series, a vivid world or period, crime and thriller plots, literary fiction with prize or review heat, debuts with buzz, forthcoming titles with lead time, and publishing deals or rights news that signal a book is coming. Favour reviews, deal reports, prize longlists, author profiles and agent rights lists.',
+    avoid: 'Poetry, children\'s and picture books, non-fiction, bestseller-list reporting with no book at the centre, and anything already announced as a film or series.'
   }
 };
 

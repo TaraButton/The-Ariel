@@ -47,7 +47,8 @@ var CONFIG = {
 var SUBJECTS = [
   'True crime', 'Espionage', 'Politics & world affairs', 'Business & power',
   'Biography & memoir', 'History', 'Society & ideas', 'Nature & place',
-  'Arts & culture', 'Books & writing', 'Life & leisure'
+  'Arts & culture', 'Books & writing', 'Life & leisure',
+  'Crime & thriller fiction', 'Literary fiction', 'Historical fiction', 'Other fiction'
 ];
 
 var ROLES = ['Producer', 'Development executive', 'Commissioner', 'Agent or publisher', 'Writer', 'Other'];
@@ -526,7 +527,7 @@ function renderEmail_(ed, sub, isWelcome) {
   h.push('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<meta name="color-scheme" content="light"><title>' + esc_(subject) + '</title></head>');
   h.push('<body style="margin:0;padding:0;background-color:' + C.ivory + ';" bgcolor="' + C.ivory + '">');
-  h.push('<div style="display:none;max-height:0;overflow:hidden;">' + esc_(ed.preheader || ('Every non-fiction book reviewed in the British papers this week, one line each.')) + '</div>');
+  h.push('<div style="display:none;max-height:0;overflow:hidden;">' + esc_(ed.preheader || ('Every book reviewed, fiction and non-fiction, in the British papers this week, one line each.')) + '</div>');
   h.push('<div role="main" aria-label="' + CONFIG.NAME + '"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + C.ivory + '" style="background-color:' + C.ivory + ';"><tr><td align="center" style="padding:24px 12px;">');
   h.push('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;">');
 
@@ -534,7 +535,7 @@ function renderEmail_(ed, sub, isWelcome) {
   h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px 28px 22px;">' +
     '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:#E2C891;">Free every Monday from The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
     '<h1 style="margin:10px 0 0;font-weight:normal;font-family:' + SERIF + ';font-size:36px;line-height:1.1;color:#FFFFFF;">London Review <i>of</i> Reviews</h1>' +
-    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.5;color:#E6E9F1;margin-top:10px;">Every non-fiction book reviewed in the week’s papers and literary magazines, one line each. ' + n + ' books this week.</div>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.5;color:#E6E9F1;margin-top:10px;">Every book reviewed, fiction and non-fiction, in the week’s papers and literary magazines, one line each. ' + n + ' books this week.</div>' +
     '</td></tr>');
 
   if (isWelcome) {
@@ -737,7 +738,7 @@ function sendConfirm_(email, name, token) {
     '<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:24px 28px;font-family:' + SERIF + ';font-size:28px;color:' + C.ivory + ';">London Review <i>of</i> Reviews</td></tr>' +
     '<tr><td bgcolor="' + C.cream + '" style="background-color:' + C.cream + ';padding:24px 28px;font-family:' + SANS + ';font-size:15px;line-height:1.6;color:' + C.body + ';">' +
     (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
-    'Please confirm you’d like the London Review of Reviews from The Ariel: every non-fiction book reviewed in the week’s papers, one line each, every Monday.<br><br>' +
+    'Please confirm you’d like the London Review of Reviews from The Ariel: every book reviewed, fiction and non-fiction, in the week’s papers, one line each, every Monday.<br><br>' +
     '<table role="presentation" cellpadding="0" cellspacing="0"><tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';border-radius:2px;">' +
     '<a href="' + link + '" style="display:inline-block;padding:12px 22px;font-family:' + SANS + ';font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:' + C.ivory + ';text-decoration:none;">Confirm my subscription</a></td></tr></table><br>' +
     '<span style="font-size:13px;color:' + C.mist + ';">If you didn’t ask for this, ignore this email and you won’t hear from us.</span></td></tr></table></td></tr></table></body></html>';

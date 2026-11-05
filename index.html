@@ -926,6 +926,29 @@ section p {
 .audience-card .price { margin-top: auto; }
 .audience-card:hover { transform: translateY(-2px); }
 .audience-card.burgundy { background: var(--burgundy); }
+/* Ariel Genres section */
+.genres-section { padding: 80px 24px; background: var(--ivory); text-align: center; }
+.genre-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1100px; margin: 36px auto 0; text-align: left; }
+.genre-card { background: var(--ink); color: #E6E9F1; border-radius: 3px; padding: 26px 24px 22px; border: 1px solid transparent; display: flex; flex-direction: column; }
+.genre-card.live { border-color: var(--gold); }
+.genre-card h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 26px; color: #FFFFFF; margin: 6px 0 8px; }
+.genre-card p { font-size: 15px; line-height: 1.6; margin: 0; color: #E6E9F1; }
+.genre-tag { font-size: 12px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-light); margin: 0; }
+.genre-tag.new { color: var(--mist); }
+.genre-sample { margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.14); }
+.genre-sample-label { display: block; font-size: 11px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 6px; }
+.genre-sample ul { list-style: none; margin: 0; padding: 0; }
+.genre-sample li { font-size: 14px; line-height: 1.45; margin: 0 0 6px; }
+.genre-sample li a { color: #FFFFFF; text-decoration: underline; text-decoration-color: rgba(255,255,255,.35); text-underline-offset: 3px; }
+.genre-sample li a:hover { text-decoration-color: var(--gold); }
+.genre-src { color: var(--mist); font-size: 12px; margin-left: 4px; }
+.genre-cta { max-width: 720px; margin: 32px auto 0; }
+.genre-cta p { font-size: 16px; line-height: 1.6; color: var(--ink); margin: 0 0 18px; }
+.genre-cta p a { color: var(--gold-deep); }
+.genre-request { display: inline-block; margin-left: 18px; font-size: 14px; color: var(--gold-deep); }
+@media (max-width: 900px) { .genre-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .genre-grid { grid-template-columns: 1fr; } .genres-section { padding: 56px 16px; } .genre-request { display: block; margin: 14px 0 0; } }
+
 .tier-cta { display:inline-block; padding:12px 22px; border:1px solid var(--gold); color:var(--gold); text-decoration:none; font-size:14px; letter-spacing:.08em; text-transform:uppercase; min-height:44px; box-sizing:border-box; }
 .tier-cta.gold { background: var(--gold); color: var(--logo-navy); }
 .tier-cta:hover, .tier-cta:focus-visible { background: var(--gold); color: var(--logo-navy); }
@@ -1539,7 +1562,7 @@ footer a:focus-visible {
   <a href="#what">What &amp; Why</a>
   <a href="#how-it-works">How It Works</a>
   <a href="#pricing">Pricing</a>
-  <a href="/genres/">Try free</a>
+  <a href="#genres">Genres</a>
   <a href="#about">About</a>
   <a href="#agents">For Agents</a>
   <a href="/reviews/">Review of Reviews</a>
@@ -1823,6 +1846,57 @@ footer a:focus-visible {
   </div>
 </div>
 
+<!-- ═══ ARIEL GENRES ═══ -->
+<section id="genres" class="fade-in genres-section" aria-label="Ariel Genres">
+  <div class="section-label">Ariel Genres &#183; Free for 30 days, no card</div>
+  <h2>Ready-made Ariels, by genre</h2>
+  <p>Not ready for your own Ariel yet? Pick a genre and get a short email every morning: the best new stories with screen potential in that world, plus rights-available books sent to us directly by literary agents. Three genres are live today; the rest switch on the moment someone picks them.</p>
+  <div class="genre-grid">
+    <article class="genre-card live" data-genre="true-crime"><p class="genre-tag">Live</p><h3>True Crime</h3><p>Unsolved and contested cases, miscarriages of justice, cases with unseen tapes or archive, and new true crime books.</p><div class="genre-sample" hidden><span class="genre-sample-label">This morning</span><ul></ul></div></article>
+    <article class="genre-card live" data-genre="political-scandal"><p class="genre-tag">Live</p><h3>Political Scandal</h3><p>Cover-ups, whistleblowers, institutional failure, and power and money, at home and abroad.</p><div class="genre-sample" hidden><span class="genre-sample-label">This morning</span><ul></ul></div></article>
+    <article class="genre-card live" data-genre="music-pop-culture"><p class="genre-tag">Live</p><h3>Music &amp; Pop Culture</h3><p>Music history, fame and its cost, internet and youth culture, and film and TV behind the scenes.</p><div class="genre-sample" hidden><span class="genre-sample-label">This morning</span><ul></ul></div></article>
+    <article class="genre-card" data-genre="fiction"><p class="genre-tag new">New</p><h3>Fiction</h3><p>Novels with screen potential: new and forthcoming fiction, debuts, prize lists, book deals, and rights-available novels from agents.</p></article>
+    <article class="genre-card" data-genre="cults"><p class="genre-tag new">On request</p><h3>Cults</h3><p>Coercive groups, high-control churches, wellness and online movements, and the people who got out.</p></article>
+    <article class="genre-card" data-genre="supernatural-paranormal"><p class="genre-tag new">On request</p><h3>Supernatural &amp; Paranormal</h3><p>Hauntings, the unexplained, believers and sceptics, and the folklore and investigations behind them.</p></article>
+    <article class="genre-card" data-genre="medical-mysteries"><p class="genre-tag new">On request</p><h3>Medical Mysteries</h3><p>Undiagnosed illnesses, medical detectives, malpractice and scandals, and breakthroughs with a human story.</p></article>
+    <article class="genre-card" data-genre="celebrity"><p class="genre-tag new">On request</p><h3>Celebrity</h3><p>Rise and fall, secret lives, feuds and scandals, comebacks and the memoirs that reveal them.</p></article>
+    <article class="genre-card" data-genre="natural-disasters"><p class="genre-tag new">On request</p><h3>Natural Disasters</h3><p>Survival, rescue, warnings ignored and the aftermath, from storms and floods to fires, quakes and eruptions.</p></article>
+  </div>
+  <div class="genre-cta">
+    <p>Up to two genres in your free month. Then &#163;29.99 a month for one genre, &#163;10 for each extra. Cancel any time, or <a href="#pricing">make it your own Ariel</a>.</p>
+    <a href="/genres/?from=genres" class="tier-cta gold" aria-label="Start a free month of Ariel Genres">Start a free month</a>
+    <a href="/genres/#request" class="genre-request">Missing a genre? Ask for it</a>
+  </div>
+</section>
+<script>
+(function () {
+  var E = 'https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec';
+  function fill(samples) {
+    document.querySelectorAll('.genre-card.live').forEach(function (card) {
+      var list = samples[card.getAttribute('data-genre')] || [];
+      if (!list.length) return;
+      var ul = card.querySelector('.genre-sample ul');
+      list.slice(0, 2).forEach(function (it) {
+        var li = document.createElement('li'), a = document.createElement('a');
+        a.href = it.source_url || '/genres/'; a.target = '_blank'; a.rel = 'noopener'; a.textContent = it.title;
+        li.appendChild(a); li.appendChild(document.createTextNode(' '));
+        var src = document.createElement('span'); src.className = 'genre-src'; src.textContent = it.source_name || ''; li.appendChild(src);
+        ul.appendChild(li);
+      });
+      card.querySelector('.genre-sample').hidden = false;
+    });
+  }
+  function go() {
+    fetch(E + '?action=genre_sample').then(function (r) { return r.json(); }).then(function (d) { if (d && d.samples) fill(d.samples); }).catch(function () {});
+  }
+  if ('IntersectionObserver' in window) {
+    var el = document.getElementById('genres'), seen = false;
+    var io = new IntersectionObserver(function (es) { if (!seen && es.some(function (e) { return e.isIntersecting; })) { seen = true; io.disconnect(); go(); } }, { rootMargin: '400px' });
+    io.observe(el);
+  } else { go(); }
+})();
+</script>
+
 <!-- ═══ PRICING: THREE WAYS IN ═══ -->
 <section id="pricing" class="fade-in" aria-label="Pricing: three ways in">
   <div class="section-label">Pricing</div>
@@ -1831,14 +1905,14 @@ footer a:focus-visible {
   <div class="audience-grid">
     <div class="audience-card">
       <h3>London Review of Reviews</h3>
-      <p>One email a week. Every non-fiction book reviewed in Britain, one line each, with screen potential flagged and a rights check on any book.</p>
+      <p>One email a week. Every book reviewed in Britain, fiction and non-fiction, one line each, with screen potential flagged and a rights check on any book.</p>
       <div class="price">Free</div>
       <p class="price-note">Every Monday &#183; Rights checks: first free, then &#163;5 each or &#163;15/month unlimited</p>
       <p style="margin-top:18px"><a href="/reviews/" class="tier-cta" aria-label="Sign up free to the London Review of Reviews">Sign up free</a></p>
     </div>
     <div class="audience-card gold-border">
       <h3>Ariel Genres</h3>
-      <p>One email a day. Stories with screen potential in the genres you pick, plus rights-available books sent to us directly by literary agents. Unlimited rights checks.</p>
+      <p>One email a day. Stories with screen potential in the genres you pick (true crime to fiction), plus rights-available books sent to us directly by literary agents. Unlimited rights checks.</p>
       <div class="price">from &#163;29.99 <span style="font-size:18px;color:var(--mist)">/month</span></div>
       <p class="price-note">First month free, no card &#183; &#163;29.99 for one genre, &#163;10 for each extra</p>
       <p style="margin-top:18px"><a href="/genres/?from=pricing" class="tier-cta gold" aria-label="Start a free month of Ariel Genres">Start a free month</a></p>
@@ -1902,7 +1976,7 @@ footer a:focus-visible {
     </div>
 
     <div class="agents-apply" style="text-align: center; margin-top: 36px;">
-      <p style="max-width: 640px; margin: 0 auto 24px; color: var(--body); font-size: 15px; line-height: 1.7;">On the other side is a curated group of non-fiction and documentary producers working in the UK and the United States, among them an Emmy-winning documentary maker and a New York executive producer.</p>
+      <p style="max-width: 640px; margin: 0 auto 24px; color: var(--body); font-size: 15px; line-height: 1.7;">On the other side is a curated group of producers working in documentary, factual and scripted drama in the UK and the United States, among them an Emmy-winning documentary maker and a New York executive producer.</p>
       <button type="button" class="cta-btn" data-modal="agency" style="cursor: pointer;" aria-label="Open the agency application form">Apply for access</button>
       <p class="cta-note" style="margin-top: 16px;">Free for agencies and publishers. Every application is read personally. Prefer to talk first? <a href="https://calendly.com/tarabutton/15min" style="color: var(--gold-deep);">Book a call</a>.</p>
     </div>
@@ -1916,7 +1990,7 @@ footer a:focus-visible {
     <div>
       <p class="brr-free"><span class="brr-free-badge">Free</span><span class="brr-free-when">A weekly email from The Ariel</span></p>
       <h2 id="brr-title">London Review <em>of</em> Reviews</h2>
-      <p class="brr-lede">Every non-fiction book reviewed in the week&#8217;s British papers and literary magazines, sorted by subject, one line each. Tell us what you develop and we flag the books with screen potential.</p>
+      <p class="brr-lede">Every book reviewed in the week&#8217;s British papers and literary magazines, fiction and non-fiction, sorted by subject, one line each. Tell us what you develop and we flag the books with screen potential.</p>
       <!-- BRR:PANEL:START -->
       <p class="brr-stats">This week: 50 books from 6 publications &middot; 2 November 2026</p>
       <div class="brr-example">
@@ -1941,7 +2015,7 @@ footer a:focus-visible {
         <div><label for="brr-home-email">Email <span class="req">*</span></label><input type="email" id="brr-home-email" name="email" required autocomplete="email" placeholder="you@company.com"></div>
         <div><label for="brr-home-role">What do you do?</label><select id="brr-home-role" name="role"><option value="">Choose (optional)</option><option value="Producer">Producer</option><option value="Development executive">Development executive</option><option value="Commissioner">Commissioner</option><option value="Agent or publisher">Agent or publisher</option><option value="Writer">Writer</option><option value="Other">Other</option></select></div>
       </div>
-      <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend><label class="brr-chip"><input type="checkbox" name="subjects" value="True crime"><span>True crime</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Espionage"><span>Espionage</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Politics &amp; world affairs"><span>Politics &amp; world affairs</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Business &amp; power"><span>Business &amp; power</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Biography &amp; memoir"><span>Biography &amp; memoir</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="History"><span>History</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Society &amp; ideas"><span>Society &amp; ideas</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Nature &amp; place"><span>Nature &amp; place</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Arts &amp; culture"><span>Arts &amp; culture</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Books &amp; writing"><span>Books &amp; writing</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Life &amp; leisure"><span>Life &amp; leisure</span></label></fieldset>
+      <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend><label class="brr-chip"><input type="checkbox" name="subjects" value="True crime"><span>True crime</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Espionage"><span>Espionage</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Politics &amp; world affairs"><span>Politics &amp; world affairs</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Business &amp; power"><span>Business &amp; power</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Biography &amp; memoir"><span>Biography &amp; memoir</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="History"><span>History</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Society &amp; ideas"><span>Society &amp; ideas</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Nature &amp; place"><span>Nature &amp; place</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Arts &amp; culture"><span>Arts &amp; culture</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Books &amp; writing"><span>Books &amp; writing</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Life &amp; leisure"><span>Life &amp; leisure</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Crime &amp; thriller fiction"><span>Crime &amp; thriller fiction</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Literary fiction"><span>Literary fiction</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Historical fiction"><span>Historical fiction</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Other fiction"><span>Other fiction</span></label></fieldset>
       <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button type="submit" class="brr-submit">Sign up free</button>
       <p class="brr-status" role="status" aria-live="polite"></p>
@@ -2036,7 +2110,7 @@ footer a:focus-visible {
     <p class="brr-free"><span class="brr-free-badge">Free</span></p>
     <h3 id="modal-brr-title">London Review <em>of</em> Reviews</h3>
     <!-- BRR:POP:START -->
-    <p class="modal-sub">Every non-fiction book reviewed in the British papers, one line each, in your inbox every Monday. This week: 50 books from 6 publications. <a href="/reviews/">See this week&#8217;s edition</a>.</p>
+    <p class="modal-sub">Every book reviewed in the British papers, fiction and non-fiction, one line each, in your inbox every Monday. This week: 50 books from 6 publications. <a href="/reviews/">See this week&#8217;s edition</a>.</p>
     <p class="brr-pop-example"><b>&#9733; Felled</b> by Andrew Hankinson. Screen potential: a crime the whole country followed; this tells the side nobody heard.</p>
     <!-- BRR:POP:END -->
     <form class="brr-form" id="brr-pop" data-source="popup" novalidate>
@@ -2044,7 +2118,7 @@ footer a:focus-visible {
         <div><label for="brr-pop-email">Email <span class="req">*</span></label><input type="email" id="brr-pop-email" name="email" required autocomplete="email" placeholder="you@company.com"></div>
         <div><label for="brr-pop-role">What do you do?</label><select id="brr-pop-role" name="role"><option value="">Choose (optional)</option><option value="Producer">Producer</option><option value="Development executive">Development executive</option><option value="Commissioner">Commissioner</option><option value="Agent or publisher">Agent or publisher</option><option value="Writer">Writer</option><option value="Other">Other</option></select></div>
       </div>
-      <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend><label class="brr-chip"><input type="checkbox" name="subjects" value="True crime"><span>True crime</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Espionage"><span>Espionage</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Politics &amp; world affairs"><span>Politics &amp; world affairs</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Business &amp; power"><span>Business &amp; power</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Biography &amp; memoir"><span>Biography &amp; memoir</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="History"><span>History</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Society &amp; ideas"><span>Society &amp; ideas</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Nature &amp; place"><span>Nature &amp; place</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Arts &amp; culture"><span>Arts &amp; culture</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Books &amp; writing"><span>Books &amp; writing</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Life &amp; leisure"><span>Life &amp; leisure</span></label></fieldset>
+      <fieldset class="brr-subjects"><legend>What do you develop? <span class="hint">Optional. We put the books with screen potential in these subjects at the top of your email.</span></legend><label class="brr-chip"><input type="checkbox" name="subjects" value="True crime"><span>True crime</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Espionage"><span>Espionage</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Politics &amp; world affairs"><span>Politics &amp; world affairs</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Business &amp; power"><span>Business &amp; power</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Biography &amp; memoir"><span>Biography &amp; memoir</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="History"><span>History</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Society &amp; ideas"><span>Society &amp; ideas</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Nature &amp; place"><span>Nature &amp; place</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Arts &amp; culture"><span>Arts &amp; culture</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Books &amp; writing"><span>Books &amp; writing</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Life &amp; leisure"><span>Life &amp; leisure</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Crime &amp; thriller fiction"><span>Crime &amp; thriller fiction</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Literary fiction"><span>Literary fiction</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Historical fiction"><span>Historical fiction</span></label><label class="brr-chip"><input type="checkbox" name="subjects" value="Other fiction"><span>Other fiction</span></label></fieldset>
       <input type="text" name="website" class="brr-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button type="submit" class="brr-submit">Sign up free</button>
       <p class="brr-status" role="status" aria-live="polite"></p>

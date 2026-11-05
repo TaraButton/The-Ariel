@@ -20,7 +20,9 @@ OUT_DIR = os.path.join(ROOT, "reviews")
 
 SUBJECTS = ["True crime", "Espionage", "Politics & world affairs", "Business & power",
             "Biography & memoir", "History", "Society & ideas", "Nature & place",
-            "Arts & culture", "Books & writing", "Life & leisure"]
+            "Arts & culture", "Books & writing", "Life & leisure",
+            "Crime & thriller fiction", "Literary fiction", "Historical fiction", "Other fiction"]
+FICTION_SUBJECTS = SUBJECTS[11:]
 ROLES = ["Producer", "Development executive", "Commissioner", "Agent or publisher", "Writer", "Other"]
 E = lambda s: html.escape(str(s or ""), quote=True)
 slug = lambda s: re.sub(r"[^a-z]+", "-", s.lower()).strip("-")
@@ -123,6 +125,7 @@ h1 em{font-style:italic;font-weight:500}
 .brr-row>*{min-width:0}
 .brr-subjects{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
 .brr-subjects legend{margin-bottom:8px;padding:0}
+h2.part{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:34px;color:var(--ink);margin:40px 0 4px;padding-top:18px;border-top:2px solid var(--gold)}
 .brr-subjects .hint{display:block;font-weight:400;color:var(--muted);font-size:15px;margin-top:2px}
 .brr-chip{position:relative;margin:0!important;font-weight:400!important;font-size:16px!important;cursor:pointer}
 .brr-chip input{position:absolute;opacity:0;width:1px;height:1px}
@@ -312,7 +315,11 @@ def edition_body(ed):
     paper_btns = '<button type="button" class="tog on" data-paper="all" aria-pressed="true">All papers</button>' + "".join(
         f'<button type="button" class="tog" data-paper="{slug(p)}" aria-pressed="false">{E(p)}</button>' for p in papers)
     secs = []
+    fic_started = False
     for s in present:
+        if s in FICTION_SUBJECTS and not fic_started:
+            fic_started = True
+            secs.append('<h2 class="part" id="fiction">Fiction</h2>')
         lst = [b for b in books if b["subject"] == s]
         lst.sort(key=lambda b: (not b.get("lead"), best_verdict(b), -len(b["reviews"])))
         secs.append(f'<section class="subject" id="{slug(s)}"><header><h2>{E(s)}</h2><span class="n">{len(lst)}</span></header>'
@@ -330,7 +337,7 @@ def page(ed, eds, is_index):
     n = len(ed["books"])
     title = "London Review of Reviews" if is_index else f'London Review of Reviews, {ed["date_label"]}'
     canon = CFG["site"] + ("" if is_index else ed["edition_id"] + ".html")
-    desc = f'Every non-fiction book reviewed in the British papers and literary magazines this week, one line each. {n} books, {ed["date_label"]}. Free every Monday from The Ariel.'
+    desc = f'Every book reviewed in the British papers and literary magazines this week, fiction and non-fiction, one line each. {n} books, {ed["date_label"]}. Free every Monday from The Ariel.'
     archive = "".join(
         f'<li><a href="{E(e["edition_id"])}.html">{E(e["date_label"])}</a> <span class="n">{len(e["books"])} books</span></li>'
         for e in reversed(eds))
@@ -364,7 +371,7 @@ def page(ed, eds, is_index):
   <div class="hero-intro">
     <p class="free"><span class="free-badge">Free</span><span class="free-when">Every Monday &middot; {E(ed["date_label"])}</span></p>
     <h1 id="page-title">London Review <em>of</em> Reviews</h1>
-    <p class="dek">Every non-fiction book reviewed in the week&#8217;s British papers and literary magazines, sorted by subject, one line each.</p>
+    <p class="dek">Every book reviewed in the week&#8217;s British papers and literary magazines, fiction and non-fiction, sorted by subject, one line each.</p>
     <ul class="promises">
       <li>Free to everyone, every week</li>
       <li>{n} books this week from {len(papers_of(ed))} publications</li>
@@ -500,7 +507,7 @@ def home_panels(ed):
     panel = (f'      <!-- BRR:PANEL:START -->\n      {stats}\n      {ex}'
              '      <p class="brr-rights">We don&#8217;t check rights for the Review. For a first look at rights-available books directly from literary agents, <a href="#book">sign up to The Ariel</a>.</p>\n'
              f'      <div class="brr-actions">\n        <a class="brr-btn" href="/reviews/">Read this week&#8217;s {n} books</a>\n      </div>\n      <!-- BRR:PANEL:END -->')
-    pop = (f'    <!-- BRR:POP:START -->\n    <p class="modal-sub">Every non-fiction book reviewed in the British papers, one line each, in your inbox every Monday. '
+    pop = (f'    <!-- BRR:POP:START -->\n    <p class="modal-sub">Every book reviewed in the British papers, fiction and non-fiction, one line each, in your inbox every Monday. '
            f'This week: {n} books from {len(pubs)} publications. <a href="/reviews/">See this week&#8217;s edition</a>.</p>{pop_ex}\n    <!-- BRR:POP:END -->')
     hp = os.path.join(ROOT, "index.html")
     h = open(hp).read()
