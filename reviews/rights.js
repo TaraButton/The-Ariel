@@ -79,8 +79,14 @@
         btn.disabled = false; status.textContent = '';
         if (!res || !res.ok) { status.textContent = (res && res.message) || 'That didn’t work. Please try again.'; status.classList.add('error'); return; }
         if (res.outcome === 'upsell') {
-          var pass = modal.querySelector('[data-pass]');
-          if (res.pass_url || PASS_URL) { pass.href = res.pass_url || PASS_URL; pass.dataset.mode = 'link'; }
+          var genre = modal.querySelector('[data-pass]'), pay = modal.querySelector('[data-paycheck]'), unl = modal.querySelector('[data-unlimited]');
+          genre.href = res.genre_url || PASS_URL || '/genres/?from=rights'; genre.dataset.mode = 'link';
+          genre.closest('.upsell-opt').hidden = !res.genre_url && !!res.trial_cap;
+          if (res.check_url) { pay.href = res.check_url; pay.closest('.upsell-opt').hidden = false; } else { pay.closest('.upsell-opt').hidden = true; }
+          if (res.pass_url) { unl.href = res.pass_url; unl.closest('.upsell-opt').hidden = false; } else { unl.closest('.upsell-opt').hidden = true; }
+          var h = modal.querySelector('[data-pane=upsell] h2'), intro = modal.querySelector('[data-pane=upsell] .upsell-intro');
+          if (res.trial_cap) { h.textContent = 'You’ve used the ' + (res.trial_checks || 3) + ' checks in your free month'; intro.textContent = 'Keep your Ariel for unlimited checks, or pay for this one.'; }
+          else { h.textContent = 'You’ve used your free rights check'; intro.textContent = 'Three ways to keep checking rights on ' + current.book + ' and every book in the Review.'; }
           pane('upsell');
         } else if (res.outcome === 'pass_interest') { pane('pass'); }
         else if (res.outcome === 'answered') { pane('answered'); }
@@ -91,9 +97,11 @@
   }
   form.addEventListener('submit', function (e) { e.preventDefault(); submit(); });
   modal.querySelector('[data-pass]').addEventListener('click', function (e) {
-    if (this.dataset.mode === 'link') { beacon({ book_id: current.id, kind: 'pass_click', where: 'page' }); return; }
+    if (this.dataset.mode === 'link') { beacon({ book_id: current.id, kind: 'genre_click', where: 'page' }); return; }
     e.preventDefault(); pane('form'); submit('pass');
   });
+  modal.querySelector('[data-paycheck]').addEventListener('click', function () { beacon({ book_id: current.id, kind: 'paycheck_click', where: 'page' }); });
+  modal.querySelector('[data-unlimited]').addEventListener('click', function () { beacon({ book_id: current.id, kind: 'unlimited_click', where: 'page' }); });
 
   // Rights already confirmed (agent said yes and agreed to show it)
   fetch(ENDPOINT + '?action=rights_status').then(function (r) { return r.json(); }).then(function (res) {

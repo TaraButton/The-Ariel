@@ -25,9 +25,15 @@ var OUTBOX_HEADERS = ['id', 'queued_at', 'send_after', 'status', 'to', 'cc', 'su
 var RIGHTS_CFG = {
   HOLD_MIN: 30,
   OUTBOX_DAILY_CAP: 40,
-  PASS_PRICE: 'folded into Ariel Genres: free month, then £29 a month for one genre',
+  CHECK_PRICE: 5,            // GBP, one rights check, one-off (Stripe product "Rights check (one book)")
+  PASS_PRICE_NUM: 15,        // GBP a month, unlimited checks (Stripe product "Unlimited rights checks")
+  PASS_PRICE: '£15 a month',
+  TRIAL_CHECKS: 3,           // rights checks included in a free Ariel Genres month
+  GUARANTEE_DAYS: 14,        // calendar days (~10 working): a paid check with no answer by then is credited back
   ANSWER_PROMISE: 'within a working day'
 };
+var RIGHTS_CHECK_URL_NOTE = 'Stripe payment link, ONE-OFF £5: product "Rights check (one book)". Blank = the £5 option is hidden.';
+var RIGHTS_PASS_URL_NOTE = 'Stripe payment link, MONTHLY £15: product "Unlimited rights checks". Blank = the £15 option is hidden.';
 
 var RIGHTS_STATUS_TEXT = {
   available: 'Screen rights are available',
@@ -52,9 +58,8 @@ function setupRights_() {
   if (secret && !findRow_(cfg, 1, 'admin_secret')) {
     cfg.appendRow(['admin_secret', secret, 'Used by Claude’s weekly and daily runs. Keep this sheet private.']);
   }
-  if (!findRow_(cfg, 1, 'rights_pass_url')) {
-    cfg.appendRow(['rights_pass_url', '', 'Stripe payment link for the Rights Pass. Leave blank until it exists.']);
-  }
+  if (!findRow_(cfg, 1, 'rights_pass_url')) cfg.appendRow(['rights_pass_url', '', RIGHTS_PASS_URL_NOTE]);
+  if (!findRow_(cfg, 1, 'rights_check_url')) cfg.appendRow(['rights_check_url', '', RIGHTS_CHECK_URL_NOTE]);
   ensureTriggers_();
 }
 
@@ -126,54 +131,142 @@ function checkRights_(b) {
   try {
     var req = sheet_('Requests');
     var tier = memberType_(email);
+    var capped = false;
+    var data = req.getDataRange().getValues();
+    if (tier === 'genre' && genrePlanOf_(email) === 'trial') {
+      // a free Ariel Genres month includes TRIAL_CHECKS rights checks
+      var since = Date.now() - 31 * 86400000, used = 0;
+      for (var i = 1; i < data.length; i++) if (String(data[i][3]).toLowerCase() === email && data[i][7] === 'genre' && data[i][8] !== 'upsell_shown' && new Date(data[i][0]).getTime() > since) used++;
+      if (used >= RIGHTS_CFG.TRIAL_CHECKS) { tier = 'upsell'; capped = true; }
+    }
     if (!tier) {
-      var data = req.getDataRange().getValues();
-      var usedFree = data.some(function (r, i) { return i > 0 && String(r[3]).toLowerCase() === email && r[7] === 'free'; });
-      tier = usedFree ? 'upsell' : 'free';
+      var usedFree = 0, credits = 0;
+      for (var j = 1; j < data.length; j++) {
+        if (String(data[j][3]).toLowerCase() !== email) continue;
+        if (data[j][7] === 'free') usedFree++;
+        if (data[j][8] === 'credited') credits++;
+      }
+      tier = usedFree < 1 + credits ? 'free' : 'upsell';
     }
     if (wantsPass) tier = 'pass_interest';
 
     var now = new Date();
     var status = (tier === 'upsell') ? 'upsell_shown' : (tier === 'pass_interest' ? 'pass_interest' : 'open');
     req.appendRow([now, bookId, bookTitle, email, name, company, role, tier, status, '', String(b.source || 'page').slice(0, 20), String(b.edition_id || '').slice(0, 12)]);
+    var reqRow = req.getLastRow();
     logClick_({ book_id: bookId, kind: tier === 'upsell' ? 'check_rights_upsell' : 'check_rights', where: b.source || 'page', edition_id: b.edition_id, t: b.t });
 
     if (tier === 'upsell') {
-      return { ok: true, outcome: 'upsell', pass_url: '/genres/?from=rights' };  // Rights Pass folded into Ariel Genres (4 Nov)
+      var ref = 'r' + reqRow + '-' + shortHash_(email + bookId).slice(0, 8);
+      return { ok: true, outcome: 'upsell', trial_cap: capped,
+        genre_url: capped ? '' : '/genres/?from=rights',
+        check_url: payLink_(cfgValue_('rights_check_url'), email, ref),
+        pass_url: payLink_(cfgValue_('rights_pass_url'), email, ref),
+        price_check: RIGHTS_CFG.CHECK_PRICE, price_pass: RIGHTS_CFG.PASS_PRICE_NUM, trial_checks: RIGHTS_CFG.TRIAL_CHECKS };
     }
     if (tier === 'pass_interest') {
-      alertTara_('[Review of Reviews] Rights Pass interest: ' + email,
+      alertTara_('[Review of Reviews] Unlimited rights checks interest: ' + email,
         email + (name ? ' (' + name + (company ? ', ' + company : '') + ')' : '') + ' asked for unlimited rights checks (' + RIGHTS_CFG.PASS_PRICE +
-        ').\nBook they were checking: ' + bookTitle + '\nPoint them at theariel.tv/genres (free month, no card).');
+        ').\nBook they were checking: ' + bookTitle + '\nNo Stripe link is set in Config (rights_pass_url), so please send them one by email.');
       return { ok: true, outcome: 'pass_interest' };
     }
-
-    // Accepted (free first check, member or pass holder)
-    var rr = rightsRow_(bookId);
-    var known = rr.row ? String(cell_(rr.sh, rr.row, 'status') || '') : '';
-    if (!rr.row) {
-      rr.sh.appendRow([bookId, bookTitle, String(b.author || '').slice(0, 120), '', '', '', '', '', '', 'unknown', '', '', '', '', 'Created by a Check Rights request']);
-    }
-    if (['available', 'optioned', 'not_available', 'handled_elsewhere'].indexOf(known) >= 0) {
-      sendRightsAnswer_(email, name, bookTitle, rr.sh, rr.row, tier);
-      req.getRange(req.getLastRow(), 9, 1, 2).setValues([['answered', now]]);
-      return { ok: true, outcome: 'answered' };
-    }
-    if (rr.row && contactOf_(rr.sh, rr.row)) {
-      sendRightsContact_(email, name, bookTitle, rr.sh, rr.row, tier);
-      req.getRange(req.getLastRow(), 9, 1, 2).setValues([['contact_sent', now]]);
-      alertTara_('[Review of Reviews] Rights check: ' + bookTitle,
-        (name || email) + (company ? ' (' + company + ')' : '') + (role ? ', ' + role : '') + ' asked about screen rights to "' + bookTitle +
-        '".\nTier: ' + tier + '\nThey were sent the agent contact details instantly. The daily rights run will ask the agent for the rights status.');
-      return { ok: true, outcome: 'contact' };
-    }
-    sendRightsAck_(email, name, bookTitle, tier);
-    alertTara_('[Review of Reviews] Rights check: ' + bookTitle,
-      (name || email) + (company ? ' (' + company + ')' : '') + (role ? ', ' + role : '') + ' asked about screen rights to "' + bookTitle +
-      '".\nTier: ' + tier + '\nNo agent contact on file yet. The daily rights run must find the agent today; the backend then emails them automatically.');
-    return { ok: true, outcome: 'accepted', tier: tier };
+    return fulfilRequest_(reqRow, email, name, company, role, bookId, bookTitle, String(b.author || ''), tier);
   } finally {
     lock.releaseLock();
+  }
+}
+
+/* Stripe payment link with the buyer's email prefilled and our reference attached. */
+function payLink_(url, email, ref) {
+  if (!url) return '';
+  var sep = url.indexOf('?') >= 0 ? '&' : '?';
+  return url + sep + 'prefilled_email=' + encodeURIComponent(email) + '&client_reference_id=' + encodeURIComponent(ref);
+}
+
+/* The GenreSubs plan for an email ('trial' | 'paid' | 'comp' | '' ). Lives in Genres.js's tab; tolerant if it is missing. */
+function genrePlanOf_(email) {
+  try {
+    var f = gSubRow_('email', String(email || '').toLowerCase());
+    return f.row ? String(gSub_(f.sh, f.row).plan || '') : '';
+  } catch (e) { return ''; }
+}
+
+/* Runs an accepted rights check (free first check, member, genre, pass or paid): answers instantly when we already
+   know, sends the agent contact when we have it, otherwise acknowledges and leaves the request open for the rights run. */
+function fulfilRequest_(reqRow, email, name, company, role, bookId, bookTitle, author, tier) {
+  var req = sheet_('Requests');
+  var now = new Date();
+  var rr = rightsRow_(bookId);
+  var known = rr.row ? String(cell_(rr.sh, rr.row, 'status') || '') : '';
+  if (!rr.row) {
+    rr.sh.appendRow([bookId, bookTitle, String(author || '').slice(0, 120), '', '', '', '', '', '', 'unknown', '', '', '', '', 'Created by a Check Rights request']);
+  }
+  if (['available', 'optioned', 'not_available', 'handled_elsewhere'].indexOf(known) >= 0) {
+    sendRightsAnswer_(email, name, bookTitle, rr.sh, rr.row, tier);
+    req.getRange(reqRow, 9, 1, 2).setValues([['answered', now]]);
+    return { ok: true, outcome: 'answered' };
+  }
+  if (rr.row && contactOf_(rr.sh, rr.row)) {
+    sendRightsContact_(email, name, bookTitle, rr.sh, rr.row, tier);
+    req.getRange(reqRow, 9, 1, 2).setValues([['contact_sent', now]]);
+    alertTara_('[Review of Reviews] Rights check: ' + bookTitle,
+      (name || email) + (company ? ' (' + company + ')' : '') + (role ? ', ' + role : '') + ' asked about screen rights to "' + bookTitle +
+      '".\nTier: ' + tier + '\nThey were sent the agent contact details instantly. The daily rights run will ask the agent for the rights status.');
+    return { ok: true, outcome: 'contact' };
+  }
+  sendRightsAck_(email, name, bookTitle, tier);
+  alertTara_('[Review of Reviews] Rights check: ' + bookTitle,
+    (name || email) + (company ? ' (' + company + ')' : '') + (role ? ', ' + role : '') + ' asked about screen rights to "' + bookTitle +
+    '".\nTier: ' + tier + '\nNo agent contact on file yet. The daily rights run must find the agent today; the backend then emails them automatically.');
+  return { ok: true, outcome: 'accepted', tier: tier };
+}
+
+/* Hourly (called from genreTick): match Stripe receipts for the £5 check and the £15 unlimited plan, then
+   credit back paid checks that have had no answer within GUARANTEE_DAYS. */
+function rightsPaymentsTick_() {
+  var label = GmailApp.getUserLabelByName('ariel-rights-seen') || GmailApp.createLabel('ariel-rights-seen');
+  var threads = GmailApp.search('from:(stripe.com) newer_than:4d -label:ariel-rights-seen', 0, 30);
+  var req = sheet_('Requests');
+  threads.forEach(function (t) {
+    t.getMessages().forEach(function (m) {
+      var body = (m.getPlainBody() || '') + ' ' + m.getSubject();
+      var low = body.toLowerCase();
+      var unlimited = low.indexOf('unlimited rights checks') >= 0 && new RegExp('£\\s?' + RIGHTS_CFG.PASS_PRICE_NUM + '(\\.00)?\\b').test(body);
+      var single = !unlimited && low.indexOf('rights check') >= 0 && new RegExp('£\\s?' + RIGHTS_CFG.CHECK_PRICE + '(\\.00)?\\b').test(body);
+      if (!unlimited && !single) return;
+      var v = req.getDataRange().getValues();
+      var seen = {};
+      for (var i = v.length - 1; i >= 1; i--) {
+        var em = String(v[i][3]).toLowerCase();
+        if (!em || low.indexOf(em) < 0 || v[i][8] !== 'upsell_shown') continue;
+        if (Date.now() - new Date(v[i][0]).getTime() > 7 * 86400000) continue;
+        if (single && seen[em]) continue;  // one £5 payment pays for the most recent request only
+        seen[em] = true;
+        var tier = unlimited ? 'pass' : 'paid';
+        req.getRange(i + 1, 8, 1, 2).setValues([[tier, 'open']]);
+        if (unlimited) upsertMember_(em, 'pass', new Date(Date.now() + 31 * 86400000), 'Unlimited rights checks £' + RIGHTS_CFG.PASS_PRICE_NUM);
+        try { fulfilRequest_(i + 1, em, v[i][4], v[i][5], v[i][6], v[i][1], v[i][2], '', tier); } catch (e) { log_('error', 'fulfil paid ' + em + ': ' + e); }
+        alertTara_('[Review of Reviews] Payment matched: ' + em, 'Stripe email "' + m.getSubject() + '" matched ' + em + ': ' + (unlimited ? 'unlimited rights checks for a month' : 'one £' + RIGHTS_CFG.CHECK_PRICE + ' rights check') + ' on "' + v[i][2] + '".');
+      }
+      if (unlimited && !Object.keys(seen).length) {
+        // renewal or a purchase with no open request: extend membership for whoever's email is in the receipt
+        var ms = sheet_('Members'), mv = ms.getDataRange().getValues();
+        for (var k = 1; k < mv.length; k++) if (mv[k][1] === 'pass' && low.indexOf(String(mv[k][0]).toLowerCase()) >= 0) upsertMember_(mv[k][0], 'pass', new Date(Date.now() + 31 * 86400000), 'Unlimited rights checks £' + RIGHTS_CFG.PASS_PRICE_NUM);
+      }
+    });
+    t.addLabel(label);
+  });
+  // Guarantee: a paid check with no answer after GUARANTEE_DAYS is credited back (their next check is free)
+  var w = req.getDataRange().getValues();
+  for (var r = 1; r < w.length; r++) {
+    if (w[r][7] !== 'paid' || (w[r][8] !== 'open' && w[r][8] !== 'contact_sent')) continue;
+    if (Date.now() - new Date(w[r][0]).getTime() < RIGHTS_CFG.GUARANTEE_DAYS * 86400000) continue;
+    req.getRange(r + 1, 9).setValue('credited');
+    try {
+      sendBranded_(w[r][3], 'Your rights check on ' + w[r][2], 'Your next check is on us',
+        (w[r][4] ? 'Hello ' + esc_(w[r][4]) + ',<br><br>' : '') + 'We haven’t yet had an answer from the agent about <b>' + esc_(w[r][2]) + '</b>, so your next rights check on the London Review of Reviews is free. We’ll still email you the moment we hear.');
+    } catch (e) { log_('error', 'credit email ' + w[r][3] + ': ' + e); }
+    alertTara_('[Review of Reviews] Paid check credited back: ' + w[r][3], 'No answer after ' + RIGHTS_CFG.GUARANTEE_DAYS + ' days on "' + w[r][2] + '". Their next check is free.');
   }
 }
 
@@ -181,9 +274,10 @@ function sendRightsAck_(email, name, bookTitle, tier) {
   var body = (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
     'Thanks for asking about the screen rights to <b>' + esc_(bookTitle) + '</b>. We’re tracking down who represents the author and will email you their contact details, ' +
     'with the rights status if we have it, ' + RIGHTS_CFG.ANSWER_PROMISE + '.<br><br>' +
-    (tier === 'free' ? 'This is your free rights check from the London Review of Reviews. ' +
-      'Ariel members get unlimited rights checks and introductions to agents, plus a first look at rights-available books sent to us directly by literary agents. ' +
-      '<a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">See what The Ariel does</a>.<br><br>' : '') +
+    (tier === 'free' ? 'This is your free rights check from the London Review of Reviews. After this, checks are £' + RIGHTS_CFG.CHECK_PRICE + ' each or ' + RIGHTS_CFG.PASS_PRICE + ' for unlimited checks. ' +
+      'Or start a free month of Ariel Genres, which includes ' + RIGHTS_CFG.TRIAL_CHECKS + ' checks and a daily email of stories with screen potential: ' +
+      '<a href="https://theariel.tv/genres/?from=rights" style="color:' + C.goldDeep + ';">theariel.tv/genres</a>.<br><br>' : '') +
+    (tier === 'paid' ? 'This check is paid for. If we can’t get you an answer within two weeks, your next check is free.<br><br>' : '') +
     'If you’d like us to introduce you to the agent, just reply to this email.';
   sendBranded_(email, 'Screen rights: ' + bookTitle, 'Checking the rights', body);
 }

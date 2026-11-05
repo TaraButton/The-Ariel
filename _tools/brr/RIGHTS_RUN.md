@@ -74,7 +74,7 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    "Two of our producers..."); otherwise lead with "We're finding out the film rights status of the books in this week's London Review of
    Reviews for the producers we work with, and <book> is one of them." Never use "readers".
    See agent_email_template.md. One line back is plenty.
-   For `pass_interest` requests: tell Tara and point the person at theariel.tv/genres (the Rights Pass was retired 5 Nov 2026; unlimited checks now come with Ariel Genres, free month then GBP 29 + 10 per extra genre, and with any own Ariel).
+   For `pass_interest` requests (only when Config rights_pass_url is blank): tell Tara so she can send a payment link by hand.
 3b. **Use the guides first.** Before asking an agent about a book, check lists.json. If the book is in
    that agency's guide, set_rights from the guide and do not email them. If the agency has a guide but the
    book is not in it, the email asks only "Is <Book> on your current rights guide?".
@@ -96,10 +96,14 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    the guide says film/TV rights are available).
 4. **Chasers.** Books with status `asked` and `asked_at` more than 10 working days ago and an open
    request: queue one short, friendly chaser. Never more than one chaser per agency per book.
-5. **Paid members.** The Rights Pass was retired on 5 Nov 2026 (its Stripe link is unused; do not add `pass` members).
-   Ariel Genres subscribers are added to Members automatically by the Genres backend (type `genre`), and own-Ariel
-   clients are added by hand with `op: add_member`, type `member`, when Tara onboards them. Nothing to do here unless
-   Tara asks.
+5. **Paid rights checks (automatic since 5 Nov 2026).** Non-members get one free check, then £5 a check (one-off) or
+   £15 a month unlimited (Members type `pass`); a free Ariel Genres month includes 3 checks, paid Genres and own-Ariel
+   clients unlimited. Stripe receipts are matched hourly by `rightsPaymentsTick_` (Rights.js): a matched £5 sets the
+   most recent `upsell_shown` request to tier `paid`, status `open`, and runs it; a matched £15 adds/extends the `pass`
+   member and runs their open requests. Paid checks with no answer after 14 days are set to `credited` automatically
+   and the person is told their next check is free. Nothing to do here except: treat `paid` and `pass` requests as
+   P1 when asking agents (answer promise is strongest for them), and if a `pass_interest` row appears (no Stripe
+   link in Config yet) email the person a link by hand.
 5b. **Guide refresh.** On the first weekday of each month: for every agency in lists.json whose guide is
    more than 3 months old and whose `last_refresh_asked` is empty or more than 3 months ago, queue the
    `list_refresh` note and set `last_refresh_asked`. Never more than once a quarter per agency.

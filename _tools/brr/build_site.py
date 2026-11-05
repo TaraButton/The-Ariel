@@ -201,6 +201,8 @@ ol{list-style:none;margin:0;padding:0}
 .upsell-opt.best{border-color:var(--gold);background:var(--tint)}
 .upsell-opt h3{margin:0 0 6px;font-size:20px;color:var(--ink)}
 .upsell-opt ul{margin:0 0 14px;padding-left:20px}
+.upsell-opt p{margin:0 0 12px;font-size:16px}
+.rights-modal .small{font-size:15px;color:var(--muted)}
 .upsell-tag{display:inline-block;background:var(--gold);color:var(--ink);font-size:13px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin:0 0 8px!important}
 .as-link{display:inline-block;text-decoration:none;text-align:center}
 .brr-ghost{display:inline-block;min-height:48px;padding:12px 20px;border:2px solid var(--ink);color:var(--ink);font-weight:900;text-decoration:none;border-radius:3px}
@@ -393,7 +395,7 @@ def page(ed, eds, is_index):
       <h2 id="rights-title">Check the screen rights</h2>
       <p class="rights-book"><span data-fill="book"></span></p>
       <p>We&#8217;ll email you the film and TV rights status and the contact details for the author&#8217;s agent, as far as we have them. Depending on what we already know, that&#8217;s anywhere from instant to a day or so. If you&#8217;d like an introduction, we can make it.</p>
-      <p class="rights-free"><b>Your first rights check is free.</b> Ariel members get unlimited checks: just use the email address your Ariel emails come to. No password needed.</p>
+      <p class="rights-free"><b>Your first rights check is free.</b> After that, &#163;5 a check or &#163;15 a month for unlimited. Ariel members and Genre readers: just use the email address your Ariel emails come to. No password needed.</p>
       <form novalidate>
         <label for="rq-email">Your email <span class="req">*</span></label>
         <input type="email" id="rq-email" name="email" required autocomplete="email" placeholder="We&#8217;ll email you the answer">
@@ -419,18 +421,24 @@ def page(ed, eds, is_index):
     </div>
     <div data-pane="upsell" hidden>
       <h2>You&#8217;ve used your free rights check</h2>
-      <p>Keep checking rights on <b data-fill="book"></b> and every book in the Review with either of these.</p>
+      <p class="upsell-intro">Three ways to keep checking rights on <b data-fill="book"></b> and every book in the Review.</p>
       <div class="upsell-opt best">
         <p class="upsell-tag">Free for 30 days</p>
         <h3>Try Ariel Genres</h3>
-        <ul><li>Unlimited rights checks on every book in the Review</li><li>A daily email of stories with screen potential in up to two genres of your choice, plus rights-available books straight from literary agents</li><li>No card. Then &#163;29 a month for one genre, &#163;10 for each extra. Cancel any time</li></ul>
+        <ul><li>Three rights checks in your free month, unlimited once you keep it</li><li>A daily email of stories with screen potential in up to two genres of your choice, plus rights-available books straight from literary agents</li><li>No card. Then &#163;29 a month for one genre, &#163;10 for each extra</li></ul>
         <a class="brr-submit as-link" href="/genres/?from=rights" data-pass>Start my free month</a>
       </div>
       <div class="upsell-opt">
-        <h3>Your own Ariel</h3>
-        <ul><li>Everything above, built around your slate and commissioners, and it learns from what you save</li><li>Research briefs on any story and colleagues copied in</li><li>&#163;75 a month at the founding rate, no setup fee, cancel any time</li></ul>
-        <a class="brr-ghost" href="/#book">Apply to join The Ariel</a>
+        <h3>Just this book: &#163;5</h3>
+        <p>One rights check, paid once. If we can&#8217;t get you an answer within two weeks, your next check is free.</p>
+        <a class="brr-ghost" href="#" data-paycheck rel="noopener">Pay &#163;5 for this check</a>
       </div>
+      <div class="upsell-opt">
+        <h3>Unlimited rights checks: &#163;15 a month</h3>
+        <p>Every book in every edition of the Review, cancel any time. No feed, just the answers.</p>
+        <a class="brr-ghost" href="#" data-unlimited rel="noopener">Unlimited for &#163;15 a month</a>
+      </div>
+      <p class="small" style="margin-top:14px">Want an Ariel built around your own slate, with unlimited checks and research briefs? <a href="/#book">Apply to join The Ariel</a>.</p>
     </div>
     <div data-pane="pass" hidden>
       <h2>Thank you</h2>

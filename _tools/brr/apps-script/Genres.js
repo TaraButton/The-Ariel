@@ -706,6 +706,7 @@ function genreTick() {
   try {
     ensureGenres_();
     try { detectStripePayments_(); } catch (err) { log_('error', 'stripe scan: ' + err); }
+    try { rightsPaymentsTick_(); } catch (err) { log_('error', 'rights payments: ' + err); }
     var sh = genreSheet_('GenreSubs');
     var last = sh.getLastRow();
     if (last < 2) return;
@@ -866,7 +867,7 @@ function sendGenreLink_(s, kind) {
     (welcome && s.firstOn && s.firstOn.length ? 'You’re the first to choose ' + esc_(s.firstOn.map(gName_).join(' and ')) + ', so we’re switching ' + (s.firstOn.length > 1 ? 'them' : 'it') + ' on for you now: the first stories arrive tomorrow morning.<br><br>' : '') +
     (welcome ? 'From tomorrow morning you’ll get a short email of the best new stories in your genres: books, investigations and true stories with screen potential, plus rights-available titles sent to us directly by literary agents. ' +
       'Save what interests you and skip what doesn’t, from the email or the dashboard.<br><br>' +
-      'Your trial is free for ' + GENRE_CFG.TRIAL_DAYS + ' days, with no card. It also gives you unlimited rights checks on the London Review of Reviews.' : ''));
+      'Your trial is free for ' + GENRE_CFG.TRIAL_DAYS + ' days, with no card. It also includes three rights checks on the London Review of Reviews (unlimited once you keep your Ariel).' : ''));
   var html = gShell_('The Ariel &middot; Genres', welcome ? 'Your Ariel is ready' : 'Your Ariel link', inner,
     'The link is personal to you: anyone with it can see your feed. You’re getting this because someone (we hope you) signed up at theariel.tv/genres. If it wasn’t you, ignore this email and nothing will happen.');
   genreMail_(s.email, welcome ? 'Your Ariel is ready: ' + names : 'Your Ariel link', html,
