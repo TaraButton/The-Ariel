@@ -95,7 +95,10 @@ body.mode-fiction{--ivory:#F7ECE9;--tint:#F2DEDA;--gold:#8A2F3A;--gold-deep:#5E1
 .modebar .ficdot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#8A2F3A;margin-right:7px;vertical-align:1px}
 .chipgroup{display:block;width:100%;font-size:13px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:6px 0 0}
 .chipgroup.fic{color:#8A2F3A}
-body.mode-fiction .cta a,body.mode-fiction .brr-submit,body.mode-fiction .free-badge,body.mode-fiction .tog.on{color:#FFFFFF}
+body.mode-fiction .cta a,body.mode-fiction .brr-submit,body.mode-fiction .free-badge,body.mode-fiction .skip,body.mode-fiction .upsell-tag,body.mode-fiction .brr-ghost:hover{color:#FFFFFF}
+body.mode-fiction .brr-submit:hover,body.mode-fiction .cta a:hover{background:#5E1F28;color:#FFFFFF}
+body.mode-fiction .why{border-left-color:#8A2F3A}
+body.mode-fiction a{color:#5E1F28}
 a{color:var(--gold-deep);text-underline-offset:2px}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;font-weight:700;z-index:10}
