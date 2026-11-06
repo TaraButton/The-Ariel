@@ -260,7 +260,9 @@ function prefsPage_(token) {
   if (!row) return { title: 'Link not recognised', body: '<p>Please use the link in your latest email.</p>' };
   var current = String(cell_(sh, row, 'subjects')).split(/\s*,\s*/);
   var boxes = SUBJECTS.map(function (s) {
-    return '<label class="chk"><input type="checkbox" name="s" value="' + esc_(s) + '"' +
+    return (s === SUBJECTS[0] ? '<p style="margin:14px 0 4px;font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#454D60;">Non-fiction</p>' : '') +
+      (s === FICTION_SUBJECTS[0] ? '<p style="margin:14px 0 4px;font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#8A2F3A;">Fiction</p>' : '') +
+      '<label class="chk"><input type="checkbox" name="s" value="' + esc_(s) + '"' +
       (current.indexOf(s) >= 0 ? ' checked' : '') + '> ' + esc_(s) + '</label>';
   }).join('');
   return {
@@ -501,6 +503,11 @@ function aliasOk_() {
 
 var C = { ink: '#1B1F3B', ivory: '#F8F5F0', cream: '#FFFFFF', gold: '#B8965A', goldDeep: '#6E5428',
   mist: '#454D60', line: '#CFC9BE', body: '#1E2233', tint: '#F4ECDD' };
+var C_FIC = { ivory: '#F7ECE9', tint: '#F2DEDA', gold: '#8A2F3A', goldDeep: '#5E1F28', line: '#D9C3C0', goldLight: '#D9A6AC' };
+var FICTION_SUBJECTS = ['Crime & thriller fiction', 'Literary fiction', 'Historical fiction', 'Other fiction'];
+function fictionOnly_(subjects) {
+  return !!(subjects && subjects.length && subjects.every(function (s) { return FICTION_SUBJECTS.indexOf(s) >= 0; }));
+}
 var SERIF = "'Cormorant Garamond', Georgia, 'Times New Roman', serif";
 var SANS = "Lato, 'Helvetica Neue', Arial, sans-serif";
 
@@ -515,25 +522,29 @@ function picksFor_(ed, subjects) {
 
 function renderEmail_(ed, sub, isWelcome) {
   var picks = picksFor_(ed, sub.subjects);
+  var fic = fictionOnly_(sub.subjects);
+  var P = fic ? { ivory: C_FIC.ivory, tint: C_FIC.tint, gold: C_FIC.gold, goldDeep: C_FIC.goldDeep, line: C_FIC.line, goldLight: C_FIC.goldLight }
+              : { ivory: C.ivory, tint: C.tint, gold: C.gold, goldDeep: C.goldDeep, line: C.line, goldLight: '#E2C891' };
+  var order = fic ? FICTION_SUBJECTS.concat(SUBJECTS.filter(function (s) { return FICTION_SUBJECTS.indexOf(s) < 0; })) : SUBJECTS;
   var dateLabel = ed.date_label || ed.edition_id;
   var n = ed.books.length;
   var subject = CONFIG.NAME + ' - ' + dateLabel + ': ' + n + ' books' +
     (picks.mine ? ', ' + picks.books.length + ' picked for you' : '');
   var unsub = sub.token ? webUrl_() + '?action=unsubscribe&t=' + encodeURIComponent(sub.token) : CONFIG.SITE;
   var prefs = sub.token ? webUrl_() + '?action=prefs&t=' + encodeURIComponent(sub.token) : CONFIG.SITE;
-  var webVersion = CONFIG.SITE + (ed.edition_id ? ed.edition_id + '.html' : '');
+  var webVersion = CONFIG.SITE + (ed.edition_id ? ed.edition_id + '.html' : '') + (fic ? '?view=fiction' : '');
 
   var h = [];
   h.push('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
     '<meta name="color-scheme" content="light"><title>' + esc_(subject) + '</title></head>');
-  h.push('<body style="margin:0;padding:0;background-color:' + C.ivory + ';" bgcolor="' + C.ivory + '">');
+  h.push('<body style="margin:0;padding:0;background-color:' + P.ivory + ';" bgcolor="' + P.ivory + '">');
   h.push('<div style="display:none;max-height:0;overflow:hidden;">' + esc_(ed.preheader || ('Every book reviewed, fiction and non-fiction, in the British papers this week, one line each.')) + '</div>');
-  h.push('<div role="main" aria-label="' + CONFIG.NAME + '"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + C.ivory + '" style="background-color:' + C.ivory + ';"><tr><td align="center" style="padding:24px 12px;">');
+  h.push('<div role="main" aria-label="' + CONFIG.NAME + '"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + P.ivory + '" style="background-color:' + P.ivory + ';"><tr><td align="center" style="padding:24px 12px;">');
   h.push('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;">');
 
   // masthead
-  h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px 28px 22px;">' +
-    '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:#E2C891;">Free every Monday from The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
+  h.push('<tr><td bgcolor="' + C.ink + '" style="background-color:' + C.ink + ';padding:28px 28px 22px;' + (fic ? 'border-top:6px solid ' + C_FIC.gold + ';' : '') + '">' +
+    '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:' + P.goldLight + ';">' + (fic ? 'Fiction edition &middot; ' : '') + 'Free every Monday from The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
     '<h1 style="margin:10px 0 0;font-weight:normal;font-family:' + SERIF + ';font-size:36px;line-height:1.1;color:#FFFFFF;">London Review <i>of</i> Reviews</h1>' +
     '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.5;color:#E6E9F1;margin-top:10px;">Every book reviewed, fiction and non-fiction, in the week’s papers and literary magazines, one line each. ' + n + ' books this week.</div>' +
     '</td></tr>');
@@ -545,22 +556,29 @@ function renderEmail_(ed, sub, isWelcome) {
 
   // picks
   if (picks.books.length) {
-    h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:22px 28px 10px;">' +
-      '<div style="font-family:' + SANS + ';font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:' + C.goldDeep + ';font-weight:bold;">' +
+    h.push('<tr><td bgcolor="' + P.tint + '" style="background-color:' + P.tint + ';padding:22px 28px 10px;">' +
+      '<div style="font-family:' + SANS + ';font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:' + P.goldDeep + ';font-weight:bold;">' +
       (picks.mine ? '&#9733; Picked for you: ' + esc_(sub.subjects.join(', ')) : '&#9733; This week’s screen picks') + '</div>' +
       '<div style="font-family:' + SANS + ';font-size:15px;color:' + C.mist + ';margin-top:4px;">' +
       (picks.mine ? 'Books in your subjects with screen potential, and why. We haven\u2019t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">sign up to The Ariel</a>.' : 'Books with screen potential, and why. We haven\u2019t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + C.goldDeep + ';">sign up to The Ariel</a>. <a href="' + prefs + '" style="color:' + C.goldDeep + ';">Choose your subjects</a> to get your own picks.') +
       '</div></td></tr>');
     picks.books.forEach(function (b) {
-      h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:10px 28px;">' + bookBlock_(b, true, { edition_id: ed.edition_id, token: sub.token }) + '</td></tr>');
+      h.push('<tr><td bgcolor="' + P.tint + '" style="background-color:' + P.tint + ';padding:10px 28px;">' + bookBlock_(b, true, { edition_id: ed.edition_id, token: sub.token }) + '</td></tr>');
     });
-    h.push('<tr><td bgcolor="' + C.tint + '" style="background-color:' + C.tint + ';padding:6px 28px 22px;"></td></tr>');
+    h.push('<tr><td bgcolor="' + P.tint + '" style="background-color:' + P.tint + ';padding:6px 28px 22px;"></td></tr>');
   }
 
-  // full edition by subject
-  SUBJECTS.forEach(function (s) {
+  // full edition by subject (fiction-only subscribers get fiction first)
+  var lastPart = '';
+  var hasBoth = ed.books.some(function (b) { return FICTION_SUBJECTS.indexOf(b.subject) >= 0; }) && ed.books.some(function (b) { return FICTION_SUBJECTS.indexOf(b.subject) < 0; });
+  order.forEach(function (s) {
     var list = ed.books.filter(function (b) { return b.subject === s; });
     if (!list.length) return;
+    var part = FICTION_SUBJECTS.indexOf(s) >= 0 ? 'Fiction' : 'Non-fiction';
+    if (part !== lastPart && hasBoth) {
+      h.push('<tr><td bgcolor="' + (part === 'Fiction' ? C_FIC.gold : C.gold) + '" style="background-color:' + (part === 'Fiction' ? C_FIC.gold : C.gold) + ';padding:8px 28px;font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;">' + part + '</td></tr>');
+    }
+    lastPart = part;
     h.push('<tr><td bgcolor="' + C.cream + '" style="background-color:' + C.cream + ';padding:26px 28px 6px;">' +
       '<div style="font-family:' + SERIF + ';font-style:italic;font-size:24px;color:' + C.ink + ';border-bottom:2px solid ' + C.ink + ';padding-bottom:4px;">' +
       esc_(s) + ' <span style="font-family:' + SANS + ';font-style:normal;font-size:12px;color:' + C.mist + ';">' + list.length + '</span></div></td></tr>');
@@ -597,7 +615,7 @@ function renderEmail_(ed, sub, isWelcome) {
     picks.books.forEach(function (b) { t.push('* ' + b.book + (b.author ? ' - ' + b.author : '') + ': ' + b.line + (b.why ? ' Screen potential: ' + b.why : '') + ' ' + b.reviews[0].url); });
     t.push('');
   }
-  SUBJECTS.forEach(function (s) {
+  order.forEach(function (s) {
     var list = ed.books.filter(function (b) { return b.subject === s; });
     if (!list.length) return;
     t.push(s.toUpperCase());

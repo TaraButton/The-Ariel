@@ -65,9 +65,9 @@ def check(ed):
 
 
 def signup_form(fid, source):
-    chips = "".join(
-        f'<label class="brr-chip"><input type="checkbox" name="subjects" value="{E(s)}"><span>{E(s)}</span></label>'
-        for s in SUBJECTS)
+    chip = lambda s: f'<label class="brr-chip"><input type="checkbox" name="subjects" value="{E(s)}"><span>{E(s)}</span></label>'
+    chips = ('<span class="chipgroup">Non-fiction</span>' + "".join(chip(s) for s in SUBJECTS if s not in FICTION_SUBJECTS) +
+             '<span class="chipgroup fic">Fiction</span>' + "".join(chip(s) for s in FICTION_SUBJECTS))
     roles = "".join(f'<option value="{E(r)}">{E(r)}</option>' for r in ROLES)
     return f'''<form class="brr-form" id="{fid}" data-source="{E(source)}" novalidate>
   <div class="brr-row">
@@ -86,7 +86,16 @@ CSS = r"""
 :root{--ink:#1B1F3B;--logo-navy:#001733;--ivory:#F8F5F0;--paper:#FFFFFF;--gold:#B8965A;--gold-light:#E2C891;--gold-deep:#6E5428;--burgundy:#8A2F3A;--text:#1E2233;--muted:#454D60;--line:#CFC9BE;--tint:#F4ECDD;--ok:#245C36}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:'Lato',-apple-system,'Segoe UI',sans-serif;color:var(--text);background:var(--ivory);font-weight:400;line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:'Lato',-apple-system,'Segoe UI',sans-serif;color:var(--text);background:var(--ivory);font-weight:400;line-height:1.6;font-size:18px;-webkit-font-smoothing:antialiased;transition:background .35s}
+body.mode-fiction{--ivory:#F7ECE9;--tint:#F2DEDA;--gold:#8A2F3A;--gold-deep:#5E1F28;--gold-light:#D9A6AC;--line:#D9C3C0}
+.modebar{display:flex;gap:6px;background:var(--paper);border:2px solid var(--line);border-radius:6px;padding:6px;margin:0 0 18px;max-width:520px}
+.modebar button{flex:1;min-height:48px;border:0;border-radius:4px;background:transparent;font:inherit;font-weight:900;font-size:16px;color:var(--muted);cursor:pointer}
+.modebar button[aria-pressed=true]{background:var(--gold);color:#FFFFFF}
+.modebar button:focus-visible{outline:3px solid var(--gold-deep);outline-offset:2px}
+.modebar .ficdot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#8A2F3A;margin-right:7px;vertical-align:1px}
+.chipgroup{display:block;width:100%;font-size:13px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:6px 0 0}
+.chipgroup.fic{color:#8A2F3A}
+body.mode-fiction .cta a,body.mode-fiction .brr-submit,body.mode-fiction .free-badge,body.mode-fiction .tog.on{color:#FFFFFF}
 a{color:var(--gold-deep);text-underline-offset:2px}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;font-weight:700;z-index:10}
@@ -219,17 +228,34 @@ footer a{color:var(--gold-light)}
 
 FILTER_JS = r"""
 (function(){
-  var picks=[], paper='all';
+  var picks=[], paper='all', mode='both';
+  var FIC=['Crime & thriller fiction','Literary fiction','Historical fiction','Other fiction'];
+  function isFic(s){return FIC.indexOf(s)>-1;}
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+  function setMode(m,save){
+    mode=(m==='fiction'||m==='nonfiction')?m:'both';
+    document.body.classList.toggle('mode-fiction',mode==='fiction');
+    document.querySelectorAll('[data-mode]').forEach(function(b){var on=b.dataset.mode===mode;b.setAttribute('aria-pressed',on);});
+    document.querySelectorAll('[data-pick]').forEach(function(b){var f=isFic(b.dataset.pick);b.hidden=(mode==='fiction'&&!f)||(mode==='nonfiction'&&f);});
+    document.querySelectorAll('.gnav a').forEach(function(a){var f=a.dataset.fic==='1';a.hidden=(mode==='fiction'&&!f)||(mode==='nonfiction'&&f);});
+    var part=document.getElementById('fiction'); if(part) part.hidden = mode!=='both';
+    if(save) store('brr_mode',mode);
+    apply();
+  }
   function apply(){
     document.querySelectorAll('.book').forEach(function(li){
       var okPaper = paper==='all' || li.dataset.papers.split(' ').indexOf(paper)>-1;
-      li.hidden = !okPaper;
+      var f=isFic(li.dataset.subject);
+      var okMode = mode==='both' || (mode==='fiction'?f:!f);
+      li.hidden = !(okPaper && okMode);
       var picked = li.classList.contains('lead') && picks.indexOf(li.dataset.subject)>-1;
       li.classList.toggle('picked', picked);
     });
     document.querySelectorAll('.subject').forEach(function(s){
       var n=s.querySelectorAll('.book:not([hidden])').length; s.hidden=n===0; s.querySelector('.n').textContent=n;
     });
+    var mi=document.getElementById('modeinfo');
+    if(mi){ mi.hidden = !(mode==='fiction' && !document.querySelector('.book:not([hidden])')); }
     var info=document.getElementById('pickinfo');
     if(info){
       var c=document.querySelectorAll('.book.picked:not([hidden])').length;
@@ -252,7 +278,9 @@ FILTER_JS = r"""
       apply();
     });
   });
-  apply();
+  document.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.mode,true);});});
+  var q=new URLSearchParams(location.search).get('view');
+  setMode(q || store('brr_mode') || 'both', !!q);
 })();
 """
 
@@ -310,7 +338,7 @@ def edition_body(ed):
             if r["pub"] not in papers:
                 papers.append(r["pub"])
     present = [s for s in SUBJECTS if any(b["subject"] == s for b in books)]
-    gnav = "".join(f'<a href="#{slug(s)}">{E(s)}</a>' for s in present)
+    gnav = "".join(f'<a href="#{slug(s)}" data-fic="{1 if s in FICTION_SUBJECTS else 0}">{E(s)}</a>' for s in present)
     pick_btns = "".join(f'<button type="button" class="tog" data-pick="{E(s)}" aria-pressed="false">{E(s)}</button>' for s in present)
     paper_btns = '<button type="button" class="tog on" data-paper="all" aria-pressed="true">All papers</button>' + "".join(
         f'<button type="button" class="tog" data-paper="{slug(p)}" aria-pressed="false">{E(p)}</button>' for p in papers)
@@ -324,7 +352,13 @@ def edition_body(ed):
         lst.sort(key=lambda b: (not b.get("lead"), best_verdict(b), -len(b["reviews"])))
         secs.append(f'<section class="subject" id="{slug(s)}"><header><h2>{E(s)}</h2><span class="n">{len(lst)}</span></header>'
                     f'<ol>{"".join(book_li(b) for b in lst)}</ol></section>')
-    return f'''<div class="controls">
+    return f'''<div class="modebar" role="group" aria-label="Show fiction, non-fiction or both">
+  <button type="button" data-mode="nonfiction" aria-pressed="false">Non-fiction</button>
+  <button type="button" data-mode="fiction" aria-pressed="false"><span class="ficdot" aria-hidden="true"></span>Fiction</button>
+  <button type="button" data-mode="both" aria-pressed="true">Both</button>
+</div>
+<p class="pickinfo" id="modeinfo" hidden>No fiction reviews in this edition. Fiction joined the Review on 9 November 2026; choose Both to see this week&#8217;s non-fiction.</p>
+<div class="controls">
   <div class="crow" role="group" aria-labelledby="lbl-pick"><span class="lbl" id="lbl-pick">Show the books with screen potential for what I develop</span>{pick_btns}</div>
   <p class="pickinfo" id="pickinfo"></p>
   <div class="crow" role="group" aria-labelledby="lbl-paper"><span class="lbl" id="lbl-paper">Filter by paper</span>{paper_btns}</div>
