@@ -244,6 +244,8 @@ FILTER_JS = r"""
     document.querySelectorAll('[data-pick]').forEach(function(b){var f=isFic(b.dataset.pick);b.hidden=(mode==='fiction'&&!f)||(mode==='nonfiction'&&f);});
     document.querySelectorAll('.gnav a').forEach(function(a){var f=a.dataset.fic==='1';a.hidden=(mode==='fiction'&&!f)||(mode==='nonfiction'&&f);});
     var part=document.getElementById('fiction'); if(part) part.hidden = mode!=='both';
+    document.querySelectorAll('.brr-chip').forEach(function(l){var inp=l.querySelector('input');var f=isFic(inp.value);var hide=(mode==='fiction'&&!f)||(mode==='nonfiction'&&f);l.hidden=hide;if(hide)inp.checked=false;});
+    document.querySelectorAll('.chipgroup').forEach(function(g){var f=g.classList.contains('fic');g.hidden=(mode==='fiction'&&!f)||(mode==='nonfiction'&&f)||mode!=='both';});
     if(save) store('brr_mode',mode);
     apply();
   }
