@@ -4877,5 +4877,542 @@
   ],
   "last_refresh_asked": "",
   "note": "Loaded by the rights run 2026-11-05 from the public TV & Film page. status: available = listed under 'Rights available' with no producer; optioned = under 'Recent Options' or marked 'to <producer>'; option_lapsed = under 'Options that have lapsed' only (not stated available). No agency email recorded in agencies.json."
+ },
+ {
+  "agency": "DHH Literary Agency",
+  "domain": "dhhliteraryagency.com",
+  "contact_email": "",
+  "received": "2026-11-06",
+  "source": "https://www.dhhliteraryagency.com/s/RIGHTS-GUIDE.pdf",
+  "file": "https://www.dhhliteraryagency.com/s/RIGHTS-GUIDE.pdf",
+  "kind": "film/TV (published PDF rights guide, undated, titles to 2027)",
+  "titles": [
+   {
+    "book": "The Blackbird Conspiracy",
+    "author": "Tariq Ashkanani",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Crime & Thriller)"
+   },
+   {
+    "book": "The Last Tenant",
+    "author": "Eva Björg Ægisdóttir",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "Split Second",
+    "author": "R. C. Bridgestock",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "The After Witness",
+    "author": "Gareth Brown",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Crime & Thriller)"
+   },
+   {
+    "book": "Crash And Burn",
+    "author": "Alison Bruce",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Crime & Thriller)"
+   },
+   {
+    "book": "Bad Influence",
+    "author": "Will Carver",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "Eden Falls",
+    "author": "Ajay Chowdhury",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "She Is Lying",
+    "author": "Caroline Corcoran",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Diana Beaumont (Crime & Thriller)"
+   },
+   {
+    "book": "101 Ways To Die In New York",
+    "author": "M. W. Craven",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "The Killer’S Mark",
+    "author": "M. W. Craven",
+    "status": "optioned",
+    "note": "TV & FILM RIGHTS: SOLD; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "The Kingpin",
+    "author": "A. A. Dhand",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "A Traitor’S Call",
+    "author": "David Goodman",
+    "status": "optioned",
+    "note": "TV & FILM RIGHTS: SOLD; agent Harry Illingworth (Crime & Thriller)"
+   },
+   {
+    "book": "The Notting Hill Murder",
+    "author": "Mike Hollow",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Crime & Thriller)"
+   },
+   {
+    "book": "The New Mother",
+    "author": "M. A. Hunter",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Emily Glenister (Crime & Thriller)"
+   },
+   {
+    "book": "Death Is Only Darkness",
+    "author": "Jón Atli Jónasson",
+    "status": "optioned",
+    "note": "TV & FILM RIGHTS: SOLD; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "Toxic",
+    "author": "Jón Atli Jónasson",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "Dark Fall",
+    "author": "Femi Kayode",
+    "status": "optioned",
+    "note": "TV & FILM RIGHTS: SOLD; agent Harry Illingworth (Crime & Thriller)"
+   },
+   {
+    "book": "The Wrong Man",
+    "author": "Chris Mcdonald",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "Her Last Christmas",
+    "author": "Claire Mcgowan",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Diana Beaumont (Crime & Thriller)"
+   },
+   {
+    "book": "The Saffron Thief",
+    "author": "T. L. Mogford",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Crime & Thriller)"
+   },
+   {
+    "book": "The Last Drop",
+    "author": "T. M. Payne",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Crime & Thriller)"
+   },
+   {
+    "book": "Scandal At The Opera",
+    "author": "House",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Crime & Thriller)"
+   },
+   {
+    "book": "Time Jump",
+    "author": "Adam Simcox",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Crime & Thriller)"
+   },
+   {
+    "book": "The Therapist’S Lie",
+    "author": "Annie Taylor",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Emily Glenister (Crime & Thriller)"
+   },
+   {
+    "book": "The Murder Planner",
+    "author": "L. C. Tyler",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Crime & Thriller)"
+   },
+   {
+    "book": "The Wicked Girls",
+    "author": "Roz Watkins",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Diana Beaumont (Crime & Thriller)"
+   },
+   {
+    "book": "Big Man",
+    "author": "Dean Atta",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Abi Fellows (General Fiction)"
+   },
+   {
+    "book": "When Everything Was",
+    "author": "Burning",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (General Fiction)"
+   },
+   {
+    "book": "The Bookbinder’S Code",
+    "author": "A. D. Bell",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (General Fiction)"
+   },
+   {
+    "book": "Back For Good",
+    "author": "Daisy Buchanan",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Diana Beaumont (General Fiction)"
+   },
+   {
+    "book": "The Ruins",
+    "author": "Becky Docton",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (General Fiction)"
+   },
+   {
+    "book": "No Place For Us",
+    "author": "Sean Lusk",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (General Fiction)"
+   },
+   {
+    "book": "A Diplomat’S Guide To",
+    "author": "Book Smuggling",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Abi Fellows (General Fiction)"
+   },
+   {
+    "book": "Jonny",
+    "author": "Tomek Mossakowski",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Abi Fellows (General Fiction)"
+   },
+   {
+    "book": "The Library Of Broken",
+    "author": "Hearts",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Emily Glenister (General Fiction)"
+   },
+   {
+    "book": "Stay Another Christmas",
+    "author": "Phillipa Ashley",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Women’S Fiction)"
+   },
+   {
+    "book": "The Insomniac’S Guide To",
+    "author": "Love",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Emily Glenister (Women’S Fiction)"
+   },
+   {
+    "book": "A Summer Country Escape",
+    "author": "Julie Caplin",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Women’S Fiction)"
+   },
+   {
+    "book": "Those New York Summers",
+    "author": "Fiona Collins",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Diana Beaumont (Women’S Fiction)"
+   },
+   {
+    "book": "An Invitation Home",
+    "author": "Faith Hogan",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Women’S Fiction)"
+   },
+   {
+    "book": "The Blue Water",
+    "author": "Rosanna Ley",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Women’S Fiction)"
+   },
+   {
+    "book": "To All The Earls I’Ve",
+    "author": "Loved Before",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Diana Beaumont (Women’S Fiction)"
+   },
+   {
+    "book": "Old Ducks Take Flight",
+    "author": "Maddie Please",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Women’S Fiction)"
+   },
+   {
+    "book": "Love From Christmas",
+    "author": "Tree Farm",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent David Headley (Women’S Fiction)"
+   },
+   {
+    "book": "Moonfall",
+    "author": "Ed Crocker",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Sci-Fi & Fantasy)"
+   },
+   {
+    "book": "Dragonfly",
+    "author": "Paddy Dobson",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Sci-Fi & Fantasy)"
+   },
+   {
+    "book": "Eight Tastes Of",
+    "author": "Treachery",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Sci-Fi & Fantasy)"
+   },
+   {
+    "book": "An Honesty Of Thieves",
+    "author": "Anna Stephens",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Sci-Fi & Fantasy)"
+   },
+   {
+    "book": "The Infinite State",
+    "author": "Richard Swan",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Harry Illingworth (Sci-Fi & Fantasy)"
+   },
+   {
+    "book": "What Ails Her?",
+    "author": "Mina Moriarty",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Abi Fellows (Non-Fiction)"
+   },
+   {
+    "book": "Wild Paths",
+    "author": "Casper Walsh",
+    "status": "available",
+    "note": "TV & FILM RIGHTS: AVAILABLE; agent Broo Doherty (Non-Fiction)"
+   }
+  ],
+  "last_refresh_asked": "",
+  "note": "Frontlist pages loaded (each has a TV & FILM RIGHTS line; SOLD recorded as optioned). Backlist pages carry no screen-rights line and are not loaded. Mostly fiction; two non-fiction titles."
+ },
+ {
+  "agency": "Blake Friedmann",
+  "domain": "blakefriedmann.co.uk",
+  "contact_email": "leyla@blakefriedmann.co.uk",
+  "received": "2026-11-06",
+  "source": "https://blakefriedmann.co.uk/s/BFLA-Rights-Guide-Autumn-Winter-2026-25092026.pdf",
+  "file": "https://blakefriedmann.co.uk/s/BFLA-Rights-Guide-Autumn-Winter-2026-25092026.pdf",
+  "kind": "translation guide with occasional Film/TV lines (Autumn-Winter 2026, updated 25 Sept 2026)",
+  "titles": [
+   {
+    "book": "Raveheart",
+    "author": "Graeme Armstrong",
+    "status": "optioned",
+    "note": "Film/TV Warp Films"
+   },
+   {
+    "book": "Scorpio Rising",
+    "author": "Deon Meyer",
+    "status": "optioned",
+    "note": "Film/TV Lookout Point"
+   }
+  ],
+  "last_refresh_asked": "",
+  "note": "The guide never states film/TV rights as available, so only the two titles with a named Film/TV producer are recorded. Film and TV enquiries: Leyla Hattabi, leyla@blakefriedmann.co.uk (named in the guide)."
+ },
+ {
+  "agency": "Graham Maw Christie",
+  "domain": "grahammawchristie.com",
+  "contact_email": "enquiries@grahammawchristie.com",
+  "received": "2026-11-06",
+  "source": "https://www.grahammawchristie.com/s/GMC-RIGHTS-GUIDE-2026.pdf",
+  "file": "https://www.grahammawchristie.com/s/GMC-RIGHTS-GUIDE-2026.pdf",
+  "kind": "film/TV (published PDF rights guide 2026, backlist pages 17-21 only)",
+  "titles": [
+   {
+    "book": "Burnout",
+    "author": "Dr Claire Plumbly",
+    "status": "available",
+    "note": "Film/TV available (Psychology, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Hagitude",
+    "author": "Sharon Blackie",
+    "status": "available",
+    "note": "Film/TV available (Psychology, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "How to Be Selfish",
+    "author": "Suzy Reading",
+    "status": "available",
+    "note": "Film/TV available (Psychology, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "You're Not the Problem",
+    "author": "Helen Villiers and Katie McKenna",
+    "status": "available",
+    "note": "Film/TV available (Psychology, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Overthinking Cure",
+    "author": "Dr Jessamy Hibberd",
+    "status": "available",
+    "note": "Film/TV available (Psychology, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Human Design Made Simple",
+    "author": "Emma Dunwoody",
+    "status": "available",
+    "note": "Film/TV available (Psychology, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Just About Coping",
+    "author": "Dr Natalie Cawley",
+    "status": "available",
+    "note": "Film/TV available (Memoir, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Blame Not the Wind",
+    "author": "Shirley Cooklin",
+    "status": "unknown",
+    "note": "Guide says 'Film/TV available: n/a' (Memoir, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Camila's Story",
+    "author": "Louise Allen",
+    "status": "available",
+    "note": "Film/TV available (Memoir, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Weathering",
+    "author": "Ruth Allen",
+    "status": "available",
+    "note": "Film/TV available (Nature writing, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Salt Path",
+    "author": "Raynor Winn",
+    "status": "unknown",
+    "note": "No Film/TV line in the guide (Nature writing, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "A Short History of the World According to Sheep",
+    "author": "Sally Coulthard",
+    "status": "available",
+    "note": "Film/TV available (Nature writing, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Good Vibes, Good Life",
+    "author": "Vex King",
+    "status": "available",
+    "note": "Film/TV available (Self-development, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Innsaei",
+    "author": "Hrund Gunnsteinsdottir",
+    "status": "available",
+    "note": "Film/TV available (Self-development, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Positive Planner",
+    "author": "",
+    "status": "available",
+    "note": "Film/TV available (Self-development, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Choose You",
+    "author": "Helen Marie",
+    "status": "available",
+    "note": "Film/TV available (Self-development, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "It Starts With You",
+    "author": "Lorena Bernal",
+    "status": "available",
+    "note": "Film/TV available (Self-development, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Greatest Self-Help Book",
+    "author": "Vex King and Kaushal",
+    "status": "available",
+    "note": "Film/TV available (Self-development, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Unprocessed Air Fryer",
+    "author": "Jenny Tschiesche",
+    "status": "available",
+    "note": "Film/TV available (Cookery, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Scandikitchen Cookbook",
+    "author": "Bronte Aurell",
+    "status": "available",
+    "note": "Film/TV available (Cookery, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Official Veganuary Cookbook",
+    "author": "",
+    "status": "available",
+    "note": "Film/TV available (Cookery, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Mapmatics",
+    "author": "Paulina Rowińska",
+    "status": "available",
+    "note": "Film/TV available (Pop science, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Accidental",
+    "author": "Tim James",
+    "status": "available",
+    "note": "Film/TV available (Pop science, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Elemental",
+    "author": "Tim James",
+    "status": "available",
+    "note": "Film/TV available (Pop science, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Ultra-Processed Women",
+    "author": "Milli Hill",
+    "status": "available",
+    "note": "Film/TV available (Smart thinking, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "We Are What We Read",
+    "author": "Vybarr Cregan-Reid",
+    "status": "available",
+    "note": "Film/TV available (Smart thinking, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "The Neuroscience of Manifesting",
+    "author": "Dr Sabina Brennan",
+    "status": "available",
+    "note": "Film/TV available (Smart thinking, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "How To Be Awake",
+    "author": "Heather Darwall-Smith",
+    "status": "available",
+    "note": "Film/TV available (Health & wellness, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Still Me",
+    "author": "Dr Sabina Brennan",
+    "status": "available",
+    "note": "Film/TV available (Health & wellness, backlist p.17-21; title and author read from cover image)"
+   },
+   {
+    "book": "Stronger",
+    "author": "David Vaux",
+    "status": "available",
+    "note": "Film/TV available (Health & wellness, backlist p.17-21; title and author read from cover image)"
+   }
+  ],
+  "last_refresh_asked": "",
+  "note": "Titles appear only on cover images; read from the rendered pages. Guide names enquiries@grahammawchristie.com for office enquiries and film/TV rights. The Positive Planner and Veganuary Cookbook show no author on the cover."
  }
 ]
