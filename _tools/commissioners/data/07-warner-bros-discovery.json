@@ -3,6 +3,11 @@
  "checked": "2026-11-07",
  "pitch_routes": [
   {
+   "genre": "Production companies (proposals)",
+   "route": "Discovery Producer's Portal: register, then submit proposals and track them. Still online (checked 7 Nov 2026) but branded Discovery Communications with a 2018 copyright, so confirm with the UK team that it is still used for WBD UK & Ireland.",
+   "url": "https://producers.discovery.com/producersPortal/"
+  },
+  {
    "genre": "All unscripted / factual (UK & Ireland)",
    "route": "No public UK pitch portal or published commissioning inbox found. WBD UK & Ireland announces commissions via its GB press site, where releases credit the commissioner (Charlotte Reid) and the exec who ordered the series (Graham Lafferty). Approach via the named commissioning team.",
    "url": "https://press.wbd.com/gb/search?type=media_release"
@@ -71,8 +76,8 @@
      "url": "https://press.wbd.com/gb/media-release/kim-kardashian-heist-guz-khans-custom-cars-zero-stars-and-rav-gills-chophouse"
     }
    ],
-   "pitch_route": "No published pitch portal or inbox; credited commissioner on WBD UK & Ireland press releases.",
-   "pitch_url": "",
+   "pitch_route": "Production companies: Discovery Producer's Portal (legacy Discovery system, still online; confirm it is in use for WBD UK)",
+   "pitch_url": "https://producers.discovery.com/producersPortal/",
    "published_email": "",
    "email_source_url": "",
    "appointed": "",
@@ -112,8 +117,8 @@
      "url": "https://press.wbd.com/gb/media-release/new-look-free-air-tlc-launches-today"
     }
    ],
-   "pitch_route": "No published pitch route; senior sign-off exec.",
-   "pitch_url": "",
+   "pitch_route": "Production companies: Discovery Producer's Portal (legacy Discovery system, still online; confirm it is in use for WBD UK)",
+   "pitch_url": "https://producers.discovery.com/producersPortal/",
    "published_email": "",
    "email_source_url": "",
    "appointed": "",
@@ -133,8 +138,8 @@
    ],
    "remit": "Commissioning executive on the WBD UK & Ireland unscripted slate; exec for WBD on Johnny Vegas' Little Shop of Antiques (Quest).",
    "recent_commissions": [],
-   "pitch_route": "No published pitch route.",
-   "pitch_url": "",
+   "pitch_route": "Production companies: Discovery Producer's Portal (legacy Discovery system, still online; confirm it is in use for WBD UK)",
+   "pitch_url": "https://producers.discovery.com/producersPortal/",
    "published_email": "",
    "email_source_url": "",
    "appointed": "",
@@ -153,8 +158,8 @@
    ],
    "remit": "Commissioning editor on the WBD UK & Ireland unscripted slate; exec for WBD on Mike Brewer: The Real Deal (Quest).",
    "recent_commissions": [],
-   "pitch_route": "No published pitch route.",
-   "pitch_url": "",
+   "pitch_route": "Production companies: Discovery Producer's Portal (legacy Discovery system, still online; confirm it is in use for WBD UK)",
+   "pitch_url": "https://producers.discovery.com/producersPortal/",
    "published_email": "",
    "email_source_url": "",
    "appointed": "",
