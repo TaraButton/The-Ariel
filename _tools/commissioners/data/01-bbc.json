@@ -1,0 +1,1649 @@
+{
+ "broadcaster": "BBC",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All network TV factual genres (documentaries, history, science, natural history, religion & ethics, arts & classical music, current affairs incl. Panorama, popular music, factual entertainment, BBC Three)",
+   "route": "PiCoS ideas submission system - all ideas must be submitted via PiCoS to the named genre commissioners; for UK production companies with a qualifying commission in the last 3 years (BBC Pitch is closed)",
+   "url": "https://www.bbc.co.uk/commissioning/picos"
+  },
+  {
+   "genre": "PiCoS login",
+   "route": "PiCoS portal",
+   "url": "https://picos.tools.bbc.co.uk/landing"
+  },
+  {
+   "genre": "PiCoS technical/registration support",
+   "route": "Published support address picos.support@bbc.co.uk (system support only, not for pitching)",
+   "url": "https://www.bbc.co.uk/commissioning/picos"
+  },
+  {
+   "genre": "Storyville (international feature docs and shorts)",
+   "route": "Storyville online submission system",
+   "url": "https://ptk-acquisition.tools.bbc.co.uk/#/external/request?client=storyville"
+  },
+  {
+   "genre": "Factual acquisitions (completed, funded films only)",
+   "route": "Factual acquisition online submission system; BBC says it cannot track submissions sent to individual email addresses",
+   "url": "https://ptk-acquisition.tools.bbc.co.uk/#/external/request?client=factual"
+  },
+  {
+   "genre": "Supply/business questions (smaller or out-of-London indies) - not content",
+   "route": "Contact Lucy Willmore, Commissioning Supply Executive, via contact form",
+   "url": "https://www.bbc.co.uk/commissioning/contact-commissioning-supply"
+  },
+  {
+   "genre": "Individuals / non-indies",
+   "route": "Skills and training pages (individuals cannot use PiCoS)",
+   "url": "https://www.bbc.co.uk/commissioning/talent"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Documentary commissioning brief",
+   "summary": "Narrative/character-driven docs; returnable mainstream access series (4-10 eps) and 'next precinct beyond blue flashing lights'; limited series/box sets; high-impact single films (60 min or feature); BBC Three 30-45 min box sets; new No Filter (w/t) iPlayer strand for younger audiences, topical, 15-40 min forms; nations portrayal; new directors; co-pros welcome",
+   "url": "https://www.bbc.co.uk/commissioning/documentaries",
+   "date": "live 2026-11-07 (page built 2 Nov 2026)"
+  },
+  {
+   "title": "Current affairs commissioning brief",
+   "summary": "Panorama: ambitious investigative revelation (pitch to Adam Grimley via PiCoS); BBC Two/iPlayer series and singles with strong title/image and news-making potential, YouTube spin-offs; BBC Three single-narrative stories from last five years with original journalism for 16-34s",
+   "url": "https://www.bbc.co.uk/commissioning/current-affairs",
+   "date": "live 2026-11-07"
+  },
+  {
+   "title": "Factual homepage (Director of Factual statement)",
+   "summary": "All pitches must have iPlayer baked in, with a strong title and thumbnail vision; ideas taken from indies at any time",
+   "url": "https://www.bbc.co.uk/commissioning/factual",
+   "date": "live 2026-11-07"
+  },
+  {
+   "title": "History / Science / Natural history / Religion and ethics briefs",
+   "summary": "Specialist factual genre briefs with team lists; all via PiCoS",
+   "url": "https://www.bbc.co.uk/commissioning/history",
+   "date": "live 2026-11-07"
+  },
+  {
+   "title": "Arts and classical music brief",
+   "summary": "First points of contact: Mark Bell (singles BBC One/Two, landmarks), Alistair Pegg (box sets/formats/limited series BBC Two), Stephen James-Yeoman (classical music, Arts Digital), David Harron (Scotland), Julian Carey (Wales)",
+   "url": "https://www.bbc.co.uk/commissioning/arts",
+   "date": "live 2026-11-07"
+  },
+  {
+   "title": "Storyville expands to premium shorts",
+   "summary": "Storyville seeking 10-40 minute short documentaries for BBC Four and iPlayer exploring issues shaping the world; new talent encouraged",
+   "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-storyville-announces-expansion-to-showcase-documentary-shorts",
+   "date": "2026-06-11"
+  },
+  {
+   "title": "New pan-UK commissioning model",
+   "summary": "Nations commissioners (NI, Scotland, Wales) responsible for ideas with strong on-screen nations portrayal and are key contact for indies in their nation; joint sign-off with genre head; aim for titles made in the place they portray",
+   "url": "https://www.bbc.co.uk/commissioning/news/commissioning-model-2026/",
+   "date": "2026-07-30"
+  },
+  {
+   "title": "YouTube deepwatch channel brief",
+   "summary": "20 standalone YouTube-first docs (min 25 min, GBP 50k tariff) for 16-24s, from nations/English-regions indies; deadline 7 May 2026 (closed)",
+   "url": "https://www.bbc.co.uk/commissioning/news/brief-youtube-deepwatch-channel-april-2026/",
+   "date": "2026-04-13"
+  },
+  {
+   "title": "New Entertainment commissioning structure",
+   "summary": "Factual Entertainment & Events genre to close in autumn 2026; replaced by Studio Entertainment, Constructed Reality, and Features and Events under Ed Havard",
+   "url": "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure",
+   "date": "2026-06-24"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Fiona Campbell",
+   "title": "Director of Factual",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Oversees Arts and Classical Music TV, Documentaries, Storyville and Specialist Factual",
+   "recent_commissions": [
+    {
+     "title": "New BBC documentaries slate (Emergency 24/7, Murder 24/7 etc.)",
+     "desc": "Announced slate as Interim Director, Unscripted",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Appointed Director of Factual 19 Feb 2026 (role began spring 2026); previously Interim Director of Unscripted and Controller, Youth Audiences (BBC iPlayer and BBC Three)",
+   "confidence": "high",
+   "notes": "Based in Northern Ireland per BBC release. Senior leader; ideas go to genre commissioners rather than to her directly.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced",
+    "https://www.bbc.co.uk/mediacentre/2026/new-directors-entertainment-factual",
+    "https://www.bbc.co.uk/mediacentre/2026/poppy-dixon-appointed-bbc-head-of-documentaries"
+   ]
+  },
+  {
+   "name": "Poppy Dixon",
+   "title": "Head of Documentaries",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries (returnable series, limited series, single films, BBC Three box sets, No Filter strand)",
+   "recent_commissions": [],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Announced 17 Jul 2026 (from Sky, where she was Director of Documentaries and Factual); reports to Fiona Campbell",
+   "confidence": "high",
+   "notes": "No BBC commission credits found yet under her name (press releases since appointment credit Emma Loach as Interim Head or predecessor Clare Sillery).",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/poppy-dixon-appointed-bbc-head-of-documentaries"
+   ]
+  },
+  {
+   "name": "Emma Loach",
+   "title": "Lead Commissioning Editor, Documentaries",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries",
+   "recent_commissions": [
+    {
+     "title": "Murder Trial (two new cases)",
+     "desc": "Firecrest's courtroom-access series returns with two new cases; co-commissioned with BBC Scotland",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/murder-trial-returns-two-new-cases"
+    },
+    {
+     "title": "Bel",
+     "desc": "1x90 on Scottish musician Beldina Odenyo (Heir of the Cursed), Hopscotch Films, BBC Two/BBC Scotland",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    },
+    {
+     "title": "Emergency 24/7",
+     "desc": "6x60 Expectation series for BBC One (co-CE with Anna Dickeson)",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Was Interim Head of Commissioning, Documentaries (Mar-Jul 2026 press releases) before Poppy Dixon's appointment; commissioning page now lists her as Lead Commissioning Editor.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/murder-trial-returns-two-new-cases",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival",
+    "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced"
+   ]
+  },
+  {
+   "name": "Beejal-Maya Patel",
+   "title": "Commissioning Editor, Documentaries",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Documentaries, incl. popular factual end of slate",
+   "recent_commissions": [
+    {
+     "title": "Stacey & Joe series 3",
+     "desc": "Optomen series back at Pickle Cottage, BBC One/iPlayer",
+     "date": "2026-04",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/stacey-and-joe-series-three"
+    },
+    {
+     "title": "Will You Be My Friend?",
+     "desc": "Five Mile Films series following children struggling to make friends",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-announces-new-series-will-you-be-my-friend"
+    },
+    {
+     "title": "Sort Your Life Out Unpacked",
+     "desc": "Video podcast extension for iPlayer/Sounds",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-expands-video-podcast-offer-iplayer-sounds-youtube-sort-your-life-out-race-across-the-world-uncanny"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Listed as 'Beejal Patel' on commissioning pages; press releases use 'Beejal-Maya Patel'.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/stacey-and-joe-series-three",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-announces-new-series-will-you-be-my-friend",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-expands-video-podcast-offer-iplayer-sounds-youtube-sort-your-life-out-race-across-the-world-uncanny"
+   ]
+  },
+  {
+   "name": "Carl Callam",
+   "title": "Commissioning Editor, Documentaries",
+   "channels": [
+    "BBC One",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries (returnable crime/emergency brands)",
+   "recent_commissions": [
+    {
+     "title": "Murder 24/7",
+     "desc": "Expectation series for BBC One/iPlayer",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced"
+    },
+    {
+     "title": "Glow Up series 8",
+     "desc": "BBC Three series; Commissioning Editor credit (commissioned by Anthony Browne)",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/nikkietutorials-bbc-glow-up-host-leomie-anderson-series-8"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced",
+    "https://www.bbc.co.uk/mediacentre/2026/nikkietutorials-bbc-glow-up-host-leomie-anderson-series-8"
+   ]
+  },
+  {
+   "name": "Anna Dickeson",
+   "title": "Commissioning Editor, Documentaries",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Documentaries",
+   "recent_commissions": [
+    {
+     "title": "Emergency 24/7",
+     "desc": "6x60 Expectation access series for BBC One (co-CE with Emma Loach)",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Trade press (prolificnorth) described her as Leeds-based when hired; not re-verified today.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/new-bbc-documentaries-announced"
+   ]
+  },
+  {
+   "name": "Fran Baker",
+   "title": "Commissioning Editor, Documentaries",
+   "channels": [
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries",
+   "recent_commissions": [
+    {
+     "title": "Stacey Dooley: Down the K-Hole",
+     "desc": "1x60 on ketamine addiction, Nine Lives Media, BBC Three",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-announces-three-brand-new-documentaries-from-stacey-dooley"
+    },
+    {
+     "title": "Prison Break - Escape from the Maze (w/t)",
+     "desc": "1x90 on the 1983 Maze prison escape, Walk On Air, BBC Two/BBC NI",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-announces-three-brand-new-documentaries-from-stacey-dooley",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+   ]
+  },
+  {
+   "name": "Tom Pullen",
+   "title": "Commissioning Editor, Documentaries",
+   "channels": [
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries",
+   "recent_commissions": [
+    {
+     "title": "Murder Trial (two new cases)",
+     "desc": "Firecrest courtroom series; BBC Factual CE alongside David Harron (BBC Scotland)",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/murder-trial-returns-two-new-cases"
+    },
+    {
+     "title": "Believe in Magic",
+     "desc": "3x60 BBC Studios Documentary Unit series, BBC Two (co-CE with Emma Loach)",
+     "date": "2025-08",
+     "url": "https://www.bbc.co.uk/mediacentre/2025/believe-in-magic"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/murder-trial-returns-two-new-cases",
+    "https://www.bbc.co.uk/mediacentre/2025/believe-in-magic"
+   ]
+  },
+  {
+   "name": "Mary McKeagney",
+   "title": "Commissioning Editor, Northern Ireland",
+   "channels": [
+    "BBC Two",
+    "BBC One NI",
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Documentaries (NI portrayal / NI-based indies); also arts, Storyville co-commissions",
+   "recent_commissions": [
+    {
+     "title": "Prison Break - Escape from the Maze (w/t)",
+     "desc": "Co-commissioned 1x90 on Maze escape",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    },
+    {
+     "title": "The Big Deal with Steph McGovern",
+     "desc": "BBC Arts series testing would-be art dealers (co-CE with Amanda Goodman)",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-announces-the-big-deal-with-steph-mcgovern"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-announces-the-big-deal-with-steph-mcgovern"
+   ]
+  },
+  {
+   "name": "Raphaelle O’Loan",
+   "title": "Assistant Commissioner, Northern Ireland",
+   "channels": [
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries (Northern Ireland)",
+   "recent_commissions": [
+    {
+     "title": "Prison Break - Escape from the Maze (w/t)",
+     "desc": "Assistant Commissioner credit",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+   ]
+  },
+  {
+   "name": "David Harron",
+   "title": "Commissioning Editor, Scotland",
+   "channels": [
+    "BBC Scotland",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Documentaries, history, science, religion, natural history and arts for Scotland (Scotland-based indies / Scottish portrayal)",
+   "recent_commissions": [
+    {
+     "title": "J.K. Rowling two-part documentary",
+     "desc": "BBC Factual/BBC Scotland 2-parter (co-CE with Simon Young)",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/jk-rowling-documentary"
+    },
+    {
+     "title": "Terror at the Terminal",
+     "desc": "Two-part doc on the 2007 Glasgow Airport attack",
+     "date": "2026-08",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/terror-at-the-terminal-new-documentary-series"
+    },
+    {
+     "title": "Murder Case (three new cases)",
+     "desc": "Firecrest crime series, commissioned and exec produced by Harron",
+     "date": "2026-08",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/murder-case-three-new-cases"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "BBC releases style him 'Commissioning Editor, Documentaries and Specialist Factual, BBC Scotland'. Listed on docs, history, science, religion, natural history and arts pages.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/jk-rowling-documentary",
+    "https://www.bbc.co.uk/mediacentre/2026/terror-at-the-terminal-new-documentary-series",
+    "https://www.bbc.co.uk/mediacentre/2026/murder-case-three-new-cases",
+    "https://www.bbc.co.uk/commissioning/history",
+    "https://www.bbc.co.uk/commissioning/arts"
+   ]
+  },
+  {
+   "name": "Sian Harris",
+   "title": "Commissioning Editor, Wales",
+   "channels": [
+    "BBC One Wales",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Documentaries and specialist factual for Wales",
+   "recent_commissions": [
+    {
+     "title": "Hunting the Spycammers",
+     "desc": "Documentary on spycam videos shared online (co-CE with Rachel Platt)",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/hunting-the-spycammers"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/documentaries",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/hunting-the-spycammers",
+    "https://www.bbc.co.uk/commissioning/history"
+   ]
+  },
+  {
+   "name": "Jack Bootle",
+   "title": "Head of Commissioning, Specialist Factual",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Specialist factual: history, science, natural history, religion and ethics",
+   "recent_commissions": [
+    {
+     "title": "Blue Planet III",
+     "desc": "BBC Studios NHU landmark narrated by Sir David Attenborough",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/sir-david-attenborough-blue-planet-3"
+    },
+    {
+     "title": "Aberfan: The People's Fight (w/t)",
+     "desc": "1x60 on the post-disaster campaign, BBC Studios, BBC Two/BBC One Wales",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    },
+    {
+     "title": "Young, British and Tradwife",
+     "desc": "1x60 Firecrest film for BBC One",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-religion-ethics-commissions-across-bbc"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/history",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/sir-david-attenborough-blue-planet-3",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival",
+    "https://www.bbc.co.uk/mediacentre/2026/new-religion-ethics-commissions-across-bbc",
+    "https://www.bbc.co.uk/commissioning/science",
+    "https://www.bbc.co.uk/commissioning/natural-history",
+    "https://www.bbc.co.uk/commissioning/religion-ethics"
+   ]
+  },
+  {
+   "name": "Simon Young",
+   "title": "Head of History",
+   "channels": [
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Specialist Factual - history",
+   "recent_commissions": [
+    {
+     "title": "Kings and Queens: The Story of the Monarchy",
+     "desc": "BBC Two history series timed to Bayeux Tapestry's return",
+     "date": "2026-08",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-kings-and-queens-the-story-of-the-monarchy"
+    },
+    {
+     "title": "Finding Britain's Slave Traders with David Olusoga",
+     "desc": "New BBC history series",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-bbc-series-finding-britains-slave-traders-with-david-olusoga"
+    },
+    {
+     "title": "Brexit: How Britain Voted Out",
+     "desc": "2x60 Brook Lapping series for BBC Two",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-history-commissions-for-bbc-two-and-iplayer"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Press releases also style him 'Head of Commissioning, History'.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/history",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-kings-and-queens-the-story-of-the-monarchy",
+    "https://www.bbc.co.uk/mediacentre/2026/new-bbc-series-finding-britains-slave-traders-with-david-olusoga",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-history-commissions-for-bbc-two-and-iplayer"
+   ]
+  },
+  {
+   "name": "Emma Hindley",
+   "title": "Commissioning Editor, Specialist Factual",
+   "channels": [
+    "BBC Two",
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Specialist Factual - history, science, religion and ethics",
+   "recent_commissions": [
+    {
+     "title": "Digging for Britain (new presenting team)",
+     "desc": "Rare TV archaeology series returns",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/digging-for-britain-returns-with-new-presenting-team"
+    },
+    {
+     "title": "Secrets of the Bayeux Tapestry",
+     "desc": "Arts/specialist factual co-commission (co-CE with Mark Bell)",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/articles/2026/secrets-of-the-bayeux-tapestry-inside-the-museum"
+    },
+    {
+     "title": "Aberfan: The People's Fight (w/t)",
+     "desc": "Co-CE with Julian Carey",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Formerly Lead Commissioning Editor at Storyville (still credited on Storyville winter 2026 titles).",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/history",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/digging-for-britain-returns-with-new-presenting-team",
+    "https://www.bbc.co.uk/mediacentre/articles/2026/secrets-of-the-bayeux-tapestry-inside-the-museum",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival",
+    "https://www.bbc.co.uk/commissioning/science",
+    "https://www.bbc.co.uk/commissioning/religion-ethics"
+   ]
+  },
+  {
+   "name": "Tom Coveney",
+   "title": "Head of Science",
+   "channels": [
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Specialist Factual - science",
+   "recent_commissions": [
+    {
+     "title": "A Bitter Pill: The Sodium Valproate Scandal (w/t)",
+     "desc": "1x60, Little Gem, BBC Two",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-announces-three-films-on-urgent-uk-health-issues"
+    },
+    {
+     "title": "Emma Barnett: Endometriosis (w/t)",
+     "desc": "1x60, Raw, BBC Two",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-announces-three-films-on-urgent-uk-health-issues"
+    },
+    {
+     "title": "Factual series with Michael Sheen",
+     "desc": "Co-CE with Julian Carey (BBC Cymru Wales)",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/factual-series-with-michael-sheen-announced"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/science",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-announces-three-films-on-urgent-uk-health-issues",
+    "https://www.bbc.co.uk/mediacentre/2026/factual-series-with-michael-sheen-announced"
+   ]
+  },
+  {
+   "name": "Daisy Scalchi",
+   "title": "Head of Religion and Ethics",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Specialist Factual - religion and ethics",
+   "recent_commissions": [
+    {
+     "title": "Guz Does... MMA (w/t)",
+     "desc": "1x60 Ricochet film with Guz Khan, BBC One/BBC Three",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-religion-ethics-commissions-across-bbc"
+    },
+    {
+     "title": "Amritsar - Siege at the Temple (w/t)",
+     "desc": "1x90 Rogan Scotland, BBC Two",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-religion-ethics-commissions-across-bbc"
+    },
+    {
+     "title": "Landmark series on the life and world of Jesus Christ",
+     "desc": "Co-commissioned with Jack Bootle",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-landmark-series-life-and-world-of-jesus-christ"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Press releases style her 'Head of Commissioning, Religion and Ethics'.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/religion-ethics",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/new-religion-ethics-commissions-across-bbc",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-landmark-series-life-and-world-of-jesus-christ"
+   ]
+  },
+  {
+   "name": "Tom Watt-Smith",
+   "title": "Lead Commissioning Editor, Natural History",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Specialist Factual - natural history",
+   "recent_commissions": [
+    {
+     "title": "Blue Planet III",
+     "desc": "Commissioning Editor on BBC Studios NHU landmark",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/sir-david-attenborough-blue-planet-3"
+    },
+    {
+     "title": "Hamza's African Birds of Prey",
+     "desc": "New natural history film",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/hamzas-african-birds-of-prey-new-bbc-natural-history-film"
+    },
+    {
+     "title": "Love Naturally",
+     "desc": "Christmas natural history programme",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/love-naturally-bbc"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Title discrepancy: commissioning page says 'Lead Commissioning Editor, Natural History'; 2026 BBC releases say 'BBC Head of Natural History' / 'Head of Natural History Commissioning'.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/natural-history",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/sir-david-attenborough-blue-planet-3",
+    "https://www.bbc.co.uk/mediacentre/2026/hamzas-african-birds-of-prey-new-bbc-natural-history-film",
+    "https://www.bbc.co.uk/mediacentre/2026/love-naturally-bbc"
+   ]
+  },
+  {
+   "name": "Suzy Klein",
+   "title": "Head of Commissioning, Arts and Classical Music",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Arts and classical music TV",
+   "recent_commissions": [
+    {
+     "title": "Beethoven: Rise of a Genius",
+     "desc": "72 Films series for BBC Two, ZDF and PBS, 200th anniversary",
+     "date": "2026-11",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-beethoven-rise-of-a-genius"
+    },
+    {
+     "title": "Dickens (w/t)",
+     "desc": "3x60 Expectation series for BBC Two with The Open University",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-announces-major-new-series-on-charles-dickens"
+    },
+    {
+     "title": "Lowry Arena documentary with Ian McKellen",
+     "desc": "Arena film marking 50 years since Lowry's death",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/ian-mckellen-to-play-lowry-in-new-bbc-arts-arena-documentary"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/arts",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-beethoven-rise-of-a-genius",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-announces-major-new-series-on-charles-dickens",
+    "https://www.bbc.co.uk/mediacentre/2026/ian-mckellen-to-play-lowry-in-new-bbc-arts-arena-documentary"
+   ]
+  },
+  {
+   "name": "Mark Bell",
+   "title": "Commissioning Editor, Arts",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Arts - singles across BBC One and Two and landmark series (first point of contact); Arena",
+   "recent_commissions": [
+    {
+     "title": "Beethoven: Rise of a Genius",
+     "desc": "Commissioning Editor",
+     "date": "2026-11",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-beethoven-rise-of-a-genius"
+    },
+    {
+     "title": "A Ghost Story for Christmas 2026",
+     "desc": "Dickensian ghost story with Martin Freeman and Jim Broadbent",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/martin-freeman-jim-broadbent-a-ghost-story-for-christmas"
+    },
+    {
+     "title": "Secrets of the Bayeux Tapestry",
+     "desc": "Co-CE with Emma Hindley",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/articles/2026/secrets-of-the-bayeux-tapestry-inside-the-museum"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/arts",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-beethoven-rise-of-a-genius",
+    "https://www.bbc.co.uk/mediacentre/2026/martin-freeman-jim-broadbent-a-ghost-story-for-christmas",
+    "https://www.bbc.co.uk/mediacentre/articles/2026/secrets-of-the-bayeux-tapestry-inside-the-museum"
+   ]
+  },
+  {
+   "name": "Alistair Pegg",
+   "title": "Commissioning Editor, Arts",
+   "channels": [
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Arts - box sets, formats and limited series on BBC Two (first point of contact)",
+   "recent_commissions": [
+    {
+     "title": "Dickens (w/t)",
+     "desc": "3x60 Expectation series on Charles Dickens",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-announces-major-new-series-on-charles-dickens"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/arts",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-announces-major-new-series-on-charles-dickens"
+   ]
+  },
+  {
+   "name": "Stephen James-Yeoman",
+   "title": "Commissioning Editor, Arts",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Classical music and Arts Digital (first point of contact)",
+   "recent_commissions": [
+    {
+     "title": "BBC Young Musician 2026",
+     "desc": "Commissioning Editor",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-young-musician-finalists-announced"
+    },
+    {
+     "title": "Olivier Awards 50th anniversary",
+     "desc": "TV coverage hosted by Nick Mohammed",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/nick-mohammed-announced-host-of-olivier-awards"
+    },
+    {
+     "title": "Extraordinary Portraits with Bill Bailey",
+     "desc": "Chatterbox Media, BBC One",
+     "date": "2026-02",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/ricky-wilson-celebrity-artist-extraordinary-portraits"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/arts",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-young-musician-finalists-announced",
+    "https://www.bbc.co.uk/mediacentre/2026/nick-mohammed-announced-host-of-olivier-awards",
+    "https://www.bbc.co.uk/mediacentre/2026/ricky-wilson-celebrity-artist-extraordinary-portraits"
+   ]
+  },
+  {
+   "name": "Amanda Goodman",
+   "title": "Commissioning Executive, Arts",
+   "channels": [
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Arts and classical music",
+   "recent_commissions": [
+    {
+     "title": "BBC Arts documentary featuring HM Queen Camilla (books/reading)",
+     "desc": "1x60 Blink Films, BBC Two",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/new-bbc-arts-documentary-featuring-hm-queen-camilla"
+    },
+    {
+     "title": "The Big Deal with Steph McGovern",
+     "desc": "Co-CE with Mary McKeagney",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-announces-the-big-deal-with-steph-mcgovern"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/arts",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/new-bbc-arts-documentary-featuring-hm-queen-camilla",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-announces-the-big-deal-with-steph-mcgovern"
+   ]
+  },
+  {
+   "name": "Julian Carey",
+   "title": "Commissioning Editor, Wales",
+   "channels": [
+    "BBC One Wales",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Arts, specialist factual and factual for Wales",
+   "recent_commissions": [
+    {
+     "title": "Aberfan: The People's Fight (w/t)",
+     "desc": "Co-CE with Emma Hindley",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    },
+    {
+     "title": "Factual series with Michael Sheen",
+     "desc": "Co-CE with Tom Coveney",
+     "date": "2026-01",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/factual-series-with-michael-sheen-announced"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/arts",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival",
+    "https://www.bbc.co.uk/mediacentre/2026/factual-series-with-michael-sheen-announced"
+   ]
+  },
+  {
+   "name": "Nevine Mabro",
+   "title": "Head of Storyville",
+   "channels": [
+    "BBC Four",
+    "iPlayer"
+   ],
+   "remit": "Storyville - international feature documentaries and (from June 2026) premium shorts (10-40 min)",
+   "recent_commissions": [
+    {
+     "title": "Ask E. Jean - Storyville",
+     "desc": "1x90 portrait of E. Jean Carroll, dir. Ivy Meeropol",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/storyville-films-for-autumn-2026"
+    },
+    {
+     "title": "Black Is Beautiful: The Kwame Brathwaite Story - Storyville",
+     "desc": "1x90, dir. Yemi Bamiro",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/storyville-films-for-autumn-2026"
+    }
+   ],
+   "pitch_route": "Storyville online submission system (not PiCoS); open to international producers; also pre-buys and acquires",
+   "pitch_url": "https://ptk-acquisition.tools.bbc.co.uk/#/external/request?client=storyville",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Appointed 20 Oct 2025 (from Channel 4)",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/storyville",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/storyville-films-for-autumn-2026",
+    "https://www.bbc.co.uk/mediacentre/2025/nevine-mabro-appointed-as-head-of-storyville",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-storyville-announces-expansion-to-showcase-documentary-shorts"
+   ]
+  },
+  {
+   "name": "Joanna Carr",
+   "title": "Head of BBC Current Affairs",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Current affairs",
+   "recent_commissions": [
+    {
+     "title": "Gareth Southgate: Changing the Game for Young Men",
+     "desc": "1x60 Cardiff Productions",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/gareth-southgate-changing-game-for-young-men"
+    },
+    {
+     "title": "Clash of the Superpowers: America vs China",
+     "desc": "Norma Percy series (with Gian Quaglieni)",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/clash-of-the-superpowers-america-vs-china-documentary"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Not listed on the commissioning site's current affairs page (sits in BBC News), but credited as commissioner on 2026 releases.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/current-affairs",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/clash-of-the-superpowers-america-vs-china-documentary",
+    "https://www.bbc.co.uk/mediacentre/2026/gareth-southgate-changing-game-for-young-men"
+   ]
+  },
+  {
+   "name": "Gian Quaglieni",
+   "title": "Commissioning Editor (current affairs TV)",
+   "channels": [
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Current affairs",
+   "recent_commissions": [
+    {
+     "title": "Gareth Southgate: Changing the Game for Young Men",
+     "desc": "1x60 on the crisis facing young men and boys",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/gareth-southgate-changing-game-for-young-men"
+    },
+    {
+     "title": "Clash of the Superpowers: America vs China",
+     "desc": "Norma Percy series",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/clash-of-the-superpowers-america-vs-china-documentary"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/current-affairs",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/gareth-southgate-changing-game-for-young-men",
+    "https://www.bbc.co.uk/mediacentre/2026/clash-of-the-superpowers-america-vs-china-documentary"
+   ]
+  },
+  {
+   "name": "Mark Harrison",
+   "title": "Commissioning Executive",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Current affairs and Factual Entertainment and Events (listed on both pages)",
+   "recent_commissions": [
+    {
+     "title": "The Royal British Legion's Festival of Remembrance 2026",
+     "desc": "BBC Studios Events, BBC One",
+     "date": "2026-11",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-marks-remembrance-week"
+    },
+    {
+     "title": "Remembrance Sunday: The Cenotaph",
+     "desc": "BBC Studios Events, BBC One",
+     "date": "2026-11",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-marks-remembrance-week"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/current-affairs",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-marks-remembrance-week",
+    "https://www.bbc.co.uk/commissioning/factual-entertainment"
+   ]
+  },
+  {
+   "name": "Adam Grimley",
+   "title": "Executive Producer, Panorama",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Panorama (current affairs strand)",
+   "recent_commissions": [],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Commissioning page says Panorama ideas should be pitched to Adam Grimley via PiCoS. No 2025-26 press release credit found.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/current-affairs",
+    "https://www.bbc.co.uk/commissioning/factual"
+   ]
+  },
+  {
+   "name": "Catherine Catton",
+   "title": "Head of Commissioning, Factual Entertainment and Events",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment and events",
+   "recent_commissions": [
+    {
+     "title": "The Rise of the Rockstar Chef",
+     "desc": "Marco Pierre White, Gordon Ramsay and Heston Blumenthal, BBC One",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/the-rise-of-the-rockstar-chef-gordon-ramsay-marco-pierre-white-heston-blumenthal"
+    },
+    {
+     "title": "The Friend Ship (w/t)",
+     "desc": "Joe Wilkinson and Joe Marler, BBC Two",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/the-friend-ship-with-joe-wilkinson-and-joe-marler"
+    },
+    {
+     "title": "Queen Elizabeth II: Her Story, Our Century",
+     "desc": "Documentary on a century of change",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/queen-elizabeth-ii-bbc-documentary-to-explore-century-of-change"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "BBC announced 24 Jun 2026 that the Factual Entertainment & Events genre will close in autumn 2026, replaced by Studio Entertainment / Constructed Reality / Features and Events under Director of Entertainment Ed Havard; the FE page still lists this team as of 7 Nov 2026 but roles may change.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/the-rise-of-the-rockstar-chef-gordon-ramsay-marco-pierre-white-heston-blumenthal",
+    "https://www.bbc.co.uk/mediacentre/2026/the-friend-ship-with-joe-wilkinson-and-joe-marler",
+    "https://www.bbc.co.uk/mediacentre/2026/queen-elizabeth-ii-bbc-documentary-to-explore-century-of-change",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Michael Jochnowitz",
+   "title": "Commissioning Editor, Factual Entertainment",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment (formats)",
+   "recent_commissions": [
+    {
+     "title": "The Celebrity Traitors series 2",
+     "desc": "Co-CE with Neil McCallum",
+     "date": "2026-05",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/the-celebrity-traitors-series-2-contestants"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Was Editor of Unscripted (role closing per Feb 2026 release). FE genre restructuring in autumn 2026.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/the-celebrity-traitors-series-2-contestants",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Ricky Cooper",
+   "title": "Commissioning Editor, Factual Entertainment",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment",
+   "recent_commissions": [
+    {
+     "title": "The Rise of the Rockstar Chef",
+     "desc": "BBC One",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/the-rise-of-the-rockstar-chef-gordon-ramsay-marco-pierre-white-heston-blumenthal"
+    },
+    {
+     "title": "Race Against the Tide",
+     "desc": "Sand-sculpting competition with Iain Stirling",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/race-against-the-tide-first-look"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "FE genre restructuring in autumn 2026.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/the-rise-of-the-rockstar-chef-gordon-ramsay-marco-pierre-white-heston-blumenthal",
+    "https://www.bbc.co.uk/mediacentre/2026/race-against-the-tide-first-look",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Patrick McMahon",
+   "title": "Commissioning Editor, Factual Entertainment",
+   "channels": [
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment",
+   "recent_commissions": [
+    {
+     "title": "The Friend Ship (w/t)",
+     "desc": "Joe Wilkinson and Joe Marler",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/the-friend-ship-with-joe-wilkinson-and-joe-marler"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "FE genre restructuring in autumn 2026.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/the-friend-ship-with-joe-wilkinson-and-joe-marler",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Julie Shaw",
+   "title": "Commissioning Editor, Factual Entertainment",
+   "channels": [
+    "BBC One",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment / popular factual (Great British Menu, The Repair Shop)",
+   "recent_commissions": [
+    {
+     "title": "Great British Menu",
+     "desc": "Commissioning Editor (Phil Wang joins judges)",
+     "date": "2025-12",
+     "url": "https://www.bbc.co.uk/mediacentre/2025/phil-wang-joins-great-british-menu"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Latest credit Dec 2025; FE genre restructuring in autumn 2026; also styled Commissioning Editor for BBC Daytime in 2025 releases.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2025/phil-wang-joins-great-british-menu",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Jasmyn McGuile",
+   "title": "Commissioning Editor, Factual Entertainment",
+   "channels": [
+    "BBC One",
+    "BBC Three",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment (Race Across the World, I Kissed a Girl)",
+   "recent_commissions": [
+    {
+     "title": "Celebrity Race Across the World 2026",
+     "desc": "Commissioning Editor and BBC exec producer",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/celebrity-race-across-the-world-line-up-revealed"
+    },
+    {
+     "title": "Race Across the World series 6",
+     "desc": "Studio Lambert, BBC One",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/race-across-the-world-series-6"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "FE genre restructuring in autumn 2026.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/celebrity-race-across-the-world-line-up-revealed",
+    "https://www.bbc.co.uk/mediacentre/2026/race-across-the-world-series-6",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Cal Turner",
+   "title": "Commissioning Editor, Factual Entertainment",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment (DIY SOS, Sewing Bee)",
+   "recent_commissions": [
+    {
+     "title": "A Course Called Ireland",
+     "desc": "Bill Murray and friends golf road trip",
+     "date": "2026-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bill-murray-and-friends-a-course-called-ireland"
+    },
+    {
+     "title": "Banjo and Ro's Grand Island Hotel series 2",
+     "desc": "Co-commission with BBC Scotland",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/banjo-and-ros-grand-island-hotel-series-2"
+    },
+    {
+     "title": "Queen Elizabeth II: Her Story, Our Century",
+     "desc": "Commissioning Editor",
+     "date": "2026-03",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/queen-elizabeth-ii-bbc-documentary-to-explore-century-of-change"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "FE genre restructuring in autumn 2026.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bill-murray-and-friends-a-course-called-ireland",
+    "https://www.bbc.co.uk/mediacentre/2026/banjo-and-ros-grand-island-hotel-series-2",
+    "https://www.bbc.co.uk/mediacentre/2026/queen-elizabeth-ii-bbc-documentary-to-explore-century-of-change",
+    "https://www.bbc.co.uk/mediacentre/2026/new-entertainment-commissioning-structure"
+   ]
+  },
+  {
+   "name": "Heather Kane-Darling",
+   "title": "Commissioning Editor, Scotland",
+   "channels": [
+    "BBC Scotland",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment / factual for Scotland",
+   "recent_commissions": [
+    {
+     "title": "Remarkable story of Susan Boyle (Hogmanay documentary)",
+     "desc": "Co-commissioned with Rachel Davies",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/remarkable-story-of-susan-boyle-special-documentary-hogmanay"
+    },
+    {
+     "title": "Banjo and Ro's Grand Island Hotel series 2",
+     "desc": "BBC Scotland commissioner",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/banjo-and-ros-grand-island-hotel-series-2"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Title varies: a 2 Nov 2026 release calls her 'Commissioning Executive for BBC Scotland'.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/remarkable-story-of-susan-boyle-special-documentary-hogmanay",
+    "https://www.bbc.co.uk/mediacentre/2026/banjo-and-ros-grand-island-hotel-series-2"
+   ]
+  },
+  {
+   "name": "Sorelle Neil",
+   "title": "Assistant Commissioner, Wales",
+   "channels": [
+    "BBC One Wales",
+    "iPlayer"
+   ],
+   "remit": "Factual entertainment for Wales",
+   "recent_commissions": [
+    {
+     "title": "Ruth and Steve: From Porthcawl with Love",
+     "desc": "BBC Cymru Wales commission (with Julian Carey)",
+     "date": "2025-09",
+     "url": "https://www.bbc.co.uk/mediacentre/2025/ruth-and-steve-from-porthcawl-with-love"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Latest credit found is Sept/Dec 2025 (BBC releases call her 'commissioning editor for BBC Cymru Wales'); listed on FE page today.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/factual-entertainment",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2025/ruth-and-steve-from-porthcawl-with-love"
+   ]
+  },
+  {
+   "name": "Jonathan Rothery",
+   "title": "Head of Popular Music, TV",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Popular music TV incl. music documentaries",
+   "recent_commissions": [
+    {
+     "title": "WHAM! 10 Days in China",
+     "desc": "BBC Two music documentary",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-two-bbc-music-wham-10-days-in-china"
+    },
+    {
+     "title": "Madonna and Graham Norton special",
+     "desc": "Music special",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-music-announces-madonna-and-graham"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/music",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-two-bbc-music-wham-10-days-in-china",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-music-announces-madonna-and-graham"
+   ]
+  },
+  {
+   "name": "Rachel Davies",
+   "title": "Commissioning Editor, Popular Music",
+   "channels": [
+    "BBC One",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Popular music TV",
+   "recent_commissions": [
+    {
+     "title": "Remarkable story of Susan Boyle (Hogmanay documentary)",
+     "desc": "Co-commissioned with BBC Scotland",
+     "date": "2026-10",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/remarkable-story-of-susan-boyle-special-documentary-hogmanay"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Music page text calls her 'Commissioning Executive' in one place and 'Commissioning Editor' in the team list.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/music",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/remarkable-story-of-susan-boyle-special-documentary-hogmanay"
+   ]
+  },
+  {
+   "name": "Louise Thornton",
+   "title": "Head of Commissioning, BBC Scotland",
+   "channels": [
+    "BBC Scotland",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Joint sign-off on network titles with Scottish portrayal (pan-UK model); co-commissions Murder Trial",
+   "recent_commissions": [
+    {
+     "title": "Murder Trial (two new cases)",
+     "desc": "Co-commissioner with Emma Loach",
+     "date": "2026-07",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/murder-trial-returns-two-new-cases"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Not on factual commissioning page; nations head with joint sign-off under the July 2026 pan-UK model.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/news/commissioning-model-2026/",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/murder-trial-returns-two-new-cases"
+   ]
+  },
+  {
+   "name": "Nick Andrews",
+   "title": "Head of Commissioning, BBC Cymru Wales",
+   "channels": [
+    "BBC One Wales",
+    "BBC Two",
+    "iPlayer"
+   ],
+   "remit": "Joint sign-off on network titles with Welsh portrayal",
+   "recent_commissions": [
+    {
+     "title": "Aberfan: The People's Fight (w/t)",
+     "desc": "Co-commissioner with Jack Bootle",
+     "date": "2026-06",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+    }
+   ],
+   "pitch_route": "Submit via PiCoS (BBC ideas submission system for eligible production companies), addressed to the named genre commissioner",
+   "pitch_url": "https://picos.tools.bbc.co.uk/landing",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Not on factual commissioning page; nations head.",
+   "sources": [
+    "https://www.bbc.co.uk/commissioning/news/commissioning-model-2026/",
+    "https://www.bbc.co.uk/commissioning/factual",
+    "https://www.bbc.co.uk/mediacentre/2026/bbc-factual-new-commissions-sheffield-documentary-festival"
+   ]
+  }
+ ]
+}

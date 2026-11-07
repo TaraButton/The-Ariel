@@ -1,0 +1,361 @@
+{
+ "broadcaster": "Channel 5",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All unscripted/factual",
+   "route": "No portal or submission form. 5's official commissioning team page lists each commissioner with a direct email address; pitch the commissioner whose remit fits.",
+   "url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "5 Programme Production - what we're looking for",
+   "summary": "Life-affirming, escapist, nostalgic, feel-good content; nature, home cooking, family and British heritage; more history; hard-hitting reputational pieces when timely; strong interest in indies outside the M25; 'No Diversity, No Commission' policy. Page is undated and refers to 2021 slots, so treat as background rather than a live brief.",
+   "url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production",
+   "date": "undated (text references 2021)"
+  },
+  {
+   "title": "5 and Brinkworth unscripted production training programme (Bristol)",
+   "summary": "Corporate partnership announcement, not a brief; signals 5's continued investment in Bristol-based unscripted production via Brinkworth.",
+   "url": "https://paramount-mediahub.co.uk/press-releases/5-and-brinkworth-partner-to-launch-new-unscripted-production-training-programme-based-in-bristol",
+   "date": "2026-09-28"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Ben Frow",
+   "title": "Chief Content Officer, UK, Paramount",
+   "channels": [
+    "5"
+   ],
+   "remit": "Oversees 5, its digital brands and the wider Paramount UK channel portfolio; all commissioning reports to him.",
+   "recent_commissions": [],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Not a genre commissioner. TheDesk (Oct 2026) reports Frow announced by internal memo that he is stepping down, staying through the transition; departure reported as 'toward the end of 2027'; no successor named (Channel 5 President Reemah Sakaan said a new creative leader will be appointed). No email published on the official page.",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://thedesk.net/2026/10/ben-frow-stepping-down-as-content-chief-at-skydances-channel-5/"
+   ]
+  },
+  {
+   "name": "Guy Davies",
+   "title": "Consultant Editor for Commissioning, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Peak-time factual across all factual genres: travel/presenter-led journeys, blue-light, documentary series, factual drama, feature docs.",
+   "recent_commissions": [
+    {
+     "title": "Ben Fogle (Canada series)",
+     "desc": "Ben Fogle's personal odyssey across Canada with his father Bruce; ordered by Guy Davies.",
+     "date": "2026-10",
+     "url": "https://paramount-mediahub.co.uk/press-releases/ben-fogle-to-embark-on-personal-odyssey-across-canada-for-5"
+    },
+    {
+     "title": "To Nicola, Love Peter (w/t)",
+     "desc": "Factual drama from Wonderhood Studios, co-commissioned with Paul Testar (scripted).",
+     "date": "2026-08",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-commissions-major-new-factual-drama-'to-nicola,-love-peter'-(wt)-"
+    },
+    {
+     "title": "Life Support (w/t)",
+     "desc": "5x60 hospital access series from Brinkworth Productions using scripted-style storytelling.",
+     "date": "2026-08",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-commissions-life-support-(wt)"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Commissioning Editor, Factual at 5 since September 2013 (per official bio)",
+   "confidence": "high",
+   "notes": "The official team page prints his email as 'Guy.Davis@paramount.com' while the heading spells his name 'Davies'. Because the printed address may be a typo, it is deliberately left blank here - do not publish it without confirming. Also commissioned Levison Wood's South American Adventure (Oct 2026), Michael Palin in the Philippines (Apr 2026), Boris Johnson: Into the 'Kill Zone' (Apr 2026), The Accused recommission (Apr 2026).",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/ben-fogle-to-embark-on-personal-odyssey-across-canada-for-5",
+    "https://paramount-mediahub.co.uk/press-releases/levison-wood's-south-american-adventure"
+   ]
+  },
+  {
+   "name": "Dan Louw",
+   "title": "Content Strategy and Commissioning Editor, Non-Scripted UK Originals, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Factual, factual entertainment and specialist factual for 5 and its digital portfolio; true crime with streamer appeal; consumer docs; long-running returners; also NFL on 5.",
+   "recent_commissions": [
+    {
+     "title": "The Real Adolescence: Our Killer Kids",
+     "desc": "ITN Productions 1x90 on the rise in murder convictions of 12-17-year-olds.",
+     "date": "2025-05",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-documentary-talks-to-families-of-children-murdered-by-their-peers"
+    },
+    {
+     "title": "The Sentence: You Be the Judge",
+     "desc": "Anne Robinson-presented 1x90 reconstructing real sentencing hearings (Good TV), part of the Lawless Britain season.",
+     "date": "2025-03",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-to-explore-crime-and-punishment-in-the-uk--in-lawless-britain-season-of-programmes"
+    },
+    {
+     "title": "The 1970s Diet (w/t)",
+     "desc": "2x60 with Josie Gibson from Orchard Studios.",
+     "date": "2025-03",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-explores-the-1970s-diet--(wt)-with-josie-gibson-"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Daniel.Louw@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Most recent release naming him (Sep 2026) is the NFL on 5 sports deal, not factual; latest factual credit found is May 2025.",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/nfl-on-5-supersizes-its-free-to-air-coverage-as-the-sport-returns-to-channel-5--for-another-adrenalin-fuelled-season"
+   ]
+  },
+  {
+   "name": "Lucy Willis",
+   "title": "Commissioning Editor, Factual, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Wide factual slate: documentaries, popular factual and history (incl. history strands and drama-documentary).",
+   "recent_commissions": [
+    {
+     "title": "Philippa Gregory's Six Queens (w/t)",
+     "desc": "Six-part history series on Henry VIII's wives from Coming Up Roses and WPP Media Motion Entertainment.",
+     "date": "2026-06",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-commissions-groundbreaking-historical-documentary-series--philippa-gregory’s-six-queens-(wt)-"
+    },
+    {
+     "title": "Rich Lives, Poor Lives (series 2)",
+     "desc": "Recommission of history strand with Rob Rinder and Ruth Goodman from Lion Television.",
+     "date": "2025-10",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-confirms-return-of-hit-history-strand-rich-lives,-poor-lives--with-rob-rinder-and-ruth-goodman"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Lucy.Willis@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/5-commissions-groundbreaking-historical-documentary-series--philippa-gregory’s-six-queens-(wt)-"
+   ]
+  },
+  {
+   "name": "Federico Ruiz",
+   "title": "Commissioning Editor, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Wide unscripted: crime, history, gritty 9pm access docu-series, formats, adventure/travel; also 5's morning/daytime shows (Jeremy Vine) and vertical/vodcast content.",
+   "recent_commissions": [
+    {
+     "title": "My Crazy Million Dollar Wedding",
+     "desc": "Vertical obs-doc micro-series from Firecracker Films.",
+     "date": "2026-06",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-commissions-vertical-reality-obs-doc-series-my-crazy-million-dollar-wedding"
+    },
+    {
+     "title": "Bomb Squad: Trigger Point",
+     "desc": "Bomb disposal access series from Double FTV (Freeform Productions label).",
+     "date": "2025-01",
+     "url": "https://paramount-mediahub.co.uk/press-releases/channel-5-commissions-new-production-label,-double-ftv-to-make-bomb-squad-trigger-point"
+    },
+    {
+     "title": "Royal feature docs (Air TV)",
+     "desc": "Royal feature documentaries from Air TV.",
+     "date": "2025-06",
+     "url": "https://paramount-mediahub.co.uk/press-releases/air-tv-lands-royal-feature-docs-for-5"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Federico.Ruiz@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "May 2022 (joined from Firecracker Films)",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/two-new-piers-morgan-uncensored-spin-offs-find-a-linear-home-on-5"
+   ]
+  },
+  {
+   "name": "Kit Morey",
+   "title": "Commissioning Editor, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Popular factual: prime-time and returnable formats, presenter-led factual, military/medical/heritage access.",
+   "recent_commissions": [
+    {
+     "title": "Sam & Ade Go Birding (series 2)",
+     "desc": "Extended 6x60 second series with Samuel West and Adrian Edmondson (Frank Films).",
+     "date": "2026-08",
+     "url": "https://paramount-mediahub.co.uk/press-releases/samuel-west--and--adrian-edmondson-return-to-5-with-extended-second-series-of-sam--and--ade-go-birding"
+    },
+    {
+     "title": "Barts: Our Hospital Through Time with Alice Roberts",
+     "desc": "History of Barts hospital, co-produced with GroupM Motion Entertainment.",
+     "date": "2025-05",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-commissions-barts-our-hospital-through-time-with-alice-roberts"
+    },
+    {
+     "title": "Platoon",
+     "desc": "4x60 behind the scenes with the British infantry (Frank Films / GroupM Motion).",
+     "date": "2025-03",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5,-frank-films--and--groupm-motion-entertainment-to-go-behind-the-scenes-of-the-british-infantry-in-‘platoon’--"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Kit.Morey@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Uses they/them pronouns per official bio.",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/samuel-west--and--adrian-edmondson-return-to-5-with-extended-second-series-of-sam--and--ade-go-birding"
+   ]
+  },
+  {
+   "name": "Greg Barnett",
+   "title": "Commissioning Editor, UK Originals, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Factual, factual entertainment and drama: access-led popular docs, national icons/institutions, presenter travelogues, celebrity profiles; also scripted thrillers.",
+   "recent_commissions": [
+    {
+     "title": "There's Something About Claudia",
+     "desc": "1x90 documentary on Claudia Winkleman from Middlechild.",
+     "date": "2026-01",
+     "url": "https://paramount-mediahub.co.uk/press-releases/the-ultimate-faithful-5-commissions-claudia-winkleman-documentary"
+    },
+    {
+     "title": "Great River Cruise Journeys",
+     "desc": "River-cruise travel series fronted by Angela (JetSetTV).",
+     "date": "2025-11",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-sets-sail-with-great-river-cruise-journeys-"
+    },
+    {
+     "title": "Jane McDonald (Nashville)",
+     "desc": "Jane McDonald travel special in Nashville.",
+     "date": "2025-11",
+     "url": "https://paramount-mediahub.co.uk/press-releases/jane-mcdonald-heads-to-nashville-for-5"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Greg.Barnett@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/5-charts-a-course-for-series-4-of-the-good-ship-murder"
+   ]
+  },
+  {
+   "name": "Denise Seneviratne",
+   "title": "Commissioning Editor, Non-Scripted UK Originals, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Expanding 5's factual slate: presenter-led science/history (Dara O Briain), adventure, consumer, daytime formats and true crime.",
+   "recent_commissions": [
+    {
+     "title": "Ben Fogle: Made in Sheffield (w/t)",
+     "desc": "2x60 following Ben Fogle taking over Buffalo clothing brand (Daisybeck / Wander Films).",
+     "date": "2025-08",
+     "url": "https://paramount-mediahub.co.uk/press-releases/-"
+    },
+    {
+     "title": "Volcano with Dara O Briain (w/t)",
+     "desc": "2x60 with BBC Studios and Krempelwood.",
+     "date": "2025-01",
+     "url": "https://paramount-mediahub.co.uk/press-releases/dara-ó-briain-examines-volcanoes-for-channel-5-with-bbc-studios--and--krempelwood"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Denise.Seneviratne@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "Joined Paramount 2019 (per official bio)",
+   "confidence": "high",
+   "notes": "Listed on the current official team page; latest commission credit found on 5's press site is Aug 2025.",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+    "https://paramount-mediahub.co.uk/press-releases/-"
+   ]
+  },
+  {
+   "name": "Adrian Padmore",
+   "title": "Commissioning Editor, Unscripted, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Non-scripted UK originals: documentaries and factual formats incl. investigations, true crime, blue-light access series, travelogues.",
+   "recent_commissions": [
+    {
+     "title": "Hunting the Shoplifters (w/t)",
+     "desc": "Raw Cut TV film on a multi-agency task force tackling organised shoplifting (Lawless Britain season).",
+     "date": "2025-03",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-to-explore-crime-and-punishment-in-the-uk--in-lawless-britain-season-of-programmes"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Adrian.Padmore@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "Joined Channel 5 May 2017 (per official bio)",
+   "confidence": "check",
+   "notes": "Listed on the current official team page, but the latest press release crediting him is March 2025 (over 12 months old).",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning"
+   ]
+  },
+  {
+   "name": "Kate Ansell",
+   "title": "Factual Commissioning Editor, 5",
+   "channels": [
+    "5"
+   ],
+   "remit": "Broad factual programming for 5 and its digital portfolio: medical access, travel/regional, consumer, single docs incl. true crime.",
+   "recent_commissions": [
+    {
+     "title": "The 70s Big Night In",
+     "desc": "1x90 nostalgia experiment from Orchard Studios, part of 5's 1970s season.",
+     "date": "2025-04",
+     "url": "https://paramount-mediahub.co.uk/press-releases/5-journeys-back-to-the-1970s-with-a-slate-of-shows-celebrating-the-decade-"
+    }
+   ],
+   "pitch_route": "Email the commissioner directly (address published on 5's official commissioning team page); 5 publishes no portal or formal submission form.",
+   "pitch_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "published_email": "Kate.Ansell@paramount.com",
+   "email_source_url": "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning",
+   "appointed": "Joined Paramount 2022 (per official bio)",
+   "confidence": "check",
+   "notes": "Listed on the current official team page, but the latest press release crediting her is April 2025 (over 12 months old).",
+   "sources": [
+    "https://paramount-mediahub.co.uk/corporate/channel-5-programme-production/commissioning"
+   ]
+  }
+ ]
+}

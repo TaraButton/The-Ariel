@@ -1,0 +1,138 @@
+{
+ "broadcaster": "Netflix",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All (documentary, unscripted)",
+   "route": "Netflix does not accept or review unsolicited material. Pitches must come through a licensed agent, producer, attorney, manager or industry executive with an existing Netflix relationship.",
+   "url": "https://help.netflix.com/en/node/100386"
+  },
+  {
+   "genre": "Short documentary (emerging UK & Ireland filmmakers)",
+   "route": "Netflix Documentary Talent Fund (with Sheffield DocFest): teams pitch to a jury; five teams get £30,000 each for an 8-12 minute doc. 2026 cohort announced 10 Jun 2026; no application link in the article.",
+   "url": "https://www.advanced-television.com/2026/06/10/netflix-announces-latest-recipients-of-the-netflix-documentary-talent-fund/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Netflix UK unscripted chief promises bold originals (Deadline Reality TV Summit UK)",
+   "summary": "Syeda Irtizaali says Netflix UK will commission lots of 'audacious' original unscripted ideas, with a debut slate to follow. Aggregator copy of a Jesse Whittock (Deadline) piece.",
+   "url": "https://feedbagel.com/post/netflixs-new-uk-unscripted-chief-teases-shtloads-of-originals-as-she-promises-au",
+   "date": ""
+  },
+  {
+   "title": "Netflix eyes unscripted push across EMEA, with formats & docusoaps targeted (TBI)",
+   "summary": "Lucy Leveugle: wants local formats that can be adapted elsewhere, docusoaps with standout casts, and docuseries on stories local audiences already know. Undated, probably 2022 - check.",
+   "url": "https://tbivision.com/?p=883782",
+   "date": ""
+  },
+  {
+   "title": "Netflix announces new UK commissions at Edinburgh TV Festival",
+   "summary": "Anne Mensah (VP UK Content): 'You need to swing for exceptional.' Unscripted orders were Beat Luke Littler (live darts) and Outside (Sidemen spin-off). No documentaries were announced.",
+   "url": "http://about.netflix.com/en/news/netflix-announces-new-uk-commissions-at-edinburgh-tv-festival",
+   "date": "2026-08-26"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Adam Hawkins",
+   "title": "Director of Documentary Series",
+   "channels": [
+    "Netflix"
+   ],
+   "remit": "Leads Netflix's UK documentary series team (joined Jan 2022)",
+   "recent_commissions": [
+    {
+     "title": "Fred & Rose West: A British Horror Story",
+     "desc": "True-crime docuseries on the West murders",
+     "date": "",
+     "url": "https://www.thetvfestival.com/adam-hawkins-advisory-chair-2026/"
+    },
+    {
+     "title": "Amy Bradley Is Missing",
+     "desc": "Docuseries on the disappearance of Amy Bradley",
+     "date": "",
+     "url": "https://www.thetvfestival.com/adam-hawkins-advisory-chair-2026/"
+    },
+    {
+     "title": "Being Gordon Ramsay",
+     "desc": "Docuseries following Gordon Ramsay (listed as forthcoming in Feb 2026)",
+     "date": "",
+     "url": "https://www.thetvfestival.com/adam-hawkins-advisory-chair-2026/"
+    }
+   ],
+   "pitch_route": "Via agent or production company only; Netflix does not take unsolicited pitches",
+   "pitch_url": "https://help.netflix.com/en/node/100386",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2022-01",
+   "confidence": "high",
+   "notes": "Edinburgh TV Festival 2026 Advisory Chair. The festival lists commissions without dates. He also commissioned American Nightmare, Victoria Beckham, Robbie Williams, MH370, Attack On London and WWII: From The Frontlines; Kylie Minogue and The Rest Is Football are forthcoming.",
+   "sources": [
+    "https://www.thetvfestival.com/adam-hawkins-advisory-chair-2026/",
+    "https://www.televisual.com/news/netflix-recruits-uk-doc-series-duo/"
+   ]
+  },
+  {
+   "name": "Syeda Irtizaali",
+   "title": "Director of Unscripted Series, Netflix UK",
+   "channels": [
+    "Netflix"
+   ],
+   "remit": "Programmes the unscripted series slate for the UK and Ireland, in Anne Mensah's team. Replaced Ben Kelly.",
+   "recent_commissions": [],
+   "pitch_route": "Via agent or production company only; Netflix does not take unsolicited pitches",
+   "pitch_url": "https://help.netflix.com/en/node/100386",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2025 (announced c. Sept 2025, after Edinburgh TV Festival)",
+   "confidence": "high",
+   "notes": "Former BBC interim Director of Unscripted, where she commissioned The Traitors. No Netflix commission found credited to her by name. Deadline (Mar 2026, via aggregator) names her in Netflix UK's new live unscripted set-up.",
+   "sources": [
+    "https://www.televisual.com/?p=46598",
+    "https://www.broadcastnow.co.uk/netflix/netflix-snaps-up-bbcs-syeda-irtizaali/5209089.article",
+    "https://feedbagel.com/post/netflixs-new-uk-unscripted-chief-teases-shtloads-of-originals-as-she-promises-au",
+    "https://www.pulse.bot/media/news/netflix-creates-uk-commissioning-team-focused-on-live-programming-brings-in-masked-singer-uk-exec-6e852e11-719e-48ba-96bd-2d244ec5d843/"
+   ]
+  },
+  {
+   "name": "Kate Townsend",
+   "title": "Director, Original Documentaries (title per 2021 sources; 2026 source says only 'Original Documentaries, Netflix')",
+   "channels": [
+    "Netflix"
+   ],
+   "remit": "Original documentaries, UK; runs the Netflix Documentary Talent Fund",
+   "recent_commissions": [],
+   "pitch_route": "Via agent or production company only",
+   "pitch_url": "https://help.netflix.com/en/node/100386",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Still at Netflix docs in June 2026 (quoted on the Documentary Talent Fund). Her exact current title is not confirmed. Former head of BBC Storyville. In 2024 Tom Barry joined 'Kate Townsend's team'.",
+   "sources": [
+    "https://www.advanced-television.com/2026/06/10/netflix-announces-latest-recipients-of-the-netflix-documentary-talent-fund/",
+    "https://www.c21media.net/news/netflix-selects-uk-doc-funding-winners/"
+   ]
+  },
+  {
+   "name": "Tom Barry",
+   "title": "Documentary unit (exact title not given)",
+   "channels": [
+    "Netflix"
+   ],
+   "remit": "Documentaries, in Kate Townsend's team",
+   "recent_commissions": [],
+   "pitch_route": "Via agent or production company only",
+   "pitch_url": "https://help.netflix.com/en/node/100386",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Autumn 2024 (announced 18 Jun 2024)",
+   "confidence": "check",
+   "notes": "The only evidence is from June 2024. Former Sky factual commissioning editor and Raw director of programmes. Current role not reconfirmed.",
+   "sources": [
+    "https://www.thetalentmanager.com/news/1388/netflix-hires-sky-docs-commissioner"
+   ]
+  }
+ ]
+}

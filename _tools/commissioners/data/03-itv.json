@@ -1,0 +1,293 @@
+{
+ "broadcaster": "ITV",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "Factual and Factual Entertainment (ITV1 9pm, ITVX docs/boxsets)",
+   "route": "Email a known commissioning editor or the departmental address factual.commissioning@itv.com with a killer title and 1-2 paragraphs. Sizzles not required.",
+   "url": "https://www.itv.com/commissioning/articles/factual-about"
+  },
+  {
+   "genre": "Current Affairs (Exposure, Tonight, 9pm singles/short series)",
+   "route": "Email CurrentAffairs.Commissioning@ITV.com or tom.giles@itv.com. Production companies only.",
+   "url": "https://www.itv.com/commissioning/articles/current-affairs-about"
+  },
+  {
+   "genre": "Daytime (weekday afternoon formats, weekend morning lifestyle/cookery)",
+   "route": "Email Daytime.Commissioning@ITV.com. For ad-funded ideas, talk to the commissioning team and BE Studio before approaching brands.",
+   "url": "https://www.itv.com/commissioning/articles/daytime"
+  },
+  {
+   "genre": "Entertainment & Reality (incl. authored documentary with big talent)",
+   "route": "Email Entertainment.Commissioning@itv.com. Production companies only.",
+   "url": "https://www.itv.com/commissioning/articles/entertainmentandreality-about"
+  },
+  {
+   "genre": "Sports documentary strand Outlier (diverse-led indies)",
+   "route": "Submission form via press release; applications closed 10 Apr 2026 (2026 round).",
+   "url": "https://www.itv.com/presscentre/media-releases/itv-announces-outlier-bold-new-sports-documentary-commissioning-strand-succeeding"
+  },
+  {
+   "genre": "ITV2 factual / factual entertainment",
+   "route": "No named route on the ITV2 page; it points to the main commissioning pages (factual address above).",
+   "url": "https://www.itv.com/commissioning/articles/digital-channels-slabewht-dj9f4d9z"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Factual Entertainment and Factual brief",
+   "summary": "Prime-time ITV1 9pm only (no pre-watershed). Premium, optimistic, big-hearted, broad appeal. Fact ent: ensemble talent, competition/constructed formats, event programming, authored ITVX shows with talent. Factual (ITVX): feature docs and doc boxsets with directorial flair; crime boxsets, anthologies, feature docs incl. cons and swindles; event and anniversary pieces. Wants exclusive access, surprising talent, witty titles. Avoid blues-and-twos, old-fashioned features, singing competitions, overly dark or dumbed-down ideas.",
+   "url": "https://www.itv.com/commissioning/articles/factual-about",
+   "date": "2025-11-19 (page shows 'Wednesday 19 November' with no year; 19 Nov fell on a Wednesday in 2025)"
+  },
+  {
+   "title": "Current Affairs brief",
+   "summary": "Stories reflecting ITV's audience on social, political and economic issues; strong people-led narratives; access only where it drives narrative; mostly UK. Tonight: a few indie half-hours (core supply from ITV Studios/ITV News). Exposure: about seven investigative one-hour one-offs a year. Also 9pm singles or short (possibly two-part) series tied to events, exclusive interviews or reactive pieces.",
+   "url": "https://www.itv.com/commissioning/articles/current-affairs-about",
+   "date": "2025-02-25 (page shows 'Tuesday 25 February' with no year; inferred 2025 from weekday)"
+  },
+  {
+   "title": "Entertainment & Reality brief - Authored Documentary",
+   "summary": "Small number of authored documentaries with big talent telling new stories (example: Freddie Flintoff: Understanding Tourette's). Reality: fast-turnaround formats with a clear premise; no more dating or survival formats for now.",
+   "url": "https://www.itv.com/commissioning/articles/entertainmentandreality-about",
+   "date": "2026-10-27 (page shows 'Tuesday 27 October' with no year; inferred 2026 from weekday)"
+  },
+  {
+   "title": "ITV2 brief",
+   "summary": "Factual must relate to younger audiences: true crime, wellbeing, celebrity. Fact ent expanded; returning series welcome, e.g. reality-familiar talent through life events, nightly location-based formats. Studio-based closed episodic formats less desirable.",
+   "url": "https://www.itv.com/commissioning/articles/digital-channels-slabewht-dj9f4d9z",
+   "date": "2025-08-27 (page shows 'Wednesday 27 August' with no year; inferred 2025 from weekday)"
+  },
+  {
+   "title": "Daytime brief",
+   "summary": "Weekday afternoons (2-6pm): quiz and formats, limited slots, talent helps. Weekend mornings: lifestyle and cookery, limited slots. Weekday mornings not commissioning. No factual-specific section.",
+   "url": "https://www.itv.com/commissioning/articles/daytime",
+   "date": "2025-10-14 (page shows 'Tuesday 14 October' with no year; inferred 2025 from weekday)"
+  },
+  {
+   "title": "Outlier - sports documentary strand (successor to Fresh Cuts)",
+   "summary": "Six standalone 46-min sports docs, GBP 50,000 each, for ITV's Year of Sport 2026; funded by Diversity Commissioning Spend; pitches only from companies owned by People of Colour and/or Deaf, Disabled and Neurodivergent creatives. Applications closed 10 April 2026.",
+   "url": "https://www.itv.com/presscentre/media-releases/itv-announces-outlier-bold-new-sports-documentary-commissioning-strand-succeeding",
+   "date": "2026-03-19"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Jo Clinton-Davis",
+   "title": "Controller of Factual",
+   "channels": [
+    "ITV1",
+    "ITVX"
+   ],
+   "remit": "All ITV factual: documentaries, feature docs and boxsets, true crime, natural history, event and anniversary docs, drama companion docs",
+   "recent_commissions": [
+    {
+     "title": "70 Up",
+     "desc": "2x90 final chapter of the Up series, directed by Asif Kapadia, MultiStory Media with Lafcadia; co-commissioned with Sue Murphy",
+     "date": "2026-04",
+     "url": "https://realscreen.com/2026/04/16/itv-to-conclude-iconic-doc-series-with-70-up/"
+    },
+    {
+     "title": "TikTok: Murder Gone Viral (series 2)",
+     "desc": "True crime series on teen murder cases that went viral on TikTok, Nine Lives Media; co-commissioned with Sue Murphy",
+     "date": "2025-02",
+     "url": "https://senalnews.com/en/content/tiktok-murder-gone-viral-returns-for-a-second-series-for-itv1-itvx"
+    },
+    {
+     "title": "Dame Maggie Smith: A Celebration",
+     "desc": "60-min tribute documentary, MultiStory Media",
+     "date": "2024-12",
+     "url": "https://www.itv.com/presscentre/media-releases/multistory-media-wraps-year-slate-commissions"
+    }
+   ],
+   "pitch_route": "Email factual.commissioning@itv.com (departmental) with title and 1-2 paragraphs",
+   "pitch_url": "https://www.itv.com/commissioning/articles/factual-about",
+   "published_email": "factual.commissioning@itv.com",
+   "email_source_url": "https://www.itv.com/commissioning/articles/factual-about",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Email is the departmental factual address, not a personal one. Named as 'Jo Clinton Davis, ITV Factual Controller' in ITV press release 25 Aug 2026 (World's Wildest Cities), which does not say who commissioned that series. Appointment date not verified (an old WorldScreen piece records her joining ITV from UKTV as controller of popular factual; year not stated, so omitted).",
+   "sources": [
+    "https://www.itv.com/commissioning/articles/factual-about",
+    "https://www.itv.com/presscentre/node/60986",
+    "https://realscreen.com/2026/04/16/itv-to-conclude-iconic-doc-series-with-70-up/"
+   ]
+  },
+  {
+   "name": "Sue Murphy",
+   "title": "Head of Factual Entertainment",
+   "channels": [
+    "ITV1",
+    "ITV2",
+    "ITVX"
+   ],
+   "remit": "Factual entertainment: talent-led and constructed formats, authored ITVX shows, co-commissions on true crime and event docs",
+   "recent_commissions": [
+    {
+     "title": "70 Up",
+     "desc": "Final chapter of the Up documentary series, MultiStory Media; co-commissioned with Jo Clinton-Davis",
+     "date": "2026-04",
+     "url": "https://realscreen.com/2026/04/16/itv-to-conclude-iconic-doc-series-with-70-up/"
+    },
+    {
+     "title": "TikTok: Murder Gone Viral (series 2)",
+     "desc": "True crime series on teen killings that went viral, Nine Lives Media",
+     "date": "2025-02",
+     "url": "https://senalnews.com/en/content/tiktok-murder-gone-viral-returns-for-a-second-series-for-itv1-itvx"
+    },
+    {
+     "title": "Olivia Attwood's Bad Boyfriends (series 2)",
+     "desc": "ITV2/ITVX reality-factual series recommissioned; co-commissioned with Kate Teckman",
+     "date": "2024-12",
+     "url": "https://itv.com/presscentre/node/40646"
+    }
+   ],
+   "pitch_route": "Email factual.commissioning@itv.com (departmental)",
+   "pitch_url": "https://www.itv.com/commissioning/articles/factual-about",
+   "published_email": "factual.commissioning@itv.com",
+   "email_source_url": "https://www.itv.com/commissioning/articles/factual-about",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Departmental email only. Realscreen (Apr 2026) styles her 'head of factual entertainment commissioning'; ITV's page says 'Head of Factual Entertainment'. ITV's Fresh Cuts release (12 Aug 2025) places that strand in 'Sue Murphy's Factual Entertainment team'.",
+   "sources": [
+    "https://www.itv.com/commissioning/articles/factual-about",
+    "https://realscreen.com/2026/04/16/itv-to-conclude-iconic-doc-series-with-70-up/",
+    "https://www.itv.com/presscentre/media-releases/itv-unveils-2025-fresh-cuts"
+   ]
+  },
+  {
+   "name": "Kate Teckman",
+   "title": "Commissioner, Factual",
+   "channels": [
+    "ITV1",
+    "ITV2",
+    "ITVX"
+   ],
+   "remit": "Factual and factual entertainment, incl. ITV2 youth-skewed factual (true crime, celebrity, wellbeing) and talent-led investigations",
+   "recent_commissions": [
+    {
+     "title": "Georgia Harrison: Inside the Porn Business (w/t)",
+     "desc": "Two-part series investigating the online porn industry, MultiStory Media",
+     "date": "2024-12",
+     "url": "https://www.itv.com/presscentre/media-releases/multistory-media-wraps-year-slate-commissions"
+    },
+    {
+     "title": "Martin Lewis: How To Win at Board Games",
+     "desc": "Hour-long festive special, MultiStory Media",
+     "date": "2024-12",
+     "url": "https://www.itv.com/presscentre/media-releases/multistory-media-wraps-year-slate-commissions"
+    },
+    {
+     "title": "Olivia Attwood's Bad Boyfriends (series 2)",
+     "desc": "ITV2/ITVX reality-factual recommission; co-commissioned with Sue Murphy",
+     "date": "2024-12",
+     "url": "https://itv.com/presscentre/node/40646"
+    }
+   ],
+   "pitch_route": "Email factual.commissioning@itv.com (departmental)",
+   "pitch_url": "https://www.itv.com/commissioning/articles/factual-about",
+   "published_email": "factual.commissioning@itv.com",
+   "email_source_url": "https://www.itv.com/commissioning/articles/factual-about",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Title conflict: ITV commissioning page lists 'Commissioner, Factual'; ITV press releases of Dec 2024 call her 'Head of Development & Commissioning Editor, Factual Entertainment'. Using ITV's current page wording. All verified commissions are Dec 2024 (older than 12 months); no 2025-26 credit found.",
+   "sources": [
+    "https://www.itv.com/commissioning/articles/factual-about",
+    "https://www.itv.com/presscentre/media-releases/multistory-media-wraps-year-slate-commissions",
+    "https://itv.com/presscentre/node/40646"
+   ]
+  },
+  {
+   "name": "Tom Giles",
+   "title": "Controller of Current Affairs",
+   "channels": [
+    "ITV1",
+    "ITVX"
+   ],
+   "remit": "Current affairs: Exposure (investigative one-hour one-offs), Tonight, 9pm current-affairs singles and short series, reactive and event docs",
+   "recent_commissions": [
+    {
+     "title": "Madeleine McCann: The Search for a Suspect",
+     "desc": "1x60 documentary on Christian Brueckner with ex-detective Dr Graham Hill, MultiStory Media",
+     "date": "2025-08",
+     "url": "https://senalnews.com/en/content/itv-commissions-new-documentary-madeleine-mccann-the-search-for-a-suspect"
+    }
+   ],
+   "pitch_route": "Email CurrentAffairs.Commissioning@ITV.com or tom.giles@itv.com; production companies only",
+   "pitch_url": "https://www.itv.com/commissioning/articles/current-affairs-about",
+   "published_email": "tom.giles@itv.com",
+   "email_source_url": "https://www.itv.com/commissioning/articles/current-affairs-about",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Personal email printed on ITV's own current affairs commissioning page (opened 2026-11-07), alongside team address CurrentAffairs.Commissioning@ITV.com. Brief page dated Tuesday 25 February, likely 2025. Only one dated recent credit verified.",
+   "sources": [
+    "https://www.itv.com/commissioning/articles/current-affairs-about",
+    "https://senalnews.com/en/content/itv-commissions-new-documentary-madeleine-mccann-the-search-for-a-suspect"
+   ]
+  },
+  {
+   "name": "Richard Botchway",
+   "title": "Commissioning Editor",
+   "channels": [
+    "ITV1",
+    "ITVX"
+   ],
+   "remit": "Sports documentary strand Outlier (2026, successor to Fresh Cuts); diverse-led indie short docs; sport",
+   "recent_commissions": [
+    {
+     "title": "Outlier (strand)",
+     "desc": "Six standalone 46-min sports documentaries from diverse-led indies for ITV's Year of Sport 2026",
+     "date": "2026-03",
+     "url": "https://www.itv.com/presscentre/media-releases/itv-announces-outlier-bold-new-sports-documentary-commissioning-strand-succeeding"
+    },
+    {
+     "title": "Fresh Cuts 2025",
+     "desc": "Short-doc talent strand from diverse-led companies, run within Sue Murphy's Factual Entertainment team",
+     "date": "2025-08",
+     "url": "https://www.itv.com/presscentre/media-releases/itv-unveils-2025-fresh-cuts"
+    }
+   ],
+   "pitch_route": "Outlier submission form (2026 round closed 10 Apr 2026); otherwise factual departmental address",
+   "pitch_url": "https://www.itv.com/presscentre/media-releases/itv-announces-outlier-bold-new-sports-documentary-commissioning-strand-succeeding",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "ITV releases give only 'Commissioning Editor' with no genre; he is not listed on any ITV commissioning genre page. Trade press records him joining ITV as Assistant Commissioner, Sport in 2022. Strands rather than single titles.",
+   "sources": [
+    "https://www.itv.com/presscentre/media-releases/itv-announces-outlier-bold-new-sports-documentary-commissioning-strand-succeeding",
+    "https://www.itv.com/presscentre/media-releases/itv-unveils-2025-fresh-cuts"
+   ]
+  },
+  {
+   "name": "Katie Rawcliffe",
+   "title": "Director of Entertainment, Reality & Daytime",
+   "channels": [
+    "ITV1",
+    "ITV2",
+    "ITVX"
+   ],
+   "remit": "Entertainment, reality and daytime; includes a small number of authored documentaries with big talent and reality-doc series",
+   "recent_commissions": [
+    {
+     "title": "The Vardys",
+     "desc": "Reality series following Jamie and Rebekah Vardy's move to Italy, Orchard Studios; with Louise Major",
+     "date": "2026-04",
+     "url": "https://www.advanced-television.com/2026/04/22/the-vardys-reality-series-coming-to-itv/"
+    }
+   ],
+   "pitch_route": "Email Entertainment.Commissioning@itv.com (authored docs/reality) or Daytime.Commissioning@ITV.com",
+   "pitch_url": "https://www.itv.com/commissioning/articles/entertainmentandreality-about",
+   "published_email": "Entertainment.Commissioning@itv.com",
+   "email_source_url": "https://www.itv.com/commissioning/articles/entertainmentandreality-about",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Borderline for a factual directory: her authored-documentary and reality remit overlaps factual. Email is the departmental entertainment address. Daytime.Commissioning@ITV.com is also printed at https://www.itv.com/commissioning/articles/daytime.",
+   "sources": [
+    "https://www.itv.com/commissioning/articles/entertainmentandreality-about",
+    "https://www.itv.com/commissioning/articles/daytime",
+    "https://senalnews.com/en/content/uks-itv-rashapped-its-commissioning-teams"
+   ]
+  }
+ ]
+}

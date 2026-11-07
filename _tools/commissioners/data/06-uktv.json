@@ -1,0 +1,247 @@
+{
+ "broadcaster": "UKTV",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All genres incl. factual, factual entertainment, true crime, docs",
+   "route": "Email the idea to submissions@uktv.co.uk; proposals 1-2 pages; indies only (no individuals); include trigger-warning content notes in the email body per Film and TV Charity guidance; four-week response target. If no reply after four weeks, chase via niamh.claydon-mullins@uktv.co.uk (published on the commissioning page as the contact who flags ideas to the relevant team member). No commissioning rounds, no preferred-supplier list, no tariff.",
+   "url": "https://corporate.uktv.co.uk/commissioning/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Factual & Factual Entertainment for U",
+   "summary": "Well-known talent immersed in worlds they're passionate about (incl. funny factual - Will & Ralf, Pete Wicks, Guy Martin, Robson Green, Dom Chinea); NOT social purpose, NOT reality.",
+   "url": "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+   "date": "undated; live 2026-11-07"
+  },
+  {
+   "title": "True crime for U",
+   "summary": "Wants U to be a true crime destination: well-known UK stories with name recognition, new way in/perspective, survivor point of view, treated sensitively; open to co-pros/co-commissions with international broadcasters; talent-led crime-adjacent projects and 'noisy' docs welcome; NOT blue-light formats (already has Special Ops: To Catch A Criminal).",
+   "url": "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+   "date": "undated; live 2026-11-07"
+  },
+  {
+   "title": "Cars / motoring for U&Yesterday",
+   "summary": "Next big repeatable, returnable classic-car format in new precincts with warm, relatable UK characters; nostalgia-led; closed episodes with a reveal plus a reason to return.",
+   "url": "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+   "date": "undated; live 2026-11-07"
+  },
+  {
+   "title": "Documentaries for U",
+   "summary": "Unmissable, statement docs with high-profile talent who bring authorship and vulnerability (e.g. Stacey Dooley Sleeps Over); single docs if editorially justified (e.g. Becoming Victoria Wood); NOT social purpose.",
+   "url": "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+   "date": "undated; live 2026-11-07"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Hilary Rosen",
+   "title": "Director of Commissioning, UKTV",
+   "channels": [
+    "U",
+    "U&Dave",
+    "U&W",
+    "U&Yesterday",
+    "U&Gold",
+    "U&Alibi",
+    "U&Drama"
+   ],
+   "remit": "Heads UKTV commissioning across all genres; orders/signs off factual commissions.",
+   "recent_commissions": [],
+   "pitch_route": "Email a 1-2 page proposal to submissions@uktv.co.uk (logged and routed to the commissioner); independent production companies only; feedback within four weeks.",
+   "pitch_url": "https://corporate.uktv.co.uk/commissioning/",
+   "published_email": "submissions@uktv.co.uk",
+   "email_source_url": "https://corporate.uktv.co.uk/commissioning/",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Named on the official commissioning page as Director of Commissioning and credited as ordering most 2026 factual commissions (e.g. Stacey Dooley Sleeps Over, Oct 2026); not the primary commissioning editor on those titles, so none listed under recent_commissions. published_email is the submissions team inbox.",
+   "sources": [
+    "https://corporate.uktv.co.uk/commissioning/",
+    "https://corporate.uktv.co.uk/newsroom/u-confirms-celebrity-line-up-for-stacey-dooley-sleeps-over-seventh-series"
+   ]
+  },
+  {
+   "name": "Helen Nightingale",
+   "title": "Head of Factual and Factual Entertainment (Commissioning), UKTV",
+   "channels": [
+    "U",
+    "U&Dave",
+    "U&W",
+    "U&Yesterday",
+    "U&Gold"
+   ],
+   "remit": "Heads factual and factual entertainment commissioning: talent-led factual, true crime, docs, motoring, archive/nostalgia docs.",
+   "recent_commissions": [
+    {
+     "title": "Only Fools and Horses: The Lost Archive (series 2)",
+     "desc": "More previously unseen footage from the sitcom's archive for U&Gold.",
+     "date": "2026-10",
+     "url": "https://corporate.uktv.co.uk/newsroom/uandgold-continues-uncovering-previously-unseen-footage-for-more-only-fools-and-horses-the-lost-archive"
+    },
+    {
+     "title": "Pete Wicks: For Dogs' Sake (returning)",
+     "desc": "Pete Wicks' dog-rescue journeys, with BBC Studios Entertainment.",
+     "date": "2026-05",
+     "url": "https://corporate.uktv.co.uk/newsroom/for-dogs-sake-pete-wicks-returns-with-more-heart-warming-rescue-journeys"
+    }
+   ],
+   "pitch_route": "Email a 1-2 page proposal to submissions@uktv.co.uk (logged and routed to the commissioner); independent production companies only; feedback within four weeks.",
+   "pitch_url": "https://corporate.uktv.co.uk/commissioning/",
+   "published_email": "submissions@uktv.co.uk",
+   "email_source_url": "https://corporate.uktv.co.uk/commissioning/",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Also co-credited on most 2026 factual commissions with the commissioning editors below. published_email is the submissions team inbox.",
+   "sources": [
+    "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+    "https://corporate.uktv.co.uk/newsroom/uandgold-continues-uncovering-previously-unseen-footage-for-more-only-fools-and-horses-the-lost-archive"
+   ]
+  },
+  {
+   "name": "Emile Nawagamuwa",
+   "title": "Commissioning Editor, UKTV",
+   "channels": [
+    "U",
+    "U&W",
+    "U&Dave",
+    "U&Yesterday"
+   ],
+   "remit": "Factual and factual entertainment: true crime, talent-led docs, motoring formats.",
+   "recent_commissions": [
+    {
+     "title": "Stacey Dooley Sleeps Over (series 7)",
+     "desc": "Returning talent-led doc series; celebrity line-up confirmed.",
+     "date": "2026-10",
+     "url": "https://corporate.uktv.co.uk/newsroom/u-confirms-celebrity-line-up-for-stacey-dooley-sleeps-over-seventh-series"
+    },
+    {
+     "title": "Guy Martin's Proper Jobs (series 3)",
+     "desc": "Guy Martin takes on real-world jobs; co-commissioned with Helen Nightingale.",
+     "date": "2026-09",
+     "url": "https://corporate.uktv.co.uk/newsroom/guy-martins-proper-jobs-returns-for-third-series"
+    },
+    {
+     "title": "The Search for Leah Croucher: A Parent's Nightmare",
+     "desc": "2x75 true crime doc with access to Leah Croucher's family.",
+     "date": "2026-07",
+     "url": "https://corporate.uktv.co.uk/newsroom/the-search-for-leah-croucher-a-parents-nightmare-for-u-and-uandw"
+    }
+   ],
+   "pitch_route": "Email a 1-2 page proposal to submissions@uktv.co.uk (logged and routed to the commissioner); independent production companies only; feedback within four weeks.",
+   "pitch_url": "https://corporate.uktv.co.uk/commissioning/",
+   "published_email": "submissions@uktv.co.uk",
+   "email_source_url": "https://corporate.uktv.co.uk/commissioning/",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Also Paul C. Brunson: Red Flag S2 (Feb 2026), Classic Car Kings double recommission (Mar 2026). published_email is the submissions team inbox.",
+   "sources": [
+    "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+    "https://corporate.uktv.co.uk/newsroom/u-confirms-celebrity-line-up-for-stacey-dooley-sleeps-over-seventh-series"
+   ]
+  },
+  {
+   "name": "Kirsty Hanson",
+   "title": "Senior Commissioning Editor, UKTV",
+   "channels": [
+    "U",
+    "U&W"
+   ],
+   "remit": "Factual: true crime documentary and docu-reality for U&W.",
+   "recent_commissions": [
+    {
+     "title": "Surviving Fred and Rose West: Inside Cromwell Street",
+     "desc": "Documentary centring women witnesses to the Cromwell Street case (Red Sauce).",
+     "date": "2026-08",
+     "url": "https://corporate.uktv.co.uk/newsroom/surviving-fred-and-rose-west-inside-cromwell-street-for-u-and-uandw-2"
+    },
+    {
+     "title": "Prison Wives of TikTok",
+     "desc": "5x60 docu-reality series for U&W.",
+     "date": "2026-06",
+     "url": "https://corporate.uktv.co.uk/newsroom/prison-wives-of-tiktok-is-locked-in-for-u-and-uandw"
+    }
+   ],
+   "pitch_route": "Email a 1-2 page proposal to submissions@uktv.co.uk (logged and routed to the commissioner); independent production companies only; feedback within four weeks.",
+   "pitch_url": "https://corporate.uktv.co.uk/commissioning/",
+   "published_email": "submissions@uktv.co.uk",
+   "email_source_url": "https://corporate.uktv.co.uk/commissioning/",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Not shown in the 'Meet the commissioners' factual panel on the briefs page, but credited as Senior Commissioning Editor on official UKTV releases in Jun and Aug 2026. published_email is the submissions team inbox.",
+   "sources": [
+    "https://corporate.uktv.co.uk/newsroom/surviving-fred-and-rose-west-inside-cromwell-street-for-u-and-uandw-2",
+    "https://corporate.uktv.co.uk/newsroom/prison-wives-of-tiktok-is-locked-in-for-u-and-uandw"
+   ]
+  },
+  {
+   "name": "Tracy-Jean (TJ)",
+   "title": "Commissioning Executive, UKTV",
+   "channels": [
+    "U",
+    "U&W",
+    "U&Yesterday"
+   ],
+   "remit": "Factual: true crime and returning factual series.",
+   "recent_commissions": [
+    {
+     "title": "Canal Boat Diaries (series 8)",
+     "desc": "8x60 returning series with Robbie Cumming's narrowboat journey through Northern England (Middlechild).",
+     "date": "2026-09",
+     "url": "https://corporate.uktv.co.uk/newsroom/uktv-commissions-eighth-series-of-canal-boat-diaries"
+    },
+    {
+     "title": "Outback Terror: The Falconio Murder",
+     "desc": "True crime documentary on the Peter Falconio case, with Helen Nightingale.",
+     "date": "2026-01",
+     "url": "https://corporate.uktv.co.uk/newsroom/outback-terror-the-falconio-murder"
+    }
+   ],
+   "pitch_route": "Email a 1-2 page proposal to submissions@uktv.co.uk (logged and routed to the commissioner); independent production companies only; feedback within four weeks.",
+   "pitch_url": "https://corporate.uktv.co.uk/commissioning/",
+   "published_email": "submissions@uktv.co.uk",
+   "email_source_url": "https://corporate.uktv.co.uk/commissioning/",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Uses the single professional name Tracy-Jean (TJ) on official pages. published_email is the submissions team inbox.",
+   "sources": [
+    "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+    "https://corporate.uktv.co.uk/newsroom/uktv-commissions-eighth-series-of-canal-boat-diaries"
+   ]
+  },
+  {
+   "name": "Jason Dawson",
+   "title": "Commissioning Executive, UKTV",
+   "channels": [
+    "U",
+    "U&Dave"
+   ],
+   "remit": "Comedy and entertainment team; commissions talent-led funny factual / factual entertainment.",
+   "recent_commissions": [
+    {
+     "title": "Will and Ralf Should Know Better (series 3)",
+     "desc": "Will Mellor and Ralf Little take on challenges; with Helen Nightingale.",
+     "date": "2026-09",
+     "url": "https://corporate.uktv.co.uk/newsroom/will-and-ralf-should-know-better-recommissioned-for-a-third-series-for-u"
+    },
+    {
+     "title": "Dara's Dull Appreciation Society",
+     "desc": "Dara O Briain comedy-factual series for U.",
+     "date": "2026-06",
+     "url": "https://corporate.uktv.co.uk/newsroom/dara-o-briain-forms-daras-dull-appreciation-society-for-u"
+    }
+   ],
+   "pitch_route": "Email a 1-2 page proposal to submissions@uktv.co.uk (logged and routed to the commissioner); independent production companies only; feedback within four weeks.",
+   "pitch_url": "https://corporate.uktv.co.uk/commissioning/",
+   "published_email": "submissions@uktv.co.uk",
+   "email_source_url": "https://corporate.uktv.co.uk/commissioning/",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Listed under Comedy & Entertainment on the briefs page; included because he commissions factual entertainment. published_email is the submissions team inbox.",
+   "sources": [
+    "https://corporate.uktv.co.uk/work-with-us/programming/commissioning-briefs",
+    "https://corporate.uktv.co.uk/newsroom/will-and-ralf-should-know-better-recommissioned-for-a-third-series-for-u"
+   ]
+  }
+ ]
+}

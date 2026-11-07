@@ -1,0 +1,132 @@
+{
+ "broadcaster": "Amazon",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All",
+   "route": "No official Amazon MGM Studios pitch or submission page found today. Amazon Studios stopped taking unsolicited script and concept submissions on 13 Apr 2018. UK execs (Edinburgh, Aug 2026) say they are open to shows at any stage, but no public intake route is documented.",
+   "url": "https://vodzilla.co/blog/vod-news/amazon-studios-no-longer-accepts-script-submissions/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Amazon Prime Video to significantly increase UK spend (Edinburgh TV Festival spotlight)",
+   "summary": "Budgets and decisions now sit in the UK, and spend is rising in scripted and unscripted. Fozia Khan wants 'real-world', lightly formatted unscripted shows with prominent talent that sit alongside Last One Laughing. Shows must work across UK regions, and universal themes that travel are preferred.",
+   "url": "https://www.screenglobalproduction.com/news/2026/09/01/amazon-prime-video-increase-uk-spend",
+   "date": "2026-09-01"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Fozia Khan",
+   "title": "Head of Unscripted Originals",
+   "channels": [
+    "Prime Video"
+   ],
+   "remit": "UK unscripted originals (earlier titled Head of Unscripted, Amazon Studios UK). Slate has included All or Nothing: Arsenal, Clarkson's Farm, The Fake Sheikh and 007: Road to a Million.",
+   "recent_commissions": [],
+   "pitch_route": "No public submission route; contact through an established production company",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Spoke at Edinburgh TV Festival on 27 Aug 2026. The 2023 Content London page credits that slate to her team as 'oversees', not as personal commissions. Former Channel 4 commissioning editor.",
+   "sources": [
+    "https://www.screenglobalproduction.com/news/2026/09/01/amazon-prime-video-increase-uk-spend",
+    "https://www.c21media.net/department/marketing/content-london-boosts-its-formats-and-factual-strand-with-amazon-unscripted-emea-session/"
+   ]
+  },
+  {
+   "name": "Tara Erer",
+   "title": "Head of UK Film and Unscripted Television and Northern European Originals, Prime Video",
+   "channels": [
+    "Prime Video"
+   ],
+   "remit": "Original film and TV across the UK, Germany, Benelux, Nordics, Eastern Europe and Turkey; also manages the Global Formats team",
+   "recent_commissions": [
+    {
+     "title": "Clarkson's Farm",
+     "desc": "UK unscripted farming series (credited on her RTS profile; date not given)",
+     "date": "",
+     "url": "https://rts.org.uk/person/tara-erer"
+    },
+    {
+     "title": "Last One Laughing (UK)",
+     "desc": "Comedy competition format (credited on her RTS profile; date not given)",
+     "date": "",
+     "url": "https://rts.org.uk/person/tara-erer"
+    }
+   ],
+   "pitch_route": "No public submission route; contact through an established production company",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Quoted on Amazon's announcement of All or Nothing: Manchester United (2026/27 season, launching summer 2027), but not credited as its commissioner. Her RTS profile gives the title as 'Head of Northern Europe and Film & Unscripted, UK'.",
+   "sources": [
+    "https://www.aboutamazon.com/md/news/entertainment/all-or-nothing-manchester-united-prime-video-documentary",
+    "https://rts.org.uk/person/tara-erer"
+   ]
+  },
+  {
+   "name": "Jenn Levy",
+   "title": "Head of Unscripted and Documentary TV, Amazon MGM Studios",
+   "channels": [
+    "Prime Video"
+   ],
+   "remit": "Global (US-led) head of unscripted and documentary TV",
+   "recent_commissions": [],
+   "pitch_route": "No public submission route",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2026-01-20 (start date)",
+   "confidence": "high",
+   "notes": "Global role, not UK-based; former Netflix executive. Included for context because UK producers pitch the UK team first.",
+   "sources": [
+    "https://www.broadcastnow.co.uk/broadcast-international/amazon-mgm-studios-hires-netflix-alum-to-lead-unscripted/5212460.article"
+   ]
+  },
+  {
+   "name": "Harjeet Chhokar",
+   "title": "Unscripted Executive, Amazon Studios UK (per 2023 source)",
+   "channels": [
+    "Prime Video"
+   ],
+   "remit": "UK Originals unscripted development: factual and non-live sports documentaries",
+   "recent_commissions": [],
+   "pitch_route": "No public submission route",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Evidence dates from Nov 2023 and Feb 2024 (Edinburgh TV Festival 2024 Advisory Chair). He has 'worked across' Clarkson's Farm, 007: Road to a Million and All or Nothing: Arsenal, but these are not credited as his commissions. Current role not reconfirmed.",
+   "sources": [
+    "https://www.c21media.net/session/content-strategies-amazon-unscripted-uk/",
+    "https://ca.news.yahoo.com/amazon-uk-unscripted-exec-works-170808419.html"
+   ]
+  },
+  {
+   "name": "Cat Lynch",
+   "title": "Unscripted Executive, Amazon Studios UK (per 2023 source)",
+   "channels": [
+    "Prime Video"
+   ],
+   "remit": "Unscripted development: formats and factual entertainment",
+   "recent_commissions": [],
+   "pitch_route": "No public submission route",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "The only evidence is the Content London listing from Nov 2023. Current role not reconfirmed.",
+   "sources": [
+    "https://www.c21media.net/session/content-strategies-amazon-unscripted-uk/"
+   ]
+  }
+ ]
+}

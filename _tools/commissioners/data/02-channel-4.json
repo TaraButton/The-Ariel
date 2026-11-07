@@ -1,0 +1,943 @@
+{
+ "broadcaster": "Channel 4",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All genres except News & Current Affairs and Sport",
+   "route": "4ideas portal for full proposals; initial top-line conversations by email to commissioners. General queries: 4producers@channel4.co.uk",
+   "url": "https://www.channel4.com/4producers/working-with-us/pitching-us"
+  },
+  {
+   "genre": "4ideas account sign-up / login",
+   "route": "Register via 4ideas page",
+   "url": "https://www.channel4.com/4producers/4ideas"
+  },
+  {
+   "genre": "Documentaries & Factual Entertainment",
+   "route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+  },
+  {
+   "genre": "Specialist Factual",
+   "route": "Email top lines / access or talent queries to a Commissioning Editor (cc assistant); full proposals with decks, scripts or sizzles via 4ideas.",
+   "url": "https://www.channel4.com/4producers/briefs/specialist-factual"
+  },
+  {
+   "genre": "News & Current Affairs (Dispatches, Untold, foreign, consumer)",
+   "route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page. Unreported World is produced by ITN and not open to pitches.",
+   "url": "https://www.channel4.com/4producers/briefs/news-current-affairs"
+  },
+  {
+   "genre": "Lifestyle / daytime / popular factual",
+   "route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "url": "https://www.channel4.com/4producers/briefs/lifestyle"
+  },
+  {
+   "genre": "More4",
+   "route": "Contact the Lifestyle-team commissioners listed on the More4 brief; tariffs GBP50k-120k; everything must be repeatable on C4.",
+   "url": "https://www.channel4.com/4producers/briefs/more4"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "All Current Briefs (index)",
+   "summary": "Rolling, ongoing pitches by genre; lists 11 genre brief pages. No dated cross-genre callouts were listed on 7 Nov 2026.",
+   "url": "https://www.channel4.com/4producers/all-current-briefs",
+   "date": "undated; checked 2026-11-07"
+  },
+  {
+   "title": "Documentaries & Factual Entertainment brief",
+   "summary": "Premium access docs, splashy single films, returnable precinct brands, formal innovation, ~1 factual drama a year, First Cut (2026 closed), daring social experiments, talent-led vehicles.",
+   "url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "date": "undated; checked 2026-11-07"
+  },
+  {
+   "title": "Specialist Factual brief",
+   "summary": "Revelatory singles with scoops, popular returners (history, science, adventure, travel, arts), provocative events/factual theatre; climate and AI priority in science; Secret History strand.",
+   "url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "date": "undated; checked 2026-11-07"
+  },
+  {
+   "title": "News & Current Affairs brief",
+   "summary": "Dispatches (plus in-house Investigations Unit), Untold youth strand (16-34, digital-first), foreign films, populist consumer programmes.",
+   "url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "date": "undated; text partly dated (refers to 2025)"
+  },
+  {
+   "title": "Lifestyle brief",
+   "summary": "Lifestyle/daytime/features; property bucket full (not seeking property ideas except daytime brief); pitch via one Comm Ed on 4ideas.",
+   "url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "date": "undated; checked 2026-11-07"
+  },
+  {
+   "title": "More4 brief",
+   "summary": "Soft-doc 'intelligent comfort viewing' series; tentpoles, national-treasure-led, low-cost repeatable series; GBP50k-120k tariffs.",
+   "url": "https://www.channel4.com/4producers/briefs/more4",
+   "date": "undated; checked 2026-11-07"
+  },
+  {
+   "title": "Unscripted Proof of Concept Fund",
+   "summary": "Development fund for big, original returnable unscripted formats ('poster test'); pitch via Docs & Fact Ent, Lifestyle, Reality & Ent or Specialist Factual through 4ideas, flagging the fund. No deadline stated.",
+   "url": "https://www.channel4.com/4producers/news/channel-4-announces-unscripted-proof-concept-fund",
+   "date": "2026-04-15"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "David Brindley",
+   "title": "Director of Programmes (incoming; joins January 2027)",
+   "channels": [
+    "Channel 4",
+    "E4",
+    "More4",
+    "4 streaming"
+   ],
+   "remit": "Full commissioning and editorial responsibility across scripted and unscripted programming, including documentaries, entertainment, factual entertainment and lifestyle.",
+   "recent_commissions": [],
+   "pitch_route": "Not a pitch contact; pitch to genre commissioning editors.",
+   "pitch_url": "https://www.channel4.com/4producers/working-with-us/pitching-us",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Appointed 7 Oct 2026 (C4 press release); joins January 2027 from Twofour, where he is CEO. Previously a C4 Commissioning Editor for Documentaries.",
+   "confidence": "check",
+   "notes": "Not yet in post as of 7 Nov 2026. Included because he will lead all non-news unscripted commissioning from Jan 2027. No C4 commission credits yet.",
+   "sources": [
+    "https://www.channel4.com/press/news/david-brindley-appointed-director-programmes-channel-4",
+    "https://www.channel4.com/press/news/channel-4-unveils-new-commissioning-leadership"
+   ]
+  },
+  {
+   "name": "Louisa Compton",
+   "title": "Director of News, Digital and Audience Trust",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "E4"
+   ],
+   "remit": "News, current affairs (Dispatches, Untold), specialist factual, sport and digital-first commissioning; Executive Board member.",
+   "recent_commissions": [
+    {
+     "title": "The Epstein Files",
+     "desc": "Landmark documentary series fronted by Emily Maitlis, made by Lion Television; commissioned by Compton with Adam Vandermark.",
+     "date": "Apr 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-announces-major-documentary-series-epstein-files-fronted-emily-maitlis"
+    },
+    {
+     "title": "Keir Starmer: Labour in Crisis? Dispatches (w/t)",
+     "desc": "1x60 Lewis Goodall documentary on the collapse in support for Starmer; commissioned by Compton.",
+     "date": "Mar 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-lewis-goodall-documentary-examining-keir-starmers-turbulent"
+    }
+   ],
+   "pitch_route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "published_email": "lcompton@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "appointed": "New Director role announced 2 Jul 2026, effective on Ian Katz's departure (Nov 2026); appointed to C4 Board 5 Oct 2026.",
+   "confidence": "high",
+   "notes": "The 4Producers N&CA page still lists her under the older title 'Head of News & Current Affairs and Sport and Specialist Factual'; email printed there. Jon Snow release quotes her; commissioning credit not explicit in the excerpt read.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/news-current-affairs",
+    "https://www.channel4.com/press/news/channel-4-unveils-new-commissioning-leadership",
+    "https://www.channel4.com/press/news/louisa-compton-appointed-channel-4-board"
+   ]
+  },
+  {
+   "name": "Alisa Pomeroy",
+   "title": "Head of Documentaries & Factual Entertainment (becomes Head of Unscripted, January 2027)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "E4"
+   ],
+   "remit": "Documentaries and factual entertainment (24 Hours in Police Custody to Gogglebox); from Jan 2027 Head of Unscripted covering Docs & Fact Ent, Reality & Entertainment and Specialist Factual.",
+   "recent_commissions": [
+    {
+     "title": "Celebrity Handcuffed",
+     "desc": "Celebrity version of the Handcuffed social-experiment format; commissioned by Tim Hancock and Pomeroy.",
+     "date": "Oct 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-confirms-brand-new-series-celebrity-handcuffed-explosive-pairings-confirmed"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "apomeroy@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "Head of Docs & Fact Ent from 28 Mar 2024; Head of Unscripted announced 28 Oct 2026, starting January 2027.",
+   "confidence": "high",
+   "notes": "Billionaires and Dirty Business releases quote her as Head of Docs & Fact Ent; explicit commissioning credit is Celebrity Handcuffed.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+    "https://www.channel4.com/press/news/channel-4-appoints-alisa-pomeroy-head-unscripted",
+    "https://www.channel4.com/press/news/channel-4s-katz-confirms-new-appointments-senior-commissioning-team"
+   ]
+  },
+  {
+   "name": "Sacha Mirzoeff",
+   "title": "Senior Commissioning Editor and Head of Bristol Hub, Wales Lead (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Documentaries and factual entertainment; based in Bristol.",
+   "recent_commissions": [
+    {
+     "title": "Urban free solo climbing doc (Adam Lockwood)",
+     "desc": "Feature-length doc following a climber attempting to scale the Eiffel Tower without ropes.",
+     "date": "Jun 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-scale-new-heights-urban-free-solo-climbing-doc"
+    },
+    {
+     "title": "Molly Vs THE MACHINES",
+     "desc": "Documentary on Molly Russell's death and her father's fight for online safety.",
+     "date": "Jan 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-air-new-documentary-molly-vs-machines-about-tragic-death-molly-russell-and-her"
+    },
+    {
+     "title": "CECIL",
+     "desc": "Feature-length documentary on the killing of Cecil the lion; Film4/Channel 4 Docs.",
+     "date": "Feb 2026",
+     "url": "https://www.channel4.com/press/news/inside-story-cecil-africas-biggest-lion-whose-death-caused-global-outcry"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "smirzoeff@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "June 2026 release styles him 'Commissioning Editor'; title above is from the 4Producers page.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Anna Miralis",
+   "title": "Senior Commissioning Editor and Scotland Lead (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Documentaries and factual entertainment, incl. true crime.",
+   "recent_commissions": [
+    {
+     "title": "The Body Thief (w/t)",
+     "desc": "Two-part documentary on the Legacy Independent Funeral Directors scandal.",
+     "date": "Oct 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-body-thief-wt-definitive-new-documentary-about-funeral-home"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "amiralis@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Madonna Benjamin",
+   "title": "Senior Commissioning Editor (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Documentaries and factual entertainment, incl. formats.",
+   "recent_commissions": [
+    {
+     "title": "Secret Genius (series 2)",
+     "desc": "Extended 7-part recommission of the Alan Carr / Susie Dent format.",
+     "date": "May 2026",
+     "url": "https://www.channel4.com/press/news/secret-genius-return-extended-second-series"
+    },
+    {
+     "title": "War Room (w/t)",
+     "desc": "2x60 factual format from Expectation putting senior politicians in a simulated war crisis.",
+     "date": "Mar 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-bold-new-format-war-room-wt"
+    },
+    {
+     "title": "Educating Yorkshire (new series)",
+     "desc": "Twofour returns to Thornhill Community Academy; co-commissioned with Rita Daniels.",
+     "date": "Jul 2026",
+     "url": "https://www.channel4.com/press/news/schools-back-educating-yorkshire-return-channel-4-new-series"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "MBenjamin@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Rita Daniels",
+   "title": "Commissioning Editor and Editor of First Cut Strand (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "E4"
+   ],
+   "remit": "Documentaries and factual drama; edits the First Cut new-directors strand.",
+   "recent_commissions": [
+    {
+     "title": "Billionaires (w/t)",
+     "desc": "Factual-drama political thriller on Big Tech, from the makers of Dirty Business.",
+     "date": "Aug 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-timely-new-factual-drama-billionaires-wt-makers-dirty-business"
+    },
+    {
+     "title": "Educating Yorkshire (new series)",
+     "desc": "New series at Thornhill Community Academy from Twofour.",
+     "date": "Jul 2026",
+     "url": "https://www.channel4.com/press/news/schools-back-educating-yorkshire-return-channel-4-new-series"
+    },
+    {
+     "title": "One Born Every Minute (E4)",
+     "desc": "Revival of the fixed-rig maternity obs-doc for E4 from Dragonfly.",
+     "date": "Apr 2026",
+     "url": "https://www.channel4.com/press/news/bafta-award-winning-one-born-every-minute-comes-e4-new-generation"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "RDaniels@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "First Cut 2026 applications are closed per the brief page.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Ian Dunkley",
+   "title": "Commissioning Editor (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Factual entertainment and documentaries.",
+   "recent_commissions": [
+    {
+     "title": "Apocalypse",
+     "desc": "7-part modern survival series; ordinary people in an urban post-apocalypse scenario.",
+     "date": "Sep 2026",
+     "url": "https://www.channel4.com/press/news/ordinary-people-face-ultimate-test-channel-4s-new-modern-survival-series-apocalypse"
+    },
+    {
+     "title": "Celebrity Hunted (return)",
+     "desc": "Factual-entertainment chase format for Stand Up To Cancer, from Shine TV.",
+     "date": "Jul 2026",
+     "url": "https://www.channel4.com/press/news/channel-4s-celebrity-hunted-returns-august-all-star-line"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "IDunkley@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Tim Hancock",
+   "title": "Commissioning Editor and Northern Ireland Lead (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Factual entertainment, social experiments and documentaries.",
+   "recent_commissions": [
+    {
+     "title": "Celebrity Handcuffed",
+     "desc": "Celebrity edition of the Handcuffed social experiment.",
+     "date": "Oct 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-confirms-brand-new-series-celebrity-handcuffed-explosive-pairings-confirmed"
+    },
+    {
+     "title": "Handcuffed: Last Pair Standing (series 2)",
+     "desc": "Recommission of the Jonathan Ross-hosted social experiment.",
+     "date": "Aug 2026",
+     "url": "https://www.channel4.com/press/news/streaming-smash-hit-handcuffed-last-pair-standing-confirmed-second-series-jonathan-ross"
+    },
+    {
+     "title": "The Great ADHD Myth?",
+     "desc": "Science-led documentary with Max Pemberton on whether ADHD is a disorder or social construct.",
+     "date": "Jul 2026",
+     "url": "https://www.channel4.com/press/news/new-channel-4-documentary-great-adhd-myth-seeks-determine-whether-adhd-genuine"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "THancock@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Simon Lee",
+   "title": "Commissioning Executive (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Documentaries and factual entertainment.",
+   "recent_commissions": [
+    {
+     "title": "Trauma: My Broken Brain",
+     "desc": "Obs-doc series from Stream Media Group on young adults after a stroke.",
+     "date": "Sep 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-announces-intimate-documentary-series-stream-media-group-young-people-living"
+    },
+    {
+     "title": "Aldi: The Next Big Seller",
+     "desc": "Relaunched supplier competition series from South Shore with Aldi.",
+     "date": "Feb 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-and-aldi-announce-relaunch-much-loved-tv-series"
+    }
+   ],
+   "pitch_route": "Email top lines to the relevant Commissioning Editor first; when a full proposal is requested, submit via 4ideas (PACT-registered companies with relevant experience).",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "SLee@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment"
+   ]
+  },
+  {
+   "name": "Rachael Kinley",
+   "title": "Junior Commissioning Editor (Documentaries & Factual Entertainment)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Supports the Docs & Fact Ent team in Bristol (4Skills Junior Commissioning Editor programme).",
+   "recent_commissions": [],
+   "pitch_route": "Meeting/networking contact rather than a pitch route; pitch to a Commissioning Editor.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "published_email": "rkinley@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+   "appointed": "Started 2025 (4Producers 'Meet the Junior Commissioning Editors', 25 Sep 2025).",
+   "confidence": "high",
+   "notes": "Email is printed as plain text (not a mailto link) on the brief page. Said in Sep 2025 she was not yet taking pitches.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/documentaries-and-factual-entertainment",
+    "https://www.channel4.com/4producers/news/meet-junior-commissioning-editors"
+   ]
+  },
+  {
+   "name": "Shaminder Nahal",
+   "title": "Head of Specialist Factual and Northern Ireland Lead",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Specialist factual: topical singles and series, factual theatre, arts; dept also covers history, science, adventure, travel.",
+   "recent_commissions": [
+    {
+     "title": "The Experiment",
+     "desc": "Mat Fraser and Sophie Morgan test whether Brits can be swayed by Nazi-era ideas about disability.",
+     "date": "Oct 2026",
+     "url": "https://www.channel4.com/press/news/experiment-would-you-recognise-cruelty-if-it-was-dressed-care-channel-4-explores-whether"
+    },
+    {
+     "title": "How to Get Filthy Rich",
+     "desc": "1x90 Gary Stevenson documentary on wealth inequality.",
+     "date": "May 2026",
+     "url": "https://www.channel4.com/press/news/how-get-filthy-rich-gary-stevenson-fronts-new-channel-4-documentary-inequality"
+    },
+    {
+     "title": "Wrestling with Trump",
+     "desc": "Munya Chawawa explores the link between wrestling and MAGA politics.",
+     "date": "Apr 2026",
+     "url": "https://www.channel4.com/press/news/munya-chawawa-steps-ring-explore-link-between-trumps-politics-and-wrestling"
+    }
+   ],
+   "pitch_route": "Email top lines / access or talent queries to a Commissioning Editor (cc assistant); full proposals with decks, scripts or sizzles via 4ideas.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "published_email": "snahal@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "appointed": "Head of Specialist Factual since Jan 2022 (trade reports).",
+   "confidence": "high",
+   "notes": "From Jan 2027 Specialist Factual moves under Alisa Pomeroy's Head of Unscripted remit per the 28 Oct 2026 release; Nahal's future title not stated. Releases quote her rather than always giving explicit commissioning credit.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/specialist-factual",
+    "https://www.channel4.com/press/news/experiment-would-you-recognise-cruelty-if-it-was-dressed-care-channel-4-explores-whether",
+    "https://summit.realscreen.com/2026/speakers/999977/"
+   ]
+  },
+  {
+   "name": "Jonah Weston",
+   "title": "Commissioning Editor and Scotland Lead (Specialist Factual)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Science, travel and adventure.",
+   "recent_commissions": [
+    {
+     "title": "Celebrity SAS: Who Dares Wins (series 7)",
+     "desc": "UK vs Australia celebrity selection-course series.",
+     "date": "Jan 2026",
+     "url": "https://www.channel4.com/press/news/celebrity-sas-who-dares-finale-sees-dani-dyer-gabby-allen-and-emily-seebohm-pass-brutal"
+    },
+    {
+     "title": "Cancer Detectives: Finding the Cures",
+     "desc": "3x60 brand-funded obs-doc series on pioneering cancer research.",
+     "date": "Oct 2025",
+     "url": "https://www.channel4.com/press/news/new-landmark-channel-4-documentary-series-cancer-detectives-finding-cures-will-explore"
+    },
+    {
+     "title": "Hitler's DNA: Blueprint of a Dictator",
+     "desc": "Two-part science-led history doc from Blink Films; with Emily Shields.",
+     "date": "Oct 2025",
+     "url": "https://www.channel4.com/press/news/channel-4-investigate-hitlers-dna-innovative-science-based-history-doc"
+    }
+   ],
+   "pitch_route": "Email top lines / access or talent queries to a Commissioning Editor (cc assistant); full proposals with decks, scripts or sizzles via 4ideas.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "published_email": "jweston@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/specialist-factual"
+   ]
+  },
+  {
+   "name": "Emily Shields",
+   "title": "Commissioning Editor and Wales Lead (Specialist Factual)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "History (and other specialist factual).",
+   "recent_commissions": [
+    {
+     "title": "Cromlix (Kim and Andy Murray series)",
+     "desc": "Behind-the-scenes series on the Murrays' luxury Scottish hotel overhaul.",
+     "date": "Oct 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-announces-exclusive-new-behind-scenes-series-following-kim-and-andy-murray"
+    },
+    {
+     "title": "The Experiment",
+     "desc": "Disability-and-eugenics social experiment with Mat Fraser and Sophie Morgan; with Shaminder Nahal.",
+     "date": "Oct 2026",
+     "url": "https://www.channel4.com/press/news/experiment-would-you-recognise-cruelty-if-it-was-dressed-care-channel-4-explores-whether"
+    },
+    {
+     "title": "Shakespeare, My Family and Me",
+     "desc": "Dame Judi Dench personal history doc from Proper Job.",
+     "date": "Sep 2025",
+     "url": "https://www.channel4.com/press/news/dame-judi-dench-explores-her-shakespearean-lineage-personal-history-doc-channel-4"
+    }
+   ],
+   "pitch_route": "Email top lines / access or talent queries to a Commissioning Editor (cc assistant); full proposals with decks, scripts or sizzles via 4ideas.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "published_email": "eshields@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/specialist-factual",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/specialist-factual"
+   ]
+  },
+  {
+   "name": "Marc Perkins",
+   "title": "Senior Commissioning Editor, News and Current Affairs",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Overseas/international films and foreign investigations, incl. Unreported World.",
+   "recent_commissions": [],
+   "pitch_route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "published_email": "mperkins@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "appointed": "Appointed 20 Jan 2026 from BBC World Service (C4 press release).",
+   "confidence": "high",
+   "notes": "No C4 commission credits found in press releases. Email shown as text next to an empty mailto link on the N&CA page.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/news-current-affairs",
+    "https://www.channel4.com/press/news/channel-4-adds-senior-bbc-foreign-affairs-editor-news-and-current-affairs-commissioning"
+   ]
+  },
+  {
+   "name": "Adam Vandermark",
+   "title": "Commissioning Editor and Scotland Lead (News & Current Affairs)",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Consumer journalism and current affairs; based in Leeds with oversight of Glasgow.",
+   "recent_commissions": [
+    {
+     "title": "The Epstein Files",
+     "desc": "Emily Maitlis documentary series from Lion Television.",
+     "date": "Apr 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-announces-major-documentary-series-epstein-files-fronted-emily-maitlis"
+    },
+    {
+     "title": "Keir Starmer: Labour in Crisis? Dispatches (w/t)",
+     "desc": "1x60 Lewis Goodall Dispatches on Starmer's premiership.",
+     "date": "Mar 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-lewis-goodall-documentary-examining-keir-starmers-turbulent"
+    },
+    {
+     "title": "Dispatches AI presenter film",
+     "desc": "Dispatches used Britain's first AI presenter as an on-screen stunt.",
+     "date": "Oct 2025",
+     "url": "https://www.channel4.com/press/news/channel-4-makes-tv-history-britains-first-ai-presenter"
+    }
+   ],
+   "pitch_route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "published_email": "avandermark@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/news-current-affairs"
+   ]
+  },
+  {
+   "name": "Joanna Potts",
+   "title": "Commissioning Editor and Wales Lead (News & Current Affairs) - oversees Dispatches",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Dispatches and the Dispatches Investigations Unit.",
+   "recent_commissions": [],
+   "pitch_route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "published_email": "jpotts@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "appointed": "Appointed Dispatches Editor 8 Jun 2021 (C4 press release).",
+   "confidence": "check",
+   "notes": "Listed on the current N&CA brief page, but no 2025-26 press release found crediting her; the N&CA page text is partly dated (refers to ideas for 'next year or into 2025').",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/news-current-affairs",
+    "https://channel4.com/press/news/two-new-appointments-news-and-current-affairs-channel-4"
+   ]
+  },
+  {
+   "name": "Ellie Winstanley",
+   "title": "Commissioning Editor, Current Affairs - Untold",
+   "channels": [
+    "Channel 4",
+    "4 streaming"
+   ],
+   "remit": "Untold, the digital-first current affairs strand for 16-34s.",
+   "recent_commissions": [],
+   "pitch_route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "published_email": "ewinstanley@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
+   "appointed": "Appointed 23 Jun 2026 on an initial 6-month fixed-term contract (C4 press release).",
+   "confidence": "check",
+   "notes": "6-month FTC from June 2026 may end around Dec 2026; re-check. Previously Digital Commissioning Executive.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/news-current-affairs",
+    "https://www.channel4.com/press/news/ellie-winstanley-appointed-untold-commissioning-editor"
+   ]
+  },
+  {
+   "name": "Jo Street",
+   "title": "Director of Commissioning, Nations and Regions, and Head of Lifestyle",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4",
+    "E4"
+   ],
+   "remit": "Lifestyle, features, daytime and More4.",
+   "recent_commissions": [
+    {
+     "title": "The Hormone Fix",
+     "desc": "1x60 factual special with Davinia Taylor from Little Bird Films; with Clemency Green.",
+     "date": "Nov 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-hormone-fix-davinia-taylor"
+    },
+    {
+     "title": "Our Farm Next Door: Amanda, Clive and Kids",
+     "desc": "Double-series renewal for More4 from Wise Owl Films; with Jayne Stanger.",
+     "date": "Nov 2026",
+     "url": "https://www.channel4.com/press/news/our-farm-next-door-amanda-clive-and-kids-renewed-two-more-series-more4"
+    },
+    {
+     "title": "Scotland's Golden Coast",
+     "desc": "10x60 More4 lifestyle series from Firecrest Films; with Deborah Dunnett.",
+     "date": "Aug 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-scotlands-golden-coast-firecrest-films"
+    }
+   ],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "jstreet@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/4producers/briefs/more4"
+   ]
+  },
+  {
+   "name": "Jayne Stanger",
+   "title": "Senior Commissioning Editor (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4"
+   ],
+   "remit": "Lifestyle, daytime and features; More4.",
+   "recent_commissions": [
+    {
+     "title": "Our Farm Next Door: Amanda, Clive and Kids",
+     "desc": "Two further series for More4 (More4's highest-rated show).",
+     "date": "Nov 2026",
+     "url": "https://www.channel4.com/press/news/our-farm-next-door-amanda-clive-and-kids-renewed-two-more-series-more4"
+    },
+    {
+     "title": "Narrow Escapes (series 3)",
+     "desc": "20-part waterways adventure series incl. first journey into Scotland.",
+     "date": "May 2026",
+     "url": "https://www.channel4.com/press/news/narrow-escapes-returns-channel-4-third-series-new-waterways-adventures-and-first-ever"
+    }
+   ],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "jstanger@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/4producers/briefs/more4"
+   ]
+  },
+  {
+   "name": "Deborah Dunnett",
+   "title": "Commissioning Editor, Scotland and Northern Ireland Lead (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4"
+   ],
+   "remit": "Lifestyle, travelogues, consumer and access-docs.",
+   "recent_commissions": [
+    {
+     "title": "Scotland's Golden Coast",
+     "desc": "10x60 More4 series on Scotland's east coast from Firecrest Films.",
+     "date": "Aug 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-scotlands-golden-coast-firecrest-films"
+    },
+    {
+     "title": "The Great Celebrity Pottery Throw Down",
+     "desc": "Five-part celebrity spin-off hosted by Liza Tarbuck, from Love Productions.",
+     "date": "Apr 2026",
+     "url": "https://www.channel4.com/press/news/star-studded-pottery-throw-down-takes-shape-channel-4"
+    },
+    {
+     "title": "Bargain Holiday Secrets",
+     "desc": "Peak-time consumer series on holiday deals from Firecrest Films.",
+     "date": "Jan 2026",
+     "url": "https://www.channel4.com/press/news/bargain-holiday-secrets-new-series-revealing-how-get-more-holiday-your-money"
+    }
+   ],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "ddunnett@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/4producers/briefs/more4"
+   ]
+  },
+  {
+   "name": "Clemency Green",
+   "title": "Senior Commissioning Editor and Wales Lead (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4",
+    "E4"
+   ],
+   "remit": "Lifestyle: property, competition formats, food, hobbies, makeover; also E4.",
+   "recent_commissions": [
+    {
+     "title": "The Hormone Fix",
+     "desc": "1x60 factual special with Davinia Taylor.",
+     "date": "Nov 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-hormone-fix-davinia-taylor"
+    },
+    {
+     "title": "Twice the Food, Half the Price",
+     "desc": "Six-part cost-of-living food series from South Shore in partnership with Lidl.",
+     "date": "Sep 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-commissions-south-shores-twice-food-half-price-partnership-lidl"
+    },
+    {
+     "title": "George Clarke's Amazing Spaces: First Homes",
+     "desc": "Four-part series on housing-crisis solutions from Plum Pictures.",
+     "date": "Aug 2026",
+     "url": "https://www.channel4.com/press/news/george-clarke-explores-innovative-solutions-britains-housing-crisis-new-channel-4-series"
+    }
+   ],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "cgreen@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "More4 brief page lists her as 'Commissioning Editor' (older); Lifestyle page and Nov 2026 release say Senior Commissioning Editor.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/4producers/briefs/more4"
+   ]
+  },
+  {
+   "name": "Jasper Hone",
+   "title": "Commissioning Executive (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4"
+   ],
+   "remit": "Peak lifestyle/features and More4.",
+   "recent_commissions": [
+    {
+     "title": "Yorkshire by the Sea (s2) and Devon & Cornwall (s6)",
+     "desc": "Two recommissions from True North.",
+     "date": "Jul 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-recommissions-two-series-true-north"
+    },
+    {
+     "title": "Kevin McCloud's Listed Britain",
+     "desc": "More4 series from Plum Bristol.",
+     "date": "Apr 2026",
+     "url": "https://www.channel4.com/press/news/plum-pictures-sets-out-future-three-new-commissions-plum-brighton-and-plum-bristol"
+    }
+   ],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "jhone@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/4producers/briefs/more4"
+   ]
+  },
+  {
+   "name": "Barry Agnew",
+   "title": "Commissioning Executive (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4",
+    "E4"
+   ],
+   "remit": "Daytime and lifestyle (A Place in the Sun, Come Dine With Me), quizzes.",
+   "recent_commissions": [
+    {
+     "title": "Jasmine Harman's Renovation in the Sun (series 2)",
+     "desc": "Recommission from Double FTV.",
+     "date": "Jun 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-recommissions-jasmine-harmans-renovation-sun-double-ftv"
+    },
+    {
+     "title": "PopMaster TV",
+     "desc": "Two new series plus celebrity specials of the Ken Bruce quiz.",
+     "date": "Mar 2026",
+     "url": "https://www.channel4.com/press/news/channel-4-orders-two-new-series-popmaster-tv-bright-entertainment"
+    }
+   ],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "bagnew@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Lifestyle-leaning; include only if directory scope covers popular/daytime factual.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/4producers/briefs/more4"
+   ]
+  },
+  {
+   "name": "Dave Donald",
+   "title": "Junior Commissioning Editor (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4"
+   ],
+   "remit": "Daytime, peak and More4 lifestyle; Glasgow.",
+   "recent_commissions": [],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "ddonald@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "Appointed Aug 2025 (4Skills Junior Commissioning Editor programme).",
+   "confidence": "high",
+   "notes": "No commission credits found.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/press/news/channel-4-and-4skills-announce-first-junior-commissioning-editors-and-24-nations-regions"
+   ]
+  },
+  {
+   "name": "Coral Lawson",
+   "title": "Junior Commissioning Editor (Lifestyle)",
+   "channels": [
+    "Channel 4",
+    "4 streaming",
+    "More4"
+   ],
+   "remit": "Daytime, peak and More4 lifestyle; Leeds.",
+   "recent_commissions": [],
+   "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
+   "pitch_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "published_email": "clawson@channel4.co.uk",
+   "email_source_url": "https://www.channel4.com/4producers/briefs/lifestyle",
+   "appointed": "Appointed Aug 2025 (4Skills Junior Commissioning Editor programme).",
+   "confidence": "high",
+   "notes": "No commission credits found.",
+   "sources": [
+    "https://www.channel4.com/4producers/briefs/lifestyle",
+    "https://www.channel4.com/press/news/channel-4-and-4skills-announce-first-junior-commissioning-editors-and-24-nations-regions"
+   ]
+  }
+ ]
+}

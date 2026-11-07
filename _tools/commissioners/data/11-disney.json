@@ -1,0 +1,184 @@
+{
+ "broadcaster": "Disney+",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All",
+   "route": "The Walt Disney Company's policy is not to accept any unsolicited creative ideas or submissions. Approach through an established production company or agent.",
+   "url": "https://thewaltdisneycompany.com/contact-us/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Series Mania: Angela Jain makes Disney+ spending commitment (Broadcast)",
+   "summary": "Disney+ EMEA will raise unscripted spend proportionally more than scripted. It wants 'unscripted thrillers' (anthology one-off docs, obs docs and reality formats, including in the UK), unscripted in volume, and more UK commissioning. Orders depend on the country rather than a fixed shopping list.",
+   "url": "https://www.broadcastnow.co.uk/broadcast-international/angela-jain-makes-disney-spending-commitment/5215168.article",
+   "date": "2026-03"
+  },
+  {
+   "title": "Sean Doyle lays out commissioning plans (Broadcast)",
+   "summary": "Expanding into reality and formats, starting with Blind Date. Continuing female-skewing obs docs and limited series, adding male-skewing sports docs later, and returning series alongside premium boxset docs. Story comes before talent.",
+   "url": "https://www.broadcastnow.co.uk/broadcasters/blind-date-revival-leads-disney-uk-charge-into-reality-and-formats/5206542.article",
+   "date": "2025-06"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Sean Doyle",
+   "title": "Vice President, Unscripted, EMEA (Disney+)",
+   "channels": [
+    "Disney+",
+    "Hulu Originals (UK)"
+   ],
+   "remit": "Leads the UK & EMEA unscripted team; also sports entertainment commissioning across EMEA, working with ESPN",
+   "recent_commissions": [
+    {
+     "title": "Duffy (feature doc)",
+     "desc": "Hulu Original feature documentary on singer Duffy, directed by Gill Callan; co-commissioned with Angela Jain",
+     "date": "2026-03",
+     "url": "https://www.advanced-television.com/2026/03/25/disney-orders-duffy-documentary-film/"
+    },
+    {
+     "title": "Castle Man",
+     "desc": "Alan Carr searches for, buys and runs a historic castle (Expectation); co-commissioned with Angela Jain",
+     "date": "2026-01",
+     "url": "https://www.advanced-television.com/?p=277805"
+    },
+    {
+     "title": "The Rooneys (w/t)",
+     "desc": "Ten-part obs doc following Coleen and Wayne Rooney and family (Lorton/Blast Films)",
+     "date": "2025-06",
+     "url": "https://press.disney.co.uk/news/disney+-adds-three-new-premium-reality-commissions-to-its-growing-slate-of-uk-unscripted-original-series"
+    }
+   ],
+   "pitch_route": "No unsolicited submissions; approach via a production company or agent",
+   "pitch_url": "https://thewaltdisneycompany.com/contact-us/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "Promoted to VP Unscripted at the start of 2026 (previously Executive Director, Unscripted)",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.advanced-television.com/2026/03/25/disney-orders-duffy-documentary-film/",
+    "https://www.broadcastnow.co.uk/people/disney-expands-sean-doyles-remit-to-sports-entertainment/5219499.article",
+    "https://www.advanced-television.com/?p=277805"
+   ]
+  },
+  {
+   "name": "Angela Jain",
+   "title": "Head of Content, EMEA (Disney+)",
+   "channels": [
+    "Disney+"
+   ],
+   "remit": "EMEA content chief, covering scripted and unscripted",
+   "recent_commissions": [
+    {
+     "title": "Duffy (feature doc)",
+     "desc": "Hulu Original feature documentary on singer Duffy; co-commissioned with Sean Doyle",
+     "date": "2026-03",
+     "url": "https://www.advanced-television.com/2026/03/25/disney-orders-duffy-documentary-film/"
+    },
+    {
+     "title": "Castle Man",
+     "desc": "Alan Carr castle series; co-commissioned with Sean Doyle",
+     "date": "2026-01",
+     "url": "https://www.advanced-television.com/?p=277805"
+    }
+   ],
+   "pitch_route": "No unsolicited submissions",
+   "pitch_url": "https://thewaltdisneycompany.com/contact-us/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2025-09",
+   "confidence": "high",
+   "notes": "Senior decision-maker rather than a first-pitch contact; UK unscripted pitches go to Doyle's team.",
+   "sources": [
+    "https://www.broadcastnow.co.uk/broadcast-international/angela-jain-makes-disney-spending-commitment/5215168.article",
+    "https://www.advanced-television.com/2026/03/25/disney-orders-duffy-documentary-film/"
+   ]
+  },
+  {
+   "name": "Gaby Aung",
+   "title": "Senior Manager, Unscripted (Commissioning), Disney+",
+   "channels": [
+    "Disney+"
+   ],
+   "remit": "Works with Sean Doyle on the UK & EMEA unscripted slate; joined 2024 from Lightbox",
+   "recent_commissions": [
+    {
+     "title": "Flintoff",
+     "desc": "Documentary on the career of England cricketer Freddie Flintoff",
+     "date": "",
+     "url": "https://www.wftv.org.uk/events-1/meet-the-commissioner-unscripted-gaby-aung"
+    },
+    {
+     "title": "Caroline (w/t)",
+     "desc": "Feature-length documentary on presenter Caroline Flack",
+     "date": "",
+     "url": "https://www.wftv.org.uk/events-1/meet-the-commissioner-unscripted-gaby-aung"
+    }
+   ],
+   "pitch_route": "No unsolicited submissions",
+   "pitch_url": "https://thewaltdisneycompany.com/contact-us/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2024",
+   "confidence": "check",
+   "notes": "Latest evidence is May-June 2025, more than 12 months old. On the June 2025 reality slate she was credited as executive producer, not commissioner.",
+   "sources": [
+    "https://www.wftv.org.uk/events-1/meet-the-commissioner-unscripted-gaby-aung",
+    "https://press.disney.co.uk/news/disney+-adds-three-new-premium-reality-commissions-to-its-growing-slate-of-uk-unscripted-original-series"
+   ]
+  },
+  {
+   "name": "Jon Swain",
+   "title": "Commissioning Executive, Unscripted, Disney+",
+   "channels": [
+    "Disney+"
+   ],
+   "remit": "On Sean Doyle's UK & EMEA unscripted team; reality and formats",
+   "recent_commissions": [],
+   "pitch_route": "No unsolicited submissions",
+   "pitch_url": "https://thewaltdisneycompany.com/contact-us/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2025 (c. May; reported June 2025)",
+   "confidence": "check",
+   "notes": "Evidence is from June 2025, more than 12 months old. Former head of Shine TV. Credited as executive producer, not commissioner, on Blind Date, The Rooneys and Jamie and Sophie.",
+   "sources": [
+    "https://www.broadcastnow.co.uk/broadcasters/blind-date-revival-leads-disney-uk-charge-into-reality-and-formats/5206542.article",
+    "https://press.disney.co.uk/news/disney+-adds-three-new-premium-reality-commissions-to-its-growing-slate-of-uk-unscripted-original-series"
+   ]
+  },
+  {
+   "name": "Tom McDonald",
+   "title": "EVP of Content, National Geographic",
+   "channels": [
+    "National Geographic",
+    "Nat Geo WILD",
+    "Disney+",
+    "Hulu"
+   ],
+   "remit": "Oversees development and production of all global unscripted series and specials for Nat Geo, for Disney+ and the global linear channels (global, US-led)",
+   "recent_commissions": [
+    {
+     "title": "One Day In America (3 seasons)",
+     "desc": "Nat Geo specials series (JFK, Jonestown, Oklahoma bombing); greenlit by him per his Nat Geo bio, date not given",
+     "date": "",
+     "url": "https://www.detpress.com/natgeo/bios/tom-mcdonald/"
+    }
+   ],
+   "pitch_route": "No unsolicited submissions",
+   "pitch_url": "https://thewaltdisneycompany.com/contact-us/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Quoted as EVP of Content on Best of the World with Antoni Porowski (Twofour, UK producer; announced 10 Dec 2025), but not credited as its commissioner. Former Apple and BBC executive. Nat Geo's global unscripted lead, not a UK-only commissioner.",
+   "sources": [
+    "https://mortystv.com/blog/2025/12/10/national-geographic-turns-its-bestselling-book-and-influential-annual-best-of-the-world-list-into-travel-tv-and-streaming-series-exploring-the-worlds-greatest-cities-in-best-of-the-world-with-ant/",
+    "https://www.detpress.com/natgeo/bios/tom-mcdonald/"
+   ]
+  }
+ ]
+}

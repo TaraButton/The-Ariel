@@ -1,0 +1,169 @@
+{
+ "broadcaster": "Warner Bros. Discovery",
+ "checked": "2026-11-07",
+ "pitch_routes": [
+  {
+   "genre": "All unscripted / factual (UK & Ireland)",
+   "route": "No public UK pitch portal or published commissioning inbox found. WBD UK & Ireland announces commissions via its GB press site, where releases credit the commissioner (Charlotte Reid) and the exec who ordered the series (Graham Lafferty). Approach via the named commissioning team.",
+   "url": "https://press.wbd.com/gb/search?type=media_release"
+  },
+  {
+   "genre": "Emerging / diverse producers (talent schemes)",
+   "route": "WBD Access runs programmes via Submittable; on 2026-11-07 the page said 'There are presently no open calls for submissions.' A WBD Access Production Incubator for UK food/cooking concepts (emerging and mid-level prodcos) was announced 31 Mar 2026; details are Pact-members-only.",
+   "url": "https://wbdaccess.submittable.com/submit"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "WBD UK & Ireland stacks deck with over 90 hours of new comedy and motoring",
+   "summary": "Graham Lafferty: TLC is being built into a broad free-to-air entertainment channel with UK comedy; Quest gets more high-energy car, craft and engineering content fronted by known experts (e.g. The Race Mechanic, Shed and Buried: Big Stuff, Richard Hammond's Workshop s7, Wheeler Dealers World Tour s3).",
+   "url": "https://press.wbd.com/gb/media-release/warner-bros-discovery-uk-ireland-stacks-deck-over-90-hours-new-comedy-and-motoring",
+   "date": "2026-07-22"
+  },
+  {
+   "title": "New-look free-to-air TLC launches today (refreshed FTA portfolio)",
+   "summary": "Refreshed FTA portfolio: discovery+ true crime (An American Serial Killer in Cairo) and personality-led renovation; Quest motoring, restoration and antiques series with known presenters.",
+   "url": "https://press.wbd.com/gb/media-release/new-look-free-air-tlc-launches-today",
+   "date": "2026-01-13"
+  },
+  {
+   "title": "WBD UK & Ireland launch new-look TLC channel",
+   "summary": "Lafferty states an 'ongoing commitment to linear television' and an aim 'to commission local stories and local talent for local audiences'.",
+   "url": "https://press.wbd.com/gb/media-release/warner-bros-discovery-uk-ireland-launch-new-look-tlc-channel-big-bang-and-unveil-host",
+   "date": "2025-10-20"
+  },
+  {
+   "title": "Kim Kardashian Heist, Guz Khan's Custom Cars, Zero Stars and Rav Gill's Chop House",
+   "summary": "discovery+ takes premium true-crime docs (The Kim Kardashian Heist, Wall to Wall); Quest / Discovery Channel take talent-led motoring and engineering returners.",
+   "url": "https://press.wbd.com/gb/media-release/kim-kardashian-heist-guz-khans-custom-cars-zero-stars-and-rav-gills-chophouse",
+   "date": "2025-06-18"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Charlotte Reid",
+   "title": "VP Commissioning, Warner Bros. Discovery UK & Ireland",
+   "channels": [
+    "Quest",
+    "discovery+",
+    "Discovery Channel",
+    "TLC",
+    "Food Network"
+   ],
+   "remit": "Commissions the WBD UK & Ireland local slate across linear channels and discovery+ (factual, true crime, motoring/restoration, entertainment).",
+   "recent_commissions": [
+    {
+     "title": "The Race Mechanic (w/t)",
+     "desc": "8x60 Quest motoring doc series: vintage car engineer Sam Lovegrove preps classic cars for rallies and hill climbs (Beagle Media).",
+     "date": "2026-07",
+     "url": "https://press.wbd.com/gb/media-release/warner-bros-discovery-uk-ireland-stacks-deck-over-90-hours-new-comedy-and-motoring"
+    },
+    {
+     "title": "An American Serial Killer in Cairo (w/t)",
+     "desc": "4x60 discovery+ true-crime documentary on Lobna Yakout and her husband Karim Selim (Basement Films / Kudeta Films).",
+     "date": "2026-01",
+     "url": "https://press.wbd.com/gb/media-release/new-look-free-air-tlc-launches-today"
+    },
+    {
+     "title": "The Kim Kardashian Heist (w/t)",
+     "desc": "3-part discovery+ true-crime doc following the French trial over the 2016 Paris robbery (Wall to Wall Media).",
+     "date": "2025-06",
+     "url": "https://press.wbd.com/gb/media-release/kim-kardashian-heist-guz-khans-custom-cars-zero-stars-and-rav-gills-chophouse"
+    }
+   ],
+   "pitch_route": "No published pitch portal or inbox; credited commissioner on WBD UK & Ireland press releases.",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Role confirmed current by the 22 Jul 2026 WBD release ('The series were ordered by Graham Lafferty and commissioned by Charlotte Reid for Warner Bros. Discovery UK & Ireland'), which gives no title. Exact title 'VP Commissioning' is from Televisual 31 Mar 2025 (19 months old). Same Mar 2025 slate named Matt Reid, Romy Page and Rebecca Bayatti as WBD exec producers on her commissions - their titles could not be verified so they are not listed.",
+   "sources": [
+    "https://press.wbd.com/gb/media-release/warner-bros-discovery-uk-ireland-stacks-deck-over-90-hours-new-comedy-and-motoring",
+    "https://press.wbd.com/gb/media-release/new-look-free-air-tlc-launches-today",
+    "https://press.wbd.com/gb/media-release/kim-kardashian-heist-guz-khans-custom-cars-zero-stars-and-rav-gills-chophouse",
+    "https://www.televisual.com/news/wbd-reveals-slate-of-new-and-returning-titles/"
+   ]
+  },
+  {
+   "name": "Graham Lafferty",
+   "title": "SVP Content Strategy & Networks, UK&I, Warner Bros. Discovery",
+   "channels": [
+    "TLC",
+    "Quest",
+    "Really",
+    "HGTV",
+    "Discovery Channel",
+    "discovery+",
+    "Food Network"
+   ],
+   "remit": "Senior exec over WBD UK & Ireland content strategy and networks; 'orders' the local slate that Charlotte Reid commissions. Gatekeeper rather than first pitch contact.",
+   "recent_commissions": [
+    {
+     "title": "Shed and Buried: Big Stuff",
+     "desc": "6x60 Quest spin-off: Henry Cole and Fuzz Townshend restore oversized agricultural and working vehicles (HCA Entertainment). Credited as 'ordered by'.",
+     "date": "2026-07",
+     "url": "https://press.wbd.com/gb/media-release/warner-bros-discovery-uk-ireland-stacks-deck-over-90-hours-new-comedy-and-motoring"
+    },
+    {
+     "title": "An American Serial Killer in Cairo (w/t)",
+     "desc": "4x60 discovery+ true-crime documentary (Basement Films / Kudeta Films). Credited as 'ordered by'.",
+     "date": "2026-01",
+     "url": "https://press.wbd.com/gb/media-release/new-look-free-air-tlc-launches-today"
+    }
+   ],
+   "pitch_route": "No published pitch route; senior sign-off exec.",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Releases say series were 'ordered by Graham Lafferty and commissioned by Charlotte Reid' - he is the approving exec, not the day-to-day commissioner. Channel list (Really, HGTV) is from his networks remit, not from a named commission.",
+   "sources": [
+    "https://press.wbd.com/gb/media-release/warner-bros-discovery-uk-ireland-stacks-deck-over-90-hours-new-comedy-and-motoring",
+    "https://press.wbd.com/gb/media-release/new-look-free-air-tlc-launches-today",
+    "https://www.advanced-television.com/2026/01/13/wbd-refreshes-uk-fta-portfolio/"
+   ]
+  },
+  {
+   "name": "Rob Holloway",
+   "title": "Commissioning Executive, Warner Bros. Discovery UK & Ireland",
+   "channels": [
+    "Quest"
+   ],
+   "remit": "Commissioning executive on the WBD UK & Ireland unscripted slate; exec for WBD on Johnny Vegas' Little Shop of Antiques (Quest).",
+   "recent_commissions": [],
+   "pitch_route": "No published pitch route.",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Title from The TV Festival Changemakers 2025 page (published 2025-06-05, >12 months old). Televisual 31 Mar 2025: 'Rob Holloway execs Johnny Vegas' Little Shop of Antiques (w/t)' - an exec-producer credit, not a commissioning credit, so not listed as a commission. No 2026 confirmation found.",
+   "sources": [
+    "https://www.thetvfestival.com/team/rob-holloway/",
+    "https://www.televisual.com/news/wbd-reveals-slate-of-new-and-returning-titles/"
+   ]
+  },
+  {
+   "name": "Deirdre Dowling",
+   "title": "Commissioning Editor, Warner Bros. Discovery UK & Ireland",
+   "channels": [
+    "Quest"
+   ],
+   "remit": "Commissioning editor on the WBD UK & Ireland unscripted slate; exec for WBD on Mike Brewer: The Real Deal (Quest).",
+   "recent_commissions": [],
+   "pitch_route": "No published pitch route.",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Title 'Commissioning editor' from C21 Content London speaker announcement (undated, circa Oct 2023 - well over 12 months old). Televisual 31 Mar 2025: 'Deirdre Dowling execs Mike Brewer: The Real Deal' (exec credit, not commissioning credit). No 2026 confirmation found.",
+   "sources": [
+    "https://www.c21media.net/department/marketing/wbd-to-show-up-in-force-at-content-london-as-uk-and-emea-commissioning-teams-join-speaker-line-up/",
+    "https://www.televisual.com/news/wbd-reveals-slate-of-new-and-returning-titles/"
+   ]
+  }
+ ]
+}
