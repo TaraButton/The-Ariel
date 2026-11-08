@@ -442,26 +442,52 @@
   "agency": "PFD (Peters Fraser + Dunlop)",
   "aliases": [
    "PFD",
-   "Peters Fraser Dunlop"
+   "Peters Fraser + Dunlop",
+   "Peters Fraser Dunlop",
+   "Peters Fraser and Dunlop"
   ],
-  "domain": "pfd.co.uk",
+  "domain": "petersfraserdunlop.com",
+  "email_domain": "pfd.co.uk",
   "film_tv_contact": {
-   "name": "Millie Sykes (Film/TV Department; agents Rosie Gurtovoy, Jonathan Sissons)",
-   "email": "msykes@pfd.co.uk",
-   "source_url": "gmail thread 1a1698048f2bbf4f"
+   "name": "Jonathan Sissons (Film/TV Agent) and Rosie Gurtovoy (Head of Media Rights, rgurtovoy@pfd.co.uk), jointly per the site; Millie Sykes (Film/TV Department, msykes@pfd.co.uk) is our day-to-day contact by email",
+   "email": "jsissons@pfd.co.uk",
+   "source_url": "https://petersfraserdunlop.com/rights/film-tv/",
+   "other_verified": [
+    {
+     "name": "Millie Sykes",
+     "email": "msykes@pfd.co.uk",
+     "source_url": "gmail thread 1a1698048f2bbf4f"
+    },
+    {
+     "name": "Rosie Gurtovoy",
+     "email": "rgurtovoy@pfd.co.uk",
+     "source_url": "https://petersfraserdunlop.com/rights/film-tv/"
+    }
+   ]
   },
   "general_email": {
    "email": "info@pfd.co.uk",
-   "source_url": "gmail thread 1a1698048f2bbf4f"
+   "source_url": "https://petersfraserdunlop.com/contact/"
   },
   "rights_guide": {
    "url": "The Ariel HQ/Business Strategy/Agent_Outreach/PFD/PFD_Film_TV_Rights_Guide_Sept_2026.pdf",
    "kind": "film/TV",
    "date": "2026-09"
   },
-  "book_ids": [],
+  "other_rights_guides": [
+   {
+    "url": "https://petersfraserdunlop.com/wp-content/uploads/2026/10/PFD-Frankfurt-2026-rights-guide-all-titles.pdf",
+    "kind": "translation only",
+    "date": "Frankfurt Book Fair 2026 (also Children's/YA FBF 2026 and Contemporary Classics LBF 2026 guides on https://petersfraserdunlop.com/rights/international/). Screen status mentioned only incidentally in some blurbs (e.g. 'TV rights optioned by...')."
+   }
+  ],
+  "nonfiction_note": "Frontlist guide has a non-fiction section; site asks film/TV enquiries go to Sissons and Gurtovoy jointly.",
+  "checked": "2026-11-04",
+  "book_ids": [
+   "alexander-god-king-man-edmund-richardson"
+  ],
   "guide_ask_sent": "2026-10-23",
-  "note": "Added us to their film/TV submissions mailing list 3 Nov 2026"
+  "note": "Added us to their film/TV submissions mailing list 3 Nov 2026. Two registry entries merged 8 Nov 2026."
  },
  {
   "agency": "Northbank Talent Management",
@@ -487,34 +513,6 @@
   "book_ids": [],
   "guide_ask_sent": "2026-09-01",
   "nonfiction_note": "Client sections for Current Affairs & Business, History & True Crime, Science & Psychology."
- },
- {
-  "agency": "PFD (Peters Fraser + Dunlop)",
-  "aliases": [
-   "Peters Fraser + Dunlop",
-   "PFD"
-  ],
-  "domain": "petersfraserdunlop.com",
-  "film_tv_contact": {
-   "name": "Jonathan Sissons (Film/TV Agent); also Rosie Gurtovoy (Head of Media Rights, rgurtovoy@pfd.co.uk); cc Millie Sykes (msykes@pfd.co.uk)",
-   "email": "jsissons@pfd.co.uk",
-   "source_url": "https://petersfraserdunlop.com/rights/film-tv/"
-  },
-  "general_email": {
-   "email": "info@pfd.co.uk",
-   "source_url": "https://petersfraserdunlop.com/contact/"
-  },
-  "rights_guide": {
-   "url": "https://petersfraserdunlop.com/wp-content/uploads/2026/10/PFD-Frankfurt-2026-rights-guide-all-titles.pdf",
-   "kind": "translation only",
-   "date": "Frankfurt Book Fair 2026 (also Children's/YA FBF 2026 and Contemporary Classics LBF 2026 guides on https://petersfraserdunlop.com/rights/international/). Screen status mentioned only incidentally in some blurbs (e.g. 'TV rights optioned by...')."
-  },
-  "nonfiction_note": "Frontlist guide has a non-fiction section; site asks film/TV enquiries go to Sissons and Gurtovoy jointly.",
-  "checked": "2026-11-04",
-  "book_ids": [
-   "alexander-god-king-man-edmund-richardson"
-  ],
-  "guide_ask_sent": ""
  },
  {
   "agency": "Curtis Brown",
