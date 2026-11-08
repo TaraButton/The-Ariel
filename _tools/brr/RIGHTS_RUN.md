@@ -79,7 +79,11 @@ repo path), titles: [{book, author, status, note}], last_refresh_asked}`. Commit
    that agency's guide, set_rights from the guide and do not email them. If the agency has a guide but the
    book is not in it, the email asks only "Is <Book> on your current rights guide?".
 3c. **Late contacts.** Any book in the current edition whose Rights row now has a verified contact but no
-   `asked_at` (found after Wednesday's emails): queue its agent_ask now, one email per agency.
+   `asked_at` (found after Monday's emails): queue its agent_ask now, one email per agency.
+3f. **Producer interest after asking.** If a book was asked about on Monday and a producer request (role
+   Producer / Development executive / Commissioner, or member/pass) arrives before the agent answers, queue
+   one short reply in that agency's thread: "Two of our producers have since asked about <Book>" (real count).
+   Once per book.
 3d. **Agency guide asks (the main supply lever, Tara 4 Nov).** For every agency in
    `reviews/agents/agencies.json` with a verified contact, no guide in lists.json, `guide_ask_sent` empty or
    more than 90 days ago, no agent_ask to that agency in the last 30 days (those already carried the
