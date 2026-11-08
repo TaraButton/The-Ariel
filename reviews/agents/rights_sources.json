@@ -1,0 +1,1217 @@
+[
+ {
+  "name": "Penguin Random House UK",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "penguin.co.uk",
+  "rights_page_url": "https://www.penguin.co.uk/about/work-with-us/rights-and-permissions/rights/film-tv-and-stage",
+  "guide": {
+   "url": "https://wp.penguin.co.uk/wp-content/uploads/2026/09/Medial-Rights-Guide-Autumn-26.pdf",
+   "kind": "film/TV",
+   "date": "Autumn 2026 (Media Rights Highlights)"
+  },
+  "screen_contact": {
+   "name": "Jenna Brown, Head of Media Rights (also Anna On, Media Lawyer; Keltie)",
+   "email": "jbrown2@penguinrandomhouse.co.uk",
+   "source_url": "https://wp.penguin.co.uk/wp-content/uploads/2026/09/Medial-Rights-Guide-Autumn-26.pdf",
+   "quote": "Jenna Brown - Head of Media Rights ... jbrown2@penguinrandomhouse.co.uk"
+  },
+  "general_rights_email": {
+   "email": "mediarights@penguinrandomhouse.co.uk",
+   "source_url": "https://www.penguin.co.uk/about/work-with-us/rights-and-permissions/rights/film-tv-and-stage",
+   "quote": "For all media rights enquiries please email mediarights@penguinrandomhouse.co.uk."
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "mediarights@ address confirmed on live page. 68-page count not confirmed. Personal address jbrown2@ printed in the PDF; prefer the mediarights@ desk."
+ },
+ {
+  "name": "Bloomsbury",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "bloomsbury.com",
+  "rights_page_url": "https://www.bloomsbury.com/uk/connect/contact-us/rights/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "blocked",
+  "notes": "Site refused WebFetch (blocked). UK domestic Radio/TV/Film contact and Head of Zeus wording could not be checked; nothing from the research confirmed."
+ },
+ {
+  "name": "HarperCollins UK",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "harpercollinsrights.co.uk",
+  "rights_page_url": "https://www.harpercollinsrights.co.uk/film-tv/",
+  "guide": {
+   "url": "https://s28434.pcdn.co/wp-content/uploads/sites/47/2026/06/HCUK-Film-fiction-guide-LBF26.pdf",
+   "kind": "film/TV",
+   "date": "LBF 2026 (uploaded June 2026); non-fiction guide: https://s28434.pcdn.co/wp-content/uploads/sites/47/2026/06/HCUK-Film-nonfiction-guide-LBF26.pdf"
+  },
+  "screen_contact": {
+   "name": "HarperCollins Productions (internal team); Dramatization Rights form",
+   "email": "",
+   "source_url": "https://www.harpercollinsrights.co.uk/contact-us/",
+   "quote": "To get in contact with any of our teams, please fill-out the form below. (form section 'Dramatization Rights': TV rights, Film rights, Stage adaptation rights)"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No email printed anywhere on the hub; contact is by web form only. Guides are LBF26, not newer."
+ },
+ {
+  "name": "Simon & Schuster UK",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "simonandschuster.co.uk",
+  "rights_page_url": "https://www.simonandschuster.co.uk/p/Rights",
+  "guide": {
+   "url": "",
+   "kind": "general incl. film/TV",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Adult rights team: Amy Fletcher (Rights Director)",
+   "email": "",
+   "source_url": "https://www.simonandschuster.co.uk/p/Rights",
+   "quote": "Rights department handles 'television, motion picture, radio, dramatic, public readings'; no named film/TV person."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Adult and children's guide download links exist but URLs/seasons not readable via fetch. Permissions emails are Cloudflare-obfuscated, so none recorded."
+ },
+ {
+  "name": "Pan Macmillan",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "panmacmillan.com",
+  "rights_page_url": "https://trade.panmacmillan.com/rights-permissions/adult-rights-permissions/",
+  "guide": {
+   "url": "",
+   "kind": "translation only",
+   "date": "Latest listed: Autumn 2025 Translation Guide; Fall 2025 US Guide"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "adultrightsquery@macmillan.co.uk",
+   "source_url": "https://trade.panmacmillan.com/rights-permissions/adult-rights-permissions/",
+   "quote": "General adult rights queries: adultrightsquery@macmillan.co.uk"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Page does not mention film/TV/dramatic rights at all. Lauren Morley-Fletcher not on page. No Spring/Autumn 2026 guide listed."
+ },
+ {
+  "name": "Bonnier Books UK",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "bonnierbooks.co.uk",
+  "rights_page_url": "https://www.bonnierbooks.co.uk/rights-guides/",
+  "guide": {
+   "url": "https://www.bonnierbooks.co.uk/wp-content/uploads/2026/09/Autumn-2026-Fiction-Rights-Guide-Spreads-Final-2.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Autumn 2026 (non-fiction: https://www.bonnierbooks.co.uk/wp-content/uploads/2026/09/Autumn-2026-Non-Fiction-Rights-Guide-Spreads-Final.pdf)"
+  },
+  "screen_contact": {
+   "name": "Ilaria Tarasconi (handles screen adaptation rights); sub-agent Film/TV: SoloSon Media",
+   "email": "",
+   "source_url": "https://www.bonnierbooks.co.uk/rights-guides/",
+   "quote": "Ilaria looks after Italy, the Netherlands, China, Taiwan, and Japan and also handles screen adaptation rights. ... Film/TV: SoloSon Media"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "https://bonnierbooks.us3.list-manage.com/subscribe?u=728cc416ecaabffcc3607721e&id=bd9a457318",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Rights team email is Cloudflare-obfuscated on page; not recorded. Monthly newsletter confirmed."
+ },
+ {
+  "name": "Granta Books",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "granta.com",
+  "rights_page_url": "https://granta.com/rights-and-permissions/",
+  "guide": {
+   "url": "",
+   "kind": "general incl. film/TV",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Isabella Depiazzi, Rights and Acquisitions Manager",
+   "email": "",
+   "source_url": "https://granta.com/rights-and-permissions/",
+   "quote": "We handle translation, US, large print, audio and film rights."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Guide download link present but URL/date not readable. All emails Cloudflare-obfuscated, so none recorded."
+ },
+ {
+  "name": "Little, Brown Book Group (Hachette UK)",
+  "country": "UK",
+  "type": "publisher",
+  "domain": "littlebrown.co.uk",
+  "rights_page_url": "https://www.littlebrown.co.uk/imprint/lbbg/page/rights",
+  "guide": {
+   "url": "https://www.hachette.co.uk/wp-content/uploads/2019/05/Little_Brown_Rights_Autumn_2024.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Autumn 2024"
+  },
+  "screen_contact": {
+   "name": "Lana Beckwith, Head of Media Development",
+   "email": "lana.beckwith@hachette.co.uk",
+   "source_url": "https://www.hachette.co.uk/wp-content/uploads/2019/05/Little_Brown_Rights_Autumn_2024.pdf",
+   "quote": "Lana Beckwith / Head of Media Development / lana.beckwith@hachette.co.uk"
+  },
+  "general_rights_email": {
+   "email": "rights@littlebrown.co.uk",
+   "source_url": "https://www.littlebrown.co.uk/imprint/lbbg/page/rights",
+   "quote": "Please email rights@littlebrown.co.uk with any rights enquiries and we will endeavour to reply quickly."
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Fern McCauley not found in FBF 22 guide. Newest guide found is Autumn 2024 (from search, not linked on rights page). Lana Beckwith is media development, not a confirmed dramatic-rights seller."
+ },
+ {
+  "name": "David Higham Associates",
+  "country": "UK",
+  "type": "agency",
+  "domain": "davidhigham.co.uk",
+  "rights_page_url": "https://davidhigham.co.uk/",
+  "guide": {
+   "url": "https://davidhigham.co.uk/wp-content/uploads/LBF-Rights-Guide-Digital_compressed-1.pdf",
+   "kind": "general incl. film/TV",
+   "date": "London Book Fair 2026 (Spring 2026)"
+  },
+  "screen_contact": {
+   "name": "Clare Israel, Georgie Smith, Nicky Lund (Film & TV Rights)",
+   "email": "",
+   "source_url": "https://davidhigham.co.uk/wp-content/uploads/LBF-Rights-Guide-Digital_compressed-1.pdf",
+   "quote": "Film & TV Rights: Clare Israel (CI); Georgie Smith (GS); Nicky Lund (NL)."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No email printed in the guide (phone +44 (0)20 7434 5900 only). Film and TV News section confirmed (p.96)."
+ },
+ {
+  "name": "Blake Friedmann",
+  "country": "UK",
+  "type": "agency",
+  "domain": "blakefriedmann.co.uk",
+  "rights_page_url": "https://blakefriedmann.co.uk/rights-guide",
+  "guide": {
+   "url": "https://blakefriedmann.co.uk/s/BFLA-Rights-Guide-Autumn-Winter-2026-25092026.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Autumn/Winter 2026"
+  },
+  "screen_contact": {
+   "name": "Leyla Hattabi (Media Department); Conrad Williams, Head of Media",
+   "email": "leyla@blakefriedmann.co.uk",
+   "source_url": "http://blakefriedmann.co.uk/book-to-screen",
+   "quote": "get in touch with Leyla Hattabi (leyla@blakefriedmann.co.uk) for additional information."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Research said no contact on guide page; book-to-screen page does print one. James Pusey/Nicole Etherington not checked."
+ },
+ {
+  "name": "Jenny Brown Associates",
+  "country": "UK",
+  "type": "agency",
+  "domain": "jennybrownassociates.com",
+  "rights_page_url": "https://jennybrownassociates.com/rights",
+  "guide": {
+   "url": "https://jennybrownassociates.com/wp-content/uploads/2026/06/JBA-2026-Spring-Rights-Guide.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Spring 2026"
+  },
+  "screen_contact": {
+   "name": "Emily Hayward Whitlock, The Artists Partnership",
+   "email": "emily@theartistspartnership.co.uk",
+   "source_url": "https://jennybrownassociates.com/rights",
+   "quote": "Contact: Emily Hayward Whitlock at The Artists Partnership emily@theartistspartnership.co.uk"
+  },
+  "general_rights_email": {
+   "email": "andrea@joyceliterary.com",
+   "source_url": "https://jennybrownassociates.com/rights",
+   "quote": "Please get in touch with JBA Rights Director, Andrea Joyce, for any rights queries: andrea@joyceliterary.com"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Film/TV is handled externally by The Artists Partnership."
+ },
+ {
+  "name": "DHH Literary Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "dhhliteraryagency.com",
+  "rights_page_url": "https://www.dhhliteraryagency.com/dhh-rights",
+  "guide": {
+   "url": "https://www.dhhliteraryagency.com/s/RIGHTS-GUIDE.pdf",
+   "kind": "general incl. film/TV",
+   "date": "undated"
+  },
+  "screen_contact": {
+   "name": "Emily Hayward-Whitlock, The Artists Partnership",
+   "email": "emily@theartistspartnership.co.uk",
+   "source_url": "https://www.dhhliteraryagency.com/dhh-rights",
+   "quote": "For any queries regarding TV & Film Rights for any of our books, please contact Emily Hayward-Whitlock. (name linked as mailto)"
+  },
+  "general_rights_email": {
+   "email": "rights@dhhliteraryagency.com",
+   "source_url": "https://www.dhhliteraryagency.com/dhh-rights",
+   "quote": "CONTACT US ABOUT RIGHTS (mailto link)"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Both emails appear as mailto links on the name/button, not as visible text. Guide date not stated."
+ },
+ {
+  "name": "Louisa Pritchard Associates",
+  "country": "UK",
+  "type": "agency",
+  "domain": "louisapritchard.co.uk",
+  "rights_page_url": "https://www.louisapritchard.co.uk/services",
+  "guide": {
+   "url": "https://www.louisapritchard.co.uk/subscribe",
+   "kind": "translation only",
+   "date": "undated (guide via subscription)"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "info@louisapritchard.co.uk",
+   "source_url": "https://www.louisapritchard.co.uk/services",
+   "quote": "footer: info@louisapritchard.co.uk"
+  },
+  "newsletter_url": "https://www.louisapritchard.co.uk/subscribe",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Guide is only obtained by subscribing. Page does not mention film/TV rights."
+ },
+ {
+  "name": "Joyce Literary Rights Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "joyceliterary.com",
+  "rights_page_url": "https://joyceliterary.com/",
+  "guide": {
+   "url": "https://joyceliterary.com/media/pages/clients/joyce-literary/79264be85e-1759569274/joyce-literary-autumn-2025.pdf",
+   "kind": "translation only",
+   "date": "Autumn 2025 (plus client guides: Luath 2025, Muswell 2026 etc.)"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "andrea@joyceliterary.com",
+   "source_url": "https://joyceliterary.com/",
+   "quote": "Contact: andrea@joyceliterary.com +44(0)7545147966"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No film/TV rights mentioned; translation and North American rights only."
+ },
+ {
+  "name": "Lindsay Literary Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "lindsayliteraryagency.co.uk",
+  "rights_page_url": "https://www.lindsayliteraryagency.co.uk/rights/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "For Film, TV and Media (in-house)",
+   "email": "",
+   "source_url": "https://www.lindsayliteraryagency.co.uk/rights/",
+   "quote": "Film, TV, audio and e-book rights are handled internally by Lindsay Literary Agency ... For Film, TV and Media +44 (0)1420 83143"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Email is printed obfuscated with an asterisk instead of @, so not recorded. No Rights People catalogue link on page."
+ },
+ {
+  "name": "Madeleine Milburn Literary, TV & Film Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "madeleinemilburn.co.uk",
+  "rights_page_url": "https://www.madeleinemilburn.co.uk/tv-film/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Hannah Ladds, Head of Film & TV Department",
+   "email": "rights@madeleinemilburn.com",
+   "source_url": "https://www.madeleinemilburn.co.uk/tv-film/",
+   "quote": "For media rights enquiries please contact: rights@madeleinemilburn.com"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "News page, not a rights guide."
+ },
+ {
+  "name": "C&W Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "cwagency.co.uk",
+  "rights_page_url": "https://cwagency.co.uk/page/film-tv",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "not found",
+  "notes": "Film & TV page body is empty when fetched (client-rendered); no Media Rights contact or adaptation news could be read."
+ },
+ {
+  "name": "RCW Literary Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "rcwlitagency.com",
+  "rights_page_url": "https://www.rcwlitagency.com/film-tv",
+  "guide": {
+   "url": "https://rcwlitagency.com/assets/site/catalogues/RCW-Catalogue-London-2026_compressed.pdf?v=1772646531",
+   "kind": "general incl. film/TV",
+   "date": "London 2026 (per-title film agent listed)"
+  },
+  "screen_contact": {
+   "name": "Film & TV Enquiries (per-title film agents in catalogue)",
+   "email": "info@rcwlitagency.com",
+   "source_url": "https://www.rcwlitagency.com/film-tv",
+   "quote": "Film & TV Enquiries (mailto:info@rcwlitagency.com)"
+  },
+  "general_rights_email": {
+   "email": "Foreignrights@rcwlitagency.com",
+   "source_url": "https://rcwlitagency.com/assets/site/catalogues/RCW-Catalogue-London-2026_compressed.pdf?v=1772646531",
+   "quote": "Foreignrights@rcwlitagency.com"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Catalogues not linked from the Film & TV page. Many titles list external film agents (e.g. Artists Partnership, 42, The Agency)."
+ },
+ {
+  "name": "Darley Anderson",
+  "country": "UK",
+  "type": "agency",
+  "domain": "darleyanderson.com",
+  "rights_page_url": "https://darleyanderson.com/film-tv/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Co-agents: Sheila David (Catapult Dramatic Rights), Steve Fisher, Sylvie Rabineau (WME)",
+   "email": "",
+   "source_url": "https://darleyanderson.com/film-tv/",
+   "quote": "Sheila David of Catapult Dramatic Rights has set up film and tv options for many Agency authors."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No email printed. Page contradicts itself on Steve Fisher (APA in text, IAG in co-agent list)."
+ },
+ {
+  "name": "Greene & Heaton",
+  "country": "UK",
+  "type": "agency",
+  "domain": "greeneheaton.co.uk",
+  "rights_page_url": "https://greeneheaton.co.uk/rights-and-permissions",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Co-agents Sayle Screen and Toby Moorcroft Rights; title queries to info@",
+   "email": "info@greeneheaton.co.uk",
+   "source_url": "https://greeneheaton.co.uk/rights-and-permissions",
+   "quote": "To find out which of our titles are handled by which agency, or if you would like to discuss non-fiction titles, please email info@greeneheaton.co.uk"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No rights guide on page."
+ },
+ {
+  "name": "Curtis Brown",
+  "country": "UK",
+  "type": "agency",
+  "domain": "curtisbrown.co.uk",
+  "rights_page_url": "https://www.curtisbrown.co.uk/section/theatre-film-tv/agents",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "not found",
+  "notes": "Site is client-rendered; fetched pages showed only template code. Named agents and the YA film/TV list could not be confirmed."
+ },
+ {
+  "name": "Aitken Alexander Associates",
+  "country": "UK",
+  "type": "agency",
+  "domain": "aitkenalexander.co.uk",
+  "rights_page_url": "https://aitkenalexander.co.uk/film-tv-stage/",
+  "guide": {
+   "url": "https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf",
+   "kind": "general incl. film/TV",
+   "date": "London Book Fair 2026"
+  },
+  "screen_contact": {
+   "name": "Lesley Thorne, Director of Film, Television & Stage (via agent assistant)",
+   "email": "Ariana@aitkenalexander.co.uk",
+   "source_url": "https://aitkenalexander.co.uk/film-tv-stage/",
+   "quote": "DIRECTOR OF FILM, TELEVISION & STAGE ... Email Agent Assistant (mailto:Ariana@aitkenalexander.co.uk)"
+  },
+  "general_rights_email": {
+   "email": "Talia@aitkenalexander.co.uk",
+   "source_url": "https://aitkenalexander.co.uk/translation-rights/",
+   "quote": "General Enquiries Talia@aitkenalexander.co.uk"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Research cited a Frankfurt 2025 guide on a third-party host (anthearights.com), not checked. Guide not opened, so film/TV content of it unconfirmed. Email is an assistant's mailto link."
+ },
+ {
+  "name": "Lorella Belli Literary Agency",
+  "country": "UK",
+  "type": "agency",
+  "domain": "lorellabelliagency.com",
+  "rights_page_url": "https://www.lorellabelliagency.com/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "blocked",
+  "notes": "Site disallows fetching (robots). Research's guide link was on a Spanish agency's domain (agenciabalcells.com), not checked."
+ },
+ {
+  "name": "Mushens Entertainment",
+  "country": "UK",
+  "type": "agency",
+  "domain": "mushens-entertainment.com",
+  "rights_page_url": "https://www.mushens-entertainment.com/rights",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Film co-agents listed per author; unlisted authors via info@",
+   "email": "info@mushens-entertainment.com",
+   "source_url": "https://www.mushens-entertainment.com/rights",
+   "quote": "Film co-agents are by author. If an author isn't listed, contact info@mushens-entertainment.com"
+  },
+  "general_rights_email": {
+   "email": "melody@mushens-entertainment.com",
+   "source_url": "https://www.mushens-entertainment.com/rights",
+   "quote": "if you have general questions relating to rights please contact melody@mushens-entertainment.com"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No Frankfurt rights guide link on the page."
+ },
+ {
+  "name": "United Agents",
+  "country": "UK",
+  "type": "agency",
+  "domain": "unitedagents.co.uk",
+  "rights_page_url": "https://www.unitedagents.co.uk/film-tv-theatre/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "info@unitedagents.co.uk",
+   "source_url": "https://www.unitedagents.co.uk/film-tv-theatre/",
+   "quote": "footer Email: info@unitedagents.co.uk"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "No book-to-screen rights contact or guide; only a general address."
+ },
+ {
+  "name": "BookEnds Literary Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "bookendsliterary.com",
+  "rights_page_url": "https://www.bookendsliterary.com/media",
+  "guide": {
+   "url": "https://www.bookendsliterary.com/s/Spring-2026-Film-Rights-Guide.pdf",
+   "kind": "film/TV",
+   "date": "Spring 2026"
+  },
+  "screen_contact": {
+   "name": "Dakota Reed, Media Rights Director",
+   "email": "dreed@bookendsliterary.com",
+   "source_url": "https://www.bookendsliterary.com/faq",
+   "quote": "Please direct inquiries to the BookEnds agent on record for each title, or email our Media Rights Director, Dakota Reed. (name linked mailto:dreed@bookendsliterary.com)"
+  },
+  "general_rights_email": {
+   "email": "aban@bookendsliterary.com",
+   "source_url": "https://www.bookendsliterary.com/faq",
+   "quote": "Please direct inquiries to our Global Rights Director, Ana Ban, at aban@bookendsliterary.com"
+  },
+  "newsletter_url": "https://lp.constantcontactpages.com/sl/xwIKDTC",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Guide link seen on page but PDF itself not opened (redirect blocked). Dakota Reed email is a mailto link, not visible text."
+ },
+ {
+  "name": "kt literary",
+  "country": "US",
+  "type": "agency",
+  "domain": "kt-literary.com",
+  "rights_page_url": "https://www.kt-literary.com/rights-list",
+  "guide": {
+   "url": "https://www.kt-literary.com/film-rights-guide",
+   "kind": "film/TV",
+   "date": "Fall 2023"
+  },
+  "screen_contact": {
+   "name": "Film rights enquiries (no address printed)",
+   "email": "",
+   "source_url": "https://www.kt-literary.com/rights-list",
+   "quote": "If you have any question about film rights, please email us for more information."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "dramaticrights@ktliterary.com NOT printed anywhere checked. Film guide is Fall 2023; latest rights list is 2025 (Frankfurt 2025 'coming soon')."
+ },
+ {
+  "name": "Storm Literary Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "stormliteraryagency.com",
+  "rights_page_url": "https://www.stormliteraryagency.com/rights.html",
+  "guide": {
+   "url": "https://www.stormliteraryagency.com/uploads/4/2/7/1/42713095/2026_adult_storm_film_rights_guide.pdf",
+   "kind": "film/TV",
+   "date": "2026 (children's: https://www.stormliteraryagency.com/uploads/4/2/7/1/42713095/2026_childrens_film_rights_guide.pdf)"
+  },
+  "screen_contact": {
+   "name": "Film/TV/Stage contact link (address obfuscated)",
+   "email": "",
+   "source_url": "https://www.stormliteraryagency.com/rights.html",
+   "quote": "Storm Literary Agency is pleased to partner with The Gotham Group, United Talent Agency, Paradigm Talent, Independent Agent Group (IAG), and Untitled Entertainment."
+  },
+  "general_rights_email": {
+   "email": "foreignrights@stormliteraryagency.com",
+   "source_url": "https://www.stormliteraryagency.com/rights.html",
+   "quote": "For information on rights availability, please contact us (link target foreignrights@stormliteraryagency.com)"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Film guides are public PDFs (research said request-only). Film/TV contact email is Cloudflare-obfuscated."
+ },
+ {
+  "name": "InkWell Management",
+  "country": "US",
+  "type": "agency",
+  "domain": "inkwellmanagement.com",
+  "rights_page_url": "https://inkwellmanagement.com/rights-and-permissions/",
+  "guide": {
+   "url": "",
+   "kind": "translation only",
+   "date": "monthly newsletter + book-fair guides by email request"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "info@Inkwellmanagement.com",
+   "source_url": "https://inkwellmanagement.com/rights-and-permissions/",
+   "quote": "If you'd like to receive our monthly foreign rights newsletter or our book fair guides, please send us an e-mail at info@Inkwellmanagement.com"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No film/TV contact listed. Subsidiary rights co-directors: lyndsey@ and alexis@inkwellmanagement.com."
+ },
+ {
+  "name": "Dystel, Goderich & Bourret",
+  "country": "US",
+  "type": "agency",
+  "domain": "dystel.com",
+  "rights_page_url": "https://www.dystel.com/subsidiary-rights",
+  "guide": {
+   "url": "https://www.dystel.com/newsletter-september-2026",
+   "kind": "general incl. film/TV",
+   "date": "September 2026 newsletter (Jan/May/Sep cadence)"
+  },
+  "screen_contact": {
+   "name": "Michaela Whatnall, Film Rights Coordinator",
+   "email": "mwhatnall@dystel.com",
+   "source_url": "https://www.dystel.com/subsidiary-rights",
+   "quote": "For film inquiries, please contact Michaela Whatnall at mwhatnall@dystel.com"
+  },
+  "general_rights_email": {
+   "email": "gfreemanlifschutz@dystel.com",
+   "source_url": "https://www.dystel.com/subsidiary-rights",
+   "quote": "For UK, translation, and audio inquiries, please contact Gracie Freeman Lifschutz at gfreemanlifschutz@dystel.com"
+  },
+  "newsletter_url": "https://www.dystel.com/newsletter",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Newsletters are three times a year, not monthly as essay claimed."
+ },
+ {
+  "name": "The Gernert Company",
+  "country": "US",
+  "type": "agency",
+  "domain": "thegernertco.com",
+  "rights_page_url": "https://www.thegernertco.com/rights",
+  "guide": {
+   "url": "https://www.thegernertco.com/s/The-Gernert-Company-Frankfurt-Rights-Guide-Final.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Frankfurt 2026 Adult (plus undated Children's guide)"
+  },
+  "screen_contact": {
+   "name": "Film/TV enquiries via general inbox",
+   "email": "info@thegernertco.com",
+   "source_url": "https://www.thegernertco.com/rights",
+   "quote": "For information regarding film and television rights, please email us (mailto:info@thegernertco.com)"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No named film/TV person."
+ },
+ {
+  "name": "Trident Media Group",
+  "country": "US",
+  "type": "agency",
+  "domain": "tridentmediagroup.com",
+  "rights_page_url": "https://tridentmediagroup.com/services/movies-and-entertainment/",
+  "guide": {
+   "url": "https://www.tridentmediagroup.com/wp-content/uploads/2024/03/London-Rights-Guide-2024-FINAL-full-quality.pdf",
+   "kind": "translation only",
+   "date": "London 2024 (stale)"
+  },
+  "screen_contact": {
+   "name": "Erica Silverman, Vice President of Filmed Entertainment",
+   "email": "",
+   "source_url": "https://tridentmediagroup.com/services/movies-and-entertainment/",
+   "quote": "Erica Silverman ... Vice President of Filmed Entertainment at Trident Media Group"
+  },
+  "general_rights_email": {
+   "email": "internationalrights@tridentmediagroup.com",
+   "source_url": "https://tridentmediagroup.com/services/foreign-rights/",
+   "quote": "For inquiries, please email internationalrights@tridentmediagroup.com"
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "No current guide linked on site; 2024 guide lists Ana Ban, who now appears at BookEnds. No film/TV email printed."
+ },
+ {
+  "name": "Andrea Brown Literary Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "andreabrownlit.com",
+  "rights_page_url": "https://www.andreabrownlit.com/film-tv",
+  "guide": {
+   "url": "",
+   "kind": "film/TV",
+   "date": "catalogues of available titles by email request"
+  },
+  "screen_contact": {
+   "name": "Film & TV desk",
+   "email": "film@andreabrownlit.com",
+   "source_url": "https://www.andreabrownlit.com/film-tv",
+   "quote": "If you work in the film and television industry and would like to see our catalogs of available titles please reach out to film@andreabrownlit.com."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": ""
+ },
+ {
+  "name": "Chronicle Books",
+  "country": "US",
+  "type": "publisher",
+  "domain": "chroniclebooks.com",
+  "rights_page_url": "https://subrights.chroniclebooks.com/",
+  "guide": {
+   "url": "https://online.flippingbook.com/view/1007281405/",
+   "kind": "translation only",
+   "date": "Frankfurt 2026 (flipbook)"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "Zora_Driscoll@chroniclebooks.com",
+   "source_url": "https://subrights.chroniclebooks.com/",
+   "quote": "Zora Driscoll (adult & general inquiries): Zora_Driscoll@chroniclebooks.com"
+  },
+  "newsletter_url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=Ux8rtG&g=UKnccc",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Page does not mention performance/film rights (research claimed it did). Children's: Samantha_Allen@chroniclebooks.com."
+ },
+ {
+  "name": "ABRAMS",
+  "country": "US",
+  "type": "publisher",
+  "domain": "abramsbooks.com",
+  "rights_page_url": "https://prod.abramsbooks.com/sub-rights/",
+  "guide": {
+   "url": "https://issuu.com/hnabooks/docs/frankfurt_2025_adult_rights_guide?fr=sODhiZTgzNTU5Nzc",
+   "kind": "translation only",
+   "date": "Frankfurt 2025 (latest listed)"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No email; enquiries by web form. Film/TV not mentioned."
+ },
+ {
+  "name": "North Atlantic Books",
+  "country": "US",
+  "type": "publisher",
+  "domain": "northatlanticbooks.com",
+  "rights_page_url": "https://www.northatlanticbooks.com/rights/",
+  "guide": {
+   "url": "http://www.northatlanticbooks.com/wp-content/uploads/2026/07/2026FALLRightsGuide_WEB.pdf",
+   "kind": "translation only",
+   "date": "Fall 2026 New Titles (plus 2026 Backlist)"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "sserafimidis@northatlanticbooks.com",
+   "source_url": "https://www.northatlanticbooks.com/rights/",
+   "quote": "Sarah Serafimidis, Associate Director of Rights Email: sserafimidis@northatlanticbooks.com"
+  },
+  "newsletter_url": "http://eepurl.com/jkno2c",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Film/TV not mentioned."
+ },
+ {
+  "name": "Spitzer Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "spitzeragency.com",
+  "rights_page_url": "https://www.spitzeragency.com/s/Spitzer-Agency-Rights-Guide-Spring-2021-final.pdf",
+  "guide": {
+   "url": "https://www.spitzeragency.com/s/Spitzer-Agency-Rights-Guide-Spring-2021-final.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Spring 2021 (stale)"
+  },
+  "screen_contact": {
+   "name": "Film & TV co-agents (non-exclusive): Joel Gotler (IPG), Steve Fisher (APA), Sean Daily (Hotchkiss)",
+   "email": "joel@ipglm.com",
+   "source_url": "https://www.spitzeragency.com/s/Spitzer-Agency-Rights-Guide-Spring-2021-final.pdf",
+   "quote": "Intellectual Property Group Literary Management / Joel Gotler: joel@ipglm.com"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Contacts are 2021 and may be out of date."
+ },
+ {
+  "name": "JABberwocky Literary Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "awfulagent.com",
+  "rights_page_url": "https://awfulagent.com/catalogs/",
+  "guide": {
+   "url": "https://awfulagent.com/wp-content/uploads/2026/09/compressed_Adult-FBF-9-28-26-FINAL.pdf",
+   "kind": "translation only",
+   "date": "Frankfurt 2026 Adult/General"
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No film/TV contact on catalog page. Fair labels on page are inconsistent (Frankfurt vs London)."
+ },
+ {
+  "name": "Sandra Dijkstra Literary Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "dijkstraagency.com",
+  "rights_page_url": "https://www.dijkstraagency.com/rights.php",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Andrea Cavallaro",
+   "email": "andrea@dijkstraagency.com",
+   "source_url": "https://www.dijkstraagency.com/rights.php",
+   "quote": "For Film/Television/Stage inquiries, please contact Andrea Cavallaro andrea@dijkstraagency.com."
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "No rights guide on page."
+ },
+ {
+  "name": "Frances Goldin Literary Agency",
+  "country": "US",
+  "type": "agency",
+  "domain": "goldinlit.com",
+  "rights_page_url": "https://www.goldinlit.com/film-tv",
+  "guide": {
+   "url": "https://www.goldinlit.com/s/FGLA-FBF-2024-WEB-VERSION.pdf",
+   "kind": "translation only",
+   "date": "Frankfurt 2024 (stale)"
+  },
+  "screen_contact": {
+   "name": "Film & TV enquiries via agency inbox",
+   "email": "agency@goldinlit.com",
+   "source_url": "https://www.goldinlit.com/film-tv",
+   "quote": "For inquiries, please contact: agency@goldinlit.com"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "partly verified",
+  "notes": "Guide is 2024; no named film/TV person."
+ },
+ {
+  "name": "Turner Publishing",
+  "country": "US",
+  "type": "publisher",
+  "domain": "turnerpublishing.com",
+  "rights_page_url": "https://turnerpublishing.com/pages/film-tv-rights",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "Film & TV rights enquiries",
+   "email": "admin@turnerpublishing.com",
+   "source_url": "https://turnerpublishing.com/pages/film-tv-rights",
+   "quote": "please email admin@turnerpublishing.com"
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "verified",
+  "notes": "Separate Rights Catalogs page exists (https://turnerpublishing.com/pages/rights-catalogs-1), not opened."
+ },
+ {
+  "name": "WME",
+  "country": "US",
+  "type": "agency",
+  "domain": "wmeagency.com",
+  "rights_page_url": "https://www.wmeagency.com/expertise/books-literary-media/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "not found",
+  "notes": "No rights guide, no screen-rights contact or email on page; general contact page only."
+ },
+ {
+  "name": "CAA",
+  "country": "US",
+  "type": "agency",
+  "domain": "caa.com",
+  "rights_page_url": "https://www.caa.com/entertainmenttalent/books/",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "blocked",
+  "notes": "Site refused WebFetch."
+ },
+ {
+  "name": "UTA",
+  "country": "US",
+  "type": "agency",
+  "domain": "unitedtalent.com",
+  "rights_page_url": "https://www.unitedtalent.com/talent/media-rights",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "not found",
+  "notes": "Page returned no readable content; Yona Levin role and media-rights contact not confirmed."
+ },
+ {
+  "name": "HarperCollins Publishers (US)",
+  "country": "US",
+  "type": "publisher",
+  "domain": "harpercollins.com",
+  "rights_page_url": "http://static.harpercollins.com/harperimages/ommoverride/foreignrightsguide_2012.pdf",
+  "guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "screen_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "general_rights_email": {
+   "email": "",
+   "source_url": "",
+   "quote": ""
+  },
+  "newsletter_url": "",
+  "verified": "2026-11-08",
+  "status": "blocked",
+  "notes": "Fetch permission not granted; cited guides are 2010-2012 archive PDFs in any case."
+ }
+]
