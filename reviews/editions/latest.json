@@ -2,7 +2,7 @@
  "edition_id": "2026-11-09",
  "date_label": "9 November 2026",
  "window": "Reviews published 31 October - 8 November 2026",
- "preheader": "61 books reviewed in the British papers this week, fiction and non-fiction, one line each.",
+ "preheader": "70 books reviewed in the British papers this week, fiction and non-fiction, one line each.",
  "books": [
   {
    "book": "Yakuza: A 400-Year History of the Japanese Underworld",
@@ -947,6 +947,142 @@
     }
    ],
    "book_id": "lessons-in-harmony-jonathan-coe"
+  },
+  {
+   "book": "How to Begin",
+   "author": "Edmund de Waal",
+   "subject": "Books & writing",
+   "line": "Built around the 1920s letters between the author's grandmother, Elisabeth Ephrussi, and the poet Rilke.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/letters-from-paris"
+    }
+   ],
+   "book_id": "how-to-begin-edmund-de-waal"
+  },
+  {
+   "book": "The Hill",
+   "author": "Harriet Clark",
+   "subject": "Literary fiction",
+   "line": "Debut novel: a young woman looks back on growing up visiting her mother in a high-security women's prison in New York State.",
+   "lead": true,
+   "why": "A daughter's childhood spent in prison visiting rooms: an unusual mother-daughter story with a strong world.",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/inside-story",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "the-hill-harriet-clark"
+  },
+  {
+   "book": "Two Women",
+   "author": "Jacqueline Rose",
+   "subject": "Literary fiction",
+   "line": "A fictionalised biography of two philosophers, Edith Stein and Gillian Rose, both born Jewish and converted to Christianity.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/phenomenal-spirits"
+    }
+   ],
+   "book_id": "two-women-jacqueline-rose"
+  },
+  {
+   "book": "Ply",
+   "author": "Hernan Diaz",
+   "subject": "Other fiction",
+   "line": "In a future where one corporation controls the remaining energy, two women team up to raid its facility.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/power-to-the-people-5"
+    }
+   ],
+   "book_id": "ply-hernan-diaz"
+  },
+  {
+   "book": "The Renovation",
+   "author": "Kenan Orhan",
+   "subject": "Literary fiction",
+   "line": "Debut novel: a woman renovating a home in Italy finds a Turkish prison cell where the bathroom should be.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/house-arrest"
+    }
+   ],
+   "book_id": "the-renovation-kenan-orhan"
+  },
+  {
+   "book": "Sophie, Standing There",
+   "author": "Meg Mason",
+   "subject": "Literary fiction",
+   "line": "A cheerful 37-year-old divorcee works as a sound technician at a literary festival.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/happy-days-2"
+    }
+   ],
+   "book_id": "sophie-standing-there-meg-mason"
+  },
+  {
+   "book": "Honey",
+   "author": "Elizabeth Jenkins",
+   "subject": "Literary fiction",
+   "line": "Honey Harper, a beauty who expects rich men to keep her, faces marriage and the arrival of her husband's teenage son.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/mad-about-the-boy"
+    }
+   ],
+   "book_id": "honey-elizabeth-jenkins"
+  },
+  {
+   "book": "Walking",
+   "author": "Sevgi Soysal, translated by Maureen Freely",
+   "subject": "Literary fiction",
+   "line": "Two Turkish childhoods, Ela's and Memet's, followed until they meet as adults in the 1970s.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/motion-slickness"
+    }
+   ],
+   "book_id": "walking-sevgi-soysal-translated-by-maureen-freely"
+  },
+  {
+   "book": "Dams",
+   "author": "Irene Sola, translated by Mara Faye Lethem",
+   "subject": "Literary fiction",
+   "line": "Back in her Catalan village after study in England, a young woman writes half-invented episodes of village life.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Literary Review",
+     "url": "https://literaryreview.co.uk/home-truths-6"
+    }
+   ],
+   "book_id": "dams-irene-sola-translated-by-mara-faye-lethem"
   }
  ]
 }
