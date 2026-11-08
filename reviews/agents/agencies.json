@@ -199,7 +199,8 @@
    "date": ""
   },
   "book_ids": [
-   "american-scoundrel-kai-bird-with-susan-goldmark"
+   "american-scoundrel-kai-bird-with-susan-goldmark",
+   "class-act-a-gentleman-s-guide-to-dressing-well-john-berendt"
   ],
   "note": "Gail Ross gail@wmeagency.com is from her Publishers Marketplace profile (earlier run, not re-checked today, and PM is not WME's own site).",
   "guide_ask_sent": ""
@@ -287,7 +288,8 @@
    "note": "Page says it represents film/TV rights for 'a select number of books' but lists none."
   },
   "book_ids": [
-   "empire-at-the-edge-of-the-world-giles-milton"
+   "empire-at-the-edge-of-the-world-giles-milton",
+   "solace-in-winter-mary-lawson"
   ],
   "guide_ask_sent": ""
  },
@@ -484,7 +486,8 @@
   "nonfiction_note": "Frontlist guide has a non-fiction section; site asks film/TV enquiries go to Sissons and Gurtovoy jointly.",
   "checked": "2026-11-04",
   "book_ids": [
-   "alexander-god-king-man-edmund-richardson"
+   "alexander-god-king-man-edmund-richardson",
+   "without-reservation-lessons-from-a-life-in-restaurants-jeremy-king"
   ],
   "guide_ask_sent": "2026-10-23",
   "note": "Added us to their film/TV submissions mailing list 3 Nov 2026. Two registry entries merged 8 Nov 2026."
@@ -538,7 +541,8 @@
   "nonfiction_note": "UNVERIFIED: site is a JavaScript app; WebFetch saw only unrendered templates, no emails, no agent or rights pages. Needs a real browser check.",
   "checked": "2026-11-04",
   "book_ids": [
-   "peck-peck-bonnie-garmus"
+   "peck-peck-bonnie-garmus",
+   "sophie-standing-there-meg-mason"
   ],
   "guide_ask_sent": "2026-11-04"
  },
@@ -768,7 +772,9 @@
   },
   "nonfiction_note": "Site says clients span all genres; no specific non-fiction claim. Note sheilland.co.uk is robots-blocked; sheilland.com is the readable site.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "super-beast-the-mysterious-life-of-saki-oliver-soden"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -1652,6 +1658,84 @@
   },
   "book_ids": [
    "are-you-with-me-now-hanif-kureishi"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jonathan Pegg Literary Agency",
+  "aliases": [
+   "JPLA",
+   "Jonathan Pegg"
+  ],
+  "domain": "jonathanpegg.com",
+  "film_tv_contact": {
+   "name": "Gemma Hirst, Gemma Hirst Associates (co-agent; no email printed); Jonathan Pegg handles book-to-film rights",
+   "email": "",
+   "source_url": "https://jonathanpegg.com/associates/"
+  },
+  "general_email": {
+   "email": "info@jonathanpegg.com",
+   "source_url": "https://jonathanpegg.com/contact/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "the-rhyl-poster-tom-mccarthy"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Tessler Literary Agency",
+  "aliases": [
+   "Tessler Literary",
+   "The Tessler Literary Agency"
+  ],
+  "domain": "tessleragency.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": "https://www.publishersmarketplace.com/members/mtessler"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "minds-i-ve-met-from-denying-to-embracing-the-inner-lives-of-animals-frans-de-waa"
+  ],
+  "guide_ask_sent": "",
+  "note": "New York agency (Michelle Tessler). Queries via webform only, no email printed; site robots-blocked so no rights guide check possible. Uses Hollywood co-agents for film/TV (https://literaryagencies.com/tessler-literary-agency/)."
+ },
+ {
+  "agency": "Vicki Satlow Literary Agency",
+  "aliases": [
+   "Vicki Satlow Agency"
+  ],
+  "domain": "vickisatlow.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "vicki@vickisatlow.com",
+   "source_url": "https://rhino-salamander-mbwn.squarespace.com/projects-seeking-a-publisher/project-one-9czlx-9cbdt-2h5wx-wln9k"
+  },
+  "rights_guide": {
+   "url": "https://issuu.com/vickisatlow/docs/catalogfrancoforte_2023_1_",
+   "kind": "translation only",
+   "date": "Frankfurt 2023 (seen in search results only; agency site fetch blocked)"
+  },
+  "book_ids": [
+   "a-very-cold-winter-fausta-cialente-translated-by-julia-nelsen"
   ],
   "guide_ask_sent": ""
  }
