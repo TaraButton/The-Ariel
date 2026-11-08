@@ -12,9 +12,10 @@ Dear <first name>,
 
 <OPENING LINE, see below>
 
-I'm Tara Button, founder of The Ariel, which helps film and TV producers find stories early. Every Monday
-we publish the [London Review of Reviews](https://theariel.tv/reviews/), a free round-up of every
-non-fiction book reviewed in the British papers, and <Author>'s <Book> is in this week's edition after
+I'm Tara Button, founder of The Ariel, which helps film and TV producers find stories early. Our producers
+include BAFTA and Emmy award winners. Every Monday we publish the
+[London Review of Reviews](https://theariel.tv/reviews/), a free round-up of the books reviewed in the
+British papers, and <Author>'s <Book> is in this week's edition after
 its review in <publication>.
 
 [OPENING - always lead with producers (Tara, 2 Nov). Put this as the FIRST paragraph after the greeting:]
@@ -110,6 +111,8 @@ back is plenty.
 
 With best wishes,
 Tara
+
+**Always** (Tara, 8 Nov 2026): every first-contact email, form message or intro to an agency or publisher says our producers include BAFTA and Emmy award winners. Never drop it when adapting the template.
 
 **Never:** praise or judge the book, say what commissioners want, ask for decks/excerpts/pitches, promise
 follow-up work Tara hasn't agreed, or claim partners/clients we don't have.
