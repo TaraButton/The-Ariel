@@ -1,128 +1,127 @@
 {
- "broadcaster": "Warner Bros. Discovery (US)",
- "region": "US",
- "checked": "2026-11-08",
- "pitch_routes": [
-  {
-   "genre": "Discovery, TLC, ID, Food Network unscripted",
-   "route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
-   "url": "https://www.wbd.com/visitor-agreement"
-  }
- ],
- "briefs": [
-  {
-   "title": "ID chief Jason Sarlanis on charting fresh waters for true crime (Realscreen 'The Brief')",
-   "summary": "ID wants: shows exposing the psychology of crime with expert testimony; closed-ended anthology series for 'armchair detectives'; access to the criminal justice process (police/undercover ops); pop-culture/true-crime crossovers; complementary new presenters; a prison-set show and a returnable serialized true-crime story; filmmakers with passion, unique access and fresh territory ('Ideally we're first, ideally we're best'). Older than 12 months and pre-merger - check.",
-   "url": "https://realscreen.com/?p=309277",
-   "date": "2024-10-31"
-  }
- ],
- "commissioners": [
-  {
-   "name": "Channing Dungey",
-   "title": "Head, Warner Bros. Television Group (and combined cable networks)",
-   "channels": [
-    "Discovery Channel",
-    "TLC",
-    "Food Network",
-    "HGTV",
-    "TNT",
-    "MTV",
-    "BET"
-   ],
-   "remit": "Post-merger oversees the studios (scripted, unscripted, animation) plus 50+ cable brands including WBD's and Paramount's US networks; reports to George Cheeks. Top of chain, not a day-to-day pitch target.",
-   "recent_commissions": [],
-   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "high",
-   "notes": "Confirmed in post-merger Skydance TV structure, 28 Oct 2026.",
-   "sources": [
-    "https://www.thewrap.com/industry-news/business/george-cheeks-skydance-tv-leadership-team/",
-    "https://au.variety.com/2026/tv/global/skydance-george-cheeks-channing-dungey-executive-structure-42051/",
-    "https://www.blackenterprise.com/channing-dungey-is-set-to-take-the-reins-of-mtv-bet-nickelodeon-and-more-in-skydance-shake-up/"
-   ]
-  },
-  {
-   "name": "Howard Lee",
-   "title": "Chief Creative Officer, U.S. Networks",
-   "channels": [
-    "Discovery Channel",
-    "TLC",
-    "US Networks"
-   ],
-   "remit": "Leads content strategy across WBD US linear networks; also President and Head of Content for TLC and Discovery (per Dec 2024 announcement). Discovery and TLC content heads report to him.",
-   "recent_commissions": [],
-   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2024-12",
-   "confidence": "check",
-   "notes": "Title confirmed Dec 2024 (wbd.com) and as Boyle/Orstein's boss Dec 2025 (TheWrap). Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
-   "sources": [
-    "https://www.wbd.com/news/warner-bros-discovery-announces-new-leadership-structure-us-networks-business",
-    "https://www.thewrap.com/industry-news/business/warner-bros-us-networks-joseph-boyle-alon-orstein-discovery-channel-tlc-content-heads/"
-   ]
-  },
-  {
-   "name": "Joseph Boyle",
-   "title": "Head of Content, Discovery Channel",
-   "channels": [
-    "Discovery Channel"
-   ],
-   "remit": "Oversees all content development and production for Discovery Channel; reports to Howard Lee. Previously SVP production, where he spearheaded production of Deadliest Catch and Naked and Afraid / Naked and Afraid XL.",
-   "recent_commissions": [],
-   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2025-12",
-   "confidence": "check",
-   "notes": "Promoted Dec 2025. Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
-   "sources": [
-    "https://www.thewrap.com/industry-news/business/warner-bros-us-networks-joseph-boyle-alon-orstein-discovery-channel-tlc-content-heads/"
-   ]
-  },
-  {
-   "name": "Alon Orstein",
-   "title": "Head of Content, TLC",
-   "channels": [
-    "TLC"
-   ],
-   "remit": "Oversees all content development and production for TLC; reports to Howard Lee. Previously SVP development overseeing franchises incl. 90 Day Fiance, Sister Wives, Say Yes to the Dress.",
-   "recent_commissions": [],
-   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2025-12",
-   "confidence": "check",
-   "notes": "Promoted Dec 2025. Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
-   "sources": [
-    "https://www.thewrap.com/industry-news/business/warner-bros-us-networks-joseph-boyle-alon-orstein-discovery-channel-tlc-content-heads/"
-   ]
-  },
-  {
-   "name": "Betsy Ayala",
-   "title": "Head of Content, Food",
-   "channels": [
-    "Food Network"
-   ],
-   "remit": "Leads all programming, development and operations for Food Network.",
-   "recent_commissions": [],
-   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "check",
-   "notes": "Title from Realscreen Summit 2026 speaker page. Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
-   "sources": [
-    "https://summit.realscreen.com/2026/speakers/1001627/"
-   ]
-  }
- ]
+  "broadcaster": "Warner Bros. Discovery (US)",
+  "region": "US",
+  "checked": "2026-11-08",
+  "pitch_routes": [
+    {
+      "genre": "Discovery, TLC, ID, Food Network unscripted",
+      "route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+      "url": "https://www.wbd.com/visitor-agreement"
+    }
+  ],
+  "briefs": [
+    {
+      "title": "ID chief Jason Sarlanis on charting fresh waters for true crime (Realscreen 'The Brief')",
+      "summary": "ID wants: shows exposing the psychology of crime with expert testimony; closed-ended anthology series for 'armchair detectives'; access to the criminal justice process (police/undercover ops); pop-culture/true-crime crossovers; complementary new presenters; a prison-set show and a returnable serialized true-crime story; filmmakers with passion, unique access and fresh territory ('Ideally we're first, ideally we're best'). Older than 12 months and pre-merger - check.",
+      "url": "https://realscreen.com/?p=309277",
+      "date": "2024-10-31"
+    }
+  ],
+  "commissioners": [
+    {
+      "name": "Channing Dungey",
+      "title": "Head, Warner Bros. Television Group (and combined cable networks)",
+      "channels": [
+        "Discovery Channel",
+        "TLC",
+        "Food Network",
+        "HGTV",
+        "TNT",
+        "MTV",
+        "BET"
+      ],
+      "remit": "Post-merger oversees the studios (scripted, unscripted, animation) plus 50+ cable brands including WBD's and Paramount's US networks; reports to George Cheeks. Top of chain, not a day-to-day pitch target.",
+      "recent_commissions": [],
+      "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "high",
+      "notes": "Confirmed in post-merger Skydance TV structure, 28 Oct 2026.",
+      "sources": [
+        "https://www.thewrap.com/industry-news/business/george-cheeks-skydance-tv-leadership-team/",
+        "https://www.blackenterprise.com/channing-dungey-is-set-to-take-the-reins-of-mtv-bet-nickelodeon-and-more-in-skydance-shake-up/"
+      ]
+    },
+    {
+      "name": "Howard Lee",
+      "title": "Chief Creative Officer, U.S. Networks",
+      "channels": [
+        "Discovery Channel",
+        "TLC",
+        "US Networks"
+      ],
+      "remit": "Leads content strategy across WBD US linear networks; also President and Head of Content for TLC and Discovery (per Dec 2024 announcement). Discovery and TLC content heads report to him.",
+      "recent_commissions": [],
+      "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2024-12",
+      "confidence": "check",
+      "notes": "Title confirmed Dec 2024 (wbd.com) and as Boyle/Orstein's boss Dec 2025 (TheWrap). Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
+      "sources": [
+        "https://www.wbd.com/news/warner-bros-discovery-announces-new-leadership-structure-us-networks-business",
+        "https://www.thewrap.com/industry-news/business/warner-bros-us-networks-joseph-boyle-alon-orstein-discovery-channel-tlc-content-heads/"
+      ]
+    },
+    {
+      "name": "Joseph Boyle",
+      "title": "Head of Content, Discovery Channel",
+      "channels": [
+        "Discovery Channel"
+      ],
+      "remit": "Oversees all content development and production for Discovery Channel; reports to Howard Lee. Previously SVP production, where he spearheaded production of Deadliest Catch and Naked and Afraid / Naked and Afraid XL.",
+      "recent_commissions": [],
+      "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2025-12",
+      "confidence": "check",
+      "notes": "Promoted Dec 2025. Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
+      "sources": [
+        "https://www.thewrap.com/industry-news/business/warner-bros-us-networks-joseph-boyle-alon-orstein-discovery-channel-tlc-content-heads/"
+      ]
+    },
+    {
+      "name": "Alon Orstein",
+      "title": "Head of Content, TLC",
+      "channels": [
+        "TLC"
+      ],
+      "remit": "Oversees all content development and production for TLC; reports to Howard Lee. Previously SVP development overseeing franchises incl. 90 Day Fiance, Sister Wives, Say Yes to the Dress.",
+      "recent_commissions": [],
+      "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2025-12",
+      "confidence": "check",
+      "notes": "Promoted Dec 2025. Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
+      "sources": [
+        "https://www.thewrap.com/industry-news/business/warner-bros-us-networks-joseph-boyle-alon-orstein-discovery-channel-tlc-content-heads/"
+      ]
+    },
+    {
+      "name": "Betsy Ayala",
+      "title": "Head of Content, Food",
+      "channels": [
+        "Food Network"
+      ],
+      "remit": "Leads all programming, development and operations for Food Network.",
+      "recent_commissions": [],
+      "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "check",
+      "notes": "Title from Realscreen Summit 2026 speaker page. Not reconfirmed after the Paramount Skydance-WBD merger closed (Oct 2026), which put the combined cable networks under Channing Dungey.",
+      "sources": [
+        "https://summit.realscreen.com/2026/speakers/1001627/"
+      ]
+    }
+  ]
 }

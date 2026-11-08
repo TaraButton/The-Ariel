@@ -1,76 +1,75 @@
 {
- "broadcaster": "Paramount",
- "region": "US",
- "checked": "2026-11-08",
- "pitch_routes": [
-  {
-   "genre": "Paramount+ unscripted / docs, CBS, MTV",
-   "route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney. (Provision text read via conductatlas.com's quotation of the Paramount+ terms; the live terms page would not render, so check.)",
-   "url": "https://www.paramountplus.com/terms/"
-  }
- ],
- "briefs": [],
- "commissioners": [
-  {
-   "name": "Damla Dogan",
-   "title": "Head of Unscripted, Paramount+",
-   "channels": [
-    "Paramount+"
-   ],
-   "remit": "Heads Paramount+ unscripted; reports to Sarah Aubrey. Ex-Netflix director of unscripted originals; had consulted for Paramount+ for nine months before the appointment.",
-   "recent_commissions": [],
-   "pitch_route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.paramountplus.com/terms/",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2026-10",
-   "confidence": "high",
-   "notes": "Named 30 Oct 2026. The announcement mentions Paramount+ unscripted titles 'Making Love' and 'Team Moms' but does not say she commissioned them, so not credited.",
-   "sources": [
-    "https://www.thewrap.com/industry-news/business/paramount-plus-damla-dogan-head-of-unscripted/"
-   ]
-  },
-  {
-   "name": "Laurel Weir",
-   "title": "",
-   "channels": [
-    "Paramount cable networks (MTV, Comedy Central etc.)"
-   ],
-   "remit": "Oversees research and programming insights across broadcast, cable and studios; keeps content strategy, scheduling and acquisitions for the Paramount cable networks during integration (Oct 2026). In Nov 2025 she was named to lead programming for MTV, Comedy Central, Nickelodeon and global acquisitions.",
-   "recent_commissions": [],
-   "pitch_route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.paramountplus.com/terms/",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "check",
-   "notes": "Exact title not given in any source opened. Acquisitions remit makes her relevant for finished unscripted/doc programming on Paramount cable.",
-   "sources": [
-    "https://www.thewrap.com/industry-news/business/george-cheeks-skydance-tv-leadership-team/",
-    "https://au.variety.com/2026/tv/global/skydance-george-cheeks-channing-dungey-executive-structure-42051/",
-    "https://www.thewrap.com/paramount-tv-leadership-team-cable-networks-george-cheeks/"
-   ]
-  },
-  {
-   "name": "Sitarah Pendelton",
-   "title": "EVP, Unscripted Series, TV Media",
-   "channels": [
-    "MTV"
-   ],
-   "remit": "Leads all MTV series and specials (incl. RuPaul's Drag Race) per Nov 2025 reorg.",
-   "recent_commissions": [],
-   "pitch_route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney.",
-   "pitch_url": "https://www.paramountplus.com/terms/",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2025-11",
-   "confidence": "check",
-   "notes": "Title from Paramount Press Express MTV executives page (no date on her entry). Post-merger MTV now sits under Channing Dungey; not reconfirmed after Oct 2026.",
-   "sources": [
-    "https://www.paramountpressexpress.com/mtv/executives/",
-    "https://www.thewrap.com/paramount-tv-leadership-team-cable-networks-george-cheeks/"
-   ]
-  }
- ],
- "notes": "MTV Documentary Films (Sheila Nevins, Liza Burnett Fefferman) is no longer operating - Paramount confirmed closure (https://anthonykaufman.substack.com/p/after-paramount-axed-mtv-documentary). No current Showtime documentary commissioner verified. Paramount+ docs Realscreen reports in 2025-26 (e.g. 'The Program: Texas Tech', greenlit Jun 2026) name no Paramount exec."
+  "broadcaster": "Paramount",
+  "region": "US",
+  "checked": "2026-11-08",
+  "pitch_routes": [
+    {
+      "genre": "Paramount+ unscripted / docs, CBS, MTV",
+      "route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney. (Provision text read via conductatlas.com's quotation of the Paramount+ terms; the live terms page would not render, so check.)",
+      "url": "https://www.paramountplus.com/terms/"
+    }
+  ],
+  "briefs": [],
+  "commissioners": [
+    {
+      "name": "Damla Dogan",
+      "title": "Head of Unscripted, Paramount+",
+      "channels": [
+        "Paramount+"
+      ],
+      "remit": "Heads Paramount+ unscripted; reports to Sarah Aubrey. Ex-Netflix director of unscripted originals; had consulted for Paramount+ for nine months before the appointment.",
+      "recent_commissions": [],
+      "pitch_route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.paramountplus.com/terms/",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2026-10",
+      "confidence": "high",
+      "notes": "Named 30 Oct 2026. The announcement mentions Paramount+ unscripted titles 'Making Love' and 'Team Moms' but does not say she commissioned them, so not credited.",
+      "sources": [
+        "https://www.thewrap.com/industry-news/business/paramount-plus-damla-dogan-head-of-unscripted/"
+      ]
+    },
+    {
+      "name": "Laurel Weir",
+      "title": "",
+      "channels": [
+        "Paramount cable networks (MTV, Comedy Central etc.)"
+      ],
+      "remit": "Oversees research and programming insights across broadcast, cable and studios; keeps content strategy, scheduling and acquisitions for the Paramount cable networks during integration (Oct 2026). In Nov 2025 she was named to lead programming for MTV, Comedy Central, Nickelodeon and global acquisitions.",
+      "recent_commissions": [],
+      "pitch_route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.paramountplus.com/terms/",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "check",
+      "notes": "Exact title not given in any source opened. Acquisitions remit makes her relevant for finished unscripted/doc programming on Paramount cable.",
+      "sources": [
+        "https://www.thewrap.com/industry-news/business/george-cheeks-skydance-tv-leadership-team/",
+        "https://www.thewrap.com/paramount-tv-leadership-team-cable-networks-george-cheeks/"
+      ]
+    },
+    {
+      "name": "Sitarah Pendelton",
+      "title": "EVP, Unscripted Series, TV Media",
+      "channels": [
+        "MTV"
+      ],
+      "remit": "Leads all MTV series and specials (incl. RuPaul's Drag Race) per Nov 2025 reorg.",
+      "recent_commissions": [],
+      "pitch_route": "Paramount+ terms of use state unsolicited submissions are deleted without being read and carry no right to compensation. Approach via an established production company, agent or entertainment attorney.",
+      "pitch_url": "https://www.paramountplus.com/terms/",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2025-11",
+      "confidence": "check",
+      "notes": "Title from Paramount Press Express MTV executives page (no date on her entry). Post-merger MTV now sits under Channing Dungey; not reconfirmed after Oct 2026.",
+      "sources": [
+        "https://www.paramountpressexpress.com/mtv/executives/",
+        "https://www.thewrap.com/paramount-tv-leadership-team-cable-networks-george-cheeks/"
+      ]
+    }
+  ],
+  "notes": "MTV Documentary Films (Sheila Nevins, Liza Burnett Fefferman) is no longer operating - Paramount confirmed closure (https://anthonykaufman.substack.com/p/after-paramount-axed-mtv-documentary). No current Showtime documentary commissioner verified. Paramount+ docs Realscreen reports in 2025-26 (e.g. 'The Program: Texas Tech', greenlit Jun 2026) name no Paramount exec."
 }

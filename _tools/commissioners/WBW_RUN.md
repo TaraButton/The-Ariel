@@ -17,6 +17,13 @@ Idea: Peter Morgan, 8 Nov 2026. Funding section: Tara (Howard found a funder to 
   sites): do NOT open or read their articles (their terms bar AI/automated tools from article pages).
   Use them ONLY through `wbw_trades.py`, which reads their RSS headline feeds. In "trades", the headline
   stays exactly as published, credited, linked straight to the article. Never summarise or reword it.
+- **Pairing (encouraged):** when a trades headline is about a factual/doc commission, look for the
+  broadcaster's or producer's OWN announcement of the same project. If you find it, make it a main
+  item from the official page (title, channel, commissioner, producer, in your own words) and add
+  `"also": {"source": "Deadline", "url": "<the article url from the feed>"}` so readers can click
+  through to the trade story. Drop it from `trades` to avoid listing it twice. Never fill the
+  commissioner or any other detail from the trade article; if the official page doesn't name the
+  commissioner, leave it out.
 - **Realscreen, Broadcast, any paywall or bot block**: leave alone. Never work around a block.
 - Advanced Television, C21, Televisual, TBI: do not copy or summarise their articles. If they break a
   story you can confirm on an official page, cite the official page.
@@ -52,6 +59,11 @@ Idea: Peter Morgan, 8 Nov 2026. Funding section: Tara (Howard found a funder to 
    Foundation, Gotham Documentary Development, Impact Partners and other equity financiers (their own
    site or official release only). Fields: region, funder, title (the film), what (who made it, what
    it is about, own words), amount (only if stated), url.
+   The full funder list, with apply pages, is `_tools/funders/data/*.json`: check each one's apply_url
+   too. **Keep the Documentary Funding Directory current:** when a funder's own page announces a new
+   round, deadline or amount, update that entry (status, next_deadline YYYY-MM-DD, next_window,
+   last_deadline, amount, sources, checked = today; confidence "high" only if the page states it
+   clearly). Add a new funder only from its own site. Never use a Penske or paywalled source.
 5. **Write** `_tools/commissioners/editions/<id>.json`:
    `{"edition_id","date_label":"13 November 2026","window":"Announcements 7 - 13 November 2026",
    "intro":"1-2 sentences, own words, what stood out","commissions":[{region,broadcaster,title,what,commissioner,producer,date,url}],
@@ -64,9 +76,9 @@ Idea: Peter Morgan, 8 Nov 2026. Funding section: Tara (Howard found a funder to 
    YYYY-MM, official url). For each move: update title/broadcaster, or mark `confidence: "check"` with a
    note if the new role is unclear; add new commissioners only with an official source. Never add an
    email unless the broadcaster prints it on its own page (with `email_source_url`). Bump `checked`.
-7. **Build.** `python3 _tools/commissioners/build.py && python3 _tools/commissioners/wbw_build.py`.
-   Both must succeed (wbw_build refuses Penske URLs in main items and non-https links).
-8. **Publish.** `git add _tools/commissioners commissioners && git commit -m "Who's Buying What: <id>" &&
+7. **Build.** `python3 _tools/commissioners/build.py && python3 _tools/commissioners/wbw_build.py && python3 _tools/funders/build.py`.
+   All three must succeed (wbw_build refuses Penske URLs in main items and non-https links).
+8. **Publish.** `git add _tools/commissioners commissioners _tools/funders documentary-funding && git commit -m "Who's Buying What: <id>" &&
    git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Confirm
    https://theariel.tv/commissioners/whos-buying-what/<id>.html loads within a few minutes.
 9. **Summary.** Counts per section and per broadcaster, sources that could not be reached, list

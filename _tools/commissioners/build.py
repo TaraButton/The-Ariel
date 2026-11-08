@@ -299,7 +299,7 @@ footer a{{color:var(--gold-light)}}
   <p>Email addresses appear only where the broadcaster publishes them. Otherwise we link to the official pitch route.</p>
 </div>
 </main>
-<footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="/commissioners/whos-buying-what/">Who&#8217;s Buying What</a> &middot; <a href="/talent-agencies/">Talent Agency Database</a> &middot; <a href="/reviews/">London Review of Reviews</a> &middot; <a href="mailto:hello@theariel.tv">hello@theariel.tv</a></footer>
+<footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="/commissioners/whos-buying-what/">Who&#8217;s Buying What</a> &middot; <a href="/talent-agencies/">Talent Agency Database</a> &middot; <a href="/documentary-funding/">Documentary Funding Directory</a> &middot; <a href="/reviews/">London Review of Reviews</a> &middot; <a href="mailto:hello@theariel.tv">hello@theariel.tv</a></footer>
 <script>window.COMM_EP={json.dumps(ENDPOINT)};window.COMM_DATA={qm_json};</script>
 <script>{qm_js}</script>
 <script>

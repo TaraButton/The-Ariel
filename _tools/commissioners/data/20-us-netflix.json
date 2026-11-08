@@ -1,82 +1,75 @@
 {
- "broadcaster": "Netflix (US)",
- "region": "US",
- "checked": "2026-11-08",
- "pitch_routes": [
-  {
-   "genre": "All (documentary films, docuseries, unscripted)",
-   "route": "No unsolicited submissions. Pitches must come through a licensed agent, producer, attorney, manager or industry executive who already has a relationship with Netflix.",
-   "url": "https://help.netflix.com/en/node/100386"
-  }
- ],
- "briefs": [
-  {
-   "title": "Trendsetters '25: What's next for Netflix in docs and unscripted (Realscreen)",
-   "summary": "Adam Del Deo: aims to be 'the leading voice in the documentary realm'; wants emotionally deep narratives, often with renowned filmmakers, borrowing narrative techniques from fiction; diverse slate. (Unscripted remarks were from Jeff Gaspin, who has since left.)",
-   "url": "https://realscreen.com/2025/02/11/trendsetters-25-whats-next-for-netflix-in-unscripted/",
-   "date": "2025-02"
-  },
-  {
-   "title": "Netflix sets documentary partnership with Warner Music Group (Deadline)",
-   "summary": "Multi-year first-look deal for music documentary films and series about WMG artists; Del Deo: music 'inspires incredible fandom on Netflix' - signals appetite for music docs.",
-   "url": "https://deadline.com/2026/03/netflix-warner-music-group-set-documentary-partnership-1236761542/",
-   "date": "2026-03"
-  }
- ],
- "commissioners": [
-  {
-   "name": "Adam Del Deo",
-   "title": "VP, Documentary Films & Series",
-   "channels": [
-    "Netflix"
-   ],
-   "remit": "Netflix documentary films and documentary series (title given as 'VP of Documentary Film and Series' in Deadline, Jul 2026)",
-   "recent_commissions": [
+  "broadcaster": "Netflix (US)",
+  "region": "US",
+  "checked": "2026-11-08",
+  "pitch_routes": [
     {
-     "title": "14th",
-     "desc": "Ava DuVernay documentary on the 14th Amendment and citizenship, follow-up to 13th",
-     "date": "2026-07",
-     "url": "https://deadline.com/2026/07/ava-duvernay-netflix-citizenship-documentary-14-amendment-1236983852/"
+      "genre": "All (documentary films, docuseries, unscripted)",
+      "route": "No unsolicited submissions. Pitches must come through a licensed agent, producer, attorney, manager or industry executive who already has a relationship with Netflix.",
+      "url": "https://help.netflix.com/en/node/100386"
+    }
+  ],
+  "briefs": [
+    {
+      "title": "Trendsetters '25: What's next for Netflix in docs and unscripted (Realscreen)",
+      "summary": "Adam Del Deo: aims to be 'the leading voice in the documentary realm'; wants emotionally deep narratives, often with renowned filmmakers, borrowing narrative techniques from fiction; diverse slate. (Unscripted remarks were from Jeff Gaspin, who has since left.)",
+      "url": "https://realscreen.com/2025/02/11/trendsetters-25-whats-next-for-netflix-in-unscripted/",
+      "date": "2025-02"
     },
     {
-     "title": "Warner Music Group first-look documentary deal",
-     "desc": "Exclusive multi-year first-look deal for doc films and series on WMG artists and songwriters; Del Deo quoted as the Netflix exec on the deal",
-     "date": "2026-03",
-     "url": "https://deadline.com/2026/03/netflix-warner-music-group-set-documentary-partnership-1236761542/"
+      "title": "Netflix and Warner Music Group documentary deal (Music Business Worldwide)",
+      "summary": "Multi-year first-look deal for music documentary films and series about WMG artists; Del Deo said music 'inspires incredible fandom on Netflix', which points to appetite for music docs.",
+      "url": "https://musicbusinessworldwide.com/warner-music-group-inks-exclusive-netflix-deal-to-make-artist-and-songwriter-documentaries",
+      "date": "2026-03"
     }
-   ],
-   "pitch_route": "Via agent, producer, attorney, manager or industry exec with an existing Netflix relationship only",
-   "pitch_url": "https://help.netflix.com/en/node/100386",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "high",
-   "notes": "Recent commission entries are Deadline pieces quoting him as the Netflix exec on the project, which strongly implies but does not state 'commissioned by'.",
-   "sources": [
-    "https://deadline.com/2026/07/ava-duvernay-netflix-citizenship-documentary-14-amendment-1236983852/",
-    "https://deadline.com/2026/03/netflix-warner-music-group-set-documentary-partnership-1236761542/",
-    "https://realscreen.com/2025/02/11/trendsetters-25-whats-next-for-netflix-in-unscripted/"
-   ]
-  },
-  {
-   "name": "Brandon Riegg",
-   "title": "Vice President, Nonfiction Series & Sports",
-   "channels": [
-    "Netflix"
-   ],
-   "remit": "Oversees all Netflix unscripted programming (and sports); Jeff Gaspin (VP Unscripted Series) reported to him until Gaspin's June 2026 exit",
-   "recent_commissions": [],
-   "pitch_route": "Via agent, producer, attorney, manager or industry exec with an existing Netflix relationship only",
-   "pitch_url": "https://help.netflix.com/en/node/100386",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2016-11 (joined Netflix)",
-   "confidence": "high",
-   "notes": "Gaspin's VP Unscripted Series post was vacated June 2026; no successor found as of 8 Nov 2026. Darnell is a producer with an advisory role, not a commissioner.",
-   "sources": [
-    "https://deadline.com/2026/06/netflix-unscripted-chief-jeff-gaspin-leaving-1236952244/",
-    "https://deadline.com/2026/07/mike-darnell-overall-deal-netflix-strategic-guidance-1237005838/"
-   ]
-  }
- ]
+  ],
+  "commissioners": [
+    {
+      "name": "Adam Del Deo",
+      "title": "VP, Documentary Films & Series",
+      "channels": [
+        "Netflix"
+      ],
+      "remit": "Netflix documentary films and documentary series (title as given by Music Business Worldwide, Mar 2026)",
+      "recent_commissions": [
+        {
+          "title": "Warner Music Group first-look documentary deal",
+          "desc": "Exclusive multi-year first-look deal for documentary films and series about WMG artists and songwriters, made with Unigram; Del Deo quoted as the Netflix exec on the deal",
+          "date": "2026-03",
+          "url": "https://musicbusinessworldwide.com/warner-music-group-inks-exclusive-netflix-deal-to-make-artist-and-songwriter-documentaries"
+        }
+      ],
+      "pitch_route": "Via agent, producer, attorney, manager or industry exec with an existing Netflix relationship only",
+      "pitch_url": "https://help.netflix.com/en/node/100386",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "high",
+      "notes": "Quoted as the Netflix executive on the WMG documentary deal (Mar 2026).",
+      "sources": [
+        "https://musicbusinessworldwide.com/warner-music-group-inks-exclusive-netflix-deal-to-make-artist-and-songwriter-documentaries",
+        "https://realscreen.com/2025/02/11/trendsetters-25-whats-next-for-netflix-in-unscripted/"
+      ]
+    },
+    {
+      "name": "Brandon Riegg",
+      "title": "Vice President, Nonfiction Series & Sports",
+      "channels": [
+        "Netflix"
+      ],
+      "remit": "Oversees all Netflix unscripted programming (and sports); Jeff Gaspin (VP Unscripted Series) reported to him until Gaspin's June 2026 exit",
+      "recent_commissions": [],
+      "pitch_route": "Via agent, producer, attorney, manager or industry exec with an existing Netflix relationship only",
+      "pitch_url": "https://help.netflix.com/en/node/100386",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2016-11 (joined Netflix)",
+      "confidence": "high",
+      "notes": "Gaspin's VP Unscripted Series post was vacated June 2026; no successor found as of 8 Nov 2026. Darnell is a producer with an advisory role, not a commissioner.",
+      "sources": [
+        "https://www.thewrap.com/creative-content/tv-shows/netflix-unscripted-boss-jeff-gaspin-exits-two-years/",
+        "https://www.thewrap.com/media-platforms/tv/mike-darnell-overall-deal-netflix-unscripted/"
+      ]
+    }
+  ]
 }

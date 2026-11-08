@@ -7,6 +7,8 @@ Writes <edition_id>.html per edition, index.html (latest edition + archive) and 
 (the newsletter backend pulls latest.json hourly and emails it on its send_after time).
 Refuses an item without an https url, and any edition whose main items cite a Penske Media
 article (main items must come from official announcements; Penske headlines go in "trades").
+A main item may carry "also": {"source": "Deadline", "url": ...} - a plain link to the trade story
+on the same project, shown beside the official link. Never read the trade article to fill the item.
 """
 import html, json, re, sys
 from datetime import date
@@ -28,6 +30,9 @@ def check(ed):
                 sys.exit(f"{ed['edition_id']} {k}: item without https url: {it}")
             if PMC.match(u):
                 sys.exit(f"{ed['edition_id']} {k}: main items must not cite Penske Media articles: {u}")
+            al = it.get("also") or {}
+            if al and (not al.get("url", "").startswith("https://") or not al.get("source")):
+                sys.exit(f"{ed['edition_id']} {k}: bad 'also' link {al}")
     for t in ed.get("trades") or []:
         if not t.get("url", "").startswith("https://") or not t.get("headline"):
             sys.exit(f"{ed['edition_id']} trades: bad item {t}")
@@ -45,7 +50,9 @@ def item_html(kind, it):
     if it.get("deadline"): extra.append("Deadline: " + e(it["deadline"]))
     return (f'<li><span class="tag">{tag}</span>{head}{("<br>" + body) if body else ""}'
             f'{("<br><span class=meta>" + " &middot; ".join(extra) + "</span>") if extra else ""}'
-            f'<br><a href="{e(it.get("url"))}" rel="noopener" target="_blank">Official announcement</a></li>')
+            f'<br><a href="{e(it.get("url"))}" rel="noopener" target="_blank">Official announcement</a>'
+            + (f' &middot; <a href="{e(it["also"]["url"])}" rel="noopener" target="_blank">{e(it["also"]["source"])} story</a>' if (it.get("also") or {}).get("url") else "")
+            + '</li>')
 
 def page(ed, editions, is_index=False):
     blocks = []
@@ -115,7 +122,7 @@ footer{{background:var(--ink);color:#D8D3C8;text-align:center;font-size:14px;pad
 <div class="archive"><h3>Past editions</h3><ul>{archive}</ul></div>
 <p class="small">Main items are written by The Ariel from the broadcasters&#8217; and streamers&#8217; own announcements, each linked. Trade headlines are the publishers&#8217; own. Spot an error? <a href="mailto:hello@theariel.tv?subject=Who%27s%20Buying%20What">hello@theariel.tv</a></p>
 </main>
-<footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="/commissioners/">Commissioners list</a> &middot; <a href="/reviews/">London Review of Reviews</a></footer>
+<footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="/commissioners/">Commissioners list</a> &middot; <a href="/reviews/">London Review of Reviews</a> &middot; <a href="/documentary-funding/">Documentary Funding Directory</a></footer>
 <script>
 (function(){{var f=document.getElementById('wbw'),m=document.getElementById('msg');f.addEventListener('submit',function(ev){{ev.preventDefault();var em=f.email.value.trim();
 if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]{{2,}}$/.test(em)){{m.textContent='Please check your email address.';return;}}

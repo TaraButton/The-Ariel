@@ -135,7 +135,7 @@ footer{{background:var(--ink);color:#D8D3C8;text-align:center;font-size:14px;pad
 <div class="note"><p><strong>Agents: is your entry right?</strong> We build this from agencies&#8217; own sites and published announcements. To correct it, or to tell producers what you are looking for, email <a href="mailto:hello@theariel.tv?subject=Talent%20Agency%20Database">hello@theariel.tv</a>.</p>
 <p>Most agencies do not accept unsolicited submissions; where an agency publishes its policy we link it. Emails appear only where the agency prints them on its own site.</p></div>
 </main>
-<footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="/commissioners/">UK &amp; US commissioners</a> &middot; <a href="/commissioners/whos-buying-what/">Who&#8217;s Buying What</a></footer>
+<footer>The Ariel &middot; Personalised story intelligence for screen &middot; <a href="/">theariel.tv</a> &middot; <a href="/commissioners/">UK &amp; US commissioners</a> &middot; <a href="/commissioners/whos-buying-what/">Who&#8217;s Buying What</a> &middot; <a href="/documentary-funding/">Documentary funding</a></footer>
 <script>
 (function(){{var rg='all',q=document.getElementById('q'),cards=[].slice.call(document.querySelectorAll('.card'));
 function apply(){{var t=(q.value||'').trim().toLowerCase();cards.forEach(function(c){{c.hidden=!((rg==='all'||c.dataset.r===rg)&&(!t||c.dataset.q.indexOf(t)>-1));}});

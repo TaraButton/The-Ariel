@@ -218,7 +218,7 @@ function wbwRender_(ed, name, token) {
       if (it.commissioner) extra.push('Commissioned by ' + esc_(it.commissioner));
       if (it.producer) extra.push('Made by ' + esc_(it.producer));
       if (it.deadline) extra.push('Deadline: ' + esc_(it.deadline));
-      parts.push(row(tag + head + (body ? '<br>' + body : '') + (extra.length ? '<br><span style="color:' + C.mist + ';">' + extra.join(' &middot; ') + '</span>' : '') + '<br>' + a(it.url, 'Official announcement')));
+      parts.push(row(tag + head + (body ? '<br>' + body : '') + (extra.length ? '<br><span style="color:' + C.mist + ';">' + extra.join(' &middot; ') + '</span>' : '') + '<br>' + a(it.url, 'Official announcement') + (it.also && it.also.url ? ' &middot; ' + a(it.also.url, (it.also.source || 'Trade') + ' story') : '')));
       text.push('- ' + (it.title || it.name || '') + ': ' + (it.what || it.change || '') + ' ' + (it.url || ''));
     });
   });

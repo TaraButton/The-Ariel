@@ -1,0 +1,705 @@
+[
+  {
+    "id": "bfi-doc-society-production-fund",
+    "name": "BFI Doc Society Production Fund",
+    "org": "Doc Society / BFI National Lottery",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "production",
+      "post"
+    ],
+    "what": "Non-recoupable grants for production and completion of director-led, independent UK non-fiction feature films intended for theatrical release. Runs two strands: Directions (first and second-time directors) and Momentum (more established directors).",
+    "amount": "Up to £150,000 (non-recoupable); total Doc Society contribution per project capped at £150,000 across all stages",
+    "eligibility": "Producers apply; UK filmmakers; project must meet at least three of the fund's six aims; two-stage process (Expression of Interest, then full application)",
+    "status": "rolling",
+    "next_deadline": "",
+    "next_window": "Rolling: opened 7 May 2026, closes Summer 2028",
+    "last_deadline": "",
+    "apply_url": "https://bfi.docsociety.org/funds/features-production/",
+    "published_email": "hellobfi@docsociety.org",
+    "email_source_url": "https://bfi.docsociety.org/funds/features-production/",
+    "notable": [
+      {
+        "title": "African Apocalypse",
+        "url": "https://bfi.docsociety.org/film/african-apocalypse"
+      },
+      {
+        "title": "Blackthorn",
+        "url": "https://bfi.docsociety.org/film/blackthorn"
+      },
+      {
+        "title": "Adura Baba Mi",
+        "url": "https://bfi.docsociety.org/film/adura-baba-mi"
+      }
+    ],
+    "sources": [
+      "https://bfi.docsociety.org/funds/features-production/",
+      "https://bfi.docsociety.org/",
+      "https://bfi.docsociety.org/films/",
+      "https://docsociety.org/funds/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Application link is inside the guidelines PDF, not on the page. Notable films are from the BFI Doc Society film directory, which covers all its funds, not only this one."
+  },
+  {
+    "id": "bfi-doc-society-development-fund",
+    "name": "BFI Doc Society Development Fund",
+    "org": "Doc Society / BFI National Lottery",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "development"
+    ],
+    "what": "Grants for research and development of director-led UK feature documentaries aimed at theatrical release, covering things like finding contributors, building the story, shooting a teaser and testing creative approaches.",
+    "amount": "£25,000 to £40,000 (non-recoupable)",
+    "eligibility": "Producers apply; UK filmmakers; debut and experienced directors and producers; BFI Diversity Standards must be completed before applying",
+    "status": "upcoming",
+    "next_deadline": "2026-12-21",
+    "next_window": "Round 2 opens 9 Nov 2026, closes 1pm 21 Dec 2026",
+    "last_deadline": "2026-08-05",
+    "apply_url": "https://bfi.docsociety.org/funds/features-development/",
+    "published_email": "hellobfi@docsociety.org",
+    "email_source_url": "https://bfi.docsociety.org/funds/features-development/",
+    "notable": [],
+    "sources": [
+      "https://bfi.docsociety.org/funds/features-development/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Page title wrongly reads 'Production Fund' but content is the Development Fund. Round 1 ran 24 Jun to 5 Aug 2026."
+  },
+  {
+    "id": "bfi-doc-society-rad-fund",
+    "name": "BFI Doc Society RAD Fund",
+    "org": "Doc Society / BFI National Lottery",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "development"
+    ],
+    "what": "Small early-development grants for first and second-time UK feature documentary makers, for research, test shoots, treatments, contributor and archive agreements and budgeting.",
+    "amount": "£3,000 to £5,000",
+    "eligibility": "First and second-time feature documentary makers; individuals, teams or UK-registered companies",
+    "status": "upcoming",
+    "next_deadline": "2026-12-21",
+    "next_window": "Round 2 opens 9 Nov 2026, closes 1pm 21 Dec 2026",
+    "last_deadline": "2026-08-05",
+    "apply_url": "https://bfi.docsociety.org/funds/rad-fund/",
+    "published_email": "hellobfi@docsociety.org",
+    "email_source_url": "https://bfi.docsociety.org/funds/rad-fund/",
+    "notable": [],
+    "sources": [
+      "https://bfi.docsociety.org/funds/rad-fund/",
+      "https://www.bfi.org.uk/get-funding-support/bfi-network/bfi-network-funding"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "bfi-doc-society-made-of-truth",
+    "name": "BFI Doc Society Made of Truth",
+    "org": "Doc Society / BFI National Lottery",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "shorts",
+      "production"
+    ],
+    "what": "Annual fund for short non-fiction films (live action or animation, 5 to 40 minutes) by early career UK filmmakers; backs up to 13 shorts a year.",
+    "amount": "Up to £25,000 per project",
+    "eligibility": "Early career teams of at least two (producer and director); both UK residents; director must not have had a commercial distribution deal for a non-fiction feature in the last five years",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Opens spring 2027 (once a year)",
+    "last_deadline": "2026-07-01",
+    "apply_url": "https://bfi.docsociety.org/funds/made-of-truth/",
+    "published_email": "hellobfi@docsociety.org",
+    "email_source_url": "https://bfi.docsociety.org/funds/made-of-truth/",
+    "notable": [],
+    "sources": [
+      "https://bfi.docsociety.org/funds/made-of-truth/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "bfi-doc-society-expanded-screen",
+    "name": "BFI Doc Society Expanded Screen Fund",
+    "org": "Doc Society / BFI National Lottery",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production"
+    ],
+    "what": "Funds development and production of non-fiction immersive work (VR, AR, MR, 360) for audiences beyond cinemas, such as festivals and exhibition spaces.",
+    "amount": "£25,000 to £150,000",
+    "eligibility": "Producers with a track record delivering immersive work; non-fiction only; must meet at least three of the fund's six aims",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Opens spring 2027 (once a year)",
+    "last_deadline": "2026-06-22",
+    "apply_url": "https://bfi.docsociety.org/funds/expanded-screen/",
+    "published_email": "hellobfi@docsociety.org",
+    "email_source_url": "https://bfi.docsociety.org/funds/expanded-screen/",
+    "notable": [],
+    "sources": [
+      "https://bfi.docsociety.org/funds/expanded-screen/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "screen-scotland-film-development-production",
+    "name": "Screen Scotland Film Development and Production Fund",
+    "org": "Screen Scotland",
+    "region": "UK",
+    "country": "Scotland",
+    "type": "fund",
+    "stages": [
+      "development",
+      "production"
+    ],
+    "what": "Development and production funding for feature films and feature documentaries made by filmmakers based in Scotland.",
+    "amount": "",
+    "eligibility": "Filmmakers based in Scotland; Step 1 via the BFI portal (Diversity Standards are part of eligibility), then Screen Scotland form",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "No deadline stated on the page; timescales are in the fund guidance",
+    "last_deadline": "",
+    "apply_url": "https://www.screen.scot/funding-and-support/funding/film-development-and-production-fund",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.screen.scot/funding-and-support/funding/film-development-and-production-fund",
+      "https://www.screen.scot/funding-and-support/screen-scotland-funding"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Amounts and deadlines are in the guidance PDF, which was not read. No email printed; contact via Screen Scotland enquiries page."
+  },
+  {
+    "id": "screen-scotland-broadcast-content-fund",
+    "name": "Screen Scotland Broadcast Content Fund",
+    "org": "Screen Scotland",
+    "region": "UK",
+    "country": "Scotland",
+    "type": "fund",
+    "stages": [
+      "development",
+      "production"
+    ],
+    "what": "Development (single project or slate) and production funding for broadcast content of all genres, including factual, from Scottish production companies.",
+    "amount": "",
+    "eligibility": "Eligible Scottish production companies; must show a clear need for public funding",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "No deadline stated on the page; timescales are in the fund guidance",
+    "last_deadline": "",
+    "apply_url": "https://www.screen.scot/funding-and-support/funding/broadcast-content-fund",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.screen.scot/funding-and-support/funding/broadcast-content-fund"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Amounts, broadcaster-attachment rules and deadlines are in the guidance PDF, not read. No email printed on page."
+  },
+  {
+    "id": "ffilm-cymru-feature-development",
+    "name": "Ffilm Cymru Feature Film Development",
+    "org": "Ffilm Cymru Wales",
+    "region": "UK",
+    "country": "Wales",
+    "type": "fund",
+    "stages": [
+      "development"
+    ],
+    "what": "Development awards for a single feature film or feature documentary with Welsh talent in a lead role, to get it ready for financing.",
+    "amount": "Small awards up to £10,000; large awards up to £24,999",
+    "eligibility": "Writer, writer-director or writer/producer/director teams; at least one lead role Wales born or based; applicant holds the rights",
+    "status": "open",
+    "next_deadline": "2027-02-02",
+    "next_window": "Deadlines in 2026-27: 2 Jul 2026, 2 Oct 2026, 2 Feb 2027 (midday)",
+    "last_deadline": "2026-10-02",
+    "apply_url": "https://ffilmcymruwales.com/funding-and-training/feature-film-development",
+    "published_email": "applications@ffilmcymruwales.com",
+    "email_source_url": "https://ffilmcymruwales.com/funding-and-training/feature-film-development",
+    "notable": [],
+    "sources": [
+      "https://ffilmcymruwales.com/funding-and-training/feature-film-development",
+      "https://ffilmcymruwales.com/funding-and-training/film-development-production",
+      "https://www.ffilmcymruwales.com/funding-and-training"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Documentary applicants must also give a breakdown of spend to date and how it was financed. Questions: ihsana@ffilmcymruwales.com."
+  },
+  {
+    "id": "ffilm-cymru-beacons-shorts",
+    "name": "Ffilm Cymru Beacons Short Film Funding",
+    "org": "Ffilm Cymru Wales",
+    "region": "UK",
+    "country": "Wales",
+    "type": "grant",
+    "stages": [
+      "shorts",
+      "development",
+      "production"
+    ],
+    "what": "Funds development and production of live action, documentary and animated short films (up to 15 minutes) led by Welsh directors.",
+    "amount": "Up to £25,000",
+    "eligibility": "Director born in or based in Wales; team members must not have directed a feature with a commercial distribution deal",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "not yet announced",
+    "last_deadline": "2026-06-12",
+    "apply_url": "https://ffilmcymruwales.com/funding-and-training/beacons-short-film-funding",
+    "published_email": "applications@ffilmcymruwales.com",
+    "email_source_url": "https://ffilmcymruwales.com/funding-and-training/beacons-short-film-funding",
+    "notable": [],
+    "sources": [
+      "https://ffilmcymruwales.com/funding-and-training/beacons-short-film-funding",
+      "https://ffilmcymruwales.com/funding-and-training/film-development-production"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Page shows 'currently closed' alongside a 12 June 2026 deadline; treated as the last deadline. Documentary entrants submit a treatment."
+  },
+  {
+    "id": "screen-ireland-documentary-development",
+    "name": "Screen Ireland First Stage Documentary Development",
+    "org": "Screen Ireland (Fís Éireann)",
+    "region": "Europe",
+    "country": "Ireland",
+    "type": "fund",
+    "stages": [
+      "development"
+    ],
+    "what": "Development funding (repayable loan) for concept work, teasers, research and story work on a documentary feature or series.",
+    "amount": "Maximum €15,000 (repayable loan)",
+    "eligibility": "Independent production companies registered in the Republic of Ireland with office and staff there; rights access or agreements with director and contributors",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2027 dates not yet announced (2026 had four deadlines)",
+    "last_deadline": "2026-10-30",
+    "apply_url": "https://www.screenireland.ie/funding/development-loans/documentary-development-loans",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.screenireland.ie/funding/development-loans/documentary-development-loans",
+      "https://www.screenireland.ie/funding"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "All Screen Ireland development funding is a repayable loan. No email printed."
+  },
+  {
+    "id": "screen-ireland-documentary-feature-production",
+    "name": "Screen Ireland Documentary Production: Feature Film",
+    "org": "Screen Ireland (Fís Éireann)",
+    "region": "Europe",
+    "country": "Ireland",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Production loans for feature documentaries originated and led by Irish talent, in English or Irish, with international appeal.",
+    "amount": "250,000 / up to 65% of budget (currency not stated on page; Screen Ireland works in euro)",
+    "eligibility": "Teams of Irish producers, writers and directors; rights owned by the production company; one-hour TV slot docs not supported; ROI registered company",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2027 dates not yet announced (2026 had four deadlines)",
+    "last_deadline": "2026-10-23",
+    "apply_url": "https://www.screenireland.ie/funding/production-loans/documentary-production-feature-film",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.screenireland.ie/funding/production-loans/documentary-production-feature-film",
+      "https://www.screenireland.ie/funding"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Production funding is a repayable loan. Screen Ireland also has documentary TV series and creative co-production schemes (not checked in detail)."
+  },
+  {
+    "id": "idfa-bertha-fund-classic",
+    "name": "IDFA Bertha Fund Classic",
+    "org": "IDFA",
+    "region": "Europe",
+    "country": "Netherlands",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production",
+      "post"
+    ],
+    "what": "Grants for creative documentaries by filmmakers from eligible countries in Africa, Asia, Eastern Europe, Latin America, the Caribbean and Oceania, for development or (post-)production.",
+    "amount": "Development up to €7,500; (post-)production up to €25,000",
+    "eligibility": "Directors must hold nationality of, and live and work in, an eligible country; for production the main producer must be based there; no series, curriculum films or immersive work",
+    "status": "upcoming",
+    "next_deadline": "2027-02-10",
+    "next_window": "Entries open late December 2026; no June 2027 round",
+    "last_deadline": "",
+    "apply_url": "https://professionals.idfa.nl/myidfa/submissions/",
+    "published_email": "idfaberthafund@idfa.nl",
+    "email_source_url": "https://professionals.idfa.nl/training-funding/funding/ibf-classic/",
+    "notable": [],
+    "sources": [
+      "https://professionals.idfa.nl/training-funding/funding/ibf-classic/",
+      "https://professionals.idfa.nl/training-funding/funding/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Not open to UK-based filmmakers. Exact February 2026 deadline not stated on the page."
+  },
+  {
+    "id": "idfa-bertha-fund-europe",
+    "name": "IDFA Bertha Fund Europe (minority co-production)",
+    "org": "IDFA",
+    "region": "Europe",
+    "country": "Netherlands",
+    "type": "grant",
+    "stages": [
+      "production",
+      "post"
+    ],
+    "what": "Supports European producers acting as minority co-producers on feature documentaries by directors from eligible Global South and Eastern European countries.",
+    "amount": "Up to €40,000 per project (project budget max €600,000)",
+    "eligibility": "Applicant is a minority producer established in a Creative Europe MEDIA country; at least 60 minutes; director from an eligible country; project at rough cut for this call",
+    "status": "upcoming",
+    "next_deadline": "2027-01-15",
+    "next_window": "Entries open 15 November",
+    "last_deadline": "",
+    "apply_url": "https://forms.idfa.nl/forms/0acacaad-b557-4432-8b5d-d11ee639a346?culture=en-US",
+    "published_email": "idfaberthafund@idfa.nl",
+    "email_source_url": "https://professionals.idfa.nl/training-funding/funding/ibf-europe/",
+    "notable": [],
+    "sources": [
+      "https://professionals.idfa.nl/training-funding/funding/ibf-europe/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Applicant company must be in a Creative Europe MEDIA country. Cannot be combined with Berlinale WCF Europe, TFL Co-production Fund or IFFR HBF+Europe."
+  },
+  {
+    "id": "cph-forum",
+    "name": "CPH:FORUM",
+    "org": "CPH:DOX",
+    "region": "Europe",
+    "country": "Denmark",
+    "type": "pitch",
+    "stages": [
+      "development",
+      "production"
+    ],
+    "what": "Financing and co-production forum at CPH:DOX where about 30 selected creative documentary projects pitch to co-producers, funders and distributors; several partner prizes are awarded.",
+    "amount": "2027 prizes include Eurimages New Lab Award €20,000; Sandbox Films Science Pitch Prize $25,000; Al Jazeera Documentary Channel Co-Production Award €15,000; Rise and Shine Award €3,000",
+    "eligibility": "Feature-length (52+ min) films or series; priority for projects with producer and some financing attached; open worldwide; 250 DKK submission fee",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Selection notified mid-January 2027; forum runs 16-18 March 2027",
+    "last_deadline": "2026-11-03",
+    "apply_url": "https://vp.eventival.com/cphdox/cphdox2027",
+    "published_email": "forum@cphdox.dk",
+    "email_source_url": "https://cphdox.dk/industry/cphforum/",
+    "notable": [],
+    "sources": [
+      "https://cphdox.dk/industry/cphforum/",
+      "https://cphdox.dk/forum-rules-and-regulations/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "visions-du-reel-vdr-pitching",
+    "name": "VdR-Pitching",
+    "org": "Visions du Réel",
+    "region": "Europe",
+    "country": "Switzerland",
+    "type": "pitch",
+    "stages": [
+      "development"
+    ],
+    "what": "Co-production and financing platform where up to 15 late-development feature documentaries pitch to international industry, with a cash innovation prize.",
+    "amount": "Eurimages New Lab Innovation Award €20,000",
+    "eligibility": "Feature projects over 60 minutes in late development, not yet in production; open worldwide; director has made at least one short; CHF 30-40 submission fee, CHF 360 participation fee if selected",
+    "status": "open",
+    "next_deadline": "2026-12-15",
+    "next_window": "Early deadline 2 Nov 2026 (lower fee); final 15 Dec 2026",
+    "last_deadline": "",
+    "apply_url": "https://vp.eventival.com/vdr/2027",
+    "published_email": "industry@visionsdureel.ch",
+    "email_source_url": "https://www.visionsdureel.ch/en/vdr-industry/vdr-pitching/",
+    "notable": [],
+    "sources": [
+      "https://www.visionsdureel.ch/en/vdr-industry/vdr-pitching/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Eurimages award eligibility requires a company or director from a Eurimages member state."
+  },
+  {
+    "id": "whickers-film-tv-funding-award",
+    "name": "The Whickers Film & TV Funding Award",
+    "org": "The Whickers",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "award",
+    "stages": [
+      "development",
+      "production"
+    ],
+    "what": "Annual award for a first-time director's 50+ minute documentary at late development or early production; finalists pitch at Sheffield DocFest.",
+    "amount": "£120,000 main award; £25,000 runner-up development award",
+    "eligibility": "Open worldwide; first 50+ minute documentary as director; executive producer attached; budget cap and limit on other funding in place; English or subtitled",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2027 round 'launches in a few weeks' per the Whickers homepage (previous round opened 19 Nov 2025)",
+    "last_deadline": "2026-01-30",
+    "apply_url": "https://www.whickerawards.com/apply/film-and-tv/",
+    "published_email": "info@whickerawards.com",
+    "email_source_url": "https://www.whickerawards.com/",
+    "notable": [
+      {
+        "title": "Children Of Honey (2026 winner)",
+        "url": "https://www.whickerawards.com/apply/film-and-tv/previous-winners/"
+      },
+      {
+        "title": "The Video Guy (2025 winner)",
+        "url": "https://www.whickerawards.com/apply/film-and-tv/previous-winners/"
+      },
+      {
+        "title": "Camels of the Sea (2024 winner)",
+        "url": "https://www.whickerawards.com/apply/film-and-tv/previous-winners/"
+      }
+    ],
+    "sources": [
+      "https://www.whickerawards.com/apply/film-and-tv/",
+      "https://www.whickerawards.com/",
+      "https://www.whickerawards.com/apply/film-and-tv/previous-winners/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Apply page is inconsistent: £120,000 headline vs £100,000 instalment schedule; budget cap £500,000 vs £400,000; other-funding cap £350,000 vs £300,000. Confirm against T&Cs."
+  },
+  {
+    "id": "whickers-podcast-pitch",
+    "name": "The Whickers Podcast Pitch (audio funding award)",
+    "org": "The Whickers",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "award",
+    "stages": [
+      "production"
+    ],
+    "what": "Annual funding award for an audio documentary or podcast project, with finalists hosted at Sheffield DocFest.",
+    "amount": "£15,000 winner; £5,000 runner-up",
+    "eligibility": "See Whickers site; finalists get travel, accommodation and an industry pass to Sheffield DocFest 2027",
+    "status": "open",
+    "next_deadline": "2027-02-26",
+    "next_window": "",
+    "last_deadline": "",
+    "apply_url": "https://www.whickerawards.com/",
+    "published_email": "info@whickerawards.com",
+    "email_source_url": "https://www.whickerawards.com/",
+    "notable": [],
+    "sources": [
+      "https://www.whickerawards.com/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Audio, not screen. Deadline comes from an Instagram post embedded on the Whickers homepage; dedicated Podcast Pitch page not opened."
+  },
+  {
+    "id": "creative-europe-media-co-development",
+    "name": "Creative Europe MEDIA European Co-development",
+    "org": "European Commission (Creative Europe MEDIA)",
+    "region": "Europe",
+    "country": "EU",
+    "type": "grant",
+    "stages": [
+      "development"
+    ],
+    "what": "Grants for at least two European independent production companies co-developing a single fiction, animation or creative documentary project for cinema, TV or digital release.",
+    "amount": "Call budget 12,500,000 for 2027 (currency not stated on page); per-project amounts in call document",
+    "eligibility": "At least two European independent production companies with a signed co-development agreement; eligible countries listed in the call document",
+    "status": "open",
+    "next_deadline": "2027-03-02",
+    "next_window": "Deadline 2 Mar 2027, 17:00 Brussels time",
+    "last_deadline": "",
+    "apply_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CREA-MEDIA-2027-CODEV",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-codev.json"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "UK eligibility not stated on the page read; check country list in the call document."
+  },
+  {
+    "id": "creative-europe-media-slate-development",
+    "name": "Creative Europe MEDIA European Slate Development",
+    "org": "European Commission (Creative Europe MEDIA)",
+    "region": "Europe",
+    "country": "EU",
+    "type": "grant",
+    "stages": [
+      "development"
+    ],
+    "what": "Grants for independent European production companies developing a slate of 3 to 5 fiction, animation or creative documentary works.",
+    "amount": "Call budget 22,374,320 for 2027 (currency not stated on page); per-company amounts in call document",
+    "eligibility": "Independent European production companies; full rules in the call document",
+    "status": "open",
+    "next_deadline": "2026-12-01",
+    "next_window": "Deadline 1 Dec 2026, 17:00 Brussels time",
+    "last_deadline": "",
+    "apply_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CREA-MEDIA-2027-DEVSLATE",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-devslate.json"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Track record and country rules not on the page read; see call document."
+  },
+  {
+    "id": "creative-europe-media-tv-online-documentary",
+    "name": "Creative Europe MEDIA TV and Online Content (Documentary)",
+    "org": "European Commission (Creative Europe MEDIA)",
+    "region": "Europe",
+    "country": "EU",
+    "type": "grant",
+    "stages": [
+      "production"
+    ],
+    "what": "Production grants for documentary works for linear and non-linear broadcast, encouraging cross-border cooperation between producers, broadcasters, platforms and sales agents.",
+    "amount": "23,300,000 listed for 2027 for this topic (currency not stated); per-project amounts in call document",
+    "eligibility": "Independent producers in MEDIA countries; strong cooperation between operators from different MEDIA countries; non-MEDIA partners cannot be beneficiaries",
+    "status": "open",
+    "next_deadline": "2027-02-10",
+    "next_window": "Two cut-offs: 10 Feb 2027 and 15 Sep 2027, 17:00 Brussels time",
+    "last_deadline": "",
+    "apply_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/CREA-MEDIA-2027-TVONLINE-2",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-tvonline-2.json",
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-tvonline-1.json"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Broadcaster involvement rules are in the call document, not read."
+  },
+  {
+    "id": "eurimages-co-production",
+    "name": "Eurimages Co-production Support",
+    "org": "Council of Europe (Eurimages)",
+    "region": "Europe",
+    "country": "Council of Europe member states",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Soft loans or subsidies for fiction, animation and documentary feature co-productions between Eurimages member states.",
+    "amount": "",
+    "eligibility": "Feature of at least 70 minutes; at least two co-producers from different member states; minority share at least 20% (bilateral) or 10% (multilateral)",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "Three deadlines a year; 2026-27 dates not found on pages opened",
+    "last_deadline": "",
+    "apply_url": "https://coe.int/web/eurimages/coproduction",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://coe.int/web/eurimages/coproduction",
+      "https://www.coe.int/en/web/eurimages/deadlines",
+      "https://www.coe.int/web/eurimages/co-production-how-to-submit-an-application-"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Deadlines page only lists 2023-24 dates. No maximum amount or email stated. Apply URL taken from search result for the official platform, not opened."
+  },
+  {
+    "id": "berlinale-world-cinema-fund-classic",
+    "name": "Berlinale World Cinema Fund (WCF Classic)",
+    "org": "Berlinale",
+    "region": "Europe",
+    "country": "Germany",
+    "type": "fund",
+    "stages": [
+      "production",
+      "post"
+    ],
+    "what": "Production and post-production support for feature films and creative feature documentaries from eligible regions including Africa, Latin America, the Middle East, and Central and Southeast Asia.",
+    "amount": "Up to €60,000 per project; €40,000 for post-production",
+    "eligibility": "Projects from WCF eligible countries; total budget up to €1,400,000; documentaries submit a treatment",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "Two submission rounds a year; portal link appears 4-6 weeks before each deadline",
+    "last_deadline": "",
+    "apply_url": "https://www.berlinale.de/en/wcf/funding-programmes/production-support/wcf-classic.html",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.berlinale.de/en/wcf/funding-programmes/production-support/wcf-classic.html",
+      "https://www.berlinale.de/en/world-cinema-fund/funding-programmes.html",
+      "https://www.berlinale.de/en/wcf/funding-programmes/production-support/all-programmes.html"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Not open to UK/European-only projects; WCF Europe is the route for European co-producers. No email printed."
+  },
+  {
+    "id": "nordisk-film-tv-fond-documentary",
+    "name": "Nordisk Film & TV Fond Top Financing (Documentary)",
+    "org": "Nordisk Film & TV Fond",
+    "region": "Europe",
+    "country": "Nordic countries",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Recoupable top-financing for Nordic documentaries that already have national funding and distribution in at least two Nordic countries.",
+    "amount": "",
+    "eligibility": "National base funding confirmed; at least 70% financing confirmed; distribution guarantees from the fund's Media Parties; apply at least 12 weeks before locked edit",
+    "status": "rolling",
+    "next_deadline": "",
+    "next_window": "No fixed dates; apply any time (at least 12 weeks before locked edit)",
+    "last_deadline": "",
+    "apply_url": "https://funding.nftvfond.com",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://nordiskfilmogtvfond.com/funding/applying-for-funding",
+      "https://nordiskfilmogtvfond.com/funding"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "No amounts stated; support is recoupable. Nordic productions only."
+  }
+]

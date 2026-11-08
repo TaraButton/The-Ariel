@@ -1,0 +1,665 @@
+[
+  {
+    "id": "impact-partners",
+    "name": "Impact Partners",
+    "org": "Impact Partners",
+    "region": "US",
+    "country": "USA",
+    "type": "equity",
+    "stages": [
+      "development",
+      "production",
+      "post"
+    ],
+    "what": "Equity financier for feature-length social issue documentaries, backing around 8-10 projects a year. Filmmakers start with a one-page Letter of Inquiry.",
+    "amount": "Development $30,000-$100,000; past support $30,000-$1.5m, average $100,000-$300,000",
+    "eligibility": "Feature docs (generally 50+ min) on an urgent social issue; no fiction, shorts or series. Director and producer attached, one with a completed feature; total budget $300,000-$1.5m. International filmmakers welcome.",
+    "status": "rolling",
+    "next_deadline": "",
+    "next_window": "Rolling, no deadline; aims to reply within 4 weeks",
+    "last_deadline": "",
+    "apply_url": "https://impactpartnersfilm.com/submit/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [
+      {
+        "title": "Soul Patrol",
+        "url": "https://impactpartnersfilm.com/film/soul-patrol/"
+      },
+      {
+        "title": "Seized",
+        "url": "https://impactpartnersfilm.com/film/seized/"
+      }
+    ],
+    "sources": [
+      "https://www.impactpartnersfilm.com/",
+      "https://impactpartnersfilm.com/submit/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "LOI via Airtable form on the submit page; no email printed, questions via contact page. Will not screen trailers unless a full proposal is invited."
+  },
+  {
+    "id": "chicago-media-project",
+    "name": "Chicago Media Project",
+    "org": "Chicago Media Project (CMP)",
+    "region": "US",
+    "country": "USA",
+    "type": "fund",
+    "stages": [
+      "production",
+      "impact"
+    ],
+    "what": "Member-funded community of philanthropists and storytellers that pools donations into grants for documentary films and impact campaigns. Reports $10m+ given to 170 films.",
+    "amount": "",
+    "eligibility": "Not stated on site; no public submission process described.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "",
+    "last_deadline": "",
+    "apply_url": "https://wearecmp.org/contact",
+    "published_email": "info@wearecmp.org",
+    "email_source_url": "https://wearecmp.org/",
+    "notable": [
+      {
+        "title": "Crip Camp: A Disability Revolution",
+        "url": "https://www.netflix.com/title/81001496"
+      },
+      {
+        "title": "Knock Down The House",
+        "url": "https://www.netflix.com/title/81080637"
+      }
+    ],
+    "sources": [
+      "https://wearecmp.org/",
+      "https://wearecmp.org/our-films-1"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Site does not describe how filmmakers apply or any deadlines. Also runs the DOC10 festival. Notable links are to the films' distributor pages as listed on CMP's own films page."
+  },
+  {
+    "id": "artemis-rising-foundation",
+    "name": "Artemis Rising Foundation",
+    "org": "Artemis Rising Foundation",
+    "region": "US",
+    "country": "USA",
+    "type": "fund",
+    "stages": [
+      "production",
+      "impact"
+    ],
+    "what": "Foundation that finances and supports documentaries on social and environmental issues, working with partner organisations.",
+    "amount": "",
+    "eligibility": "Not stated; no open call or submission route published.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "",
+    "last_deadline": "",
+    "apply_url": "https://artemisrising.org/the-foundation",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [
+      {
+        "title": "Athlete A",
+        "url": "https://artemisrising.org/home/athlete-a"
+      },
+      {
+        "title": "Kiss the Ground",
+        "url": "https://artemisrising.org/home/kiss-the-ground"
+      },
+      {
+        "title": "Won't You Be My Neighbor?",
+        "url": "https://artemisrising.org/wont-you-be-my-neighbor-documentary-film"
+      }
+    ],
+    "sources": [
+      "https://artemisrising.org/",
+      "https://artemisrising.org/the-foundation",
+      "https://artemisrising.org/pipeline"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "No email or submission policy on site; appears to work by invitation or partnership. List as a backer to know, not an open fund."
+  },
+  {
+    "id": "hot-docs-forum",
+    "name": "Hot Docs Forum",
+    "org": "Hot Docs",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "pitch",
+    "stages": [
+      "development",
+      "production",
+      "post"
+    ],
+    "what": "Public pitch forum at Hot Docs in Toronto where selected documentary teams pitch to international commissioners and financiers. Includes a rough cut category.",
+    "amount": "",
+    "eligibility": "Independent production companies. Regular category needs a third-party market trigger (broadcaster, distributor, platform, eligible film board or crowdfunding) and roughly 10-75% of finance in place; max two projects per company. Entry fee CAD $45.",
+    "status": "open",
+    "next_deadline": "2026-12-10",
+    "next_window": "Hot Docs Industry Conference and Market 26-29 April 2027",
+    "last_deadline": "",
+    "apply_url": "https://hotdocs.ca/industry/conference/hot-docs-forum/submit-forum",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://hotdocs.ca/industry/submit",
+      "https://hotdocs.ca/industry/conference/hot-docs-forum/submit-forum"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Online applications only. Contact email obscured on page; use hotdocs.ca/contact-us."
+  },
+  {
+    "id": "hot-docs-deal-maker",
+    "name": "Hot Docs Deal Maker",
+    "org": "Hot Docs",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "pitch",
+    "stages": [
+      "development",
+      "production",
+      "post"
+    ],
+    "what": "Pre-scheduled one-to-one pitch meetings between documentary teams and buyers or financiers during the Hot Docs market.",
+    "amount": "",
+    "eligibility": "Any documentary or factual genre from any country: features, TV docs, limited or long-form series. Financing must not be closed. Entry fee CAD $45 per project; selected projects pay registration and need industry passes.",
+    "status": "open",
+    "next_deadline": "2026-12-10",
+    "next_window": "Market runs 26-29 April 2027",
+    "last_deadline": "",
+    "apply_url": "https://hotdocs.ca/industry/conference/deal-maker/submit-deal-maker",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://hotdocs.ca/industry/submit",
+      "https://hotdocs.ca/industry/conference/deal-maker/submit-deal-maker"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Online only; no post or email submissions."
+  },
+  {
+    "id": "hot-docs-slaight-family-fund",
+    "name": "Hot Docs-Slaight Family Fund",
+    "org": "Hot Docs",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "grant",
+    "stages": [
+      "production"
+    ],
+    "what": "Funds 3-5 documentaries a year about music artists and Canadian music's place in the world, including international music stories by Canadian filmmakers.",
+    "amount": "CAD $15,000-$60,000 per project",
+    "eligibility": "Canadian filmmakers; full criteria on the fund's Apply and FAQ pages.",
+    "status": "upcoming",
+    "next_deadline": "",
+    "next_window": "Details of next round expected late October / early November 2026",
+    "last_deadline": "",
+    "apply_url": "https://hotdocs.ca/industry/film-funds/hot-docs-slaight-family-fund",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://hotdocs.ca/industry/film-funds",
+      "https://hotdocs.ca/industry/film-funds/hot-docs-slaight-family-fund"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Next-round details were due by early November 2026 but no dates were posted when checked."
+  },
+  {
+    "id": "hot-docs-citizen-minutes",
+    "name": "Hot Docs Citizen Minutes",
+    "org": "Hot Docs",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "grant",
+    "stages": [
+      "shorts",
+      "production",
+      "impact"
+    ],
+    "what": "Commissions six short documentaries (about 6-10 min) on ordinary Canadians improving their communities, with a production lab, Hot Docs premiere and impact campaign.",
+    "amount": "",
+    "eligibility": "Canadian citizen or PR (co)director with at least one prior credit; up to two projects each; no fiction or completed films.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Series 4 closed; next series not yet announced",
+    "last_deadline": "2026-03-19",
+    "apply_url": "https://hotdocs.ca/industry/film-funds/citizen-minutes",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://hotdocs.ca/industry/film-funds/citizen-minutes"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Amount not stated. Email on page is spam-protected so not recorded."
+  },
+  {
+    "id": "rogers-documentary-fund",
+    "name": "Rogers Documentary Fund",
+    "org": "Rogers Group of Funds",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Private Canadian fund supporting original English and French-language documentary production. Reports $3.26m to 50 projects in 2023.",
+    "amount": "",
+    "eligibility": "Canadian documentary production; detailed rules in the 2026 guidelines PDFs on the fund page. Apply via the RGF Portal.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2027 deadlines not yet announced (2026 had April and August deadlines)",
+    "last_deadline": "2026-08-19",
+    "apply_url": "https://www.rogersgroupoffunds.com/fund-my-project/documentary-fund/",
+    "published_email": "RogersGroupofFunds@rci.rogers.com",
+    "email_source_url": "https://www.rogersgroupoffunds.com/",
+    "notable": [],
+    "sources": [
+      "https://www.rogersgroupoffunds.com/",
+      "https://www.rogersgroupoffunds.com/fund-my-project/documentary-fund/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Per-project amounts not stated on the web page."
+  },
+  {
+    "id": "cmf-pov-program",
+    "name": "CMF POV Program",
+    "org": "Canada Media Fund",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Selective Canada Media Fund program for one-off point-of-view documentaries in English and French.",
+    "amount": "",
+    "eligibility": "Canadian productions; criteria in the POV Guidelines and appendices.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2027-28 window not yet announced (2026 window ran 28 April-14 May)",
+    "last_deadline": "2026-05-14",
+    "apply_url": "https://cmf-fmc.ca/program/pov-program/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://cmf-fmc.ca/",
+      "https://cmf-fmc.ca/program/pov-program/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Amounts in guidelines, not on page. Email masked on page."
+  },
+  {
+    "id": "telefilm-theatrical-documentary",
+    "name": "Telefilm Canada Theatrical Documentary Program",
+    "org": "Telefilm Canada",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "fund",
+    "stages": [
+      "production",
+      "post"
+    ],
+    "what": "Federal production and post-production financing for Canadian feature documentaries intended for theatrical release, with an Indigenous stream.",
+    "amount": "",
+    "eligibility": "Canadian production companies headquartered and operating in Canada. Apply via Telefilm's Dialogue portal.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Next intake not yet announced (2026-27 intake ran 19 March-2 April 2026)",
+    "last_deadline": "2026-04-02",
+    "apply_url": "https://telefilm.ca/en/we-finance-and-support/our-programs/feature-films/theatrical-documentary",
+    "published_email": "coordination@telefilm.ca",
+    "email_source_url": "https://telefilm.ca/en/we-finance-and-support/our-programs/feature-films/theatrical-documentary",
+    "notable": [],
+    "sources": [
+      "https://telefilm.ca/en/our-programs",
+      "https://telefilm.ca/en/we-finance-and-support/our-programs/feature-films/theatrical-documentary"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Amounts in guidelines PDF, not on page. Decisions aimed within 80 business days of close."
+  },
+  {
+    "id": "telus-fund",
+    "name": "TELUS Fund",
+    "org": "TELUS Fund",
+    "region": "Canada",
+    "country": "Canada",
+    "type": "fund",
+    "stages": [
+      "development",
+      "production",
+      "impact"
+    ],
+    "what": "Funds Canadian content, including documentaries, that improves health and well-being, from development through post-launch audience work.",
+    "amount": "",
+    "eligibility": "Canadian producers; health and wellness themes. Details in the September 2026 Program Guidelines.",
+    "status": "upcoming",
+    "next_deadline": "",
+    "next_window": "2027 Guidelines to be published; no intake dates posted",
+    "last_deadline": "",
+    "apply_url": "https://www.telusfund.ca/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.telusfund.ca/",
+      "https://www.telusfund.ca/resources"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "No amounts or deadlines on site pages; contact via form at telusfund.ca/contact."
+  },
+  {
+    "id": "doha-film-institute-grants",
+    "name": "Doha Film Institute Grants",
+    "org": "Doha Film Institute",
+    "region": "Middle East",
+    "country": "Qatar",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production",
+      "post",
+      "shorts"
+    ],
+    "what": "Creative and financial support for feature and short films including documentary, plus creative documentary series grants for MENA talent.",
+    "amount": "",
+    "eligibility": "Separate MENA and non-MENA criteria by country; features at any stage; documentary series grants for independent MENA screenwriters and producers. Online form only.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Next cycle not yet announced",
+    "last_deadline": "2026-07-02",
+    "apply_url": "https://www.dohafilm.com/en/funding-industry/funding/grants",
+    "published_email": "grants@dohafilminstitute.com",
+    "email_source_url": "https://www.dohafilm.com/en/funding-industry/funding/grants",
+    "notable": [],
+    "sources": [
+      "https://www.dohafilm.com/en/funding-industry/funding/grants"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Amounts not stated. Fall 2026 cycle ran 22 June-2 July 2026; guidelines at /grants/guidelines."
+  },
+  {
+    "id": "red-sea-fund",
+    "name": "Red Sea Fund",
+    "org": "Red Sea International Film Festival",
+    "region": "Middle East",
+    "country": "Saudi Arabia",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production",
+      "post",
+      "shorts"
+    ],
+    "what": "Grants for feature documentaries (60+ min) by Arab, African and Asian directors across development, production and post, plus short docs by Saudi directors. Reports $15m to 280+ projects.",
+    "amount": "",
+    "eligibility": "Feature docs from Arab, African and Asian directors; shorts (development/production) for Saudi directors only.",
+    "status": "upcoming",
+    "next_deadline": "",
+    "next_window": "Cycles: post-production 6-27 Jan, production 6-21 Mar, development 6-21 May, post-production 6-21 Jul (year not stated on page)",
+    "last_deadline": "",
+    "apply_url": "https://fms.redseafilmfest.com/website/login.php?lang=en",
+    "published_email": "info@redseafilmfest.com",
+    "email_source_url": "https://redseafilmfest.com/en/red-sea-fund/",
+    "notable": [],
+    "sources": [
+      "https://redseafilmfest.com/en/red-sea-fund/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Per-grant amounts not stated. Confirm the cycle dates apply to 2027."
+  },
+  {
+    "id": "afac-arab-documentary-film-program",
+    "name": "AFAC Arab Documentary Film Program",
+    "org": "Arab Fund for Arts and Culture (AFAC)",
+    "region": "Middle East",
+    "country": "Lebanon",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production",
+      "post",
+      "shorts"
+    ],
+    "what": "Annual grants for creative documentaries by Arab directors, covering feature development, production and post, and short/medium docs in production and post.",
+    "amount": "Up to USD 10,000 development; production up to USD 50,000 (feature) / 20,000 (short); post up to USD 25,000 (feature) / 10,000 (short)",
+    "eligibility": "Arab directors (and producers) in the region or diaspora; non-Arab producer allowed with Arab director. Max two projects per producer per category; online form only.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2027 call not yet announced (2026 call opened 2 February)",
+    "last_deadline": "2026-04-02",
+    "apply_url": "https://www.arabculturefund.org/Programs/7",
+    "published_email": "info@arabculturefund.org",
+    "email_source_url": "https://www.arabculturefund.org/Programs/7",
+    "notable": [],
+    "sources": [
+      "https://www.arabculturefund.org/Programs/7"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Page still labelled 'open call' but the 2026 deadline has passed; results announced 31 Aug 2026."
+  },
+  {
+    "id": "cinegouna-funding",
+    "name": "CineGouna Funding",
+    "org": "El Gouna Film Festival",
+    "region": "Middle East",
+    "country": "Egypt",
+    "type": "pitch",
+    "stages": [
+      "development",
+      "post"
+    ],
+    "what": "Development and co-production platform at El Gouna Film Festival for Arab fiction and documentary features, with cash and partner prizes.",
+    "amount": "US$15,000 each to best development project and best post-production film; total prizes over US$300,000 a year",
+    "eligibility": "Arab directors and producers; feature docs in development (before principal photography) or post-production.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "Page still shows 2025 cycle; next call not posted",
+    "last_deadline": "2025-08-01",
+    "apply_url": "https://www.elgounafilmfestival.com/cinegouna-funding/",
+    "published_email": "info@elgounafilmfestival.com",
+    "email_source_url": "https://www.elgounafilmfestival.com/cinegouna-funding/",
+    "notable": [],
+    "sources": [
+      "https://www.elgounafilmfestival.com/en/cinegouna-platform",
+      "https://www.elgounafilmfestival.com/cinegouna-funding/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "2025 deadlines were 15 July (development) and 1 Aug (post). No 2026 call shown; status unclear."
+  },
+  {
+    "id": "docs-by-the-sea",
+    "name": "Docs by the Sea",
+    "org": "In-Docs",
+    "region": "Asia",
+    "country": "Indonesia",
+    "type": "pitch",
+    "stages": [
+      "development",
+      "production",
+      "post",
+      "shorts"
+    ],
+    "what": "Annual labs (editing, storytelling, short storytelling, producing) and pitching forum for Asian documentary filmmakers, held in Indonesia.",
+    "amount": "",
+    "eligibility": "Documentary filmmakers from Asia.",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "2026 edition held 2-9 September; next call not yet announced",
+    "last_deadline": "",
+    "apply_url": "https://docsbythesea.org/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://docsbythesea.org/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "No grants or prizes stated; no email on homepage."
+  },
+  {
+    "id": "busan-and-fund",
+    "name": "Asian Network of Documentary (AND) Fund",
+    "org": "Asian Cinema Fund, Busan International Film Festival",
+    "region": "Asia",
+    "country": "South Korea",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production",
+      "post"
+    ],
+    "what": "Documentary strand of BIFF's Asian Cinema Fund, supporting Korean and Asian documentary projects (six recipients in 2024).",
+    "amount": "",
+    "eligibility": "Korean and Asian documentary projects; see ACF guidelines.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "Pattern: call opens late February, closes mid-April (2024 cycle: 27 Feb-17 Apr)",
+    "last_deadline": "",
+    "apply_url": "https://acf.biff.kr/eng/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.biff.kr/eng/",
+      "https://acf.biff.kr/eng/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Site page opened showed only the 2024 cycle; amounts, current status and contact not available. Fund detail page would not load."
+  },
+  {
+    "id": "screen-australia-documentary-producer-program",
+    "name": "Screen Australia Documentary Producer Program",
+    "org": "Screen Australia",
+    "region": "Australia/NZ",
+    "country": "Australia",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Federal production funding for distinctive single and series documentaries for theatre, festival, online, XR or broadcast, with no platform commitment required.",
+    "amount": "Up to AUD $750,000 (grant up to $500,000; above that as recoupable equity)",
+    "eligibility": "Minimum budget $120,000 per hour; at least one key principal with two eligible credits; max 15 broadcast hours; 20% of funds reserved for projects with international finance. Two-stage EOI process.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "",
+    "last_deadline": "",
+    "apply_url": "https://www.screenaustralia.gov.au/funding-and-support/documentary/production/producer-program",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.screenaustralia.gov.au/funding-and-support/documentary/production",
+      "https://www.screenaustralia.gov.au/funding-and-support/documentary/production/producer-program"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Program page gives up to $750,000 and $120,000/hr min; overview page says up to $500,000 and $125,000/hr - confirm. No deadline or open status stated."
+  },
+  {
+    "id": "screen-australia-documentary-commissioned-program",
+    "name": "Screen Australia Documentary Commissioned Program",
+    "org": "Screen Australia",
+    "region": "Australia/NZ",
+    "country": "Australia",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Production funding for Australian documentaries with a confirmed presale to a commissioning platform.",
+    "amount": "Up to AUD $500,000",
+    "eligibility": "At least a commercial half-hour; minimum budget $250,000 per hour; required presale from a Commissioning Platform confirmed.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "",
+    "last_deadline": "",
+    "apply_url": "https://www.screenaustralia.gov.au/funding-and-support/documentary/production",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.screenaustralia.gov.au/funding-and-support/documentary/production"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Deadlines and status not stated on page opened."
+  },
+  {
+    "id": "nz-on-air-scripted-non-fiction",
+    "name": "NZ On Air Scripted and Non-fiction Funding",
+    "org": "NZ On Air",
+    "region": "Australia/NZ",
+    "country": "New Zealand",
+    "type": "fund",
+    "stages": [
+      "production"
+    ],
+    "what": "Public funding for New Zealand content including documentary and factual, for local audiences on the platforms they use.",
+    "amount": "",
+    "eligibility": "Content for a New Zealand audience with a clear plan to reach it on a platform; register on the NZ On Air portal.",
+    "status": "upcoming",
+    "next_deadline": "2027-01-28",
+    "next_window": "Round Toru opens 10 Dec 2026, closes 28 Jan 2027 (decisions 9 Apr 2027)",
+    "last_deadline": "2026-09-10",
+    "apply_url": "https://portal.nzonair.govt.nz/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.nzonair.govt.nz/funding/",
+      "https://www.nzonair.govt.nz/funding/funding-deadlines/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Rounds cover scripted and non-fiction together. Amounts not stated."
+  },
+  {
+    "id": "documentary-australia",
+    "name": "Documentary Australia",
+    "org": "Documentary Australia",
+    "region": "Australia/NZ",
+    "country": "Australia",
+    "type": "fund",
+    "stages": [
+      "production",
+      "impact"
+    ],
+    "what": "Not-for-profit that lets approved social-change documentaries receive tax-deductible philanthropic donations via its DGR status, and advises on impact and fundraising.",
+    "amount": "",
+    "eligibility": "Independent documentaries in focus areas such as environment, health, human rights, women and girls, Indigenous, youth and the arts.",
+    "status": "unknown",
+    "next_deadline": "",
+    "next_window": "Rounds for fiscal sponsorship; last stated close Monday 3 August (year not stated)",
+    "last_deadline": "",
+    "apply_url": "https://documentaryaustralia.com.au/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://documentaryaustralia.com.au/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "check",
+    "notes": "Only the homepage could be opened; eligibility detail, fees and contact email not verified."
+  }
+]

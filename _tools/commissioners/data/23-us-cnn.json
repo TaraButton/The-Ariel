@@ -1,149 +1,149 @@
 {
- "broadcaster": "CNN",
- "region": "US",
- "checked": "2026-11-08",
- "pitch_routes": [
-  {
-   "genre": "CNN Originals (Original Series, CNN Films, FlashDocs, CNN Studios)",
-   "route": "No CNN-specific submission page found. Parent WBD visitor agreement: does not accept unsolicited submissions. Approach via an established production company or representation.",
-   "url": "https://www.wbd.com/visitor-agreement"
-  }
- ],
- "briefs": [],
- "commissioners": [
-  {
-   "name": "Amy Entelis",
-   "title": "Executive Vice President of Talent, CNN Originals and Creative Development, CNN Worldwide",
-   "channels": [
-    "CNN Original Series",
-    "CNN Films",
-    "CNN FlashDocs",
-    "CNN Studios"
-   ],
-   "remit": "Oversees development, production and acquisition of CNN's original long-form premium content (CNN Originals); also CNN's senior talent executive.",
-   "recent_commissions": [
+  "broadcaster": "CNN",
+  "region": "US",
+  "checked": "2026-11-08",
+  "pitch_routes": [
     {
-     "title": "The Salisbury Poisonings: A Spy Next Door",
-     "desc": "CNN Films / Passion Pictures / Propagate doc on the 2018 Salisbury Novichok attack, dir. Dan Vernon; premiered CPH:DOX",
-     "date": "2026-02",
-     "url": "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/"
+      "genre": "CNN Originals (Original Series, CNN Films, FlashDocs, CNN Studios)",
+      "route": "No CNN-specific submission page found. Parent WBD visitor agreement: does not accept unsolicited submissions. Approach via an established production company or representation.",
+      "url": "https://www.wbd.com/visitor-agreement"
+    }
+  ],
+  "briefs": [],
+  "commissioners": [
+    {
+      "name": "Amy Entelis",
+      "title": "Executive Vice President of Talent, CNN Originals and Creative Development, CNN Worldwide",
+      "channels": [
+        "CNN Original Series",
+        "CNN Films",
+        "CNN FlashDocs",
+        "CNN Studios"
+      ],
+      "remit": "Oversees development, production and acquisition of CNN's original long-form premium content (CNN Originals); also CNN's senior talent executive.",
+      "recent_commissions": [
+        {
+          "title": "The Salisbury Poisonings: A Spy Next Door",
+          "desc": "CNN Films / Passion Pictures / Propagate doc on the 2018 Salisbury Novichok attack, dir. Dan Vernon; premiered CPH:DOX",
+          "date": "2026-02",
+          "url": "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/"
+        },
+        {
+          "title": "Top of the World",
+          "desc": "CNN Films / TIME Studios doc short by Julie Cohen & Betsy West on the staff of Windows on the World",
+          "date": "2026-05",
+          "url": "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/"
+        }
+      ],
+      "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "high",
+      "notes": "Executive producer for CNN Films on both titles; 'oversees' CNN Originals per release boilerplate. Press-release contacts (Jordan.Overstreet@CNN.com, Sophie.Tran@CNN.com) are press office, NOT commissioner emails - deliberately excluded. Latest confirmation Aug 2026 press page; CNN now reports to Mark Thompson under Skydance - no Originals restructure found as of 8 Nov 2026.",
+      "sources": [
+        "https://www.cnn.com/profiles/amy-entelis-profile",
+        "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/",
+        "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/",
+        "https://cnnpressroom.blogs.cnn.com/2026/02/25/cnn-films-boards-homecoming-the-tokyo-series-as-streaming-partner/",
+        "https://cnnpressroom.blogs.cnn.com/2026/02/02/cnn-flashdoc-bad-bunny-and-the-halftime-show-rhythms-of-resistance-now-streaming-in-the-cnn-app/"
+      ]
     },
     {
-     "title": "Top of the World",
-     "desc": "CNN Films / TIME Studios doc short by Julie Cohen & Betsy West on the staff of Windows on the World",
-     "date": "2026-05",
-     "url": "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/"
-    }
-   ],
-   "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "high",
-   "notes": "Executive producer for CNN Films on both titles; 'oversees' CNN Originals per release boilerplate. Press-release contacts (Jordan.Overstreet@CNN.com, Sophie.Tran@CNN.com) are press office, NOT commissioner emails - deliberately excluded. Latest confirmation Aug 2026 press page; CNN now reports to Mark Thompson under Skydance - no Originals restructure found as of 8 Nov 2026.",
-   "sources": [
-    "https://www.cnn.com/profiles/amy-entelis-profile",
-    "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/",
-    "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/",
-    "https://cnnpressroom.blogs.cnn.com/2026/02/25/cnn-films-boards-homecoming-the-tokyo-series-as-streaming-partner/",
-    "https://cnnpressroom.blogs.cnn.com/2026/02/02/cnn-flashdoc-bad-bunny-and-the-halftime-show-rhythms-of-resistance-now-streaming-in-the-cnn-app/"
-   ]
-  },
-  {
-   "name": "Roxanna Sherwood",
-   "title": "Executive Producer, CNN Films",
-   "channels": [
-    "CNN Films"
-   ],
-   "remit": "Executive producer for CNN Films.",
-   "recent_commissions": [
-    {
-     "title": "The Salisbury Poisonings: A Spy Next Door",
-     "desc": "CNN Films / Passion Pictures / Propagate doc on the 2018 Salisbury Novichok attack, dir. Dan Vernon; premiered CPH:DOX",
-     "date": "2026-02",
-     "url": "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/"
+      "name": "Roxanna Sherwood",
+      "title": "Executive Producer, CNN Films",
+      "channels": [
+        "CNN Films"
+      ],
+      "remit": "Executive producer for CNN Films.",
+      "recent_commissions": [
+        {
+          "title": "The Salisbury Poisonings: A Spy Next Door",
+          "desc": "CNN Films / Passion Pictures / Propagate doc on the 2018 Salisbury Novichok attack, dir. Dan Vernon; premiered CPH:DOX",
+          "date": "2026-02",
+          "url": "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/"
+        },
+        {
+          "title": "Top of the World",
+          "desc": "CNN Films / TIME Studios doc short by Julie Cohen & Betsy West on the staff of Windows on the World",
+          "date": "2026-05",
+          "url": "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/"
+        }
+      ],
+      "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "check",
+      "notes": "Credited 'Executive Producers are Amy Entelis and Roxanna Sherwood for CNN Films' (2026 releases). Formal job title beyond EP not found.",
+      "sources": [
+        "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/",
+        "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/"
+      ]
     },
     {
-     "title": "Top of the World",
-     "desc": "CNN Films / TIME Studios doc short by Julie Cohen & Betsy West on the staff of Windows on the World",
-     "date": "2026-05",
-     "url": "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/"
-    }
-   ],
-   "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "check",
-   "notes": "Credited 'Executive Producers are Amy Entelis and Roxanna Sherwood for CNN Films' (2026 releases). Formal job title beyond EP not found.",
-   "sources": [
-    "https://cnnpressroom.blogs.cnn.com/2026/02/26/cnn-films-passion-pictures-and-propagate-content-announce-the-salisbury-poisonings-a-spy-next-door/",
-    "https://cnnpressroom.blogs.cnn.com/2026/05/13/cnn-films-and-time-studios-present-new-documentary-short-top-of-the-world-from-julie-cohen-betsy-west/"
-   ]
-  },
-  {
-   "name": "Lyle Gamm",
-   "title": "Senior Vice President, CNN Original Series",
-   "channels": [
-    "CNN Original Series"
-   ],
-   "remit": "Day-to-day oversight of the CNN Original Series slate (development, current, production).",
-   "recent_commissions": [
-    {
-     "title": "Untitled Fred Armisen music-archive docuseries",
-     "desc": "CNN Original Series hosted by Fred Armisen exploring Universal Music Group's archives; premiering later in 2026",
-     "date": "2026-02",
-     "url": "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
-    }
-   ],
-   "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2019-10",
-   "confidence": "check",
-   "notes": "SVP title and remit from Oct 2019 report (older than 12 months). Still credited as an executive producer for CNN Original Series on the Feb 2026 Fred Armisen series, but current title not reconfirmed.",
-   "sources": [
-    "https://www.yahoo.com/entertainment/cnn-taps-lyle-gamm-original-200304351.html",
-    "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
-   ]
-  },
-  {
-   "name": "Katie Hinman",
-   "title": "",
-   "channels": [
-    "CNN Original Series",
-    "CNN Studios",
-    "CNN FlashDocs"
-   ],
-   "remit": "Executive producer for CNN Studios and CNN Original Series.",
-   "recent_commissions": [
-    {
-     "title": "Bad Bunny and the Halftime Show: Rhythms of Resistance",
-     "desc": "CNN FlashDoc released ahead of the Super Bowl halftime show",
-     "date": "2026-02",
-     "url": "https://cnnpressroom.blogs.cnn.com/2026/02/02/cnn-flashdoc-bad-bunny-and-the-halftime-show-rhythms-of-resistance-now-streaming-in-the-cnn-app/"
+      "name": "Lyle Gamm",
+      "title": "Senior Vice President, CNN Original Series",
+      "channels": [
+        "CNN Original Series"
+      ],
+      "remit": "Oversees production of the CNN Original Series portfolio and the development, current and production teams in Los Angeles and Atlanta.",
+      "recent_commissions": [
+        {
+          "title": "Untitled Fred Armisen music-archive docuseries",
+          "desc": "CNN Original Series hosted by Fred Armisen exploring Universal Music Group's archives; premiering later in 2026",
+          "date": "2026-02",
+          "url": "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
+        }
+      ],
+      "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2019-10",
+      "confidence": "check",
+      "notes": "SVP title and remit from Oct 2019 report (older than 12 months). Still credited as an executive producer for CNN Original Series on the Feb 2026 Fred Armisen series, but current title not reconfirmed.",
+      "sources": [
+        "https://realscreen.com/?p=219716",
+        "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
+      ]
     },
     {
-     "title": "Untitled Fred Armisen music-archive docuseries",
-     "desc": "CNN Original Series hosted by Fred Armisen exploring Universal Music Group's archives; premiering later in 2026",
-     "date": "2026-02",
-     "url": "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
+      "name": "Katie Hinman",
+      "title": "",
+      "channels": [
+        "CNN Original Series",
+        "CNN Studios",
+        "CNN FlashDocs"
+      ],
+      "remit": "Executive producer for CNN Studios and CNN Original Series.",
+      "recent_commissions": [
+        {
+          "title": "Bad Bunny and the Halftime Show: Rhythms of Resistance",
+          "desc": "CNN FlashDoc released ahead of the Super Bowl halftime show",
+          "date": "2026-02",
+          "url": "https://cnnpressroom.blogs.cnn.com/2026/02/02/cnn-flashdoc-bad-bunny-and-the-halftime-show-rhythms-of-resistance-now-streaming-in-the-cnn-app/"
+        },
+        {
+          "title": "Untitled Fred Armisen music-archive docuseries",
+          "desc": "CNN Original Series hosted by Fred Armisen exploring Universal Music Group's archives; premiering later in 2026",
+          "date": "2026-02",
+          "url": "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
+        }
+      ],
+      "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
+      "pitch_url": "https://www.wbd.com/visitor-agreement",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "",
+      "confidence": "check",
+      "notes": "Credited 'Amy Entelis and Katie Hinman are executive producers for CNN Studios' on the Bad Bunny FlashDoc (Feb 2026) and as CNN Original Series EP on the Armisen series. Job title not found.",
+      "sources": [
+        "https://cnnpressroom.blogs.cnn.com/2026/02/02/cnn-flashdoc-bad-bunny-and-the-halftime-show-rhythms-of-resistance-now-streaming-in-the-cnn-app/",
+        "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
+      ]
     }
-   ],
-   "pitch_route": "No unsolicited submissions (WBD policy); via production company/representation.",
-   "pitch_url": "https://www.wbd.com/visitor-agreement",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "",
-   "confidence": "check",
-   "notes": "Credited 'Amy Entelis and Katie Hinman are executive producers for CNN Studios' on the Bad Bunny FlashDoc (Feb 2026) and as CNN Original Series EP on the Armisen series. Job title not found.",
-   "sources": [
-    "https://cnnpressroom.blogs.cnn.com/2026/02/02/cnn-flashdoc-bad-bunny-and-the-halftime-show-rhythms-of-resistance-now-streaming-in-the-cnn-app/",
-    "https://www.broadwayworld.com/article/Fred-Armisen-To-Host-New-Archival-Music-Docuseries-for-CNN-20260202"
-   ]
-  }
- ]
+  ]
 }

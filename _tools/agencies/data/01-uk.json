@@ -1,665 +1,630 @@
 {
- "region": "UK",
- "checked": "2026-11-08",
- "agencies": [
-  {
-   "name": "United Agents - Unscripted",
-   "website": "https://www.unitedagents.co.uk/unscripted/",
-   "type": "agency",
-   "what_they_do": "Unscripted department (formalised as a division in April 2026, merging the presenter and unscripted lists) representing presenters, broadcasters, factual/reality talent, creators and digital talent across TV, radio, podcasts and digital; works with broadcasters, streamers and indies to develop and package projects and original formats.",
-   "contact_route": "General email; individual agent emails printed on each agent page",
-   "contact_url": "https://www.unitedagents.co.uk/contact/",
-   "published_email": "info@unitedagents.co.uk",
-   "email_source_url": "https://www.unitedagents.co.uk/unscripted/",
-   "agents": [
+  "region": "UK",
+  "checked": "2026-11-08",
+  "agencies": [
     {
-     "name": "Matt Nicholls",
-     "title": "Head of Unscripted (per Televisual, Apr 2026; site page says Agent)",
-     "covers": "Television presenters specialising in factual entertainment and entertainment; leads the Unscripted division",
-     "published_email": "mnicholls@unitedagents.co.uk",
-     "email_source_url": "https://www.unitedagents.co.uk/agent/matt-nicholls/",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/matt-nicholls/",
-      "https://www.televisual.com/news/united-agents-launches-unscripted-division/"
-     ]
+      "name": "United Agents - Unscripted",
+      "website": "https://www.unitedagents.co.uk/unscripted/",
+      "type": "agency",
+      "what_they_do": "Unscripted department (formalised as a division in April 2026, merging the presenter and unscripted lists) representing presenters, broadcasters, factual/reality talent, creators and digital talent across TV, radio, podcasts and digital; works with broadcasters, streamers and indies to develop and package projects and original formats.",
+      "contact_route": "General email; individual agent emails printed on each agent page",
+      "contact_url": "https://www.unitedagents.co.uk/contact/",
+      "published_email": "info@unitedagents.co.uk",
+      "email_source_url": "https://www.unitedagents.co.uk/unscripted/",
+      "agents": [
+        {
+          "name": "Matt Nicholls",
+          "title": "Head of Unscripted (per Televisual, Apr 2026; site page says Agent)",
+          "covers": "Television presenters specialising in factual entertainment and entertainment; leads the Unscripted division",
+          "published_email": "mnicholls@unitedagents.co.uk",
+          "email_source_url": "https://www.unitedagents.co.uk/agent/matt-nicholls/",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/matt-nicholls/",
+            "https://www.televisual.com/news/united-agents-launches-unscripted-division/"
+          ]
+        },
+        {
+          "name": "Holly Hirsch",
+          "title": "Agent",
+          "covers": "Joined 2026 as Agent in Unscripted; digitally native multi-hyphenate talent across comedy, entertainment, scripted and unscripted TV",
+          "published_email": "hhirsch@unitedagents.co.uk",
+          "email_source_url": "https://www.unitedagents.co.uk/agent/holly-hirsch/",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/holly-hirsch/",
+            "https://www.unitedagents.co.uk/unscripted/"
+          ]
+        },
+        {
+          "name": "Rosemary Scoular",
+          "title": "Agent (founding partner)",
+          "covers": "Non-fiction writers and presenters: food, history, popular science, nature, travel, politics, investigative journalism, arts, memoir; across writing, broadcasting, podcasts, live",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/rosemary-scoular/",
+            "https://www.unitedagents.co.uk/unscripted/"
+          ]
+        },
+        {
+          "name": "Natalia Lucas",
+          "title": "Associate Agent",
+          "covers": "Non-fiction writers and presenters; interests in politics, parenting, activism, memoir; assists Rosemary Scoular",
+          "published_email": "nlucas@unitedagents.co.uk",
+          "email_source_url": "https://www.unitedagents.co.uk/agent/natalia-lucas/",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/natalia-lucas/",
+            "https://www.unitedagents.co.uk/unscripted/"
+          ]
+        },
+        {
+          "name": "Laura Macdougall",
+          "title": "Agent",
+          "covers": "Agent in Books and Unscripted departments: writers, broadcasters and content creators",
+          "published_email": "LMacdougall@unitedagents.co.uk",
+          "email_source_url": "https://www.unitedagents.co.uk/agent/laura-macdougall/",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/laura-macdougall/",
+            "https://www.unitedagents.co.uk/unscripted/"
+          ]
+        },
+        {
+          "name": "Jamie Stockwell",
+          "title": "Agent",
+          "covers": "Listed in Unscripted; clients include presenters/creators",
+          "published_email": "jstockwell@unitedagents.co.uk",
+          "email_source_url": "https://www.unitedagents.co.uk/agent/jamie-stockwell/",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/jamie-stockwell/",
+            "https://www.unitedagents.co.uk/unscripted/"
+          ]
+        },
+        {
+          "name": "Zoe Ross",
+          "title": "Agent",
+          "covers": "Listed in Unscripted; writers incl. narrative non-fiction, food writers and academics",
+          "published_email": "zross@unitedagents.co.uk",
+          "email_source_url": "https://www.unitedagents.co.uk/agent/zoe-ross/",
+          "confidence": "high",
+          "sources": [
+            "https://www.unitedagents.co.uk/agent/zoe-ross/",
+            "https://www.unitedagents.co.uk/unscripted/"
+          ]
+        }
+      ],
+      "notable": [
+        {
+          "title": "United Agents launches Unscripted division",
+          "desc": "Matt Nicholls named Head of Unscripted; clients cited include Steph McGovern, Susie Dent, David Olusoga, Kate Garraway.",
+          "date": "2026-04",
+          "url": "https://www.televisual.com/news/united-agents-launches-unscripted-division/"
+        },
+        {
+          "title": "Factual presenter roster",
+          "desc": "Unscripted page lists clients incl. Simon Reeve, David Olusoga, Kate Humble, Dan Cruickshank, Janina Ramirez.",
+          "date": "2026-11",
+          "url": "https://www.unitedagents.co.uk/unscripted/"
+        }
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://www.unitedagents.co.uk/unscripted/",
+        "https://www.televisual.com/news/united-agents-launches-unscripted-division/",
+        "https://www.unitedagents.co.uk/"
+      ]
     },
     {
-     "name": "Holly Hirsch",
-     "title": "Agent",
-     "covers": "Joined 2026 as Agent in Unscripted; digitally native multi-hyphenate talent across comedy, entertainment, scripted and unscripted TV",
-     "published_email": "hhirsch@unitedagents.co.uk",
-     "email_source_url": "https://www.unitedagents.co.uk/agent/holly-hirsch/",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/holly-hirsch/",
-      "https://www.unitedagents.co.uk/unscripted/"
-     ]
+      "name": "Peters Fraser + Dunlop (PFD) - Broadcast",
+      "website": "https://petersfraserdunlop.com/our-clients/broadcasters/",
+      "type": "agency",
+      "what_they_do": "Broadcast department representing presenters, broadcasters, experts and digital/social talent; head is an ex-presenter and unscripted producer (ex-Pact Head of Nations and Regions).",
+      "contact_route": "Submissions: contact a Broadcast agent with biography, CV, showreel/footage and audio sample",
+      "contact_url": "https://petersfraserdunlop.com/submissions/broadcasters-presenters/",
+      "published_email": "info@pfd.co.uk",
+      "email_source_url": "https://petersfraserdunlop.com/agent/ella-cunningham/",
+      "agents": [
+        {
+          "name": "Tris Payne",
+          "title": "Head of Broadcast",
+          "covers": "Presenters and broadcasters; deep knowledge of UK unscripted TV; clients incl. Ali Abdaal, Jamie Bartlett, Dr Augustus Casely-Hayford",
+          "published_email": "tpayne@pfd.co.uk",
+          "email_source_url": "https://petersfraserdunlop.com/agent/tris-payne/",
+          "confidence": "high",
+          "sources": [
+            "https://petersfraserdunlop.com/agent/tris-payne/",
+            "https://petersfraserdunlop.com/submissions/broadcasters-presenters/"
+          ]
+        },
+        {
+          "name": "Ella Cunningham",
+          "title": "Broadcast Assistant",
+          "covers": "Broadcast department submissions",
+          "published_email": "ecunningham@pfd.co.uk",
+          "email_source_url": "https://petersfraserdunlop.com/agent/ella-cunningham/",
+          "confidence": "high",
+          "sources": [
+            "https://petersfraserdunlop.com/agent/ella-cunningham/"
+          ]
+        }
+      ],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://petersfraserdunlop.com/submissions/broadcasters-presenters/",
+        "https://petersfraserdunlop.com/our-clients/broadcasters/"
+      ]
     },
     {
-     "name": "Rosemary Scoular",
-     "title": "Agent (founding partner)",
-     "covers": "Non-fiction writers and presenters: food, history, popular science, nature, travel, politics, investigative journalism, arts, memoir; across writing, broadcasting, podcasts, live",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/rosemary-scoular/",
-      "https://www.unitedagents.co.uk/unscripted/"
-     ]
+      "name": "Stern & Wild",
+      "website": "https://www.sternwild.com/",
+      "type": "agency",
+      "what_they_do": "Specialist agency representing 100+ documentary/factual directors, executive producers, showrunners and editorial producers for broadcast and streamer TV, feature docs, docu-series, branded and campaign films; shortlists talent against production briefs at no cost to producers and negotiates clients' deals.",
+      "contact_route": "General email / phone",
+      "contact_url": "https://www.sternwild.com/contact",
+      "published_email": "direct@sternwild.com",
+      "email_source_url": "https://www.sternwild.com/contact",
+      "agents": [
+        {
+          "name": "Moray Coulter",
+          "title": "Managing Director and Agent - Premium Unscripted Creative Talent",
+          "covers": "Founder; documentary/factual directors and producers",
+          "published_email": "moray@sternwild.com",
+          "email_source_url": "https://www.sternwild.com/about",
+          "confidence": "high",
+          "sources": [
+            "https://www.sternwild.com/about"
+          ]
+        },
+        {
+          "name": "Natalie Spanier",
+          "title": "Agent - Documentary and Talent-led Projects",
+          "covers": "Documentary and talent-led projects; ex-Head of Talent at Nutopia",
+          "published_email": "natalie@sternwild.com",
+          "email_source_url": "https://www.sternwild.com/about",
+          "confidence": "high",
+          "sources": [
+            "https://www.sternwild.com/about"
+          ]
+        },
+        {
+          "name": "Camilla Chiverton",
+          "title": "Agent - Premium Unscripted Creative Talent",
+          "covers": "Premium unscripted creative talent; ex-Head of Talent at Plimsoll Productions",
+          "published_email": "camilla@sternwild.com",
+          "email_source_url": "https://www.sternwild.com/about",
+          "confidence": "high",
+          "sources": [
+            "https://www.sternwild.com/about",
+            "https://contentasia.tv/news/camilla-chiverton-joins-stern-wild-uk-talent-agency-highlights-asia-focus"
+          ]
+        }
+      ],
+      "notable": [
+        {
+          "title": "Tucci in Italy - Primetime Emmy",
+          "desc": "Clients Ben Jessop and Ian Denyer won a Primetime Emmy for the BBC Studios Specialist Factual / Salt Productions series for Nat Geo.",
+          "date": "2026-09",
+          "url": "https://www.sternwild.com/wild-news/stern-amp-wild-clients-scoop-primetime-emmy-for-stanley-tucci-culinary-travel-series"
+        },
+        {
+          "title": "Welcome to the Family: The Murder of Dan Markel",
+          "desc": "Client Sebastian Smith's four-part true-crime docuseries for Hulu/Disney+, from 1 September.",
+          "date": "2026-09",
+          "url": "https://www.sternwild.com/"
+        }
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://www.sternwild.com/",
+        "https://www.sternwild.com/about",
+        "https://www.sternwild.com/contact"
+      ]
     },
     {
-     "name": "Natalia Lucas",
-     "title": "Associate Agent",
-     "covers": "Non-fiction writers and presenters; interests in politics, parenting, activism, memoir; assists Rosemary Scoular",
-     "published_email": "nlucas@unitedagents.co.uk",
-     "email_source_url": "https://www.unitedagents.co.uk/agent/natalia-lucas/",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/natalia-lucas/",
-      "https://www.unitedagents.co.uk/unscripted/"
-     ]
+      "name": "Sayle Screen",
+      "website": "https://saylescreen.com/",
+      "type": "agency",
+      "what_they_do": "Independent agency representing writers, directors and producers for film, TV and theatre (incl. documentary directors), and dramatic rights in books; works alongside Sara Putt Associates.",
+      "contact_route": "Submissions only if recommended by a producer, development executive or course tutor: covering letter, referee details and script/showreel by email",
+      "contact_url": "https://saylescreen.com/submissions/",
+      "published_email": "submissions@saylescreen.com",
+      "email_source_url": "https://saylescreen.com/submissions/",
+      "agents": [
+        {
+          "name": "Jane Villiers",
+          "title": "Managing Director and Agent",
+          "covers": "Writers and directors; has producing experience incl. the documentary Young@Heart",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://saylescreen.com/about-us/"
+          ]
+        },
+        {
+          "name": "Matthew Bates",
+          "title": "Director and Agent",
+          "covers": "Writers and directors in film, TV, theatre; dramatic rights in books",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://saylescreen.com/about-us/"
+          ]
+        },
+        {
+          "name": "Zoë Rudin",
+          "title": "Associate Agent and Assistant to Jane Villiers and Matthew Bates",
+          "covers": "Building own list; background representing presenters, actors, comedians, writers, directors, producers",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://saylescreen.com/about-us/"
+          ]
+        }
+      ],
+      "notable": [
+        {
+          "title": "MOURINHO (Netflix)",
+          "desc": "Sayle Screen news on the Netflix documentary directed by Joe Pearlman, produced by Ventureland.",
+          "date": "2026-07",
+          "url": "https://saylescreen.com/latest-news/trailer-for-netflix-mourinho-documentary-dropped/"
+        }
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://saylescreen.com/about-us/",
+        "https://saylescreen.com/submissions/"
+      ]
     },
     {
-     "name": "Laura Macdougall",
-     "title": "Agent",
-     "covers": "Agent in Books and Unscripted departments: writers, broadcasters and content creators",
-     "published_email": "LMacdougall@unitedagents.co.uk",
-     "email_source_url": "https://www.unitedagents.co.uk/agent/laura-macdougall/",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/laura-macdougall/",
-      "https://www.unitedagents.co.uk/unscripted/"
-     ]
+      "name": "Knight Ayton Management",
+      "website": "https://knightayton.co.uk/",
+      "type": "management",
+      "what_they_do": "Represents broadcasters, presenters, journalists, experts and academics who anchor TV and radio factual programmes (history, science, business, consumer, royal/constitutional correspondents) and podcasts.",
+      "contact_route": "General email (no guarantee artists will respond)",
+      "contact_url": "https://knightayton.co.uk/contact/",
+      "published_email": "info@knightayton.co.uk",
+      "email_source_url": "https://knightayton.co.uk/contact/",
+      "agents": [
+        {
+          "name": "Sue Ayton",
+          "title": "Senior Partner",
+          "covers": "Agency leadership",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://knightayton.co.uk/about/"
+          ]
+        },
+        {
+          "name": "Sue Knight",
+          "title": "Senior Partner",
+          "covers": "Agency leadership",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://knightayton.co.uk/about/"
+          ]
+        },
+        {
+          "name": "Helen Purvis",
+          "title": "Partner",
+          "covers": "All areas, established and emerging talent",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://knightayton.co.uk/about/"
+          ]
+        },
+        {
+          "name": "Nick Hulme",
+          "title": "Senior Agent",
+          "covers": "High-profile clients' broadcast and corporate work",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://knightayton.co.uk/about/"
+          ]
+        },
+        {
+          "name": "Paul Hanrahan",
+          "title": "Business Affairs",
+          "covers": "Business and commercial affairs; 20+ years in UK factual production",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://knightayton.co.uk/about/"
+          ]
+        }
+      ],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://knightayton.co.uk/about/",
+        "https://knightayton.co.uk/contact/"
+      ]
     },
     {
-     "name": "Jamie Stockwell",
-     "title": "Agent",
-     "covers": "Listed in Unscripted; clients include presenters/creators",
-     "published_email": "jstockwell@unitedagents.co.uk",
-     "email_source_url": "https://www.unitedagents.co.uk/agent/jamie-stockwell/",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/jamie-stockwell/",
-      "https://www.unitedagents.co.uk/unscripted/"
-     ]
+      "name": "Noel Gay",
+      "website": "https://noelgay.com/",
+      "type": "management",
+      "what_they_do": "Represents broadcasters, journalists and presenters with 360-degree management across broadcast, corporate, digital, literary and live events; has a dedicated Presenters list.",
+      "contact_route": "General enquiries email",
+      "contact_url": "https://noelgay.com/contact/",
+      "published_email": "info@noelgay.com",
+      "email_source_url": "https://noelgay.com/contact/",
+      "agents": [
+        {
+          "name": "Alex Armitage",
+          "title": "Chief Executive",
+          "covers": "Broadcasters, journalists and presenters",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://noelgay.com/about-us/"
+          ]
+        },
+        {
+          "name": "Louise Fennimore",
+          "title": "Director",
+          "covers": "Media careers of presenters/broadcasters",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://noelgay.com/about-us/"
+          ]
+        },
+        {
+          "name": "Helena Bumpus",
+          "title": "Director",
+          "covers": "Media careers of presenters/broadcasters",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://noelgay.com/about-us/"
+          ]
+        },
+        {
+          "name": "Kas Michael",
+          "title": "Senior Agent",
+          "covers": "Media careers of presenters/broadcasters",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://noelgay.com/about-us/"
+          ]
+        }
+      ],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://noelgay.com/about-us/",
+        "https://noelgay.com/contact/"
+      ]
     },
     {
-     "name": "Zoe Ross",
-     "title": "Agent",
-     "covers": "Listed in Unscripted; writers incl. narrative non-fiction, food writers and academics",
-     "published_email": "zross@unitedagents.co.uk",
-     "email_source_url": "https://www.unitedagents.co.uk/agent/zoe-ross/",
-     "confidence": "high",
-     "sources": [
-      "https://www.unitedagents.co.uk/agent/zoe-ross/",
-      "https://www.unitedagents.co.uk/unscripted/"
-     ]
+      "name": "Independent Talent 360 (Independent Talent Group)",
+      "website": "https://www.independent-360.com/",
+      "type": "agency",
+      "what_they_do": "Presenters arm of Independent Talent Group representing TV, radio, podcast and digital talent; services include format development and IP ownership, audio content, publishing, live events.",
+      "contact_route": "Website contact form (no email published)",
+      "contact_url": "https://www.independent-360.com/contact",
+      "published_email": "",
+      "email_source_url": "",
+      "agents": [],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://www.independent-360.com/about",
+        "https://www.independent-360.com/contact",
+        "https://www.independenttalent.com/"
+      ]
+    },
+    {
+      "name": "Insanity Group",
+      "website": "https://insanity.com/",
+      "type": "management",
+      "what_they_do": "Talent management for presenters and entertainment talent (e.g. Maya Jama, Katie Piper, Dr Alex George, Roman Kemp) plus Insanity Studios, an in-house unit developing IP and producing audio and audio-visual content.",
+      "contact_route": "Phone/address on About page; no general email found",
+      "contact_url": "https://insanity.com/contact",
+      "published_email": "",
+      "email_source_url": "",
+      "agents": [
+        {
+          "name": "Issy Lloyd",
+          "title": "Director, Entertainment",
+          "covers": "Entertainment talent management",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://insanity.com/about"
+          ]
+        },
+        {
+          "name": "Neil Ransome",
+          "title": "Creative Director, Entertainment",
+          "covers": "Entertainment talent / creative development",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://insanity.com/about"
+          ]
+        },
+        {
+          "name": "Andy Varley",
+          "title": "Founder & CEO",
+          "covers": "Group leadership",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://insanity.com/about"
+          ]
+        }
+      ],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://insanity.com/about",
+        "https://insanity.com/"
+      ]
+    },
+    {
+      "name": "YMU - Entertainment",
+      "website": "https://www.ymugroup.com/entertainment/",
+      "type": "management",
+      "what_they_do": "Manages hosts, broadcasters, creators and podcasters (London, LA, NYC) across broadcasting, IP and brand building, audio, content and publishing.",
+      "contact_route": "General enquiries email",
+      "contact_url": "https://www.ymugroup.com/contact/",
+      "published_email": "enquiries@ymugroup.com",
+      "email_source_url": "https://www.ymugroup.com/contact/",
+      "agents": [],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://www.ymugroup.com/entertainment/",
+        "https://www.ymugroup.com/contact/"
+      ]
+    },
+    {
+      "name": "Embankment Films - Unscripted",
+      "website": "https://embankmentfilms.com/unscripted",
+      "type": "packager",
+      "what_they_do": "London sales and production house whose unscripted division develops, produces and sells documentaries and factual entertainment worldwide, and takes acquisitions/submissions from third-party producers.",
+      "contact_route": "General email for submissions enquiries (no unsolicited scripts)",
+      "contact_url": "https://embankmentfilms.com/page/contact",
+      "published_email": "info@embankmentfilms.com",
+      "email_source_url": "https://embankmentfilms.com/page/contact",
+      "agents": [
+        {
+          "name": "Nick Taussig",
+          "title": "Managing Director",
+          "covers": "Leads the unscripted documentary and factual slate",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://embankmentfilms.com/team",
+            "https://embankmentfilms.com/articles/embankment-films-bolsters-unscripted-division-1749740830"
+          ]
+        },
+        {
+          "name": "Henry Farrington",
+          "title": "Sales & Acquisitions Manager",
+          "covers": "Acquisitions and submissions from third-party producers across documentary and factual entertainment",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://embankmentfilms.com/team"
+          ]
+        },
+        {
+          "name": "Zoe Sandhu",
+          "title": "Head of Production",
+          "covers": "Production, joined 2025",
+          "published_email": "",
+          "email_source_url": "",
+          "confidence": "high",
+          "sources": [
+            "https://embankmentfilms.com/team"
+          ]
+        }
+      ],
+      "notable": [
+        {
+          "title": "Unscripted division expansion",
+          "desc": "Hires/promotions; slate incl. Epic: The Life & Times of David Lean (Sky Arts) and Strike: An Uncivil War (acquired by Netflix UK).",
+          "date": "2025-06",
+          "url": "https://embankmentfilms.com/articles/embankment-films-bolsters-unscripted-division-with-zoe-sandhu-hire-pair-of-promotions-1749828384"
+        }
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://embankmentfilms.com/team",
+        "https://embankmentfilms.com/unscripted",
+        "https://embankmentfilms.com/page/contact"
+      ]
+    },
+    {
+      "name": "Dogwoof Sales",
+      "website": "https://sales.dogwoof.com/",
+      "type": "packager",
+      "what_they_do": "International sales agent for feature documentaries, doc series and TV cuts (part of Dogwoof, which also releases and produces documentaries).",
+      "contact_route": "Sales enquiries email; named sales staff emails on contact page",
+      "contact_url": "https://sales.dogwoof.com/contactus",
+      "published_email": "sales@dogwoof.com",
+      "email_source_url": "https://sales.dogwoof.com/contactus",
+      "agents": [
+        {
+          "name": "Katie Bench",
+          "title": "Head of Sales",
+          "covers": "International documentary sales",
+          "published_email": "katie@dogwoof.com",
+          "email_source_url": "https://sales.dogwoof.com/contactus",
+          "confidence": "high",
+          "sources": [
+            "https://sales.dogwoof.com/contactus"
+          ]
+        },
+        {
+          "name": "Ellie Herdman",
+          "title": "Senior Sales Executive",
+          "covers": "Documentary sales",
+          "published_email": "ellie@dogwoof.com",
+          "email_source_url": "https://sales.dogwoof.com/contactus",
+          "confidence": "high",
+          "sources": [
+            "https://sales.dogwoof.com/contactus"
+          ]
+        },
+        {
+          "name": "Cleo Veger",
+          "title": "Sales & Acquisitions Executive",
+          "covers": "Documentary sales and acquisitions",
+          "published_email": "cleo@dogwoof.com",
+          "email_source_url": "https://sales.dogwoof.com/contactus",
+          "confidence": "high",
+          "sources": [
+            "https://sales.dogwoof.com/contactus"
+          ]
+        },
+        {
+          "name": "Tom Howson",
+          "title": "Festivals",
+          "covers": "Festival strategy",
+          "published_email": "tom@dogwoof.com",
+          "email_source_url": "https://sales.dogwoof.com/contactus",
+          "confidence": "high",
+          "sources": [
+            "https://sales.dogwoof.com/contactus"
+          ]
+        }
+      ],
+      "notable": [],
+      "confidence": "high",
+      "sources": [
+        "https://sales.dogwoof.com/contactus",
+        "https://dogwoof.com/contact"
+      ]
     }
-   ],
-   "notable": [
-    {
-     "title": "United Agents launches Unscripted division",
-     "desc": "Matt Nicholls named Head of Unscripted; clients cited include Steph McGovern, Susie Dent, David Olusoga, Kate Garraway.",
-     "date": "2026-04",
-     "url": "https://www.televisual.com/news/united-agents-launches-unscripted-division/"
-    },
-    {
-     "title": "Factual presenter roster",
-     "desc": "Unscripted page lists clients incl. Simon Reeve, David Olusoga, Kate Humble, Dan Cruickshank, Janina Ramirez.",
-     "date": "2026-11",
-     "url": "https://www.unitedagents.co.uk/unscripted/"
-    }
-   ],
-   "confidence": "high",
-   "sources": [
-    "https://www.unitedagents.co.uk/unscripted/",
-    "https://www.televisual.com/news/united-agents-launches-unscripted-division/",
-    "https://www.unitedagents.co.uk/"
-   ]
-  },
-  {
-   "name": "Peters Fraser + Dunlop (PFD) - Broadcast",
-   "website": "https://petersfraserdunlop.com/our-clients/broadcasters/",
-   "type": "agency",
-   "what_they_do": "Broadcast department representing presenters, broadcasters, experts and digital/social talent; head is an ex-presenter and unscripted producer (ex-Pact Head of Nations and Regions).",
-   "contact_route": "Submissions: contact a Broadcast agent with biography, CV, showreel/footage and audio sample",
-   "contact_url": "https://petersfraserdunlop.com/submissions/broadcasters-presenters/",
-   "published_email": "info@pfd.co.uk",
-   "email_source_url": "https://petersfraserdunlop.com/agent/ella-cunningham/",
-   "agents": [
-    {
-     "name": "Tris Payne",
-     "title": "Head of Broadcast",
-     "covers": "Presenters and broadcasters; deep knowledge of UK unscripted TV; clients incl. Ali Abdaal, Jamie Bartlett, Dr Augustus Casely-Hayford",
-     "published_email": "tpayne@pfd.co.uk",
-     "email_source_url": "https://petersfraserdunlop.com/agent/tris-payne/",
-     "confidence": "high",
-     "sources": [
-      "https://petersfraserdunlop.com/agent/tris-payne/",
-      "https://petersfraserdunlop.com/submissions/broadcasters-presenters/"
-     ]
-    },
-    {
-     "name": "Ella Cunningham",
-     "title": "Broadcast Assistant",
-     "covers": "Broadcast department submissions",
-     "published_email": "ecunningham@pfd.co.uk",
-     "email_source_url": "https://petersfraserdunlop.com/agent/ella-cunningham/",
-     "confidence": "high",
-     "sources": [
-      "https://petersfraserdunlop.com/agent/ella-cunningham/"
-     ]
-    }
-   ],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://petersfraserdunlop.com/submissions/broadcasters-presenters/",
-    "https://petersfraserdunlop.com/our-clients/broadcasters/"
-   ]
-  },
-  {
-   "name": "Stern & Wild",
-   "website": "https://www.sternwild.com/",
-   "type": "agency",
-   "what_they_do": "Specialist agency representing 100+ documentary/factual directors, executive producers, showrunners and editorial producers for broadcast and streamer TV, feature docs, docu-series, branded and campaign films; shortlists talent against production briefs at no cost to producers and negotiates clients' deals.",
-   "contact_route": "General email / phone",
-   "contact_url": "https://www.sternwild.com/contact",
-   "published_email": "direct@sternwild.com",
-   "email_source_url": "https://www.sternwild.com/contact",
-   "agents": [
-    {
-     "name": "Moray Coulter",
-     "title": "Managing Director and Agent - Premium Unscripted Creative Talent",
-     "covers": "Founder; documentary/factual directors and producers",
-     "published_email": "moray@sternwild.com",
-     "email_source_url": "https://www.sternwild.com/about",
-     "confidence": "high",
-     "sources": [
-      "https://www.sternwild.com/about"
-     ]
-    },
-    {
-     "name": "Natalie Spanier",
-     "title": "Agent - Documentary and Talent-led Projects",
-     "covers": "Documentary and talent-led projects; ex-Head of Talent at Nutopia",
-     "published_email": "natalie@sternwild.com",
-     "email_source_url": "https://www.sternwild.com/about",
-     "confidence": "high",
-     "sources": [
-      "https://www.sternwild.com/about"
-     ]
-    },
-    {
-     "name": "Camilla Chiverton",
-     "title": "Agent - Premium Unscripted Creative Talent",
-     "covers": "Premium unscripted creative talent; ex-Head of Talent at Plimsoll Productions",
-     "published_email": "camilla@sternwild.com",
-     "email_source_url": "https://www.sternwild.com/about",
-     "confidence": "high",
-     "sources": [
-      "https://www.sternwild.com/about",
-      "https://contentasia.tv/news/camilla-chiverton-joins-stern-wild-uk-talent-agency-highlights-asia-focus"
-     ]
-    }
-   ],
-   "notable": [
-    {
-     "title": "Tucci in Italy - Primetime Emmy",
-     "desc": "Clients Ben Jessop and Ian Denyer won a Primetime Emmy for the BBC Studios Specialist Factual / Salt Productions series for Nat Geo.",
-     "date": "2026-09",
-     "url": "https://www.sternwild.com/wild-news/stern-amp-wild-clients-scoop-primetime-emmy-for-stanley-tucci-culinary-travel-series"
-    },
-    {
-     "title": "Welcome to the Family: The Murder of Dan Markel",
-     "desc": "Client Sebastian Smith's four-part true-crime docuseries for Hulu/Disney+, from 1 September.",
-     "date": "2026-09",
-     "url": "https://www.sternwild.com/"
-    }
-   ],
-   "confidence": "high",
-   "sources": [
-    "https://www.sternwild.com/",
-    "https://www.sternwild.com/about",
-    "https://www.sternwild.com/contact"
-   ]
-  },
-  {
-   "name": "Curtis Brown Group - Unscripted & Entertainment",
-   "website": "https://www.curtisbrown.co.uk/",
-   "type": "agency",
-   "what_they_do": "UK unit of the UTA-owned Curtis Brown Group (launched March 2024) representing entertainment, comedy, factual and digital talent; develops unscripted, factual and entertainment content with producers.",
-   "contact_route": "Not verifiable - curtisbrown.co.uk is script-rendered and its agent/department data could not be read",
-   "contact_url": "https://www.curtisbrown.co.uk/",
-   "published_email": "",
-   "email_source_url": "",
-   "agents": [
-    {
-     "name": "Martha Atack",
-     "title": "Head of Curtis Brown Group Unscripted & Entertainment (at launch)",
-     "covers": "Multi-hyphenate and digital-first talent in entertainment, comedy, factual",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "check",
-     "sources": [
-      "https://ca.news.yahoo.com/uta-curtis-brown-launches-unscripted-101147793.html"
-     ]
-    }
-   ],
-   "notable": [
-    {
-     "title": "Curtis Brown launches Unscripted & Entertainment unit",
-     "desc": "Deadline report; launch roster incl. Stacey Dooley, Grayson Perry, Sue Perkins.",
-     "date": "2024-03",
-     "url": "https://ca.news.yahoo.com/uta-curtis-brown-launches-unscripted-101147793.html"
-    }
-   ],
-   "confidence": "check",
-   "sources": [
-    "https://ca.news.yahoo.com/uta-curtis-brown-launches-unscripted-101147793.html"
-   ]
-  },
-  {
-   "name": "Sayle Screen",
-   "website": "https://saylescreen.com/",
-   "type": "agency",
-   "what_they_do": "Independent agency representing writers, directors and producers for film, TV and theatre (incl. documentary directors), and dramatic rights in books; works alongside Sara Putt Associates.",
-   "contact_route": "Submissions only if recommended by a producer, development executive or course tutor: covering letter, referee details and script/showreel by email",
-   "contact_url": "https://saylescreen.com/submissions/",
-   "published_email": "submissions@saylescreen.com",
-   "email_source_url": "https://saylescreen.com/submissions/",
-   "agents": [
-    {
-     "name": "Jane Villiers",
-     "title": "Managing Director and Agent",
-     "covers": "Writers and directors; has producing experience incl. the documentary Young@Heart",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://saylescreen.com/about-us/"
-     ]
-    },
-    {
-     "name": "Matthew Bates",
-     "title": "Director and Agent",
-     "covers": "Writers and directors in film, TV, theatre; dramatic rights in books",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://saylescreen.com/about-us/"
-     ]
-    },
-    {
-     "name": "Zoë Rudin",
-     "title": "Associate Agent and Assistant to Jane Villiers and Matthew Bates",
-     "covers": "Building own list; background representing presenters, actors, comedians, writers, directors, producers",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://saylescreen.com/about-us/"
-     ]
-    }
-   ],
-   "notable": [
-    {
-     "title": "MOURINHO (Netflix)",
-     "desc": "Sayle Screen news on the Netflix documentary directed by Joe Pearlman, produced by Ventureland.",
-     "date": "2026-07",
-     "url": "https://saylescreen.com/latest-news/trailer-for-netflix-mourinho-documentary-dropped/"
-    }
-   ],
-   "confidence": "high",
-   "sources": [
-    "https://saylescreen.com/about-us/",
-    "https://saylescreen.com/submissions/"
-   ]
-  },
-  {
-   "name": "Knight Ayton Management",
-   "website": "https://knightayton.co.uk/",
-   "type": "management",
-   "what_they_do": "Represents broadcasters, presenters, journalists, experts and academics who anchor TV and radio factual programmes (history, science, business, consumer, royal/constitutional correspondents) and podcasts.",
-   "contact_route": "General email (no guarantee artists will respond)",
-   "contact_url": "https://knightayton.co.uk/contact/",
-   "published_email": "info@knightayton.co.uk",
-   "email_source_url": "https://knightayton.co.uk/contact/",
-   "agents": [
-    {
-     "name": "Sue Ayton",
-     "title": "Senior Partner",
-     "covers": "Agency leadership",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://knightayton.co.uk/about/"
-     ]
-    },
-    {
-     "name": "Sue Knight",
-     "title": "Senior Partner",
-     "covers": "Agency leadership",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://knightayton.co.uk/about/"
-     ]
-    },
-    {
-     "name": "Helen Purvis",
-     "title": "Partner",
-     "covers": "All areas, established and emerging talent",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://knightayton.co.uk/about/"
-     ]
-    },
-    {
-     "name": "Nick Hulme",
-     "title": "Senior Agent",
-     "covers": "High-profile clients' broadcast and corporate work",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://knightayton.co.uk/about/"
-     ]
-    },
-    {
-     "name": "Paul Hanrahan",
-     "title": "Business Affairs",
-     "covers": "Business and commercial affairs; 20+ years in UK factual production",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://knightayton.co.uk/about/"
-     ]
-    }
-   ],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://knightayton.co.uk/about/",
-    "https://knightayton.co.uk/contact/"
-   ]
-  },
-  {
-   "name": "Noel Gay",
-   "website": "https://noelgay.com/",
-   "type": "management",
-   "what_they_do": "Represents broadcasters, journalists and presenters with 360-degree management across broadcast, corporate, digital, literary and live events; has a dedicated Presenters list.",
-   "contact_route": "General enquiries email",
-   "contact_url": "https://noelgay.com/contact/",
-   "published_email": "info@noelgay.com",
-   "email_source_url": "https://noelgay.com/contact/",
-   "agents": [
-    {
-     "name": "Alex Armitage",
-     "title": "Chief Executive",
-     "covers": "Broadcasters, journalists and presenters",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://noelgay.com/about-us/"
-     ]
-    },
-    {
-     "name": "Louise Fennimore",
-     "title": "Director",
-     "covers": "Media careers of presenters/broadcasters",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://noelgay.com/about-us/"
-     ]
-    },
-    {
-     "name": "Helena Bumpus",
-     "title": "Director",
-     "covers": "Media careers of presenters/broadcasters",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://noelgay.com/about-us/"
-     ]
-    },
-    {
-     "name": "Kas Michael",
-     "title": "Senior Agent",
-     "covers": "Media careers of presenters/broadcasters",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://noelgay.com/about-us/"
-     ]
-    }
-   ],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://noelgay.com/about-us/",
-    "https://noelgay.com/contact/"
-   ]
-  },
-  {
-   "name": "Independent Talent 360 (Independent Talent Group)",
-   "website": "https://www.independent-360.com/",
-   "type": "agency",
-   "what_they_do": "Presenters arm of Independent Talent Group representing TV, radio, podcast and digital talent; services include format development and IP ownership, audio content, publishing, live events.",
-   "contact_route": "Website contact form (no email published)",
-   "contact_url": "https://www.independent-360.com/contact",
-   "published_email": "",
-   "email_source_url": "",
-   "agents": [],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://www.independent-360.com/about",
-    "https://www.independent-360.com/contact",
-    "https://www.independenttalent.com/"
-   ]
-  },
-  {
-   "name": "Insanity Group",
-   "website": "https://insanity.com/",
-   "type": "management",
-   "what_they_do": "Talent management for presenters and entertainment talent (e.g. Maya Jama, Katie Piper, Dr Alex George, Roman Kemp) plus Insanity Studios, an in-house unit developing IP and producing audio and audio-visual content.",
-   "contact_route": "Phone/address on About page; no general email found",
-   "contact_url": "https://insanity.com/contact",
-   "published_email": "",
-   "email_source_url": "",
-   "agents": [
-    {
-     "name": "Issy Lloyd",
-     "title": "Director, Entertainment",
-     "covers": "Entertainment talent management",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://insanity.com/about"
-     ]
-    },
-    {
-     "name": "Neil Ransome",
-     "title": "Creative Director, Entertainment",
-     "covers": "Entertainment talent / creative development",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://insanity.com/about"
-     ]
-    },
-    {
-     "name": "Andy Varley",
-     "title": "Founder & CEO",
-     "covers": "Group leadership",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://insanity.com/about"
-     ]
-    }
-   ],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://insanity.com/about",
-    "https://insanity.com/"
-   ]
-  },
-  {
-   "name": "YMU - Entertainment",
-   "website": "https://www.ymugroup.com/entertainment/",
-   "type": "management",
-   "what_they_do": "Manages hosts, broadcasters, creators and podcasters (London, LA, NYC) across broadcasting, IP and brand building, audio, content and publishing.",
-   "contact_route": "General enquiries email",
-   "contact_url": "https://www.ymugroup.com/contact/",
-   "published_email": "enquiries@ymugroup.com",
-   "email_source_url": "https://www.ymugroup.com/contact/",
-   "agents": [],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://www.ymugroup.com/entertainment/",
-    "https://www.ymugroup.com/contact/"
-   ]
-  },
-  {
-   "name": "Embankment Films - Unscripted",
-   "website": "https://embankmentfilms.com/unscripted",
-   "type": "packager",
-   "what_they_do": "London sales and production house whose unscripted division develops, produces and sells documentaries and factual entertainment worldwide, and takes acquisitions/submissions from third-party producers.",
-   "contact_route": "General email for submissions enquiries (no unsolicited scripts)",
-   "contact_url": "https://embankmentfilms.com/page/contact",
-   "published_email": "info@embankmentfilms.com",
-   "email_source_url": "https://embankmentfilms.com/page/contact",
-   "agents": [
-    {
-     "name": "Nick Taussig",
-     "title": "Managing Director (Head of Unscripted per Deadline, Jun 2025)",
-     "covers": "Leads unscripted documentary and factual slate",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://embankmentfilms.com/team",
-      "https://deadline.com/2025/06/embankment-films-unscripted-division-hire-promotions-1236430599"
-     ]
-    },
-    {
-     "name": "Henry Farrington",
-     "title": "Sales & Acquisitions Manager",
-     "covers": "Acquisitions and submissions from third-party producers across documentary and factual entertainment",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://embankmentfilms.com/team"
-     ]
-    },
-    {
-     "name": "Zoe Sandhu",
-     "title": "Head of Production",
-     "covers": "Production, joined 2025",
-     "published_email": "",
-     "email_source_url": "",
-     "confidence": "high",
-     "sources": [
-      "https://embankmentfilms.com/team"
-     ]
-    }
-   ],
-   "notable": [
-    {
-     "title": "Unscripted division expansion",
-     "desc": "Hires/promotions; slate incl. Epic: The Life & Times of David Lean (Sky Arts) and Strike: An Uncivil War (acquired by Netflix UK).",
-     "date": "2025-06",
-     "url": "https://embankmentfilms.com/articles/embankment-films-bolsters-unscripted-division-with-zoe-sandhu-hire-pair-of-promotions-1749828384"
-    }
-   ],
-   "confidence": "high",
-   "sources": [
-    "https://embankmentfilms.com/team",
-    "https://embankmentfilms.com/unscripted",
-    "https://embankmentfilms.com/page/contact"
-   ]
-  },
-  {
-   "name": "Dogwoof Sales",
-   "website": "https://sales.dogwoof.com/",
-   "type": "packager",
-   "what_they_do": "International sales agent for feature documentaries, doc series and TV cuts (part of Dogwoof, which also releases and produces documentaries).",
-   "contact_route": "Sales enquiries email; named sales staff emails on contact page",
-   "contact_url": "https://sales.dogwoof.com/contactus",
-   "published_email": "sales@dogwoof.com",
-   "email_source_url": "https://sales.dogwoof.com/contactus",
-   "agents": [
-    {
-     "name": "Katie Bench",
-     "title": "Head of Sales",
-     "covers": "International documentary sales",
-     "published_email": "katie@dogwoof.com",
-     "email_source_url": "https://sales.dogwoof.com/contactus",
-     "confidence": "high",
-     "sources": [
-      "https://sales.dogwoof.com/contactus"
-     ]
-    },
-    {
-     "name": "Ellie Herdman",
-     "title": "Senior Sales Executive",
-     "covers": "Documentary sales",
-     "published_email": "ellie@dogwoof.com",
-     "email_source_url": "https://sales.dogwoof.com/contactus",
-     "confidence": "high",
-     "sources": [
-      "https://sales.dogwoof.com/contactus"
-     ]
-    },
-    {
-     "name": "Cleo Veger",
-     "title": "Sales & Acquisitions Executive",
-     "covers": "Documentary sales and acquisitions",
-     "published_email": "cleo@dogwoof.com",
-     "email_source_url": "https://sales.dogwoof.com/contactus",
-     "confidence": "high",
-     "sources": [
-      "https://sales.dogwoof.com/contactus"
-     ]
-    },
-    {
-     "name": "Tom Howson",
-     "title": "Festivals",
-     "covers": "Festival strategy",
-     "published_email": "tom@dogwoof.com",
-     "email_source_url": "https://sales.dogwoof.com/contactus",
-     "confidence": "high",
-     "sources": [
-      "https://sales.dogwoof.com/contactus"
-     ]
-    }
-   ],
-   "notable": [],
-   "confidence": "high",
-   "sources": [
-    "https://sales.dogwoof.com/contactus",
-    "https://dogwoof.com/contact"
-   ]
-  }
- ]
+  ]
 }

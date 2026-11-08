@@ -1,108 +1,107 @@
 {
- "broadcaster": "Amazon (US)",
- "region": "US",
- "checked": "2026-11-08",
- "pitch_routes": [
-  {
-   "genre": "All",
-   "route": "No official unsolicited-submissions page found today; treat as agent / established production company only.",
-   "url": ""
-  }
- ],
- "briefs": [
-  {
-   "title": "Jenn Levy named Head of Unscripted and Documentary TV - Friedlander memo (Deadline)",
-   "summary": "Single leader for all unscripted; remit covers development and production for Prime Video; Levy tasked with finding Love Is Blind-scale hits.",
-   "url": "https://deadline.com/2026/01/jenn-levy-unscripted-boss-amazon-1236665578/",
-   "date": "2026-01"
-  },
-  {
-   "title": "Jenny Groom named Head of MGM Alternative - Levy memo (Variety)",
-   "summary": "MGM Alternative to develop new formats and series for Prime Video and to sell 'all around town'.",
-   "url": "https://variety.com/2026/tv/news/jenny-groom-mgm-alternative-head-bbc-studios-1236939434/",
-   "date": "2026-11"
-  }
- ],
- "commissioners": [
-  {
-   "name": "Jenn Levy",
-   "title": "Head of Unscripted and Documentary Television, Amazon MGM Studios",
-   "channels": [
-    "Prime Video",
-    "Amazon MGM Studios"
-   ],
-   "remit": "Oversees all unscripted and documentary TV: Amazon MGM Unscripted, MGM Alternative, Big Fish Entertainment and Evolution Media report to her; development and production for Prime Video. Reports to Peter Friedlander, head of global TV. (Variety Nov 2026 calls her 'nonfiction head'.)",
-   "recent_commissions": [],
-   "pitch_route": "Agent / established production company",
-   "pitch_url": "",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2026-01 (started 20 Jan 2026)",
-   "confidence": "high",
-   "notes": "No specific title found credited to her as commissioner.",
-   "sources": [
-    "https://deadline.com/2026/01/jenn-levy-unscripted-boss-amazon-1236665578/",
-    "https://www.thewrap.com/media-platforms/tv/jenn-levy-joins-amazon-mgm-studios-head-of-unscripted-documentary-television/",
-    "https://variety.com/2026/tv/news/jenny-groom-mgm-alternative-head-bbc-studios-1236939434/"
-   ]
-  },
-  {
-   "name": "Ariane Wu",
-   "title": "Senior Creative Executive, Documentary Series",
-   "channels": [
-    "Prime Video"
-   ],
-   "remit": "Documentary series; reports to Jenn Levy. Previously eight years at Netflix (director of original documentary film from 2020; The Tinder Swindler)",
-   "recent_commissions": [],
-   "pitch_route": "Agent / established production company",
-   "pitch_url": "",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2026-04",
-   "confidence": "high",
-   "notes": "Most relevant Amazon contact for docuseries.",
-   "sources": [
-    "https://www.c21media.net/news/ex-disney-netflix-execs-join-amazon-as-jenn-levy-builds-out-unscripted-team/"
-   ]
-  },
-  {
-   "name": "Tiffany Faigus",
-   "title": "Senior Creative Executive, Unscripted Series",
-   "channels": [
-    "Prime Video"
-   ],
-   "remit": "Unscripted series; reports to Jenn Levy. Ex-SVP unscripted and alternative at ABC / Walt Disney Television Alternative",
-   "recent_commissions": [],
-   "pitch_route": "Agent / established production company",
-   "pitch_url": "",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2026-04",
-   "confidence": "high",
-   "notes": "",
-   "sources": [
-    "https://www.c21media.net/news/ex-disney-netflix-execs-join-amazon-as-jenn-levy-builds-out-unscripted-team/"
-   ]
-  },
-  {
-   "name": "Jenny Groom",
-   "title": "Head of MGM Alternative",
-   "channels": [
-    "MGM Alternative",
-    "Prime Video"
-   ],
-   "remit": "Survivor, Shark Tank, The Voice and the format library; developing new formats and series for Prime Video and third-party buyers; reports to Jenn Levy",
-   "recent_commissions": [],
-   "pitch_route": "Agent / established production company",
-   "pitch_url": "",
-   "published_email": "",
-   "email_source_url": "",
-   "appointed": "2026-11",
-   "confidence": "high",
-   "notes": "MGM Alternative is a studio/production arm that also sells to other networks - formats-focused, less relevant to docs.",
-   "sources": [
-    "https://variety.com/2026/tv/news/jenny-groom-mgm-alternative-head-bbc-studios-1236939434/"
-   ]
-  }
- ]
+  "broadcaster": "Amazon (US)",
+  "region": "US",
+  "checked": "2026-11-08",
+  "pitch_routes": [
+    {
+      "genre": "All",
+      "route": "No official unsolicited-submissions page found today; treat as agent / established production company only.",
+      "url": ""
+    }
+  ],
+  "briefs": [
+    {
+      "title": "Jenn Levy named Head of Unscripted and Documentary TV (TheWrap)",
+      "summary": "New post overseeing all of the studio's unscripted work; reports to Peter Friedlander, who credited her with shows such as Love Is Blind, which she helped launch at Netflix.",
+      "url": "https://www.thewrap.com/media-platforms/tv/jenn-levy-joins-amazon-mgm-studios-head-of-unscripted-documentary-television/",
+      "date": "2026-01"
+    },
+    {
+      "title": "Jenny Groom named Head of MGM Alternative (TheWrap)",
+      "summary": "MGM Alternative will develop new formats and series for Prime Video and sell to other buyers.",
+      "url": "https://www.thewrap.com/industry-news/business/amazon-mgm-alternative-head-jenny-groom/",
+      "date": "2026-11"
+    }
+  ],
+  "commissioners": [
+    {
+      "name": "Jenn Levy",
+      "title": "Head of Unscripted and Documentary Television, Amazon MGM Studios",
+      "channels": [
+        "Prime Video",
+        "Amazon MGM Studios"
+      ],
+      "remit": "Oversees the studio's whole unscripted and documentary TV effort: Amazon MGM Unscripted, MGM Alternative, Big Fish Entertainment and Evolution Media report to her. Reports to Peter Friedlander, head of global TV. (TheWrap, Nov 2026, calls her 'Amazon MGM Studios Nonfiction Head'.)",
+      "recent_commissions": [],
+      "pitch_route": "Agent / established production company",
+      "pitch_url": "",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2026-01 (started 20 Jan 2026)",
+      "confidence": "high",
+      "notes": "No specific title found credited to her as commissioner.",
+      "sources": [
+        "https://www.thewrap.com/media-platforms/tv/jenn-levy-joins-amazon-mgm-studios-head-of-unscripted-documentary-television/",
+        "https://www.thewrap.com/industry-news/business/amazon-mgm-alternative-head-jenny-groom/"
+      ]
+    },
+    {
+      "name": "Ariane Wu",
+      "title": "Senior Creative Executive, Documentary Series",
+      "channels": [
+        "Prime Video"
+      ],
+      "remit": "Documentary series; reports to Jenn Levy. Previously eight years at Netflix (director of original documentary film from 2020; The Tinder Swindler)",
+      "recent_commissions": [],
+      "pitch_route": "Agent / established production company",
+      "pitch_url": "",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2026-04",
+      "confidence": "high",
+      "notes": "Most relevant Amazon contact for docuseries.",
+      "sources": [
+        "https://www.c21media.net/news/ex-disney-netflix-execs-join-amazon-as-jenn-levy-builds-out-unscripted-team/"
+      ]
+    },
+    {
+      "name": "Tiffany Faigus",
+      "title": "Senior Creative Executive, Unscripted Series",
+      "channels": [
+        "Prime Video"
+      ],
+      "remit": "Unscripted series; reports to Jenn Levy. Ex-SVP unscripted and alternative at ABC / Walt Disney Television Alternative",
+      "recent_commissions": [],
+      "pitch_route": "Agent / established production company",
+      "pitch_url": "",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2026-04",
+      "confidence": "high",
+      "notes": "",
+      "sources": [
+        "https://www.c21media.net/news/ex-disney-netflix-execs-join-amazon-as-jenn-levy-builds-out-unscripted-team/"
+      ]
+    },
+    {
+      "name": "Jenny Groom",
+      "title": "Head of MGM Alternative",
+      "channels": [
+        "MGM Alternative",
+        "Prime Video"
+      ],
+      "remit": "Legacy franchises Survivor, Shark Tank and The Voice plus the format library; developing new formats and series for Prime Video and sales to third-party buyers; reports to Jenn Levy. Starts 30 Nov 2026.",
+      "recent_commissions": [],
+      "pitch_route": "Agent / established production company",
+      "pitch_url": "",
+      "published_email": "",
+      "email_source_url": "",
+      "appointed": "2026-11",
+      "confidence": "high",
+      "notes": "MGM Alternative is a studio/production arm that also sells to other networks - formats-focused, less relevant to docs.",
+      "sources": [
+        "https://www.thewrap.com/industry-news/business/amazon-mgm-alternative-head-jenny-groom/"
+      ]
+    }
+  ]
 }
