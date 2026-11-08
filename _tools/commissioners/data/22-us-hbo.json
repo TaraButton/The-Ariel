@@ -1,0 +1,121 @@
+{
+ "broadcaster": "HBO",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [
+  {
+   "genre": "Documentary (HBO Documentary Films / HBO Max)",
+   "route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney. HBO publishes no open documentary submission portal (none found).",
+   "url": "https://www.wbd.com/visitor-agreement"
+  }
+ ],
+ "briefs": [],
+ "commissioners": [
+  {
+   "name": "Nancy Abraham",
+   "title": "Co-Executive Vice President, Documentary Programming, HBO",
+   "channels": [
+    "HBO",
+    "HBO Max",
+    "HBO Documentary Films"
+   ],
+   "remit": "Co-leads HBO's documentary slate with Lisa Heller.",
+   "recent_commissions": [
+    {
+     "title": "Critical Incident",
+     "desc": "Feature doc revisiting the 2010 death of Anastasio Hernandez-Rojas in US Border Patrol custody; premiered HBO 29 Dec 2025 (credited 'For HBO: executive producers')",
+     "date": "2025-12",
+     "url": "https://www.broadwayworld.com/bwwtv/article/Original-Documentary-CRITICAL-INCIDENT-Sets-HBO-Debut-20251219"
+    }
+   ],
+   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+   "pitch_url": "https://www.wbd.com/visitor-agreement",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "TheWrap (23 Oct 2026) names Abraham and Heller as 'HBO's co-executive vice presidents of documentary programming' in Casey Bloys's post-merger Skydance DTC restructure - i.e. confirmed in post after the Paramount-WBD merger. Recent HBO doc commissions reported by Realscreen in 2026 (Zizians docuseries Apr 2026, Gisele Pelicot film Jan 2026, 'The Slightest Touch' acquisition Feb 2026, 'JAY-Z in 8' Jun 2026) do not name an HBO exec, so are not credited here.",
+   "sources": [
+    "https://www.thewrap.com/culture-lifestyle/culture/paramount-plus-originals-head-jane-wiseman-exit/",
+    "https://www.broadwayworld.com/bwwtv/article/Original-Documentary-CRITICAL-INCIDENT-Sets-HBO-Debut-20251219"
+   ]
+  },
+  {
+   "name": "Lisa Heller",
+   "title": "Co-Executive Vice President, Documentary Programming, HBO",
+   "channels": [
+    "HBO",
+    "HBO Max",
+    "HBO Documentary Films"
+   ],
+   "remit": "Co-leads HBO's documentary slate with Nancy Abraham.",
+   "recent_commissions": [
+    {
+     "title": "Critical Incident",
+     "desc": "Feature doc revisiting the 2010 death of Anastasio Hernandez-Rojas in US Border Patrol custody; premiered HBO 29 Dec 2025 (credited 'For HBO: executive producers')",
+     "date": "2025-12",
+     "url": "https://www.broadwayworld.com/bwwtv/article/Original-Documentary-CRITICAL-INCIDENT-Sets-HBO-Debut-20251219"
+    }
+   ],
+   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+   "pitch_url": "https://www.wbd.com/visitor-agreement",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Confirmed in post by TheWrap 23 Oct 2026 (post-merger restructure).",
+   "sources": [
+    "https://www.thewrap.com/culture-lifestyle/culture/paramount-plus-originals-head-jane-wiseman-exit/",
+    "https://www.broadwayworld.com/bwwtv/article/Original-Documentary-CRITICAL-INCIDENT-Sets-HBO-Debut-20251219"
+   ]
+  },
+  {
+   "name": "Tina Nguyen",
+   "title": "",
+   "channels": [
+    "HBO",
+    "HBO Documentary Films"
+   ],
+   "remit": "HBO documentary executive; credited as an HBO executive producer.",
+   "recent_commissions": [
+    {
+     "title": "Critical Incident",
+     "desc": "Feature doc revisiting the 2010 death of Anastasio Hernandez-Rojas in US Border Patrol custody; premiered HBO 29 Dec 2025 (credited 'For HBO: executive producers')",
+     "date": "2025-12",
+     "url": "https://www.broadwayworld.com/bwwtv/article/Original-Documentary-CRITICAL-INCIDENT-Sets-HBO-Debut-20251219"
+    }
+   ],
+   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+   "pitch_url": "https://www.wbd.com/visitor-agreement",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Credited 'For HBO: executive producers, Nancy Abraham, Lisa Heller, and Tina Nguyen' on Critical Incident (Dec 2025). Exact job title not verified on any page opened; not reconfirmed after Oct 2026 restructure.",
+   "sources": [
+    "https://www.broadwayworld.com/bwwtv/article/Original-Documentary-CRITICAL-INCIDENT-Sets-HBO-Debut-20251219"
+   ]
+  },
+  {
+   "name": "Sarah Aubrey",
+   "title": "Head of HBO Max Originals (Skydance head of Paramount+, Max Originals and international programming)",
+   "channels": [
+    "HBO Max",
+    "Paramount+"
+   ],
+   "remit": "Heads HBO Max originals; former Paramount+ Originals team (after Jane Wiseman's exit) and new Paramount+ head of unscripted Damla Dogan report to her.",
+   "recent_commissions": [],
+   "pitch_route": "WBD's visitor agreement states: 'WBD does not accept unsolicited submissions of concepts, creative ideas, suggestions, stories, or other potential content.' Approach via an established production company, agent or entertainment attorney.",
+   "pitch_url": "https://www.wbd.com/visitor-agreement",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Also listed in us-paramount.json (same person). Unscripted pitches for Paramount+ go to Dogan's team.",
+   "sources": [
+    "https://www.thewrap.com/culture-lifestyle/culture/paramount-plus-originals-head-jane-wiseman-exit/",
+    "https://www.thewrap.com/industry-news/business/paramount-plus-damla-dogan-head-of-unscripted/"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "broadcaster": "Fox",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [],
+ "briefs": [
+  {
+   "title": "Uptown Girl: The Christie Brinkley Story",
+   "summary": "Fox Nation three-part docuseries from Lionsgate Alternative Television, premiering 2027; Fox Entertainment Global distributing internationally (MIPCOM 2026). Secondary summary source only.",
+   "url": "https://briefglance.com/companies/fox-news-network-llc/pulses/84046",
+   "date": "2026-10-01"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Lauren Petterson",
+   "title": "President, FOX Nation (also President, Talent Development, FOX News Media)",
+   "channels": [
+    "FOX Nation"
+   ],
+   "remit": "Runs the FOX Nation streaming service, which commissions docuseries and docudramas (true crime, faith, history, sport).",
+   "recent_commissions": [
+    {
+     "title": "David: King of Israel",
+     "desc": "Four-part docudrama hosted by Zachary Levi, from Warm Springs Productions, for the FOX Faith vertical; Q1 2026. Announced by Petterson.",
+     "date": "2025-12",
+     "url": "https://mortystv.com/blog/2025/12/09/fox-nation-taps-zachary-levi-for-new-docudrama-david-king-of-israel-slated-for-early-2026-video/"
+    }
+   ],
+   "pitch_route": "",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "late 2023",
+   "confidence": "high",
+   "notes": "Official Fox News press bio checked today. No public pitch route or submissions inbox found. She is platform head rather than a dedicated docs commissioner; no named Fox Nation docs-specific exec verified.",
+   "sources": [
+    "https://www.foxnews.com/press/lauren-petterson",
+    "https://mortystv.com/blog/2025/12/09/fox-nation-taps-zachary-levi-for-new-docudrama-david-king-of-israel-slated-for-early-2026-video/"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "broadcaster": "NBCUniversal",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [
+  {
+   "genre": "All",
+   "route": "No official NBCU unsolicited-submissions policy page found today; treat as agent / established production company only.",
+   "url": ""
+  },
+  {
+   "genre": "News documentaries (NBC News Studios)",
+   "route": "NBC News Studios publishes a general studio contact address on its official site (studio inbox, not a commissioner's personal email): nbcnewsstudios@nbcuni.com",
+   "url": "https://nbcnewsstudios.com/team/liz-cole/"
+  }
+ ],
+ "briefs": [],
+ "commissioners": [
+  {
+   "name": "Liz Cole",
+   "title": "President, NBC News Studios",
+   "channels": [
+    "NBC News Studios",
+    "Dateline",
+    "NBC News audio"
+   ],
+   "remit": "Launched NBC News Studios in 2020; premium documentaries and series (festival docs), podcasts, true crime; also senior executive producer of Dateline and head of the NBC News audio unit",
+   "recent_commissions": [],
+   "pitch_route": "Agent / established production company; general studio inbox published on official site",
+   "pitch_url": "https://nbcnewsstudios.com/team/liz-cole/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2020",
+   "confidence": "high",
+   "notes": "Official bio page last modified 2026-10-07. The only address on the page is the general studio inbox, so published_email is left blank.",
+   "sources": [
+    "https://nbcnewsstudios.com/team/liz-cole/"
+   ]
+  },
+  {
+   "name": "Brittinee Royes",
+   "title": "VP, Unscripted Programming & Development, Bravo & Peacock",
+   "channels": [
+    "Bravo",
+    "Peacock"
+   ],
+   "remit": "Oversees development and current production of docuseries, documentaries and lifestyle formats across Bravo and Peacock",
+   "recent_commissions": [],
+   "pitch_route": "Agent / established production company",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Source is her Realscreen Summit 2026 speaker bio (conference page, not company press).",
+   "sources": [
+    "https://summit.realscreen.com/2026/speakers/1001620/"
+   ]
+  },
+  {
+   "name": "Kristina Edwards",
+   "title": "VP, Unscripted Content, Bravo & Peacock",
+   "channels": [
+    "Bravo",
+    "Peacock"
+   ],
+   "remit": "Development of unscripted projects across Bravo and Peacock; current production on Love Island USA, Love Island: Beyond the Villa, Love Island Games",
+   "recent_commissions": [],
+   "pitch_route": "Agent / established production company",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Reality-leaning remit; less docs-relevant. Source is Realscreen Summit 2026 speaker bio.",
+   "sources": [
+    "https://summit.realscreen.com/2026/speakers/1001622/"
+   ]
+  }
+ ]
+}

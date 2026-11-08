@@ -1,0 +1,77 @@
+{
+ "broadcaster": "A+E Networks",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [],
+ "briefs": [
+  {
+   "title": "History Honors 250",
+   "summary": "HISTORY's multiplatform America-250 initiative (Feb 2025 - Aug 2026) led by Eli Lehrer; includes Kevin Costner's The West and Sitting Bull.",
+   "url": "https://mediavillage.com/article/celebrating-250-years-of-american-history-a-multiplatform-initiative-by-the-history-channel/amp",
+   "date": "2024-02-29"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Elaine Frontain Bryant",
+   "title": "Executive Vice President & Head of Programming, A&E and Lifetime",
+   "channels": [
+    "A&E",
+    "Lifetime"
+   ],
+   "remit": "Programming lead across A&E and Lifetime, including unscripted / true-crime docuseries.",
+   "recent_commissions": [
+    {
+     "title": "Crime in Progress",
+     "desc": "A&E two-season order; raw-footage (bodycam, surveillance) true-crime series following investigations from 911 call to verdict; premiered 1 Jan 2026.",
+     "date": "2025-12",
+     "url": "https://mortystv.com/blog/2025/12/12/aes-new-series-crime-in-progress-follows-the-evolution-of-investigations-told-exclusively-through-raw-footage-premieres-january-1-10pm-et-pt-video/"
+    }
+   ],
+   "pitch_route": "",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Title taken from A&E press release republished by Morty's TV (Dec 2025), which lists her in the release credits; release does not literally say she greenlit it. No official A+E pitch route found.",
+   "sources": [
+    "https://mortystv.com/blog/2025/12/12/aes-new-series-crime-in-progress-follows-the-evolution-of-investigations-told-exclusively-through-raw-footage-premieres-january-1-10pm-et-pt-video/"
+   ]
+  },
+  {
+   "name": "Eli Lehrer",
+   "title": "Executive Vice President and Head of Programming, The HISTORY Channel",
+   "channels": [
+    "The HISTORY Channel"
+   ],
+   "remit": "Programming lead for HISTORY nonfiction series and specials.",
+   "recent_commissions": [
+    {
+     "title": "History's Deadliest with Ving Rhames",
+     "desc": "10-part Propagate Content series on the deadliest people, places and events; premiered 26 Jan 2026. Lehrer credited as executive producer for The HISTORY Channel.",
+     "date": "2025-12",
+     "url": "https://mortystv.com/blog/2025/12/09/the-history-channels-new-series-historys-deadliest-with-ving-rhames-to-premiere-on-monday-january-26-video/"
+    },
+    {
+     "title": "Modern Marvels: WWII (wt)",
+     "desc": "Three-part Hearst Media Production Group revival of Modern Marvels on WWII machines and innovations; spring 2026. Lehrer quoted as EVP & Head of Programming.",
+     "date": "2025-10",
+     "url": "https://mortystv.com/blog/2025/10/22/the-history-channel-greenlights-modern-marvels-wwii-wt-marking-the-return-of-its-modern-marvels-franchise"
+    }
+   ],
+   "pitch_route": "",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Newest dated evidence of the title is Oct 2025 (Modern Marvels release, ~12.5 months old); Dec 2025 release credits him as HISTORY EP but without his title. Modern Marvels: quoted on the greenlight, not explicitly named as greenlighting it.",
+   "sources": [
+    "https://mortystv.com/blog/2025/10/22/the-history-channel-greenlights-modern-marvels-wwii-wt-marking-the-return-of-its-modern-marvels-franchise",
+    "https://mortystv.com/blog/2025/12/09/the-history-channels-new-series-historys-deadliest-with-ving-rhames-to-premiere-on-monday-january-26-video/",
+    "https://www.broadcastnow.co.uk/broadcast-international/history-orders-unscripted-series-the-bible-revealed/5206029.article"
+   ]
+  }
+ ]
+}

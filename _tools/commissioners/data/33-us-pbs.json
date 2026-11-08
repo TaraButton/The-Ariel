@@ -1,0 +1,281 @@
+{
+ "broadcaster": "PBS",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [
+  {
+   "genre": "Investigative / current affairs (FRONTLINE), science (NOVA), lifestyle (GBH Studio Six)",
+   "route": "GBH Content Submission Form (review GBH editorial guidelines and sign GBH Content Submission Release Form first). Rolling review; GBH says it will respond within 6-8 weeks if it wants to proceed. FRONTLINE prefers one-hour single-subject films and does not accept advocacy-funded projects; NOVA mainly wants 52-min docs but considers features and multipart series; sizzles/short proposals accepted.",
+   "url": "https://www.wgbh.org/tv-shows/submit-your-content-to-gbh"
+  },
+  {
+   "genre": "Investigative documentary (FRONTLINE)",
+   "route": "FRONTLINE FAQ: well-researched proposals, completed films and works-in-progress via the GBH submissions portal; tips and story suggestions to frontline@pbs.org (about 500 suggestions/proposals a year).",
+   "url": "https://www.pbs.org/wgbh/pages/frontline/about-us/faq/"
+  },
+  {
+   "genre": "Independent POV documentary (POV / POV Shorts)",
+   "route": "POV Call for Entries on FilmFreeway: completed films and fine cuts, shorts of 40 min or less, invited feature rough cuts. Deadline for the 2027 broadcast season was 31 Jul 2026; rolling submissions after that roll into the following year's cycle. Questions: cfe@pov.org.",
+   "url": "https://filmfreeway.com/POVCallforEntries"
+  },
+  {
+   "genre": "Independent documentary funding (ITVS / Independent Lens)",
+   "route": "ITVS Get Funded page: Open Call (single nonfiction projects over 10 min already in production/post), Incubator Fund (early-stage features/web series for public media streaming) and Independent Lens Creator Lab (vertical micro-series) are all marked 'Not currently accepting applications' as of 8 Nov 2026. Series and Special Projects funding is invitation-only.",
+   "url": "https://itvs.org/get-funded/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "PBS chief programming executive Sylvia Bugg has died; no successor named",
+   "summary": "PBS CEO Paula Kerger announced the death of Sylvia Bugg, Chief Programming Executive and General Manager for General Audience Programming. Neither the PBS statement nor coverage names an interim or permanent successor - the central PBS programming commissioner seat is unverified as of 8 Nov 2026.",
+   "url": "https://www.pbs.org/about/about-pbs/blogs/news/statement-from-pbs-president-and-ceo-paula-kerger-on-the-passing-of-sylvia-bugg/",
+   "date": "2026-07-19"
+  },
+  {
+   "title": "American Experience reimagined: multi-episode deep dives, digital-first formats",
+   "summary": "GBH/PBS reshaping American Experience around multi-episode limited series (first: Lindbergh, 2027), YouTube/TikTok and short-form; NOVA five-part Evolution for fall 2026.",
+   "url": "https://www.pbs.org/about/about-pbs/blogs/news/american-experience-reimagined-to-bring-trusted-history-storytelling-to-every-screen/",
+   "date": "2026-04-30"
+  },
+  {
+   "title": "American Experience announces new slate of limited series",
+   "summary": "Lindbergh (3 parts, May 2027), The Bureau: A Secret History of the FBI (4 parts, fall 2027), untitled Great Depression series in development. Raney Aronson-Rath leads the new GBH documentary unit (American Experience, NOVA, FRONTLINE).",
+   "url": "https://www.wgbh.org/foundation/press/press-releases/2026-07-30/american-experience-announces-new-slate-of-limited-series-documentaries-for-pbs-and-a-surge-in-digital-growth",
+   "date": "2026-07-30"
+  },
+  {
+   "title": "ITVS leadership transition: Lois Vossen interim CEO",
+   "summary": "Carrie Lozano stepped down as ITVS President and CEO; Lois Vossen (founding EP of Independent Lens) is Interim President and CEO while the board runs a national search.",
+   "url": "https://itvs.org/articles/leadership-transition/",
+   "date": "2026-08-06"
+  },
+  {
+   "title": "POV season 39 slate",
+   "summary": "POV's 39th season launched 20 Jul 2026 with The Dating Game; slate includes For Venida, For Kalief, The Gas Station Attendant, How to Build a Library, Arrest the Midwife, Remake.",
+   "url": "https://www.amdoc.org/news-events/pov-season-39-slate-launching-july-20-2026-on-pbs",
+   "date": "2026-06-08"
+  },
+  {
+   "title": "ITVS Creator Lab and Incubator Fund",
+   "summary": "Independent Lens Creator Lab (six vertical-video creators, up to $36k each) announced; Incubator Fund for early-stage nonfiction opened 2 Jan 2026. Both now closed.",
+   "url": "https://itvs.org/wp-content/uploads/2025/11/ITVS_CreatorLab_PressRelease_v2.pdf",
+   "date": "2025-11-11"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Raney Aronson-Rath",
+   "title": "Editor-in-Chief and Executive Producer, FRONTLINE; editor-in-chief overseeing GBH's documentary programming",
+   "channels": [
+    "PBS",
+    "FRONTLINE",
+    "American Experience",
+    "NOVA"
+   ],
+   "remit": "Leads FRONTLINE editorial direction (20+ documentaries a year) and heads the GBH documentary unit covering FRONTLINE, NOVA and American Experience.",
+   "recent_commissions": [
+    {
+     "title": "Lindbergh",
+     "desc": "Three-part American Experience limited series reappraising Charles Lindbergh; Ken Burns EP, Stephen Ives director; premieres May 2027.",
+     "date": "2026-07",
+     "url": "https://www.wgbh.org/foundation/press/press-releases/2026-07-30/american-experience-announces-new-slate-of-limited-series-documentaries-for-pbs-and-a-surge-in-digital-growth"
+    },
+    {
+     "title": "The Bureau: A Secret History of the FBI",
+     "desc": "Four-part American Experience series on the FBI's rise, misuse and endurance; dir. Sharon Grimberg and Sarah Colt; fall 2027.",
+     "date": "2026-07",
+     "url": "https://www.wgbh.org/foundation/press/press-releases/2026-07-30/american-experience-announces-new-slate-of-limited-series-documentaries-for-pbs-and-a-surge-in-digital-growth"
+    },
+    {
+     "title": "2000 Meters to Andriivka",
+     "desc": "FRONTLINE film by Mstyslav Chernov on Ukrainian soldiers in the trenches; Peabody-nominated 2026.",
+     "date": "2026-04",
+     "url": "https://www.pbs.org/wgbh/frontline/announcement/frontline-nominated-for-four-peabody-awards/"
+    }
+   ],
+   "pitch_route": "GBH Content Submission Form (FRONTLINE accepts proposals, completed films, works-in-progress); story tips to frontline@pbs.org FRONTLINE also publishes a tips and story-suggestions inbox (frontline@pbs.org) on its FAQ page.",
+   "pitch_url": "https://www.wgbh.org/tv-shows/submit-your-content-to-gbh",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2015 (EP; deputy EP 2012)",
+   "confidence": "high",
+   "notes": "Email is FRONTLINE's officially printed tips/suggestions inbox, not a personal address. Commissions listed are titles she oversees as head of the GBH documentary unit / FRONTLINE EP, per the releases - not individually stated as her greenlights.",
+   "sources": [
+    "https://www.pbs.org/wgbh/pages/frontline/about-us/raney-aronson-rath",
+    "https://www.wgbh.org/foundation/press/press-releases/2026-07-30/american-experience-announces-new-slate-of-limited-series-documentaries-for-pbs-and-a-surge-in-digital-growth",
+    "https://www.pbs.org/wgbh/frontline/announcement/frontline-2026-news-documentary-emmy-awards/"
+   ]
+  },
+  {
+   "name": "Julia Cort",
+   "title": "Co-Executive Producer, NOVA",
+   "channels": [
+    "PBS",
+    "NOVA"
+   ],
+   "remit": "Co-leads PBS's primetime science documentary series NOVA (with Chris Schmidt).",
+   "recent_commissions": [],
+   "pitch_route": "GBH Content Submission Form (NOVA accepts projects at any stage; mainly 52-min docs, also features and multipart series)",
+   "pitch_url": "https://www.wgbh.org/tv-shows/submit-your-content-to-gbh",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2019-05",
+   "confidence": "high",
+   "notes": "NOVA's 2026 slate includes Return to the Moon (Apr 2026), Rain Bombs (Apr 2026) and five-part Evolution (fall 2026), but no release opened credits her personally with commissioning them. nova@wgbh.org is a general site contact, not a submissions inbox, so omitted.",
+   "sources": [
+    "https://www.pbs.org/wgbh/nova/credits",
+    "https://azpbs.org/horizon/2026/02/upcoming-nova-programming-on-arizona-pbs/",
+    "https://wgbh.org/foundation/press/press-releases/2019-05-22/wgbh-names-new-leadership-team-for-science-series-nova"
+   ]
+  },
+  {
+   "name": "Chris Schmidt",
+   "title": "Co-Executive Producer, NOVA",
+   "channels": [
+    "PBS",
+    "NOVA"
+   ],
+   "remit": "Co-leads NOVA (with Julia Cort).",
+   "recent_commissions": [],
+   "pitch_route": "GBH Content Submission Form",
+   "pitch_url": "https://www.wgbh.org/tv-shows/submit-your-content-to-gbh",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2019-05",
+   "confidence": "high",
+   "notes": "See Julia Cort note.",
+   "sources": [
+    "https://www.pbs.org/wgbh/nova/credits",
+    "https://azpbs.org/horizon/2026/02/upcoming-nova-programming-on-arizona-pbs/"
+   ]
+  },
+  {
+   "name": "Erika Dilday",
+   "title": "Executive Director, American Documentary; Executive Producer, POV and America ReFramed",
+   "channels": [
+    "PBS",
+    "POV",
+    "America ReFramed"
+   ],
+   "remit": "Runs American Documentary and executive produces its PBS strands POV and America ReFramed.",
+   "recent_commissions": [
+    {
+     "title": "The Dating Game",
+     "desc": "Violet Du Feng doc following three working-class bachelors at a seven-day dating camp in China; opened POV season 39.",
+     "date": "2026-07",
+     "url": "https://www.amdoc.org/news-events/pov-season-39-slate-launching-july-20-2026-on-pbs"
+    },
+    {
+     "title": "Arrest the Midwife",
+     "desc": "Elaine Epstein doc on Amish and Mennonite women turned activists after midwives' arrests in rural New York; co-produced with ITVS.",
+     "date": "2026-06",
+     "url": "https://www.amdoc.org/news-events/pov-season-39-slate-launching-july-20-2026-on-pbs"
+    }
+   ],
+   "pitch_route": "POV Call for Entries (FilmFreeway)",
+   "pitch_url": "https://filmfreeway.com/POVCallforEntries",
+   "published_email": "cfe@pov.org",
+   "email_source_url": "https://filmfreeway.com/POVCallforEntries",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Commissions = POV season 39 titles she oversees as EP (release announces slate, does not say who selected each film). cfe@pov.org is POV's submissions-questions inbox printed on POV's own official FilmFreeway call listing (linked from amdoc.org/filmmaker-opportunities), not on amdoc.org itself - flag if strict org-domain rule applies.",
+   "sources": [
+    "https://www.amdoc.org/news-events/pov-season-39-slate-launching-july-20-2026-on-pbs",
+    "https://www.amdoc.org/about"
+   ]
+  },
+  {
+   "name": "Chris White",
+   "title": "Executive Producer, POV (also listed as Vice President, Programming & Production, American Documentary)",
+   "channels": [
+    "PBS",
+    "POV",
+    "POV Shorts",
+    "America ReFramed"
+   ],
+   "remit": "Programming and production for American Documentary's PBS strands.",
+   "recent_commissions": [
+    {
+     "title": "For Venida, For Kalief",
+     "desc": "Sisa Bueno doc on Venida Browder's poetry and activism after her son Kalief Browder's incarceration; POV season 39, with Black Public Media and ITVS.",
+     "date": "2026-06",
+     "url": "https://www.amdoc.org/news-events/pov-season-39-slate-launching-july-20-2026-on-pbs"
+    }
+   ],
+   "pitch_route": "POV Call for Entries (FilmFreeway)",
+   "pitch_url": "https://filmfreeway.com/POVCallforEntries",
+   "published_email": "cfe@pov.org",
+   "email_source_url": "https://filmfreeway.com/POVCallforEntries",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "June 2026 release titles him 'Executive Producer, POV'; the VP Programming & Production title comes from amdoc.org/about, whose footer reads 2025. Same email caveat as Erika Dilday.",
+   "sources": [
+    "https://www.amdoc.org/news-events/pov-season-39-slate-launching-july-20-2026-on-pbs",
+    "https://www.amdoc.org/about"
+   ]
+  },
+  {
+   "name": "Opal H. Bennett",
+   "title": "Executive Producer, POV Shorts; Senior Producer, POV",
+   "channels": [
+    "PBS",
+    "POV Shorts",
+    "POV"
+   ],
+   "remit": "Short-form documentary strand POV Shorts.",
+   "recent_commissions": [],
+   "pitch_route": "POV Call for Entries (FilmFreeway) - 'Short' category, 40 min or less",
+   "pitch_url": "https://filmfreeway.com/POVCallforEntries",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2023-07 (promoted)",
+   "confidence": "check",
+   "notes": "Only evidence is amdoc.org/about (footer 2025, funding info dated April 2025); she is not named in the June 2026 season release. Verify still in post.",
+   "sources": [
+    "https://www.amdoc.org/about"
+   ]
+  },
+  {
+   "name": "Lois Vossen",
+   "title": "Interim President and CEO, ITVS (founding executive producer, Independent Lens)",
+   "channels": [
+    "PBS",
+    "Independent Lens",
+    "ITVS"
+   ],
+   "remit": "Leads ITVS, which funds and co-produces independent documentaries for PBS including the Independent Lens strand, while the board searches for a permanent CEO.",
+   "recent_commissions": [],
+   "pitch_route": "ITVS funds (Open Call, Incubator Fund, Creator Lab) - all closed as of 8 Nov 2026; Series & Special Projects invitation-only",
+   "pitch_url": "https://itvs.org/get-funded/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2026-08-06 (interim)",
+   "confidence": "high",
+   "notes": "Interim role - likely to change when a permanent CEO is named. Only emails on the ITVS release are press contacts (excluded).",
+   "sources": [
+    "https://itvs.org/articles/leadership-transition/",
+    "https://itvs.org/independent-lens/"
+   ]
+  },
+  {
+   "name": "Royd Chung",
+   "title": "VP of Production, ITVS (listed as Executive Producer for Independent Lens)",
+   "channels": [
+    "PBS",
+    "Independent Lens"
+   ],
+   "remit": "Production lead at ITVS; listed among Independent Lens executive producers.",
+   "recent_commissions": [],
+   "pitch_route": "ITVS funds - currently closed",
+   "pitch_url": "https://itvs.org/get-funded/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Source is the ITVS Independent Lens page (modified 2026-09-09). No appointment date verified today.",
+   "sources": [
+    "https://itvs.org/independent-lens/"
+   ]
+  }
+ ]
+}

@@ -32,6 +32,7 @@
   function score(idea){
     var it=topics(idea), iw=words(idea), res=[];
     D.forEach(function(c){
+      if(window.QM_REGION&&window.QM_REGION!=='all'&&c.r!==window.QM_REGION) return;
       var s=0, why=[], best=null, bestS=0;
       Object.keys(it).forEach(function(k){ if(c._remitT[k]){ s+=4; why.push('remit covers '+LABEL[k]); } });
       c._comm.forEach(function(m){
@@ -55,7 +56,7 @@
     if(m.best&&m.bestS>=3) reasons.push('Commissioned <a href="'+esc(m.best.url)+'" target="_blank" rel="noopener">'+esc(m.best.title)+'</a>'+(m.best.date?' ('+esc(m.best.date)+')':''));
     m.why.forEach(function(w){reasons.push(esc(w.charAt(0).toUpperCase()+w.slice(1)));});
     var pitch = c.pu ? '<a href="'+esc(c.pu)+'" target="_blank" rel="noopener">'+esc(c.pr||'Official pitch route')+'</a>' : esc(c.pr||'');
-    return '<div class="qm-card"><div class="qm-b">'+esc(c.b)+'</div><h4>'+esc(c.n)+'</h4><p class="qm-role">'+esc(c.title)+'</p>'+
+    return '<div class="qm-card"><div class="qm-b">'+esc(c.b)+(c.r&&c.b.indexOf('(')<0?' &middot; '+esc(c.r):'')+'</div><h4>'+esc(c.n)+'</h4><p class="qm-role">'+esc(c.title)+'</p>'+
       (reasons.length?'<ul>'+reasons.map(function(r){return '<li>'+r+'</li>';}).join('')+'</ul>':'')+
       (pitch?'<p class="qm-pitch"><strong>How to pitch:</strong> '+pitch+'</p>':'')+'</div>';
   }

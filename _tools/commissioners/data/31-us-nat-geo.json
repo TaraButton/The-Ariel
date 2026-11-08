@@ -1,0 +1,163 @@
+{
+ "broadcaster": "National Geographic (US)",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [
+  {
+   "genre": "Documentary films and factual series",
+   "route": "Disney Terms of Use s.7.A (covers Disney, ABC, ESPN, FX, National Geographic and other Disney brands): 'Our long-standing company policy does not allow us to accept or consider unsolicited creative ideas.' Pitch via agent/attorney or an established production company with an existing relationship.",
+   "url": "https://disneytermsofuse.com/english/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Nat Geo Documentary Films acquiring festival auteur docs for theatrical then Disney+",
+   "summary": "Acquired worldwide rights to The Tale of Silyan (Venice) and Werner Herzog's Ghost Elephants: festival -> theatrical -> Disney+/Hulu path.",
+   "url": "https://mortystv.com/blog/2025/09/22/national-geographic-documentary-films-acquires-venice-film-festival-award-winner-the-tale-of-silyan/",
+   "date": "2025-09"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Carolyn Bernstein",
+   "title": "Executive Vice President, Documentary Films, National Geographic",
+   "channels": [
+    "National Geographic",
+    "Disney+",
+    "Hulu"
+   ],
+   "remit": "Heads National Geographic Documentary Films (feature docs, acquisitions and originals).",
+   "recent_commissions": [
+    {
+     "title": "Ghost Elephants",
+     "desc": "Werner Herzog feature doc on the search for Angola's 'ghost elephants'; Bernstein credited EP; acquired by Nat Geo Doc Films.",
+     "date": "2026-02",
+     "url": "https://www.detpress.com/natgeo/pressrelease/national-geographic-documentary-films-and-abramorama-unveil-trailer-coast-to-coast-theatrical-simulcast-and-disney-and-hulu-streaming-date-for-werner-herzogs-ghost-elephants/"
+    },
+    {
+     "title": "The Tale of Silyan",
+     "desc": "Tamara Kotevska's Venice-winning doc on a Macedonian farmer and a stork; worldwide rights acquired, Bernstein quoted.",
+     "date": "2025-09",
+     "url": "https://mortystv.com/blog/2025/09/22/national-geographic-documentary-films-acquires-venice-film-festival-award-winner-the-tale-of-silyan/"
+    }
+   ],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "",
+   "sources": [
+    "https://www.detpress.com/natgeo/pressrelease/national-geographic-documentary-films-and-abramorama-unveil-trailer-coast-to-coast-theatrical-simulcast-and-disney-and-hulu-streaming-date-for-werner-herzogs-ghost-elephants/",
+    "https://www.showbizjunkies.com/movies/ghost-elephants-werner-herzog/"
+   ]
+  },
+  {
+   "name": "Tim Horsburgh",
+   "title": "Vice President, Documentary Films, National Geographic",
+   "channels": [
+    "National Geographic",
+    "Disney+",
+    "Hulu"
+   ],
+   "remit": "Documentary Films team under Carolyn Bernstein.",
+   "recent_commissions": [
+    {
+     "title": "Ghost Elephants",
+     "desc": "Werner Herzog feature doc; Horsburgh credited as executive producer.",
+     "date": "2026-02",
+     "url": "https://www.detpress.com/natgeo/pressrelease/national-geographic-documentary-films-and-abramorama-unveil-trailer-coast-to-coast-theatrical-simulcast-and-disney-and-hulu-streaming-date-for-werner-herzogs-ghost-elephants/"
+    }
+   ],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "EP credit, not an explicit commissioning statement.",
+   "sources": [
+    "https://www.detpress.com/natgeo/pressrelease/national-geographic-documentary-films-and-abramorama-unveil-trailer-coast-to-coast-theatrical-simulcast-and-disney-and-hulu-streaming-date-for-werner-herzogs-ghost-elephants/"
+   ]
+  },
+  {
+   "name": "Tom McDonald",
+   "title": "Executive Vice President, Content, National Geographic",
+   "channels": [
+    "National Geographic",
+    "Nat Geo WILD",
+    "Disney+",
+    "Hulu"
+   ],
+   "remit": "Oversees development and production of all global unscripted series and specials for Nat Geo across Disney+ and linear channels.",
+   "recent_commissions": [
+    {
+     "title": "Best of the World with Antoni Porowski",
+     "desc": "Four-part travel docuseries (Twofour) greenlit by Nat Geo, based on its Best of the World list; McDonald quoted.",
+     "date": "2025-12",
+     "url": "https://www.broadwayworld.com/bwwtv/article/Antoni-Porowski-to-Lead-New-BEST-OF-THE-WORLD-Travel-Docuseries-20251210"
+    }
+   ],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2022-03 (as EVP Global Factual & Unscripted)",
+   "confidence": "high",
+   "notes": "Press bio (detpress) has no title line; Dec 2025 release gives 'EVP of Content'. UK-born, ex-BBC Studios; Grierson Trust chair (Aug 2025).",
+   "sources": [
+    "https://www.broadwayworld.com/bwwtv/article/Antoni-Porowski-to-Lead-New-BEST-OF-THE-WORLD-Travel-Docuseries-20251210",
+    "https://www.detpress.com/natgeo/bios/tom-mcdonald/"
+   ]
+  },
+  {
+   "name": "Janet Han Vissering",
+   "title": "Senior Vice President, Development and Production, National Geographic Content",
+   "channels": [
+    "National Geographic",
+    "Disney+"
+   ],
+   "remit": "Oversees natural history and animal slate; commissions programming across platforms worldwide; manages development team and works with indie producers.",
+   "recent_commissions": [],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Press bio live (site footer 2026) but undated; projects listed (Secrets of the Whales/Elephants, Queens, A Real Bug's Life) not dated recent.",
+   "sources": [
+    "https://www.detpress.com/natgeo/bios/janet-han-vissering/"
+   ]
+  },
+  {
+   "name": "Charlie Parsons",
+   "title": "Senior Vice President, Development, National Geographic",
+   "channels": [
+    "National Geographic",
+    "Disney+",
+    "Hulu"
+   ],
+   "remit": "Unscripted development (credited on Best of the World).",
+   "recent_commissions": [
+    {
+     "title": "Best of the World with Antoni Porowski",
+     "desc": "Four-part travel docuseries greenlit Dec 2025; Parsons credited.",
+     "date": "2025-12",
+     "url": "https://www.broadwayworld.com/bwwtv/article/Antoni-Porowski-to-Lead-New-BEST-OF-THE-WORLD-Travel-Docuseries-20251210"
+    }
+   ],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "high",
+   "notes": "Single source; credit only.",
+   "sources": [
+    "https://www.broadwayworld.com/bwwtv/article/Antoni-Porowski-to-Lead-New-BEST-OF-THE-WORLD-Travel-Docuseries-20251210"
+   ]
+  }
+ ]
+}

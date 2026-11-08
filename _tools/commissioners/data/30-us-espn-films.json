@@ -1,0 +1,71 @@
+{
+ "broadcaster": "ESPN Films",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [
+  {
+   "genre": "Sports documentary (ESPN Films / 30 for 30)",
+   "route": "Disney Terms of Use s.7.A (covers Disney, ABC, ESPN, FX, National Geographic and other Disney brands): 'Our long-standing company policy does not allow us to accept or consider unsolicited creative ideas.' Pitch via agent/attorney or an established production company with an existing relationship.",
+   "url": "https://disneytermsofuse.com/english/"
+  }
+ ],
+ "briefs": [],
+ "commissioners": [
+  {
+   "name": "Marsha Cooke",
+   "title": "Vice President & Executive Producer, ESPN Originals and 30 for 30",
+   "channels": [
+    "ESPN",
+    "ESPN App",
+    "ESPN Films"
+   ],
+   "remit": "Leads ESPN Films' 30 for 30 documentary unit and ESPN Originals.",
+   "recent_commissions": [
+    {
+     "title": "Give Me The Ball!",
+     "desc": "30 for 30 on Billie Jean King, dir. Liz Garbus & Elizabeth Wolff (Sundance 2026); Cooke quoted in release.",
+     "date": "2026-11",
+     "url": "https://espnpressroom.com/press-release/espn-films-award-winning-documentary-give-me-the-ball-to-premiere-november-22-on-espn/"
+    },
+    {
+     "title": "Stolen Gold",
+     "desc": "30 for 30 on Spain's 2000 Paralympic basketball fraud (UnTypical); Cooke credited as ESPN executive producer.",
+     "date": "2024-09",
+     "url": "http://espnpressroom.com/press-release/espn-films-latest-30-for-30-documentary-stolen-gold-premieres-september-17-at-9pm-et-on-espn-and-espn/"
+    }
+   ],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2021-11",
+   "confidence": "high",
+   "notes": "Title in 3 Sep 2026 release is 'ESPN Originals and 30 for 30' (earlier 'ESPN Films and 30 for 30'). Credits are ESPN EP credits, not explicit greenlights. Press releases list only press-office emails (not hers).",
+   "sources": [
+    "https://espnpressroom.com/press-release/espn-films-award-winning-documentary-give-me-the-ball-to-premiere-november-22-on-espn/",
+    "https://www.adweek.com/tvnewser/former-cbs-news-exec-marsha-cooke-joins-espn-as-vp-and-exec-producer-of-espn-films/"
+   ]
+  },
+  {
+   "name": "Brian Lockhart",
+   "title": "Senior Vice President, Original Content, ESPN",
+   "channels": [
+    "ESPN",
+    "ESPN+",
+    "ESPN Films"
+   ],
+   "remit": "Oversees strategy and development for ESPN original programming incl. ESPN Films, E60, ESPN+ original series; also Business Affairs and Features.",
+   "recent_commissions": [],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "ESPN Press Room bio is live but undated; no dated 2025-26 source found confirming the role.",
+   "sources": [
+    "http://espnpressroom.com/bio/vice-president-and-executive-producer-original-content-espn/"
+   ]
+  }
+ ]
+}

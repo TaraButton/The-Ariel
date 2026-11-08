@@ -141,6 +141,7 @@ function doGet(e) {
     if (gg) return json_(gg);
     if (action === 'confirm') return page_(confirm_(p.t));
     if (action === 'unsubscribe') return page_(unsubscribe_(p.t));
+    if (action === 'wbw_unsub') return page_(wbwUnsub_(p.t));
     if (action === 'resubscribe') return page_(resubscribe_(p.t));
     if (action === 'prefs') return page_(prefsPage_(p.t));
     if (action === 'saveprefs') return page_(savePrefs_(p.t, p.s));
@@ -403,6 +404,7 @@ function sendDueEditions() {
     var start = Date.now();
     try { if (!SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Config')) setupRights_(); else ensureTriggers_(); } catch (err) { log_('error', 'setupRights: ' + err); }
     try { pullLatestEdition(); } catch (err) { log_('error', 'pull: ' + err); }
+    try { wbwTick(); } catch (err) { log_('error', 'wbw: ' + err); }
     var esh = sheet_('Editions');
     var now = new Date();
     var seen = {};  // one live row per edition: later copies of a sent or already-queued edition are retired

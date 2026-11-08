@@ -1,0 +1,88 @@
+{
+ "broadcaster": "Hulu",
+ "region": "US",
+ "checked": "2026-11-08",
+ "pitch_routes": [
+  {
+   "genre": "Unscripted / documentary",
+   "route": "Disney Terms of Use s.7.A (covers Disney, ABC, ESPN, FX, National Geographic and other Disney brands): 'Our long-standing company policy does not allow us to accept or consider unsolicited creative ideas.' Pitch via agent/attorney or an established production company with an existing relationship.",
+   "url": "https://disneytermsofuse.com/english/"
+  }
+ ],
+ "briefs": [
+  {
+   "title": "Hulu docs are 'entertainment forward' - pop-culture entry points, 7-10 original docs a year",
+   "summary": "Belisa Balaban (then SVP unscripted series & documentaries, Hulu Originals) said Hulu docs lead with well-known pop-culture subjects as an entry point to untold stories, aiming for roughly 7-10 original documentaries a year.",
+   "url": "https://whatsondisneyplus.com/?p=217842",
+   "date": "2024-04"
+  },
+  {
+   "title": "Hulu first-look deal with Switchboard Magazine",
+   "summary": "Hulu took first-look rights to develop documentary features, docuseries and unscripted projects from Switchboard's character-driven nonfiction journalism - signals appetite for reporting-led doc IP.",
+   "url": "https://www.laughingplace.com/entertainment/hulu-switchboard-magazine-first-look/",
+   "date": "2026-05"
+  }
+ ],
+ "commissioners": [
+  {
+   "name": "Rob Mills",
+   "title": "EVP, Unscripted & Alternative Entertainment, Walt Disney Television",
+   "channels": [
+    "Hulu Originals",
+    "ABC"
+   ],
+   "remit": "Leads Walt Disney Television Alternative; oversees development and production of alternative programming, specials and late-night for ABC Entertainment and Hulu Originals (unscripted remit for Hulu since 2021). Reality/entertainment-led rather than documentary.",
+   "recent_commissions": [],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2021 (expanded to Hulu Originals unscripted)",
+   "confidence": "high",
+   "notes": "Realscreen Summit 2026 bio lists The Secret Lives of Mormon Wives and The Kardashians among projects but gives no commission dates, so none listed as recent commissions.",
+   "sources": [
+    "https://summit.realscreen.com/2026/speakers/1003535/"
+   ]
+  },
+  {
+   "name": "Jilly Pearce",
+   "title": "SVP, Unscripted Programming (ABC and Hulu), Walt Disney Television",
+   "channels": [
+    "Hulu Originals",
+    "ABC"
+   ],
+   "remit": "Development and current unscripted programming across ABC and Hulu; reports to Rob Mills. Current slate cited includes Hulu's The Secret Lives of Mormon Wives and Devil in the Family: The Fall of Ruby Franke.",
+   "recent_commissions": [],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "2025-06",
+   "confidence": "check",
+   "notes": "Appointment reported 23 Jun 2025 (over 12 months ago); no 2026 confirmation found. UK ex-Objective Media/OMG America and C4.",
+   "sources": [
+    "https://www.laughingplace.com/disney-business/jilly-pearce-joins-abc-and-hulus-unscripted-tv-division",
+    "https://www.broadcastnow.co.uk/broadcast-international/c4-and-omg-america-alum-joins-disney-as-commissioner/5206327.article"
+   ]
+  },
+  {
+   "name": "Belisa Balaban",
+   "title": "SVP, Unscripted Series and Documentaries, Hulu Originals",
+   "channels": [
+    "Hulu Originals"
+   ],
+   "remit": "Hulu original documentaries and unscripted series.",
+   "recent_commissions": [],
+   "pitch_route": "No unsolicited ideas accepted (Disney company policy); approach via agent/attorney or established production company.",
+   "pitch_url": "https://disneytermsofuse.com/english/",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "check",
+   "notes": "Latest evidence is an April 2024 interview; no 2025-26 source found confirming she still holds the role. Hulu documentary senior manager Kate Bustamante left in June 2026 (localpage.uk report), so the doc team may have changed - verify before use.",
+   "sources": [
+    "https://whatsondisneyplus.com/?p=217842"
+   ]
+  }
+ ]
+}
