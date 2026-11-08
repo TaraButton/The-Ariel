@@ -118,12 +118,19 @@ After step 7 (the edition is published):
    screen_contact, screen_email, screen_source_url, contact_page, agency_type, confidence, notes) and
    push it with the edition. Then `op: set_rights` the agency/agent fields into the Rights tab
    (status stays `unknown`).
-9. **Agent emails (Wednesday, not Sunday).** The weekly run only prepares; the rights run on Wednesday
-   morning sends, so three days of real click data exist. One email per agency covering all its titles
-   in the edition; skip agencies emailed in the last 14 days unless they have a new title (then mention
-   it briefly in a new thread). Corporates included (Tara's decision 2026-11-02): address their screen
-   or film/TV desk when one is listed. Queue with `op: queue_email` (kind `agent_ask`), 30-minute hold.
-   Content and rules: see RIGHTS_RUN.md "Hard rules" and the template in
+9. **Agent emails (Monday morning, Tara 8 Nov 2026: ask as soon as the edition is out).** At the end of the
+   Sunday run, queue the agent asks so they send Monday from 10:00 London (`op: queue_email`, kind
+   `agent_ask`, `hold_minutes` = minutes from now to Monday 10:00). First check `reviews/agents/lists.json`:
+   a book already in that agency's guide is answered from the guide (`set_rights`), not asked; if the
+   agency has a guide but the book is not in it, ask only "Is <Book> on your current rights guide?".
+   One email per agency covering all its remaining titles in the edition; skip agencies emailed in the
+   last 14 days unless they have a new title (then mention it briefly in a new thread). Corporates
+   included (Tara's decision 2026-11-02): address their screen or film/TV desk when one is listed.
+   Opening line: the "for the producers we work with" form (no click data exists yet). Set `asked_at`
+   via `set_rights` for every book asked. Respect the Outbox cap of 40 a day, shared with anything else
+   queued that day (check the Outbox): overflow goes to Tuesday 10:00. Producer requests that arrive
+   later are handled by the weekday rights run as a short reply in the same thread ("Two of our
+   producers have since asked about <Book>"). Content and rules: RIGHTS_RUN.md "Hard rules" and
    `_tools/brr/agent_email_template.md`.
 
 ## Fiction genre cross-post (added 5 Nov 2026)
