@@ -250,10 +250,9 @@
    "source_url": "https://www.rcwlitagency.com/film-tv"
   },
   "rights_guide": {
-   "url": "",
-   "kind": "none found",
-   "date": "",
-   "note": "Film & TV page has no guide; /rights page failed to load."
+   "url": "https://rcwlitagency.com/assets/site/catalogues/RCW-Catalogue-London-2026_compressed.pdf?v=1772646531",
+   "kind": "general incl. film/TV",
+   "date": "London 2026 (per-title film agent listed)"
   },
   "book_ids": [
    "a-history-of-the-novel-in-britain-philip-hensher",
@@ -1416,9 +1415,9 @@
    "source_url": "https://www.tridentmediagroup.com/authors/kenan-orhan/"
   },
   "rights_guide": {
-   "url": "",
-   "kind": "not checked (agent page fetch timed out on permission; no further search budget)",
-   "date": "2026-11-08"
+   "url": "https://www.tridentmediagroup.com/wp-content/uploads/2024/03/London-Rights-Guide-2024-FINAL-full-quality.pdf",
+   "kind": "translation only",
+   "date": "London 2024 (stale)"
   },
   "book_ids": [
    "the-renovation-kenan-orhan"

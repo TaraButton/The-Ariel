@@ -102,6 +102,9 @@ After step 7 (the edition is published):
       ("acquired ... rights from X at Y").
    f. Publisher author pages or Wikipedia naming the agent.
    g. No agent findable: the UK publisher's rights/contracts contact, with agency_type `publisher_fallback`.
+      Check `reviews/agents/rights_sources.json` first (publishers' and agencies' public rights guides and
+      media-rights desks, each verified on the live page 8 Nov 2026): prefer a publisher's media/film rights
+      desk over its translation rights team. Re-check an address there if it is older than 3 months.
    Prefer a named film/TV/screen/dramatic-rights agent or department, then the author's named agent, then
    the agency's general rights or enquiries address. An address must be printed on the live page you cite
    (or come from Gmail as in b). Never guess an address from a pattern.
