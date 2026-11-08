@@ -1738,5 +1738,31 @@
    "a-very-cold-winter-fausta-cialente-translated-by-julia-nelsen"
   ],
   "guide_ask_sent": ""
+ },
+ {
+  "agency": "Maven Literary",
+  "aliases": [
+   "Maven Literary Agency",
+   "Maven"
+  ],
+  "domain": "mavenliterary.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "info@mavenliterary.com",
+   "source_url": "https://www.mavenliterary.com/contact"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "a-life-in-fragments-marina-litvinenko"
+  ],
+  "guide_ask_sent": ""
  }
 ]
