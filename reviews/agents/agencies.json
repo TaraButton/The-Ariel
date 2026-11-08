@@ -111,9 +111,11 @@
    "date": ""
   },
   "book_ids": [
+   "alone-with-a-book-on-reading-writing-and-looking-tessa-hadley",
+   "mapping-britain-will-millard",
    "michael-gambon-the-authorised-biography",
    "redwood-ben-macintyre",
-   "mapping-britain-will-millard"
+   "rhapsody-a-manifesto-alice-oswald"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "Books department cites 'acclaimed biography and specialist non-fiction' and Baillie Gifford Prize winners."
@@ -167,6 +169,8 @@
   },
   "book_ids": [
    "hh-helenio-herrera-richard-fitzpatrick",
+   "ply-hernan-diaz",
+   "rhapsody-a-manifesto-alice-oswald",
    "the-family-man-blood-and-betrayal-in-the-house-of-murdaugh-james-lasdun",
    "wine-a-global-history-kathleen-burk"
   ],
@@ -251,10 +255,12 @@
    "note": "Film & TV page has no guide; /rights page failed to load."
   },
   "book_ids": [
-   "this-cursed-beautiful-land-evan-gershkovich",
+   "a-history-of-the-novel-in-britain-philip-hensher",
+   "american-hagwon-min-jin-lee",
    "empire-at-the-edge-of-the-world-giles-milton",
    "europe-in-7-chapters-a-concise-history-of-the-european-union-timothy-garton-ash-",
-   "a-history-of-the-novel-in-britain-philip-hensher"
+   "this-cursed-beautiful-land-evan-gershkovich",
+   "yakuza-a-400-year-history-of-the-japanese-underworld-andrew-rankin"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "Film & TV page says it partners with screen agencies (The Agency, M42, United Agents, CAA etc.); site does not summarise non-fiction strengths."
@@ -307,8 +313,9 @@
    "note": "Foreign-rights newsletter and book-fair guides sent on request to info@; nothing downloadable; no film/TV guide. Contact page shows info as 'info [at] inkwellmanagement [dot] com'."
   },
   "book_ids": [
+   "the-bookshop-andrew-pettegree",
    "the-last-invasion-of-england-arthur-der-weduwen",
-   "the-bookshop-andrew-pettegree"
+   "the-season-helen-garner"
   ],
   "guide_ask_sent": ""
  },
@@ -335,6 +342,7 @@
    "date": "London Book Fair 2026 frontlist guide; incidental screen mentions only."
   },
   "book_ids": [
+   "attention-seeking-behaviour-aea-varfis-van-warmelo",
    "the-age-of-confiscation-nicholas-mulder"
   ],
   "guide_ask_sent": "",
@@ -392,9 +400,14 @@
    "date": ""
   },
   "book_ids": [
-   "war-is-interested-in-you-gideon-rachman",
+   "are-you-with-me-now-hanif-kureishi",
    "borrowed-land-a-highland-story-kapka-kassabova",
-   "great-powers-jan-r-ger"
+   "great-powers-jan-r-ger",
+   "letters-1944-1959-albert-camus-and-maria-casares",
+   "the-garden-our-4-000-year-quest-for-paradise-jonathan-bate",
+   "the-hill-harriet-clark",
+   "true-north-paul-theroux",
+   "war-is-interested-in-you-gideon-rachman"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "All emails Cloudflare-obfuscated; no film/TV contact on site."
@@ -498,7 +511,9 @@
   },
   "nonfiction_note": "Frontlist guide has a non-fiction section; site asks film/TV enquiries go to Sissons and Gurtovoy jointly.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "alexander-god-king-man-edmund-richardson"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -524,7 +539,9 @@
   },
   "nonfiction_note": "UNVERIFIED: site is a JavaScript app; WebFetch saw only unrendered templates, no emails, no agent or rights pages. Needs a real browser check.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "peck-peck-bonnie-garmus"
+  ],
   "guide_ask_sent": "2026-11-04"
  },
  {
@@ -549,7 +566,10 @@
   },
   "nonfiction_note": "FBF 2026 guide contents include Politics, History, Science, Biography & Memoir sections.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "out-of-chaos-a-global-history-of-the-nation-state-jon-wilson",
+   "songs-from-the-firefront-tim-winton"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -574,7 +594,9 @@
   },
   "nonfiction_note": "Guide contents list Narrative Non-Fiction, Memoir & Biography, History & Politics sections; no film/TV contact on site.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "desperado-the-untamed-life-of-clare-sheridan-elisabeth-kehoe"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -599,7 +621,10 @@
   },
   "nonfiction_note": "Oxford agency; featured authors suggest history, science, travel (e.g. Lucy Worsley, Peter Frankopan) - inferred from homepage, not stated.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "how-to-begin-edmund-de-waal",
+   "lessons-in-harmony-jonathan-coe"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -670,7 +695,9 @@
   },
   "nonfiction_note": "Tightly focused list spanning non-fiction, fiction, cookery, children's (about page).",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "solace-in-winter-mary-lawson"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -867,7 +894,9 @@
   },
   "nonfiction_note": "Fiction and non-fiction; featured history, science, economics, music titles (inferred from homepage).",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "illuminati-the-history-of-a-conspiracy-theory-michael-taylor"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -1260,7 +1289,10 @@
   },
   "nonfiction_note": "Added: Patrick Walsh's agency, strong in narrative non-fiction (site itself does not state genre). NOTE PEW prints .com for Emily, others print .co.uk.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "blood-on-the-thames-murder-money-and-the-making-of-the-modern-detective-thomas-m",
+   "shakespeare-at-thirty-rory-loughnane"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -1361,6 +1393,268 @@
   "nonfiction_note": "Added: Scotland's leading agency; history, memoir, narrative non-fiction (e.g. Night Train to Odesa).",
   "checked": "2026-11-04",
   "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Trident Media Group",
+  "aliases": [
+   "Trident Media",
+   "Trident"
+  ],
+  "domain": "tridentmediagroup.com",
+  "film_tv_contact": {
+   "name": "Book-to-Film/TV service (no individual named)",
+   "email": "info@tridentmediagroup.com",
+   "source_url": "https://www.tridentmediagroup.com/authors/kenan-orhan/"
+  },
+  "general_email": {
+   "email": "info@tridentmediagroup.com",
+   "source_url": "https://www.tridentmediagroup.com/authors/kenan-orhan/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked (agent page fetch timed out on permission; no further search budget)",
+   "date": "2026-11-08"
+  },
+  "book_ids": [
+   "the-renovation-kenan-orhan"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Janklow & Nesbit Associates (New York)",
+  "aliases": [
+   "Janklow & Nesbit",
+   "Janklow & Nesbit (US)"
+  ],
+  "domain": "janklowandnesbit.com",
+  "film_tv_contact": {
+   "name": "Film & Television department (no individual named)",
+   "email": "filmtvrights@janklow.com",
+   "source_url": "https://janklowandnesbit.com/people/filmandtv"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": "https://janklowandnesbit.com/contact"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found (film/TV page has only the inbox, no list)",
+   "date": "2026-11-08"
+  },
+  "book_ids": [
+   "who-gets-to-have-kids-creating-a-family-in-an-age-of-uncertainty-anna-louie-suss"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "CAA (Creative Artists Agency)",
+  "aliases": [
+   "CAA",
+   "Creative Artists Agency",
+   "Creative Artists Agency (CAA) London"
+  ],
+  "domain": "caa.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked (web-search budget exhausted before the CAA site was looked at)",
+   "date": ""
+  },
+  "book_ids": [
+   "lords-of-serendipity-randy-boyagoda",
+   "the-vivisectors-missouri-williams"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jonathan Conway Literary Agency",
+  "aliases": [
+   "Jonathan Conway Literary Agency Ltd"
+  ],
+  "domain": "jonathan-conway.com",
+  "film_tv_contact": {
+   "name": "Jonathan Conway (no separate film/TV contact listed)",
+   "email": "jonathan@jonathan-conway.com",
+   "source_url": "https://jonathan-conway.com/contact"
+  },
+  "general_email": {
+   "email": "jonathan@jonathan-conway.com",
+   "source_url": "https://jonathan-conway.com/contact"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found (homepage and author page checked; only per-title publisher rights listed)",
+   "date": "2026-11-08"
+  },
+  "book_ids": [
+   "trade-world-the-ties-that-bound-our-past-and-could-unravel-our-future-ed-conway"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jane Novak Literary Agency",
+  "aliases": [
+   "JNLA",
+   "Jane Novak"
+  ],
+  "domain": "janenovak.com",
+  "film_tv_contact": {
+   "name": "No film/TV contact named; Jane Novak (Primary Agent)",
+   "email": "jane@janenovak.com",
+   "source_url": "https://lorafountainagency.com/wp-content/uploads/2026/03/jnla-fiction-lbf-2026.pdf"
+  },
+  "general_email": {
+   "email": "alice@janenovak.com",
+   "source_url": "https://lorafountainagency.com/wp-content/uploads/2026/03/jnla-fiction-lbf-2026.pdf"
+  },
+  "rights_guide": {
+   "url": "https://lorafountainagency.com/wp-content/uploads/2026/03/jnla-fiction-lbf-2026.pdf",
+   "kind": "translation only",
+   "date": "London Book Fair 2026 (also FBF 2025 catalogue at https://lorafountainagency.com/wp-content/uploads/2025/09/jnla-fbf-2025-translation-rights-catalogue-fiction.pdf); janenovak.com itself could not be fetched (permission timed out)"
+  },
+  "book_ids": [
+   "the-season-helen-garner"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Salomonsson Agency",
+  "aliases": [
+   "Salomonsson"
+  ],
+  "domain": "salomonssonagency.se",
+  "film_tv_contact": {
+   "name": "No film/TV agent named; agency general address",
+   "email": "info@salomonssonagency.com",
+   "source_url": "https://www.salomonssonagency.se/books/nadeskudd/"
+  },
+  "general_email": {
+   "email": "info@salomonssonagency.com",
+   "source_url": "https://www.salomonssonagency.se/books/nadeskudd/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found (book pages show per-title film rights status)",
+   "date": ""
+  },
+  "book_ids": [
+   "kill-shot-jo-nesbo"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "42 (42 Management & Production)",
+  "aliases": [
+   "42",
+   "42MP",
+   "42 Management and Production",
+   "M42"
+  ],
+  "domain": "42mp.com",
+  "film_tv_contact": {
+   "name": "42 Literary Department (no named book-to-screen contact)",
+   "email": "literary@42mp.com",
+   "source_url": "https://www.42mp.com/literary-management"
+  },
+  "general_email": {
+   "email": "literary@42mp.com",
+   "source_url": "https://www.42mp.com/literary-management"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found (literary-management and submissions pages checked)",
+   "date": ""
+  },
+  "book_ids": [
+   "black-coffee-and-red-lipstick-notes-on-living-alexandra-shulman"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Garamond Agency",
+  "aliases": [
+   "Garamond Agency",
+   "The Garamond Agency, Inc."
+  ],
+  "domain": "garamondagency.com",
+  "film_tv_contact": {
+   "name": "No individual; film/TV rights via general address, works with unnamed LA partners",
+   "email": "query@garamondagency.com",
+   "source_url": "https://garamondagency.com/rights/"
+  },
+  "general_email": {
+   "email": "query@garamondagency.com",
+   "source_url": "https://garamondagency.com/contact-us/"
+  },
+  "rights_guide": {
+   "url": "https://garamondagency.com/rights/",
+   "kind": "none found (rights page lists translation co-agents only)",
+   "date": ""
+  },
+  "book_ids": [
+   "hot-type-jeff-jarvis"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Writers House",
+  "aliases": [
+   "Writers House LLC"
+  ],
+  "domain": "writershouse.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked (search budget exhausted)",
+   "date": ""
+  },
+  "book_ids": [
+   "a-table-for-fortune-william-t-vollmann"
+  ],
+  "guide_ask_sent": "",
+  "note": "Susan Golomb's submissions address SGolombSubmissions@writershouse.com per https://www.pw.org/literary_agents/susan_golomb"
+ },
+ {
+  "agency": "The Agency (London)",
+  "aliases": [
+   "The Agency",
+   "The Agency (London) Ltd"
+  ],
+  "domain": "theagency.co.uk",
+  "film_tv_contact": {
+   "name": "Per-client screen agents (e.g. Stephen Durbridge for Hanif Kureishi); personal emails Cloudflare-obfuscated",
+   "email": "info@theagency.co.uk",
+   "source_url": "https://theagency.co.uk/contact-2/"
+  },
+  "general_email": {
+   "email": "info@theagency.co.uk",
+   "source_url": "https://theagency.co.uk/contact-2/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked - screen/stage agency representing writers, not a book-rights agency",
+   "date": ""
+  },
+  "book_ids": [
+   "are-you-with-me-now-hanif-kureishi"
+  ],
   "guide_ask_sent": ""
  }
 ]
