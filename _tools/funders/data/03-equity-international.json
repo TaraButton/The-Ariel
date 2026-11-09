@@ -37,7 +37,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "LOI via Airtable form on the submit page; no email printed, questions via contact page. Will not screen trailers unless a full proposal is invited."
+    "notes": "LOI via Airtable form on the submit page; no email printed, questions via contact page. Will not screen trailers unless a full proposal is invited.",
+    "uk_eligible": "yes",
+    "money": "equity investment",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [
+      "social issue"
+    ],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "chicago-media-project",
@@ -50,9 +69,9 @@
       "production",
       "impact"
     ],
-    "what": "Member-funded community of philanthropists and storytellers that pools donations into grants for documentary films and impact campaigns. Reports $10m+ given to 170 films.",
+    "what": "Member-funded community of philanthropists and storytellers that pools donations into grants for documentary films and impact campaigns. Reports a total of $10m+ given to 170 films.",
     "amount": "",
-    "eligibility": "Not stated on site; no public submission process described.",
+    "eligibility": "No public submission route; approach through their network",
     "status": "unknown",
     "next_deadline": "",
     "next_window": "",
@@ -76,7 +95,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Site does not describe how filmmakers apply or any deadlines. Also runs the DOC10 festival. Notable links are to the films' distributor pages as listed on CMP's own films page."
+    "notes": "Site does not describe how filmmakers apply or any deadlines. Also runs the DOC10 festival. Notable links are to the films' distributor pages as listed on CMP's own films page.",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "check",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [],
+    "subjects": [
+      "social issue"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "artemis-rising-foundation",
@@ -91,7 +127,7 @@
     ],
     "what": "Foundation that finances and supports documentaries on social and environmental issues, working with partner organisations.",
     "amount": "",
-    "eligibility": "Not stated; no open call or submission route published.",
+    "eligibility": "No open call or public submission route",
     "status": "unknown",
     "next_deadline": "",
     "next_window": "",
@@ -120,7 +156,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "No email or submission policy on site; appears to work by invitation or partnership. List as a backer to know, not an open fund."
+    "notes": "No email or submission policy on site; appears to work by invitation or partnership. List as a backer to know, not an open fund.",
+    "uk_eligible": "check",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "check",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [],
+    "subjects": [
+      "social issue",
+      "environment"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "hot-docs-forum",
@@ -151,7 +205,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Online applications only. Contact email obscured on page; use hotdocs.ca/contact-us."
+    "notes": "Online applications only. Contact email obscured on page; use hotdocs.ca/contact-us.",
+    "uk_eligible": "yes",
+    "money": "no cash (pitch/market)",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "hot-docs-deal-maker",
@@ -182,7 +254,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Online only; no post or email submissions."
+    "notes": "Online only; no post or email submissions.",
+    "uk_eligible": "yes",
+    "money": "no cash (pitch/market)",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "hot-docs-slaight-family-fund",
@@ -192,26 +282,49 @@
     "country": "Canada",
     "type": "grant",
     "stages": [
+      "development",
       "production"
     ],
-    "what": "Funds 3-5 documentaries a year about music artists and Canadian music's place in the world, including international music stories by Canadian filmmakers.",
-    "amount": "CAD $15,000-$60,000 per project",
-    "eligibility": "Canadian filmmakers; full criteria on the fund's Apply and FAQ pages.",
+    "what": "Funds 3-5 documentaries a year about music artists, with development advances for features and production grants for features and shorts.",
+    "amount": "Features: no-interest repayable development advance up to CAD $15,000 (max 100% of development budget) or production grant up to CAD $60,000 (max 50% of production budget); shorts: production grant up to CAD $30,000 (max 50% of budget)",
+    "eligibility": "Three routes: international production companies making films about Canadian musical artists (max 1 a year); Canadian productions, co-productions or treaty productions about Canadian musical artists; or Canadian productions about international musical artists (max 1 a year). Only one project from the two capped routes is considered per cycle. Late rough cut, fine cut or completed projects are not considered.",
     "status": "upcoming",
     "next_deadline": "",
-    "next_window": "Details of next round expected late October / early November 2026",
-    "last_deadline": "",
+    "next_window": "Last round closed 11 Dec 2025; next-round details were due late Oct / early Nov 2026 but were not yet posted when checked",
+    "last_deadline": "2025-12-11",
     "apply_url": "https://hotdocs.ca/industry/film-funds/hot-docs-slaight-family-fund",
     "published_email": "",
     "email_source_url": "",
     "notable": [],
     "sources": [
       "https://hotdocs.ca/industry/film-funds",
-      "https://hotdocs.ca/industry/film-funds/hot-docs-slaight-family-fund"
+      "https://hotdocs.ca/industry/film-funds/hot-docs-slaight-family-fund",
+      "https://hotdocs.ca/industry/film-funds/hot-docs-slaight-family-fund/apply-hot-docs-slaight-family-fund",
+      "https://hotdocs.ca/faq/hd-slaight-faqs"
     ],
     "checked": "2026-11-08",
-    "confidence": "check",
-    "notes": "Next-round details were due by early November 2026 but no dates were posted when checked."
+    "confidence": "high",
+    "notes": "A UK company can apply only with a film about a Canadian musical artist. Development advances are repaid when principal photography starts or rights are sold to a third party.",
+    "uk_eligible": "with conditions",
+    "money": "mixed",
+    "max_award": "CAD $60,000",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "yes",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "short"
+    ],
+    "subjects": [
+      "music"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "hot-docs-citizen-minutes",
@@ -241,7 +354,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amount not stated. Email on page is spam-protected so not recorded."
+    "notes": "Amount not stated. Email on page is spam-protected so not recorded.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "yes",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "short"
+    ],
+    "subjects": [
+      "community"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "rogers-documentary-fund",
@@ -253,7 +385,7 @@
     "stages": [
       "production"
     ],
-    "what": "Private Canadian fund supporting original English and French-language documentary production. Reports $3.26m to 50 projects in 2023.",
+    "what": "Private Canadian fund supporting original English and French-language documentary production. Reports a total of $3.26m to 50 projects in 2023.",
     "amount": "",
     "eligibility": "Canadian documentary production; detailed rules in the 2026 guidelines PDFs on the fund page. Apply via the RGF Portal.",
     "status": "closed",
@@ -270,7 +402,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Per-project amounts not stated on the web page."
+    "notes": "Per-project amounts not stated on the web page.",
+    "uk_eligible": "no",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "yes",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "cmf-pov-program",
@@ -299,7 +446,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts in guidelines, not on page. Email masked on page."
+    "notes": "Amounts in guidelines, not on page. Email masked on page.",
+    "uk_eligible": "no",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "yes",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "telefilm-theatrical-documentary",
@@ -329,7 +491,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts in guidelines PDF, not on page. Decisions aimed within 80 business days of close."
+    "notes": "Amounts in guidelines PDF, not on page. Decisions aimed within 80 business days of close.",
+    "uk_eligible": "no",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "yes",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "telus-fund",
@@ -360,7 +539,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "No amounts or deadlines on site pages; contact via form at telusfund.ca/contact."
+    "notes": "No amounts or deadlines on site pages; contact via form at telusfund.ca/contact.",
+    "uk_eligible": "no",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "yes",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [
+      "health"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "doha-film-institute-grants",
@@ -387,11 +583,31 @@
     "email_source_url": "https://www.dohafilm.com/en/funding-industry/funding/grants",
     "notable": [],
     "sources": [
-      "https://www.dohafilm.com/en/funding-industry/funding/grants"
+      "https://www.dohafilm.com/en/funding-industry/funding/grants",
+      "https://media.dohafilm.com/sites/default/files/prod/2026-09/DFI26-FeatureFilmsGuideline-EN.pdf"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts not stated. Fall 2026 cycle ran 22 June-2 July 2026; guidelines at /grants/guidelines."
+    "notes": "Amounts not stated. Fall 2026 cycle ran 22 June-2 July 2026; guidelines at /grants/guidelines.",
+    "uk_eligible": "with conditions",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "short",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "red-sea-fund",
@@ -406,12 +622,12 @@
       "post",
       "shorts"
     ],
-    "what": "Grants for feature documentaries (60+ min) by Arab, African and Asian directors across development, production and post, plus short docs by Saudi directors. Reports $15m to 280+ projects.",
+    "what": "Grants for feature documentaries (60+ min) by Arab, African and Asian directors across development, production and post, plus short docs by Saudi directors. Reports a total of $15m to 280+ projects since 2021.",
     "amount": "",
     "eligibility": "Feature docs from Arab, African and Asian directors; shorts (development/production) for Saudi directors only.",
     "status": "upcoming",
     "next_deadline": "",
-    "next_window": "Cycles: post-production 6-27 Jan, production 6-21 Mar, development 6-21 May, post-production 6-21 Jul (year not stated on page)",
+    "next_window": "Cycles as published: post-production 6-27 Jan, production 6-21 Mar, development 6-21 May, post-production 6-21 Jul. The page gives no year, so 2027 dates are unconfirmed",
     "last_deadline": "",
     "apply_url": "https://fms.redseafilmfest.com/website/login.php?lang=en",
     "published_email": "info@redseafilmfest.com",
@@ -422,7 +638,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Per-grant amounts not stated. Confirm the cycle dates apply to 2027."
+    "notes": "Per-grant amounts not stated. The $15m / 280+ projects figure is total support since 2021, not a per-project amount. A reviewer said the dates relate to the 2026 cycle; the official page does not state a year.",
+    "uk_eligible": "with conditions",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "series",
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "afac-arab-documentary-film-program",
@@ -453,7 +688,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Page still labelled 'open call' but the 2026 deadline has passed; results announced 31 Aug 2026."
+    "notes": "Page still labelled 'open call' but the 2026 deadline has passed; results announced 31 Aug 2026.",
+    "uk_eligible": "with conditions",
+    "money": "grant",
+    "max_award": "USD 50,000",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "cinegouna-funding",
@@ -467,11 +720,11 @@
       "post"
     ],
     "what": "Development and co-production platform at El Gouna Film Festival for Arab fiction and documentary features, with cash and partner prizes.",
-    "amount": "US$15,000 each to best development project and best post-production film; total prizes over US$300,000 a year",
+    "amount": "US$15,000 each to best development project and best post-production film; total prize money over US$300,000 a year across all awards",
     "eligibility": "Arab directors and producers; feature docs in development (before principal photography) or post-production.",
     "status": "unknown",
     "next_deadline": "",
-    "next_window": "Page still shows 2025 cycle; next call not posted",
+    "next_window": "Next call not yet posted (2025 deadlines were July and August)",
     "last_deadline": "2025-08-01",
     "apply_url": "https://www.elgounafilmfestival.com/cinegouna-funding/",
     "published_email": "info@elgounafilmfestival.com",
@@ -483,7 +736,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "2025 deadlines were 15 July (development) and 1 Aug (post). No 2026 call shown; status unclear."
+    "notes": "2025 deadlines were 15 July (development) and 1 Aug (post). No 2026 call shown; status unclear.",
+    "uk_eligible": "check",
+    "money": "prize",
+    "max_award": "US$15,000",
+    "open_to": {
+      "uk": "check",
+      "us": "check",
+      "canada": "check",
+      "eu": "check",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "docs-by-the-sea",
@@ -514,7 +784,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "No grants or prizes stated; no email on homepage."
+    "notes": "No grants or prizes stated; no email on homepage.",
+    "uk_eligible": "check",
+    "money": "no cash (pitch/market)",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "check",
+      "canada": "check",
+      "eu": "check",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "busan-and-fund",
@@ -529,80 +814,86 @@
       "post"
     ],
     "what": "Documentary strand of BIFF's Asian Cinema Fund, supporting Korean and Asian documentary projects (six recipients in 2024).",
-    "amount": "",
-    "eligibility": "Korean and Asian documentary projects; see ACF guidelines.",
-    "status": "unknown",
+    "amount": "Cash grant up to KRW 20,000,000 per project (around 7 projects)",
+    "eligibility": "Asian Project category: directors of Asian nationality excluding Korean; Korean Project category: Korean nationality. Projects at any stage from development to post-production.",
+    "status": "closed",
     "next_deadline": "",
-    "next_window": "Pattern: call opens late February, closes mid-April (2024 cycle: 27 Feb-17 Apr)",
-    "last_deadline": "",
+    "next_window": "2026 call ran 25 Mar - 20 Apr 2026 (closed); 2027 call not yet announced",
+    "last_deadline": "2026-04-20",
     "apply_url": "https://acf.biff.kr/eng/",
     "published_email": "",
     "email_source_url": "",
     "notable": [],
     "sources": [
       "https://www.biff.kr/eng/",
-      "https://acf.biff.kr/eng/"
+      "https://acf.biff.kr/eng/",
+      "https://acf.biff.kr/eng/addon/10000001/page.asp?page_num=8721",
+      "https://acf.biff.kr/eng/html/projects/documentary_list.asp?section=AND&dc_year=2026"
     ],
     "checked": "2026-11-08",
-    "confidence": "check",
-    "notes": "Site page opened showed only the 2024 cycle; amounts, current status and contact not available. Fund detail page would not load."
+    "confidence": "high",
+    "notes": "Guidelines table is headed 2025 but its dates are for 2026. 2026 selections are listed on the ACF site.",
+    "uk_eligible": "with conditions",
+    "money": "grant",
+    "max_award": "KRW 20,000,000",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
-    "id": "screen-australia-documentary-producer-program",
-    "name": "Screen Australia Documentary Producer Program",
+    "id": "screen-australia-documentary-production",
+    "name": "Screen Australia Documentary Production",
     "org": "Screen Australia",
     "region": "Australia/NZ",
     "country": "Australia",
     "type": "fund",
     "stages": [
-      "production"
+      "production",
+      "post"
     ],
-    "what": "Federal production funding for distinctive single and series documentaries for theatre, festival, online, XR or broadcast, with no platform commitment required.",
-    "amount": "Up to AUD $750,000 (grant up to $500,000; above that as recoupable equity)",
-    "eligibility": "Minimum budget $120,000 per hour; at least one key principal with two eligible credits; max 15 broadcast hours; 20% of funds reserved for projects with international finance. Two-stage EOI process.",
-    "status": "unknown",
+    "what": "Consolidated documentary production funding with three programs: Producer First (replaces the Documentary Producer Program; production or post-production only, no platform commitment needed), Platform First (replaces the Documentary Commissioned Program; needs a confirmed commissioning platform) and Direct-to-Audience (replaces the Online Production Program).",
+    "amount": "Producer First and Platform First: grant up to AUD $500,000 per project (amounts above that only by exception, as recoupable equity), up to 35% of budgets of $500,000 or less and up to 65% (including Producer Offset) above that; Direct-to-Audience: up to 80% of budget, capped at $300,000, for budgets of $500,000 or less",
+    "eligibility": "Incorporated company carrying on business in Australia with central management and control there, with an ABN (individual Australian citizens or permanent residents only for Direct-to-Audience); Platform First needs at least a commercial half-hour, a $250,000 per hour minimum budget and all finance confirmed; applicants must discuss the project with an Investment Manager before applying",
+    "status": "upcoming",
     "next_deadline": "",
-    "next_window": "",
-    "last_deadline": "",
-    "apply_url": "https://www.screenaustralia.gov.au/funding-and-support/documentary/production/producer-program",
-    "published_email": "",
-    "email_source_url": "",
+    "next_window": "Four application rounds per financial year; 2026 deadlines were 16 Apr, 25 Jun and 24 Sep 2026. The next deadline was not shown on the official pages checked",
+    "last_deadline": "2026-09-24",
+    "apply_url": "https://www.screenaustralia.gov.au/fund/documentary-production-program/",
+    "published_email": "documentary@screenaustralia.gov.au",
+    "email_source_url": "https://www.screenaustralia.gov.au/wp-content/uploads/2025/08/Guidelines-Documentary-Production.pdf",
     "notable": [],
     "sources": [
-      "https://www.screenaustralia.gov.au/funding-and-support/documentary/production",
-      "https://www.screenaustralia.gov.au/funding-and-support/documentary/production/producer-program"
+      "https://www.screenaustralia.gov.au/fund/documentary-production-program/",
+      "https://www.screenaustralia.gov.au/funding-and-support/documentary/deadlines",
+      "https://www.screenaustralia.gov.au/wp-content/uploads/2025/08/Guidelines-Documentary-Production.pdf"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Program page gives up to $750,000 and $120,000/hr min; overview page says up to $500,000 and $125,000/hr - confirm. No deadline or open status stated."
-  },
-  {
-    "id": "screen-australia-documentary-commissioned-program",
-    "name": "Screen Australia Documentary Commissioned Program",
-    "org": "Screen Australia",
-    "region": "Australia/NZ",
-    "country": "Australia",
-    "type": "fund",
-    "stages": [
-      "production"
-    ],
-    "what": "Production funding for Australian documentaries with a confirmed presale to a commissioning platform.",
-    "amount": "Up to AUD $500,000",
-    "eligibility": "At least a commercial half-hour; minimum budget $250,000 per hour; required presale from a Commissioning Platform confirmed.",
-    "status": "unknown",
-    "next_deadline": "",
-    "next_window": "",
-    "last_deadline": "",
-    "apply_url": "https://www.screenaustralia.gov.au/funding-and-support/documentary/production",
-    "published_email": "",
-    "email_source_url": "",
-    "notable": [],
-    "sources": [
-      "https://www.screenaustralia.gov.au/funding-and-support/documentary/production"
-    ],
-    "checked": "2026-11-08",
-    "confidence": "check",
-    "notes": "Deadlines and status not stated on page opened."
+    "notes": "Replaces the separate Producer and Commissioned entries. A reviewer cited a 4 Feb 2027 deadline; it does not appear on the official pages checked. The program page lists 18 June 2026 where the deadlines page lists 25 June 2026. Guidelines revised 8 Oct 2026. An older Screen Australia overview page still shows the retired Producer and Commissioned programs.",
+    "uk_eligible": "no",
+    "money": "mixed",
+    "max_award": "AUD $500,000 grant (more only by exception, as recoupable equity)",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "nz-on-air-scripted-non-fiction",
@@ -631,7 +922,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Rounds cover scripted and non-fiction together. Amounts not stated."
+    "notes": "Rounds cover scripted and non-fiction together. Amounts not stated.",
+    "uk_eligible": "check",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "check",
+      "canada": "check",
+      "eu": "check",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "documentary-australia",
@@ -649,17 +955,39 @@
     "eligibility": "Independent documentaries in focus areas such as environment, health, human rights, women and girls, Indigenous, youth and the arts.",
     "status": "unknown",
     "next_deadline": "",
-    "next_window": "Rounds for fiscal sponsorship; last stated close Monday 3 August (year not stated)",
+    "next_window": "Check the site for the next round",
     "last_deadline": "",
     "apply_url": "https://documentaryaustralia.com.au/",
     "published_email": "",
     "email_source_url": "",
     "notable": [],
     "sources": [
-      "https://documentaryaustralia.com.au/"
+      "https://documentaryaustralia.com.au/",
+      "https://documentaryaustralia.com.au/fiscal-sponsorship-how-to-apply/"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Only the homepage could be opened; eligibility detail, fees and contact email not verified."
+    "notes": "Only the homepage could be opened; eligibility detail, fees and contact email not verified.",
+    "uk_eligible": "no",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "series",
+      "interactive"
+    ],
+    "subjects": [
+      "social issue"
+    ],
+    "applicant": [
+      "any"
+    ]
   }
 ]

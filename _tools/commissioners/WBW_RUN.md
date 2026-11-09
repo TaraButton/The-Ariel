@@ -76,9 +76,9 @@ Idea: Peter Morgan, 8 Nov 2026. Funding section: Tara (Howard found a funder to 
    YYYY-MM, official url). For each move: update title/broadcaster, or mark `confidence: "check"` with a
    note if the new role is unclear; add new commissioners only with an official source. Never add an
    email unless the broadcaster prints it on its own page (with `email_source_url`). Bump `checked`.
-7. **Build.** `python3 _tools/commissioners/build.py && python3 _tools/commissioners/wbw_build.py && python3 _tools/funders/build.py`.
-   All three must succeed (wbw_build refuses Penske URLs in main items and non-https links).
-8. **Publish.** `git add _tools/commissioners commissioners _tools/funders documentary-funding && git commit -m "Who's Buying What: <id>" &&
+7. **Build.** `python3 _tools/commissioners/build.py && python3 _tools/commissioners/build_pages.py && python3 _tools/commissioners/wbw_build.py && python3 _tools/funders/build.py && python3 _tools/find/build.py && python3 _tools/sitemap_add.py`.
+   All must succeed (wbw_build refuses Penske URLs in main items and non-https links).
+8. **Publish.** `git add _tools commissioners documentary-funding find-funding-and-buyers sitemap.xml && git commit -m "Who's Buying What: <id>" &&
    git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Confirm
    https://theariel.tv/commissioners/whos-buying-what/<id>.html loads within a few minutes.
 9. **Summary.** Counts per section and per broadcaster, sources that could not be reached, list

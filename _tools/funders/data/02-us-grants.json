@@ -13,10 +13,10 @@
     ],
     "what": "Grants for independent nonfiction feature films with contemporary relevance, from development through post-production.",
     "amount": "Development up to $40,000; production/post-production up to $100,000",
-    "eligibility": "Independent nonfiction features with budgets under $1.2M; no shorts, series, fiction, advocacy or branded films; apply at least 8 months before picture lock; no fiscal sponsor required; international applicants accepted",
-    "status": "upcoming",
+    "eligibility": "Independent nonfiction features; the fund prioritises budgets under US$1.2M (not a hard cap); no shorts, series, fiction, advocacy or branded films; apply at least 8 months before picture lock; no fiscal sponsor required; international applicants accepted",
+    "status": "closed",
     "next_deadline": "",
-    "next_window": "Next call expected early 2027 (check site: the page also mentions 18 May 2026)",
+    "next_window": "Not accepting applications; the fund calendar says the next call will be announced in early 2027",
     "last_deadline": "",
     "apply_url": "https://www.sundance.org/programs/documentary-film/",
     "published_email": "dfp@sundance.org",
@@ -40,7 +40,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Page gives conflicting timing: says next call opens 18 May 2026 and elsewhere 'to be announced in early 2027'. Shorts go to the separate Documentary Short Fund."
+    "notes": "The page still also carries an out-of-date line saying the call opens 18 May 2026; the calendar entry (early 2027) is treated as current. Shorts go to the separate Documentary Short Fund; science projects to the Sandbox Fund.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "$100,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "catapult-film-fund",
@@ -78,11 +95,31 @@
     ],
     "sources": [
       "https://catapultfilmfund.org/",
-      "https://catapultfilmfund.org/how-to-apply/"
+      "https://catapultfilmfund.org/how-to-apply/",
+      "https://catapultfilmfund.org/how-to-apply/research/guidelines-and-eligibility/",
+      "https://catapultfilmfund.org/how-to-apply/development/guidelines-and-eligibility"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts not stated on the pages opened. Research Grant, Development Grant and Rough Cut Retreat all listed as closed for 2026."
+    "notes": "Amounts not stated on the pages opened. Research Grant, Development Grant and Rough Cut Retreat all listed as closed for 2026.",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "feature",
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "chicken-and-egg-research-development-grant",
@@ -95,7 +132,7 @@
       "development"
     ],
     "what": "Grants for women and gender-expansive directors researching or developing a feature-length documentary.",
-    "amount": "Research grants $10,000; development grants $20,000 ($450,000 total pool in 2026)",
+    "amount": "Research grants $10,000; development grants $20,000 (total pot $450,000 in 2026)",
     "eligibility": "Director identifies as a woman or gender-expansive; has completed at least one feature doc; feature-length (48+ min) independent nonfiction; based anywhere except countries under comprehensive US sanctions",
     "status": "upcoming",
     "next_deadline": "",
@@ -111,7 +148,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Organisation formerly Chicken & Egg Pictures; site now chickeneggfilms.org. Supported by Netflix."
+    "notes": "Organisation formerly Chicken & Egg Pictures; site now chickeneggfilms.org. Supported by Netflix.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "$20,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "ida-pare-lorentz-documentary-fund",
@@ -126,7 +180,7 @@
     "what": "Finishing grants for independent feature documentaries in late post-production; the 2026 cycle theme is US influence.",
     "amount": "$25,000 per grantee (three grantees, one per round)",
     "eligibility": "Nomination by a partner organisation only; film budget up to $700,000; at least one director/producer has completed a nonfiction feature; no biographies, shorts, episodic, student or branded work; applicants can be based anywhere",
-    "status": "upcoming",
+    "status": "invitation only",
     "next_deadline": "",
     "next_window": "Rolling rounds: Nov 2026, Feb 2027, May 2027 (nominations by partners; finalists apply early January for round one)",
     "last_deadline": "",
@@ -153,7 +207,27 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Not an open call. 2026 first-round nominators: Brown Girls Doc Mafia, Catapult Film Fund, The Redford Center."
+    "notes": "Not an open call. 2026 first-round nominators: Brown Girls Doc Mafia, Catapult Film Fund, The Redford Center.",
+    "uk_eligible": "with conditions",
+    "money": "grant",
+    "max_award": "$25,000",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [
+      "social issue",
+      "environment"
+    ],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "ida-logan-elevate-grant",
@@ -168,20 +242,40 @@
     "what": "Grants for emerging women and non-binary filmmakers of colour directing feature-length journalistic documentaries.",
     "amount": "$30,000 per grantee (three grantees)",
     "eligibility": "Emerging women or non-binary filmmakers of colour; feature-length journalistic documentary; nominated by partner organisations",
-    "status": "unknown",
+    "status": "closed",
     "next_deadline": "",
-    "next_window": "Nomination-based; no dates stated",
+    "next_window": "Temporarily paused (per IDA)",
     "last_deadline": "",
     "apply_url": "https://www.documentary.org/creators/funding/logan-elevate-grant",
     "published_email": "artistservices@documentary.org",
     "email_source_url": "https://www.documentary.org/funding",
     "notable": [],
     "sources": [
-      "https://www.documentary.org/funding"
+      "https://www.documentary.org/funding",
+      "https://www.documentary.org/creators/funding/logan-elevate-grant"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Details taken from IDA's funding overview page; programme page itself not opened. Stage not stated - production assumed from journalistic feature focus, verify."
+    "notes": "Details taken from IDA's funding overview page; programme page itself not opened. Stage not stated - production assumed from journalistic feature focus, verify.",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "$30,000",
+    "open_to": {
+      "uk": "check",
+      "us": "conditions",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [
+      "journalism"
+    ],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "itvs-open-call",
@@ -207,11 +301,30 @@
     "notable": [],
     "sources": [
       "https://itvs.org/funding",
-      "https://itvs.org/funds/open-fund/"
+      "https://itvs.org/funds/open-fund/",
+      "https://itvs.org/funds/open-call/?tab=2"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "no",
+    "money": "licence fee",
+    "max_award": "$400,000",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature",
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "itvs-incubator-fund",
@@ -240,7 +353,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "ITVS funding page lists no 'Diversity Development Fund'; this appears to be the current development route."
+    "notes": "ITVS funding page lists no 'Diversity Development Fund'; this appears to be the current development route.",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "$10,000 (potential further funding up to $30,000)",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "field-of-vision",
@@ -285,7 +416,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts not stated. Separate forms for shorts, features/episodic and Field Notes."
+    "notes": "Amounts not stated. Separate forms for shorts, features/episodic and Field Notes.",
+    "uk_eligible": "check",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "feature",
+      "series",
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "firelight-documentary-lab",
@@ -314,7 +464,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "no",
+    "money": "fellowship",
+    "max_award": "$25,000",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "firelight-william-greaves-fund",
@@ -329,9 +496,9 @@
     "what": "Unrestricted research and development grants for mid-career nonfiction filmmakers and artists of African and/or Indigenous descent in the Americas.",
     "amount": "$10,000 to $25,000 (8-10 grantees)",
     "eligibility": "Mid-career, of African and/or Indigenous descent, living and working in North, Central or South America or the Caribbean; nomination by an invited partner only",
-    "status": "closed",
+    "status": "invitation only",
     "next_deadline": "",
-    "next_window": "Not yet announced; 2026 nominations ran 1 May to 1 June",
+    "next_window": "Nomination-only via invited partners; 2026 nominations ran 1 May to 1 June; next cycle not yet announced",
     "last_deadline": "2026-06-01",
     "apply_url": "https://www.firelightmedia.tv/program/william-greaves-research-development-fund",
     "published_email": "grants@firelightmedia.org",
@@ -342,7 +509,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Nomination-only via invited partners."
+    "notes": "Nomination-only via invited partners.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "$25,000",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "no",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "bpm-open-call",
@@ -372,7 +554,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Funding is a licensing agreement, not a grant. Pitch at 10th PitchBLACK, June 2027."
+    "notes": "Funding is a licensing agreement, not a grant. Pitch at 10th PitchBLACK, June 2027.",
+    "uk_eligible": "no",
+    "money": "licence fee",
+    "max_award": "$20,000 (one project also wins the PitchBLACK Award of up to $150,000)",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [
+      "Black experience"
+    ],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "caam-documentary-fund",
@@ -390,7 +591,7 @@
     "eligibility": "US citizens or legal residents 18+; applicant holds copyright and control; prior film/TV experience or sample; may need a 501(c)(3) fiscal sponsor; PBS-standard running times",
     "status": "unknown",
     "next_deadline": "",
-    "next_window": "Not stated on page",
+    "next_window": "Check the site for the next round",
     "last_deadline": "",
     "apply_url": "https://caamedia.org/caam-documentary-fund/",
     "published_email": "mediafund@caamedia.org",
@@ -407,7 +608,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [
+      "Asian American"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "lpb-public-media-content-fund",
@@ -438,7 +656,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Pages opened did not state amounts, stages, eligibility rules or dates; stages assumed, verify against guidelines/FAQ pages."
+    "notes": "Pages opened did not state amounts, stages, eligibility rules or dates; stages assumed, verify against guidelines/FAQ pages.",
+    "uk_eligible": "check",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [],
+    "subjects": [
+      "Latino"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "vision-maker-creative-shorts-fellowship",
@@ -453,7 +688,7 @@
     ],
     "what": "Funding, mentorship and training to produce a short film offering a fresh perspective on Indigenous experiences.",
     "amount": "",
-    "eligibility": "Projects about Indigenous experiences with a community engagement plan; page does not state applicants must be Native",
+    "eligibility": "Projects about Indigenous experiences, with a community engagement plan",
     "status": "unknown",
     "next_deadline": "",
     "next_window": "",
@@ -468,7 +703,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Amounts and deadlines not stated on page; guidelines PDF not read. Vision Maker also runs a Native Youth Media Project."
+    "notes": "Amounts and deadlines not stated on page; guidelines PDF not read. Vision Maker also runs a Native Youth Media Project.",
+    "uk_eligible": "check",
+    "money": "fellowship",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "short"
+    ],
+    "subjects": [
+      "Indigenous"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "pic-media-fund",
@@ -498,7 +752,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "$65,000",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [],
+    "subjects": [
+      "Pacific Islander"
+    ],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "pic-shorts-fund",
@@ -528,7 +799,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "$25,000",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "short"
+    ],
+    "subjects": [
+      "Pacific Islander"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "perspective-fund",
@@ -568,11 +858,32 @@
     ],
     "sources": [
       "https://www.perspectivefund.org/",
-      "https://www.perspectivefund.org/documentaries"
+      "https://www.perspectivefund.org/documentaries",
+      "https://www.perspectivefund.org/faq"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Amounts and stages not stated; stages inferred from impact focus. 'Rolling' inferred from inquiry form with no deadline."
+    "notes": "Amounts and stages not stated; stages inferred from impact focus. 'Rolling' inferred from inquiry form with no deadline.",
+    "uk_eligible": "yes",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature",
+      "short"
+    ],
+    "subjects": [
+      "social issue"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "gotham-week-project-market-documentaries",
@@ -610,11 +921,30 @@
     ],
     "sources": [
       "https://www.thegotham.org/",
-      "https://thegotham.org/gotham-week/project-market/documentaries/"
+      "https://thegotham.org/gotham-week/project-market/documentaries/",
+      "https://thegotham.org/gotham-week/project-market/documentaries/guidelines/",
+      "https://thegotham.org/gotham-week/project-market/documentaries/faq/"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "No cash award stated. Page labels timeline both 2025 and 2026, so exact dates not recorded. Email appears in page meta description."
+    "notes": "No cash award stated. Page labels timeline both 2025 and 2026, so exact dates not recorded. Email appears in page meta description.",
+    "uk_eligible": "with conditions",
+    "money": "no cash (pitch/market)",
+    "max_award": "",
+    "open_to": {
+      "uk": "conditions",
+      "us": "yes",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "southern-documentary-fund-production-grant",
@@ -657,7 +987,28 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "SDF also offers fiscal sponsorship."
+    "notes": "SDF also offers fiscal sponsorship.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "$15,000",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "short",
+      "feature",
+      "series"
+    ],
+    "subjects": [
+      "American South"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "neh-media-projects",
@@ -682,11 +1033,33 @@
     "email_source_url": "https://www.neh.gov/grants/public/media-projects-production-grants",
     "notable": [],
     "sources": [
-      "https://www.neh.gov/grants/public/media-projects-production-grants"
+      "https://www.neh.gov/grants/public/media-projects-production-grants",
+      "https://www.neh.gov/sites/default/files/Media%20Projects%20FAQs%20June%202026_0.pdf"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Page header lists 5 May 2027 but also says the cycle deadline has passed; treat date as provisional. Development-specific page could not be opened (rate limit/client error)."
+    "notes": "Page header lists 5 May 2027 but also says the cycle deadline has passed; treat date as provisional. Development-specific page could not be opened (rate limit/client error).",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "$700,000 (production); $75,000 (development)",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature",
+      "series",
+      "audio"
+    ],
+    "subjects": [
+      "humanities"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "nea-grants-for-arts-projects-media",
@@ -715,7 +1088,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Two-part application (Grants.gov then NEA portal). Stages are indicative; NEA funds arts projects broadly."
+    "notes": "Two-part application (Grants.gov then NEA portal). Stages are indicative; NEA funds arts projects broadly.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "$100,000",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [
+      "arts"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "nysca-electronic-media-and-film",
@@ -745,7 +1135,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Pages opened gave no amounts or deadlines; guidelines link labelled FY2025. Staff email obfuscated."
+    "notes": "Pages opened gave no amounts or deadlines; guidelines link labelled FY2025. Staff email obfuscated.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "jerome-film-production-grants",
@@ -760,7 +1165,7 @@
     "what": "Production grants for early-career film directors based in New York City or Minnesota.",
     "amount": "Up to $30,000",
     "eligibility": "Early-career directors (credits from 2017 onwards) resident in NYC or Minnesota; SSN or ITIN; two completed, publicly screened films; individuals only",
-    "status": "closed",
+    "status": "invitation only",
     "next_deadline": "",
     "next_window": "Step 1 closed 1 Oct 2026; Step 2 is for invited applicants only",
     "last_deadline": "2026-10-01",
@@ -775,7 +1180,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Separate Submittable forms for NYC and Minnesota. Jerome also runs a MN Filmmaker Mentorship and the Jerome Hill Artist Fellowship."
+    "notes": "Separate Submittable forms for NYC and Minnesota. Jerome also runs a MN Filmmaker Mentorship and the Jerome Hill Artist Fellowship.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "$30,000",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature",
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "creative-capital-award",
@@ -793,7 +1216,7 @@
     "eligibility": "Individual artists creating new work in disciplines including film",
     "status": "unknown",
     "next_deadline": "",
-    "next_window": "Not stated on page",
+    "next_window": "Check the site for the next round",
     "last_deadline": "",
     "apply_url": "https://creative-capital.org/creative-capital-award/award-application/",
     "published_email": "",
@@ -801,11 +1224,27 @@
     "notable": [],
     "sources": [
       "https://creative-capital.org/",
-      "https://creative-capital.org/creative-capital-award/"
+      "https://creative-capital.org/creative-capital-award/",
+      "https://creative-capital.org/ApplicationHandbook"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Open-call dates and residency rules not stated on pages opened; email obfuscated."
+    "notes": "Open-call dates and residency rules not stated on pages opened; email obfuscated.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "$50,000",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "guggenheim-fellowship",
@@ -836,7 +1275,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amount not stated. Stages indicative - fellowships support the individual rather than a project stage."
+    "notes": "Amount not stated. Stages indicative - fellowships support the individual rather than a project stage.",
+    "uk_eligible": "no",
+    "money": "fellowship",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "ford-justfilms",
@@ -867,7 +1321,26 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts not stated. Weighted criteria: thematic alignment 30%, intersectional representation 25%, innovation 25%, viability 20%."
+    "notes": "The application page states that submissions for documentary film production grants are currently closed. Amounts not stated. Weighted criteria: thematic alignment 30%, intersectional representation 25%, innovation 25%, viability 20%.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [
+      "social issue"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "kartemquin-diverse-voices-in-docs",
@@ -897,7 +1370,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "No cash amount stated; stages not stated on page and are indicative."
+    "notes": "No cash amount stated; stages not stated on page and are indicative.",
+    "uk_eligible": "no",
+    "money": "fellowship",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "points-north-fellowship",
@@ -928,7 +1416,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "No cash award stated; covers flight, festival passes and accommodation."
+    "notes": "No cash award stated; covers flight, festival passes and accommodation.",
+    "uk_eligible": "yes",
+    "money": "fellowship",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "sffilm-documentary-film-fund",
@@ -970,7 +1475,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "$20,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "afs-grant",
@@ -1002,7 +1524,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Per-grant amounts not stated; has given over $3 million in cash grants to 570+ Texas filmmakers. Page does not name documentary explicitly."
+    "notes": "Per-grant amounts not stated; has given over $3 million in cash grants to 570+ Texas filmmakers. Page does not name documentary explicitly.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "conditions",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "jfi-grants",
@@ -1027,11 +1564,33 @@
     "notable": [],
     "sources": [
       "https://jfi.org/",
-      "https://jfi.org/artist-development/grants/application-guidelines"
+      "https://jfi.org/artist-development/grants/application-guidelines",
+      "https://jfi.org/artist-development/grants"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts not stated on guidelines page. Not documentary-only."
+    "notes": "Amounts not stated on guidelines page. Not documentary-only.",
+    "uk_eligible": "check",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "check",
+      "us": "yes",
+      "canada": "check",
+      "eu": "check",
+      "other": "check"
+    },
+    "formats": [
+      "feature",
+      "short",
+      "series"
+    ],
+    "subjects": [
+      "Jewish"
+    ],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "pulitzer-center-reporting-grants",
@@ -1059,6 +1618,73 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Grants page content appeared partly dated (references a 2017 pitch); reporting-grants subpage could not be opened. Verify current terms."
+    "notes": "Grants page content appeared partly dated (references a 2017 pitch); reporting-grants subpage could not be opened. Verify current terms.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [],
+    "subjects": [
+      "journalism"
+    ],
+    "applicant": [
+      "any"
+    ]
+  },
+  {
+    "id": "sundance-sandbox-fund",
+    "name": "Sundance Institute Sandbox Fund",
+    "org": "Sundance Institute with Sandbox Films",
+    "region": "US",
+    "country": "United States",
+    "type": "grant",
+    "stages": [
+      "development",
+      "production",
+      "post"
+    ],
+    "what": "Grants for nonfiction films at the intersection of science and storytelling, prioritising projects that spark interest in science among people who do not see themselves as science fans.",
+    "amount": "Development up to $40,000; production up to $100,000; post-production up to $100,000",
+    "eligibility": "US and international feature-length nonfiction projects; from the Fall 2026 cycle a project may be submitted at most twice",
+    "status": "upcoming",
+    "next_deadline": "",
+    "next_window": "Two cycles a year; 2027 Spring Cycle dates to be announced",
+    "last_deadline": "",
+    "apply_url": "https://www.sundance.org/sandbox-fund",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.sundance.org/sandbox-fund",
+      "https://www.sundance.org/programs/documentary-film/"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Administered by the Sundance Documentary Fund with Sandbox Films. Decisions 4-6 months after deadline. No email printed; contact via sundance.org/about/contact.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "$100,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [
+      "science"
+    ],
+    "applicant": [
+      "any"
+    ]
   }
 ]

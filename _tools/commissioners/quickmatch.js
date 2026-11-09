@@ -60,6 +60,7 @@
       (reasons.length?'<ul>'+reasons.map(function(r){return '<li>'+r+'</li>';}).join('')+'</ul>':'')+
       (pitch?'<p class="qm-pitch"><strong>How to pitch:</strong> '+pitch+'</p>':'')+'</div>';
   }
+  window.QM={score:score,cardHTML:cardHTML,topics:topics,LABEL:LABEL};
   var form=document.getElementById('qm'), out=document.getElementById('qmOut'), gate=document.getElementById('qmGate'), more=document.getElementById('qmMore'), last=null;
   if(!form) return;
   form.addEventListener('submit',function(ev){

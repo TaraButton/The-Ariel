@@ -42,7 +42,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Application link is inside the guidelines PDF, not on the page. Notable films are from the BFI Doc Society film directory, which covers all its funds, not only this one."
+    "notes": "Application link is inside the guidelines PDF, not on the page. Notable films are from the BFI Doc Society film directory, which covers all its funds, not only this one.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£150,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "bfi-doc-society-development-fund",
@@ -70,7 +87,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Page title wrongly reads 'Production Fund' but content is the Development Fund. Round 1 ran 24 Jun to 5 Aug 2026."
+    "notes": "Page title wrongly reads 'Production Fund' but content is the Development Fund. Round 1 ran 24 Jun to 5 Aug 2026.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£40,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "bfi-doc-society-rad-fund",
@@ -99,7 +133,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£5,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "bfi-doc-society-made-of-truth",
@@ -128,7 +179,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£25,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "bfi-doc-society-expanded-screen",
@@ -157,7 +225,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£150,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "interactive"
+    ],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   },
   {
     "id": "screen-scotland-film-development-production",
@@ -187,7 +272,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts and deadlines are in the guidance PDF, which was not read. No email printed; contact via Screen Scotland enquiries page."
+    "notes": "Amounts and deadlines are in the guidance PDF, which was not read. No email printed; contact via Screen Scotland enquiries page.",
+    "uk_eligible": "with conditions",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "conditions",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "screen-scotland-broadcast-content-fund",
@@ -216,7 +318,22 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Amounts, broadcaster-attachment rules and deadlines are in the guidance PDF, not read. No email printed on page."
+    "notes": "Amounts, broadcaster-attachment rules and deadlines are in the guidance PDF, not read. No email printed on page.",
+    "uk_eligible": "with conditions",
+    "money": "check",
+    "max_award": "",
+    "open_to": {
+      "uk": "conditions",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "ffilm-cymru-feature-development",
@@ -246,7 +363,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Documentary applicants must also give a breakdown of spend to date and how it was financed. Questions: ihsana@ffilmcymruwales.com."
+    "notes": "Documentary applicants must also give a breakdown of spend to date and how it was financed. Questions: ihsana@ffilmcymruwales.com.",
+    "uk_eligible": "with conditions",
+    "money": "check",
+    "max_award": "£24,999",
+    "open_to": {
+      "uk": "conditions",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "ffilm-cymru-beacons-shorts",
@@ -277,7 +411,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Page shows 'currently closed' alongside a 12 June 2026 deadline; treated as the last deadline. Documentary entrants submit a treatment."
+    "notes": "Page shows 'currently closed' alongside a 12 June 2026 deadline; treated as the last deadline. Documentary entrants submit a treatment.",
+    "uk_eligible": "with conditions",
+    "money": "check",
+    "max_award": "£25,000",
+    "open_to": {
+      "uk": "conditions",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "screen-ireland-documentary-development",
@@ -306,7 +457,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "All Screen Ireland development funding is a repayable loan. No email printed."
+    "notes": "All Screen Ireland development funding is a repayable loan. No email printed.",
+    "uk_eligible": "no",
+    "money": "repayable loan",
+    "max_award": "€15,000",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "conditions",
+      "other": "no"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "screen-ireland-documentary-feature-production",
@@ -319,7 +488,7 @@
       "production"
     ],
     "what": "Production loans for feature documentaries originated and led by Irish talent, in English or Irish, with international appeal.",
-    "amount": "250,000 / up to 65% of budget (currency not stated on page; Screen Ireland works in euro)",
+    "amount": "Up to €250,000, max 65% of budget",
     "eligibility": "Teams of Irish producers, writers and directors; rights owned by the production company; one-hour TV slot docs not supported; ROI registered company",
     "status": "closed",
     "next_deadline": "",
@@ -335,7 +504,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Production funding is a repayable loan. Screen Ireland also has documentary TV series and creative co-production schemes (not checked in detail)."
+    "notes": "Production funding is a repayable loan. Screen Ireland also has documentary TV series and creative co-production schemes (not checked in detail).",
+    "uk_eligible": "no",
+    "money": "repayable loan",
+    "max_award": "€250,000",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "conditions",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "idfa-bertha-fund-classic",
@@ -362,11 +548,27 @@
     "notable": [],
     "sources": [
       "https://professionals.idfa.nl/training-funding/funding/ibf-classic/",
-      "https://professionals.idfa.nl/training-funding/funding/"
+      "https://professionals.idfa.nl/training-funding/funding/",
+      "https://professionals.idfa.nl/training-funding/funding/about-the-idfa-bertha-fund/"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Not open to UK-based filmmakers. Exact February 2026 deadline not stated on the page."
+    "notes": "Not open to UK-based filmmakers. Exact February 2026 deadline not stated on the page.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "€25,000",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "check",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "idfa-bertha-fund-europe",
@@ -395,7 +597,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Applicant company must be in a Creative Europe MEDIA country. Cannot be combined with Berlinale WCF Europe, TFL Co-production Fund or IFFR HBF+Europe."
+    "notes": "Applicant company must be in a Creative Europe MEDIA country. Cannot be combined with Berlinale WCF Europe, TFL Co-production Fund or IFFR HBF+Europe.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "€40,000",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "cph-forum",
@@ -425,7 +644,25 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": ""
+    "notes": "",
+    "uk_eligible": "yes",
+    "money": "prize",
+    "max_award": "$25,000 (Sandbox Films Science Pitch Prize)",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "visions-du-reel-vdr-pitching",
@@ -438,11 +675,11 @@
       "development"
     ],
     "what": "Co-production and financing platform where up to 15 late-development feature documentaries pitch to international industry, with a cash innovation prize.",
-    "amount": "Eurimages New Lab Innovation Award €20,000",
-    "eligibility": "Feature projects over 60 minutes in late development, not yet in production; open worldwide; director has made at least one short; CHF 30-40 submission fee, CHF 360 participation fee if selected",
+    "amount": "No grant for selection; one €20,000 Eurimages New Lab Innovation Award (restricted eligibility)",
+    "eligibility": "Feature projects over 60 minutes in late development, not yet in production; open worldwide; director has made at least one short; CHF 30 (by 2 Nov) or CHF 40 submission fee, CHF 360 participation fee if selected. The €20,000 Eurimages New Lab Innovation Award is narrower: the project must come from an independent production company in a Eurimages member state (or, with no company attached, a director from a member state), be innovative or experimental, aim at international cooperation and not have had Eurimages co-production support.",
     "status": "open",
     "next_deadline": "2026-12-15",
-    "next_window": "Early deadline 2 Nov 2026 (lower fee); final 15 Dec 2026",
+    "next_window": "Opened 8 Sep 2026; early deadline 2 Nov 2026 (lower fee) has passed; final deadline 15 Dec 2026",
     "last_deadline": "",
     "apply_url": "https://vp.eventival.com/vdr/2027",
     "published_email": "industry@visionsdureel.ch",
@@ -453,7 +690,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Eurimages award eligibility requires a company or director from a Eurimages member state."
+    "notes": "Being selected to pitch does not make a project eligible for the Eurimages award; Visions du Réel and Eurimages confirm award eligibility after selection.",
+    "uk_eligible": "yes",
+    "money": "prize",
+    "max_award": "€20,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "whickers-film-tv-funding-award",
@@ -497,7 +751,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Apply page is inconsistent: £120,000 headline vs £100,000 instalment schedule; budget cap £500,000 vs £400,000; other-funding cap £350,000 vs £300,000. Confirm against T&Cs."
+    "notes": "Apply page is inconsistent: £120,000 headline vs £100,000 instalment schedule; budget cap £500,000 vs £400,000; other-funding cap £350,000 vs £300,000. Confirm against T&Cs.",
+    "uk_eligible": "yes",
+    "money": "prize",
+    "max_award": "£120,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "emerging"
+    ]
   },
   {
     "id": "whickers-podcast-pitch",
@@ -511,21 +782,39 @@
     ],
     "what": "Annual funding award for an audio documentary or podcast project, with finalists hosted at Sheffield DocFest.",
     "amount": "£15,000 winner; £5,000 runner-up",
-    "eligibility": "See Whickers site; finalists get travel, accommodation and an industry pass to Sheffield DocFest 2027",
+    "eligibility": "Open to audio producers anywhere in the world at any career stage; programme must be in English; applicants 18+; executive producer or named mentor attached; up to four minutes of taster audio; up to 2 proposals each; must attend the final in person; free to enter",
     "status": "open",
     "next_deadline": "2027-02-26",
-    "next_window": "",
+    "next_window": "Opened 5 Nov 2026; closes 12pm (midday) GMT 26 Feb 2027",
     "last_deadline": "",
-    "apply_url": "https://www.whickerawards.com/",
+    "apply_url": "https://www.whickerawards.com/apply/the-podcast-pitch/",
     "published_email": "info@whickerawards.com",
     "email_source_url": "https://www.whickerawards.com/",
     "notable": [],
     "sources": [
-      "https://www.whickerawards.com/"
+      "https://www.whickerawards.com/",
+      "https://www.whickerawards.com/apply/the-podcast-pitch/"
     ],
     "checked": "2026-11-08",
-    "confidence": "check",
-    "notes": "Audio, not screen. Deadline comes from an Instagram post embedded on the Whickers homepage; dedicated Podcast Pitch page not opened."
+    "confidence": "high",
+    "notes": "Audio, not screen. Five finalists get a Sheffield DocFest pass, 3 nights accommodation and travel. Award is paid to the winner's production company, or to an individual sole producer.",
+    "uk_eligible": "yes",
+    "money": "prize",
+    "max_award": "£15,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "yes",
+      "canada": "yes",
+      "eu": "yes",
+      "other": "yes"
+    },
+    "formats": [
+      "audio"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "creative-europe-media-co-development",
@@ -538,8 +827,8 @@
       "development"
     ],
     "what": "Grants for at least two European independent production companies co-developing a single fiction, animation or creative documentary project for cinema, TV or digital release.",
-    "amount": "Call budget 12,500,000 for 2027 (currency not stated on page); per-project amounts in call document",
-    "eligibility": "At least two European independent production companies with a signed co-development agreement; eligible countries listed in the call document",
+    "amount": "Up to €60,000 per partner (€100,000 for series budgeted over €20m), max 70% of costs (total pot for 2027: €12.5m)",
+    "eligibility": "At least two independent European production companies with a signed co-development agreement, based in Creative Europe MEDIA countries (the UK is not one: it is absent from the EU list of participating non-EU countries).",
     "status": "open",
     "next_deadline": "2027-03-02",
     "next_window": "Deadline 2 Mar 2027, 17:00 Brussels time",
@@ -549,11 +838,31 @@
     "email_source_url": "",
     "notable": [],
     "sources": [
-      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-codev.json"
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-codev.json",
+      "https://www.creativeeuropedesk.nl/sites/default/files/2026-02/CEDNL_MEDIA_programme_brochure_EN_2026.pdf",
+      "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/guidance/list-3rd-country-participation_crea_en.pdf"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "UK eligibility not stated on the page read; check country list in the call document."
+    "notes": "UK companies cannot be beneficiaries; the EU list of non-EU participating countries (V10.0, Jan 2026) does not include the UK.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "€60,000 per partner (€100,000 for series budgeted over €20m)",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "yes",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "creative-europe-media-slate-development",
@@ -566,8 +875,8 @@
       "development"
     ],
     "what": "Grants for independent European production companies developing a slate of 3 to 5 fiction, animation or creative documentary works.",
-    "amount": "Call budget 22,374,320 for 2027 (currency not stated on page); per-company amounts in call document",
-    "eligibility": "Independent European production companies; full rules in the call document",
+    "amount": "€30,000 to €100,000 per project; €90,000 to €510,000 per slate (total pot for 2027: about €22.4m)",
+    "eligibility": "Independent European production companies in Creative Europe MEDIA countries (the UK is not one: it is absent from the EU list of participating non-EU countries).",
     "status": "open",
     "next_deadline": "2026-12-01",
     "next_window": "Deadline 1 Dec 2026, 17:00 Brussels time",
@@ -577,11 +886,31 @@
     "email_source_url": "",
     "notable": [],
     "sources": [
-      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-devslate.json"
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-devslate.json",
+      "https://www.creativeeuropedesk.nl/sites/default/files/2026-02/CEDNL_MEDIA_programme_brochure_EN_2026.pdf",
+      "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/guidance/list-3rd-country-participation_crea_en.pdf"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Track record and country rules not on the page read; see call document."
+    "notes": "Track record and country rules not on the page read; see call document.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "€100,000 per project; €510,000 per slate",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "yes",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "creative-europe-media-tv-online-documentary",
@@ -594,8 +923,8 @@
       "production"
     ],
     "what": "Production grants for documentary works for linear and non-linear broadcast, encouraging cross-border cooperation between producers, broadcasters, platforms and sales agents.",
-    "amount": "23,300,000 listed for 2027 for this topic (currency not stated); per-project amounts in call document",
-    "eligibility": "Independent producers in MEDIA countries; strong cooperation between operators from different MEDIA countries; non-MEDIA partners cannot be beneficiaries",
+    "amount": "Lump sum per project set by total production budget, from €70,000 (budgets up to €500,000) to €2,000,000 (over €20m). Total pot €23.3m for 2027 is shared by animation, documentary and fiction; at least 8% (€1,864,000) is reserved for documentary projects",
+    "eligibility": "Independent European audiovisual production companies established in, and majority-owned by nationals of, countries fully in the MEDIA strand; strong cooperation between operators from different MEDIA countries; partners from non-MEDIA countries can only be associated partners, not beneficiaries. The UK is not a Creative Europe participating country, so UK companies cannot be beneficiaries.",
     "status": "open",
     "next_deadline": "2027-02-10",
     "next_window": "Two cut-offs: 10 Feb 2027 and 15 Sep 2027, 17:00 Brussels time",
@@ -606,11 +935,29 @@
     "notable": [],
     "sources": [
       "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-tvonline-2.json",
-      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-tvonline-1.json"
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/crea-media-2027-tvonline-1.json",
+      "https://www.creativeeuropedesk.nl/sites/default/files/2026-02/CEDNL_MEDIA_programme_brochure_EN_2026.pdf",
+      "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/wp-call/2027/call-fiche_crea-media-2027-tvonline_en.pdf",
+      "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/crea/guidance/list-3rd-country-participation_crea_en.pdf"
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Broadcaster involvement rules are in the call document, not read."
+    "notes": "Figures from the 2027 call document (V1.0, 30 Sep 2026). Topic budget subject to final adoption of the EU 2027 budget. Broadcaster involvement rules are in the call document.",
+    "uk_eligible": "no",
+    "money": "grant",
+    "max_award": "€2,000,000 lump sum (top band, total production budget over €20m)",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "yes",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "eurimages-co-production",
@@ -624,10 +971,10 @@
     ],
     "what": "Soft loans or subsidies for fiction, animation and documentary feature co-productions between Eurimages member states.",
     "amount": "",
-    "eligibility": "Feature of at least 70 minutes; at least two co-producers from different member states; minority share at least 20% (bilateral) or 10% (multilateral)",
+    "eligibility": "Feature of at least 70 minutes; at least two co-producers from different Eurimages member states; minority share at least 20% (bilateral) or 10% (multilateral); at least 50% of the project financing must be confirmed in each co-producing country at the time of application. A UK producer can only take part alongside co-producers from member states.",
     "status": "unknown",
     "next_deadline": "",
-    "next_window": "Three deadlines a year; 2026-27 dates not found on pages opened",
+    "next_window": "Three deadlines a year; check the site for current dates",
     "last_deadline": "",
     "apply_url": "https://coe.int/web/eurimages/coproduction",
     "published_email": "",
@@ -636,11 +983,31 @@
     "sources": [
       "https://coe.int/web/eurimages/coproduction",
       "https://www.coe.int/en/web/eurimages/deadlines",
-      "https://www.coe.int/web/eurimages/co-production-how-to-submit-an-application-"
+      "https://www.coe.int/web/eurimages/co-production-how-to-submit-an-application-",
+      "https://coe.int/web/eurimages/deadlines",
+      "https://rm.coe.int/faq-co-production-2026/48802cd78d",
+      "https://www.coe.int/en/web/eurimages/members"
     ],
     "checked": "2026-11-08",
     "confidence": "check",
-    "notes": "Deadlines page only lists 2023-24 dates. No maximum amount or email stated. Apply URL taken from search result for the official platform, not opened."
+    "notes": "Official deadlines page still lists only 2024-25 dates and the 2027 dates could not be confirmed on an official page; three deadlines a year. The official pages opened did not list member states, so UK membership status is not stated here. No maximum amount or email stated.",
+    "uk_eligible": "with conditions",
+    "money": "mixed",
+    "max_award": "",
+    "open_to": {
+      "uk": "conditions",
+      "us": "conditions",
+      "canada": "conditions",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "berlinale-world-cinema-fund-classic",
@@ -671,7 +1038,24 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "Not open to UK/European-only projects; WCF Europe is the route for European co-producers. No email printed."
+    "notes": "Not open to UK/European-only projects; WCF Europe is the route for European co-producers. No email printed.",
+    "uk_eligible": "no",
+    "money": "check",
+    "max_award": "€60,000",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [
+      "feature"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
   },
   {
     "id": "nordisk-film-tv-fond-documentary",
@@ -700,6 +1084,115 @@
     ],
     "checked": "2026-11-08",
     "confidence": "high",
-    "notes": "No amounts stated; support is recoupable. Nordic productions only."
+    "notes": "No amounts stated; support is recoupable. Nordic productions only.",
+    "uk_eligible": "no",
+    "money": "repayable loan",
+    "max_award": "",
+    "open_to": {
+      "uk": "no",
+      "us": "no",
+      "canada": "no",
+      "eu": "conditions",
+      "other": "conditions"
+    },
+    "formats": [],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
+  },
+  {
+    "id": "ukgsf-international-co-production",
+    "name": "UK Global Screen Fund International Co-production",
+    "org": "BFI (UK Global Screen Fund)",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "production"
+    ],
+    "what": "Non-recoupable grants for independent UK producers who are minority partners on international feature film co-productions (including documentary and animation) or TV co-productions (documentary or animation only).",
+    "amount": "Up to £300,000 (non-recoupable); covers at most 50% of the overall UK financial contribution",
+    "eligibility": "Independent UK producers with demonstrable production experience; UK partner must be a minority co-producer; at least 60% of overall finance secured (80% for Fast Track), excluding the amount requested and AVEC, plus at least one other UK funding source; TV projects need two broadcasters (minority) or three (majority); requests above 25% of the UK contribution need strong justification",
+    "status": "open",
+    "next_deadline": "2026-11-24",
+    "next_window": "Round opened 12 noon 29 Sep 2026; closes 12 noon 24 Nov 2026. Next round scheduled to open February 2027",
+    "last_deadline": "",
+    "apply_url": "https://www.bfi.org.uk/get-funding-support/funding-support-international-activity/uk-global-screen-fund/uk-global-screen-fund-ukgsf-international-co-production",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.bfi.org.uk/get-funding-support/funding-support-international-activity/uk-global-screen-fund/uk-global-screen-fund-ukgsf-international-co-production",
+      "https://www.bfi.org.uk/get-funding-support/funding-support-international-activity/uk-global-screen-fund"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "The Fast Track deadline (12 noon 27 Oct 2026) has passed. No email printed on the page.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£300,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
+  },
+  {
+    "id": "ukgsf-slate-development",
+    "name": "UK Global Screen Fund Slate Development",
+    "org": "BFI (UK Global Screen Fund)",
+    "region": "UK",
+    "country": "United Kingdom",
+    "type": "grant",
+    "stages": [
+      "development"
+    ],
+    "what": "Grants for independent UK production companies developing a slate of projects with international appeal, including feature and TV documentaries.",
+    "amount": "£45,000 to £150,000 per slate",
+    "eligibility": "Independent UK production companies with demonstrable production experience; slate of 3 to 5 projects (2 minimum for animation-only slates); TV slates limited to documentary and animation",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Next round scheduled to open July 2027",
+    "last_deadline": "",
+    "apply_url": "https://www.bfi.org.uk/get-funding-support/funding-support-international-activity/uk-global-screen-fund/uk-global-screen-fund-slate-development-fund",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://www.bfi.org.uk/get-funding-support/funding-support-international-activity/uk-global-screen-fund/uk-global-screen-fund-slate-development-fund",
+      "https://www.bfi.org.uk/get-funding-support/funding-support-international-activity/uk-global-screen-fund"
+    ],
+    "checked": "2026-11-08",
+    "confidence": "high",
+    "notes": "Page does not say whether the grants are recoupable or give the last round's dates. Max is per slate, not per project.",
+    "uk_eligible": "yes",
+    "money": "grant",
+    "max_award": "£150,000",
+    "open_to": {
+      "uk": "yes",
+      "us": "no",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature",
+      "series"
+    ],
+    "subjects": [],
+    "applicant": [
+      "experienced"
+    ]
   }
 ]

@@ -114,7 +114,7 @@ def build():
             seen_region.add(g["region"])
             sections.append(f'<h2 class="region-h" data-r="{e(g["region"])}" id="region-{e(g["region"].lower())}">{"United Kingdom" if g["region"] == "UK" else "United States"}</h2>')
         sections.append(f'''<section class="bc" id="{e(slug(b))}" data-b="{e(slug(b))}" data-r="{e(g["region"])}">
-  <h2>{e(b)} <span class="n">{len(g.get("commissioners", []))} commissioners</span></h2>
+  <h2><a href="/commissioners/{e(slug(b) if slug(b).endswith("-us") or g["region"] != "US" else slug(b) + "-us")}/" style="color:inherit;text-decoration:none">{e(b)}</a> <span class="n">{len(g.get("commissioners", []))} commissioners &middot; <a href="/commissioners/{e(slug(b) if slug(b).endswith("-us") or g["region"] != "US" else slug(b) + "-us")}/">{e(b)} page</a></span></h2>
   <div class="how">{f'<div><h4>Official pitch routes</h4><ul>{routes}</ul></div>' if routes else ""}{f'<div><h4>What they say they want now</h4><ul>{briefs}</ul></div>' if briefs else ""}</div>
   <div class="grid">{cards}</div>
 </section>''')
@@ -276,6 +276,7 @@ footer a{{color:var(--gold-light)}}
   <h2>Quick match: who would commission your idea?</h2>
   <p class="qm-sub">Type your idea in a line. We match it against every commissioner's remit and what they have actually commissioned.</p>
   <form id="qm" class="qm-form"><label for="idea" class="sr">Your idea</label><input id="idea" name="idea" type="text" maxlength="300" placeholder="e.g. music doc about a 1960s artist" autocomplete="off"><button type="submit">Find commissioners</button></form>
+  <p class="qm-sub" style="margin-top:10px">Need money as well? <a href="/find-funding-and-buyers/">Match your film to funds and commissioners together</a>.</p>
   <div id="qmOut" aria-live="polite"></div>
   <div id="qmGate" class="qm-gate" hidden>
     <p><strong><span id="qmRest"></span> more matches.</strong> Enter your email to see them all, with the full list emailed to you.</p>
