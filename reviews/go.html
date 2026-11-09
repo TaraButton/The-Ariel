@@ -6,11 +6,12 @@
 <script>
 (function(){
   var q=new URLSearchParams(location.search), e=q.get('e')||'', b=q.get('b')||'', u=parseInt(q.get('u')||'0',10), t=q.get('t')||'';
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(e)){location.replace('/reviews/');return;}
-  fetch('/reviews/editions/'+e+'.json').then(function(r){return r.json()}).then(function(ed){
+  var kids=/^kids-\d{4}-\d{2}-\d{2}$/.test(e), base=kids?'/reviews/children/':'/reviews/', d=kids?e.slice(5):e;
+  if(!kids&&!/^\d{4}-\d{2}-\d{2}$/.test(e)){location.replace('/reviews/');return;}
+  fetch(base+'editions/'+d+'.json').then(function(r){return r.json()}).then(function(ed){
     var bk=(ed.books||[]).filter(function(x){return x.book_id===b})[0];
     var r=bk&&bk.reviews&&bk.reviews[u];
-    if(!r||!/^https:\/\//.test(r.url)){location.replace('/reviews/'+e+'.html');return;}
+    if(!r||!/^https:\/\//.test(r.url)){location.replace(base+d+'.html');return;}
     document.getElementById('fallback').href=r.url;
     var body=JSON.stringify({action:'click',edition_id:e,book_id:b,kind:'review',where:'email',pub:r.pub,t:t});
     var sent=false;try{sent=navigator.sendBeacon('https://script.google.com/macros/s/AKfycbz2LY8eW--gMExOT-SkEgxytey5bBdULHkRTsjokCtukJJqQViFYG4PmiUPZQx0ENCqAw/exec',new Blob([body],{type:'text/plain'}))}catch(x){}

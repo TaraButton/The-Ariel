@@ -8,7 +8,8 @@ Lives in `_tools/` so GitHub Pages never publishes it. Canonical mirror for Tara
 The Ariel HQ/Platform/review-of-reviews/.
 
 ## Rules that never bend
-- Fiction AND non-fiction (Tara, 5 Nov 2026: fiction launched). Poetry, children's and picture books stay out.
+- Fiction AND non-fiction (Tara, 5 Nov 2026: fiction launched). Poetry stays out. Children's, picture and YA books go
+  to the Children's Review of Reviews instead (step 10, KIDS_RUN.md).
 - One line per book (max ~20 words) in our own words, from the review's standfirst and the book
   details the publication lists. **No quotes from reviews. No facts that are not on the page.**
 - Every book links to at least one real review URL (https). Never invent a URL or a title.
@@ -34,7 +35,7 @@ The Ariel HQ/Platform/review-of-reviews/.
 4. **Edit.** For every candidate decide:
    - Is it a review of a specific book? (Drop essays, interviews, round-ups whose books are also
      reviewed singly, film/TV reviews filed under Books, diaries, poems, letters.)
-   - A book for grown-ups? (Keep novels and story collections. Drop poetry, children's and picture books.)
+   - A book for grown-ups? (Keep novels and story collections. Drop poetry. Children's, picture and YA books: set aside for step 10.)
    - Book title, author (as the publication lists them).
    - **subject**: exactly one of True crime, Espionage, Politics & world affairs, Business & power,
      Biography & memoir, History, Society & ideas, Nature & place, Arts & culture, Books & writing,
@@ -142,3 +143,7 @@ fiction screen picks (lead = true, subject in the four fiction subjects) to
 the review link, label from the subject: Crime & thriller fiction -> "Crime & Thriller", Literary -> "Literary",
 Historical -> "Historical", Other -> "Book Club", tier primary, score 6). Dedup is on source_url. If `fiction`
 is not active, skip and log `Fiction genre: not active`.
+
+## 10. Children's Review of Reviews (added 9 Nov 2026)
+After the grown-up edition and its agents/fiction steps, run `_tools/brr/KIDS_RUN.md` in the same session,
+including any children's books set aside in step 4. It publishes only when there are 8+ new books.

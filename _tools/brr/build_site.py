@@ -407,7 +407,7 @@ def page(ed, eds, is_index):
 </head>
 <body data-edition="{E(ed["edition_id"])}">
 <a class="skip" href="#edition">Skip to this week&#8217;s books</a>
-<header class="bar"><div class="bar-in"><a href="/">The Ariel</a><a class="bar-cta" href="/#what">What The Ariel does</a></div></header>
+<header class="bar"><div class="bar-in"><a href="/">The Ariel</a><span><a class="bar-cta" href="/reviews/children/" style="margin-right:16px">Children&#8217;s books</a><a class="bar-cta" href="/#what">What The Ariel does</a></span></div></header>
 <section class="hero" aria-labelledby="page-title"><div class="hero-in">
   <div class="hero-intro">
     <p class="free"><span class="free-badge">Free</span><span class="free-when">Every Monday &middot; {E(ed["date_label"])}</span></p>
@@ -510,11 +510,12 @@ GO_HTML = r"""<!DOCTYPE html>
 <script>
 (function(){
   var q=new URLSearchParams(location.search), e=q.get('e')||'', b=q.get('b')||'', u=parseInt(q.get('u')||'0',10), t=q.get('t')||'';
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(e)){location.replace('/reviews/');return;}
-  fetch('/reviews/editions/'+e+'.json').then(function(r){return r.json()}).then(function(ed){
+  var kids=/^kids-\d{4}-\d{2}-\d{2}$/.test(e), base=kids?'/reviews/children/':'/reviews/', d=kids?e.slice(5):e;
+  if(!kids&&!/^\d{4}-\d{2}-\d{2}$/.test(e)){location.replace('/reviews/');return;}
+  fetch(base+'editions/'+d+'.json').then(function(r){return r.json()}).then(function(ed){
     var bk=(ed.books||[]).filter(function(x){return x.book_id===b})[0];
     var r=bk&&bk.reviews&&bk.reviews[u];
-    if(!r||!/^https:\/\//.test(r.url)){location.replace('/reviews/'+e+'.html');return;}
+    if(!r||!/^https:\/\//.test(r.url)){location.replace(base+d+'.html');return;}
     document.getElementById('fallback').href=r.url;
     var body=JSON.stringify({action:'click',edition_id:e,book_id:b,kind:'review',where:'email',pub:r.pub,t:t});
     var sent=false;try{sent=navigator.sendBeacon('__BRR_ENDPOINT__',new Blob([body],{type:'text/plain'}))}catch(x){}

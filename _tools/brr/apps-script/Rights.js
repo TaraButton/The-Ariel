@@ -88,7 +88,7 @@ function logClick_(b) {
     var row = findRow_(sh, 6, b.t);
     if (row) { role = cell_(sh, row, 'role') || 'subscriber'; reader = shortHash_(cell_(sh, row, 'email')); }
   }
-  sheet_('Clicks').appendRow([new Date(), String(b.edition_id || '').slice(0, 12), book,
+  sheet_('Clicks').appendRow([new Date(), String(b.edition_id || '').slice(0, 20), book,
     String(b.kind || 'review').slice(0, 20), String(b.where || 'page').slice(0, 10), role, reader, String(b.pub || '').slice(0, 30)]);
   return { ok: true };
 }
@@ -152,7 +152,7 @@ function checkRights_(b) {
 
     var now = new Date();
     var status = (tier === 'upsell') ? 'upsell_shown' : (tier === 'pass_interest' ? 'pass_interest' : 'open');
-    req.appendRow([now, bookId, bookTitle, email, name, company, role, tier, status, '', String(b.source || 'page').slice(0, 20), String(b.edition_id || '').slice(0, 12)]);
+    req.appendRow([now, bookId, bookTitle, email, name, company, role, tier, status, '', String(b.source || 'page').slice(0, 20), String(b.edition_id || '').slice(0, 20)]);
     var reqRow = req.getLastRow();
     logClick_({ book_id: bookId, kind: tier === 'upsell' ? 'check_rights_upsell' : 'check_rights', where: b.source || 'page', edition_id: b.edition_id, t: b.t });
 

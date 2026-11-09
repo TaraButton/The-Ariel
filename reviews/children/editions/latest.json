@@ -1,0 +1,396 @@
+{
+ "edition_id": "kids-2026-11-09",
+ "date_label": "9 November 2026",
+ "window": "Launch edition: reviews published 21 October - 8 November 2026",
+ "preheader": "24 children's and YA books reviewed in the British press, sorted by age, one line each.",
+ "books": [
+  {
+   "book": "Dogs, Dogs, Dogs",
+   "author": "John Devolle",
+   "subject": "Preschool fiction (0-5)",
+   "line": "A rhyming, brightly coloured picture book celebrating every kind of dog, for the very youngest dog fans.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "dogs-dogs-dogs-john-devolle"
+  },
+  {
+   "book": "More!",
+   "author": "Ged Adamson",
+   "subject": "Preschool fiction (0-5)",
+   "line": "On a walk with Mouse, Squirrel keeps wanting more things, until he sees what really matters is his friend.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "more-ged-adamson"
+  },
+  {
+   "book": "Marcie and Giraffe",
+   "author": "Kim Gregory",
+   "subject": "Preschool fiction (0-5)",
+   "line": "A girl and her giraffe friend turn a painting rivalry into a joyful creative collaboration.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Books for Keeps",
+     "url": "https://booksforkeeps.co.uk/review/marcie-and-giraffe/",
+     "verdict": "rave"
+    }
+   ],
+   "book_id": "marcie-and-giraffe-kim-gregory"
+  },
+  {
+   "book": "The Fisherman and the Mermaids",
+   "author": "Diana Marciano, illustrated by David Pogran",
+   "subject": "Preschool fiction (0-5)",
+   "line": "An old fisherman turns down three mermaids' tempting bargains in a new fable translated from the Italian.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Books for Keeps",
+     "url": "https://booksforkeeps.co.uk/review/the-fisherman-and-the-mermaids/",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "the-fisherman-and-the-mermaids-diana-marciano-illustrated-by-david-pogran"
+  },
+  {
+   "book": "Ghost, Ghoul and Little Mouse",
+   "author": "Graham Howie",
+   "subject": "Preschool fiction (0-5)",
+   "line": "A lonely mouse finally wins the attention of two squabbling ghosts who move into his creaky house.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Books for Keeps",
+     "url": "https://booksforkeeps.co.uk/review/ghost-ghoul-and-little-mouse/",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "ghost-ghoul-and-little-mouse-graham-howie"
+  },
+  {
+   "book": "The Dad Book",
+   "author": "Forest Xiao",
+   "subject": "Preschool fiction (0-5)",
+   "line": "One line and one simple drawing per page celebrate what fathers and babies teach each other.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Books for Keeps",
+     "url": "https://booksforkeeps.co.uk/review/the-dad-book/",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "the-dad-book-forest-xiao"
+  },
+  {
+   "book": "Pomona: Stories of the Cat Witch",
+   "author": "Tor Freeman",
+   "subject": "5-8 fiction",
+   "line": "Six short, whimsical stories about a kind cat witch and her friends in the forest.",
+   "lead": true,
+   "why": "A gentle, episodic world with a warm central character and a ready-made cast of forest friends.",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/uk/get-britain-reading/article/best-childrens-books-read-now-october-2026-xtxdm03zq",
+     "verdict": "warm"
+    },
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "pomona-stories-of-the-cat-witch-tor-freeman"
+  },
+  {
+   "book": "The Tale That Time Sews",
+   "author": "Sita Brahmachari, illustrated by Jane Ray",
+   "subject": "5-8 fiction",
+   "line": "As a new baby is due, Nana stitches the family's stories of migration and belonging into a quilt.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "the-tale-that-time-sews-sita-brahmachari-illustrated-by-jane-ray"
+  },
+  {
+   "book": "Little Minotaur",
+   "author": "Gaia Alessi",
+   "subject": "5-8 fiction",
+   "line": "The Minotaur myth retold as a picture book about a gentle bull-headed boy searching for his place.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "little-minotaur-gaia-alessi"
+  },
+  {
+   "book": "The Amazing Jam",
+   "author": "Shona Shirley Macdonald",
+   "subject": "5-8 fiction",
+   "line": "Grub, a musician cat, enters a jam-making contest and his jams come to life and start to dance.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Books for Keeps",
+     "url": "https://booksforkeeps.co.uk/review/the-amazing-jam/",
+     "verdict": "rave"
+    }
+   ],
+   "book_id": "the-amazing-jam-shona-shirley-macdonald"
+  },
+  {
+   "book": "Beacons of Light: A Journey Through the World of Lighthouses",
+   "author": "Gemma Koomen",
+   "subject": "5-8 non-fiction",
+   "line": "A picture-book tour of lighthouses around the world, their history, their keepers and their oddities.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/uk/get-britain-reading/article/best-childrens-books-read-now-october-2026-xtxdm03zq",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "beacons-of-light-a-journey-through-the-world-of-lighthouses-gemma-koomen"
+  },
+  {
+   "book": "Hometown",
+   "author": "Shaun Tan",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "A graphic-novel fable about a girl told by a stranger that she does not belong in the only world she knows.",
+   "lead": true,
+   "why": "A visual fable about belonging, nearly a decade in the making, from the creator of The Arrival.",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/30/hometown-by-shaun-tan-review-another-masterpiece-from-the-acclaimed-author-illustrator",
+     "verdict": "rave"
+    }
+   ],
+   "book_id": "hometown-shaun-tan"
+  },
+  {
+   "book": "Lumi and the Wolf",
+   "author": "Lottie Saahko",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "An autistic girl sent to Lapland befriends a white wolf and sets out to lead him to safety.",
+   "lead": true,
+   "why": "A girl and a wolf on a perilous journey across Lapland, with Sami life and a changing climate behind it.",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "lumi-and-the-wolf-lottie-saahko"
+  },
+  {
+   "book": "The Rambler's Curse",
+   "author": "Mikey Please",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "A human customer sets off chaos at a magical cafe in the woods; the first of a comic trilogy.",
+   "lead": true,
+   "why": "A comic fantasy world and cast first built in a prize-winning picture book, now growing into a trilogy.",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "the-rambler-s-curse-mikey-please"
+  },
+  {
+   "book": "Olivia Shivers: Spooky Special Agent",
+   "author": "Derek Keilty, illustrated by Louis Ghibault",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "A girl finds out her grandad works for a secret ghost-rescue agency, then has to rescue him.",
+   "lead": true,
+   "why": "A secret ghost agency hidden under the town library, full of gadgets, and the start of a series.",
+   "reviews": [
+    {
+     "pub": "Books for Keeps",
+     "url": "https://booksforkeeps.co.uk/review/olivia-shivers-spooky-special-agent/",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "olivia-shivers-spooky-special-agent-derek-keilty-illustrated-by-louis-ghibault"
+  },
+  {
+   "book": "Jekyll vs Hyde: The Potion of Doom",
+   "author": "Jack Meggitt-Phillips, illustrated by Holly Swain",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "A spoilt boy drinks a forbidden potion and unleashes a troublemaking alter ego in a comic gothic romp.",
+   "lead": true,
+   "why": "A comic spin on a famous classic, with a horrid hero and an alter ego who grows older each time he appears.",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/uk/get-britain-reading/article/best-childrens-books-read-now-october-2026-xtxdm03zq"
+    }
+   ],
+   "book_id": "jekyll-vs-hyde-the-potion-of-doom-jack-meggitt-phillips-illustrated-by-holly-swa"
+  },
+  {
+   "book": "A Year of Fairy Tales",
+   "author": "Sophie Anderson, illustrated by Elisa Paganelli",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "Twelve stories, one for each month, mixing classic fairy-tale retellings with tales from world folklore.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "a-year-of-fairy-tales-sophie-anderson-illustrated-by-elisa-paganelli"
+  },
+  {
+   "book": "Girl With a Sabretooth Tiger",
+   "author": "Jasbinder Bilan",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "In prehistoric England, a girl braves a mountain quest to save her baby sister, guided by a tiger's spirit.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "girl-with-a-sabretooth-tiger-jasbinder-bilan"
+  },
+  {
+   "book": "Graveyard Gladiators",
+   "author": "David Owen",
+   "subject": "Middle grade fiction (8-12)",
+   "line": "To save his dad, a boy must win a Halloween wrestling tournament against the monsters of a graveyard.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/uk/get-britain-reading/article/best-childrens-books-read-now-october-2026-xtxdm03zq",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "graveyard-gladiators-david-owen"
+  },
+  {
+   "book": "Raising Hare",
+   "author": "Chloe Dalton",
+   "subject": "Middle grade non-fiction (8-12)",
+   "line": "The young readers' edition of the bestselling memoir about rescuing and raising a wild leveret.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/uk/get-britain-reading/article/best-childrens-books-read-now-october-2026-xtxdm03zq",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "raising-hare-chloe-dalton"
+  },
+  {
+   "book": "Young World",
+   "author": "Soman Chainani",
+   "subject": "YA fiction (12+)",
+   "line": "A 17-year-old's viral video makes him US president, then he is framed for murder at a summit of teen leaders.",
+   "lead": true,
+   "why": "A teenage president, a summit of teenage world leaders and a murder: a big, high-concept political thriller.",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/uk/get-britain-reading/article/best-childrens-books-read-now-october-2026-xtxdm03zq",
+     "verdict": "mixed"
+    }
+   ],
+   "book_id": "young-world-soman-chainani"
+  },
+  {
+   "book": "Anger Is Only a Shadow",
+   "author": "Elizabeth Acevedo",
+   "subject": "YA fiction (12+)",
+   "line": "A girl on probation risks her freedom to help her brother at college, who has started hearing voices.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "anger-is-only-a-shadow-elizabeth-acevedo"
+  },
+  {
+   "book": "Nightcurse",
+   "author": "Emma Hinds",
+   "subject": "YA fiction (12+)",
+   "line": "A 157-year-old revenant and his shapeshifting rival hunt missing books in a secret magical library.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "nightcurse-emma-hinds"
+  },
+  {
+   "book": "Flarestorm",
+   "author": "Moira Buffini",
+   "subject": "YA fiction (12+)",
+   "line": "The final book of the Torch Trilogy, as telepaths and rebels march on the Capital.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/oct/23/childrens-and-teens-roundup-the-best-new-picture-books-and-novels",
+     "verdict": "warm"
+    }
+   ],
+   "book_id": "flarestorm-moira-buffini"
+  }
+ ]
+}

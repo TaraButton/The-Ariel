@@ -109,6 +109,39 @@ var GENRES = {
     items_per_day: 6,
     lens: 'On-request Fiction feed for drama producers and scripted development. Surface novels and short-story collections with adaptation potential: a strong premise that can be said in a sentence, a central character worth following for a series, a vivid world or period, crime and thriller plots, literary fiction with prize or review heat, debuts with buzz, forthcoming titles with lead time, and publishing deals or rights news that signal a book is coming. Favour reviews, deal reports, prize longlists, author profiles and agent rights lists.',
     avoid: 'Poetry, children\'s and picture books, non-fiction, bestseller-list reporting with no book at the centre, and anything already announced as a film or series.'
+    },
+  /* Children's genres (Tara, 9 Nov 2026), fed by the Children's Review of Reviews screen picks plus the shared sources. */
+  'kids-preschool': {
+    name: 'Preschool (0-5)', on_request: true,
+    blurb: 'Picture books and preschool non-fiction with series potential: characters little children love, worlds built for episodes.',
+    labels: ['Picture Books', 'Preschool Non-fiction', 'Characters & Series', 'Debuts & Deals'],
+    items_per_day: 6,
+    lens: 'On-request Preschool feed for children\'s TV, animation and preschool development. Surface picture books and preschool non-fiction (ages 0-5) with screen potential: a warm central character, a simple repeatable premise that could carry episodes, a distinctive visual world, strong review or prize heat, and series or sequel news. Include book deals and rights news for picture books, and rights-available titles from agents.',
+    avoid: 'Parenting advice, education policy, reading-for-pleasure statistics, bestseller lists with no book at the centre, and anything already announced as a film or series.'
+  },
+  'kids-5-8': {
+    name: 'Ages 5-8', on_request: true,
+    blurb: 'Young fiction, illustrated stories and early non-fiction for 5-8s: funny, magical and adventurous books with a world to come back to.',
+    labels: ['Young Fiction', 'Illustrated Stories', 'Early Non-fiction', 'Characters & Series', 'Debuts & Deals'],
+    items_per_day: 6,
+    lens: 'On-request Ages 5-8 feed for children\'s TV and animation. Surface picture books for older readers, first chapter books, illustrated story collections and non-fiction for ages 5-8 with screen potential: a hero children want to follow, comedy, magic or adventure with an episodic shape, a world that can grow, and review, prize or deal news. Include rights-available titles from agents.',
+    avoid: 'Parenting advice, education policy, reading-for-pleasure statistics, bestseller lists with no book at the centre, and anything already announced as a film or series.'
+  },
+  'kids-middle-grade': {
+    name: 'Middle Grade (8-12)', on_request: true,
+    blurb: 'Novels, graphic novels and non-fiction for 8-12s: adventure, mystery, magic and true stories with a strong hero and a series in them.',
+    labels: ['Adventure & Mystery', 'Fantasy & Magic', 'Funny', 'Graphic Novels', 'Non-fiction'],
+    items_per_day: 6,
+    lens: 'On-request Middle Grade feed for family drama, animation and children\'s TV. Surface middle-grade novels, graphic novels and non-fiction (ages 8-12) with screen potential: a premise that can be said in a sentence, a hero worth following for a series, a secret world or organisation, adventure, mystery or comic fantasy, true stories of children and animals, and prize, review or deal heat. Include rights-available titles from agents.',
+    avoid: 'Parenting advice, education policy, reading-for-pleasure statistics, bestseller lists with no book at the centre, and anything already announced as a film or series.'
+  },
+  'kids-ya': {
+    name: 'Young Adult (12+)', on_request: true,
+    blurb: 'YA fiction and teen non-fiction with screen potential: thrillers, romantasy, contemporary stories and big high-concept series.',
+    labels: ['Thriller & Mystery', 'Fantasy & Romantasy', 'Contemporary', 'Dystopian & Sci-fi', 'Teen Non-fiction'],
+    items_per_day: 6,
+    lens: 'On-request Young Adult feed for teen drama and streaming development. Surface YA novels and teen non-fiction (12+) with screen potential: a high-concept premise, a central character worth following for a series, thrillers and mysteries, fantasy and romantasy worlds, contemporary stories with a strong voice, series finales and trilogies, BookTok or prize heat, and book deals. Include rights-available titles from agents.',
+    avoid: 'Parenting advice, education policy, reading-for-pleasure statistics, bestseller lists with no book at the centre, and anything already announced as a film or series.'
   }
 };
 

@@ -41,7 +41,9 @@ var CONFIG = {
   APPLY_URL: 'https://theariel.tv/#book',
   MAX_PICKS: 8,
   BATCH_MS: 4.5 * 60 * 1000,
-  CELL_LIMIT: 45000
+  CELL_LIMIT: 45000,
+  KIDS_NAME: 'Children\u2019s Review of Reviews',
+  KIDS_SITE: 'https://theariel.tv/reviews/children/'
 };
 
 var SUBJECTS = [
@@ -51,10 +53,37 @@ var SUBJECTS = [
   'Crime & thriller fiction', 'Literary fiction', 'Historical fiction', 'Other fiction'
 ];
 
+/* Children's Review of Reviews (added 9 Nov 2026). Same subscriber list; kids subjects decide who gets
+   the children's edition. Keep in step with SUBJECTS in _tools/brr/build_kids.py. */
+var KIDS_SUBJECTS = [
+  'Preschool fiction (0-5)', 'Preschool non-fiction (0-5)', '5-8 fiction', '5-8 non-fiction',
+  'Middle grade fiction (8-12)', 'Middle grade non-fiction (8-12)', 'YA fiction (12+)', 'YA non-fiction (12+)'
+];
+var ALL_SUBJECTS = SUBJECTS.concat(KIDS_SUBJECTS);
+var KIDS_BANDS = ['Preschool (0-5)', 'Ages 5-8', 'Middle grade (8-12)', 'Young adult (12+)'];
+
+function isKidsEd_(ed) { return /^kids-/.test(String((ed && ed.edition_id) || '')); }
+function kidsSource_(source) { return /^kids/.test(String(source || '')); }
+/** Children's edition: anyone who chose a kids subject, or signed up on the children's page with none. */
+function wantsKids_(subjects, source) {
+  if (subjects.some(function (s) { return KIDS_SUBJECTS.indexOf(s) >= 0; })) return true;
+  return !subjects.length && kidsSource_(source);
+}
+/** Main edition: everyone except people who only want children's books. */
+function wantsMain_(subjects, source) {
+  if (subjects.some(function (s) { return SUBJECTS.indexOf(s) >= 0; })) return true;
+  return !subjects.length && !kidsSource_(source);
+}
+function ensureSubCols_() {
+  var sh = sheet_('Subscribers');
+  var hs = headers_(sh);
+  SUB_HEADERS.forEach(function (h, i) { if (hs.indexOf(h) < 0 && !hs[i]) sh.getRange(1, i + 1).setValue(h).setFontWeight('bold'); });
+}
+
 var ROLES = ['Producer', 'Development executive', 'Commissioner', 'Agent or publisher', 'Writer', 'Other'];
 
 var SUB_HEADERS = ['email', 'name', 'role', 'subjects', 'status', 'token', 'created_at', 'confirmed_at',
-  'unsubscribed_at', 'source', 'consent', 'last_sent_edition', 'last_confirm_sent'];
+  'unsubscribed_at', 'source', 'consent', 'last_sent_edition', 'last_confirm_sent', 'last_sent_kids'];
 var ED_HEADERS = ['edition_id', 'status', 'send_after', 'created_at', 'sent_at', 'sent_count',
   'json_1', 'json_2', 'json_3', 'json_4', 'json_5'];
 
@@ -175,12 +204,22 @@ function subscribe_(b) {
   var lock = LockService.getScriptLock();
   lock.waitLock(20000);
   try {
+    ensureSubCols_();
     var sh = sheet_('Subscribers');
     var row = findRow_(sh, 1, email);
     var now = new Date();
     if (row && cell_(sh, row, 'status') === 'active') {
       // Already subscribed: update subjects if they chose some, send nothing.
-      if (subjects.length) setCell_(sh, row, 'subjects', subjects.join(', '));
+      if (subjects.length) {
+        // Joining the other Review keeps the subjects they already had (e.g. kids page + grown-up subjects).
+        var had = cleanSubjects_(cell_(sh, row, 'subjects'));
+        var merged = kidsSource_(source) || subjects.every(function (s) { return KIDS_SUBJECTS.indexOf(s) < 0; })
+          ? had.filter(function (s) { return kidsSource_(source) ? KIDS_SUBJECTS.indexOf(s) < 0 : SUBJECTS.indexOf(s) < 0; }).concat(subjects)
+          : subjects;
+        setCell_(sh, row, 'subjects', cleanSubjects_(merged).join(', '));
+      } else if (kidsSource_(source) && !wantsKids_(cleanSubjects_(cell_(sh, row, 'subjects')), cell_(sh, row, 'source'))) {
+        setCell_(sh, row, 'subjects', cleanSubjects_(cell_(sh, row, 'subjects')).concat(KIDS_SUBJECTS).join(', '));
+      }
       return { ok: true, status: 'already' };
     }
     var token;
@@ -198,7 +237,7 @@ function subscribe_(b) {
         consent: CONSENT_TEXT, last_sent_edition: '', last_confirm_sent: now };
       sh.appendRow(SUB_HEADERS.map(function (h) { return rec[h]; }));
     }
-    sendConfirm_(email, name, token);
+    sendConfirm_(email, name, token, !wantsMain_(subjects, source));
     return { ok: true, status: 'pending' };
   } finally {
     lock.releaseLock();
@@ -212,8 +251,9 @@ function confirm_(token) {
   var wasActive = cell_(sh, row, 'status') === 'active';
   setCells_(sh, row, { status: 'active', confirmed_at: cell_(sh, row, 'confirmed_at') || new Date(), unsubscribed_at: '' });
   var email = cell_(sh, row, 'email');
+  var kidsOnly = !wantsMain_(cleanSubjects_(cell_(sh, row, 'subjects')), cell_(sh, row, 'source'));
   if (!wasActive) {
-    var latest = latestEdition_('sent');
+    var latest = latestEdition_('sent', kidsOnly);
     if (latest) {
       var sub = subFromRow_(sh, row);
       try {
@@ -231,10 +271,10 @@ function confirm_(token) {
   var subjects = cell_(sh, row, 'subjects');
   return {
     title: 'You’re subscribed',
-    body: '<p>The London Review of Reviews will arrive every Monday morning' +
+    body: '<p>The ' + (kidsOnly ? CONFIG.KIDS_NAME + ' will arrive on Monday mornings when a new edition is out' : 'London Review of Reviews will arrive every Monday morning') +
       (subjects ? ', with books for <strong>' + esc_(subjects) + '</strong> picked out at the top.' : '.') + '</p>' +
-      (latestEdition_('sent') ? '<p>We’ve just sent you the latest edition so you don’t have to wait.</p>' : '') +
-      '<p><a class="btn" href="' + CONFIG.SITE + '">Read this week’s edition</a></p>' +
+      (latestEdition_('sent', kidsOnly) ? '<p>We’ve just sent you the latest edition so you don’t have to wait.</p>' : '') +
+      '<p><a class="btn" href="' + (kidsOnly ? CONFIG.KIDS_SITE : CONFIG.SITE) + '">Read the latest edition</a></p>' +
       '<p class="small"><a href="' + webUrl_() + '?action=prefs&t=' + encodeURIComponent(token) + '">Change your subjects</a></p>'
   };
 }
@@ -262,15 +302,19 @@ function prefsPage_(token) {
   var row = findRow_(sh, 6, token);
   if (!row) return { title: 'Link not recognised', body: '<p>Please use the link in your latest email.</p>' };
   var current = String(cell_(sh, row, 'subjects')).split(/\s*,\s*/);
+  var kidsBoxes = '<p style="margin:22px 0 4px;font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#1D5A53;">Children\u2019s Review of Reviews</p>' +
+    KIDS_SUBJECTS.map(function (s) {
+      return '<label class="chk"><input type="checkbox" name="s" value="' + esc_(s) + '"' + (current.indexOf(s) >= 0 ? ' checked' : '') + '> ' + esc_(s) + '</label>';
+    }).join('');
   var boxes = SUBJECTS.map(function (s) {
     return (s === SUBJECTS[0] ? '<p style="margin:14px 0 4px;font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#454D60;">Non-fiction</p>' : '') +
       (s === FICTION_SUBJECTS[0] ? '<p style="margin:14px 0 4px;font-size:13px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#8A2F3A;">Fiction</p>' : '') +
       '<label class="chk"><input type="checkbox" name="s" value="' + esc_(s) + '"' +
       (current.indexOf(s) >= 0 ? ' checked' : '') + '> ' + esc_(s) + '</label>';
-  }).join('');
+  }).join('') + kidsBoxes;
   return {
     title: 'Your subjects',
-    body: '<p>Pick what you develop. Books in these subjects are picked out at the top of your edition.</p>' +
+    body: '<p>Pick what you develop. Books in these subjects are picked out at the top of your edition. Tick any children\u2019s subject to get the Children\u2019s Review of Reviews too.</p>' +
       '<form method="get" action="' + webUrl_() + '" target="_top" id="f">' +
       '<input type="hidden" name="action" value="saveprefs"><input type="hidden" name="t" value="' + esc_(token) + '">' +
       '<div class="chks">' + boxes + '</div><button class="btn" type="submit">Save</button></form>' +
@@ -296,13 +340,13 @@ function cleanSubjects_(v) {
   var out = [];
   v.forEach(function (s) {
     s = String(s).trim();
-    if (SUBJECTS.indexOf(s) >= 0 && out.indexOf(s) < 0) out.push(s);
+    if (ALL_SUBJECTS.indexOf(s) >= 0 && out.indexOf(s) < 0) out.push(s);
   });
   return out;
 }
 
 function subFromRow_(sh, row) {
-  return { row: row, email: cell_(sh, row, 'email'), name: cell_(sh, row, 'name'),
+  return { row: row, email: cell_(sh, row, 'email'), name: cell_(sh, row, 'name'), source: cell_(sh, row, 'source'),
     token: cell_(sh, row, 'token'), subjects: cleanSubjects_(cell_(sh, row, 'subjects')) };
 }
 
@@ -342,7 +386,7 @@ function validateEdition_(ed) {
   var p = [];
   ed.books.forEach(function (bk, i) {
     if (!bk.book) p.push(i + ': no book title');
-    if (SUBJECTS.indexOf(bk.subject) < 0) p.push(i + ': bad subject ' + bk.subject);
+    if ((isKidsEd_(ed) ? KIDS_SUBJECTS : SUBJECTS).indexOf(bk.subject) < 0) p.push(i + ': bad subject ' + bk.subject);
     if (!bk.line) p.push(i + ': no line');
     if (!bk.reviews || !bk.reviews.length) p.push(i + ': no review links');
     (bk.reviews || []).forEach(function (r) { if (!/^https:\/\//.test(r.url || '')) p.push(i + ': bad url'); });
@@ -368,10 +412,11 @@ function editionFromRow_(sh, row) {
   return JSON.parse(s);
 }
 
-function latestEdition_(status) {
+function latestEdition_(status, kids) {
   var sh = sheet_('Editions');
   var last = sh.getLastRow();
   for (var r = last; r >= 2; r--) {
+    if (/^kids-/.test(idText_(cell_(sh, r, 'edition_id'))) !== !!kids) continue;
     if (!status || cell_(sh, r, 'status') === status) return editionFromRow_(sh, r);
   }
   return null;
@@ -380,7 +425,13 @@ function latestEdition_(status) {
 /* ───────────────────────── sending ───────────────────────── */
 
 function pullLatestEdition() {
-  var res = UrlFetchApp.fetch(CONFIG.SITE + 'editions/latest.json?ts=' + Date.now(), { muteHttpExceptions: true });
+  var out = pullFrom_(CONFIG.SITE);
+  try { pullFrom_(CONFIG.KIDS_SITE); } catch (err) { log_('error', 'pull kids: ' + err); }
+  return out;
+}
+
+function pullFrom_(site) {
+  var res = UrlFetchApp.fetch(site + 'editions/latest.json?ts=' + Date.now(), { muteHttpExceptions: true });
   if (res.getResponseCode() !== 200) { log_('pull', 'latest.json HTTP ' + res.getResponseCode()); return null; }
   var ed;
   try { ed = JSON.parse(res.getContentText()); } catch (err) { log_('pull', 'latest.json not JSON'); return null; }
@@ -403,6 +454,7 @@ function sendDueEditions() {
   try {
     var start = Date.now();
     try { if (!SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Config')) setupRights_(); else ensureTriggers_(); } catch (err) { log_('error', 'setupRights: ' + err); }
+    try { ensureSubCols_(); } catch (err) { log_('error', 'subcols: ' + err); }
     try { pullLatestEdition(); } catch (err) { log_('error', 'pull: ' + err); }
     try { wbwTick(); } catch (err) { log_('error', 'wbw: ' + err); }
     var esh = sheet_('Editions');
@@ -446,12 +498,16 @@ function sendBatch_(ed, start) {
   var idx = {};
   SUB_HEADERS.forEach(function (h, i) { idx[h] = i; });
   var testList = testOnly_() ? testOnly_().split(/\s*,\s*/) : null;
+  var kids = isKidsEd_(ed);
+  var lastCol = kids ? idx.last_sent_kids : idx.last_sent_edition;
   var sent = 0, errors = 0;
   for (var i = 1; i < data.length; i++) {
     if (Date.now() - start > CONFIG.BATCH_MS) return { sent: sent, errors: errors, finished: false };
     var rowv = data[i];
     if (rowv[idx.status] !== 'active') continue;
-    if (idText_(rowv[idx.last_sent_edition]) === idText_(ed.edition_id)) continue;
+    var rsubs = cleanSubjects_(rowv[idx.subjects]);
+    if (kids ? !wantsKids_(rsubs, rowv[idx.source]) : !wantsMain_(rsubs, rowv[idx.source])) continue;
+    if (idText_(rowv[lastCol]) === idText_(ed.edition_id)) continue;
     var email = String(rowv[idx.email]);
     if (testList && testList.indexOf(email) < 0) continue;
     if (MailApp.getRemainingDailyQuota() < 5) {
@@ -460,8 +516,8 @@ function sendBatch_(ed, start) {
     }
     try {
       sendEditionTo_(ed, { row: i + 1, email: email, name: rowv[idx.name], token: rowv[idx.token],
-        subjects: cleanSubjects_(rowv[idx.subjects]) }, false);
-      sh.getRange(i + 1, idx.last_sent_edition + 1).setValue("'" + ed.edition_id);
+        subjects: rsubs }, false);
+      sh.getRange(i + 1, lastCol + 1).setValue("'" + ed.edition_id);
       sent++;
     } catch (err) {
       errors++;
@@ -474,7 +530,7 @@ function sendBatch_(ed, start) {
       if (!addr) return;
       var found = data.some(function (r) { return String(r[idx.email]) === addr && r[idx.status] === 'active'; });
       if (!found) {
-        sendEditionTo_(ed, { email: addr, name: '', token: '', subjects: ['True crime', 'Espionage', 'History'] }, false);
+        sendEditionTo_(ed, { email: addr, name: '', token: '', subjects: kids ? ['Middle grade fiction (8-12)', 'YA fiction (12+)'] : ['True crime', 'Espionage', 'History'] }, false);
         sent++;
       }
     });
@@ -525,6 +581,7 @@ function picksFor_(ed, subjects) {
 }
 
 function renderEmail_(ed, sub, isWelcome) {
+  if (isKidsEd_(ed)) return renderKidsEmail_(ed, sub, isWelcome);
   var picks = picksFor_(ed, sub.subjects);
   var fic = fictionOnly_(sub.subjects);
   var P = fic ? { ivory: C_FIC.ivory, tint: C_FIC.tint, gold: C_FIC.gold, goldDeep: C_FIC.goldDeep, line: C_FIC.line, goldLight: C_FIC.goldLight }
@@ -648,7 +705,8 @@ function bookBlock_(b, withWhy, ctx) {
     return '<a href="' + esc_(ctx.edition_id ? go(i) : r.url) + '" style="color:' + C.goldDeep + ';text-decoration:underline;">' + esc_(r.pub) + '</a>' +
       (VL[r.verdict] ? ' <span style="font-size:13px;color:' + C.goldDeep + ';">(' + VL[r.verdict] + ')</span>' : '');
   }).join(' &middot; ');
-  var check = CONFIG.SITE + (ctx.edition_id ? ctx.edition_id + '.html' : '') + '?check=' + encodeURIComponent(bid) + (ctx.token ? '&t=' + encodeURIComponent(ctx.token) : '') + '#b-' + bid;
+  var kidsEd = /^kids-/.test(String(ctx.edition_id || ''));
+  var check = (kidsEd ? CONFIG.KIDS_SITE + String(ctx.edition_id).slice(5) + '.html' : CONFIG.SITE + (ctx.edition_id ? ctx.edition_id + '.html' : '')) + '?check=' + encodeURIComponent(bid) + (ctx.token ? '&t=' + encodeURIComponent(ctx.token) : '') + '#b-' + bid;
   return '<div style="font-family:' + SANS + ';font-size:17px;line-height:1.35;color:' + C.ink + ';font-weight:bold;">' +
     (withWhy || !b.lead ? '' : '<span style="color:' + C.gold + ';">&#9733; </span>') + esc_(b.book) +
     (b.author ? ' <span style="font-weight:normal;color:' + C.mist + ';font-size:15px;">' + esc_(b.author) + '</span>' : '') + '</div>' +
@@ -666,7 +724,7 @@ function previewEmail_(p) {
     var row = findRow_(sh, 1, p.edition);
     ed = row ? editionFromRow_(sh, row) : null;
   } else {
-    ed = latestEdition_();
+    ed = latestEdition_('', p.kids === '1');
   }
   if (!ed) return page_({ title: 'No edition yet', body: '<p>No edition has been published yet.</p>' });
   var m = renderEmail_(ed, { email: '', token: '', subjects: cleanSubjects_(String(p.subjects || '').split(',')) }, false);
@@ -752,8 +810,9 @@ function webUrl_() {
   return u || ScriptApp.getService().getUrl();
 }
 
-function sendConfirm_(email, name, token) {
+function sendConfirm_(email, name, token, kids) {
   var link = webUrl_() + '?action=confirm&t=' + encodeURIComponent(token);
+  if (kids) return sendKidsConfirm_(email, name, link);
   var html = '<!doctype html><html><body style="margin:0;background:' + C.ivory + ';" bgcolor="' + C.ivory + '">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' + C.ivory + '"><tr><td align="center" style="padding:24px 12px;">' +
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">' +
@@ -776,4 +835,104 @@ function log_(type, detail) {
 
 function esc_(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+
+/* ───────────────────────── Children's Review of Reviews (9 Nov 2026) ───────────────────────── */
+
+var C_KIDS = { ink: '#14303A', ivory: '#F5F8F6', tint: '#E3F1EE', accent: '#2E7D74', deep: '#1D5A53', light: '#9ED8CF', line: '#C6D6D1' };
+
+function kidsBandOf_(s) { var i = KIDS_SUBJECTS.indexOf(s); return i < 0 ? '' : KIDS_BANDS[Math.floor(i / 2)]; }
+
+function renderKidsEmail_(ed, sub, isWelcome) {
+  var K = C_KIDS;
+  var subs = (sub.subjects || []).filter(function (s) { return KIDS_SUBJECTS.indexOf(s) >= 0; });
+  var picks = picksFor_(ed, subs);
+  var dateLabel = ed.date_label || ed.edition_id;
+  var n = ed.books.length;
+  var subject = CONFIG.KIDS_NAME + ' - ' + dateLabel + ': ' + n + ' books' + (picks.mine ? ', ' + picks.books.length + ' picked for you' : '');
+  var unsub = sub.token ? webUrl_() + '?action=unsubscribe&t=' + encodeURIComponent(sub.token) : CONFIG.KIDS_SITE;
+  var prefs = sub.token ? webUrl_() + '?action=prefs&t=' + encodeURIComponent(sub.token) : CONFIG.KIDS_SITE;
+  var webVersion = CONFIG.KIDS_SITE + String(ed.edition_id).slice(5) + '.html';
+  var ctx = { edition_id: ed.edition_id, token: sub.token };
+  var h = [];
+  h.push('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>' + esc_(subject) + '</title></head>');
+  h.push('<body style="margin:0;padding:0;background-color:' + K.ivory + ';" bgcolor="' + K.ivory + '">');
+  h.push('<div style="display:none;max-height:0;overflow:hidden;">' + esc_(ed.preheader || 'Every children’s and YA book reviewed in the British press, sorted by age, one line each.') + '</div>');
+  h.push('<div role="main" aria-label="' + esc_(CONFIG.KIDS_NAME) + '"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + K.ivory + '" style="background-color:' + K.ivory + ';"><tr><td align="center" style="padding:24px 12px;">');
+  h.push('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;">');
+  h.push('<tr><td bgcolor="' + K.ink + '" style="background-color:' + K.ink + ';padding:28px 28px 22px;border-top:6px solid ' + K.accent + ';">' +
+    '<div style="font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.12em;text-transform:uppercase;color:' + K.light + ';">Free from The Ariel &middot; ' + esc_(dateLabel) + '</div>' +
+    '<h1 style="margin:10px 0 0;font-weight:normal;font-family:' + SERIF + ';font-size:34px;line-height:1.1;color:#FFFFFF;">Children’s Review <i>of</i> Reviews</h1>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.5;color:#E6EFEC;margin-top:10px;">Every children’s and young adult book reviewed in the British press and children’s book magazines, sorted by age, one line each. ' + n + ' books in this edition.</div></td></tr>');
+  if (isWelcome) {
+    h.push('<tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:18px 28px;font-family:' + SANS + ';font-size:14px;color:' + C.body + ';border-bottom:1px solid ' + K.line + ';">Welcome. Here’s the latest edition so you don’t have to wait.</td></tr>');
+  }
+  if (picks.books.length) {
+    h.push('<tr><td bgcolor="' + K.tint + '" style="background-color:' + K.tint + ';padding:22px 28px 10px;"><div style="font-family:' + SANS + ';font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:' + K.deep + ';font-weight:bold;">' +
+      (picks.mine ? '&#9733; Picked for you: ' + esc_(subs.join(', ')) : '&#9733; Screen picks in this edition') + '</div>' +
+      '<div style="font-family:' + SANS + ';font-size:15px;color:' + C.mist + ';margin-top:4px;">Books with screen potential, and why. We haven’t checked the rights; for rights-available books from agents, <a href="' + CONFIG.APPLY_URL + '" style="color:' + K.deep + ';">sign up to The Ariel</a>.' +
+      (picks.mine ? '' : ' <a href="' + prefs + '" style="color:' + K.deep + ';">Choose the ages you make for</a> to get your own picks.') + '</div></td></tr>');
+    picks.books.forEach(function (b) {
+      h.push('<tr><td bgcolor="' + K.tint + '" style="background-color:' + K.tint + ';padding:10px 28px;">' + bookBlock_(b, true, ctx) + '</td></tr>');
+    });
+    h.push('<tr><td bgcolor="' + K.tint + '" style="background-color:' + K.tint + ';padding:6px 28px 22px;"></td></tr>');
+  }
+  var lastBand = '';
+  KIDS_SUBJECTS.forEach(function (s) {
+    var list = ed.books.filter(function (b) { return b.subject === s; });
+    if (!list.length) return;
+    var band = kidsBandOf_(s);
+    if (band !== lastBand) {
+      h.push('<tr><td bgcolor="' + K.accent + '" style="background-color:' + K.accent + ';padding:8px 28px;font-family:' + SANS + ';font-size:13px;font-weight:bold;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;">' + esc_(band) + '</td></tr>');
+      lastBand = band;
+    }
+    h.push('<tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:22px 28px 6px;"><div style="font-family:' + SERIF + ';font-style:italic;font-size:22px;color:' + K.ink + ';border-bottom:2px solid ' + K.ink + ';padding-bottom:4px;">' +
+      esc_(s) + ' <span style="font-family:' + SANS + ';font-style:normal;font-size:12px;color:' + C.mist + ';">' + list.length + '</span></div></td></tr>');
+    list.forEach(function (b) {
+      h.push('<tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:10px 28px;border-bottom:1px solid ' + K.line + ';">' + bookBlock_(b, false, ctx) + '</td></tr>');
+    });
+  });
+  h.push('<tr><td bgcolor="' + K.ink + '" style="background-color:' + K.ink + ';padding:28px;"><div style="font-family:' + SERIF + ';font-size:24px;line-height:1.2;color:#FFFFFF;">Want children’s books whose rights are available?</div>' +
+    '<div style="font-family:' + SANS + ';font-size:16px;line-height:1.6;color:#E6EFEC;margin-top:10px;">We don’t check rights for the Review. Sign up to The Ariel and get a first look at rights-available books directly from literary agents, matched to the ages and genres you develop.</div>' +
+    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;"><tr><td bgcolor="' + K.accent + '" style="background-color:' + K.accent + ';border-radius:2px;"><a href="' + CONFIG.ARIEL_SITE + '?utm_source=kids-review-of-reviews&utm_medium=email#book" style="display:inline-block;padding:13px 22px;font-family:' + SANS + ';font-size:16px;color:#FFFFFF;text-decoration:none;font-weight:bold;">Sign up to The Ariel</a></td></tr></table></td></tr>');
+  h.push('<tr><td style="padding:20px 28px 22px;font-family:' + SANS + ';font-size:14px;line-height:1.6;color:' + C.mist + ';"><b style="color:' + C.body + ';">Know someone who’d like this?</b> Forward it on. They can sign up free at <a href="' + CONFIG.KIDS_SITE + '" style="color:' + K.deep + ';">theariel.tv/reviews/children</a>.<br><br>' +
+    'Summaries are our own one-line descriptions of each review; follow the links to read them in full. &#9733; marks books we think have screen potential; we haven’t checked who holds the film and TV rights.<br><br>' +
+    '<a href="' + webVersion + '" style="color:' + C.mist + ';">View on the web</a> &middot; <a href="' + prefs + '" style="color:' + C.mist + ';">Change your ages and subjects</a> &middot; <a href="' + unsub + '" style="color:' + C.mist + ';">Unsubscribe</a><br>' +
+    'The Ariel &middot; <a href="mailto:hello@theariel.tv" style="color:' + C.mist + ';">hello@theariel.tv</a></td></tr>');
+  h.push('</table></td></tr></table></div></body></html>');
+  var t = [CONFIG.KIDS_NAME + ' - ' + dateLabel, ''];
+  if (picks.books.length) {
+    t.push(picks.mine ? 'PICKED FOR YOU (' + subs.join(', ') + ')' : 'SCREEN PICKS');
+    picks.books.forEach(function (b) { t.push('* ' + b.book + (b.author ? ' - ' + b.author : '') + ': ' + b.line + (b.why ? ' Screen potential: ' + b.why : '') + ' ' + b.reviews[0].url); });
+    t.push('');
+  }
+  KIDS_SUBJECTS.forEach(function (s) {
+    var list = ed.books.filter(function (b) { return b.subject === s; });
+    if (!list.length) return;
+    t.push(s.toUpperCase());
+    list.forEach(function (b) { t.push('- ' + b.book + (b.author ? ' - ' + b.author : '') + ': ' + b.line + ' ' + b.reviews[0].url); });
+    t.push('');
+  });
+  t.push('Change your ages and subjects: ' + prefs);
+  t.push('Unsubscribe: ' + unsub);
+  return { subject: subject, html: h.join(''), text: t.join('\n') };
+}
+
+function sendKidsConfirm_(email, name, link) {
+  var K = C_KIDS;
+  var html = '<!doctype html><html><body style="margin:0;background:' + K.ivory + ';" bgcolor="' + K.ivory + '">' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' + K.ivory + '"><tr><td align="center" style="padding:24px 12px;">' +
+    '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">' +
+    '<tr><td bgcolor="' + K.ink + '" style="background-color:' + K.ink + ';padding:24px 28px;font-family:' + SERIF + ';font-size:28px;color:#FFFFFF;">Children’s Review <i>of</i> Reviews</td></tr>' +
+    '<tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:24px 28px;font-family:' + SANS + ';font-size:15px;line-height:1.6;color:' + C.body + ';">' +
+    (name ? 'Hello ' + esc_(name) + ',<br><br>' : '') +
+    'Please confirm you’d like the Children’s Review of Reviews from The Ariel: every children’s and young adult book reviewed in the British press, sorted by age, one line each.<br><br>' +
+    '<table role="presentation" cellpadding="0" cellspacing="0"><tr><td bgcolor="' + K.ink + '" style="background-color:' + K.ink + ';border-radius:2px;">' +
+    '<a href="' + link + '" style="display:inline-block;padding:12px 22px;font-family:' + SANS + ';font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;text-decoration:none;">Confirm my subscription</a></td></tr></table><br>' +
+    '<span style="font-size:13px;color:' + C.mist + ';">If you didn’t ask for this, ignore this email and you won’t hear from us.</span></td></tr></table></td></tr></table></body></html>';
+  var opts = { htmlBody: html, name: CONFIG.SENDER_NAME, replyTo: CONFIG.REPLY_TO };
+  if (aliasOk_()) opts.from = CONFIG.FROM_ALIAS;
+  GmailApp.sendEmail(email, 'Confirm your Children’s Review of Reviews subscription',
+    'Please confirm your subscription to the Children’s Review of Reviews from The Ariel: ' + link, opts);
 }

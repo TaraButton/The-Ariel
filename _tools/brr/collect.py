@@ -173,6 +173,59 @@ def literary_review(since):
 SOURCES = {"guardian": (guardian, 10), "ft": (ft, 10), "spectator": (spectator, 10), "lrb": (lrb, 18),
            "economist": (economist, 10), "literary-review": (literary_review, 40)}
 
+# ---- Children's Review of Reviews (added 9 Nov 2026): --set kids ----
+KIDS_RE = re.compile(r"child|picture ?book|young adult|\bya\b|teen|middle.grade|ages? \d|\d\+|kids", re.I)
+BFK_AGES = {41: "0-5", 42: "5-8", 43: "8-10", 44: "10-14", 45: "14+", 40: "about children's books"}
+
+def guardian_kids(since):
+    """Guardian 'Children and teenagers' tag: roundups (kept, is_roundup) and single reviews."""
+    rows = from_rss("guardian-kids", "The Guardian", "https://www.theguardian.com/books/booksforchildrenandteenagers/rss", since)
+    out = []
+    for r in rows:
+        if not re.search(r"review|roundup|round-up|best (new|recent)", r["title"], re.I):
+            continue  # interviews, news, obituaries
+        r["kind_hint"] = "kids"
+        out.append(r)
+    return out
+
+def books_for_keeps(since):
+    """Books for Keeps: the children's book magazine. Open WordPress API; each review carries an age band,
+    and the review page carries the book's author and a 1-5 star rating (5 rave, 4 warm, 3 mixed)."""
+    data = json.loads(get("https://booksforkeeps.co.uk/wp-json/wp/v2/review?per_page=100&after=" + since.strftime("%Y-%m-%dT%H:%M:%S")))
+    rows = []
+    for x in data:
+        page = ""
+        try:
+            page = get(x["link"])
+        except Exception:
+            pass
+        i = page.find("<h1")
+        toks = [t.strip() for t in html.unescape(re.sub(r"<[^>]+>", "\n", re.sub(r"<script.*?</script>|<style.*?</style>", "", page[i:i + 3000], flags=re.S))).split("\n") if t.strip()]
+        author = toks[toks.index("Author:") + 1] if "Author:" in toks else ""
+        illus = toks[toks.index("Illustrator:") + 1] if "Illustrator:" in toks else ""
+        stars = page.count("fa fa-star checked")
+        rows.append({"source_id": "books-for-keeps", "publication": "Books for Keeps", "title": clean(x["title"]["rendered"]),
+                     "url": x["link"], "pub": x["date"] + "+00:00", "standfirst": clean(x["content"]["rendered"])[:600],
+                     "categories": [BFK_AGES.get(a, str(a)) for a in x.get("age-range", [])], "reviewer": "",
+                     "book_hint": " - ".join(v for v in [clean(x["title"]["rendered"]), author, ("illustrated by " + illus) if illus else ""] if v),
+                     "kind_hint": "kids", "is_roundup": False, "stars": stars})
+    return rows
+
+def kids_filter(fn, source_id):
+    """Children's reviews from the grown-up sources (FT, Spectator, Economist): keep only those that look like kids' books."""
+    def run(since):
+        out = []
+        for r in fn(since):
+            cats = " ".join(r.get("categories") or [])
+            if KIDS_RE.search(" ".join([r["title"], r["standfirst"], cats, r.get("book_hint", "")])):
+                r["source_id"] = source_id; r["kind_hint"] = "kids"; out.append(r)
+        return out
+    return run
+
+KIDS_SOURCES = {"guardian-kids": (guardian_kids, 16), "books-for-keeps": (books_for_keeps, 16),
+                "ft-kids": (kids_filter(ft, "ft-kids"), 16), "spectator-kids": (kids_filter(spectator, "spectator-kids"), 16)}
+
+
 def enrich(rows, limit=80):
     """Fill missing standfirst from the article's public og:description."""
     n = 0
@@ -195,8 +248,12 @@ def main():
     ap.add_argument("--out", default="lrr-candidates.json")
     ap.add_argument("--only", default="")
     ap.add_argument("--state", default="", help="JSON list of URLs already published; those are skipped")
-    ap.add_argument("--editions-dir", default="reviews/editions", help="skip review URLs already in published editions")
+    ap.add_argument("--editions-dir", default="", help="skip review URLs already in published editions (default: the set's own)")
+    ap.add_argument("--set", default="main", choices=["main", "kids"], help="kids = Children's Review of Reviews sources")
     a = ap.parse_args()
+    if not a.editions_dir:
+        a.editions_dir = "reviews/children/editions" if a.set == "kids" else "reviews/editions"
+    sources = KIDS_SOURCES if a.set == "kids" else SOURCES
     since = datetime.now(timezone.utc) - timedelta(days=a.days)
     published = set(json.load(open(a.state))) if a.state else set()
     if a.editions_dir and os.path.isdir(a.editions_dir):
@@ -206,7 +263,7 @@ def main():
                     for r in b["reviews"]:
                         published.add(r["url"])
     rows, report = [], {}
-    for name, (fn, lookback) in SOURCES.items():
+    for name, (fn, lookback) in sources.items():
         if a.only and name not in a.only.split(","):
             continue
         try:
