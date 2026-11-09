@@ -5201,26 +5201,381 @@
   "agency": "Blake Friedmann",
   "domain": "blakefriedmann.co.uk",
   "contact_email": "leyla@blakefriedmann.co.uk",
-  "received": "2026-11-06",
+  "contact_quote": "For film and television enquiries please contact: Leyla Hattabi at leyla@blakefriedmann.co.uk",
+  "received": "2026-11-08",
   "source": "https://blakefriedmann.co.uk/s/BFLA-Rights-Guide-Autumn-Winter-2026-25092026.pdf",
   "file": "https://blakefriedmann.co.uk/s/BFLA-Rights-Guide-Autumn-Winter-2026-25092026.pdf",
-  "kind": "translation guide with occasional Film/TV lines (Autumn-Winter 2026, updated 25 Sept 2026)",
+  "guide_date": "Autumn/Winter 2026 (Frankfurt Book Fair 2026; version updated 25 September 2026)",
   "titles": [
    {
-    "book": "Raveheart",
-    "author": "Graeme Armstrong",
-    "status": "optioned",
-    "note": "Film/TV Warp Films"
+    "book": "BELOW THE DECK",
+    "author": "Nikki Allen",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
    },
    {
-    "book": "Scorpio Rising",
+    "book": "WILD THINGS NEVER DIE (Tannie Maria Mystery #5)",
+    "author": "Sally Andrew",
+    "status": "optioned",
+    "note": "Rights sold: \"TV BothWorlds / M-Net / Acorn TV\" (Tannie Maria series, RECIPES FOR LOVE AND MURDER TV series, Season 2 out)"
+   },
+   {
+    "book": "RAVEHEART",
+    "author": "Graeme Armstrong",
+    "status": "optioned",
+    "note": "Rights sold: \"Film/TV Warp Films\""
+   },
+   {
+    "book": "THE WONDER OF YOU",
+    "author": "Dani Atkins",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "SHADOWS OF THE BURNING MOOR",
+    "author": "Kenny Boyle",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE SHEPHERDESS",
+    "author": "Hannah Braithwaite",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "ROOM 801: WATCHERS",
+    "author": "Andy Briggs",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "BENBECULA",
+    "author": "Graeme Macrae Burnet",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE VIOLET HOUR",
+    "author": "James Cahill",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THIS BRIGHT LIFE",
+    "author": "Karen Campbell",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "PLOK",
+    "author": "Edward Carey",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE CROWNLESS QUEEN",
+    "author": "Elizabeth Chadwick",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "DOVECOMBE",
+    "author": "Alex Clark",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE WRECKERS",
+    "author": "George Makana Clark",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "BENEATH THE ORANGE BLOSSOM",
+    "author": "Emma Cowell",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE LIGHT AT THE END OF THE WORLD",
+    "author": "Will Dean",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "MARTHA & JANE",
+    "author": "Finuala Dowling",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE VALLEY OF RAVENS",
+    "author": "Barbara Erskine",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "SMALL CHANGE",
+    "author": "Sarah Franklin",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "CHRISTMAS WITH THE EAST END GIRLS",
+    "author": "Jean Fullerton",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE KNIFE MAKER OF VENICE",
+    "author": "David Gilman",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "BOILING POINT",
+    "author": "Sammy Hyde",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE NILE CRUISE",
+    "author": "Caroline James",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "DEAD IN THREE TWO ONE",
+    "author": "Peter James",
+    "status": "optioned",
+    "note": "Rights sold: \"TV (Grace series) Second Act Productions for ITV and Britbox\""
+   },
+   {
+    "book": "THE MEANING OF FIRE",
+    "author": "Tomasz Jedrowski",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "YOU’LL NEVER FIND ME",
+    "author": "Diane Jeffrey",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THIS LIVING HAND",
+    "author": "Charles Lambert",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "BANSHEE",
+    "author": "Edited by Ailbhe Malone",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "SCORPIO RISING",
     "author": "Deon Meyer",
     "status": "optioned",
-    "note": "Film/TV Lookout Point"
+    "note": "Rights sold: \"Film/TV Lookout Point\""
+   },
+   {
+    "book": "SECRETS OF A WINTER ESCAPE",
+    "author": "Sue Moorcroft",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE SLEEP THAT KNOWS NO WAKING",
+    "author": "Ray Newman",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE CITY OF ECHOES",
+    "author": "Joseph O’Connor",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "SECRETS BETWEEN FRIENDS",
+    "author": "Sheila O’Flanagan",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "The GUNNER Series (GUNNER, DECEPTION, TRAITOR)",
+    "author": "Alan Parks",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "SECRETS OF A SCOTTISH HEART",
+    "author": "Annie Robertson",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "DRAGONFLY",
+    "author": "Monique Roffey",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "INJURED HONOUR",
+    "author": "Julian Stockwin",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE SECRET SOCIETY OF LIBRARIANS",
+    "author": "Kate Thompson",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "LIAR LIAR",
+    "author": "Luca Veste",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE VARIETY PALACE SERIES (Book 3: THE SPIRIT GUIDE)",
+    "author": "Bridget Walsh",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "WICKER",
+    "author": "Ursula Wills",
+    "status": "optioned",
+    "note": "\"soon to be a major motion picture starring Olivia Colman and Alexander Skarsgard\"; film release October 2026"
+   },
+   {
+    "book": "THE PHIAL",
+    "author": "Edward Wilson-Lee",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "SMITTEN",
+    "author": "Tom Bellamy, Ph.D.",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "NOTES FROM AN EMPTY HOUSE",
+    "author": "Edward Carey",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "ROUGH EDGES",
+    "author": "Natasha Carthew",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "INTIMATE ENEMIES",
+    "author": "Gianmarco Contino",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "FRAGILE BODIES",
+    "author": "Kat Lister",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE WOMAN IN THE CHINESE COLLAR",
+    "author": "Hannah Lowe",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "CHRIS HANI: A Life of Courage and Compassion",
+    "author": "Zakes Mda",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "CHILDREN OF WAR",
+    "author": "Kate Thompson",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE NEAR NORTH",
+    "author": "Ivan Vladislavic",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE STRANGE CASE OF CHRISTIANA EDMUNDS",
+    "author": "Bridget Walsh",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE GRAMMAR OF ANGELS",
+    "author": "Edward Wilson-Lee",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE APARTMENT ON LEPKY STREET",
+    "author": "Victoria Amelina",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "T-HAPPINESS",
+    "author": "Artem Chapeye",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "MY WOMEN",
+    "author": "Yuliia Iliukha",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THIS MACHINE FEEDS",
+    "author": "Heather Parry",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "TRASH",
+    "author": "Erol Alkan",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "ASK ME WHAT I’M READING",
+    "author": "Eleanor Goymer",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "LACK",
+    "author": "Cecilia Knapp",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
+   },
+   {
+    "book": "THE GUILT TRIP",
+    "author": "Joe Portman",
+    "status": "unknown",
+    "note": "No film/TV line in rights sold; guide does not state screen availability (general film/TV contact Leyla Hattabi)"
    }
   ],
-  "last_refresh_asked": "",
-  "note": "The guide never states film/TV rights as available, so only the two titles with a named Film/TV producer are recorded. Film and TV enquiries: Leyla Hattabi, leyla@blakefriedmann.co.uk (named in the guide)."
+  "fetch_problems": "None; full 68-page PDF read via pdftotext. Includes Associate Agencies section (pp.60-67).",
+  "last_refresh_asked": ""
  },
  {
   "agency": "Graham Maw Christie",
@@ -5414,5 +5769,4815 @@
   ],
   "last_refresh_asked": "",
   "note": "Titles appear only on cover images; read from the rendered pages. Guide names enquiries@grahammawchristie.com for office enquiries and film/TV rights. The Positive Planner and Veganuary Cookbook show no author on the cover."
+ },
+ {
+  "agency": "Penguin Random House UK",
+  "domain": "penguin.co.uk",
+  "contact_email": "jbrown2@penguinrandomhouse.co.uk",
+  "contact_quote": "Jenna Brown - Head of Media Rights jbrown2@penguinrandomhouse.co.uk",
+  "received": "2026-11-08",
+  "source": "https://wp.penguin.co.uk/wp-content/uploads/2026/09/Medial-Rights-Guide-Autumn-26.pdf",
+  "file": "https://wp.penguin.co.uk/wp-content/uploads/2026/09/Medial-Rights-Guide-Autumn-26.pdf",
+  "guide_date": "Autumn 2026",
+  "titles": [
+   {
+    "book": "Where Geezers Call Home",
+    "author": "Abaka Debrah",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Where are the Kings",
+    "author": "Donal Ryan",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Blank Canvas",
+    "author": "Grace Murray",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "D.I. Duncan McAdam series",
+    "author": "J M Dalgliesh",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "D.I. Jack McNaughton series (Murder in the Cathedral)",
+    "author": "J M Dalgliesh",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Murder at the Matcha Cafe",
+    "author": "Jasmine Kagami",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Death on Holly Island",
+    "author": "F.L. Everett",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Diary of a Serial Killer",
+    "author": "L D Smithson",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note; author bio notes her earlier novels under another name 'have been optioned for a drama' (other books, not this title)"
+   },
+   {
+    "book": "My Killer Blind Date",
+    "author": "Sienna Sharpe",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "My Sister's Secret",
+    "author": "Jane Corry",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Soldiers of Bedlam series",
+    "author": "Paisley Hope",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Silver Pines series",
+    "author": "Paisley Hope",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Grosvenor Ranch series",
+    "author": "Paisley Hope",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Trust Fund Baby",
+    "author": "Sabrina Waldorf",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "We Only Have the Summer",
+    "author": "Paige Toon",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Don't Fall in Love With Me",
+    "author": "Paige Toon",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Bloodstream series",
+    "author": "Emilee Carter",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Magnolia Springs series",
+    "author": "Willow Hurst",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Firefighters of Cedar Creek series",
+    "author": "Ashley Munoz",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Hope Harbor series",
+    "author": "Brittanée Nicole",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Primrose Hill",
+    "author": "Rachel Curtis",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Board Games and Broomstick",
+    "author": "Selina Spellman",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "A Matcha Made in Heaven",
+    "author": "Olivia Green",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Twelve Dates of Christmas",
+    "author": "Ruby Winters",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Falling For You",
+    "author": "Emily Maple",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "In the Fast Lane",
+    "author": "Elle Blaze",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Atomic Coffin",
+    "author": "Benedict Anning",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Splasher",
+    "author": "Billie Host",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Afro Mythos: The Creatures and Legends of African Folklore, from the Continent to the Diaspora",
+    "author": "Adwoa Botchey and Solomon Adebiyi",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "They Can't Burn Us All",
+    "author": "Cathryn Kemp",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Open Me Carefully: The Sapphic Love Letters of Emily Dickinson",
+    "author": "Emily Dickinson, edited by Ellen Louise Hart and Martha Nell Smith",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Who Killed Charles Dickens?",
+    "author": "Gareth Moore and Laura Jayne Ayres",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Yorkshire Ladies Football Club",
+    "author": "Gracie Hart",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Secret of Cresswell Manor",
+    "author": "Lily Fielding",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Edge Chronicles",
+    "author": "Paul Stewart & Chris Riddell",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Forest of a Thousand Daemons",
+    "author": "D.O. Fágúnwà",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Bellanova Series",
+    "author": "S M Gaither",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Habsburg Diamond: The Pursuit of the Most Elusive Jewel in European History",
+    "author": "Richard Bassett",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Thirst: Twelve Drinks That Changed My Life",
+    "author": "John Robins",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Brand Beckham: The Fame. The Feuds. The Fallout.",
+    "author": "Alison Boshoff",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Giant on the Skyline",
+    "author": "Clover Stroud",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "I Want My Life With You",
+    "author": "Clover Stroud",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Bugs, Thugs, Spies and Lies: How the World's Greatest Hackers Get In and How We Keep Them Out",
+    "author": "Ciaran Martin",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Poker With the Devil",
+    "author": "Mark Tighe and Catherine Sanz",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Dear Historian",
+    "author": "Joff Winterhart",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Death Wish",
+    "author": "Lee Newbery",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Glitterati",
+    "author": "Simon James Green",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "I Knew You Were Trouble",
+    "author": "J.L. Simmonds",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Mistfort: School of Illusion",
+    "author": "Clare Harlow",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Moth the Veggie Vampire series",
+    "author": "Dotty Sutton",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Holomonsters",
+    "author": "Lee Newbery",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "The Night Getter",
+    "author": "Dylan Hewitt",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note; guide pitches it with 'a returnable format for animated series'"
+   },
+   {
+    "book": "Wonder Mums",
+    "author": "Caitlin Sheil & Leah Joseph, illustrated by Philip Cullen",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   },
+   {
+    "book": "Ten Minutes to Bed series",
+    "author": "Rhiannon Fielding & Chris Chatterton",
+    "status": "available",
+    "note": "dedicated film/TV guide (PRH UK Media Rights Highlights Autumn 2026, offering adaptation rights), no title note"
+   }
+  ],
+  "fetch_problems": "",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "HarperCollins UK",
+  "domain": "harpercollins.co.uk",
+  "contact_email": "tvandfilm@harpercollins.co.uk",
+  "contact_quote": "GENERAL INQUIRIES: tvandfilm@harpercollins.co.uk (contacts page also lists Lucy Vanderbilt, Group Rights Director; Ashton Mucha, Rights Executive; Tara Cook, Consultant)",
+  "received": "2026-11-08",
+  "source": "https://s28434.pcdn.co/wp-content/uploads/sites/47/2026/06/HCUK-Film-fiction-guide-LBF26.pdf ; https://s28434.pcdn.co/wp-content/uploads/sites/47/2026/06/HCUK-Film-nonfiction-guide-LBF26.pdf",
+  "file": "https://s28434.pcdn.co/wp-content/uploads/sites/47/2026/06/HCUK-Film-fiction-guide-LBF26.pdf ; https://s28434.pcdn.co/wp-content/uploads/sites/47/2026/06/HCUK-Film-nonfiction-guide-LBF26.pdf",
+  "guide_date": "London Book Fair 2026",
+  "titles": [
+   {
+    "book": "Losing the Plot",
+    "author": "Mia Page",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Kefalonia Book Swap",
+    "author": "Eva Glyn",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Butterfly Beats Its Wings",
+    "author": "Angelita Bradney",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Is This What You Call Love?",
+    "author": "Beena Nadeem",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Untitled Mark Tuohy",
+    "author": "Mark Tuohy",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "You Are What You Eat",
+    "author": "Wren Lennox",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Storm Literary Agency"
+   },
+   {
+    "book": "The Last Page Cafe",
+    "author": "Kate Storey",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Greene & Heaton Ltd"
+   },
+   {
+    "book": "The Locked Garden",
+    "author": "Rowan Coleman",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: The Blair Partnership"
+   },
+   {
+    "book": "The Heirloom",
+    "author": "Evie Woods",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Magical Matcha Teashop",
+    "author": "Natasha Bache",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Secret Library",
+    "author": "Amanda James",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Daisy Chain Flower Shop (Dream Harbor, 6)",
+    "author": "Laurie Gilmore",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Jane Rotrosen Agency"
+   },
+   {
+    "book": "The Perfect Matcha (Honey Springs, 1)",
+    "author": "Stevie Greene",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: North Bank Talent Management"
+   },
+   {
+    "book": "Redemption River (The Carter Brothers, 3)",
+    "author": "Taylor Gray",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: AM Heath & Co Ltd"
+   },
+   {
+    "book": "First to Finish (Pole Position, 2)",
+    "author": "Rebecca J. Caffery",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Blue Devil Woman (Hunt Ranch, 2)",
+    "author": "Sloane Fletcher",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Second Chance Saloon (The Cowboy Romance Collection, 2)",
+    "author": "Maggie Eckersley",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Rachel McMillan"
+   },
+   {
+    "book": "Long Hot Summer",
+    "author": "Esha Patel",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Vet There Be Love",
+    "author": "Isla Green",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: International Creative Agency"
+   },
+   {
+    "book": "You're My Cherry Pie",
+    "author": "Athena Carstairs",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Romp!",
+    "author": "Ada Barumé",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Mead Cute (Roll for Romance, 3)",
+    "author": "Sam Parks",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Watson, Little Ltd"
+   },
+   {
+    "book": "Secrets Among the Spires (The Oxford Chronicles, 1)",
+    "author": "Fiona Radcliffe",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "A Lucky Little Christmas",
+    "author": "Sophie Snow",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: SBR Media"
+   },
+   {
+    "book": "The Naughty List Agreement",
+    "author": "Katherine Garbera",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Floating Copenhagen Café (The Floating Shop series, 3)",
+    "author": "Annabel French",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Kate Nash Literary Agency"
+   },
+   {
+    "book": "25 Days in Athens",
+    "author": "Jack Strange",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Take Me Away (Sea Salt Bay, 1)",
+    "author": "Anna Bloom",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: SBR Media LLC"
+   },
+   {
+    "book": "The Scottish Strawberry Farm (Scottish Spice, 3)",
+    "author": "Bonnie Woods",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Liverpool Literary Agency"
+   },
+   {
+    "book": "Wench",
+    "author": "Erynne Rivers",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Highline Literary Collective"
+   },
+   {
+    "book": "Rider of Dragons (Dragon Racer, 1)",
+    "author": "A. T. Qureshi",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Highline Literary Collective"
+   },
+   {
+    "book": "10 Things I Hate About Zombies",
+    "author": "Hazel Graves",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Abner Stein Ltd"
+   },
+   {
+    "book": "Mermaid in Manhattan",
+    "author": "Jessica Gadziala",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "A Witch's Guide to Practical Magic (Cackleshore Academy, 1)",
+    "author": "Kate Kenzie",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "No Charm Done (Oak Haven Witches, 3)",
+    "author": "Emily Grimoire",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Handspun Literary Agency"
+   },
+   {
+    "book": "If You've Got It, Haunt It",
+    "author": "Lana Wren",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Hardman & Swainson Literary Agency"
+   },
+   {
+    "book": "Summerween",
+    "author": "Joss Wood",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Ghost of Exes Past",
+    "author": "Katie Snooks",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Irrevocably",
+    "author": "Jackie Ashenden",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Pretty When It Hurts",
+    "author": "Lia Fairchild",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Boyfriend Academy",
+    "author": "J S Strange",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Cat Dragon and the Snow Fairies (Tangleroot Valley, 2)",
+    "author": "Samantha Birch",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Eternity of the Orisas (The Eternity of the Orisas, 1)",
+    "author": "Lani Leigh",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Red Dragon Song",
+    "author": "Catrin Cadogan",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Greyhound Literary Agents"
+   },
+   {
+    "book": "The Golden Citadel (The Golden Citadel, 1)",
+    "author": "Lilly Inkwood",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Partners in Crime",
+    "author": "Elsie Marks",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Sleuths",
+    "author": "Samantha Moody",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "From Murder with Love (A Cosy Crime Club Mystery, 3)",
+    "author": "M. R. G. Davies",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Murder at Clover Farm (A Violet Brewster Mystery, 6)",
+    "author": "Jane Bettany",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Death Under the Hammer (The Stamford Mysteries, 4)",
+    "author": "E. C. Bateman",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Murder on the Menu",
+    "author": "Sarah Dunnakey",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Serial Killer Gene",
+    "author": "Alice Hunter",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Kate Hordern Literary Agency"
+   },
+   {
+    "book": "Someone Just Followed You",
+    "author": "Liane Child",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Gardens",
+    "author": "Emma Babbington",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: WGM Agency"
+   },
+   {
+    "book": "The Party to End All Parties",
+    "author": "Lucy Roth",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Bell Lomax Moreton Agency"
+   },
+   {
+    "book": "Die Trying",
+    "author": "Eleanor Barker-White",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Echoes in the Cabin",
+    "author": "Anne Wyn Clark",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Vanished Girl",
+    "author": "Kathleen McGurl",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Killing Code (Detective Meredith Somerset, 3)",
+    "author": "Steve Frech",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "No Way Out (Josie Chapman, 2)",
+    "author": "Max Connor",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: The Underline Literary Agency"
+   },
+   {
+    "book": "Blood on the Snow (DI James Walker series, 7)",
+    "author": "Alex Pine",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Artellus Ltd"
+   },
+   {
+    "book": "The Christmas Carol Killer (DI Tom Stonem, 3)",
+    "author": "Chris Frost",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: DHH Literary Agency"
+   },
+   {
+    "book": "The Dark",
+    "author": "Karen Woods",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Secrets of Provence",
+    "author": "Daisy Wood",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: DHH Literary Agency"
+   },
+   {
+    "book": "The Laudanum Ladies' Society",
+    "author": "Elisabeth Hobbes",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Daughter of the Titanic",
+    "author": "Caroline Cauchi",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Secret Sister (Stately Scandals, 3)",
+    "author": "Felicity York",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Liesel's War",
+    "author": "Corin Burnside",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "No Angel",
+    "author": "Josephine Cox",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: LBA on behalf of the Estate of Josephine Cox"
+   },
+   {
+    "book": "Wartime Secrets at the Mayfair Club",
+    "author": "Molly Green",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: HHB Agency Ltd"
+   },
+   {
+    "book": "Christmas Bells for the Three Sisters (Three Sisters, 4)",
+    "author": "Annie Groves",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Teresa Chris Literary Agency"
+   },
+   {
+    "book": "A Vow Made Twice",
+    "author": "Emma Denny",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "A Copenhagen Snowmance",
+    "author": "Pernille Hughes",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Not Another Bloody Christmas (Happy Bloody Christmas, 2)",
+    "author": "Jo Middleton",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Mistletoe and Magic",
+    "author": "Helene Sula",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Rules Don't Apply in Paradise",
+    "author": "Sophia Karlson",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "A Mother's Second Chance",
+    "author": "Sarah Lefebve",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Ethical Gardener",
+    "author": "Thomas Rutter",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Beautiful Blooms",
+    "author": "Georgianna Lane",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Cottage Garden Flowers",
+    "author": "Naomi Slade, Photographs by Andrea Jones",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Wild Peaks: A Journey on Foot Through England's First National Park",
+    "author": "Tom Chesshyre",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Cosmic Light: Revealing the wonders of the invisible universe",
+    "author": "Tom Kerss, Dr Ryan French",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Northern Lights: The definitive guide to auroras [Second Edition]",
+    "author": "Tom Kerss, Royal Observatory Greenwich and Collins Astronomy",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Capsule Kitchen: 12 core ingredients, endless combinations",
+    "author": "Jenny Chandler",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Quick and Easy Air Fryer",
+    "author": "Abi Thompson",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Be Content World Ltd"
+   },
+   {
+    "book": "Let's Eat Meat: Recipes for Prime Cuts, Cheap Bits and Glorious Scraps",
+    "author": "Tom Parker Bowles",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Grainne Fox at United Talent Agency"
+   },
+   {
+    "book": "Spud Man's Spuds for All Seasons",
+    "author": "Spud Man",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: The Stile Agency"
+   },
+   {
+    "book": "Dinosaur Zen",
+    "author": "Dinosaurcouch (James Stewart and K Roméy)",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Good Dogs",
+    "author": "Sally Muir",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "A Little Bird Told Me: An illustrated compendium of bird phrases",
+    "author": "Matt Sewell",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Spring Literary"
+   },
+   {
+    "book": "Restoring Belcombe: A Garden Love Story",
+    "author": "Paul Weiland",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Seasonal Living: The Almanac for Home and Garden",
+    "author": "SJ Axelby",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Fifty Things to Do with Fire",
+    "author": "Richard Skrein",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Fire: Why we are drawn to the flame",
+    "author": "Richard Skrein",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Treasured Friends: Over 25 sewing projects using recycled fabrics",
+    "author": "Sandra Polley",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "History of Empires in Maps",
+    "author": "Philip Parker",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: RCW Literary Agency"
+   },
+   {
+    "book": "Dissenters: Britain's Lost Faiths & Forgotten Radicals",
+    "author": "Elizabeth Briggs",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Bell Lomax Moreton"
+   },
+   {
+    "book": "Optimal: Understanding testosterone for strength, health and wellness",
+    "author": "Dr Jeff Foster",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Fertility Reset",
+    "author": "Jessica Shand",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "You Have Always Been Enough: A healing guide to self-love and inner freedom",
+    "author": "Soulla Demetriou",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Why Do I Feel Like This?",
+    "author": "Dr. Naomi Potter",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Can Management Ltd"
+   },
+   {
+    "book": "The Post-Menopause Method: A nutritional guide to ageing well",
+    "author": "Karen Newby",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Aevitas Creative Management UK Ltd"
+   },
+   {
+    "book": "Are You a Running W*nker?",
+    "author": "Alison Stankard",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Humans Not Robots: When Elite Sport and Real Life Collide",
+    "author": "Michail Antonio",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Unique Sports Management"
+   },
+   {
+    "book": "The Times Golf Courses of the World",
+    "author": "Times Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Wireless",
+    "author": "Stuart Maconie",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Kate Haldane Management"
+   },
+   {
+    "book": "The Times Sporting Legends",
+    "author": "Edited by Nigel Farndale and Times Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Times Poker for Beginners",
+    "author": "Byron Jacobs, The Times Mind Games",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Paddy from Peru",
+    "author": "Mirelle Radley",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Specialist: How to clean a crime scene (and other messes)",
+    "author": "Ben Giles",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Assalam Alaikum, Our Kid: Muslim, Manc and Mad For It",
+    "author": "Nooruddean Choudry",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Stalked: Living Next Door to Psychopaths. A True Story.",
+    "author": "Amanda Hutton, Richard Burton",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Naseem Ahsun"
+   },
+   {
+    "book": "The Times Elizabeth in Photos",
+    "author": "Kate Mansey",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Great British Journeys",
+    "author": "Richard Madden, National Trust Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The National Trust Book of Biscuits",
+    "author": "Linda Collister, National Trust Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: Barbara Levy Literary Agency"
+   },
+   {
+    "book": "How to Create Beautiful Flowerbeds and Borders",
+    "author": "Robyn Booth, National Trust Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "Weather Secrets and Signs",
+    "author": "Simon Keeling, National Trust Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   },
+   {
+    "book": "The Bee Spotter's Guide",
+    "author": "Dave Goulson, National Trust Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note; Primary Agent: PEW Literary Agency Ltd"
+   },
+   {
+    "book": "The Fungi Spotter's Guide",
+    "author": "Lynne Boddy, Ali Ashby, National Trust Books",
+    "status": "available",
+    "note": "dedicated film/TV guide (HarperCollins Non-fiction Film & TV Rights Guide LBF26; Enquiries: tvandfilm@harpercollins.co.uk), no title screen note"
+   }
+  ],
+  "fetch_problems": "",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "BookEnds Literary Agency",
+  "domain": "bookendsliterary.com",
+  "contact_email": "",
+  "contact_quote": "",
+  "received": "2026-11-08",
+  "source": "https://www.bookendsliterary.com/s/Spring-2026-Film-Rights-Guide.pdf",
+  "file": "https://www.bookendsliterary.com/s/Spring-2026-Film-Rights-Guide.pdf",
+  "guide_date": "Spring 2026",
+  "titles": [
+   {
+    "book": "The Ascended (The Aesymarean Duet Book 1)",
+    "author": "Bree Grenwich & Parker Lennox",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "A Curse Carved In Ink",
+    "author": "Tzeyi Koay",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Bloodsinger (The Fire That Binds 2 of 3)",
+    "author": "Juliette Cross",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Hannah Vaughn"
+   },
+   {
+    "book": "The Endless One (Gravesinger 3 of 3)",
+    "author": "Emma Hamm",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Winged Game",
+    "author": "Sophie Kim",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Ember (Hunted Kingdom 2 of 3)",
+    "author": "Naima Simone",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Hannah Vaughn"
+   },
+   {
+    "book": "The Carousel of Forgotten Places",
+    "author": "S. Hati",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Sean Berard, Untitled Entertainment"
+   },
+   {
+    "book": "Fall For A Fairytale",
+    "author": "Isabelle Taylor",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "A Single Captive Spark (Rise of the Firebird, Book 1 of 2)",
+    "author": "Emberly Ash",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "House of Bane and Blood (Order and Chaos, Book 1 of 2)",
+    "author": "Alexis Menard",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Vices and Virtues",
+    "author": "Alexis Menard",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Our Vicious Oaths",
+    "author": "N.E. Davenport",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Dana Spector, CAA"
+   },
+   {
+    "book": "Light Wielder (Fire & Metal 2 of 3)",
+    "author": "Rachel Schneider",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Letters From the Last Apothecary",
+    "author": "Bita Behzadi",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Amid Clouds and Bones",
+    "author": "Ella Fields",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Bloodthirsty Beloved",
+    "author": "Ella Fields",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; printed as 'Bloodthirtsy Beloved' on p19 (contents: BLOODTHIRSTY BELOVED)"
+   },
+   {
+    "book": "Bright Burns the Flame (Book 1 of 4)",
+    "author": "Angelina J. Steffort",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Darkness Births the Stars (Book 1 of 5)",
+    "author": "Sarah Lee Wohn",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Boots Beneath Her Bed (Texas Sun #1)",
+    "author": "Taylor Esposito",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Maialie Fitzpatrick"
+   },
+   {
+    "book": "First and Forever",
+    "author": "Lynn Painter",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Addison Duffy, UTA"
+   },
+   {
+    "book": "Set The Record Straight",
+    "author": "Hannah Bonam-Young",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Swipe Bite (Book 1 of 2)",
+    "author": "Alexandra Vasti",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Halifax Hellions (Book 1-2 of 3)",
+    "author": "Alexandra Vasti",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Scandal of the Summer (Debutantes Book 1 of 3)",
+    "author": "Alexandra Vasti",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "How To Ruin A Wedding",
+    "author": "Elba Luz",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Swing and a Kiss",
+    "author": "Jaqueline Snowe",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Blue Moon Cafe & 24-Hour Occult Emporium",
+    "author": "Lexie Sharabianlou",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Like A Wildflower (Hemlock, Book 2 of 3)",
+    "author": "Samm Wilde",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Bodyguard Affair",
+    "author": "Amy Lea",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Addison Duffy, UTA; author bio says of her earlier works 'They have also been optioned for film' (not this title)"
+   },
+   {
+    "book": "Sunk In Love",
+    "author": "Heather McBreen",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Old Flames",
+    "author": "Nadine Gonzalez",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Clearly Charmed (The Sisters of Harvest Moon, Book 1 of 3)",
+    "author": "Amy True",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "In A Second (Friendship, RI, Book 3 of 4)",
+    "author": "Kate Canterbary",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Highland Hideaway",
+    "author": "Lily Gold",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Worst Wedding Date (Three BFFS & a Wedding Book 1 of 3)",
+    "author": "Pippa Grant",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "His Temporary Fiancee (The Huxley's, Book 3 of 3)",
+    "author": "Nadia Lee",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "When Shadows Burn (Book 1 of 2)",
+    "author": "Vanessa Le",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Empire Burns at Dawn (Book 1)",
+    "author": "Fatima Al-Shemary",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Second Time's a Charm",
+    "author": "Taylor Epperson",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "An Unlikely Coven (The Green Witch Cycle 1 of 3)",
+    "author": "AM Kvita",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Hannah Vaughn"
+   },
+   {
+    "book": "The Gods Must Burn",
+    "author": "T.R. Moore",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Honey in Her Veins",
+    "author": "Ruth McKell",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Diary of an Unauthorised Vampire (Burkenswood Mysteries 1)",
+    "author": "Iris Beaglehole",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Divine Gardener's Handbook",
+    "author": "Eli Snow",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "A Viper Among Kings (Book 1 of 3)",
+    "author": "Sydney Olivia",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Disco At The End of The World",
+    "author": "Nathan Tavares",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "House of Margins",
+    "author": "Tlotlo Tsamaase",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "House Haunters",
+    "author": "KC Jones",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Sean Berard, Untitled Entertainment"
+   },
+   {
+    "book": "The Secret Lives of Zombie Wives",
+    "author": "Barbara Truelove",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Maialie Fitzpatrick & Laura Pawlak, UTA"
+   },
+   {
+    "book": "Loba",
+    "author": "Valentino Cano Repetto",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Watch",
+    "author": "Emily Smith",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Only One Who Knows",
+    "author": "Lisa Matlin",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Joe Veltre, Gersh"
+   },
+   {
+    "book": "An Arcane Inheritance",
+    "author": "Kamilah Cole",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "A Long Dark Night",
+    "author": "Lilli Sutton",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Lucy Stille"
+   },
+   {
+    "book": "The Wind Witch Murders",
+    "author": "Casey Dunn",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Wildwood (Northwoods 2 of 3)",
+    "author": "Amy Pease",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Becca Rodriguez, Subtext"
+   },
+   {
+    "book": "The House Guests",
+    "author": "Amber and Danielle Brown",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Definitely Maybe Not a Detective",
+    "author": "Sarah Fox",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "My Coven is a Crime Scene (Italian Witch Mysteries, Book 1 of 3)",
+    "author": "Antonio Pagliarulo",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Masala Chai Mystery Club (Masala Chai Mysteries, Book 1)",
+    "author": "M.J. Soni",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Raging Waters (Elements of Danger 2 of 2)",
+    "author": "Dana Mentink",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Line of Sight (Book 1 of 2)",
+    "author": "James Queally",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Under The Ghost Moon",
+    "author": "Lyn Liao Butler",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Addison Duffy"
+   },
+   {
+    "book": "In This Life Or Another",
+    "author": "Melissa Payne",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Forget-Me-Not Library",
+    "author": "Heather Webber",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Someone To Daydream About",
+    "author": "Sydney Langford",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Bad Boyfriend Curse",
+    "author": "Farah Heron",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Shivani Doraiswami & Sean Berard"
+   },
+   {
+    "book": "Build A Girlfriend",
+    "author": "Elba Luz",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Legally Yours, Violet Lopez",
+    "author": "Elba Luz",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Slow Burn",
+    "author": "Trinity Nguyen",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Lucy Stille"
+   },
+   {
+    "book": "Selkies and Skeptics",
+    "author": "Elias Cold",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Morbid Curiosities",
+    "author": "S. Hati",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Sean Berard, Untitled Entertainment"
+   },
+   {
+    "book": "We Were Never Here",
+    "author": "Sophia Hannan",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note; Film Agent: Addison Duffy, UTA"
+   },
+   {
+    "book": "We Were Supposed To Find This (Book 1 of 2)",
+    "author": "Emily Snyder",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Tales of Arcana Fortune",
+    "author": "Hafsa A. Jawad",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Bound by Fury (Book 1 of 3)",
+    "author": "Noelle Monét",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Last Soldier of Nava",
+    "author": "Yejin Suh",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Clementine H. Hopeful is Not a Hero (Better School Book 1 of 2)",
+    "author": "Noah Corey",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "The Fantastic Freeze Ray (Super Villains in Training #1)",
+    "author": "Kailei Pew; illustrated by Estrela Lourenço",
+    "status": "available",
+    "note": "dedicated film/TV guide (BookEnds Media Rights Guide Spring 2026), no title note"
+   },
+   {
+    "book": "Out on a Limb",
+    "author": "Hannah Bonam-Young",
+    "status": "available",
+    "note": "Popular Backlist 'Still Available for Film/TV'"
+   },
+   {
+    "book": "Of Monsters and Mainframes",
+    "author": "Barbara Truelove",
+    "status": "available",
+    "note": "Popular Backlist 'Still Available for Film/TV'"
+   },
+   {
+    "book": "Lovelight Farms (Book 1 of 4)",
+    "author": "B.K. Borison",
+    "status": "available",
+    "note": "Popular Backlist 'Still Available for Film/TV'"
+   },
+   {
+    "book": "Next of Kin",
+    "author": "Kia Abdullah",
+    "status": "available",
+    "note": "Popular Backlist 'Still Available for Film/TV'"
+   },
+   {
+    "book": "The Shadows Between Us",
+    "author": "Tricia Levenseller",
+    "status": "available",
+    "note": "Popular Backlist 'Still Available for Film/TV'"
+   },
+   {
+    "book": "He's To Die For",
+    "author": "Erin Dunn",
+    "status": "available",
+    "note": "Popular Backlist 'Still Available for Film/TV'"
+   }
+  ],
+  "fetch_problems": "No film/TV contact email printed; per-title 'Film Agent' co-agents named where given (in notes).",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Storm Literary Agency",
+  "domain": "stormliteraryagency.com",
+  "contact_email": "vicki@stormliteraryagency.com",
+  "contact_quote": "VICKI@STORMLITERARYAGENCY.COM (printed on the cover and section pages of both Storm Film Rights Guides)",
+  "received": "2026-11-08",
+  "source": "https://www.stormliteraryagency.com/uploads/4/2/7/1/42713095/2026_adult_storm_film_rights_guide.pdf ; https://www.stormliteraryagency.com/uploads/4/2/7/1/42713095/2026_childrens_film_rights_guide.pdf",
+  "file": "https://www.stormliteraryagency.com/uploads/4/2/7/1/42713095/2026_adult_storm_film_rights_guide.pdf ; https://www.stormliteraryagency.com/uploads/4/2/7/1/42713095/2026_childrens_film_rights_guide.pdf",
+  "guide_date": "2026",
+  "titles": [
+   {
+    "book": "Listen",
+    "author": "E.K. Bridges",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Wedding Heist",
+    "author": "Yonatan Berkovits",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; Film Co-Agent: Alec Frankel at IAG"
+   },
+   {
+    "book": "Hell Princess and Hero (working title)",
+    "author": "Michelle Denham",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Death on the Shooting Star",
+    "author": "Carly Brown",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Altered",
+    "author": "Amanda Casile",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; Film co-agent: Alec Frankel (IAG)"
+   },
+   {
+    "book": "The Kids are Not Okay",
+    "author": "C.L. Murphy",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; Film co-agent: Sam Huggins (Gotham Group)"
+   },
+   {
+    "book": "The Mouse Tower",
+    "author": "Anna Carew",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Pendleton Family's Guide to Accidental Murder",
+    "author": "Brianna Heath",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; Film co-agents: Laura Pawlak, Olivia Fanaro (UTA)"
+   },
+   {
+    "book": "The Inner Sea",
+    "author": "Kate Stapleton",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "It's In Her Kiss",
+    "author": "Dana Hawkins",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Rights Sold: World English + Italian (Storm Publishing)' (publishing, not screen)"
+   },
+   {
+    "book": "When We Were Sisters",
+    "author": "Taylor Leamey",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Strangebrew Apothecary",
+    "author": "Rustin Lovewell",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Make Me Series",
+    "author": "Natasha K. Lauren",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Between Worlds",
+    "author": "Kate Alexandra",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Forced Proximity",
+    "author": "Dana Hawkins",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Mortdale: Anatomy of a Vampire's Heart",
+    "author": "Wendy Heiss",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Stripped to the Soul",
+    "author": "Jade Marrey",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Greatest Mind",
+    "author": "A.A. Marie",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Shrouded Queen",
+    "author": "Ashley Tropea",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "I Will Always Love You (Maybe)",
+    "author": "Dana Hawkins",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; same title and blurb also listed (p35) under author name Gillian Daniels"
+   },
+   {
+    "book": "This Knight Topples Empires",
+    "author": "Ry Herman",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Black Water Bones",
+    "author": "S.E. Reed",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Family Language",
+    "author": "Nicole Nelson",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "As You Wish",
+    "author": "Danika Brown",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Wolf Heart",
+    "author": "Betty Hawk",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "My Girlfriend is Not the Father",
+    "author": "Brianna Heath",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Robbie McNeil's Hit List",
+    "author": "Brianna Heath",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; Media Rights Co-agents: Laura Pawlak and Olivia Fanaro with UTA"
+   },
+   {
+    "book": "I Will Always Love You (Maybe)",
+    "author": "Gillian Daniels",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; same title and blurb also listed (p26) under author name Dana Hawkins"
+   },
+   {
+    "book": "The Better Mother",
+    "author": "Jennifer Van Der Kleut",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Bound by the Sky",
+    "author": "Megan Elisabeth",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "How to Talk to Your Dog About Murder",
+    "author": "Emily Soderberg",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Agri-Energy: Growing Power, Growing Food",
+    "author": "Rebekah Pierce",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Windburn",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Any Girl But You",
+    "author": "Dana Hawkins",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Murder Two Doors Down",
+    "author": "Chuck Storla",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Ex Effect",
+    "author": "Dana Hawkins",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Less Than Perfect",
+    "author": "S.M. Levine",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "This Princess Kills Monsters",
+    "author": "Ry Herman",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Inn Between",
+    "author": "Danika Brown",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "First Command Series",
+    "author": "Michael Simon",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Rights Sold: Ukraine, Germany' (translation)"
+   },
+   {
+    "book": "Extinction Series",
+    "author": "Michael Simon",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Rights Sold: Ukraine' (translation)"
+   },
+   {
+    "book": "Cupids & Gods",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Reverence",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Valdor Series",
+    "author": "J.E. Larson",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Curse of Silver Secrets Series",
+    "author": "Vera Raye",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Blue Fairytales Series",
+    "author": "Wendy Heiss",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "Liliana and the Fae of Fayetteville Series",
+    "author": "Paige E. Ewing",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "The Headmistress",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "These Thin Lines",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Rights Sold: World English Audio (Tantor)'"
+   },
+   {
+    "book": "Color Taste Texture: Recipes for Picky Eaters, Those with Food Aversion, and Anyone Who's Ever Cringed at Food",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note"
+   },
+   {
+    "book": "A Whisper of Solace",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Rights Sold: World English Audio (Tantor)'"
+   },
+   {
+    "book": "The Delicate Things We Make",
+    "author": "Milena McKay",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Rights Sold: World English Audio (Tantor)'"
+   },
+   {
+    "book": "The Auran Chronicles",
+    "author": "Wendy Heiss",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Adult 2026), no title note; 'Audio rights sold to Podium Audio'"
+   },
+   {
+    "book": "Yuki's Special Delivery",
+    "author": "Chloe Ito Ward",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "One Grain of Sand: A Journey Through Time and Tides",
+    "author": "Judy Bryan",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note; title clipped in guide as 'A Journ Through Time and Tides'"
+   },
+   {
+    "book": "Don't Feed the Hungry Ghosts",
+    "author": "J.M. Blakemore, Connie Chang",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Ready to Ride",
+    "author": "Diane Mittler",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Guard My Heart",
+    "author": "Sabrina Fedel",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "California or Dust",
+    "author": "Mindy Nichols Wendell",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "All the Way Home",
+    "author": "Alex Ritany",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Maybe Tomorrow I'll Know",
+    "author": "Alex Ritany",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Love Grows Here",
+    "author": "Chloe Ito Ward",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Made for More",
+    "author": "Chloe Ito Ward",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Warrior on the Mound",
+    "author": "Sandra W. Headen",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "All Paths Lead to Paris",
+    "author": "Sabrina Fedel",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Comic Collisions: Asteroid vs Comet",
+    "author": "Marc J. Kuchner",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Comic Collisions: Supergiant vs. Neutron Star",
+    "author": "Marc J. Kuchner",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note; printed as 'Supergiant vs. Neutro Star'"
+   },
+   {
+    "book": "Light and Air",
+    "author": "Melinda Nichols Wendell",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "All Roads Lead to Rome",
+    "author": "Sabrina Fedel",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "One, Two, Grandpa Loves You",
+    "author": "Shelly Becker",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "The Pie That Molly Grew",
+    "author": "Sue Heavenrich",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Wake, Sleepy One",
+    "author": "Lisa Kerr",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Funky Fungi: 30 Activities for Exploring Molds, Mushrooms, Lichens, and More",
+    "author": "Sue Heavenrich",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Wild Style",
+    "author": "Jenna Grodzicki",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "I See Seafood: Sea Creatures That Look Like Food",
+    "author": "Jenna Grodzicki",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   },
+   {
+    "book": "Mother Ghost",
+    "author": "Rachel Kolar",
+    "status": "available",
+    "note": "dedicated film/TV guide (Storm Film Rights Guide Children's 2026), no title note"
+   }
+  ],
+  "fetch_problems": "",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "David Higham Associates",
+  "domain": "davidhigham.co.uk",
+  "contact_email": "",
+  "contact_quote": "Film & TV Rights: Clare Israel (CI); Georgie Smith (GS); Nicky Lund (NL) (no film/TV email printed; per-title 'TV/Film Agent' lines, some at WME, CAA, United Agents, Haworth Agency)",
+  "received": "2026-11-08",
+  "source": "https://davidhigham.co.uk/wp-content/uploads/LBF-Rights-Guide-Digital_compressed-1.pdf",
+  "file": "https://davidhigham.co.uk/wp-content/uploads/LBF-Rights-Guide-Digital_compressed-1.pdf",
+  "guide_date": "London Book Fair 2026 (International Rights Highlights, Spring 2026)",
+  "titles": [
+   {
+    "book": "THE STRANGERS",
+    "author": "Naomi Alderman",
+    "status": "unknown",
+    "note": "TV/Film Agent: Sylvie Rabineau at WME; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SANDCASTLES",
+    "author": "Marni Appleton",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HORSEMEN",
+    "author": "Daisy Black",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "MR SIDHU’S POST OFFICE",
+    "author": "Amman Brar",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "IT COMES IN WAVES",
+    "author": "Rukky Brume",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE SECRET THREAD",
+    "author": "Eve Chase",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SAINT DEATH",
+    "author": "Kate Collins",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DESERT ROAD OPEN",
+    "author": "Jane Copland",
+    "status": "unknown",
+    "note": "TV/Film Agent: TBC; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SKY CITY",
+    "author": "Jacqueline Crooks",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "AGONY IN THE GARDEN",
+    "author": "Gabriel Krauze",
+    "status": "unknown",
+    "note": "TV/Film Agent: TBC; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE KNOTTED CORD",
+    "author": "Harriet Matthews",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THIS DOOR OF THE SEAS",
+    "author": "Val McDermid and Jo Sharp",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "WHITEADDER / WOLFSPIDER",
+    "author": "Benjamin Myers",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "BON VIVANT",
+    "author": "Rebecca K Reilly",
+    "status": "unknown",
+    "note": "TV/Film Agent: Mary Pender, WME; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HAVING SPENT LIFE SEEKING",
+    "author": "Kae Tempest",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE RUNNER",
+    "author": "Scarlett Thomas",
+    "status": "unknown",
+    "note": "TV/Film Agent: Will Watkins at CAA, LA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HONEY",
+    "author": "Imani Thompson",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "AERTH",
+    "author": "Deborah Tomkins",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE RED ZONE",
+    "author": "Sarah Young",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE BREAKUP, BREAK-IN",
+    "author": "Charlotte Avery",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "PLAYING WITH FIRE",
+    "author": "Olivia Belle",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE NIGHT BUS",
+    "author": "Tessa Bickers",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "FANBOY",
+    "author": "Dan Cash",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "PRESS PLAY",
+    "author": "Matt Glasby",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "IF I HAD MY TIME AGAIN",
+    "author": "Linda Green",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE BEST EX OF MY LIFE",
+    "author": "Emmy Hart",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "LIFT ME UP",
+    "author": "Milly Johnson",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE SUBTLE PLEASURES OF INDISCRETION (Isabel Dalhousie #16)",
+    "author": "Alexander McCall Smith",
+    "status": "unknown",
+    "note": "TV/Film Agent: Haworth Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE SECRET AT SUMMER’S END",
+    "author": "Lulu Taylor",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "CRASH",
+    "author": "Belinda Bauer",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE DISASSOCIATED",
+    "author": "Harriet Crouzières",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "IN A PREVIOUS LIFE",
+    "author": "Paula Daly",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "WATCH THE QUIET SNOW: The Slough House novellas",
+    "author": "Mick Herron",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE CUTTING STONE (Dark Peak #2)",
+    "author": "Sarah Hilary",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE RECRUIT (Pelican Black Series #1)",
+    "author": "LD Sharpe",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE DANGEROUS STRANGER (DI Wilkins series #5)",
+    "author": "Simon Mason",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THEY SAY A GIRL DIED HERE",
+    "author": "Sarah Pinborough",
+    "status": "unknown",
+    "note": "TV/Film Agent: Sean Gascoine at United Agents; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE MURDER TREE (DCI Christine Caplan #5)",
+    "author": "Caro Ramsay",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "LIE FOR YOUR LIFE",
+    "author": "Anna Sharpe",
+    "status": "unknown",
+    "note": "TV/Film Agent: The Haworth Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "VOICES OF THE DEAD",
+    "author": "Nicola Upson",
+    "status": "unknown",
+    "note": "TV/Film Agent: Nicky Lund, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE GOOD LISTENER",
+    "author": "Holly Watt",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HERO (DS Walker series #5)",
+    "author": "Patricia Wolf",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "QUEENS OF VILLAINY SERIES",
+    "author": "Stephanie Burgis",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "STYX: The River",
+    "author": "Nikita Gill",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE DIVINES",
+    "author": "Rachel Greenlaw",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE LAST VERSE OF THE HARP LORD",
+    "author": "Lucy Holland",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "TOO HEXED TO HANDLE",
+    "author": "Charlotte Ingham",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DAUGHTER OF THE TEMPEST (Myths of the Empyrieos #2)",
+    "author": "Braidee Otto",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE WOLF QUEEN (The Wolf King trilogy #3)",
+    "author": "Lauren Palphreyman",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ROGUE CHARMERS",
+    "author": "Caitlyn Paxson",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SALTSWEPT",
+    "author": "Katalina Watt",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "A LOVELY DAY TO DIE AND OTHER STORIES",
+    "author": "Celia Fremlin",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HISTORY OF THE CHILD",
+    "author": "Penelope Shuttle",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "A BLOODY SCANDAL",
+    "author": "Evelyn Scott",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THIS IS NOT AN EXERCISE",
+    "author": "Tom Evans",
+    "status": "unknown",
+    "note": "TV/Film Agent: Jessica Woollard, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SUGARHEADS",
+    "author": "Lucy Jones",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE FALL OF THE WEST",
+    "author": "Owen Jones",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DEEPER THINKING",
+    "author": "Tej Parikh",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "OUT OF CHAOS",
+    "author": "Jon Wilson",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE BLACK DEATH: A GLOBAL HISTORY",
+    "author": "Thomas Asbridge",
+    "status": "unknown",
+    "note": "TV/Film Agent: Nicky Lund, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE MOORS MURDERS: The Unanswered Questions",
+    "author": "Michael Attwell",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "WHERE ARE WE?: A GLOBAL HISTORY OF NAVIGATION",
+    "author": "Seb Falk",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "CHURCHILL’S PIRATES: THE SEAFARING HEROES WHO HELPED WIN WWII",
+    "author": "Will Iredale",
+    "status": "unknown",
+    "note": "TV/Film Agent: Nicky Lund, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "REX JUBA: 15 GLIMPSES OF AN AFRICAN KING",
+    "author": "Andrew Kenrick",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SUPER K",
+    "author": "Barbara Keys",
+    "status": "unknown",
+    "note": "TV/Film Agent: Andrew Gordon, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SAS: GREAT ESCAPES FIVE",
+    "author": "Damien Lewis",
+    "status": "unknown",
+    "note": "TV/Film Agent: Lucy Fawcett at Sheil Land Associates; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE COLD WAR AT SEA",
+    "author": "Evan Mawdsley",
+    "status": "unknown",
+    "note": "TV/Film Agent: Nicky Lund, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "STALIN’S APOSTLES: The Cambridge Five and the Making of the Soviet Empire",
+    "author": "Antonia Senior",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "WHAT HEALS THE WORLD GROWS HERE",
+    "author": "Dr Yemisi Bokinni",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ALIVE: A REVOLUTIONARY HISTORY OF EARTH’S INTELLIGENCES",
+    "author": "Melanie Challenger",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SEA, SEAL, SELKIE",
+    "author": "Charles Foster",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE SECRET OF LIFE",
+    "author": "John Gribbin",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE SKY ROAD",
+    "author": "Simar Preet Kaur",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "PLANT COUNSELLING CENTRE",
+    "author": "Hye Woo Shin",
+    "status": "unknown",
+    "note": "no TV/Film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "RUBBLE: Art, The Blitz, and London in Ruins",
+    "author": "Altair Brandon-Salmon",
+    "status": "unknown",
+    "note": "TV/Film Agent: Orli Vogt-Vincent, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "I’M JUST A GIRL: How Reclaiming Girlhood Can Rewrite Womanhood",
+    "author": "Jess Bacon",
+    "status": "unknown",
+    "note": "TV/Film Agent: Orli Vogt-Vincent, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "I’LL BE YOUR MIRROR",
+    "author": "Georgia Heneage",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "UNRAVELLED: How Women Unstitch Patriarchy",
+    "author": "Gemma Mackenzie",
+    "status": "unknown",
+    "note": "TV/Film Agent: Orli Vogt-Vincent, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "REWILDING THE MIND",
+    "author": "Manchán Magan",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE LIT PACK: The Amis, Barnes, McEwan Circle; A Love Story",
+    "author": "Ben Masters",
+    "status": "unknown",
+    "note": "no TV/Film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "GIZMO",
+    "author": "Simon Tyler",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "FOLK",
+    "author": "James Wade",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "BEYOND THE FRAME",
+    "author": "Norman Coates",
+    "status": "unknown",
+    "note": "TV/Film Agent: Georgie Smith, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE SMALLEST RESTAURANT IN PARIS",
+    "author": "Rachel Khoo",
+    "status": "unknown",
+    "note": "TV/Film Agent: Alice Russell (Mirador Group); guide does not state screen-rights availability"
+   },
+   {
+    "book": "MY CANTOPOP NIGHTS: A Memoir in Songs",
+    "author": "Emma-Lee Moss",
+    "status": "unknown",
+    "note": "TV/Film Agent: Clare Israel, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "WILLIAM MORRIS",
+    "author": "Michael Robertson",
+    "status": "unknown",
+    "note": "TV/Film Agent: DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "I, VERA",
+    "author": "Miranda Seymour",
+    "status": "unknown",
+    "note": "TV/Film Agent: Nicky Lund, DHA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "A MUG OF LIFE: Strangers’ Advice on What Makes a Good Life",
+    "author": "The team behind social media phenomenon A Mug of Life",
+    "status": "unknown",
+    "note": "TV/Film Agent: TBC; guide does not state screen-rights availability"
+   },
+   {
+    "book": "The Husbands",
+    "author": "Holly Gramazio",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: A24/Apple TV+’s 8-part TV adaptation, starring Juno Temple, has begun filming"
+   },
+   {
+    "book": "Dandelion is Dead",
+    "author": "Rosie Storey",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Optioned to See Saw Films"
+   },
+   {
+    "book": "Probably Nothing",
+    "author": "Lauren Bravo",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Optioned"
+   },
+   {
+    "book": "Motherfaker",
+    "author": "Anna Brook-Mitchell",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Optioned"
+   },
+   {
+    "book": "Imperfect Women",
+    "author": "Araminta Hall",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: The eight-episode series is set to air on Apple TV in March"
+   },
+   {
+    "book": "All Creatures Great and Small",
+    "author": "James Herriot",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Series 7 and 8 announced"
+   },
+   {
+    "book": "The Offing",
+    "author": "Benjamin Myers",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: In pre-production"
+   },
+   {
+    "book": "The Perfect Golden Circle",
+    "author": "Benjamin Myers",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Optioned"
+   },
+   {
+    "book": "Down Cemetery Road",
+    "author": "Mick Herron",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Renewed for 2nd season at Apple TV+"
+   },
+   {
+    "book": "Slow Horses",
+    "author": "Mick Herron",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Season 7 has begun filming"
+   },
+   {
+    "book": "The Karen Pirie series",
+    "author": "Val McDermid",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Season 2 broadcast in July; S3 is in early development"
+   },
+   {
+    "book": "The Vanishing Point",
+    "author": "Val McDermid",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Optioned for TV"
+   },
+   {
+    "book": "The Troubled Deep",
+    "author": "Rob Parker",
+    "status": "optioned",
+    "note": "Film and TV News 2026 page: Optioned"
+   }
+  ],
+  "fetch_problems": "None; full 102-page PDF read via pdftotext. 'Recent and Upcoming Publications' and 'Prizes 2026' list pages (bare title/author lists, no rights info) not loaded as titles.",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Jenny Brown Associates",
+  "domain": "jennybrownassociates.com",
+  "contact_email": "emily@theartistspartnership.co.uk",
+  "contact_quote": "FILM & TV RIGHTS: Contact: Emily Hayward Whitlock at The Artists Partnership (emily@theartistspartnership.co.uk)",
+  "received": "2026-11-08",
+  "source": "https://jennybrownassociates.com/wp-content/uploads/2026/06/JBA-2026-Spring-Rights-Guide.pdf",
+  "file": "https://jennybrownassociates.com/wp-content/uploads/2026/06/JBA-2026-Spring-Rights-Guide.pdf",
+  "guide_date": "Spring 2026",
+  "titles": [
+   {
+    "book": "The New Bookshop Diaries",
+    "author": "Shaun Bythell",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Silent Twin",
+    "author": "Jen L Crow",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Psychologist",
+    "author": "Jen L Crow",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Burning Fears",
+    "author": "Katy Massey",
+    "status": "available",
+    "note": "\"Rights held: World, Film TV, Translation\" (JBA controls film & TV)"
+   },
+   {
+    "book": "All Us Sinners",
+    "author": "Katy Massey",
+    "status": "unknown",
+    "note": "\"Rights held: World\" (film & TV not listed as held)"
+   },
+   {
+    "book": "The Cromarty Library Circle",
+    "author": "Shona MacLean",
+    "status": "available",
+    "note": "\"Rights held: Translation, film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Jewel Keepers",
+    "author": "Sara Sheridan",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Silver Thread",
+    "author": "Kate Lord Brown",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Golden Hour",
+    "author": "Kate Lord Brown",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "Hawthorn (and quartet, incl. Saltwater: a midsummer ghost story)",
+    "author": "Elaine Thomson",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "Rose & Renzo",
+    "author": "Carolyn O’Brien",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Translator",
+    "author": "Annabelle Marx",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "White Raven",
+    "author": "Maggie Ritchie",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "City of Silk",
+    "author": "Glennis Virgo",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Stray Dogs",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Light a Candle Society",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Keeper of Lost Things",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Wisdom of Sally Red Shoes",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "Queenie Malone’s Paradise Hotel",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "Madame Burova",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Phoenix Ballroom",
+    "author": "Ruth Hogan",
+    "status": "available",
+    "note": "\"Rights held: World, film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Shapeshifter’s Daughter",
+    "author": "Sally Magnusson",
+    "status": "available",
+    "note": "\"Rights held: World, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "Ocean",
+    "author": "Polly Clark",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Castle of Stories",
+    "author": "Matt Cain",
+    "status": "unknown",
+    "note": "\"Rights held: Translation\" (film & TV not listed as held)"
+   },
+   {
+    "book": "Night Train to Odesa: Covering the Human Cost of Russia’s War",
+    "author": "Jen Stout",
+    "status": "available",
+    "note": "\"Rights held: Translation, Film & TV\" (JBA controls film & TV)"
+   },
+   {
+    "book": "The Art Lovers",
+    "author": "Fiona McIntosh",
+    "status": "unknown",
+    "note": "\"Rights held: Translation, Film & TV\"; but author page says \"JBA controls all other rights including translation, film and TV. Many of her books are optioned for screen/in script development.\" - title-level status not stated"
+   },
+   {
+    "book": "DCI Jack Hawksworth series",
+    "author": "Fiona McIntosh",
+    "status": "unknown",
+    "note": "\"Rights held: World ex ANZ, film & TV\"; but author page says \"JBA controls all other rights including translation, film and TV. Many of her books are optioned for screen/in script development.\" - title-level status not stated"
+   },
+   {
+    "book": "The Silencing (Nina Crow)",
+    "author": "Fiona McIntosh",
+    "status": "unknown",
+    "note": "\"Rights held: WEL ex ANX, film & TV\"; but author page says \"JBA controls all other rights including translation, film and TV. Many of her books are optioned for screen/in script development.\" - title-level status not stated"
+   },
+   {
+    "book": "The Quickening",
+    "author": "Fiona McIntosh",
+    "status": "unknown",
+    "note": "\"Rights held: World ex ANZ, Film & TV\"; but author page says \"JBA controls all other rights including translation, film and TV. Many of her books are optioned for screen/in script development.\" - title-level status not stated"
+   },
+   {
+    "book": "Trinity",
+    "author": "Fiona McIntosh",
+    "status": "unknown",
+    "note": "\"Rights held: World ex ANZ, Film & TV\"; but author page says \"JBA controls all other rights including translation, film and TV. Many of her books are optioned for screen/in script development.\" - title-level status not stated"
+   },
+   {
+    "book": "Percheron",
+    "author": "Fiona McIntosh",
+    "status": "unknown",
+    "note": "\"Rights held: World ex ANZ, Film & TV\"; but author page says \"JBA controls all other rights including translation, film and TV. Many of her books are optioned for screen/in script development.\" - title-level status not stated"
+   }
+  ],
+  "fetch_problems": "None; full 24-page PDF read via pdftotext.",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Rogers, Coleridge & White",
+  "domain": "rcwlitagency.com",
+  "contact_email": "",
+  "contact_quote": "No single film/TV contact printed; per-title 'Film agent:' lines (most often 'Emily Hayward-Whitlock at The Artists Partnership', also 'Cathy King at 42', 'Katie Haines at The Agency', or 'RCW'). General: FOREIGN RIGHTS Foreignrights@rcwlitagency.com",
+  "received": "2026-11-08",
+  "source": "https://rcwlitagency.com/assets/site/catalogues/RCW-Catalogue-London-2026_compressed.pdf?v=1772646531",
+  "file": "https://rcwlitagency.com/assets/site/catalogues/RCW-Catalogue-London-2026_compressed.pdf?v=1772646531",
+  "guide_date": "London 2026",
+  "titles": [
+   {
+    "book": "THE NEWER WORLD",
+    "author": "Sebastian Barry",
+    "status": "unknown",
+    "note": "Film agent: Cathy King at 42; guide does not state screen-rights availability"
+   },
+   {
+    "book": "MAKE STRANGE",
+    "author": "Niamh Campbell",
+    "status": "unknown",
+    "note": "Film agent: RCW; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ISEULT",
+    "author": "Helen Cullen",
+    "status": "unknown",
+    "note": "Film agent: Cathy King at 42; guide does not state screen-rights availability"
+   },
+   {
+    "book": "OTHER PEOPLE’S CHILDREN",
+    "author": "Ben Faccini",
+    "status": "unknown",
+    "note": "Film agent: RCW; guide does not state screen-rights availability"
+   },
+   {
+    "book": "FOUR TERRIBLE PARENTS",
+    "author": "Calla Henkel",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ULTRAMARIN",
+    "author": "Tine Høeg",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HULDUKONAN [Hidden People]",
+    "author": "Fríða Ísberg",
+    "status": "unknown",
+    "note": "Film agent: RCW; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE LIBRARY OF TRAUMATIC MEMORY",
+    "author": "Neil Jordan",
+    "status": "unknown",
+    "note": "Film agent: Simon Shaps at Georgina Capel Associates; guide does not state screen-rights availability"
+   },
+   {
+    "book": "BLACK BAG",
+    "author": "Luke Kennard",
+    "status": "unknown",
+    "note": "Film agent: Katie Haines at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "STATIONS",
+    "author": "Louise Kennedy",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "A MAGYAR NEMZET BIZTONZAGA [The Security of the Hungarian Nation]",
+    "author": "László Krasznahorkai",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "AMERICAN HAGWON",
+    "author": "Min Jin Lee",
+    "status": "unknown",
+    "note": "Film agent: Brooke Ehrlich at CAA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SUCKERFISH",
+    "author": "Ashani Lewis",
+    "status": "unknown",
+    "note": "Film agent: Katie Haines at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "BEGINNING, MIDDLE, END",
+    "author": "Valeria Luiselli",
+    "status": "unknown",
+    "note": "Film agent: Aragi; guide does not state screen-rights availability"
+   },
+   {
+    "book": "RÖK OCH SPEGLAR [Smoke and Mirrors]",
+    "author": "Johanne Lykke Naderehvandi",
+    "status": "unknown",
+    "note": "no film agent listed; \"Film rights have been optioned\" refers to previous novel Strega, not this title"
+   },
+   {
+    "book": "RATRI",
+    "author": "Saranya Murthi",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "KARRO",
+    "author": "Jenny Mustard",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "CELESTIAL LIGHTS",
+    "author": "Cecile Pin",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ALL IN",
+    "author": "Claire Powell",
+    "status": "unknown",
+    "note": "Film agent: Cathy King at 42; guide does not state screen-rights availability"
+   },
+   {
+    "book": "CHILDREN OF THE WILD",
+    "author": "Kevin Powers",
+    "status": "unknown",
+    "note": "Film agent: Katie Haines at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DOONEEN",
+    "author": "Keith Ridgway",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE PALM HOUSE",
+    "author": "Gwendoline Riley",
+    "status": "unknown",
+    "note": "Film agent: Emily Hickman at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DAYS OF DROWNING",
+    "author": "Robin Robertson",
+    "status": "unknown",
+    "note": "Film agent: Katie Haines at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "[Delusion] (Arabic)",
+    "author": "Adania Shibli",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "A PRIVATE MAN",
+    "author": "Stephanie Sy-Quia",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE NEWS FROM DUBLIN",
+    "author": "Colm Tóibín",
+    "status": "unknown",
+    "note": "Film agent: Cathy King at 42; guide does not state screen-rights availability"
+   },
+   {
+    "book": "[Hooked] (Japanese)",
+    "author": "Asako Yuzuki",
+    "status": "unknown",
+    "note": "Film agent: EAJ; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ONLY ONE OF US IS GUILTY (Eddie Flynn Series #10)",
+    "author": "Steve Cavanagh",
+    "status": "unknown",
+    "note": "Film agent: Sylvie Rabineau at WME; guide does not state screen-rights availability"
+   },
+   {
+    "book": "ONE LONDON DAY",
+    "author": "Chris Humphreys",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "READ ME LIKE A BOOK",
+    "author": "Anna James",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "A BEAR AMONG WOLVES",
+    "author": "C.C. Kilpatrick",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "[Café. Waiting. Love] (Chinese)",
+    "author": "Giddens Ko",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SHADOWS OF KENSINGTON GORE (Stockingham & Pike Mystery Series #2)",
+    "author": "Ross Montgomery",
+    "status": "optioned",
+    "note": "\"Film rights: Working Title\" (series; also listed for previous title The Murder at World’s End); Film agent: Emily Hayward-Whitlock at The Artists Partnership"
+   },
+   {
+    "book": "THE HEIGHTS",
+    "author": "Ian Rankin",
+    "status": "unknown",
+    "note": "Film agent: Jane Villiers at Sayle Screen; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE TAILOR (DS George Cross Series #8)",
+    "author": "Tim Sullivan",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "[Not To Become a Monster] (Arabic)",
+    "author": "Muhammad Al-Zaqzouq",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE WORLD BENEATH OUR FEET: The Hidden Life of Soil and Why it Matters to us All",
+    "author": "Frank Ashwood",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "AN UNSTABLE ELEMENT: A Memoir",
+    "author": "Peter Carey",
+    "status": "unknown",
+    "note": "Film agent: Stephen Durbridge at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "EUROPE IN 7 ½ CHAPTERS: The Shortest Introduction to the World’s Oldest and Newest Continent",
+    "author": "Timothy Garton Ash",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE TWITNAM SUMMER: Friendship, Satire and the Writing of Gulliver’s Travels",
+    "author": "Hester Grant",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE NEXT FIX: The Winners and Losers in the Future of Drugs",
+    "author": "Kojo Koram",
+    "status": "unknown",
+    "note": "Film agent: RCW; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SELF HELP FROM THE MIDDLE AGES: What the Seven Deadly Sins Can Teach Us About Living",
+    "author": "Peter Jones",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "CHASING ALIENS: Faith and Conspiracy in the UFO Heartlands",
+    "author": "Daniel Lavelle",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "HOW TO BE HOPEFUL",
+    "author": "Caitlin Moran",
+    "status": "unknown",
+    "note": "Film agent: Cathy King at 42; guide does not state screen-rights availability"
+   },
+   {
+    "book": "AFTER AMERICA: The Struggle for a New World Order",
+    "author": "Robin Niblett",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "GUILTY PLEASURE: The Pornification of the Internet, the Economy, and Everything Else",
+    "author": "Patricia Nilsson",
+    "status": "unknown",
+    "note": "Film agent: Emily Hayward-Whitlock at The Artists Partnership; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE ASSET CLASS: How Private Equity Sold Out the West",
+    "author": "Hettie O’Brien",
+    "status": "unknown",
+    "note": "Film agent: RCW; guide does not state screen-rights availability"
+   },
+   {
+    "book": "YAKUZA: A 400-Year History of the Japanese Underworld",
+    "author": "Andrew Rankin",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE CASTLE: Adventures in a World of Unravelling Men",
+    "author": "Jon Ronson",
+    "status": "unknown",
+    "note": "Film agent: Natasha Galloway at United Agents; guide does not state screen-rights availability"
+   },
+   {
+    "book": "NAPOLEON’S ORANGUTAN: A Collection of Miraculous Creatures",
+    "author": "Katherine Rundell",
+    "status": "unknown",
+    "note": "Film agent: Chalcot Square; guide does not state screen-rights availability"
+   },
+   {
+    "book": "SUING THE KREMLIN: The Battle for Putin’s Billions",
+    "author": "Martin Sixsmith",
+    "status": "unknown",
+    "note": "Film agent: Katie Haines at The Agency; guide does not state screen-rights availability"
+   },
+   {
+    "book": "LAS OTRAS",
+    "author": "Alia Trabucco Zeran",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "MAKE ME WELL: Exposing the World of Wellness to Find a Healthy Way of Living",
+    "author": "Xand van Tulleken",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE LOUVRE HEIST",
+    "author": "Alex Von Tunzelmann",
+    "status": "unknown",
+    "note": "Film agent: Yasmin McDonald at CAA; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE LAST OF EARTH",
+    "author": "Deepa Anappara",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "THE BEST OF EVERYTHING",
+    "author": "Kit de Waal",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DIE HOLLÄNDERINNEN [The Dutch Girls]",
+    "author": "Dorothee Elmiger",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "VIANNE",
+    "author": "Joanne Harris",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "LICHTSPIEL [The Director]",
+    "author": "Daniel Kehlmann",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "VOKSBARNET [The Wax Child]",
+    "author": "Olga Ravn",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "EARLY MORNINGS AT THE LAKSA CAFÉ",
+    "author": "Janet Tay",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "LES FORCES",
+    "author": "Laura Vazquez",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "LOVE’S LABOUR",
+    "author": "Stephen Grosz",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   },
+   {
+    "book": "DEAD AND ALIVE: Essays",
+    "author": "Zadie Smith",
+    "status": "unknown",
+    "note": "no film agent listed; guide does not state screen-rights availability"
+   }
+  ],
+  "fetch_problems": "None; full 61-page PDF read via pdftotext. Three non-Latin-script titles (Arabic x2, Japanese, Chinese) recorded by their printed English bracket titles.",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Aitken Alexander Associates",
+  "domain": "aitkenalexander.co.uk",
+  "contact_email": "ariana@aitkenalexander.co.uk",
+  "contact_quote": "For Film and Television Rights enquiries, please contact Lesley Thorne's assistant: ARIANA CROLLA Email: ariana@aitkenalexander.co.uk",
+  "received": "2026-11-08",
+  "source": "https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf",
+  "file": "https://aitkenalexander.co.uk/Aitken%20Alexander%20LBF%202026%20Rights%20Guide-compressed.pdf",
+  "guide_date": "London Book Fair 2026",
+  "titles": [
+   {
+    "book": "Poor Baby",
+    "author": "Sarah Bernstein",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Rooms",
+    "author": "Sophie Berrebi",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Venus, Vanishing",
+    "author": "Rebecca Birrell",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Moderation",
+    "author": "Elaine Castillo",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Adder Stone",
+    "author": "Clare Clark",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Fifteenth Man",
+    "author": "William Cook",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "A Sense of Occasion",
+    "author": "Brodie Crellin",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Communion",
+    "author": "Jon Doyle",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Jean",
+    "author": "Madeleine Dunnigan",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Farewell to Eden",
+    "author": "Sebastian Faulks",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Rebel English Academy",
+    "author": "Mohammed Hanif",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Adventures of the Great Detective James McParland Among the Molly Maguires of Pennsylvania",
+    "author": "Michael Hughes",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Exhibition",
+    "author": "Alex Hyde",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Rapture",
+    "author": "Liz Jensen",
+    "status": "optioned",
+    "note": "TV adaptation coming: Mammoth Screen and the BBC, broadcast tbc for 2026"
+   },
+   {
+    "book": "Long Wave",
+    "author": "Daisy Johnson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "No Ghosts",
+    "author": "Max Lury",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Fields",
+    "author": "Martin MacInnes",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (author bio says his earlier novel In Ascension is being developed for film; not this title)"
+   },
+   {
+    "book": "Permanence",
+    "author": "Sophie Mackintosh",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "After Care",
+    "author": "Divya Maniar",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Intelligence",
+    "author": "Robert Newman",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Burn and Rave at Close of Day",
+    "author": "Max Porter",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (author bio cites screen adaptations of his earlier books Shy and Grief is the Thing with Feathers; not this title)"
+   },
+   {
+    "book": "Prairie Oyster",
+    "author": "Sophie Robinson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Into That Dark Sea",
+    "author": "Anuradha Roy",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Frame 37",
+    "author": "Nicholas Shakespeare",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Inheritance",
+    "author": "Gillian Slovo",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (author bio cites film of earlier novel Red Dust; not this title)"
+   },
+   {
+    "book": "Nonesuch",
+    "author": "Francis Spufford",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Passage",
+    "author": "Colin Thubron",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Left and the Lucky",
+    "author": "Willy Vlautin",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (author bio says three earlier novels were adapted as films; not this title)"
+   },
+   {
+    "book": "The Man Who Broke Reality",
+    "author": "Philip Ball",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Children of the Third Reich",
+    "author": "Catrine Clay",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Beyond Beauty",
+    "author": "Devon Cox",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Last Emperor of China",
+    "author": "Paul French",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Narco Presidents",
+    "author": "Will Grant",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Leaving Home",
+    "author": "Mark Haddon",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Colour of Home",
+    "author": "Sajid Javid",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Soul Tourist",
+    "author": "Dom Joly",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Death of Trotsky",
+    "author": "Josh Ireland",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Dog Days",
+    "author": "Emily LaBarge",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Your Next Move",
+    "author": "Sunny Lee",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Presence",
+    "author": "Erin Maglaque",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "We Are Movement",
+    "author": "Wayne McGregor",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "A Sicilian Man",
+    "author": "Caroline Moorehead",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Journey to Nowhere",
+    "author": "Shiva Naipaul",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Burn This Letter",
+    "author": "Susan Pedersen",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Bed Trick",
+    "author": "Izabella Scott",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "How to Use a Fork",
+    "author": "Orlando Swayne",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Glitch",
+    "author": "Louisa Toxvaerd Munch",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Jan Morris",
+    "author": "Sara Wheeler",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "I Wanna Be Loved by You",
+    "author": "Andrew Wilson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   }
+  ],
+  "fetch_problems": "",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "The Gernert Company",
+  "domain": "thegernertco.com",
+  "contact_email": "",
+  "contact_quote": "",
+  "received": "2026-11-08",
+  "source": "https://www.thegernertco.com/s/The-Gernert-Company-Frankfurt-Rights-Guide-Final.pdf",
+  "file": "https://www.thegernertco.com/s/The-Gernert-Company-Frankfurt-Rights-Guide-Final.pdf",
+  "guide_date": "Frankfurt 2026",
+  "titles": [
+   {
+    "book": "THE FRENCH ILLUSION: A Novel",
+    "author": "John Grisham",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "MISS WOLCOTT'S GHOST: A Novel",
+    "author": "Louise Penny",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "DUNGEON CRAWLER CARL SERIES",
+    "author": "Matt Dinniman",
+    "status": "optioned",
+    "note": "Greenlit by Universal Studios/Peacock as a tentpole live-action TV series with Chris Yost and Eric Heisserer show-running, Seth MacFarlane's Fuzzy Door producing"
+   },
+   {
+    "book": "OPPO: A Novel",
+    "author": "Christopher Beha",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "EMPTY AND MARVELOUS: A Novel",
+    "author": "Melissa Broder",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE DEMON OVERLORD'S RETIREMENT PLAN",
+    "author": "M.H. Foster",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "SYMPHONY IN Q: A Novel",
+    "author": "Lisa Halliday",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (the film adaptation mentioned is of her earlier book Asymmetry)"
+   },
+   {
+    "book": "THE BRIGHTNESS: A Novel",
+    "author": "Chad Harbach",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "LOCALS: Stories",
+    "author": "Jared Jackson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE MOODY MORTICIAN",
+    "author": "Samantha Jay",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "I'M NOT HERE TO HUNT RABBITS: A Novel",
+    "author": "Josh Kendall",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "WHERE KINGDOMS WANDER",
+    "author": "Brandon Lee (aka TurtleMe)",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "CODE & CODEX",
+    "author": "Yoon Ha Lee",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "WE ARE FINE: A Novel",
+    "author": "Gretchen Lieberum",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE DISINTEGRATION LOOPS",
+    "author": "Ray Nayler",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "HERSELF, OF COURSE: A Novel",
+    "author": "Alice McDermott",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "SUNRISE: A Novel",
+    "author": "Téa Obreht",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "I MAKE ENVY ON YOUR DISCO: A Novel",
+    "author": "Eric Schnall",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE SHEPHERD: A Spy Novel",
+    "author": "Paul Vidich",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "SOME OF US MAY NEVER DIE: A Novel",
+    "author": "Robin Wasserman",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE ONLY WAY OUT IS UP",
+    "author": "Django Wexler",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (the Legendary Television deal mentioned is for his earlier book How to Become the Dark Lord and Die Trying)"
+   },
+   {
+    "book": "OVERWORLD",
+    "author": "Will Wight",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE FIRST STOP (A THOUSAND LI SERIES: BOOK TWO)",
+    "author": "Tao Wong",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "KITTEN",
+    "author": "Stacey Yu",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "LESS IS MORE: A Scrumptious Case for Simpler Cooking",
+    "author": "Molly Baz",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "INSIDE THE BOX: How Constraints Make Us Better",
+    "author": "David Epstein",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "COUPLES: On Loving Another",
+    "author": "Orna Guralnik",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE VANISHING FAMILY: A Story of Fate, Love, and the Disappearing Mind",
+    "author": "Robert Kolker",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE INFINITY MACHINE: Demis Hassabis, DeepMind, and the Quest for Superintelligence",
+    "author": "Sebastian Mallaby",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "BOUNCE: Six Balls, Six Sports, and the History of Globalization",
+    "author": "William Milberg",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "ENDLESS NUMBERED DAYS",
+    "author": "Amanda Petrusich",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "THE PEPTIDE REVOLUTION",
+    "author": "Dr. William Seeds",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "JUST BENEATH THE SOIL: World War II Through the Eyes of Its Last Witnesses",
+    "author": "Clint Smith",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "WHAT IS THINKING? AI and the Secrets of the Mind",
+    "author": "James Somers",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "SITTING THE MONTH: Postpartum Recipes for Rest & Recovery",
+    "author": "Clarissa Wei",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Chain-Gang All-Stars: A Novel",
+    "author": "Nana Kwame Adjei-Brenyah",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Love Songs of W.E.B. Du Bois: A Novel",
+    "author": "Honorée Fanonne Jeffers",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Dead Weight",
+    "author": "Hildur Knutsdottir",
+    "status": "optioned",
+    "note": "Film adaptation coming from Act4, with The Handmaid's Tale director Kari Skogland attached to direct"
+   },
+   {
+    "book": "The God of the Woods: A Novel",
+    "author": "Liz Moore",
+    "status": "optioned",
+    "note": "In development at Netflix"
+   },
+   {
+    "book": "To The Moon and Back: A Novel",
+    "author": "Eliana Ramage",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Doorman",
+    "author": "Chris Pavone",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Blood Over Bright Haven: A Novel",
+    "author": "M.L. Wang",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "Beartooth: A Novel",
+    "author": "Callan Wink",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "There's Always This Year: On Basketball and Ascension",
+    "author": "Hanif Abdurraqib",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   },
+   {
+    "book": "The Light of Days: The Untold Story of Women Resistance Fighters in Hitler's Ghettos",
+    "author": "Judy Batalion",
+    "status": "optioned",
+    "note": "Film rights optioned by Steven Spielberg"
+   },
+   {
+    "book": "Why I Am Not an Atheist: The Confessions of a Skeptical Believer",
+    "author": "Christopher Beha",
+    "status": "unknown",
+    "note": "no screen-rights note for this title"
+   }
+  ],
+  "fetch_problems": "No film/TV contact printed; guide lists only translation co-agents and Rebecca Gardner / Will Roberts for 'all other markets'.",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Bonnier Books UK",
+  "domain": "bonnierbooks.co.uk",
+  "contact_email": "marc@soloson.co.uk",
+  "contact_quote": "TELEVISION AND FILM RIGHTS SoloSon Media Marc Simonsson marc@soloson.co.uk (printed in both the fiction and non-fiction guides; covers titles marked 'Television & Film Rights: SoloSon Media', other titles name their own agent)",
+  "received": "2026-11-08",
+  "source": "https://www.bonnierbooks.co.uk/wp-content/uploads/2026/09/Autumn-2026-Fiction-Rights-Guide-Spreads-Final-2.pdf ; https://www.bonnierbooks.co.uk/wp-content/uploads/2026/09/Autumn-2026-Non-Fiction-Rights-Guide-Spreads-Final.pdf",
+  "file": "https://www.bonnierbooks.co.uk/wp-content/uploads/2026/09/Autumn-2026-Fiction-Rights-Guide-Spreads-Final-2.pdf ; https://www.bonnierbooks.co.uk/wp-content/uploads/2026/09/Autumn-2026-Non-Fiction-Rights-Guide-Spreads-Final.pdf",
+  "guide_date": "Autumn 2026",
+  "titles": [
+   {
+    "book": "A Thousand Rivers of Time",
+    "author": "Erica Li",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "These Glass Bodies",
+    "author": "Rebecca Hooper",
+    "status": "unknown",
+    "note": "Television & Film Rights: Greene & Heaton"
+   },
+   {
+    "book": "Imaginary Forces",
+    "author": "Georgia Moorhouse",
+    "status": "unknown",
+    "note": "Television & Film Rights: The Soho Agency"
+   },
+   {
+    "book": "Under A Fur Coat",
+    "author": "Sonya Vatomsky",
+    "status": "unknown",
+    "note": "Television & Film Rights: Greene & Heaton"
+   },
+   {
+    "book": "Master, Mistress, Maid",
+    "author": "Kat Gordon",
+    "status": "unknown",
+    "note": "Television & Film Rights: Felicity Bryan Associates"
+   },
+   {
+    "book": "A Tiny Speck of Black and then Nothing",
+    "author": "Emily Midorikawa",
+    "status": "unknown",
+    "note": "Television & Film Rights: United Agents"
+   },
+   {
+    "book": "The Village",
+    "author": "Caroline Madden",
+    "status": "unknown",
+    "note": "Television & Film Rights: Donald Maass Literary Agency"
+   },
+   {
+    "book": "Service",
+    "author": "Lauren Mooney",
+    "status": "unknown",
+    "note": "Television & Film Rights: David Higham Associates"
+   },
+   {
+    "book": "Dirtpickers",
+    "author": "Edie May Hand",
+    "status": "unknown",
+    "note": "Television & Film Rights: Storyline Agency"
+   },
+   {
+    "book": "We All Still Live Here",
+    "author": "Melanie Golding",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media (bio says her earlier novel Little Darlings is optioned by Free Range Films; not this title)"
+   },
+   {
+    "book": "He Asked For It",
+    "author": "M. C. Cunningham",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown"
+   },
+   {
+    "book": "The Long Bones",
+    "author": "Marie Tierney",
+    "status": "unknown",
+    "note": "Television & Film Rights: Luigi Bonomi Associates"
+   },
+   {
+    "book": "A Murder of Detectives",
+    "author": "Daniel Marshall",
+    "status": "optioned",
+    "note": "Television & Film Rights: Optioned; 'Film/TV Rights Optioned'; also listed under Film & television deals & options as 'Under Option'"
+   },
+   {
+    "book": "Death Writ Large",
+    "author": "Susie Dent",
+    "status": "unknown",
+    "note": "Television & Film Rights: United Agents"
+   },
+   {
+    "book": "The Best of Enemies",
+    "author": "Julie Mae Cohen",
+    "status": "unknown",
+    "note": "Television & Film Rights: Teresa Chris Agency"
+   },
+   {
+    "book": "The Woman Who Wasn't There",
+    "author": "William Hussey",
+    "status": "unknown",
+    "note": "Television & Film Rights: David Higham Agency"
+   },
+   {
+    "book": "Jericho Rising",
+    "author": "William Hussey",
+    "status": "unknown",
+    "note": "Television & Film Rights: David Higham Agency"
+   },
+   {
+    "book": "The Murders of Christmas Past",
+    "author": "Andreina Cordani",
+    "status": "unknown",
+    "note": "Television & Film Rights: The North Literary Agency"
+   },
+   {
+    "book": "Wrap Party",
+    "author": "J. A. Wallace",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Wayfinder",
+    "author": "Becky Jenkinson",
+    "status": "unknown",
+    "note": "Television & Film Rights: The Blair Partnership"
+   },
+   {
+    "book": "Wild & West",
+    "author": "Elian J. Morgan",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "The Patience of Wolves",
+    "author": "Sophie Scott",
+    "status": "unknown",
+    "note": "Television & Film Rights: Maven Literary"
+   },
+   {
+    "book": "Heir to the Killers' Kingdom",
+    "author": "Anna St-Germain",
+    "status": "unknown",
+    "note": "Television & Film Rights: DHH Literary Agency"
+   },
+   {
+    "book": "Nightmare of the Evenfall Forest",
+    "author": "Pablo Valcárcel Castro",
+    "status": "unknown",
+    "note": "Television & Film Rights: Julie Crisp Agency"
+   },
+   {
+    "book": "Map of Fate",
+    "author": "E. C. Owen",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Deathless King",
+    "author": "R. A. Castellan",
+    "status": "unknown",
+    "note": "Television & Film Rights: RCW Agency"
+   },
+   {
+    "book": "Murder Most Festive",
+    "author": "Rosie Sandler",
+    "status": "unknown",
+    "note": "Television & Film Rights: The Literary Office"
+   },
+   {
+    "book": "The Plus One",
+    "author": "Richy Craven",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown"
+   },
+   {
+    "book": "Dying for a Laugh",
+    "author": "Philip Differ",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "All Bets Are Off",
+    "author": "Estelle Maskame",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Makes Me Wonder",
+    "author": "Willow Green",
+    "status": "unknown",
+    "note": "Television & Film Rights: CAA"
+   },
+   {
+    "book": "Highland Hitch",
+    "author": "Amber Eve",
+    "status": "unknown",
+    "note": "Television & Film Rights: Kate Nash Literary Agency"
+   },
+   {
+    "book": "The Cotswolds Christmas Fair",
+    "author": "Lizzie Lee",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown"
+   },
+   {
+    "book": "Sudden Death",
+    "author": "Lynda La Plante",
+    "status": "unknown",
+    "note": "Television & Film Rights: La Plante Global"
+   },
+   {
+    "book": "A Room Full of Blood",
+    "author": "Lynda La Plante",
+    "status": "unknown",
+    "note": "Television & Film Rights: La Plante Global"
+   },
+   {
+    "book": "Flashpoint",
+    "author": "Wilbur Smith",
+    "status": "unknown",
+    "note": "Television & Film Rights: Tibor Jones"
+   },
+   {
+    "book": "Hunter",
+    "author": "Wilbur Smith",
+    "status": "unknown",
+    "note": "Television & Film Rights: Tibor Jones"
+   },
+   {
+    "book": "Finding May",
+    "author": "Rosie Goodwin",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown"
+   },
+   {
+    "book": "The Winter Bride",
+    "author": "Rosie Goodwin",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown"
+   },
+   {
+    "book": "Newes of Witches",
+    "author": "Mairi Kidd",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "The Whispering Island",
+    "author": "Elisabeth Wolf",
+    "status": "unknown",
+    "note": "Television & Film Rights: Jenny Brown Associates"
+   },
+   {
+    "book": "The Writers' Room",
+    "author": "James O'Loghlin",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Blood Moon",
+    "author": "James Dunbar",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown Australia"
+   },
+   {
+    "book": "The Girl in the Story",
+    "author": "Shaeden Berry",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "The Switch",
+    "author": "P. A. Thomas",
+    "status": "unknown",
+    "note": "Television & Film Rights: Shaw Literary"
+   },
+   {
+    "book": "Silent Tide",
+    "author": "Alex Scarrow",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "The Threads Remain",
+    "author": "Glenn Shapiro",
+    "status": "unknown",
+    "note": "Television & Film Rights: Corvisiero Literary Agency"
+   },
+   {
+    "book": "Her Perfect Marriage",
+    "author": "Maryann Webb",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "The Secrets She Keeps",
+    "author": "Penny Batchelor",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "The Wish",
+    "author": "Heather Morris",
+    "status": "unknown",
+    "note": "Television & Film Rights: CAA"
+   },
+   {
+    "book": "The Library Cat",
+    "author": "Alex Howard",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "Penitent",
+    "author": "A. W. Hammond",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown Australia"
+   },
+   {
+    "book": "Maestra",
+    "author": "L S Hilton",
+    "status": "optioned",
+    "note": "Television & Film Rights: Under Option; 'Now under film/TV option!'; deals page: 'Maestra Trilogy by L.S. Hilton - Under Option'"
+   },
+   {
+    "book": "An Island Promise",
+    "author": "Patricia Wilson",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "Cleopatra",
+    "author": "Natasha Solomons",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Tarot Reader of Versailles",
+    "author": "Anya Bergman",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Teacher of Auschwitz",
+    "author": "Wendy Holden",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "Ordinary Saints",
+    "author": "Niamh Ní Mhaoileoin",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Italian Chapel",
+    "author": "Philip Paris",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "Noble Beasts",
+    "author": "Lucy Waverley",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "To Rule A Ruler",
+    "author": "Kaarina Parker",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "Nothing Personal",
+    "author": "Alex Dook",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Wise Witch of Orkney",
+    "author": "Anna Caig",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "LIT",
+    "author": "Anna Woods",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "A Girl's Girl",
+    "author": "Emma Robertson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "An Island Burning",
+    "author": "Colin McIntyre",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Tattooist Of Auschwitz",
+    "author": "Heather Morris",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): The Tattooist Of Auschwitz by Heather Morris - Synchronicity Films/Sky TV"
+   },
+   {
+    "book": "The Holiday",
+    "author": "T.M. Logan",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): The Holiday by T.M. Logan - Channel 5"
+   },
+   {
+    "book": "The Phone Box At The Edge Of The World",
+    "author": "Laura Imai Messina",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): The Phone Box At The Edge Of The World by Laura Imai Messina - Cattleya"
+   },
+   {
+    "book": "Geiger",
+    "author": "Gustaf Skördeman",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Geiger by Gustaf Skördeman - Monumental Pictures"
+   },
+   {
+    "book": "Killing It",
+    "author": "Asia Mackay",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Killing It by Asia Mackay - 42 Media"
+   },
+   {
+    "book": "The Ice Beneath Her",
+    "author": "Camilla Grebe",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): The Ice Beneath Her by Camilla Grebe - New Line Cinema"
+   },
+   {
+    "book": "The Nine",
+    "author": "Gwen Strauss",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): The Nine by Gwen Strauss - Kudos Film & TV"
+   },
+   {
+    "book": "We Begin At The End",
+    "author": "Chris Whitaker",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): We Begin At The End by Chris Whitaker - Disney"
+   },
+   {
+    "book": "The Whistleblower",
+    "author": "Robert Peston",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): The Whistleblower by Robert Peston - Leopard Pictures"
+   },
+   {
+    "book": "Devil's Breath",
+    "author": "Jill Johnson",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Devil's Breath by Jill Johnson - Cornered Tiger"
+   },
+   {
+    "book": "Dark Heart",
+    "author": "Silvia Avallone",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Dark Heart by Silvia Avallone - Cattleya"
+   },
+   {
+    "book": "A Glasgow Kiss",
+    "author": "Sophie Gravia",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): A Glasgow Kiss by Sophie Gravia - BBC"
+   },
+   {
+    "book": "Whalefall",
+    "author": "Daniel Kraus",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Whalefall by Daniel Kraus - Imagine"
+   },
+   {
+    "book": "Dark Desert Road",
+    "author": "Tim Ayliffe",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Dark Desert Road by Tim Ayliffe - CJZ Productions"
+   },
+   {
+    "book": "Gunpowder Creek",
+    "author": "Alex Dook",
+    "status": "optioned",
+    "note": "Listed under 'Film & television deals & options' (fiction guide): Gunpowder Creek by Alex Dook - Under Option"
+   },
+   {
+    "book": "The Warrior Monk: Master Your Mind and Unlock Your Potential",
+    "author": "Krishna Thapa",
+    "status": "unknown",
+    "note": "Television & Film Rights: Kruger Crowne"
+   },
+   {
+    "book": "Built From Pain: The Revolutionary Approach to Overcome Chronic Pain",
+    "author": "Klaus Mitchell",
+    "status": "unknown",
+    "note": "Television & Film Rights: Dunn Fogg"
+   },
+   {
+    "book": "Women Are Tired: A Wake-Up Call",
+    "author": "Jennifer Cox",
+    "status": "unknown",
+    "note": "Television & Film Rights: Aevitas"
+   },
+   {
+    "book": "All or Nothing: How to Stop Starting Again",
+    "author": "Shahroo Izadi",
+    "status": "unknown",
+    "note": "Television & Film Rights: Roocovery Limited"
+   },
+   {
+    "book": "Room for Improvement: The False Promise of Reinvention",
+    "author": "Emily Ann Willcox",
+    "status": "unknown",
+    "note": "Television & Film Rights: Oscar Janson-Smith Ltd."
+   },
+   {
+    "book": "Wawawiwa Colouring Book",
+    "author": "Andrés J. Colmenares",
+    "status": "unknown",
+    "note": "Television & Film Rights: Komedia Management"
+   },
+   {
+    "book": "Loss: Words to Weather the Many Waves of Grief",
+    "author": "Donna Ashworth",
+    "status": "unknown",
+    "note": "Television & Film Rights: Oscar Janson-Smith Ltd"
+   },
+   {
+    "book": "Chasing the Horizon: A True History of Piracy",
+    "author": "Dr. Oliver Finnegan",
+    "status": "unknown",
+    "note": "Television & Film Rights: The National Archives"
+   },
+   {
+    "book": "Saltwater: A Natural History of the Sea",
+    "author": "Dr. Ashley Ward",
+    "status": "unknown",
+    "note": "Television & Film Rights: Aevitas Creative Management"
+   },
+   {
+    "book": "The Defector: The Story of the KGB Agent Who Saved MI5 and Changed the Cold War",
+    "author": "Richard Kerbaj",
+    "status": "unknown",
+    "note": "Television & Film Rights: C&W"
+   },
+   {
+    "book": "Ten Steps to Prevent World War Three",
+    "author": "Tobias Ellwood",
+    "status": "unknown",
+    "note": "Television & Film Rights: Luigi Bonomi Associates"
+   },
+   {
+    "book": "The Boy with the Knapsack: An Extraordinary Life, from the Kindertransport to the House of Lords",
+    "author": "Lord Alf Dubs",
+    "status": "unknown",
+    "note": "Television & Film Rights: Laxfield Literary Associates"
+   },
+   {
+    "book": "Anatomy of a Hate Crime",
+    "author": "Nikesh Shukla",
+    "status": "unknown",
+    "note": "Television & Film Rights: The Good Immigrant Ltd."
+   },
+   {
+    "book": "The Future Royal Family: William, Kate and the Modern Royals",
+    "author": "Robert Jobson",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "Betrayal: Power, Deceit and the Fight for the Future of the Royal Family",
+    "author": "Tom Bower",
+    "status": "unknown",
+    "note": "Television & Film Rights: Curtis Brown"
+   },
+   {
+    "book": "Deep Cover: Inside the UK's Most Secretive Military Unit",
+    "author": "Jacob Nash",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "The Stuff of History: Forgotten Objects, Remarkable Stories",
+    "author": "Steven Moore",
+    "status": "unknown",
+    "note": "Television & Film Rights: Dunn Fogg"
+   },
+   {
+    "book": "Healthy Start: Fresh and Fuss-Free Meals for All the Family",
+    "author": "Joe Wicks",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "Six Weeks to Strength: 10 Home Workout and 80 Recipes to Build a Strong Body",
+    "author": "Joe Wicks & Rosie Wicks",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "Hebridean Baker: A Scottish Christmas",
+    "author": "Coinneach MacLeod",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "The Chaotic Cook: The Groundbreaking Cookbook for those with ADHD or Scattered Focus",
+    "author": "Kay Allinson",
+    "status": "unknown",
+    "note": "Television & Film Rights: Clare Hulton Agency"
+   },
+   {
+    "book": "The State of This!: A Guide to British Politics",
+    "author": "Cody Dahler",
+    "status": "unknown",
+    "note": "Television & Film Rights: Insanity Talent Management"
+   },
+   {
+    "book": "Have I Wasted My Life?",
+    "author": "Pierre Novellie",
+    "status": "unknown",
+    "note": "Television & Film Rights: Avalon"
+   },
+   {
+    "book": "I Hate You So Much Right Now: Diss Tracks, Break Up Ballads and Female Rage",
+    "author": "Emily Phillips",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Bowie's Berlin: Fame, Creativity and the Making of David Bowie",
+    "author": "Jonathan Dean",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Dope: How Drugs Changed Sport",
+    "author": "James Witts",
+    "status": "unknown",
+    "note": "Television & Film Rights: The North Literary Agency"
+   },
+   {
+    "book": "Harry Kane: The Definitive Biography",
+    "author": "Frank Worrall",
+    "status": "unknown",
+    "note": "Television & Film Rights: Reserved to the Author"
+   },
+   {
+    "book": "Win, Lose or Die: Inside the Lethal Sport of Motorcycle TT and Road Racing",
+    "author": "Stuart Barker",
+    "status": "unknown",
+    "note": "Television & Film Rights: David Luxton (copy says the sport is 'subject of the upcoming feature film produced by Brad Pitt and Channing Tatum'; not stated as an adaptation of this book)"
+   },
+   {
+    "book": "A Killer in the Family: Inside the Crimes, the Lies and the Families Left Behind",
+    "author": "Jonathan Levi & Emma French",
+    "status": "unknown",
+    "note": "Television & Film Rights: Northbank Talent Management"
+   },
+   {
+    "book": "How To Catch A Killer: The Forensics of Crime",
+    "author": "Dr Angela Gallop and Former DCS Chris Gregg",
+    "status": "unknown",
+    "note": "Television & Film Rights: Robert Smith Literary"
+   },
+   {
+    "book": "Peaky Blinders: The Real Gangs and Gangsters",
+    "author": "Carl Chinn",
+    "status": "unknown",
+    "note": "Television & Film Rights: SoloSon Media"
+   },
+   {
+    "book": "Buy Yourself the Damn Flowers",
+    "author": "Tam Kaur",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "Smart",
+    "author": "David Brydan",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Gender Bias",
+    "author": "Dr Sabrina Cohen-Hatton",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "Prince: A Sign O' The Times",
+    "author": "John McKie",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "The Traitor Isn't Alan",
+    "author": "Joe Shooman",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "Runaway Joe",
+    "author": "Pavel Barter",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "Eat Right, Balance Hormones",
+    "author": "Pippa Campbell",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "Inside: Women Behind Bars",
+    "author": "Jonathan Levi and Emma French",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (non-fiction guide Core List backlist)"
+   },
+   {
+    "book": "Karma",
+    "author": "Boy George",
+    "status": "optioned",
+    "note": "Listed under 'Film & TV deals and options' (non-fiction guide): Karma by Boy George - under option"
+   },
+   {
+    "book": "Cult Following",
+    "author": "Bexy Cameron",
+    "status": "optioned",
+    "note": "Listed under 'Film & TV deals and options' (non-fiction guide): Cult Following by Bexy Cameron - TeaTime Pictures"
+   },
+   {
+    "book": "Perfect Gentleman",
+    "author": "Roy Hall",
+    "status": "optioned",
+    "note": "Listed under 'Film & TV deals and options' (non-fiction guide): Perfect Gentleman by Roy Hall - Mack Films"
+   },
+   {
+    "book": "Fishers of Men",
+    "author": "Rob Lewis",
+    "status": "optioned",
+    "note": "Listed under 'Film & TV deals and options' (non-fiction guide): Fishers of Men by Rob Lewis - FOM Film Ltd"
+   },
+   {
+    "book": "Frances Kray: The Tragic Bride",
+    "author": "Jacky Hyams",
+    "status": "optioned",
+    "note": "Listed under 'Film & TV deals and options' (non-fiction guide): Frances Kray: The Tragic Bride by Jacky Hyams - 42 M & P"
+   }
+  ],
+  "fetch_problems": "",
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Dystel, Goderich & Bourret",
+  "domain": "dystel.com",
+  "contact_email": "",
+  "contact_quote": "",
+  "received": "2026-11-08",
+  "source": "https://www.dystel.com/newsletter-september-2026",
+  "file": "https://www.dystel.com/newsletter-september-2026",
+  "guide_date": "September 2026",
+  "titles": [
+   {
+    "book": "THE COLLABORATOR",
+    "author": "Sara Zarr",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "ROXANA",
+    "author": "Tanya Boteju",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "WHAT LIES BURIED",
+    "author": "Sandra S.G. Wong",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "SONG OF THE SUMMER",
+    "author": "Ray Stoeve",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE FOLLOWING SEA",
+    "author": "Tziporah Lax",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE TRANSATLANTIC WIRELESS AND MRS. DALLOWAY SOCIETY",
+    "author": "Sarah McCraw Crow",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "PANDA PEOPLE",
+    "author": "Sharon J. Wishnow",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "CODE AND COUNTRY: FROM FLEA MARKETS TO THE AI REVOLUTION - A FIGHT FOR THE AMERICAN DREAM",
+    "author": "Ted Lieu",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "TO ALTER OR TO ABOLISH: REIMAGINING DEMOCRACY FOR THE NEXT 250 YEARS",
+    "author": "Scott Ferson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "HACKMAN",
+    "author": "William McKeen",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "HOLDING THE LINE WHILE EVERYTHING SHIFTS",
+    "author": "Peg Watts",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission'); author named only as 'Watts' in the copy, memoir is about Peg Watts and her daughter Erin"
+   },
+   {
+    "book": "BRING YOUR HUMAN TO WORK IN THE AGE OF AI, INFINITE WORK, AND THE QUEST FOR AUTHENTICITY",
+    "author": "Erica Keswin",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "JOHN AND YOKO IN WASHINGTON",
+    "author": "John A. Jenkins",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "MY SECOND FRENCH LIFE",
+    "author": "Alexander Lobrano",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE LADY OF LIONHEAD",
+    "author": "Sam Becker and Anna-Louise Jackson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "EVERYTHING YOU THINK YOU KNOW ABOUT AFFAIRS IS WRONG",
+    "author": "Dr. Kathy Nickerson",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "TO SET FREE A CAPTIVE",
+    "author": "Linda Miles with Abigail Savitch-Lew",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE BODY DOESN'T LIE",
+    "author": "Judy Melinek and T.J. Mitchell",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "BAD EATER",
+    "author": "Bénédicte Boisseron",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE STARSTUFF OF LIFE",
+    "author": "Seven Rasmussen",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE COUNTERFEIT SCALE: WHY SMART PEOPLE GET CONNED AND HOW NOT TO BE ONE OF THEM",
+    "author": "Erhan Civelek",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "HUSKIES: HOW THE UNIVERSITY OF CONNECTICUT BECAME THE CENTER OF THE MEN'S AND WOMEN'S COLLEGE BASKETBALL UNIVERSE",
+    "author": "Clayton Trutor",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "COLISEUMS: A HISTORY OF THE WORLD IN 28 STADIUMS",
+    "author": "Bruce Berglund",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "STORIES YOUR DOG TOLD ME",
+    "author": "Emily Snyder",
+    "status": "unknown",
+    "note": "no screen-rights note for this title (listed under 'Up And Coming For Submission')"
+   },
+   {
+    "book": "THE FIELD PARTY SERIES",
+    "author": "Abbi Glines",
+    "status": "optioned",
+    "note": "Rights Round Up: 'was optioned by Sandbox Studios Inc.'"
+   },
+   {
+    "book": "RACING SAVANNAH",
+    "author": "Miranda Longstreth Kenneally",
+    "status": "optioned",
+    "note": "Rights Round Up: 'was optioned by Netflix'"
+   }
+  ],
+  "fetch_problems": "Newsletter, not a rights guide; no film/TV contact printed. Loaded the 24 'Up And Coming For Submission' titles plus the 2 film options in 'Rights Round Up'; the remaining Rights Round Up translation/audio deals and Recent Sales (publisher deals) were not loaded as they are not offered rights.",
+  "last_refresh_asked": ""
  }
 ]
