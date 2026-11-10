@@ -768,7 +768,7 @@
       var slim = !t.pitch && !(t.praise || []).length && !t.bio;
       return '<article class="entry' + (slim ? ' slim' : '') + '" id="t-' + esc(t.id) + '"><div>' + coverHtml(t, 'cvr') + '</div><div>' +
         '<div class="gk">' + esc(t.genre || t.form || '') + '</div><h3>' + esc(t.title) + '</h3><div class="au">' + esc(t.author) + '</div>' +
-        (t.pitch ? '<p class="pitch">' + esc(t.pitch) + '</p>' : '') +
+        (t.pitch ? '<p class="pitch">' + esc(t.pitch.length > 1100 ? t.pitch.slice(0, 1100).replace(/\s+\S*$/, '') + '…' : t.pitch) + '</p>' : '') +
         (t.credentials ? '<p class="cred">' + esc(t.credentials) + '</p>' : '') +
         ((t.praise || []).length ? '<p class="praise">' + t.praise.slice(0, 3).map(function (p) { return '<q>' + esc(p.quote) + '</q>' + (p.by ? ' <b>' + esc(p.by) + '</b>' : ''); }).join('<br>') + '</p>' : '') +
         '<dl class="facts">' + facts.join('') + '</dl>' +
