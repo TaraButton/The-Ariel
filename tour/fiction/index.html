@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Ariel Tour: Fiction</title>
+<meta name="description" content="A guided tour of your own Ariel for drama producers adapting books: novels chosen for your slate from deals, reviews, prizes and agents, with research on request.">
+<meta property="og:title" content="The Ariel Tour: Fiction"><meta property="og:description" content="A guided tour of your own Ariel for drama producers adapting books: novels chosen for your slate from deals, reviews, prizes and agents, with research on request.">
+<meta property="og:image" content="https://theariel.tv/link-card.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://theariel.tv/tour/fiction/">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#121630;--ink-2:#1B1F3B;--panel:#232848;--panel-2:#2A3056;--line:#353B62;--ivory:#F3EEE5;--mist:#AEB6CC;--gold:#C9A66B;--gold-soft:#E4CC9C;--rose:#D58C93;
+--display:'Cormorant Garamond',Georgia,'Times New Roman',serif;--body:'Lato','Helvetica Neue',Arial,sans-serif;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#121630}}
+:root[data-theme="dark"]{--ink:#121630}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--gold-soft);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:3px}
+.band{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1120px;margin:0 auto}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.08;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.7rem,8vw,5.6rem)}
+h1 em,h2 em{font-style:italic;font-weight:500;color:var(--gold-soft)}
+h2{font-size:clamp(2rem,4.6vw,3.2rem)}
+h3{font-size:25px}
+p{margin:0}
+.lede{font-size:clamp(18px,2.2vw,21px);color:#DCD8E6;max-width:42rem;font-weight:300}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(18,22,48,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1120px;margin:0 auto;display:flex;align-items:center;gap:16px;min-height:58px}
+.brand{font-family:var(--display);font-size:22px;font-weight:600;color:var(--ivory);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--gold)}
+.chapters{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.chapters::-webkit-scrollbar{display:none}
+.chapters a{flex:none;font-size:14px;font-weight:700;color:var(--mist);text-decoration:none;padding:8px 10px;border-radius:999px;white-space:nowrap;transition:background .2s,color .2s}
+.chapters a.on{background:var(--panel);color:var(--ivory)}
+.chapters a b{color:var(--gold);margin-right:5px;font-variant-numeric:tabular-nums}
+.nav-apply{flex:none;background:var(--gold);color:var(--ink);font-weight:900;font-size:14px;text-decoration:none;padding:9px 14px;border-radius:4px}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;background:var(--gold);width:0;transition:width .1s linear}
+/* hero */
+.hero{padding-block:72px 60px;background:radial-gradient(1100px 520px at 85% -10%,rgba(201,166,107,.18),transparent 60%),radial-gradient(700px 400px at -10% 110%,rgba(213,140,147,.10),transparent 60%),var(--ink);position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:26px;position:relative}
+.waves{position:absolute;right:-60px;top:20px;width:min(460px,60vw);opacity:.22;pointer-events:none}
+.waves path{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round;animation:pulse 3.6s ease-in-out infinite}
+.waves path:nth-child(2){animation-delay:.3s}.waves path:nth-child(3){animation-delay:.6s}.waves path:nth-child(4){animation-delay:.9s}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+.switch{font-size:15px;color:var(--mist)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.stat{background:var(--ink-2);padding:20px 18px;min-width:0}
+.stat b{display:block;font-family:var(--display);font-size:clamp(2.3rem,5vw,3.3rem);font-weight:600;line-height:1;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:8px;font-size:15px;color:var(--mist);line-height:1.4}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:var(--ink);font-weight:900;text-decoration:none;padding:14px 22px;border-radius:4px;min-height:48px;border:0;font:inherit;font-weight:900;cursor:pointer}
+.ghost{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);color:var(--gold-soft);text-decoration:none;padding:13px 20px;border-radius:4px;font-weight:700;min-height:48px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+/* chapters */
+.ch{padding-block:80px;border-top:1px solid var(--line)}
+.ch.alt{background:var(--ink-2)}
+.ch-head{display:grid;grid-template-columns:auto 1fr;gap:8px 22px;align-items:baseline;margin-bottom:34px}
+.ch-num{font-family:var(--display);font-size:clamp(3rem,6vw,4.4rem);color:var(--gold);line-height:.9;grid-row:span 2}
+.ch-head .lede{grid-column:2}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:44px;align-items:start}
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+/* cranky */
+.cranky{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.cranky li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--rose);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start}
+.cranky li::before{content:"\2615";font-size:20px;line-height:1.2}
+.cranky b{color:var(--ivory)}
+.cranky span{color:var(--mist)}
+.answer{background:linear-gradient(135deg,rgba(201,166,107,.14),rgba(201,166,107,.03));border:1px solid rgba(201,166,107,.5);border-radius:8px;padding:24px;display:grid;gap:12px}
+.answer h3{color:var(--gold-soft)}
+.answer p{color:#DCD8E6}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:st}
+.steps li{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px 20px 20px;display:grid;gap:8px;align-content:start;min-width:0}
+.steps li::before{counter-increment:st;content:counter(st);width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:900;display:grid;place-items:center;font-size:15px}
+.steps li.gate{border-color:var(--gold)}
+.steps li p{color:#CFCBDA;font-size:15.5px}
+.gatebadge{position:absolute;top:18px;right:16px;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:3px;padding:2px 6px}
+/* personal */
+.pgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start}
+.ptabs{display:grid;gap:8px}
+.ptab{font:inherit;text-align:left;background:transparent;border:1px solid var(--line);color:var(--ivory);border-radius:6px;padding:14px 16px;cursor:pointer;display:flex;align-items:center;gap:12px;min-height:52px;transition:background .2s,border-color .2s}
+.ptab i{width:10px;height:10px;border-radius:50%;border:2px solid var(--gold);flex:none}
+.ptab[aria-selected=true]{background:var(--panel);border-color:var(--gold)}
+.ptab[aria-selected=true] i{background:var(--gold)}
+.pview{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:26px;min-height:240px;display:grid;gap:14px;align-content:start}
+.pview h3{color:var(--gold-soft)}
+.pview p{color:#DCD8E6}
+.lensbox{background:var(--ink);border:1px dashed var(--gold);border-radius:6px;padding:18px;font-family:var(--display);font-size:22px;line-height:1.35;color:var(--ivory)}
+.lensbox small{display:block;font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+/* night pipeline */
+.pipe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:34px}
+.pstage{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;position:relative;min-width:0}
+.pstage b{display:block;font-family:var(--display);font-size:clamp(2.2rem,4.5vw,3rem);color:var(--gold-soft);line-height:1;font-variant-numeric:tabular-nums}
+.pstage span{display:block;color:var(--mist);font-size:15px;margin-top:8px}
+.pstage:not(:last-child)::after{content:"";position:absolute;right:-12px;top:50%;width:12px;height:2px;background:var(--gold)}
+.pro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.procard{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:8px;min-width:0}
+.procard h3{font-size:23px}
+.procard p{color:#CFCBDA;font-size:15.5px}
+.retune{margin-top:34px;border:1px solid var(--gold);border-radius:8px;overflow:hidden}
+.retune-h{background:rgba(201,166,107,.12);padding:20px 22px;display:grid;gap:8px}
+.retune-h h3{color:var(--gold-soft)}
+.retune-h p{color:#DCD8E6}
+.retune ul{list-style:none;margin:0;padding:0}
+.retune li{padding:14px 22px;border-top:1px solid var(--line);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.retune li span{color:var(--mist);font-size:14px}
+/* leads */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.chip{font:inherit;font-size:15px;font-weight:700;color:var(--ivory);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 14px;min-height:42px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.leads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.lead{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:10px;min-width:0;align-content:start;transition:transform .25s,border-color .25s}
+.lead:hover{transform:translateY(-3px);border-color:#4A5288}
+.lead.agent{border-color:rgba(201,166,107,.7)}
+.lead-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--mist)}
+.tag{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;border-radius:3px;padding:2px 7px;background:#3B3150;color:#E9C6CB}
+.tag.gold{background:var(--gold);color:var(--ink)}
+.score{margin-left:auto;font-weight:900;color:var(--gold-soft);font-variant-numeric:tabular-nums}
+.lead h4{font-family:var(--body);font-weight:700;font-size:18px;line-height:1.35}
+.lead h4 a{color:var(--ivory);text-decoration:none}
+.lead h4 a:hover{text-decoration:underline}
+.lead .why{font-size:15px;color:#DCD8E6;border-left:2px solid var(--gold);padding-left:12px}
+.lead .acts{display:flex;gap:8px;flex-wrap:wrap}
+.lead .acts span{font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:3px;padding:4px 9px;color:var(--mist)}
+.note{font-size:14px;color:var(--mist);margin-top:14px}
+/* email */
+.mailsplit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+.mail{background:#F6F3EE;color:#1E2233;border-radius:10px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.45);max-width:520px;width:100%;justify-self:center}
+.mail-h{background:#1B1F3B;color:#F6F3EE;padding:22px;text-align:center}
+.mail-h small{display:block;color:var(--gold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-top:6px}
+.mail-h b{font-family:Georgia,serif;letter-spacing:.24em;font-size:19px}
+.mail-i{padding:16px 22px;border-bottom:1px solid #DDD6CA;display:grid;gap:6px}
+.mail-i h5{margin:0;font-size:16px;line-height:1.35;font-family:Georgia,serif}
+.mail-i .src{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8A6A33}
+.mail-i p{font-size:14px;color:#454D60}
+.mbtns{display:flex;gap:8px;flex-wrap:wrap}
+.mbtn{font:inherit;font-size:13px;font-weight:900;border:1.5px solid #1E2233;border-radius:3px;padding:5px 10px;background:transparent;color:#1E2233;cursor:pointer;min-height:32px}
+.mbtn.r{background:#1E2233;color:#fff}
+.mbtn.done{background:#2E6B4A;border-color:#2E6B4A;color:#fff}
+.mail-f{padding:14px 22px;font-size:12px;color:#6B7180;text-align:center}
+.points{display:grid;gap:18px;margin:0;padding:0;list-style:none}
+.points li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start}
+.points li::before{content:"";width:12px;height:12px;margin-top:8px;border-radius:50%;background:var(--gold);justify-self:center}
+.points b{display:block}
+.points span{color:var(--mist);font-size:16px}
+/* brief */
+.brief{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.brief-head{padding:24px;border-bottom:1px solid var(--line);display:grid;gap:6px;background:linear-gradient(135deg,#2C4A6E,#232848)}
+.brief-head h3{font-size:34px}
+.brief-head .sub{color:#DCD8E6;font-size:15px}
+.brief-head .bnote{font-size:13px;color:var(--gold-soft)}
+.meters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line)}
+.meter{background:var(--ink-2);padding:16px 18px;display:grid;gap:8px;min-width:0}
+.meter .k{font-size:12px;color:var(--mist);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.meter .v{font-family:var(--display);font-size:22px;color:var(--gold-soft);line-height:1.1}
+.bar{height:6px;border-radius:3px;background:#3A3F66;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width 1.2s ease}
+.brief.in .bar i{width:var(--w)}
+.tabs{display:flex;gap:2px;padding:10px 14px 0;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;font:inherit;font-size:15px;font-weight:700;background:none;border:0;border-bottom:3px solid transparent;color:var(--mist);padding:10px 10px 12px;cursor:pointer;min-height:44px}
+.tab[aria-selected=true]{color:var(--ivory);border-bottom-color:var(--gold)}
+.pane{padding:24px;display:grid;gap:14px;max-width:62rem}
+.pane dl{display:grid;grid-template-columns:120px 1fr;gap:12px 18px;margin:0}
+.pane dt{font-weight:900;color:var(--gold)}
+.pane dd{margin:0;color:#DCD8E6}
+.pane ul{margin:0;padding-left:20px;display:grid;gap:10px;color:#DCD8E6}
+.pane p{color:#DCD8E6}
+.decide{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.decide div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px}
+.decide h4{font-family:var(--body);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.decide ul{margin:0;padding-left:18px;color:#DCD8E6;display:grid;gap:6px;font-size:15.5px}
+/* learns */
+.learn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.lcard{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:10px;align-content:start}
+.lcard .big{font-family:var(--display);font-size:30px;color:var(--gold-soft);line-height:1}
+.lcard p{color:#CFCBDA;font-size:15.5px}
+.quote{margin-top:28px;font-family:var(--display);font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.3;color:var(--ivory);max-width:46rem;border-left:3px solid var(--gold);padding-left:20px}
+.quote cite{display:block;font-family:var(--body);font-style:normal;font-size:14px;color:var(--mist);margin-top:10px}
+/* trust */
+.trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tq{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px;display:grid;gap:10px;align-content:start}
+.tq h3{font-size:24px}
+.tq p{color:#CFCBDA;font-size:15.5px}
+/* price + close */
+.price{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:stretch}
+.pcard{background:var(--panel);border:1px solid var(--gold);border-radius:10px;padding:28px;display:grid;gap:16px;align-content:start}
+.pcard .amt{font-family:var(--display);font-size:clamp(3rem,7vw,4.4rem);line-height:1;color:var(--gold-soft)}
+.pcard .amt s{font-size:.5em;color:var(--mist);margin-left:10px}
+.pcard ul{margin:0;padding-left:20px;color:#DCD8E6;display:grid;gap:8px}
+.chat{background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:28px;display:grid;gap:14px;align-content:start}
+.chat h3{color:var(--gold-soft)}
+.chat p{color:#DCD8E6}
+.lighter{margin-top:30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.lighter a{display:grid;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;text-decoration:none;color:var(--ivory)}
+.lighter a:hover{border-color:var(--gold)}
+.lighter a span{color:var(--mist);font-size:15px}
+footer{padding-block:30px;border-top:1px solid var(--line);color:var(--mist);font-size:14px}
+footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+@media (max-width:900px){
+ .split,.pgrid,.mailsplit,.price{grid-template-columns:1fr}
+ .stats,.meters,.pipe{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .pstage:not(:last-child)::after{display:none}
+ .steps{grid-template-columns:1fr 1fr}
+ .leads,.pro,.trust,.learn,.decide,.lighter{grid-template-columns:1fr}
+ .pane dl{grid-template-columns:1fr;gap:2px}.pane dd{margin-bottom:12px}
+ .ch{padding-block:58px}
+ .ch-head{grid-template-columns:1fr}.ch-num{grid-row:auto}.ch-head .lede{grid-column:1}
+ .nav-apply{display:none}
+}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav class="nav band" aria-label="Tour chapters"><div class="nav-in">
+ <a class="brand" href="https://theariel.tv/">The Ariel <span>&#9670;</span></a>
+ <div class="chapters"><a href="#why"><b>1</b>Why it exists</a><a href="#how"><b>2</b>How it starts</a><a href="#yours"><b>3</b>Built around you</a><a href="#night"><b>4</b>While you sleep</a><a href="#morning"><b>5</b>In the morning</a><a href="#inbox"><b>6</b>Your inbox</a><a href="#research"><b>7</b>Research</a><a href="#learns"><b>8</b>It learns</a><a href="#trust"><b>9</b>Trust</a><a href="#next"><b>10</b>Your next step</a></div>
+ <a class="nav-apply" href="https://theariel.tv/#apply">Apply</a>
+</div><div class="progress" aria-hidden="true"></div></nav>
+
+<header class="hero band" id="top"><div class="wrap">
+ <svg class="waves" viewBox="0 0 400 300" aria-hidden="true"><path d="M230 120 a40 40 0 0 1 0 60"/><path d="M250 95 a75 75 0 0 1 0 110"/><path d="M270 70 a110 110 0 0 1 0 160"/><path d="M290 45 a145 145 0 0 1 0 210"/></svg>
+ <span class="eyebrow">A guided tour &middot; Fiction &amp; drama</span>
+ <h1>Your own Ariel, <em>for fiction</em></h1>
+ <p class="lede">Novels with screen potential, chosen for your slate: from the deal announcements, the review pages, the prize lists and agents&#8217; own rights guides. Weekly if you like, with research on any book you want to know more about.</p>
+ <div class="stats" role="list"><div class="stat" role="listitem"><b data-to="70">70</b><span>books reviewed in British papers in one week, read and sorted for you</span></div><div class="stat" role="listitem"><b data-to="21">21</b><span>of them fiction, each read for screen potential</span></div><div class="stat" role="listitem"><b data-to="6">6</b><span>publications&#8217; review pages read every week, from the FT to the LRB</span></div><div class="stat" role="listitem"><b data-to="1">1</b><span>weekly email, if that&#8217;s what suits you</span></div></div>
+ <div class="cta-row"><a class="btn" href="#why">Start the tour &darr;</a><a class="ghost" href="https://calendly.com/tarabutton/15min" target="_blank" rel="noopener">Book a chat with Tara</a></div>
+ <p class="switch">Developing drama instead? <a href="../non-fiction/">Non-fiction tour</a> &middot; Or <a href="https://theariel.tv/">back to theariel.tv</a></p>
+</div></header>
+
+<section class="ch band" id="why" aria-labelledby="h-why"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">1</span><h2 id="h-why">Built for a producer <em>before coffee</em></h2><p class="lede">The first Ariel was built for one person: Tara&#8217;s husband, a development producer for fifteen years. She watched his mornings and kept a list of what made him cranky before the coffee had even worked.</p></div>
+ <div class="split">
+  <ul class="cranky rv" aria-label="What makes a development producer cranky in the morning"><li><div><b>Forty tabs, three newsletters and a Google Alert</b> <span>that only ever finds the stories everyone else has already found.</span></div></li><li><div><b>The perfect book, optioned last Tuesday</b> <span>by someone who happened to read the trade press a day earlier.</span></div></li><li><div><b>A week chasing an agent</b> <span>to learn the screen rights went in March.</span></div></li><li><div><b>A strong idea with no <em>why now</em></b> <span>so the commissioner says &#8220;interesting, but why this year?&#8221;</span></div></li><li><div><b>The brilliant foreign-language story</b> <span>nobody in the room could read in time.</span></div></li></ul>
+  <div class="answer rv"><span class="eyebrow">So Tara built him an Ariel</span>
+   <h3>Something that reads everything overnight and leaves only what matters on the doormat.</h3>
+   <p>It worked well enough that other producers asked for one. Today every Ariel is still built the same way: around one person&#8217;s slate, with Tara on the other end of the email.</p>
+   <p>Tara Button is a published author with an MA in Writing for Young People, a former BBC writer and subeditor, and the founder of BuyMeOnce. She knows what a good story looks like, and how many of them never reach the people who could make them.</p>
+   <p class="note">Named after the spirit in <em>The Tempest</em> who hears everything and reports back. &#8220;This will I tell my master.&#8221;</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="ch band alt" id="how" aria-labelledby="h-how"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">2</span><h2 id="h-how">How it starts: <em>with a conversation</em></h2><p class="lede">Your own Ariel is selective on purpose. A small group of producers, each with an Ariel built by hand around their slate. Here is the path from first click to first morning.</p></div>
+ <ol class="steps rv"><li class="gate"><span class=gatebadge>You</span><h3>Apply</h3><p>Two minutes. Tell us what you develop and the stories you&#8217;re hunting for. Tara reads every application herself.</p></li><li class="gate"><span class=gatebadge>You</span><h3>Talk about your slate</h3><p>If it&#8217;s a fit, you and Tara meet on a video call: what you&#8217;re developing, what your commissioners keep asking for, what you never want to see again.</p></li><li class=""><h3>Your Ariel is built</h3><p>Within a week: your genres, your lens, your sources and your look, live on a private dashboard and in your inbox.</p></li><li class=""><h3>Stories arrive at your rhythm</h3><p>Daily, weekly, whatever your team actually reads. Each one says why it&#8217;s there for you.</p></li><li class=""><h3>Research on request</h3><p>Press Research on any story and a full brief comes back by email: rights, access, what&#8217;s already on screen, who to call.</p></li><li class=""><h3>It keeps learning</h3><p>Every Save, Research and Not for me sharpens tomorrow&#8217;s selection.</p></li></ol>
+</div></section>
+
+<section class="ch band" id="yours" aria-labelledby="h-yours"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">3</span><h2 id="h-yours">Built around <em>you</em></h2><p class="lede">Nothing in your Ariel is generic. These are the parts we shape with you on the call, and that you can keep changing from your dashboard.</p></div>
+ <div class="pgrid rv">
+  <div class="ptabs" role="tablist" aria-label="What we personalise"><button class="ptab" role="tab" aria-selected="true"><i></i>Your shelves, in your words</button><button class="ptab" role="tab" aria-selected="false"><i></i>Your lens</button><button class="ptab" role="tab" aria-selected="false"><i></i>Your sources</button><button class="ptab" role="tab" aria-selected="false"><i></i>Before publication</button><button class="ptab" role="tab" aria-selected="false"><i></i>Your look</button><button class="ptab" role="tab" aria-selected="false"><i></i>Your rhythm and your team</button></div>
+  <div class="pview"><div><h3>Your shelves, in your words</h3><p>Literary, crime and thriller, historical, debuts, translated fiction, or a shelf that only you would name. Your dashboard is sorted the way you think about books.</p></div><div hidden><h3>Your lens</h3><p>A few sentences, in the first person, that every book is read against: the kind of world, the scale of story, what you would never make.</p><div class="lensbox"><small>An example lens</small>&#8220;Character-led literary and historical fiction with a strong world, contemporary or period, that could run to six hours. Debuts welcome. No fantasy.&#8221;</div></div><div hidden><h3>Your sources</h3><p>Deal announcements, review pages, prize lists and agents&#8217; rights guides, plus the literary Substack or podcast you already trust.</p></div><div hidden><h3>Before publication</h3><p>Deals are flagged when they are announced, often a year or more before the book reaches a shop.</p></div><div hidden><h3>Your look</h3><p>Your dashboard and email are designed around your company&#8217;s own identity, not a template.</p></div><div hidden><h3>Your rhythm and your team</h3><p>Many drama producers prefer once a week. Add colleagues so the whole development team sees the same list.</p></div></div>
+ </div>
+</div></section>
+
+<section class="ch band alt" id="night" aria-labelledby="h-night"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">4</span><h2 id="h-night">While you sleep, <em>it reads</em></h2><p class="lede">Every week The Ariel reads the review pages, deal announcements, prize lists and agents&#8217; rights guides, and keeps only the novels that fit your lens.</p></div>
+ <div class="pipe rv"><div class="pstage"><b data-to="70">70</b><span>books reviewed in British papers in the week to 9 November</span></div><div class="pstage"><b data-to="21">21</b><span>of them fiction, each read for screen potential</span></div><div class="pstage"><b data-to="3">3</b><span>picked out as strong screen prospects that week</span></div><div class="pstage"><b data-to="1">1</b><span>short weekly email, sorted the way you think about books</span></div></div>
+ <h3 class="rv" style="margin-bottom:16px">It doesn&#8217;t just wait for the news</h3>
+ <div class="pro"><div class="procard rv"><h3>Rights guides from agents</h3><p>Agencies send us their film and TV rights guides, fiction included. We read every title and pass on only the novels that fit your brief, marked <b>Rights available</b> with the date it was confirmed.</p></div><div class="procard rv"><h3>Deals before publication</h3><p>Publishers Marketplace, Publishers Weekly and The Bookseller deal announcements, read for screen potential the day they appear.</p></div><div class="procard rv"><h3>Every review in Britain</h3><p>The FT, Guardian, Times, Spectator, LRB and Literary Review, read weekly. The same reading builds our Review of Reviews.</p></div><div class="procard rv"><h3>Prizes and longlists</h3><p>Prize longlists and winners are flagged as they land, with the book&#8217;s screen history checked.</p></div></div>
+ 
+</div></section>
+
+<section class="ch band" id="morning" aria-labelledby="h-morning"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">5</span><h2 id="h-morning">What arrives: <em>real examples</em></h2><p class="lede">Each story names its source, links to the original, and says in one line why it is there for you. Filter them below.</p></div>
+ <div class="chips rv" role="group" aria-label="Filter examples"><button class="chip" data-f="All" aria-pressed="true">All</button><button class="chip" data-f="Literary" aria-pressed="false">Literary</button><button class="chip" data-f="Historical" aria-pressed="false">Historical</button><button class="chip" data-f="Debut" aria-pressed="false">Debut</button><button class="chip" data-f="Crime & thriller" aria-pressed="false">Crime &amp; thriller</button><button class="chip" data-f="Speculative" aria-pressed="false">Speculative</button></div>
+ <div class="leads"><article class="lead" data-cat="Debut"><div class="lead-top"><span class="tag">Debut</span><span>Literary Review</span></div><h4><a href="https://literaryreview.co.uk/inside-story" target="_blank" rel="noopener">The Hill, by Harriet Clark</a></h4><p class="why">A daughter&#8217;s childhood spent in prison visiting rooms, drawn from the author&#8217;s own life. An unusual mother-daughter story with a strong world.</p><div class="acts" aria-hidden="true"><span>Save</span><span>Research</span><span>Not for me</span></div></article><article class="lead" data-cat="Literary"><div class="lead-top"><span class="tag">Literary</span><span>Guardian</span></div><h4><a href="https://www.theguardian.com/books/2026/nov/05/american-hagwon-by-min-jin-lee-review-a-gloriously-immersive-follow-up-to-pachinko" target="_blank" rel="noopener">American Hagwon, by Min Jin Lee</a></h4><p class="why">The author of Pachinko on a Korean family sacrificing everything for education. High stakes and a big cast, built for long-form drama.</p><div class="acts" aria-hidden="true"><span>Save</span><span>Research</span><span>Not for me</span></div></article><article class="lead" data-cat="Historical"><div class="lead-top"><span class="tag">Historical</span><span>FT &middot; Literary Review</span></div><h4><a href="https://www.ft.com/content/109ece27-5b98-4cea-8b11-c95e29267d53" target="_blank" rel="noopener">Lessons in Harmony, by Jonathan Coe</a></h4><p class="why">Built on the real friendship between Vaughan Williams and Ravel. Two great composers, one English and one French, across borders.</p><div class="acts" aria-hidden="true"><span>Save</span><span>Research</span><span>Not for me</span></div></article><article class="lead" data-cat="Literary"><div class="lead-top"><span class="tag">Literary</span><span>Guardian &middot; Literary Review</span></div><h4><a href="https://www.theguardian.com/books/2026/nov/02/the-rhyl-poster-by-tom-mccarthy-review-is-this-avant-garde-spy-drama-worth-the-riddles" target="_blank" rel="noopener">The Rhyl Poster, by Tom McCarthy</a></h4><p class="why">An avant-garde spy story about a war-scarred lawyer. Reviewed in two papers in the same week.</p><div class="acts" aria-hidden="true"><span>Save</span><span>Research</span><span>Not for me</span></div></article><article class="lead" data-cat="Speculative"><div class="lead-top"><span class="tag">Speculative</span><span>Literary Review</span></div><h4><a href="https://literaryreview.co.uk/power-to-the-people-5" target="_blank" rel="noopener">Ply, by Hernan Diaz</a></h4><p class="why">The Pulitzer winner&#8217;s new novel: one corporation controls the last of the energy, and two women plan to raid it.</p><div class="acts" aria-hidden="true"><span>Save</span><span>Research</span><span>Not for me</span></div></article><article class="lead" data-cat="Crime & thriller"><div class="lead-top"><span class="tag">Crime &amp; thriller</span><span>Times / Sunday Times</span></div><h4><a href="https://www.thetimes.com/culture/books/article/best-new-crime-novels-books-fiction-read-november-2026-25fsp0lj0" target="_blank" rel="noopener">Kill Shot, by Jo Nesbo</a></h4><p class="why">A new Harry Hole. Worth knowing where the series&#8217; screen rights sit before anyone else asks.</p><div class="acts" aria-hidden="true"><span>Save</span><span>Research</span><span>Not for me</span></div></article></div>
+ <p class="note">Real books from the review pages of 26 October to 9 November 2026. The reasons are the kind of line your Ariel writes against your own lens.</p>
+</div></section>
+
+<section class="ch band alt" id="inbox" aria-labelledby="h-inbox"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">6</span><h2 id="h-inbox">In your inbox, <em>styled like your dashboard</em></h2><p class="lede">A short email that scans in two minutes, with three buttons on every story. Try them.</p></div>
+ <div class="mailsplit">
+  <div class="mail rv" aria-label="Example email"><div class="mail-h"><b>THE ARIEL</b><small>Your weekly fiction briefing</small></div><div class="mail-i"><span class="src">Literary Review</span><h5>The Hill, by Harriet Clark</h5><p>A debut drawn from the author&#8217;s own childhood visiting her mother in prison.</p><div class="mbtns"><button class="mbtn" data-a="save">Save</button><button class="mbtn r" data-a="research">Research this</button><button class="mbtn" data-a="pass">Not for me</button></div><p class="mmsg" hidden role="status"></p></div><div class="mail-i"><span class="src">Guardian</span><h5>American Hagwon, by Min Jin Lee</h5><p>The Pachinko author&#8217;s new family saga.</p><div class="mbtns"><button class="mbtn" data-a="save">Save</button><button class="mbtn r" data-a="research">Research this</button><button class="mbtn" data-a="pass">Not for me</button></div><p class="mmsg" hidden role="status"></p></div><div class="mail-i"><span class="src">FT &middot; Literary Review</span><h5>Lessons in Harmony, by Jonathan Coe</h5><p>Vaughan Williams and Ravel, a real friendship.</p><div class="mbtns"><button class="mbtn" data-a="save">Save</button><button class="mbtn r" data-a="research">Research this</button><button class="mbtn" data-a="pass">Not for me</button></div><p class="mmsg" hidden role="status"></p></div><div class="mail-f">Open your dashboard for the full list, notes and archive.</div></div>
+  <ul class="points rv">
+   <li><div><b>Save</b><span>Keeps it in your favourites on the dashboard, and tells your Ariel you want more like it.</span></div></li>
+   <li><div><b>Research this</b><span>Orders a full brief, delivered by email. No form to fill in.</span></div></li>
+   <li><div><b>Not for me</b><span>Clears it, and the reason teaches your Ariel what to leave out.</span></div></li>
+   <li><div><b>Your colleagues</b><span>Copied in, so the whole development team works from the same list.</span></div></li>
+  </ul>
+ </div>
+</div></section>
+
+<section class="ch band" id="research" aria-labelledby="h-research"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">7</span><h2 id="h-research">Research on request: <em>the brief</em></h2><p class="lede">Press Research and a brief comes back by email. It tells you where the story stands and what could make it hard. It does not tell you what film to make: that part is yours.</p></div>
+ <article class="brief rv" aria-label="Example research brief">
+  <div class="brief-head"><span class="eyebrow">Research brief</span><h3>The Hill</h3><p class="sub">Harriet Clark &middot; Farrar, Straus and Giroux (US) &middot; Sceptre (UK), 5 November 2026</p><p class="bnote">An example brief, built from public sources on 10 November 2026. Every claim links to its source.</p></div>
+  <div class="meters"><div class="meter"><span class="k">Story strength</span><span class="v">High</span><div class="bar"><i style="--w:80%"></i></div></div><div class="meter"><span class="k">Access potential</span><span class="v">High</span><div class="bar"><i style="--w:75%"></i></div></div><div class="meter"><span class="k">Rights urgency</span><span class="v">Medium to high</span><div class="bar"><i style="--w:65%"></i></div></div><div class="meter"><span class="k">Production difficulty</span><span class="v">Medium</span><div class="bar"><i style="--w:50%"></i></div></div></div>
+  <div class="tabs" role="tablist" aria-label="Brief sections"><button class="tab" role="tab" aria-selected="true" tabindex="0">Where it stands</button><button class="tab" role="tab" aria-selected="false" tabindex="-1">The story</button><button class="tab" role="tab" aria-selected="false" tabindex="-1">Already on screen</button><button class="tab" role="tab" aria-selected="false" tabindex="-1">Worth knowing</button><button class="tab" role="tab" aria-selected="false" tabindex="-1">Who to call</button></div>
+  <div class="pane" role="tabpanel"><dl><dt>Screen</dt><dd>No adaptation announced. Note the title is crowded on screen: a 2023 baseball film and a TV series are both called The Hill. <a href="https://en.wikipedia.org/wiki/The_Hill_(2023_film)" target="_blank" rel="noopener">Wikipedia</a></dd><dt>Rights</dt><dd>Unverified. Neither publisher&#8217;s page mentions film or TV rights. We would confirm with the author&#8217;s agent before anything reached you marked available.</dd><dt>Access</dt><dd>A living debut author writing from her own childhood, and a real story behind the fiction. <a href="https://www.bostonglobe.com/2026/05/06/arts/harriet-clark-hill-prison-novel/" target="_blank" rel="noopener">Boston Globe</a></dd><dt>Production</dt><dd>Contemporary and period New York: the Upper West Side, prison visiting rooms, a family across decades. Contained and castable.</dd><dt>Timing</dt><dd>Live. UK publication was 5 November 2026 and the book is being reviewed now. <a href="https://www.hachette.co.uk/titles/harriet-clark/the-hill/9781399766371/" target="_blank" rel="noopener">Hachette</a></dd></dl></div><div class="pane" role="tabpanel" hidden><p>Suzanna Klein was a baby when her mother got up early one morning to rob a bank with a group of fellow radicals. She grows up visiting her every Saturday at Hillcrest, a women&#8217;s prison in Westchester County, while her grandmother refuses to speak to her daughter. The novel is inspired by the author&#8217;s own mother, Judith Clark, the getaway driver in the 1981 Brink&#8217;s robbery in which three men were killed. She was paroled in 2019 after 37 years. <a href="https://www.bostonglobe.com/2026/05/06/arts/harriet-clark-hill-prison-novel/" target="_blank" rel="noopener">Boston Globe</a> &middot; <a href="https://en.wikipedia.org/wiki/Judith_Alice_Clark" target="_blank" rel="noopener">Wikipedia</a></p></div><div class="pane" role="tabpanel" hidden><ul><li><b>What I Want My Words to Do to You</b> (2003, PBS POV). Documentary about a prison writing group in which Judith Clark appears.</li><li><b>One Battle After Another</b> (Paul Thomas Anderson, 2025). The Boston Globe&#8217;s reviewer compares its radical-mother storyline to the novel&#8217;s. Overlap to know about, not the same story.</li><li><b>The Tempest</b> (Donmar Warehouse, 2016). Judith Clark inspired the role of Hannah, played by Harriet Walter. Ariel would have liked that one.</li></ul></div><div class="pane" role="tabpanel" hidden><ul><li>It is fiction drawn from a real case with real victims: the guard Peter Paige and police officers Waverly Brown and Edward O&#8217;Grady were killed. Families and the police community will have a view.</li><li>The Judith Clark story itself has been told in press and documentary, so the novel&#8217;s inner, daughter&#8217;s-eye view is what is new.</li><li>The title will need thinking about for search and marketing.</li></ul></div><div class="pane" role="tabpanel" hidden><ul><li><b>The author&#8217;s literary agent</b>, for film and TV rights. Not named on the publishers&#8217; pages, so this is the first thing we would confirm for you.</li><li><b>Sceptre / Farrar, Straus and Giroux</b> rights departments can route an enquiry if the agent is slow to surface.</li></ul></div>
+ </article>
+ <div class="decide rv">
+  <div><h4>Every brief gives you</h4><ul><li>Where it stands: screen, rights, access, production, timing</li><li>A fair read of strength and difficulty</li><li>What is already on screen, and what overlaps</li><li>Who to call first, with a route to reach them</li></ul></div>
+  <div><h4>No brief will</h4><ul><li>Pitch your film back to you</li><li>Say rights are available unless the rights holder says so</li><li>Make a claim without a link to its source</li><li>Stamp a story &#8220;pursue&#8221; or &#8220;pass&#8221;. You decide.</li></ul></div>
+ </div>
+</div></section>
+
+<section class="ch band alt" id="learns" aria-labelledby="h-learns"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">8</span><h2 id="h-learns">It learns <em>you</em></h2><p class="lede">The more you use it, the less you have to read.</p></div>
+ <div class="learn">
+  <div class="lcard rv"><span class="big">Day one</span><p>Your lens, your genres and your sources, set from the call.</p></div>
+  <div class="lcard rv"><span class="big">Every tap</span><p>&#8220;Not for me: too quiet for us.&#8221; One tap and a few words. Interior, low-incident novels drop down that producer&#8217;s list; the ones with a big world rise.</p></div>
+  <div class="lcard rv"><span class="big">Any time</span><p>Rewrite your lens or switch a source on or off from Settings. A new commissioner steer can be in your feed the same day.</p></div>
+ </div>
+ <blockquote class="quote rv">&#8220;I love seeing The Ariel in my inbox every morning. I love the range of stories and the wide net it casts.&#8221;<cite>Executive Producer, Netflix</cite></blockquote>
+</div></section>
+
+<section class="ch band" id="trust" aria-labelledby="h-trust"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">9</span><h2 id="h-trust">The questions <em>senior producers ask</em></h2><p class="lede">Straight answers, before you apply.</p></div>
+ <div class="trust">
+  <div class="tq rv"><h3>Who sees my slate?</h3><p>You, the colleagues you add, and Tara. Your lens, notes and saved stories are private to your Ariel. They are never shown to agents or to other producers.</p></div>
+  <div class="tq rv"><h3>Will someone else get the same story?</h3><p>Public news is public, so another producer could see the same article. What differs is what your Ariel picks, and why. Agents&#8217; titles go only to producers whose brief they fit, and an introduction happens only when you ask for it.</p></div>
+  <div class="tq rv"><h3>How do I know the rights are real?</h3><p>We only mark a title <b>Rights available</b> when the agent or their published rights list says so, with the date it was confirmed. Anything else says &#8220;unverified, confirm with the agent&#8221;. We recheck titles that sit in a feed for a while.</p></div>
+  <div class="tq rv"><h3>Can I check everything?</h3><p>Yes. Every story links to the original, and every claim in a brief links to its source. If we can&#8217;t source it, we don&#8217;t say it.</p></div>
+ </div>
+</div></section>
+
+<section class="ch band alt" id="next" aria-labelledby="h-next"><div class="wrap">
+ <div class="ch-head rv"><span class="ch-num" aria-hidden="true">10</span><h2 id="h-next">Ready to see your next adaptation this way?</h2><p class="lede">Apply in two minutes. If it&#8217;s a fit, the next step is a conversation with Tara about your slate. No hard sell.</p></div>
+ <div class="price">
+  <div class="pcard rv"><span class="eyebrow">Your own Ariel</span>
+   <div class="amt">&#163;75<s>&#163;99</s></div>
+   <p style="color:#DCD8E6">a month at the founding rate, for the first 20 producers, held for as long as you stay.</p>
+   <ul><li>No setup fee and no minimum term: your first month is the trial</li><li>Built around your slate within a week of your call</li><li>Research briefs on request</li><li>Extra colleagues &#163;35 a month</li></ul>
+   <div class="cta-row"><a class="btn" href="https://theariel.tv/#apply">Apply for your own Ariel</a></div>
+  </div>
+  <div class="chat rv"><h3>Not sure it&#8217;s for you?</h3>
+   <p>Book fifteen minutes with Tara. Tell her what you&#8217;re developing and she&#8217;ll tell you honestly whether The Ariel would help, and if it wouldn&#8217;t, what might.</p>
+   <a class="ghost" href="https://calendly.com/tarabutton/15min" target="_blank" rel="noopener">Book a chat with Tara</a>
+  </div>
+ </div>
+ <div class="lighter">
+  <a class="rv" href="https://theariel.tv/genres/"><b>Try Ariel Genres free for 30 days</b><span>A daily email in up to two genres, no card. A good way to see the kind of thing The Ariel finds.</span></a>
+  <a class="rv" href="https://theariel.tv/reviews/"><b>Get the Review of Reviews, free</b><span>Every book reviewed in Britain each week, one line each, with screen potential flagged.</span></a>
+ </div>
+</div></section>
+
+<footer class="band"><div class="wrap"><span>&#169; The Ariel &middot; Personalised story intelligence for screen</span><span><a href="../non-fiction/">Non-fiction tour</a> &middot; <a href="https://theariel.tv/">theariel.tv</a></span></div></footer>
+<script>
+(function(){
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // reveal + count-up
+ function count(el){var to=parseInt(el.getAttribute('data-to').replace(/,/g,''),10);if(reduce||!to){return;}
+  var t0=null,d=1200,f=function(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/d),v=Math.round(to*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('en-GB');if(p<1)requestAnimationFrame(f);};el.textContent='0';requestAnimationFrame(f);}
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-to]').forEach(count);io.unobserve(e.target);}});},{threshold:.18});
+  document.querySelectorAll('.rv,.brief').forEach(function(el){io.observe(el);});
+  // chapter nav
+  var links={};document.querySelectorAll('.chapters a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a;});
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id=e.target.id;Object.keys(links).forEach(function(k){links[k].classList.toggle('on',k===id);});var a=links[id];if(a&&a.scrollIntoView){var c=a.parentNode;c.scrollTo({left:a.offsetLeft-c.offsetWidth/3,behavior:reduce?'auto':'smooth'});}}});},{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section.ch').forEach(function(s){so.observe(s);});
+ } else {document.querySelectorAll('.rv,.brief').forEach(function(el){el.classList.add('in');});}
+ // progress bar
+ var bar=document.querySelector('.progress');window.addEventListener('scroll',function(){var h=document.documentElement;bar.style.width=(100*h.scrollTop/(h.scrollHeight-h.clientHeight))+'%';},{passive:true});
+ // personalisation tabs
+ var pt=document.querySelectorAll('.ptab'),pv=document.querySelectorAll('.pview > div');
+ pt.forEach(function(b,i){b.addEventListener('click',function(){pt.forEach(function(x,j){x.setAttribute('aria-selected',i===j);});pv.forEach(function(v,j){v.hidden=i!==j;});});});
+ // lead filters
+ var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.lead');
+ chips.forEach(function(c){c.addEventListener('click',function(){chips.forEach(function(x){x.setAttribute('aria-pressed',x===c);});var f=c.getAttribute('data-f');cards.forEach(function(k){k.hidden=!(f==='All'||k.getAttribute('data-cat')===f);});});});
+ // brief tabs
+ var tabs=document.querySelectorAll('.tab'),panes=document.querySelectorAll('.pane');
+ tabs.forEach(function(t,i){t.addEventListener('click',function(){tabs.forEach(function(x,j){x.setAttribute('aria-selected',i===j);x.tabIndex=i===j?0:-1;});panes.forEach(function(p,j){p.hidden=i!==j;});});
+  t.addEventListener('keydown',function(e){var n=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(n){var k=(i+n+tabs.length)%tabs.length;tabs[k].click();tabs[k].focus();}});});
+ // email buttons
+ document.querySelectorAll('.mbtn').forEach(function(b){b.addEventListener('click',function(){var a=b.getAttribute('data-a');
+  b.parentNode.querySelectorAll('.mbtn').forEach(function(x){x.classList.remove('done');});b.classList.add('done');
+  var msg=b.closest('.mail-i').querySelector('.mmsg');msg.hidden=false;
+  msg.textContent=a==='save'?'Saved to your favourites on the dashboard.':a==='pass'?'Archived. Your Ariel notes why, so fewer like it arrive.':'Research requested. The brief arrives by email, usually the next morning.';
+  if(a==='research'){setTimeout(function(){document.getElementById('research').scrollIntoView({behavior:reduce?'auto':'smooth'});},900);}});});
+})();
+</script>
+</body>
+</html>

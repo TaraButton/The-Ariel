@@ -1927,6 +1927,7 @@ footer a:focus-visible {
       <div class="price">&#163;99 <span style="font-size:18px;color:#E8E0CC">/month</span></div>
       <p class="price-note">Founding rate &#163;75 for the first 20 producers &#183; No setup fee &#183; Extra colleague &#163;35/month</p>
       <p style="margin-top:18px"><a href="#book" class="tier-cta" aria-label="Apply for your own Ariel">Apply to join</a></p>
+      <p style="margin-top:10px;font-size:14px">Take the tour: <a href="/tour/non-fiction/" style="color: var(--gold-deep);">non-fiction</a> &#183; <a href="/tour/fiction/" style="color: var(--gold-deep);">fiction</a></p>
     </div>
   </div>
   <p style="text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: var(--ink); max-width: 620px; margin: 36px auto 0; line-height: 1.5;">All eight genres come to &#163;99.99, about the price of your own Ariel. At that point, have one built around you.</p>
@@ -2435,6 +2436,12 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
       if (firstInput) setTimeout(function() { firstInput.focus(); }, 60);
     });
   });
+
+  // Deep link: theariel.tv/#apply opens the application form (used by the tours)
+  if (location.hash === '#apply') {
+    var ab = document.querySelector('[data-modal="apply"]');
+    if (ab) { document.getElementById('book').scrollIntoView(); setTimeout(function(){ ab.click(); }, 300); }
+  }
 
   // Close modal
   function closeModal(overlay) {
