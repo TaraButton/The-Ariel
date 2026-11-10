@@ -10579,5 +10579,232 @@
   ],
   "fetch_problems": "Newsletter, not a rights guide; no film/TV contact printed. Loaded the 24 'Up And Coming For Submission' titles plus the 2 film options in 'Rights Round Up'; the remaining Rights Round Up translation/audio deals and Recent Sales (publisher deals) were not loaded as they are not offered rights.",
   "last_refresh_asked": ""
+ },
+ {
+  "agency": "Northbank Talent Management",
+  "domain": "northbanktalent.com",
+  "contact_email": "marissa.constantinou@northbanktalent.com",
+  "received": "2026-11-09",
+  "source": "gmail thread 1a1c129660c37924",
+  "file": "Gmail attachment: Northbank Fiction Rights Guide - Frankfurt 2026 - all titles.pdf (Autumn 2026, fiction only)",
+  "titles": [
+   {
+    "book": "Self Portrait",
+    "author": "Mary Newnham",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Bad Dates Club",
+    "author": "Mary Newnham",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Amy Elman Doesn't Feel Sexy",
+    "author": "Mary Newnham",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Between the Breaks",
+    "author": "Jade Lee Wright",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Aftertaste",
+    "author": "Chloe Michelle Howarth",
+    "status": "available",
+    "note": "Marissa Constantinou's covering email (9 Nov 2026) pitches it for screen and says she would not expect it to remain available for long. Publishing June 2027, Penguin Michael Joseph."
+   },
+   {
+    "book": "Heap Earth Upon It",
+    "author": "Chloe Michelle Howarth",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Sunburn",
+    "author": "Chloe Michelle Howarth",
+    "status": "optioned",
+    "note": "Guide: Film & TV rights under option."
+   },
+   {
+    "book": "The Kiss of the Season",
+    "author": "Michelle Kenney",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Off Script",
+    "author": "Bianca Gillam",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Exile",
+    "author": "Eve Ainsworth",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Pieces of Us",
+    "author": "Eve Ainsworth",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Somebody I Used to Love",
+    "author": "Eve Ainsworth",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Some Like it Spiced",
+    "author": "Stevie Greene (Eve Ainsworth)",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "A Trace of Sun",
+    "author": "Pam Williams",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "The Italian Castle",
+    "author": "Catherine Mangan",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Life Before Edgar Road",
+    "author": "Rachel Wells",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Alfie's Apprentices",
+    "author": "Rachel Wells",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "The Royal Station Master's Daughters in Love",
+    "author": "Ellee Seymour",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "First Among the Dead",
+    "author": "JD Kirk",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Better the Devil",
+    "author": "JD Kirk",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Stateside",
+    "author": "JD Kirk",
+    "status": "optioned",
+    "note": "Guide: Film & TV rights under option."
+   },
+   {
+    "book": "This Little Piggy",
+    "author": "JD Kirk",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Recall",
+    "author": "JD Kirk",
+    "status": "optioned",
+    "note": "Guide: Film & TV rights under option."
+   },
+   {
+    "book": "The Woman Downstairs",
+    "author": "JD Kirk",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Until the End",
+    "author": "Marion Todd",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Left for Dead",
+    "author": "David J Gatward",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Blood Rites",
+    "author": "David J Gatward",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Run to the Hills",
+    "author": "David J Gatward",
+    "status": "available",
+    "note": "Not in the guide. Marissa Constantinou's covering email (9 Nov 2026): went out on film submission last week. Thomas & Mercer, Feb 2027."
+   },
+   {
+    "book": "Dirt Road Dead",
+    "author": "TG Reid",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Watcher On the Edge",
+    "author": "Jeff Marsick",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "All at Sea",
+    "author": "Jonathan Whitelaw",
+    "status": "not_stated",
+    "note": "Guide: his Bingo Hall Detectives series is under a shopping agreement for film & TV; All at Sea is a standalone, status not stated."
+   },
+   {
+    "book": "The Empty Cradle",
+    "author": "Lisa Rookes",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "The Ordinary Man",
+    "author": "Christie Newport",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Beautiful Shining People",
+    "author": "Michael Grothaus",
+    "status": "optioned",
+    "note": "Guide: Film & TV rights under option."
+   },
+   {
+    "book": "Dark Harvest",
+    "author": "Will Jordan",
+    "status": "not_stated",
+    "note": "not stated in guide (lists translation rights only)"
+   },
+   {
+    "book": "Something to Die For",
+    "author": "Will Jordan",
+    "status": "not_stated",
+    "note": "Guide: the Ryan Drake series has a film option (Dreamrunner Pictures); check whether this title is covered."
+   }
+  ],
+  "last_refresh_asked": ""
  }
 ]
