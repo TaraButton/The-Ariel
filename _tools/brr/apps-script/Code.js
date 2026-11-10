@@ -150,6 +150,8 @@ function doPost(e) {
     if (gp) return json_(gp);
     var cp = commissionerPost_(action, body);
     if (cp) return json_(cp);
+    var ap = agencyPost_(action, body);
+    if (ap) return json_(ap);
     if (action === 'subscribe') return json_(subscribe_(body));
     if (action === 'click') return json_(logClick_(body));
     if (action === 'check_rights') return json_(checkRights_(body));
@@ -168,6 +170,8 @@ function doGet(e) {
   try {
     var gg = genreGet_(action, p);
     if (gg) return json_(gg);
+    var ag = agencyGet_(action, p);
+    if (ag) return json_(ag);
     if (action === 'confirm') return page_(confirm_(p.t));
     if (action === 'unsubscribe') return page_(unsubscribe_(p.t));
     if (action === 'wbw_unsub') return page_(wbwUnsub_(p.t));
@@ -748,6 +752,8 @@ function admin_(b) {
   if (ra) return ra;
   var ga = genreAdmin_(b);
   if (ga) return ga;
+  var aa = agencyAdmin_(b);
+  if (aa) return aa;
   return { ok: false, error: 'unknown_op' };
 }
 
