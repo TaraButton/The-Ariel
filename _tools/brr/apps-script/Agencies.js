@@ -39,10 +39,11 @@ var AG = {
   PUBLIC_STATUSES: ['available', 'optioned', 'produced'],
   TITLE_FIELDS: ['title', 'author', 'year', 'pub_date', 'form', 'genre', 'section', 'status', 'option_lapse', 'optioned_to',
     'pitch', 'credentials', 'praise', 'bio', 'cover', 'agent', 'screen_agent', 'uk_pub', 'us_pub', 'material', 'length',
-    'rights_sold', 'stage', 'source', 'confirmed', 'in_guide', 'highlight', 'added_by', 'cover_auto', 'agent_note'],
-  PRIVATE_TITLE_FIELDS: ['agent_note', 'added_by', 'source', 'confirmed', 'cover_auto'],
+    'rights_sold', 'stage', 'source', 'confirmed', 'in_guide', 'highlight', 'added_by', 'cover_auto', 'agent_note',
+    'show_optioned_to', 'pitch_src'],
+  PRIVATE_TITLE_FIELDS: ['agent_note', 'added_by', 'source', 'cover_auto', 'pitch_src'],
   AGENCY_FIELDS: ['name', 'short', 'site', 'address', 'phone', 'contact_name', 'contact_role', 'contact_email', 'cc_email',
-    'guide_title', 'season', 'intro', 'cover_image', 'logo', 'accent', 'fairs', 'sections', 'authors_to_add', 'guide_sort'],
+    'guide_title', 'season', 'intro', 'cover_image', 'logo', 'accent', 'fairs', 'sections', 'authors_to_add', 'guide_sort', 'guide_scope'],
   PRIVATE_AGENCY_FIELDS: ['authors_to_add', 'cc_email']
 };
 
@@ -60,6 +61,7 @@ function agencyPost_(action, b) {
   if (action === 'agency_save') return agencySave_(b);
   if (action === 'agency_upload') return agencyUpload_(b);
   if (action === 'agency_enquire') return agencyEnquire_(b);
+  if (action === 'agency_clear') return agencyClear_(b);
   return null;
 }
 
@@ -131,6 +133,9 @@ function agencyPublicAgency_(a) {
 function agencyPublicTitle_(t) {
   var o = { id: t.id };
   AG.TITLE_FIELDS.forEach(function (f) { if (AG.PRIVATE_TITLE_FIELDS.indexOf(f) < 0 && t[f] !== undefined && t[f] !== '') o[f] = t[f]; });
+  if (!t.show_optioned_to) delete o.optioned_to;
+  delete o.show_optioned_to;
+  o.confirmed = t.confirmed !== false;
   o.updated_at = t.updated_at;
   return o;
 }
@@ -153,13 +158,13 @@ function agencyGetPrivate_(slug, k) {
   var ag = agencyPublicAgency_(a);
   AG.PRIVATE_AGENCY_FIELDS.forEach(function (f) { if (a.data[f] !== undefined) ag[f] = a.data[f]; });
   var titles = agencyTitles_(a.slug).map(function (t) { delete t._row; return t; });
-  return { ok: true, agency: ag, titles: titles };
+  return { ok: true, agency: ag, titles: titles, enquiries: agencyEnquiriesFor_(a.slug) };
 }
 
 function agencyPublic_(slug, pw) {
   var a = agencyRow_(slug);
   if (!a) return { ok: false, error: 'not_found' };
-  if (a.visibility === 'private') return { ok: false, error: 'private', name: a.data.name || a.name };
+  if (a.visibility === 'private' || a.visibility === 'off') return { ok: false, error: a.visibility, name: a.data.name || a.name };
   if (a.visibility === 'password' && (!pw || pwHash_(a.slug, pw) !== a.pw_hash)) {
     return { ok: false, error: pw ? 'wrong_password' : 'password', name: a.data.name || a.name };
   }
@@ -172,6 +177,7 @@ function agencyPublic_(slug, pw) {
 function agencyTitle_(slug, id) {
   var a = agencyRow_(slug);
   if (!a) return { ok: false, error: 'not_found' };
+  if (a.visibility === 'off') return { ok: false, error: 'off', agency: { name: a.data.name || a.name, site: a.data.site || '' } };
   var t = agencyTitles_(a.slug).filter(function (x) { return x.id === String(id || ''); })[0];
   if (!t) return { ok: false, error: 'title_not_found', agency: { name: a.data.name || a.name } };
   var ag = agencyPublicAgency_(a);
@@ -206,7 +212,7 @@ function cleanTitle_(src, prev) {
   AG.TITLE_FIELDS.forEach(function (f) {
     if (src[f] === undefined) return;
     var v = src[f];
-    if (f === 'confirmed' || f === 'in_guide' || f === 'highlight' || f === 'cover_auto') { t[f] = v === true || v === 'true'; return; }
+    if (f === 'confirmed' || f === 'in_guide' || f === 'highlight' || f === 'cover_auto' || f === 'show_optioned_to') { t[f] = v === true || v === 'true'; return; }
     if (f === 'praise') { t[f] = (Array.isArray(v) ? v : []).slice(0, 8).map(function (q) { return { quote: String(q.quote || '').slice(0, 600), by: String(q.by || '').slice(0, 120) }; }).filter(function (q) { return q.quote; }); return; }
     v = String(v == null ? '' : v).slice(0, f === 'pitch' || f === 'bio' ? 2500 : 600);
     if (f === 'status' && AG.STATUSES.indexOf(v) < 0) v = 'check';
@@ -236,7 +242,7 @@ function agencySave_(b) {
       });
       var vis = String(b.agency.visibility || '');
       if (vis === 'password' && !b.agency.password && !a.pw_hash) return { ok: false, error: 'password_needed', message: 'Please choose a password first.' };
-      if (['private', 'public', 'password'].indexOf(vis) >= 0) a.sh.getRange(a.row, 4).setValue(vis);
+      if (['private', 'public', 'password', 'off'].indexOf(vis) >= 0) a.sh.getRange(a.row, 4).setValue(vis);
       if (b.agency.password) a.sh.getRange(a.row, 5).setValue(pwHash_(a.slug, String(b.agency.password).slice(0, 100)));
       a.sh.getRange(a.row, 6).setValue(JSON.stringify(a.data));
       if (b.agency.name) a.sh.getRange(a.row, 2).setValue(String(b.agency.name).slice(0, 120));
@@ -259,11 +265,13 @@ function agencySave_(b) {
       var prev = byId[id] || (!id || /^tmp/.test(id) ? byKey[(String(src.title || '') + '|' + String(src.author || '')).toLowerCase()] : null);
       if (prev) {
         var t = cleanTitle_(src, prev);
+        if (src.pitch !== undefined && String(src.pitch) !== String(prev.pitch || '')) t.pitch_src = 'agency';
         sh.getRange(prev._row, 3, 1, 3).setValues([[JSON.stringify(t), now, 'agency']]);
       } else {
         if (!String(src.title || '').trim()) return;
         id = Utilities.getUuid().replace(/-/g, '').slice(0, 8);
         var nt = cleanTitle_(src, { status: 'available', in_guide: true, confirmed: true, added_by: 'agency' });
+        if (nt.pitch) nt.pitch_src = 'agency';
         nt.added_at = now.toISOString();
         sh.appendRow([a.slug, id, JSON.stringify(nt), now, 'agency', false]);
         added.push({ id: id, title: nt.title });
@@ -403,4 +411,49 @@ function agencyEmailHtml_(heading, bodyHtml) {
     '<div style="font-family:' + SERIF + ';font-size:26px;line-height:1.2;color:#FFFFFF;margin-top:8px;">' + esc_(heading) + '</div></td></tr>' +
     '<tr><td bgcolor="#FFFFFF" style="background-color:#FFFFFF;padding:24px 28px;font-family:' + SANS + ';font-size:16px;line-height:1.6;color:' + C.body + ';">' + bodyHtml + '</td></tr>' +
     '</table></td></tr></table></body></html>';
+}
+
+/* ───────── the agency's own data ───────── */
+
+function agencyEnquiriesFor_(slug) {
+  var sh = agencySheet_(AG.ENQ, AG.ENQ_HEADERS), last = sh.getLastRow(), out = [];
+  if (last < 2) return out;
+  var v = sh.getRange(2, 1, last - 1, AG.ENQ_HEADERS.length).getValues();
+  for (var i = v.length - 1; i >= 0 && out.length < 200; i--) {
+    if (String(v[i][1]) !== slug) continue;
+    out.push({ time: v[i][0] ? new Date(v[i][0]).toISOString() : '', title_id: v[i][2], title: v[i][3], author: v[i][4], name: v[i][5],
+      email: v[i][6], company: v[i][7], role: v[i][8], message: v[i][9], via: v[i][10] });
+  }
+  return out;
+}
+
+/* "Remove what I've added": everything the agency told us that is not public. The public record of their list
+   (titles, authors, statuses from their own website) stays (Tara, 10 Nov 2026). */
+function agencyClear_(b) {
+  var a = agencyAuth_(b.slug, b.k);
+  if (!a) return { ok: false, error: 'forbidden' };
+  var lock = LockService.getScriptLock();
+  lock.waitLock(30000);
+  try {
+    var sh = agencySheet_(AG.TITLES, AG.TITLE_HEADERS), now = new Date(), removed = 0, cleared = 0;
+    agencyTitles_(a.slug).forEach(function (t) {
+      if (t.added_by === 'agency') { sh.getRange(t._row, 6).setValue(true); removed++; return; }
+      var row = t._row;
+      ['agent_note', 'option_lapse', 'optioned_to', 'show_optioned_to'].forEach(function (f) { delete t[f]; });
+      if (t.pitch_src === 'agency') { t.pitch = ''; delete t.pitch_src; }
+      if (/^img:/.test(t.cover || '')) t.cover = '';
+      sh.getRange(row, 3, 1, 3).setValues([[JSON.stringify(cleanTitle_({}, t)), now, 'agency-clear']]);
+      cleared++;
+    });
+    var ish = agencySheet_(AG.IMAGES, agencyImgHeaders_()), last = ish.getLastRow();
+    for (var r = last; r >= 2; r--) if (String(ish.getRange(r, 2).getValue()) === a.slug) ish.deleteRow(r);
+    ['contact_name', 'contact_role', 'contact_email', 'cc_email', 'logo', 'cover_image', 'intro', 'fairs'].forEach(function (f) { delete a.data[f]; });
+    a.sh.getRange(a.row, 4, 1, 3).setValues([['private', '', JSON.stringify(a.data)]]);
+    agencyLog_(a.slug, 'agency', 'cleared their additions: removed ' + removed + ' titles, cleared ' + cleared);
+    alertTara_('[Agency page] ' + (a.data.name || a.name) + ' removed what they had added',
+      'They used "Remove what I’ve added": ' + removed + ' added titles removed, private details cleared, page set to private. The public record of their list remains.');
+    return { ok: true, removed: removed };
+  } finally {
+    lock.releaseLock();
+  }
 }

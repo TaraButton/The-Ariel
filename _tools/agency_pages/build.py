@@ -15,16 +15,15 @@ import os, sys, html
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">')
-VER = '20261110'
+VER = '20261110c'
 
 def shell(view, slug, name, title, desc, depth):
     up = '../' * depth
-    bar = '' if view == 'guide' else (
+    bar = '' if view != 'edit' else (
         '<header class="bar"><div class="wrap"><a href="/">The Ariel</a><span class="tag">'
         + ('Your private page' if view == 'edit' else 'Film &amp; TV rights') + '</span></div></header>')
     foot = '' if view != 'catalogue' else (
-        '<footer class="site">Rights list hosted by <a href="/">The Ariel</a>, which matches stories to producers. '
-        'Enquiries are introductions: we never pass on manuscripts or take part in negotiations.</footer>')
+        '<footer class="site" style="font-size:12px;padding:14px 16px">Made with <a href="/">The Ariel</a></footer>')
     return f'''<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">

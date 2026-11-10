@@ -17,8 +17,11 @@
     optioned: { label: 'Under option', long: 'Under option' },
     produced: { label: 'Adapted', long: 'Previously adapted' },
     not_available: { label: 'Not available', long: 'Not available' },
-    check: { label: 'To check', long: 'Rights to be confirmed' }
+    check: { label: 'To check', long: 'Rights to be confirmed' },
+    unconfirmed: { label: 'To confirm', long: 'Rights to be confirmed by the agency' }
   };
+  /* Outside the agency's private page, nothing reads "Available" until the agency has confirmed it. */
+  function eff(t) { return t.confirmed === false ? 'unconfirmed' : t.status; }
   var SECTION_ORDER = ['Fiction', 'Non-fiction', "Children's & YA", 'Backlist & Estates'];
   var FORMS = ['Fiction', 'Non-fiction', "Children's", 'Young adult'];
   var STAGES = ['Published', 'Forthcoming', 'On submission', 'Proposal'];
@@ -58,7 +61,7 @@
   }
   function lapseText(t) {
     if (t.status !== 'optioned') return '';
-    var s = t.optioned_to ? 'to ' + t.optioned_to : '';
+    var s = t.optioned_to && (VIEW === 'edit' || t.show_optioned_to) ? 'to ' + t.optioned_to : '';
     if (t.option_lapse) {
       var d = new Date(t.option_lapse);
       s += (s ? '; ' : '') + 'lapses ' + (isNaN(d) ? t.option_lapse : d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }));
@@ -134,8 +137,7 @@
       post(Object.assign({ action: 'agency_enquire', slug: SLUG, id: t.id, via: via }, d)).then(function (r) {
         if (!r.ok) { btn.disabled = false; msg.style.color = 'var(--no)'; msg.textContent = r.message || 'Sorry, that did not send. Please try again.'; return; }
         f.outerHTML = '<div class="done"><div class="gk">Done</div><h3>Check your inbox</h3><p>We’ve introduced you to ' + esc(r.contact_name || agency.contact_name || 'the agency') +
-          ' at ' + esc(r.agency || agency.name) + ' about <b>' + esc(t.title) + '</b>. Reply to that email to carry on the conversation.</p>' +
-          '<p style="font-size:14px;color:var(--muted)">Looking for more stories with rights available? <a href="https://theariel.tv/">See what The Ariel does for producers</a>.</p></div>';
+          ' at ' + esc(r.agency || agency.name) + ' about <b>' + esc(t.title) + '</b>. Reply to that email to carry on the conversation.</p></div>';
         if (onDone) onDone();
       }).catch(function () { btn.disabled = false; msg.style.color = 'var(--no)'; msg.textContent = 'Network problem. Please try again.'; });
     });
@@ -144,7 +146,8 @@
   function enquiryPage(id, via) {
     app.innerHTML = '<div class="loading">Loading…</div>';
     get({ action: 'agency_title', slug: SLUG, id: id }).then(function (r) {
-      if (!r.ok) { app.innerHTML = '<div class="gate"><h1>Title not found</h1><p>That title is no longer listed. <a href="./">See the full list</a>.</p></div>'; return; }
+      if (!r.ok && r.error === 'off') { app.innerHTML = '<div class="gate"><h1>' + esc(r.agency.name) + '</h1><p>Enquiries through this link are closed. Please contact the agency directly' + (r.agency.site ? ' via <a href="' + esc(r.agency.site) + '">their website</a>' : '') + '.</p></div>'; return; }
+      if (!r.ok) { app.innerHTML = '<div class="gate"><h1>Title not found</h1><p>That title is no longer listed. Please contact the agency directly.</p></div>'; return; }
       var t = r.title, ag = r.agency;
       document.title = t.title + ' - screen rights enquiry | ' + ag.name;
       return loadImages(SLUG, [t]).then(function () {
@@ -152,7 +155,7 @@
         app.innerHTML = '<div class="wrap"><article class="enq"><div class="top">' + coverHtml(t, '') +
           '<div><div class="kicker" style="color:var(--gold-light);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase">' + esc(ag.name) + ' &middot; Screen rights enquiry</div>' +
           '<h1>' + esc(t.title) + '</h1><div style="color:#E9E5DD">' + esc(t.author) + (when(t) ? ' &middot; ' + esc(when(t)) : '') + '</div>' +
-          '<div style="margin-top:8px">' + chip(t.status) + (lapse ? ' <span style="font-size:13px;color:#E9E5DD">' + esc(lapse) + '</span>' : '') + '</div></div></div>' +
+          '<div style="margin-top:8px">' + chip(eff(t)) + (lapse ? ' <span style="font-size:13px;color:#E9E5DD">' + esc(lapse) + '</span>' : '') + '</div></div></div>' +
           '<div class="dlg-b">' + (t.pitch ? '<p style="margin-top:0">' + esc(t.pitch) + '</p>' : '') + (t.credentials ? '<p style="color:var(--muted);font-style:italic">' + esc(t.credentials) + '</p>' : '') +
           enquiryForm(t, ag, via) + '</div></article>' +
           (ag.visibility !== 'private' ? '<p style="text-align:center"><a href="./">See every title from ' + esc(ag.name) + '</a></p>' : '') + '</div>';
@@ -172,11 +175,11 @@
       get({ action: 'agency_public', slug: SLUG, pw: pw }).then(function (r) {
         if (!r.ok && (r.error === 'password' || r.error === 'wrong_password')) return gate(r);
         if (!r.ok) {
-          app.innerHTML = '<div class="gate"><h1>' + esc(r.name || 'This list') + '</h1><p>This rights list is private. If you were sent a guide, use the Enquire link next to any title, or contact the agency directly.</p></div>';
+          app.innerHTML = '<div class="gate"><h1>' + esc(r.name || 'This list') + '</h1><p>' + (r.error === 'off' ? 'This rights list is not available. Please contact the agency directly.' : 'This rights list is private. If you were sent a guide, use the Enquire link next to any title, or contact the agency directly.') + '</p></div>';
           return;
         }
         try { if (pw) sessionStorage.setItem('ariel-pw-' + SLUG, pw); } catch (e) {}
-        loadImages(SLUG, r.titles.concat([{ cover: r.agency.cover_image || '' }])).then(function () { renderCatalogue(r.agency, r.titles); });
+        loadImages(SLUG, r.titles.concat([{ cover: r.agency.cover_image || '' }, { cover: r.agency.logo || '' }])).then(function () { renderCatalogue(r.agency, r.titles); });
       }).catch(function () { app.innerHTML = '<div class="gate"><h1>Sorry</h1><p>We could not load this list. Please try again.</p></div>'; });
     }
     function gate(r) {
@@ -198,6 +201,7 @@
     app.innerHTML =
       '<section class="hero" style="background:var(--accent)"><div class="wrap">' +
       '<div class="kicker">' + esc(ag.guide_title || 'Film & TV Rights') + (ag.season ? ' &middot; ' + esc(ag.season) : '') + '</div>' +
+      (coverSrc({ cover: ag.logo || '' }) ? '<img src="' + esc(coverSrc({ cover: ag.logo })) + '" alt="' + esc(ag.name) + '" style="max-height:64px;max-width:240px;background:#FFF;padding:8px;border-radius:4px;margin:10px 0 4px">' : '') +
       '<h1>' + esc(ag.name) + '</h1>' + (ag.intro ? '<p>' + esc(ag.intro) + '</p>' : '<p>Titles available for film and television adaptation. Ask about any title and we’ll introduce you to the agency.</p>') +
       '<div class="meta">' + titles.length + ' titles' + (latest ? ' &middot; updated ' + new Date(latest).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '') +
       (ag.contact_name ? ' &middot; Film &amp; TV: ' + esc(ag.contact_name) : '') + '</div>' +
@@ -218,7 +222,7 @@
       var q = state.q.toLowerCase();
       var list = titles.filter(function (t) {
         if (q && (t.title + ' ' + t.author + ' ' + (t.pitch || '') + ' ' + (t.genre || '')).toLowerCase().indexOf(q) < 0) return false;
-        if (state.f === 'available') return t.status === 'available';
+        if (state.f === 'available') return eff(t) === 'available';
         if (state.f !== 'all') return sectionOf(t) === state.f || (state.f === 'Fiction' && sectionOf(t) === 'Backlist & Estates' && t.form === 'Fiction') || (state.f === 'Non-fiction' && sectionOf(t) === 'Backlist & Estates' && t.form === 'Non-fiction');
         return true;
       }).sort(sorter(state.sort));
@@ -234,7 +238,7 @@
     function card(t) {
       var lapse = lapseText(t);
       return '<article class="card">' + coverHtml(t, 'cv') + '<div class="body">' +
-        '<div>' + chip(t.status) + (t.genre ? ' <span class="count">' + esc(t.genre) + '</span>' : '') + '</div>' +
+        '<div>' + chip(eff(t)) + (t.genre ? ' <span class="count">' + esc(t.genre) + '</span>' : '') + '</div>' +
         '<h3>' + esc(t.title) + '</h3><div class="by">' + esc(t.author) + (when(t) ? ' &middot; ' + esc(when(t)) : '') + '</div>' +
         (lapse ? '<div class="count">' + esc(lapse) + '</div>' : '') +
         (t.pitch ? '<p class="pitch">' + esc(t.pitch.length > 260 ? t.pitch.slice(0, 250) + '…' : t.pitch) + '</p>' : '') +
@@ -263,12 +267,12 @@
     app.innerHTML = '<div class="loading">Loading your list…</div>';
     get({ action: 'agency_get', slug: SLUG, k: K }).then(function (r) {
       if (!r.ok) { app.innerHTML = '<div class="gate"><h1>Link not recognised</h1><p>Please use the latest link from your email, or write to <a href="mailto:tara@theariel.tv">tara@theariel.tv</a>.</p></div>'; return; }
-      var covers = r.titles.map(function (t) { return t.cover || ''; }).concat([r.agency.cover_image || '']);
-      return loadImages(SLUG, covers).then(function () { Editor(r.agency, r.titles); });
+      var covers = r.titles.map(function (t) { return t.cover || ''; }).concat([r.agency.cover_image || '', r.agency.logo || '']);
+      return loadImages(SLUG, covers).then(function () { Editor(r.agency, r.titles, r.enquiries || []); });
     }).catch(function () { app.innerHTML = '<div class="gate"><h1>Sorry</h1><p>We could not load your page. Please refresh.</p></div>'; });
   }
 
-  function Editor(ag, titles) {
+  function Editor(ag, titles, enquiries) {
     document.title = ag.name + ' - your rights list | The Ariel';
     var byId = {}; titles.forEach(function (t) { byId[t.id] = t; });
     var pending = {}, pendingAgency = null, timer = null;
@@ -287,14 +291,17 @@
       '<button class="btn primary" type="button" id="confirm-all">' + ICON.check + '<span>Everything else is correct: confirm all</span></button>' +
       '<a class="btn" href="' + esc(guideUrl) + '" target="_blank" rel="noopener">' + ICON.doc + 'Rights guide (PDF)</a>' +
       '<button class="btn" type="button" data-goto="share">' + ICON.share + 'Share settings</button>' +
-      '<span class="save-state" id="save" role="status" style="color:#E9E5DD"></span></div></div></section>' +
+      '<button class="btn" type="button" id="export">' + ICON.doc + 'Download spreadsheet</button>' +
+      '<span class="save-state" id="save" role="status" style="color:#E9E5DD"></span></div>' +
+      '<p class="meta" style="margin-top:16px">Free for agencies. Your page is private unless you choose otherwise. Anything you add that isn’t public, like unpublished titles, option dates and notes, is never shared and you can remove it any time.</p></div></section>' +
       '<div class="wrap"><div class="tabs" role="tablist">' +
-      [['titles', 'Your titles'], ['add', 'Add titles'], ['guide', 'Guide & book fairs'], ['share', 'Sharing']].map(function (x) {
+      [['titles', 'Your titles'], ['add', 'Add titles'], ['guide', 'Guide & book fairs'], ['enq', 'Enquiries' + (enquiries.length ? ' (' + enquiries.length + ')' : '')], ['share', 'Sharing']].map(function (x) {
         return '<button class="tab" role="tab" type="button" id="tab-' + x[0] + '" aria-controls="p-' + x[0] + '" aria-selected="' + (x[0] === 'titles') + '" data-tab="' + x[0] + '">' + x[1] + '</button>';
       }).join('') + '</div>' +
       '<div class="panel" role="tabpanel" id="p-titles" aria-labelledby="tab-titles"></div>' +
       '<div class="panel" role="tabpanel" id="p-add" aria-labelledby="tab-add" hidden></div>' +
       '<div class="panel" role="tabpanel" id="p-guide" aria-labelledby="tab-guide" hidden></div>' +
+      '<div class="panel" role="tabpanel" id="p-enq" aria-labelledby="tab-enq" hidden></div>' +
       '<div class="panel" role="tabpanel" id="p-share" aria-labelledby="tab-share" hidden></div></div>' +
       '<input type="file" id="file" accept="image/jpeg,image/png,image/webp" hidden>' +
       '<footer class="site" style="margin-top:40px">The Ariel matches the story topline to producers. When a producer is a match and rights are available, we introduce them to you by email. We never pass on manuscripts or take part in negotiations. &middot; <a href="mailto:tara@theariel.tv">tara@theariel.tv</a></footer>';
@@ -336,7 +343,7 @@
       state.tab = name;
       $$('.tab').forEach(function (b) { b.setAttribute('aria-selected', b.dataset.tab === name); });
       $$('.panel').forEach(function (p) { p.hidden = p.id !== 'p-' + name; });
-      ({ titles: drawTitles, add: drawAdd, guide: drawGuide, share: drawShare })[name]();
+      ({ titles: drawTitles, add: drawAdd, guide: drawGuide, enq: drawEnq, share: drawShare })[name]();
     }
     $$('.tab').forEach(function (b) { b.addEventListener('click', function () { showTab(b.dataset.tab); }); });
     $$('[data-goto]').forEach(function (b) { b.addEventListener('click', function () { showTab(b.dataset.goto); $('.tabs').scrollIntoView({ behavior: 'smooth' }); }); });
@@ -394,7 +401,8 @@
         '<select class="status" id="st-' + id + '" data-k="status">' + ['available', 'optioned', 'produced', 'not_available', 'check'].map(function (s) { return opt(s, t.status, STATUS[s].long); }).join('') + '</select>' +
         '<button class="btn small" type="button" data-act="more" aria-expanded="false">Details</button></div></div>' +
         (t.status === 'optioned' ? '<div class="opt"><div class="field"><label for="ol-' + id + '">Option lapses <span style="text-transform:none;font-weight:400">(recommended)</span></label><input type="date" id="ol-' + id + '" data-k="option_lapse" value="' + esc(t.option_lapse || '') + '"></div>' +
-          '<div class="field"><label for="ot-' + id + '">Optioned to</label><input id="ot-' + id + '" data-k="optioned_to" value="' + esc(t.optioned_to || '') + '" placeholder="Production company (optional)"></div></div>' : '') +
+          '<div class="field"><label for="ot-' + id + '">Optioned to</label><input id="ot-' + id + '" data-k="optioned_to" value="' + esc(t.optioned_to || '') + '" placeholder="Production company (optional)"></div>' +
+          '<label class="chk" style="margin-bottom:10px"><input type="checkbox" data-k="show_optioned_to"' + (t.show_optioned_to ? ' checked' : '') + '> Show who holds the option in my guide and catalogue</label></div>' : '') +
         '<div class="more"></div></article>';
     }
     function moreHtml(t) {
@@ -486,9 +494,14 @@
         });
       });
     }
-    var guideCoverPick = false;
+    var guideCoverPick = false, logoPick = false;
     $('#file').addEventListener('change', function (e) {
       var file = e.target.files[0]; e.target.value = ''; if (!file) return;
+      if (logoPick) {
+        logoPick = false;
+        upload(file, 600).then(function (ref) { ag.logo = ref; queueAgency({ logo: ref }); drawGuide(); toast('Logo updated'); }).catch(function () {});
+        return;
+      }
       if (guideCoverPick) {
         guideCoverPick = false;
         upload(file, 1240).then(function (ref) { ag.cover_image = ref; queueAgency({ cover_image: ref }); drawGuide(); toast('Guide cover updated'); }).catch(function () {});
@@ -571,6 +584,11 @@
         '<div class="field"><label for="g-i">Welcome line (optional)</label><textarea id="g-i" data-a="intro" placeholder="A sentence about your list for producers">' + esc(ag.intro || '') + '</textarea></div>' +
         '<div class="grid2"><div class="field"><label for="g-o">Order titles by</label><select id="g-o" data-a="guide_sort">' + opt('author', ag.guide_sort || 'author', 'Author A to Z') + opt('date', ag.guide_sort, 'Publication date, newest first') + opt('title', ag.guide_sort, 'Title A to Z') + '</select></div>' +
         '<div class="field"><label for="g-c">Brand colour</label><input id="g-c" type="color" data-a="accent" value="' + esc(ag.accent || '#1B1F3B') + '" style="min-height:44px;padding:4px"></div></div>' +
+        '<div class="field"><label for="g-sc">Full pages for</label><select id="g-sc" data-a="guide_scope">' + opt('frontlist', ag.guide_scope || 'frontlist', 'New, forthcoming and featured titles; the rest as a short list (recommended)') + opt('all', ag.guide_scope, 'Every title') + '</select>' +
+        '<span class="hint">Tick “Feature at the front of the guide” on any title to give it a full page.</span></div>' +
+        '<div class="field"><span class="lbl">Your logo</span><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">' +
+        (coverSrc({ cover: ag.logo || '' }) ? '<img src="' + esc(coverSrc({ cover: ag.logo })) + '" alt="Your logo" style="max-height:48px;max-width:200px;border:1px solid var(--line);padding:4px;background:#FFF">' : '<span class="hint" style="font-size:14px;color:var(--muted)">Shown on your guide’s cover and your catalogue.</span>') +
+        '<button type="button" class="btn small" id="g-logo">' + (ag.logo ? 'Change logo' : 'Upload your logo') + '</button></div></div>' +
         '<div class="field"><span class="lbl">Cover</span><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">' +
         (coverPrev ? '<img src="' + esc(coverPrev) + '" alt="Your guide cover" style="width:90px;aspect-ratio:210/297;object-fit:cover;border:1px solid var(--line)">' : '<span class="hint" style="font-size:14px;color:var(--muted)">No cover uploaded: we design one from your book jackets.</span>') +
         '<button type="button" class="btn small" id="g-cover">' + (coverPrev ? 'Change cover' : 'Upload your own cover') + '</button>' +
@@ -587,6 +605,7 @@
         el.addEventListener(el.tagName === 'SELECT' || el.type === 'color' ? 'change' : 'input', function () { ag[el.dataset.a] = el.value; var o = {}; o[el.dataset.a] = el.value; queueAgency(o); });
       });
       $('#g-cover').addEventListener('click', function () { guideCoverPick = true; $('#file').click(); });
+      $('#g-logo').addEventListener('click', function () { logoPick = true; $('#file').click(); });
       if ($('#g-nocover')) $('#g-nocover').addEventListener('click', function () { ag.cover_image = ''; queueAgency({ cover_image: '' }); drawGuide(); });
       $('#fair-add').addEventListener('click', function () { $('#fairs').insertAdjacentHTML('beforeend', fairRow({}, $$('.fair-row').length)); });
       $('#fairs').addEventListener('input', saveFairs);
@@ -614,7 +633,8 @@
       p.innerHTML = '<div class="box"><h2>Who can see your list?</h2><p class="lead">Your rights guide PDF always works, whichever you choose: its Enquire links and QR codes open a page for that one title.</p>' +
         [['private', 'Private', 'Only you. The Ariel uses it to match titles to producers’ briefs.'],
          ['password', 'Password protected', 'Send the link and password to the producers and scouts you choose.'],
-         ['public', 'Public link', 'Anyone with the link can browse your catalogue: use it as your online rights list.']].map(function (x) {
+         ['public', 'Public link', 'Anyone with the link can browse your catalogue: use it as your online rights list.'],
+         ['off', 'Don’t use this page', 'Switches off your catalogue, guide and enquiry links. You can switch it back on any time.']].map(function (x) {
           return '<label class="radio"><input type="radio" name="vis" value="' + x[0] + '"' + (vis === x[0] ? ' checked' : '') + '><span><b>' + x[1] + '</b>' + x[2] + '</span></label>';
         }).join('') +
         '<div id="pwbox" class="field" style="margin-top:10px"' + (vis === 'password' ? '' : ' hidden') + '><label for="pw1">Password' + (ag.has_password ? ' (leave blank to keep the current one)' : '') + '</label>' +
@@ -626,7 +646,9 @@
         '<span class="hint">Opens for anyone when your list is public, or with the password.</span></div>' +
         '<div class="field"><span class="lbl">QR code for your catalogue</span><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div id="cat-qr" style="width:140px;background:#FFF;padding:6px;border:1px solid var(--line)"></div>' +
         '<span class="hint" style="max-width:420px">Put it on your stand at the fair, on a postcard or in an email signature. Right-click to save the image.</span></div></div>' +
-        '<p style="font-size:14px;color:var(--muted);margin:0">This page’s private link is your key: please don’t forward it outside your agency.</p></div>';
+        '<p style="font-size:14px;color:var(--muted);margin:0">This page’s private link is your key: please don’t forward it outside your agency.</p></div>' +
+        '<div class="box"><h2>Remove what you’ve added</h2><p class="lead">Clears everything you’ve told us that isn’t public: titles you added, option dates and holders, notes, your own pitches, uploaded covers and logo, contacts and fair details. Your page goes back to private. Titles and details from your public website stay.</p>' +
+        '<button type="button" class="btn small" id="clear" style="border-color:var(--no);color:var(--no)">Remove what I’ve added</button></div>';
       ensureQR().then(function () { $('#cat-qr').innerHTML = qrSvg(publicUrl, 4); });
       $$('input[name=vis]', p).forEach(function (r) {
         r.addEventListener('change', function () {
@@ -641,14 +663,43 @@
         setVis('password', pw);
       });
       $$('[data-copy]', p).forEach(function (b) { b.addEventListener('click', function () { navigator.clipboard.writeText(b.dataset.copy).then(function () { toast('Link copied'); }); }); });
+      $('#clear').addEventListener('click', function () {
+        if (!window.confirm('Remove everything you’ve added? This can’t be undone.')) return;
+        post({ action: 'agency_clear', slug: SLUG, k: K }).then(function (r) { if (r.ok) { toast('Done. Reloading…'); setTimeout(function () { location.reload(); }, 1200); } else toast('Sorry, that didn’t work.'); });
+      });
     }
+
+    /* enquiries tab: only real introductions made to this agency */
+    function drawEnq() {
+      var p = $('#p-enq');
+      p.innerHTML = '<div class="box"><h2>Enquiries</h2><p class="lead">Every producer we’ve introduced to you through your list, guide or QR codes. You were copied on each introduction.</p>' +
+        (enquiries.length ? enquiries.map(function (q) {
+          return '<div style="border-top:1px solid var(--line);padding:12px 0"><b>' + esc(q.title) + '</b> <span class="count">' + esc(new Date(q.time).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + ' &middot; via ' + esc(q.via === 'qr' ? 'QR code' : q.via === 'pdf' ? 'your guide' : 'your catalogue') + '</span><br>' +
+            esc(q.name) + (q.role ? ', ' + esc(q.role) : '') + (q.company ? ', ' + esc(q.company) : '') + ' &middot; <a href="mailto:' + esc(q.email) + '">' + esc(q.email) + '</a>' +
+            (q.message ? '<br><i>“' + esc(q.message) + '”</i>' : '') + '</div>';
+        }).join('') : '<p>None yet. When a producer asks about a title, you’ll see it here and get the introduction by email.</p>') + '</div>';
+    }
+
+    /* spreadsheet export (opens in Excel, Numbers or Google Sheets) */
+    $('#export').addEventListener('click', function () {
+      var cols = [['title', 'Title'], ['author', 'Author'], ['form', 'Form'], ['genre', 'Genre'], ['stage', 'Stage'], ['pub_date', 'Publication date'], ['year', 'Year'],
+        ['status', 'Film/TV rights'], ['confirmed', 'Confirmed'], ['option_lapse', 'Option lapses'], ['optioned_to', 'Optioned to'], ['uk_pub', 'UK publisher'], ['us_pub', 'US publisher'],
+        ['material', 'Material'], ['length', 'Length'], ['agent', 'Agent'], ['screen_agent', 'Film/TV agent'], ['rights_sold', 'Rights sold'], ['credentials', 'Awards and sales'],
+        ['pitch', 'Pitch / blurb'], ['bio', 'About the author'], ['agent_note', 'Private note'], ['in_guide', 'In guide'], ['highlight', 'Featured']];
+      function cell(v) { v = v == null ? '' : typeof v === 'boolean' ? (v ? 'Yes' : 'No') : String(v); return '"' + v.replace(/"/g, '""') + '"'; }
+      var rows = [cols.map(function (c) { return cell(c[1]); }).join(',')].concat(titles.slice().sort(sorter('author')).map(function (t) {
+        return cols.map(function (c) { return cell(c[0] === 'status' ? STATUS[t.status].long : c[0] === 'confirmed' ? t.confirmed !== false : t[c[0]]); }).join(',');
+      }));
+      var blob = new Blob(['\ufeff' + rows.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+      var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = SLUG + '-rights-list.csv'; document.body.appendChild(a); a.click(); a.remove();
+    });
     function setVis(v, pw) {
       $('#vis-msg').textContent = 'Saving…';
       var a = { visibility: v }; if (pw) a.password = pw;
       post({ action: 'agency_save', slug: SLUG, k: K, agency: a, titles: [] }).then(function (r) {
         if (!r.ok) { $('#vis-msg').textContent = r.message || 'Not saved.'; return; }
         ag.visibility = v; if (pw) ag.has_password = true;
-        $('#vis-msg').textContent = v === 'private' ? 'Your list is private.' : v === 'public' ? 'Your catalogue is live at the link below.' : 'Password saved. Your catalogue needs it to open.';
+        $('#vis-msg').textContent = v === 'private' ? 'Your list is private.' : v === 'public' ? 'Your catalogue is live at the link below.' : v === 'off' ? 'Switched off. Your catalogue, guide and enquiry links are closed.' : 'Password saved. Your catalogue needs it to open.';
         if (pw) $('#pw1').value = '';
       });
     }
@@ -687,83 +738,95 @@
     var name = ag.name, gt = ag.guide_title || 'Film & TV Rights Guide';
     document.title = name + ' - ' + gt + (ag.season ? ' - ' + ag.season : '');
     if (ag.accent) document.documentElement.style.setProperty('--accent', ag.accent);
+    var unconfirmed = titles.some(function (t) { return t.confirmed === false; });
     var st = document.createElement('style');
-    st.textContent = '@page{@bottom-left{content:"' + (name + '  ·  ' + gt + (ag.season ? ', ' + ag.season : '')).replace(/"/g, '') + '";font:9px Lato,Arial,sans-serif;color:#4A5165;padding-left:16mm}@bottom-right{content:counter(page);font:9px Lato,Arial,sans-serif;color:#4A5165;padding-right:16mm}}';
+    st.textContent = '@page{@bottom-left{content:"' + (name + '  ·  ' + gt + (ag.season ? ', ' + ag.season : '')).replace(/"/g, '') + '";font:9px Lato,Arial,sans-serif;color:#4A5165;padding-left:16mm}' +
+      (unconfirmed ? '@bottom-center{content:"DRAFT: rights not yet confirmed";font:bold 9px Lato,Arial,sans-serif;color:#8A2F3A;letter-spacing:.08em}' : '') +
+      '@bottom-right{content:counter(page);font:9px Lato,Arial,sans-serif;color:#4A5165;padding-right:16mm}}';
     document.head.appendChild(st);
     var sort = sorter(ag.guide_sort || 'author');
-    var highlights = titles.filter(function (t) { return t.highlight || t.status === 'optioned' || t.status === 'produced'; }).sort(sort);
-    var groups = {};
-    titles.forEach(function (t) { var s = sectionOf(t); (groups[s] = groups[s] || []).push(t); });
-    var order = SECTION_ORDER.concat(Object.keys(groups).filter(function (s) { return SECTION_ORDER.indexOf(s) < 0; })).filter(function (s) { return groups[s]; });
-    var unconfirmed = (all || []).some(function (t) { return t.confirmed === false; });
+    var thisYear = new Date().getFullYear();
+    function isFront(t) {
+      if (ag.guide_scope === 'all') return true;
+      return !!t.highlight || (t.stage && t.stage !== 'Published') || yearNum(t) >= thisYear - 3;
+    }
+    var highlights = titles.filter(function (t) { return t.status === 'optioned' || t.status === 'produced'; }).sort(sort);
+    var front = titles.filter(isFront), back = titles.filter(function (t) { return !isFront(t); });
+    function groupBy(list) { var g = {}; list.forEach(function (t) { var s = sectionOf(t); (g[s] = g[s] || []).push(t); }); return g; }
+    function orderOf(g) { return SECTION_ORDER.concat(Object.keys(g).filter(function (s) { return SECTION_ORDER.indexOf(s) < 0; })).filter(function (s) { return g[s]; }); }
+    var fg = groupBy(front), fo = orderOf(fg), bg = groupBy(back), bo = orderOf(bg);
     var latest = (all || titles).reduce(function (m, t) { return t.updated_at > m ? t.updated_at : m; }, '');
     var upd = latest ? new Date(latest).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-    var withCovers = titles.filter(function (t) { return coverSrc(t); });
-    var hero = highlights.filter(function (t) { return coverSrc(t); }).concat(withCovers).filter(function (t, i, a) { return a.indexOf(t) === i; }).slice(0, 10);
-    var coverImg = coverSrc({ cover: ag.cover_image || '' });
+    var withCovers = front.concat(highlights, titles).filter(function (t) { return coverSrc(t); });
+    var hero = withCovers.filter(function (t, i, a) { return a.indexOf(t) === i; }).slice(0, 10);
+    var coverImg = coverSrc({ cover: ag.cover_image || '' }), logo = coverSrc({ cover: ag.logo || '' });
     var catUrl = SITE + SLUG + '/';
+    var fairs = (ag.fairs || []).filter(function (f) { return f.fair; });
+    var stamp = unconfirmed ? '<div class="draft-stamp">Draft &middot; rights not yet confirmed by ' + esc(name) + '</div>' : '';
 
     var html = '<div class="sheet">';
-    // cover
-    html += '<section class="pg gcover">' + (coverImg ? '<img class="full" src="' + esc(coverImg) + '" alt="' + esc(name) + ' ' + esc(gt) + '">' :
-      '<div class="in"><div class="gt">' + esc(gt) + '</div><div class="season">' + esc(ag.season || '') + '</div><div class="rule"></div><div class="ag">' + esc(name) + '</div>' +
+    html += '<section class="pg gcover">' + (coverImg ? stamp + '<img class="full" src="' + esc(coverImg) + '" alt="' + esc(name) + ' ' + esc(gt) + '">' :
+      '<div class="in">' + stamp + (logo ? '<img class="logo" src="' + esc(logo) + '" alt="' + esc(name) + '">' : '') +
+      '<div class="gt">' + esc(gt) + '</div><div class="season">' + esc(ag.season || '') + '</div><div class="rule"></div><div class="ag">' + esc(name) + '</div>' +
       (hero.length ? '<div class="covers">' + hero.map(function (t) { return '<img src="' + esc(coverSrc(t)) + '" alt="" referrerpolicy="no-referrer">'; }).join('') + '</div>' : '') +
       '<div class="foot"><div>' + (ag.contact_name ? '<b>' + esc(ag.contact_name) + '</b>' + (ag.contact_role ? ', ' + esc(ag.contact_role) : '') + '<br>' : '') + (ag.contact_email ? esc(ag.contact_email) + '<br>' : '') + esc(ag.site || '').replace(/^https?:\/\//, '') + '</div>' +
-      '<div style="text-align:right">' + (ag.fairs || []).filter(function (f) { return f.fair; }).map(function (f) { return '<b>' + esc(f.fair) + '</b>' + (f.where ? ': ' + esc(f.where) : ''); }).join('<br>') + '</div></div></div>') + '</section>';
-    // contents + how to enquire + fairs
+      '<div style="text-align:right">' + fairs.map(function (f) { return '<b>' + esc(f.fair) + '</b>' + (f.where ? ': ' + esc(f.where) : ''); }).join('<br>') + '</div></div></div>') + '</section>';
     html += '<section class="pg" id="contents"><div class="gk">' + esc(gt) + (ag.season ? ' &middot; ' + esc(ag.season) : '') + '</div><h1 class="gh">' + esc(name) + '</h1>' +
       (ag.intro ? '<p style="font-size:14px;max-width:150mm">' + esc(ag.intro) + '</p>' : '') +
       '<ul class="toc">' + (highlights.length ? '<li><a href="#s-highlights">Under option &amp; adapted</a><span>' + highlights.length + '</span></li>' : '') +
-      order.map(function (s, i) { return '<li><a href="#s-' + i + '">' + esc(s) + '</a><span>' + groups[s].length + ' titles</span></li>'; }).join('') +
+      fo.map(function (s, i) { return '<li><a href="#s-' + i + '">' + esc(s) + '</a><span>' + fg[s].length + ' titles</span></li>'; }).join('') +
+      (back.length ? '<li><a href="#s-list">' + (front.length ? 'The full list' : 'All titles') + '</a><span>' + back.length + ' titles</span></li>' : '') +
       '<li><a href="#s-index">Index of authors</a><span></span></li><li><a href="#s-contact">Contact</a><span></span></li></ul>' +
-      '<div class="howto"><div><h3>Interested in a title?</h3><p>Click <b>Enquire</b> next to it, or scan its QR code with your phone camera. We’ll introduce you to ' + esc(ag.contact_name || name) + ' by email, usually within minutes.</p>' +
-      '<p style="margin:0">See the live list, always up to date: <a href="' + esc(catUrl) + '">' + esc(catUrl.replace('https://', '')) + '</a></p></div>' +
+      '<div class="howto"><div><h3>Interested in a title?</h3><p>Click <b>Enquire</b> next to it, or scan its QR code with your phone camera, and you’ll be introduced to ' + esc(ag.contact_name || name) + ' by email.</p>' +
+      '<p style="margin:0">The live list, always up to date: <a href="' + esc(catUrl) + '">' + esc(catUrl.replace('https://', '')) + '</a></p></div>' +
       '<div class="qr" style="width:28mm">' + qrSvg(catUrl, 3) + '</div></div>' +
-      ((ag.fairs || []).filter(function (f) { return f.fair; }).length ? '<h2 class="gh" style="font-size:26px;margin-top:10mm">Find us at the fairs</h2><div class="gfairs">' + fairsHtml(ag.fairs, 'gfair') + '</div>' : '') +
-      '<p class="draft">' + (upd ? 'Updated ' + esc(upd) + '. ' : '') + (unconfirmed && K ? 'Draft prepared by The Ariel from your website: please check every title before you share it.' : 'Rights information is supplied by ' + esc(name) + '.') + '</p></section>';
-    // highlights
+      (fairs.length ? '<h2 class="gh" style="font-size:26px;margin-top:10mm">Find us at the fairs</h2><div class="gfairs">' + fairsHtml(fairs, 'gfair') + '</div>' : '') +
+      '<p class="draft">' + (upd ? 'Updated ' + esc(upd) + '. ' : '') + (unconfirmed ? '<b style="color:var(--no)">Draft:</b> titles marked “To confirm” have not yet been checked by ' + esc(name) + '.' : 'Rights information is supplied by ' + esc(name) + '.') + '</p></section>';
     if (highlights.length) {
       html += '<section class="pg flow" id="s-highlights"><div class="gk">Track record</div><h2 class="gh">Under option &amp; adapted</h2><div class="hl-grid">' + highlights.map(function (t) {
-        return '<div class="hl">' + coverHtml(t, '') + '<b>' + esc(t.title) + '</b>' + esc(t.author) + '<br><span style="color:var(--gold-deep)">' + esc(STATUS[t.status].long) + (lapseText(t) ? ' ' + esc(lapseText(t)) : '') + '</span>' + (t.credentials ? '<br>' + esc(t.credentials) : '') + '</div>';
+        return '<div class="hl">' + coverHtml(t, '') + '<b>' + esc(t.title) + '</b>' + esc(t.author) + '<br><span style="color:var(--gold-deep)">' + esc(STATUS[eff(t)].long) + (lapseText(t) ? ' ' + esc(lapseText(t)) : '') + '</span>' + (t.credentials ? '<br>' + esc(t.credentials) : '') + '</div>';
       }).join('') + '</div></section>';
     }
-    // sections
-    order.forEach(function (s, i) {
-      var list = groups[s].sort(sort);
+    fo.forEach(function (s, i) {
       html += '<section class="pg flow" id="s-' + i + '"><div class="gk">' + esc(name) + '</div><h2 class="gh" style="font-size:46px;border-bottom:3px solid var(--gold);padding-bottom:4mm">' + esc(s) + '</h2>' +
-        groupSlim(list) + '</section>';
+        '<div class="slimgrid">' + fg[s].sort(sort).map(entry).join('') + '</div></section>';
     });
-    // index
+    if (back.length) {
+      html += '<section class="pg flow" id="s-list"><div class="gk">' + esc(name) + '</div><h2 class="gh" style="font-size:40px;border-bottom:3px solid var(--gold);padding-bottom:4mm">' + (front.length ? 'The full list' : 'All titles') + '</h2>' +
+        '<p style="font-size:11.5px;color:var(--muted);margin:0 0 4mm">Every title can be enquired about: click it, or ask ' + esc(ag.contact_name || name) + '. Covers and blurbs for all of these are in the live list.</p>' +
+        bo.map(function (s) {
+          return '<h3 class="lh">' + esc(s) + '</h3><table class="ltab"><tbody>' + bg[s].sort(sort).map(function (t) {
+            var l = lapseText(t);
+            return '<tr id="t-' + esc(t.id) + '"><td class="lt"><a href="' + esc(enquireUrl(t.id, 'pdf')) + '">' + esc(t.title) + '</a></td><td>' + esc(t.author) + '</td><td>' + esc(when(t)) + '</td><td>' + chip(eff(t)) + (l ? ' <span class="count">' + esc(l) + '</span>' : '') + '</td></tr>';
+          }).join('') + '</tbody></table>';
+        }).join('') + '</section>';
+    }
     var authors = {};
     titles.forEach(function (t) { (authors[t.author] = authors[t.author] || []).push(t); });
     html += '<section class="pg flow" id="s-index"><h2 class="gh">Index of authors</h2><div class="idx">' + Object.keys(authors).sort(function (a, b) { return surname(a).localeCompare(surname(b)); }).map(function (a) {
       return '<p><b>' + esc(a) + '</b>: ' + authors[a].map(function (t) { return '<a href="#t-' + esc(t.id) + '">' + esc(t.title) + '</a>'; }).join(', ') + '</p>';
     }).join('') + '</div></section>';
-    // back
-    html += '<section class="pg back" id="s-contact"><div style="padding:26mm 20mm 0"><div class="gk" style="color:var(--gold-light)">Contact</div><h2 class="gh" style="font-size:52px">' + esc(name) + '</h2>' +
+    html += '<section class="pg back" id="s-contact"><div style="padding:26mm 20mm 0">' + (logo ? '<img class="logo" src="' + esc(logo) + '" alt="">' : '') + '<div class="gk" style="color:var(--gold-light)">Contact</div><h2 class="gh" style="font-size:52px">' + esc(name) + '</h2>' +
       '<p style="font-size:15px;line-height:1.7">' + (ag.contact_name ? '<b>' + esc(ag.contact_name) + '</b>' + (ag.contact_role ? ', ' + esc(ag.contact_role) : '') + '<br>' : '') +
       (ag.contact_email ? '<a href="mailto:' + esc(ag.contact_email) + '">' + esc(ag.contact_email) + '</a><br>' : '') + (ag.phone ? esc(ag.phone) + '<br>' : '') + (ag.address ? esc(ag.address) + '<br>' : '') +
       (ag.site ? '<a href="' + esc(ag.site) + '">' + esc(ag.site.replace(/^https?:\/\//, '')) + '</a>' : '') + '</p>' +
-      ((ag.fairs || []).filter(function (f) { return f.fair; }).length ? '<p style="font-size:14px">' + (ag.fairs || []).filter(function (f) { return f.fair; }).map(function (f) { return '<b>' + esc(f.fair) + '</b>' + (f.dates ? ', ' + esc(f.dates) : '') + (f.where ? ': ' + esc(f.where) : '') + (f.who ? ' (' + esc(f.who) + ')' : ''); }).join('<br>') + '</p>' : '') + '</div>' +
+      (fairs.length ? '<p style="font-size:14px">' + fairs.map(function (f) { return '<b>' + esc(f.fair) + '</b>' + (f.dates ? ', ' + esc(f.dates) : '') + (f.where ? ': ' + esc(f.where) : '') + (f.who ? ' (' + esc(f.who) + ')' : ''); }).join('<br>') + '</p>' : '') + '</div>' +
       '<div style="padding:0 20mm 22mm;display:flex;justify-content:space-between;align-items:flex-end;gap:10mm"><div style="font-size:12px;color:#D8D3C8;max-width:110mm">The live list, always up to date:<br><a href="' + esc(catUrl) + '">' + esc(catUrl.replace('https://', '')) + '</a>' +
-      '<br><br>Enquiries are introductions made by The Ariel, which matches story toplines to producers. The Ariel never passes on manuscripts or takes part in negotiations.</div>' +
+      '<br><br><span style="font-size:10px;color:#AFAAB8">Made with The Ariel. Enquire links introduce you to the agency by email.</span></div>' +
       '<div class="qrbig">' + qrSvg(catUrl, 4) + '</div></div></section>';
     html += '</div>';
 
-    app.innerHTML = '<div class="guide-ui"><div class="wrap"><p><b>' + esc(name) + '</b> &middot; ' + titles.length + ' titles' + (K ? ' &middot; draft from your private page' : '') + '</p>' +
+    app.innerHTML = '<div class="guide-ui"><div class="wrap"><p><b>' + esc(name) + '</b> &middot; ' + titles.length + ' titles' + (unconfirmed ? ' &middot; <b style="color:#F5B8BF">draft: not yet confirmed</b>' : '') + '</p>' +
       '<span><button class="btn primary small" type="button" id="dl">' + ICON.doc + 'Download PDF</button>' + (K ? ' <a class="btn small" href="../edit/?k=' + encodeURIComponent(K) + '">Back to your list</a>' : ' <a class="btn small" href="../">Catalogue</a>') + '</span></div>' +
       '<div class="wrap no-print" style="padding-top:6px"><p style="font-size:13px;color:#CFCBD9">In the print window choose <b>Save as PDF</b>. Every Enquire button stays clickable in the saved file.</p></div></div>' + html;
     $('#dl').addEventListener('click', function () { window.print(); });
 
-    function groupSlim(list) {
-      return '<div class="slimgrid">' + list.map(entry).join('') + '</div>';
-    }
     function entry(t) {
       var facts = [];
       function fact(k, v) { if (v) facts.push('<dt>' + k + '</dt><dd>' + esc(v) + '</dd>'); }
       fact('Published', when(t)); fact('Genre', t.genre); fact('UK', t.uk_pub); fact('US', t.us_pub); fact('Material', t.material); fact('Length', t.length);
       fact('Agent', t.agent); fact('Film/TV agent', t.screen_agent); fact('Rights sold', t.rights_sold);
-      fact('Film/TV', STATUS[t.status].long.replace('Film/TV rights available', 'Available') + (lapseText(t) ? ', ' + lapseText(t) : ''));
+      fact('Film/TV', STATUS[eff(t)].long.replace('Film/TV rights available', 'Available') + (lapseText(t) ? ', ' + lapseText(t) : ''));
       var url = enquireUrl(t.id, 'pdf'), qurl = enquireUrl(t.id, 'qr');
       var slim = !t.pitch && !(t.praise || []).length && !t.bio;
       return '<article class="entry' + (slim ? ' slim' : '') + '" id="t-' + esc(t.id) + '"><div>' + coverHtml(t, 'cvr') + '</div><div>' +
@@ -773,7 +836,7 @@
         ((t.praise || []).length ? '<p class="praise">' + t.praise.slice(0, 3).map(function (p) { return '<q>' + esc(p.quote) + '</q>' + (p.by ? ' <b>' + esc(p.by) + '</b>' : ''); }).join('<br>') + '</p>' : '') +
         '<dl class="facts">' + facts.join('') + '</dl>' +
         (t.bio ? '<p class="pitch" style="font-size:10.5px;color:var(--muted)">' + esc(t.bio) + '</p>' : '') + '</div>' +
-        '<div class="side"><div class="qr">' + qrSvg(qurl, 2) + '</div>Scan to enquire<a class="enq-btn" href="' + esc(url) + '">Enquire</a><div class="stc">' + chip(t.status) + '</div></div></article>';
+        '<div class="side"><div class="qr">' + qrSvg(qurl, 2) + '</div>Scan to enquire<a class="enq-btn" href="' + esc(url) + '">Enquire</a><div class="stc">' + chip(eff(t)) + '</div></div></article>';
     }
   }
 

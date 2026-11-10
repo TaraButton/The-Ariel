@@ -20,8 +20,16 @@ Enquiries are introductions (Tara, 9 Nov): one email from tara@theariel.tv to th
 - Pre-filled titles come only from the agency's own website or guide. Status is set to available unless
   their site says otherwise (optioned / adapted / check). Each pre-filled title is marked unconfirmed until the
   agency confirms or edits it. Never invent pitches, dates or rights.
-- Auto covers come from Open Library, matched on title + author surname, flagged "cover found automatically".
+- Never write blurbs (Tara, 10 Nov: agents hate AI text). A blurb is the publisher's description, word for word
+  (emojis stripped, words untouched; the guide trims anything over ~1,100 characters). The private note on each
+  title records the source URL, and the agency page says "publisher's description, word for word".
+- Cover + blurb ladder, best first: (1) the agency's own website images (matched by image name, or by reading the
+  jacket text, then checked by eye); (2) publisher pages (Hachette-group sites carry the full description in the
+  hachetteJsonLinkingData JSON-LD); (3) Google Books API (key in The Ariel HQ/.../Agency_Pages/private-keys.md,
+  needs country=GB; exact title + author match; drop title-page scans and mismatched descriptions after an eye check);
+  (4) Open Library. Covers are flagged "found automatically" unless from the agency's own site.
 - Years: only from the agency's own site. Open Library years were unreliable and are not used.
+- Sheil Land run (10 Nov 2026): 261 titles, 216 covers, 200 blurbs. Scripts: Agency_Pages/sheil-land-source/.
 - Private data (tokens, contact emails, unconfirmed lists) never goes in this public repo: it lives in the
   Review of Reviews sheet (tabs AgencyPages, AgencyTitles, AgencyImages, AgencyEnquiries, AgencyLog).
 - Uploaded images are resized in the browser and stored base64 across cells in AgencyImages (no Drive scope needed).
@@ -40,3 +48,26 @@ Enquiries are introductions (Tara, 9 Nov): one email from tara@theariel.tv to th
 
 ## Admin ops
 `agency_seed {seed, replace}` · `agency_link {slug}` · `agency_list` (visibility, last save, last view).
+
+## Data ownership and the agency's switches (Tara, 10 Nov 2026)
+- What came from public sources (their website, published guides: titles, authors, publication details, statuses)
+  is ours to keep and use for matching. Agencies cannot delete it.
+- What only they told us (titles added by them, on-submission projects, option dates and holders, notes, their own
+  pitches, uploaded covers/logo, contacts, fairs) is theirs: "Remove what I've added" (POST agency_clear) clears it
+  and sets the page private. Personal contact details go with it.
+- "Don't use this page" (visibility off) closes catalogue, guide and enquiry links; the record stays.
+- No delete button. Terms line on their page: "Free for agencies. Your page is private unless you choose otherwise.
+  Anything you add that isn't public, like unpublished titles, option dates and notes, is never shared and you can
+  remove it any time."
+- Publisher blurbs and covers are used only in the agency's own guide/catalogue, not elsewhere in The Ariel.
+
+## Pre-send safeguards (10 Nov 2026)
+- Outside their private page nothing reads "Available" until confirmed: unconfirmed titles show "To confirm" and the
+  guide carries a DRAFT stamp on the cover and every page.
+- Who holds an option is hidden unless they tick "Show who holds the option".
+- Guide default: full pages for new (last 3 years), forthcoming/on-submission and featured titles; the rest as a
+  compact linked list ("Every title" option available).
+- Their logo on cover and catalogue; The Ariel only as "Made with The Ariel" on the back page and catalogue footer;
+  no Ariel plug to producers after an enquiry.
+- Enquiries tab shows only real introductions made to them (no producer match counts).
+- Spreadsheet (CSV) export of everything on their page.
