@@ -389,7 +389,7 @@
         (coverSrc(t) ? '<img class="thumb" src="' + esc(coverSrc(t)) + '" alt="" referrerpolicy="no-referrer">' : '<span class="t">Add cover</span>') + '</button>' +
         '<div><h3>' + esc(t.title) + '</h3><div class="sub">' + sub + '</div>' +
         (t.credentials ? '<div class="sub" style="font-style:italic">' + esc(t.credentials) + '</div>' : '') +
-        (!t.confirmed ? '<div class="flag">Pre-filled by The Ariel from your website' + (t.cover_auto ? '; cover found automatically' : '') + '</div>' : '') + '</div>' +
+        (!t.confirmed ? '<div class="flag">Pre-filled by The Ariel from your website' + (t.cover_auto ? '; cover found automatically' : '') + (/^Blurb:/.test(t.agent_note || '') ? '; blurb is the publisher\u2019s description, word for word' : '') + '</div>' : '') + '</div>' +
         '<div class="ctl"><label class="sr" for="st-' + id + '">Film/TV rights for ' + esc(t.title) + '</label>' +
         '<select class="status" id="st-' + id + '" data-k="status">' + ['available', 'optioned', 'produced', 'not_available', 'check'].map(function (s) { return opt(s, t.status, STATUS[s].long); }).join('') + '</select>' +
         '<button class="btn small" type="button" data-act="more" aria-expanded="false">Details</button></div></div>' +
@@ -756,11 +756,7 @@
     $('#dl').addEventListener('click', function () { window.print(); });
 
     function groupSlim(list) {
-      var out = '', buf = [];
-      function flushBuf() { if (buf.length) out += '<div class="slimgrid">' + buf.join('') + '</div>'; buf = []; }
-      list.forEach(function (t) { var h = entry(t); if (/class="entry slim"/.test(h)) buf.push(h); else { flushBuf(); out += h; } });
-      flushBuf();
-      return out;
+      return '<div class="slimgrid">' + list.map(entry).join('') + '</div>';
     }
     function entry(t) {
       var facts = [];

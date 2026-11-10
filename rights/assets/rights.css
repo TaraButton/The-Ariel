@@ -207,7 +207,8 @@ dialog::backdrop{background:rgba(27,31,59,.55)}
 .entry .qr svg{width:25mm;height:25mm;display:block;margin:0 auto}
 .entry a.enq-btn{display:block;margin-top:2mm;background:var(--ink);color:#FFF;text-decoration:none;font-weight:900;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:2mm 1mm;border-radius:2px}
 .entry .stc{margin-top:2mm}
-.slimgrid{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm}
+.slimgrid{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm;grid-auto-flow:row dense}
+.slimgrid>.entry:not(.slim){grid-column:1/-1}
 .entry.slim{grid-template-columns:20mm 1fr 19mm;padding:3.5mm 0;gap:3.5mm}
 .entry.slim .cvr,.entry.slim .ph{width:20mm}
 .entry.slim .ph{padding:1.5mm}
