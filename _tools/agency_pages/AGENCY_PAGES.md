@@ -46,6 +46,16 @@ Enquiries are introductions (Tara, 9 Nov): one email from tara@theariel.tv to th
 5. Email the agency: their private link + the draft PDF. Follow the supplier email playbook: no apology for
    having built it, no producer numbers.
 
+## Agencies that represent other agencies, and one-author summaries (Catapult, 10 Nov 2026)
+- Title fields `via_agency` (e.g. CMM: Catapult handles CMM's screen rights), `series`, `series_no`, `aka` (also published as).
+  When a page has more than one agency, the catalogue and editor get a filter chip per agency and the guide groups
+  sections as "<agency>: <section>", the agency's own titles first. `guide/?via=CMM` gives a guide for one agency only.
+- `guide/?author=<name>` (with `&k=` for the agency's draft) is a one-author rights summary: every title of that author
+  whatever its status, grouped by series, in series order (series_no, then the order on the agency's site), with
+  earlier titles. Linked from each title's Details and from the editor's Guide tab ("One author at a time").
+- Catapult run: 167 titles (16 from Sheila's own productions list, confirmed; 150 from CMM's author pages, To confirm),
+  116 covers and 121 blurbs from Google Books after eye checks. Seed: Agency_Pages/catapult-source/.
+
 ## Admin ops
 `agency_seed {seed, replace}` · `agency_link {slug}` · `agency_list` (visibility, last save, last view).
 

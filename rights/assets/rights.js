@@ -46,6 +46,10 @@
     if (t.form === "Children's" || t.form === 'Young adult') return "Children's & YA";
     return t.form === 'Non-fiction' ? 'Non-fiction' : 'Fiction';
   }
+  /* Some agencies represent other agencies' lists (Catapult handles CMM's screen rights). */
+  function viaOf(t, ag) { return t.via_agency || (ag && (ag.short || ag.name)) || ''; }
+  function vias(titles, ag) { var o = []; titles.forEach(function (t) { var v = viaOf(t, ag); if (o.indexOf(v) < 0) o.push(v); }); return o.length > 1 ? o : []; }
+  function seriesText(t) { return t.series ? t.series + (t.series_no ? ' #' + t.series_no : '') : ''; }
   function yearNum(t) { var m = /(\d{4})/.exec(t.pub_date || t.year || ''); return m ? +m[1] : 0; }
   function sorter(kind) {
     return function (a, b) {
@@ -198,6 +202,7 @@
     var latest = titles.reduce(function (m, t) { return t.updated_at > m ? t.updated_at : m; }, '');
     var state = { q: '', sort: ag.guide_sort || 'author', f: 'all' };
     var highlights = titles.filter(function (t) { return t.status === 'optioned' || t.status === 'produced'; });
+    var V = vias(titles, ag);
     app.innerHTML =
       '<section class="hero" style="background:var(--accent)"><div class="wrap">' +
       '<div class="kicker">' + esc(ag.guide_title || 'Film & TV Rights') + (ag.season ? ' &middot; ' + esc(ag.season) : '') + '</div>' +
@@ -214,7 +219,7 @@
       '<div class="chips" role="group" aria-label="Filter">' +
       [['all', 'All'], ['Fiction', 'Fiction'], ['Non-fiction', 'Non-fiction'], ["Children's & YA", "Children's & YA"], ['available', 'Available now']].map(function (x) {
         return '<button type="button" class="fchip" data-f="' + esc(x[0]) + '" aria-pressed="' + (x[0] === 'all') + '">' + esc(x[1]) + '</button>';
-      }).join('') + '</div><span class="count" id="count" aria-live="polite"></span></div></div>' +
+      }).concat(V.map(function (v) { return '<button type="button" class="fchip" data-f="via:' + esc(v) + '" aria-pressed="false">' + esc(v) + '</button>'; })).join('') + '</div><span class="count" id="count" aria-live="polite"></span></div></div>' +
       '<main class="wrap" id="list"></main>' +
       '<dialog id="dlg" aria-labelledby="dlg-title"></dialog>';
     $('#sort').value = state.sort;
@@ -223,6 +228,7 @@
       var list = titles.filter(function (t) {
         if (q && (t.title + ' ' + t.author + ' ' + (t.pitch || '') + ' ' + (t.genre || '')).toLowerCase().indexOf(q) < 0) return false;
         if (state.f === 'available') return eff(t) === 'available';
+        if (state.f.indexOf('via:') === 0) return viaOf(t, ag) === state.f.slice(4);
         if (state.f !== 'all') return sectionOf(t) === state.f || (state.f === 'Fiction' && sectionOf(t) === 'Backlist & Estates' && t.form === 'Fiction') || (state.f === 'Non-fiction' && sectionOf(t) === 'Backlist & Estates' && t.form === 'Non-fiction');
         return true;
       }).sort(sorter(state.sort));
@@ -231,7 +237,7 @@
       if (!q && state.f === 'all' && highlights.length) {
         html += '<h2 class="section-h">Under option &amp; adapted<span class="n">' + highlights.length + '</span></h2><div class="grid">' + highlights.map(card).join('') + '</div>';
       }
-      html += '<h2 class="section-h">' + (state.f === 'all' ? 'All titles' : esc(state.f === 'available' ? 'Available now' : state.f)) + '<span class="n">' + list.length + '</span></h2>';
+      html += '<h2 class="section-h">' + (state.f === 'all' ? 'All titles' : esc(state.f === 'available' ? 'Available now' : state.f.replace(/^via:/, ''))) + '<span class="n">' + list.length + '</span></h2>';
       html += list.length ? '<div class="grid">' + list.map(card).join('') + '</div>' : '<p>No titles match.</p>';
       $('#list').innerHTML = html;
     }
@@ -240,6 +246,7 @@
       return '<article class="card">' + coverHtml(t, 'cv') + '<div class="body">' +
         '<div>' + chip(eff(t)) + (t.genre ? ' <span class="count">' + esc(t.genre) + '</span>' : '') + '</div>' +
         '<h3>' + esc(t.title) + '</h3><div class="by">' + esc(t.author) + (when(t) ? ' &middot; ' + esc(when(t)) : '') + '</div>' +
+        (seriesText(t) || t.aka || V.length ? '<div class="count">' + [seriesText(t), t.aka ? 'also published as ' + t.aka : '', V.length ? 'via ' + viaOf(t, ag) : ''].filter(Boolean).map(esc).join(' &middot; ') + '</div>' : '') +
         (lapse ? '<div class="count">' + esc(lapse) + '</div>' : '') +
         (t.pitch ? '<p class="pitch">' + esc(t.pitch.length > 260 ? t.pitch.slice(0, 250) + '…' : t.pitch) + '</p>' : '') +
         (t.credentials ? '<p class="cred">' + esc(t.credentials) + '</p>' : '') +
@@ -277,7 +284,9 @@
     var byId = {}; titles.forEach(function (t) { byId[t.id] = t; });
     var pending = {}, pendingAgency = null, timer = null;
     var state = { q: '', sort: 'author', f: 'all', tab: 'titles' };
-    var guideUrl = 'guide/?k=' + encodeURIComponent(K);
+    var guideUrl = '../guide/?k=' + encodeURIComponent(K);
+    function authorDocUrl(a) { return guideUrl + '&author=' + encodeURIComponent(a); }
+    var EV = vias(titles, ag);
     var publicUrl = SITE + SLUG + '/';
 
     app.innerHTML =
@@ -363,8 +372,8 @@
         p.innerHTML = '<div class="tools" style="margin:0 -16px;padding-inline:16px"><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">' +
           '<input type="search" id="eq" placeholder="Search your titles" aria-label="Search your titles">' +
           '<label class="sr" for="esort">Sort</label><select id="esort"><option value="author">Author A to Z</option><option value="date">Publication date, newest</option><option value="title">Title A to Z</option><option value="recent">Recently changed</option></select>' +
-          '<div class="chips" role="group" aria-label="Show">' + [['all', 'All'], ['unconf', 'To confirm'], ['available', 'Available'], ['optioned', 'Under option'], ['produced', 'Adapted'], ['check', 'To check'], ['not_available', 'Not available']].map(function (x) {
-            return '<button type="button" class="fchip" data-f="' + x[0] + '" aria-pressed="' + (x[0] === 'all') + '">' + x[1] + '</button>';
+          '<div class="chips" role="group" aria-label="Show">' + [['all', 'All'], ['unconf', 'To confirm'], ['available', 'Available'], ['optioned', 'Under option'], ['produced', 'Adapted'], ['check', 'To check'], ['not_available', 'Not available']].concat(EV.map(function (v) { return ['via:' + v, v]; })).map(function (x) {
+            return '<button type="button" class="fchip" data-f="' + esc(x[0]) + '" aria-pressed="' + (x[0] === 'all') + '">' + esc(x[1]) + '</button>';
           }).join('') + '</div><span class="count" id="ecount" aria-live="polite"></span></div></div><div id="rows" style="margin-top:14px"></div>';
         $('#eq').addEventListener('input', function (e) { state.q = e.target.value; rows(); });
         $('#esort').addEventListener('change', function (e) { state.sort = e.target.value; rows(); });
@@ -380,6 +389,7 @@
       var list = titles.filter(function (t) {
         if (q && (t.title + ' ' + t.author).toLowerCase().indexOf(q) < 0) return false;
         if (state.f === 'unconf') return !t.confirmed;
+        if (state.f.indexOf('via:') === 0) return viaOf(t, ag) === state.f.slice(4);
         if (state.f !== 'all') return t.status === state.f;
         return true;
       }).sort(sorter(state.sort));
@@ -390,7 +400,7 @@
     function opt(v, cur, label) { return '<option value="' + esc(v) + '"' + (v === cur ? ' selected' : '') + '>' + esc(label || v || '-') + '</option>'; }
     function rowHtml(t) {
       var id = esc(t.id);
-      var sub = [t.author, when(t), t.form].filter(Boolean).map(esc).join(' &middot; ');
+      var sub = [t.author, when(t), t.form, seriesText(t), t.via_agency ? 'via ' + t.via_agency : ''].filter(Boolean).map(esc).join(' &middot; ');
       return '<article class="trow' + (t.confirmed ? '' : ' unconf') + '" data-id="' + id + '">' +
         '<div class="main"><button type="button" class="thumb' + (coverSrc(t) ? '' : ' ph') + '" data-act="cover" aria-label="Change cover for ' + esc(t.title) + '">' +
         (coverSrc(t) ? '<img class="thumb" src="' + esc(coverSrc(t)) + '" alt="" referrerpolicy="no-referrer">' : '<span class="t">Add cover</span>') + '</button>' +
@@ -416,7 +426,9 @@
         f('pub_date', 'Publication date', 'e.g. March 2027') + f('genre', 'Genre', 'e.g. Crime & thriller') +
         f('uk_pub', 'UK publisher', 'e.g. HarperCollins, Spring 2027') + f('us_pub', 'US publisher') +
         '<div class="field"><label for="ma-' + id + '">Material available</label><select id="ma-' + id + '" data-k="material">' + MATERIAL.map(function (x) { return opt(x, t.material || ''); }).join('') + '</select></div>' +
-        f('length', 'Length', 'e.g. 90,000 words') + f('agent', 'Agent') + f('screen_agent', 'Film/TV agent') + '</div>' +
+        f('length', 'Length', 'e.g. 90,000 words') + f('agent', 'Agent') + f('screen_agent', 'Film/TV agent') +
+        f('series', 'Series', 'e.g. Dandy Gilver') + f('series_no', 'Number in series', 'e.g. 3') +
+        f('aka', 'Also published as', 'Earlier or overseas title') + f('via_agency', 'Via agency', 'If you handle it for another agency, e.g. CMM') + '</div>' +
         '<div class="field"><label for="cr-' + id + '">Awards, sales and press (one line)</label><input id="cr-' + id + '" data-k="credentials" value="' + esc(t.credentials || '') + '"></div>' +
         '<div class="field"><label for="pr-' + id + '">Praise <span style="text-transform:none;font-weight:400">(one per line: quote - who)</span></label><textarea id="pr-' + id + '" data-k="praise_text">' + esc((t.praise || []).map(function (p) { return p.quote + (p.by ? ' - ' + p.by : ''); }).join('\n')) + '</textarea></div>' +
         '<div class="field"><label for="bi-' + id + '">About the author</label><textarea id="bi-' + id + '" data-k="bio">' + esc(t.bio || '') + '</textarea></div>' +
@@ -427,6 +439,7 @@
         '<button type="button" class="btn small" data-act="cover">Change cover</button>' +
         (/^https/.test(t.cover || '') || /^img:/.test(t.cover || '') ? '<button type="button" class="btn small ghost" data-act="nocover">Remove cover</button>' : '') +
         '<a class="btn small ghost" href="' + esc(enquireUrl(t.id, 'web')) + '" target="_blank" rel="noopener">Preview enquiry page</a>' +
+        '<a class="btn small ghost" href="' + esc(authorDocUrl(t.author)) + '" target="_blank" rel="noopener">' + esc(t.author) + ': rights summary</a>' +
         '<button type="button" class="btn small ghost" data-act="delete" style="color:var(--no)">Remove title</button></div>';
     }
     function rowOf(el) { var r = el.closest('.trow'); return r ? byId[r.dataset.id] : null; }
@@ -594,6 +607,12 @@
         '<button type="button" class="btn small" id="g-cover">' + (coverPrev ? 'Change cover' : 'Upload your own cover') + '</button>' +
         (coverPrev ? '<button type="button" class="btn small ghost" id="g-nocover">Use our designed cover</button>' : '') + '</div></div>' +
         '<a class="btn primary" href="' + esc(guideUrl) + '" target="_blank" rel="noopener">' + ICON.doc + 'Open and download the guide</a></div>' +
+        (function () {
+          var au = {}; titles.forEach(function (t) { if (t.author) au[t.author] = (au[t.author] || 0) + 1; });
+          var names = Object.keys(au).filter(function (a) { return au[a] > 1; }).sort(function (a, b) { return surname(a).localeCompare(surname(b)); });
+          return names.length ? '<div class="box"><h2>One author at a time</h2><p class="lead">A rights summary for one author: every title in series order, earlier titles, and where each one stands. Ready to send to a producer or an estate in one click.</p>' +
+            '<div style="columns:2 220px;font-size:14px;line-height:1.9">' + names.map(function (a) { return '<a href="' + esc(authorDocUrl(a)) + '" target="_blank" rel="noopener">' + esc(a) + '</a> <span class="count">' + au[a] + '</span>'; }).join('<br>') + '</div></div>' : '';
+        })() +
         '<div class="box"><h2>Where to find you at the fairs</h2><p class="lead">Shown on your guide’s cover and your catalogue page.</p><div id="fairs">' +
         fairs.map(fairRow).join('') + '</div><button type="button" class="btn small" id="fair-add">Add another fair</button></div>' +
         '<div class="box"><h2>Contact for enquiries</h2><p class="lead">Producer introductions go to this person, from tara@theariel.tv.</p><div class="grid2">' +
@@ -729,13 +748,18 @@
         app.innerHTML = '<div class="gate"><h1>' + esc(r.name || 'Rights guide') + '</h1><p>' + (r.error === 'password' || r.error === 'wrong_password' ? 'This guide is password protected. <a href="../">Open the catalogue</a> and enter the password first.' : 'This guide is private.') + '</p></div>';
         return;
       }
-      var titles = r.titles.filter(function (t) { return t.in_guide !== false && ['available', 'optioned', 'produced'].indexOf(t.status) >= 0; });
-      return loadImages(SLUG, titles.concat([{ cover: r.agency.cover_image || '' }])).then(function () { renderGuide(r.agency, titles, r.titles); });
+      var AU = Q.get('author') || '';
+      /* ?author= is a one-author rights summary: every title, series order, whatever its status. */
+      var titles = r.titles.filter(function (t) { return AU ? t.author === AU : t.in_guide !== false && ['available', 'optioned', 'produced'].indexOf(t.status) >= 0; });
+      if (Q.get('via')) titles = titles.filter(function (t) { return viaOf(t, r.agency) === Q.get('via'); });
+      if (AU && !titles.length) { app.innerHTML = '<div class="gate"><h1>' + esc(AU) + '</h1><p>No titles found for this author.</p></div>'; return; }
+      return loadImages(SLUG, titles.concat([{ cover: r.agency.cover_image || '' }])).then(function () { renderGuide(r.agency, titles, r.titles, AU); });
     }).catch(function () { app.innerHTML = '<div class="gate"><h1>Sorry</h1><p>We could not build the guide. Please refresh.</p></div>'; });
   }
 
-  function renderGuide(ag, titles, all) {
-    var name = ag.name, gt = ag.guide_title || 'Film & TV Rights Guide';
+  function renderGuide(ag, titles, all, AU) {
+    var name = ag.name, gt = AU ? AU + ': film & TV rights' : (ag.guide_title || 'Film & TV Rights Guide');
+    var V = AU ? [] : vias(titles, ag);
     document.title = name + ' - ' + gt + (ag.season ? ' - ' + ag.season : '');
     if (ag.accent) document.documentElement.style.setProperty('--accent', ag.accent);
     var unconfirmed = titles.some(function (t) { return t.confirmed === false; });
@@ -744,16 +768,30 @@
       (unconfirmed ? '@bottom-center{content:"DRAFT: rights not yet confirmed";font:bold 9px Lato,Arial,sans-serif;color:#8A2F3A;letter-spacing:.08em}' : '') +
       '@bottom-right{content:counter(page);font:9px Lato,Arial,sans-serif;color:#4A5165;padding-right:16mm}}';
     document.head.appendChild(st);
-    var sort = sorter(ag.guide_sort || 'author');
+    var sort = AU ? function (a, b) {
+      return (a.series || '~').localeCompare(b.series || '~') || ((+a.series_no || 999) - (+b.series_no || 999)) || (all.indexOf(a) - all.indexOf(b));
+    } : sorter(ag.guide_sort || 'author');
     var thisYear = new Date().getFullYear();
     function isFront(t) {
-      if (ag.guide_scope === 'all') return true;
+      if (AU || ag.guide_scope === 'all') return true;
       return !!t.highlight || (t.stage && t.stage !== 'Published') || yearNum(t) >= thisYear - 3;
     }
-    var highlights = titles.filter(function (t) { return t.status === 'optioned' || t.status === 'produced'; }).sort(sort);
+    var highlights = AU ? [] : titles.filter(function (t) { return t.status === 'optioned' || t.status === 'produced'; }).sort(sort);
     var front = titles.filter(isFront), back = titles.filter(function (t) { return !isFront(t); });
-    function groupBy(list) { var g = {}; list.forEach(function (t) { var s = sectionOf(t); (g[s] = g[s] || []).push(t); }); return g; }
-    function orderOf(g) { return SECTION_ORDER.concat(Object.keys(g).filter(function (s) { return SECTION_ORDER.indexOf(s) < 0; })).filter(function (s) { return g[s]; }); }
+    function keyOf(t) {
+      if (AU) return t.series ? t.series + ' series' : 'Other titles';
+      return V.length ? viaOf(t, ag) + ': ' + sectionOf(t) : sectionOf(t);
+    }
+    function groupBy(list) { var g = {}; list.forEach(function (t) { var s = keyOf(t); (g[s] = g[s] || []).push(t); }); return g; }
+    function orderOf(g) {
+      if (AU) return Object.keys(g).sort(function (a, b) { return (a === 'Other titles') - (b === 'Other titles') || a.localeCompare(b); });
+      if (V.length) return Object.keys(g).sort(function (a, b) {
+        var va = V.indexOf(a.split(': ')[0]), vb = V.indexOf(b.split(': ')[0]);
+        var own = ag.short || ag.name;
+        return ((a.indexOf(own + ': ') !== 0) - (b.indexOf(own + ': ') !== 0)) || (va - vb) || (SECTION_ORDER.indexOf(a.split(': ')[1]) - SECTION_ORDER.indexOf(b.split(': ')[1]));
+      });
+      return SECTION_ORDER.concat(Object.keys(g).filter(function (s) { return SECTION_ORDER.indexOf(s) < 0; })).filter(function (s) { return g[s]; });
+    }
     var fg = groupBy(front), fo = orderOf(fg), bg = groupBy(back), bo = orderOf(bg);
     var latest = (all || titles).reduce(function (m, t) { return t.updated_at > m ? t.updated_at : m; }, '');
     var upd = latest ? new Date(latest).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
@@ -767,16 +805,17 @@
     var html = '<div class="sheet">';
     html += '<section class="pg gcover">' + (coverImg ? stamp + '<img class="full" src="' + esc(coverImg) + '" alt="' + esc(name) + ' ' + esc(gt) + '">' :
       '<div class="in">' + stamp + (logo ? '<img class="logo" src="' + esc(logo) + '" alt="' + esc(name) + '">' : '') +
-      '<div class="gt">' + esc(gt) + '</div><div class="season">' + esc(ag.season || '') + '</div><div class="rule"></div><div class="ag">' + esc(name) + '</div>' +
+      (AU ? '<div class="gt">Film &amp; TV rights</div><div class="season">' + esc(ag.season || '') + '</div><div class="rule"></div><div class="ag">' + esc(AU) + '</div><div class="season" style="margin-top:4mm">' + esc(name) + '</div>' :
+      '<div class="gt">' + esc(gt) + '</div><div class="season">' + esc(ag.season || '') + '</div><div class="rule"></div><div class="ag">' + esc(name) + '</div>') +
       (hero.length ? '<div class="covers">' + hero.map(function (t) { return '<img src="' + esc(coverSrc(t)) + '" alt="" referrerpolicy="no-referrer">'; }).join('') + '</div>' : '') +
       '<div class="foot"><div>' + (ag.contact_name ? '<b>' + esc(ag.contact_name) + '</b>' + (ag.contact_role ? ', ' + esc(ag.contact_role) : '') + '<br>' : '') + (ag.contact_email ? esc(ag.contact_email) + '<br>' : '') + esc(ag.site || '').replace(/^https?:\/\//, '') + '</div>' +
       '<div style="text-align:right">' + fairs.map(function (f) { return '<b>' + esc(f.fair) + '</b>' + (f.where ? ': ' + esc(f.where) : ''); }).join('<br>') + '</div></div></div>') + '</section>';
-    html += '<section class="pg" id="contents"><div class="gk">' + esc(gt) + (ag.season ? ' &middot; ' + esc(ag.season) : '') + '</div><h1 class="gh">' + esc(name) + '</h1>' +
+    html += '<section class="pg" id="contents"><div class="gk">' + esc(gt) + (ag.season ? ' &middot; ' + esc(ag.season) : '') + '</div><h1 class="gh">' + esc(AU || name) + '</h1>' +
       (ag.intro ? '<p style="font-size:14px;max-width:150mm">' + esc(ag.intro) + '</p>' : '') +
       '<ul class="toc">' + (highlights.length ? '<li><a href="#s-highlights">Under option &amp; adapted</a><span>' + highlights.length + '</span></li>' : '') +
       fo.map(function (s, i) { return '<li><a href="#s-' + i + '">' + esc(s) + '</a><span>' + fg[s].length + ' titles</span></li>'; }).join('') +
       (back.length ? '<li><a href="#s-list">' + (front.length ? 'The full list' : 'All titles') + '</a><span>' + back.length + ' titles</span></li>' : '') +
-      '<li><a href="#s-index">Index of authors</a><span></span></li><li><a href="#s-contact">Contact</a><span></span></li></ul>' +
+      (AU ? '' : '<li><a href="#s-index">Index of authors</a><span></span></li>') + '<li><a href="#s-contact">Contact</a><span></span></li></ul>' +
       '<div class="howto"><div><h3>Interested in a title?</h3><p>Click <b>Enquire</b> next to it, or scan its QR code with your phone camera, and you’ll be introduced to ' + esc(ag.contact_name || name) + ' by email.</p>' +
       '<p style="margin:0">The live list, always up to date: <a href="' + esc(catUrl) + '">' + esc(catUrl.replace('https://', '')) + '</a></p></div>' +
       '<div class="qr" style="width:28mm">' + qrSvg(catUrl, 3) + '</div></div>' +
@@ -803,7 +842,7 @@
     }
     var authors = {};
     titles.forEach(function (t) { (authors[t.author] = authors[t.author] || []).push(t); });
-    html += '<section class="pg flow" id="s-index"><h2 class="gh">Index of authors</h2><div class="idx">' + Object.keys(authors).sort(function (a, b) { return surname(a).localeCompare(surname(b)); }).map(function (a) {
+    if (!AU) html += '<section class="pg flow" id="s-index"><h2 class="gh">Index of authors</h2><div class="idx">' + Object.keys(authors).sort(function (a, b) { return surname(a).localeCompare(surname(b)); }).map(function (a) {
       return '<p><b>' + esc(a) + '</b>: ' + authors[a].map(function (t) { return '<a href="#t-' + esc(t.id) + '">' + esc(t.title) + '</a>'; }).join(', ') + '</p>';
     }).join('') + '</div></section>';
     html += '<section class="pg back" id="s-contact"><div style="padding:26mm 20mm 0">' + (logo ? '<img class="logo" src="' + esc(logo) + '" alt="">' : '') + '<div class="gk" style="color:var(--gold-light)">Contact</div><h2 class="gh" style="font-size:52px">' + esc(name) + '</h2>' +
@@ -824,7 +863,7 @@
     function entry(t) {
       var facts = [];
       function fact(k, v) { if (v) facts.push('<dt>' + k + '</dt><dd>' + esc(v) + '</dd>'); }
-      fact('Published', when(t)); fact('Genre', t.genre); fact('UK', t.uk_pub); fact('US', t.us_pub); fact('Material', t.material); fact('Length', t.length);
+      fact('Published', when(t)); fact('Series', seriesText(t)); fact('Also published as', t.aka); if (V.length) fact('Via', t.via_agency); fact('Genre', t.genre); fact('UK', t.uk_pub); fact('US', t.us_pub); fact('Material', t.material); fact('Length', t.length);
       fact('Agent', t.agent); fact('Film/TV agent', t.screen_agent); fact('Rights sold', t.rights_sold);
       fact('Film/TV', STATUS[eff(t)].long.replace('Film/TV rights available', 'Available') + (lapseText(t) ? ', ' + lapseText(t) : ''));
       var url = enquireUrl(t.id, 'pdf'), qurl = enquireUrl(t.id, 'qr');

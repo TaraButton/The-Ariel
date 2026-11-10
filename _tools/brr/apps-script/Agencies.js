@@ -40,7 +40,7 @@ var AG = {
   TITLE_FIELDS: ['title', 'author', 'year', 'pub_date', 'form', 'genre', 'section', 'status', 'option_lapse', 'optioned_to',
     'pitch', 'credentials', 'praise', 'bio', 'cover', 'agent', 'screen_agent', 'uk_pub', 'us_pub', 'material', 'length',
     'rights_sold', 'stage', 'source', 'confirmed', 'in_guide', 'highlight', 'added_by', 'cover_auto', 'agent_note',
-    'show_optioned_to', 'pitch_src'],
+    'show_optioned_to', 'pitch_src', 'via_agency', 'aka', 'series', 'series_no'],
   PRIVATE_TITLE_FIELDS: ['agent_note', 'added_by', 'source', 'cover_auto', 'pitch_src'],
   AGENCY_FIELDS: ['name', 'short', 'site', 'address', 'phone', 'contact_name', 'contact_role', 'contact_email', 'cc_email',
     'guide_title', 'season', 'intro', 'cover_image', 'logo', 'accent', 'fairs', 'sections', 'authors_to_add', 'guide_sort', 'guide_scope'],
