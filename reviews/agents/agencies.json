@@ -162,10 +162,10 @@
    "source_url": "https://www.amheath.com/film-tv"
   },
   "rights_guide": {
-   "url": "https://www.amheath.com/translation",
-   "kind": "translation only",
-   "date": "",
-   "note": "Translation guide available by emailing translation@amheath.com; no film/TV guide."
+   "url": "gmail thread 1a1c4f14660ea3cd",
+   "kind": "film/TV per title (Autumn 2026 rights list, each title has a Film/TV line)",
+   "date": "Autumn 2026",
+   "note": "Florence Rees added rights@/tara@ to the guide distribution list 10 Nov 2026; next guide due March 2027. Loaded into lists.json."
   },
   "book_ids": [
    "hh-helenio-herrera-richard-fitzpatrick",
@@ -411,7 +411,8 @@
    "war-is-interested-in-you-gideon-rachman"
   ],
   "guide_ask_sent": "",
-  "nonfiction_note": "All emails Cloudflare-obfuscated; no film/TV contact on site."
+  "nonfiction_note": "All emails Cloudflare-obfuscated; no film/TV contact on site.",
+  "notes": "10 Nov 2026: Harriet Armstrong (harmstrong@wylieagency.co.uk) replied to the 9 Nov ask: Paul Theroux screen rights go to Stephen Durbridge at The Agency; Camus/Casares Letters and The Hill still to come (\"first of all\")."
  },
  {
   "agency": "Calligraph",
@@ -552,9 +553,9 @@
   ],
   "domain": "davidhigham.co.uk",
   "film_tv_contact": {
-   "name": "None named; 'our agents negotiate screen and stage rights'",
-   "email": null,
-   "source_url": "https://davidhigham.co.uk/film-tv-theatre/"
+   "name": "Laney Gibbons, Film, TV & Theatre",
+   "email": "laneygibbons@davidhigham.co.uk",
+   "source_url": "gmail thread 1a1c5ee232a62645 (wrote to Tara 10 Nov 2026)"
   },
   "general_email": {
    "email": "reception@davidhigham.co.uk",
@@ -1430,7 +1431,7 @@
   ],
   "domain": "janklowandnesbit.com",
   "film_tv_contact": {
-   "name": "Film & Television department (no individual named)",
+   "name": "Melissa Flashman's office (Jessica Gitre, assistant, wrote from JGitre@janklow.com 10 Nov 2026, gmail thread 1a1bfcb329203704); filmtvrights@janklow.com for the department",
    "email": "filmtvrights@janklow.com",
    "source_url": "https://janklowandnesbit.com/people/filmandtv"
   },
@@ -1640,9 +1641,9 @@
   ],
   "domain": "theagency.co.uk",
   "film_tv_contact": {
-   "name": "Per-client screen agents (e.g. Stephen Durbridge for Hanif Kureishi); personal emails Cloudflare-obfuscated",
-   "email": "info@theagency.co.uk",
-   "source_url": "https://theagency.co.uk/contact-2/"
+   "name": "Sophie Kelleher, Associate to Stephen Durbridge",
+   "email": "skelleher@theagency.co.uk",
+   "source_url": "gmail thread 1a1c53cceee95415 (wrote to Tara 10 Nov 2026)"
   },
   "general_email": {
    "email": "info@theagency.co.uk",
@@ -1654,7 +1655,8 @@
    "date": ""
   },
   "book_ids": [
-   "are-you-with-me-now-hanif-kureishi"
+   "are-you-with-me-now-hanif-kureishi",
+   "true-north-paul-theroux"
   ],
   "guide_ask_sent": ""
  },
@@ -1755,11 +1757,37 @@
   "rights_guide": {
    "url": "",
    "kind": "none found",
-   "date": ""
+   "date": "",
+   "note": "Amanda Harris said 10 Nov 2026 (gmail thread 1a1c4913d18bf3d3) they will add Tara to their mailing list."
   },
   "book_ids": [
    "a-life-in-fragments-marina-litvinenko"
   ],
   "guide_ask_sent": ""
+ },
+ {
+  "agency": "Princeton University Press",
+  "aliases": [
+   "PUP"
+  ],
+  "domain": "press.princeton.edu",
+  "film_tv_contact": {
+   "name": "Ceylan Akturk, Senior IP, Contracts, and Dramatic Rights Manager",
+   "email": "Ceylan_Akturk@press.princeton.edu",
+   "source_url": "gmail thread 1a1c4f18781a4969 (wrote to Tara 10 Nov 2026)"
+  },
+  "general_email": {
+   "email": "permissions@press.princeton.edu",
+   "source_url": "Rights row cold-war-city-david-e-barclay"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "film/TV catalogue forthcoming (Ceylan Akturk, 10 Nov 2026)",
+   "date": ""
+  },
+  "book_ids": [
+   "cold-war-city-david-e-barclay"
+  ],
+  "guide_ask_sent": "2026-11-10"
  }
 ]
