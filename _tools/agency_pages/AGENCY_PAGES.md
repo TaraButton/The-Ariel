@@ -27,7 +27,10 @@ Enquiries are introductions (Tara, 9 Nov): one email from tara@theariel.tv to th
   jacket text, then checked by eye); (2) publisher pages (Hachette-group sites carry the full description in the
   hachetteJsonLinkingData JSON-LD); (3) Google Books API (key in The Ariel HQ/.../Agency_Pages/private-keys.md,
   needs country=GB; exact title + author match; drop title-page scans and mismatched descriptions after an eye check);
-  (4) Open Library. Covers are flagged "found automatically" unless from the agency's own site.
+  (4) Open Library; (5) Goodreads search (cover of the matching listing) and AbeBooks ISBN stock images
+  (pictures.abebooks.com/isbn/<isbn>-uk._SL600_.jpg). Search all editions and the author's pen names (Gash = Jonathan Grant,
+  Graham Gaunt); Google Images is not reachable from the shell. A whole-series entry gets the cover of the most recent book
+  in the series (Tara, 11 Nov 2026). Covers are flagged "found automatically" unless from the agency's own site.
 - Years: only from the agency's own site. Open Library years were unreliable and are not used.
 - Sheil Land run (10 Nov 2026): 261 titles, 216 covers, 200 blurbs. Scripts: Agency_Pages/sheil-land-source/.
 - Private data (tokens, contact emails, unconfirmed lists) never goes in this public repo: it lives in the
@@ -63,12 +66,12 @@ Enquiries are introductions (Tara, 9 Nov): one email from tara@theariel.tv to th
 - What came from public sources (their website, published guides: titles, authors, publication details, statuses)
   is ours to keep and use for matching. Agencies cannot delete it.
 - What only they told us (titles added by them, on-submission projects, option dates and holders, notes, their own
-  pitches, uploaded covers/logo, contacts, fairs) is theirs: "Remove what I've added" (POST agency_clear) clears it
-  and sets the page private. Personal contact details go with it.
-- "Don't use this page" (visibility off) closes catalogue, guide and enquiry links; the record stays.
+  pitches, uploaded covers/logo, contacts, fairs) is theirs. We remove it on request (admin: POST agency_clear clears it
+  and sets the page private), and can switch a page off (visibility off closes catalogue, guide and enquiry links).
+- Tara, 11 Nov 2026: neither is advertised or one-click on the agency's page. No "Remove what I've added" button, no
+  "Don't use this page" option, and the top line no longer says they can remove things. These belong in policy text only.
 - No delete button. Terms line on their page: "Free for agencies. Your page is private unless you choose otherwise.
-  Anything you add that isn't public, like unpublished titles, option dates and notes, is never shared and you can
-  remove it any time."
+  Anything you add that isn't public, like unpublished titles, option dates and notes, is never shared."
 - Publisher blurbs and covers are used only in the agency's own guide/catalogue, not elsewhere in The Ariel.
 
 ## Pre-send safeguards (10 Nov 2026)

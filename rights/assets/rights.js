@@ -302,7 +302,7 @@
       '<button class="btn" type="button" data-goto="share">' + ICON.share + 'Share settings</button>' +
       '<button class="btn" type="button" id="export">' + ICON.doc + 'Download spreadsheet</button>' +
       '<span class="save-state" id="save" role="status" style="color:#E9E5DD"></span></div>' +
-      '<p class="meta" style="margin-top:16px">Free for agencies. Your page is private unless you choose otherwise. Anything you add that isn’t public, like unpublished titles, option dates and notes, is never shared and you can remove it any time.</p></div></section>' +
+      '<p class="meta" style="margin-top:16px">Free for agencies. Your page is private unless you choose otherwise. Anything you add that isn’t public, like unpublished titles, option dates and notes, is never shared.</p></div></section>' +
       '<div class="wrap"><div class="tabs" role="tablist">' +
       [['titles', 'Your titles'], ['add', 'Add titles'], ['guide', 'Guide & book fairs'], ['enq', 'Enquiries' + (enquiries.length ? ' (' + enquiries.length + ')' : '')], ['share', 'Sharing']].map(function (x) {
         return '<button class="tab" role="tab" type="button" id="tab-' + x[0] + '" aria-controls="p-' + x[0] + '" aria-selected="' + (x[0] === 'titles') + '" data-tab="' + x[0] + '">' + x[1] + '</button>';
@@ -652,8 +652,7 @@
       p.innerHTML = '<div class="box"><h2>Who can see your list?</h2><p class="lead">Your rights guide PDF always works, whichever you choose: its Enquire links and QR codes open a page for that one title.</p>' +
         [['private', 'Private', 'Only you. The Ariel uses it to match titles to producers’ briefs.'],
          ['password', 'Password protected', 'Send the link and password to the producers and scouts you choose.'],
-         ['public', 'Public link', 'Anyone with the link can browse your catalogue: use it as your online rights list.'],
-         ['off', 'Don’t use this page', 'Switches off your catalogue, guide and enquiry links. You can switch it back on any time.']].map(function (x) {
+         ['public', 'Public link', 'Anyone with the link can browse your catalogue: use it as your online rights list.']].map(function (x) {
           return '<label class="radio"><input type="radio" name="vis" value="' + x[0] + '"' + (vis === x[0] ? ' checked' : '') + '><span><b>' + x[1] + '</b>' + x[2] + '</span></label>';
         }).join('') +
         '<div id="pwbox" class="field" style="margin-top:10px"' + (vis === 'password' ? '' : ' hidden') + '><label for="pw1">Password' + (ag.has_password ? ' (leave blank to keep the current one)' : '') + '</label>' +
@@ -665,9 +664,7 @@
         '<span class="hint">Opens for anyone when your list is public, or with the password.</span></div>' +
         '<div class="field"><span class="lbl">QR code for your catalogue</span><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div id="cat-qr" style="width:140px;background:#FFF;padding:6px;border:1px solid var(--line)"></div>' +
         '<span class="hint" style="max-width:420px">Put it on your stand at the fair, on a postcard or in an email signature. Right-click to save the image.</span></div></div>' +
-        '<p style="font-size:14px;color:var(--muted);margin:0">This page’s private link is your key: please don’t forward it outside your agency.</p></div>' +
-        '<div class="box"><h2>Remove what you’ve added</h2><p class="lead">Clears everything you’ve told us that isn’t public: titles you added, option dates and holders, notes, your own pitches, uploaded covers and logo, contacts and fair details. Your page goes back to private. Titles and details from your public website stay.</p>' +
-        '<button type="button" class="btn small" id="clear" style="border-color:var(--no);color:var(--no)">Remove what I’ve added</button></div>';
+        '<p style="font-size:14px;color:var(--muted);margin:0">This page’s private link is your key: please don’t forward it outside your agency.</p></div>';
       ensureQR().then(function () { $('#cat-qr').innerHTML = qrSvg(publicUrl, 4); });
       $$('input[name=vis]', p).forEach(function (r) {
         r.addEventListener('change', function () {
@@ -682,10 +679,6 @@
         setVis('password', pw);
       });
       $$('[data-copy]', p).forEach(function (b) { b.addEventListener('click', function () { navigator.clipboard.writeText(b.dataset.copy).then(function () { toast('Link copied'); }); }); });
-      $('#clear').addEventListener('click', function () {
-        if (!window.confirm('Remove everything you’ve added? This can’t be undone.')) return;
-        post({ action: 'agency_clear', slug: SLUG, k: K }).then(function (r) { if (r.ok) { toast('Done. Reloading…'); setTimeout(function () { location.reload(); }, 1200); } else toast('Sorry, that didn’t work.'); });
-      });
     }
 
     /* enquiries tab: only real introductions made to this agency */
