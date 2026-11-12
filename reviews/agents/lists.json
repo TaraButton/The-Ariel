@@ -11141,5 +11141,35 @@
    }
   ],
   "last_refresh_asked": ""
+ },
+ {
+  "agency": "Jane Novak Literary Agency",
+  "domain": "janenovak.com",
+  "contact_email": "alice@janenovak.com",
+  "received": "2026-11-12",
+  "source": "gmail thread 1a1c9c54217fb288 (Alice Cottrell, Rights Manager, 12 Nov 2026: 'our most recent film rights catalogue', and added rights to their mailing list)",
+  "file": "Gmail attachment 'JNLA FBF 2026 Rights Catalogue.pdf' in thread 1a1c9c54217fb288",
+  "kind": "translation catalogue (Frankfurt 2026). The attached PDF is titled 'Translation Rights Catalogue' and gives no film/TV status per title except two film sales. Alice's signature links a separate 'Film rights 2026' catalogue on Canva (https://canva.link/7lh3gcv87w7jnxv) that this run could not open. Do NOT treat a title's absence or presence here as a film/TV answer; ask Alice (alice@janenovak.com) or Jane per title.",
+  "titles": [
+   {
+    "book": "No Friend but the Mountains",
+    "author": "Behrouz Boochani",
+    "status": "optioned",
+    "note": "Catalogue lists 'Film (MOFA)' among rights sold"
+   },
+   {
+    "book": "Have You Seen Simone?",
+    "author": "Virginia Peters",
+    "status": "optioned",
+    "note": "Catalogue lists 'Film (Avenue Road Productions)' among rights sold"
+   },
+   {
+    "book": "The Season",
+    "author": "Helen Garner",
+    "status": "available",
+    "note": "Not from the catalogue: Jane Novak wrote 10 Nov 2026 that rights are available (gmail thread 1a1c4f14f24004e7)"
+   }
+  ],
+  "last_refresh_asked": ""
  }
 ]

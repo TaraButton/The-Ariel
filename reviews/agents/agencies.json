@@ -1510,9 +1510,9 @@
   ],
   "domain": "janenovak.com",
   "film_tv_contact": {
-   "name": "No film/TV contact named; Jane Novak (Primary Agent)",
-   "email": "jane@janenovak.com",
-   "source_url": "https://lorafountainagency.com/wp-content/uploads/2026/03/jnla-fiction-lbf-2026.pdf"
+   "name": "Alice Cottrell, Rights Manager (works with Jane on film/TV rights)",
+   "email": "alice@janenovak.com",
+   "source_url": "gmail thread 1a1c9c54217fb288 (wrote to Tara 12 Nov 2026)"
   },
   "general_email": {
    "email": "alice@janenovak.com",
@@ -1521,7 +1521,8 @@
   "rights_guide": {
    "url": "https://lorafountainagency.com/wp-content/uploads/2026/03/jnla-fiction-lbf-2026.pdf",
    "kind": "translation only",
-   "date": "London Book Fair 2026 (also FBF 2025 catalogue at https://lorafountainagency.com/wp-content/uploads/2025/09/jnla-fbf-2025-translation-rights-catalogue-fiction.pdf); janenovak.com itself could not be fetched (permission timed out)"
+   "date": "London Book Fair 2026 (also FBF 2025 catalogue at https://lorafountainagency.com/wp-content/uploads/2025/09/jnla-fbf-2025-translation-rights-catalogue-fiction.pdf); janenovak.com itself could not be fetched (permission timed out)",
+   "note_2026_11_12": "Alice sent the FBF 2026 translation catalogue and added rights@ to their mailing list; film catalogue is on Canva https://canva.link/7lh3gcv87w7jnxv (not loaded)."
   },
   "book_ids": [
    "the-season-helen-garner"
@@ -1651,14 +1652,14 @@
   },
   "rights_guide": {
    "url": "",
-   "kind": "not checked - screen/stage agency representing writers, not a book-rights agency",
+   "kind": "none - Sophie Kelleher said 11 Nov 2026 they do not do a mail-out list; check title by title (gmail thread 1a1c9c55ecdd9909)",
    "date": ""
   },
   "book_ids": [
    "are-you-with-me-now-hanif-kureishi",
    "true-north-paul-theroux"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "2026-11-11"
  },
  {
   "agency": "Jonathan Pegg Literary Agency",
