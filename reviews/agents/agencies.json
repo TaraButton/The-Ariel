@@ -290,7 +290,15 @@
    "empire-at-the-edge-of-the-world-giles-milton",
    "solace-in-winter-mary-lawson"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "other_contacts": [
+   {
+    "name": "Lucinda Prain",
+    "email": "lucinda@casarotto.co.uk",
+    "note": "handles Mary Lawson film/TV rights; copied in by Aoife MacIntyre",
+    "source_url": "gmail thread 1a1bfd8c65c8bc79 (12 Nov 2026)"
+   }
+  ]
  },
  {
   "agency": "InkWell Management",
@@ -606,9 +614,9 @@
   ],
   "domain": "felicitybryan.com",
   "film_tv_contact": {
-   "name": null,
-   "email": null,
-   "source_url": null
+   "name": "Caroline Wood (via agency@felicitybryan.com)",
+   "email": "agency@felicitybryan.com",
+   "source_url": "gmail thread 1a1d05ba6fd0b86c (Katerina Lygaki, Assistant Agent, wrote from this address 12 Nov 2026)"
   },
   "general_email": {
    "email": "submissions@felicitybryan.com (submissions only; no general address printed)",
@@ -625,7 +633,8 @@
    "how-to-begin-edmund-de-waal",
    "lessons-in-harmony-jonathan-coe"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "first_answer": "2026-11-12 Lessons in Harmony available (Caroline Wood); agent_thanks drafted for Tara 13 Nov"
  },
  {
   "agency": "Greene & Heaton",
