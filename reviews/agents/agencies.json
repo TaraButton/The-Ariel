@@ -172,7 +172,8 @@
    "ply-hernan-diaz",
    "rhapsody-a-manifesto-alice-oswald",
    "the-family-man-blood-and-betrayal-in-the-house-of-murdaugh-james-lasdun",
-   "wine-a-global-history-kathleen-burk"
+   "wine-a-global-history-kathleen-burk",
+   "public-access-afterworld-jane-schoenbrun"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "Site does not describe non-fiction strengths; administers the Orwell Prizes link. | 9 Nov 2026 (Florence Rees): no dedicated film/TV rights list, only a twice-yearly book-fair list of current titles. Jessica Lee (jessica.lee@amheath.com) fields enquiries for The Family Man."
@@ -260,7 +261,9 @@
    "empire-at-the-edge-of-the-world-giles-milton",
    "europe-in-7-chapters-a-concise-history-of-the-european-union-timothy-garton-ash-",
    "this-cursed-beautiful-land-evan-gershkovich",
-   "yakuza-a-400-year-history-of-the-japanese-underworld-andrew-rankin"
+   "yakuza-a-400-year-history-of-the-japanese-underworld-andrew-rankin",
+   "the-bohemian-queen-jean-findlay",
+   "everything-happens-so-much-andrew-h-murray"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "Film & TV page says it partners with screen agencies (The Agency, M42, United Agents, CAA etc.); site does not summarise non-fiction strengths."
@@ -352,7 +355,8 @@
   },
   "book_ids": [
    "attention-seeking-behaviour-aea-varfis-van-warmelo",
-   "the-age-of-confiscation-nicholas-mulder"
+   "the-age-of-confiscation-nicholas-mulder",
+   "ten-lives-mona-chalabi"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "LBF 2026 guide has a Non-Fiction section from p.34."
@@ -416,7 +420,8 @@
    "the-garden-our-4-000-year-quest-for-paradise-jonathan-bate",
    "the-hill-harriet-clark",
    "true-north-paul-theroux",
-   "war-is-interested-in-you-gideon-rachman"
+   "war-is-interested-in-you-gideon-rachman",
+   "arendal-karl-ove-knausgaard"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "All emails Cloudflare-obfuscated; no film/TV contact on site.",
@@ -550,7 +555,8 @@
   "checked": "2026-11-04",
   "book_ids": [
    "peck-peck-bonnie-garmus",
-   "sophie-standing-there-meg-mason"
+   "sophie-standing-there-meg-mason",
+   "a-knock-at-the-door-louise-candlish"
   ],
   "guide_ask_sent": "2026-11-04"
  },
@@ -731,7 +737,9 @@
   },
   "nonfiction_note": "Around 200 non-fiction authors; history and biography specialist. Contact email is Cloudflare-obfuscated and could not be read.",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "the-patriot-ajay-chowdhury"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -1482,7 +1490,8 @@
   },
   "book_ids": [
    "lords-of-serendipity-randy-boyagoda",
-   "the-vivisectors-missouri-williams"
+   "the-vivisectors-missouri-williams",
+   "natural-order-matthew-aldrich"
   ],
   "guide_ask_sent": ""
  },
@@ -1559,7 +1568,9 @@
    "date": ""
   },
   "book_ids": [
-   "kill-shot-jo-nesbo"
+   "kill-shot-jo-nesbo",
+   "the-fresh-cut-antti-tuomainen",
+   "alfa-lilja-sigur-ard-ttir"
   ],
   "guide_ask_sent": ""
  },
@@ -1823,6 +1834,236 @@
    "date": "sent by Guy Rose 16 Nov 2026; not yet loaded into lists.json (page fetch not permitted in the 17 Nov run)"
   },
   "book_ids": [],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Glass Literary Management",
+  "aliases": [],
+  "domain": "glassliterary.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": "https://glassliterary.com/subsidiary-rights/"
+  },
+  "general_email": {
+   "email": "info@glassliterary.com",
+   "source_url": "https://glassliterary.com/subsidiary-rights/"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": "2026-11-18"
+  },
+  "book_ids": [
+   "emperor-of-nothing-the-making-of-larry-david-blake-j-harrison"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Insight Management (Insight MP)",
+  "aliases": [],
+  "domain": "insightmp.co.uk",
+  "film_tv_contact": {
+   "name": "Luke Speed",
+   "email": "luke.speed@insightmp.co.uk",
+   "source_url": "gmail thread 1a1bfcb011b07a89",
+   "note": "Address seen only as a cc in Gmail thread 1a1bfcb011b07a89 (Maven Literary, 9 Nov); not printed on insightmp.co.uk and he has not written from it. Not used for asks until verified."
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found (not checked beyond client pages; screen/talent agency)",
+   "date": ""
+  },
+  "book_ids": [
+   "black-earth-kate-london"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Spitzer Agency",
+  "aliases": [],
+  "domain": "spitzeragency.com",
+  "film_tv_contact": {
+   "name": "Joel Gotler, Intellectual Property Group (co-agent, 2021 guide)",
+   "email": "joel@ipglm.com",
+   "source_url": "https://www.spitzeragency.com/s/Spitzer-Agency-Rights-Guide-Spring-2021-final.pdf"
+  },
+  "general_email": {
+   "email": "info@spitzeragency.com",
+   "source_url": "https://spitzeragency.com"
+  },
+  "rights_guide": {
+   "url": "https://www.spitzeragency.com/s/Spitzer-Agency-Rights-Guide-Spring-2021-final.pdf",
+   "kind": "general incl. film/TV",
+   "date": "Spring 2021 (stale)"
+  },
+  "book_ids": [
+   "the-hollow-michael-connelly"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Coombs Moylett Maclean Literary Agency (CMM)",
+  "aliases": [],
+  "domain": "cmm.agency",
+  "film_tv_contact": {
+   "name": "Sheila David, Catapult Rights (co-agent; no email printed)",
+   "email": "",
+   "source_url": "https://www.cmm.agency/"
+  },
+  "general_email": {
+   "email": "info@cmm.agency",
+   "source_url": "https://www.cmm.agency/contact"
+  },
+  "rights_guide": {
+   "url": "https://www.melleragency.com/uploaded/documents/cmm-rightsguide-london2026.pdf",
+   "kind": "general incl. film/TV (per-author 'Rights Available' lines incl. Film & TV); hosted on melleragency.com, not cmm.agency",
+   "date": "March 2026 (London 2026)"
+  },
+  "book_ids": [
+   "fall-from-grace-leye-adenle"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Bent Agency",
+  "aliases": [],
+  "domain": "thebentagency.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "info@thebentagency.com",
+   "source_url": "https://thebentagency.com/who-we-are"
+  },
+  "rights_guide": {
+   "url": "https://www.thebentagency.com/rights",
+   "kind": "unknown (page not fetched)",
+   "date": ""
+  },
+  "book_ids": [
+   "the-bells-of-fortune-leonora-nattrass"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "ELKOST International Literary Agency",
+  "aliases": [],
+  "domain": "elkost.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "rights@elkost.com",
+   "source_url": "https://elkost.com/authors/yakhina"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "eisen-guzel-yakhina"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Hachette Australia",
+  "aliases": [],
+  "domain": "hachette.com.au",
+  "film_tv_contact": {
+   "name": "Licensing (film, TV, dramatic rights)",
+   "email": "licensing@hachette.com.au",
+   "source_url": "https://www.hachette.com.au/rights-and-permissions"
+  },
+  "general_email": {
+   "email": "licensing@hachette.com.au",
+   "source_url": "https://www.hachette.com.au/rights-and-permissions"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "none found",
+   "date": ""
+  },
+  "book_ids": [
+   "one-for-sorrow-favel-parrett"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Jill Grinberg Literary Management",
+  "aliases": [],
+  "domain": "jillgrinbergliterary.com",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "info@jillgrinbergliterary.com",
+   "source_url": "https://jillgrinbergliterary.com/contact/"
+  },
+  "rights_guide": {
+   "url": "https://jillgrinbergliterary.com/rights/",
+   "kind": "none found (rights page lists subagents only, no downloadable guide)",
+   "date": "2026-11-18"
+  },
+  "book_ids": [
+   "the-lost-spectacular-zo-duhaime"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Comma Press",
+  "aliases": [],
+  "domain": "commapress.co.uk",
+  "film_tv_contact": {
+   "name": "",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "ra.page@commapress.co.uk",
+   "source_url": "https://commapress.co.uk/contact"
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "not checked",
+   "date": ""
+  },
+  "book_ids": [
+   "china-100-stories-from-a-century-after-the-outbreak-xueting-c-ni-editor"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Clegg Agency",
+  "aliases": [
+   "Clegg Agency"
+  ],
+  "domain": "thecleggagency.com",
+  "film_tv_contact": {
+   "name": "Rebecca Pittel",
+   "email": "rebecca@thecleggagency.com",
+   "source_url": "gmail thread 1a1e91fdd5c78ed0 (she wrote 17 Nov 2026 offering title-by-title rights information)"
+  },
+  "general_email": {},
+  "rights_guide": {
+   "url": "",
+   "kind": "none (answer title by title)",
+   "date": "2026-11-17"
+  },
+  "book_ids": [
+   "public-access-afterworld-jane-schoenbrun"
+  ],
   "guide_ask_sent": ""
  }
 ]
