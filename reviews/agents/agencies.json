@@ -1543,7 +1543,8 @@
    "note_2026_11_12": "Alice sent the FBF 2026 translation catalogue and added rights@ to their mailing list; film catalogue is on Canva https://canva.link/7lh3gcv87w7jnxv (not loaded)."
   },
   "book_ids": [
-   "the-season-helen-garner"
+   "the-season-helen-garner",
+   "one-for-sorrow-favel-parrett"
   ],
   "guide_ask_sent": ""
  },
@@ -1677,9 +1678,12 @@
   },
   "book_ids": [
    "are-you-with-me-now-hanif-kureishi",
-   "true-north-paul-theroux"
+   "true-north-paul-theroux",
+   "the-bohemian-queen-jean-findlay",
+   "everything-happens-so-much-andrew-h-murray"
   ],
-  "guide_ask_sent": "2026-11-11"
+  "guide_ask_sent": "2026-11-11",
+  "note_katie_haines": "Katie Haines handles film/TV for some RCW authors (RCW, 18 Nov 2026). No verified address yet; asked Sophie Kelleher to pass on 19 Nov."
  },
  {
   "agency": "Jonathan Pegg Literary Agency",
@@ -1950,7 +1954,8 @@
   "book_ids": [
    "the-bells-of-fortune-leonora-nattrass"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "first_answer": "2026-11-18 Bells of Fortune: Nicola Barr now at Rye Literary; agent_thanks queued 19 Nov"
  },
  {
   "agency": "ELKOST International Literary Agency",
@@ -1996,7 +2001,8 @@
   "book_ids": [
    "one-for-sorrow-favel-parrett"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "first_answer": "2026-11-18 One for Sorrow: author retained dramatisation rights, agent Jane Novak Literary Agency; agent_thanks queued 19 Nov"
  },
  {
   "agency": "Jill Grinberg Literary Management",
@@ -2064,6 +2070,7 @@
   "book_ids": [
    "public-access-afterworld-jane-schoenbrun"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "first_answer": "2026-11-18 Public Access Afterworld not available (author keeps rights); no agent_thanks as Rebecca said 17 Nov they answer title by title"
  }
 ]

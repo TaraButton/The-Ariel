@@ -224,7 +224,7 @@
   "book_id": "the-bells-of-fortune-leonora-nattrass",
   "book": "The Bells of Fortune",
   "author": "Leonora Nattrass",
-  "agency": "The Bent Agency",
+  "agency": "Rye Literary",
   "agent_name": "Nicola Barr",
   "agent_email": "info@thebentagency.com",
   "email_source_url": "https://thebentagency.com/who-we-are",
@@ -235,7 +235,7 @@
   "contact_page": "https://thebentagency.com/who-we-are",
   "agency_type": "independent",
   "confidence": "medium",
-  "notes": "Bent Agency author page thebentagency.com/leonora-nattrass says 'Represented by Nicola Barr'. No personal or film/TV email on Nicola's page; the only address on the site is info@thebentagency.com (who-we-are page). Rights page https://www.thebentagency.com/rights could not be fetched (permission not granted), so guide kind unknown."
+  "notes": "Bent Agency author page thebentagency.com/leonora-nattrass says 'Represented by Nicola Barr'. No personal or film/TV email on Nicola's page; the only address on the site is info@thebentagency.com (who-we-are page). Rights page https://www.thebentagency.com/rights could not be fetched (permission not granted), so guide kind unknown. 19 Nov: The Bent Agency (Victoria Cappello, gmail thread 1a1edd1fe2f8e877) said contact Nicola Barr at nicola@ryeliterary.com. Address given by Bent, not verified on Rye Literary site, so a Gmail draft was left for Tara instead of queuing."
  },
  {
   "book_id": "the-fresh-cut-antti-tuomainen",
@@ -314,30 +314,30 @@
   "agent_email": "",
   "email_source_url": "",
   "agent_source_url": "https://www.rcwlitagency.com/authors/findlay-jean/",
-  "screen_contact": "RCW film/TV (no individual named)",
+  "screen_contact": "Katie Haines, The Agency (London) (per RCW, Lulu Rehman 18 Nov, gmail thread 1a1edd21ac893e47)",
   "screen_email": "info@rcwlitagency.com",
   "screen_source_url": "https://www.rcwlitagency.com/film-tv",
   "contact_page": "https://www.rcwlitagency.com/film-tv",
   "agency_type": "independent",
   "confidence": "medium",
-  "notes": "RCW's author page for Jean Findlay names Peter Straus as agent (no email printed); it lists only her biography Chasing Lost Time, not The Bohemian Queen (Scotland Street Press), so representation for this novel is likely but unconfirmed. Screen address reused from the agencies.json registry. Not in RCW's London 2026 guide in lists.json."
+  "notes": "RCW's author page for Jean Findlay names Peter Straus as agent (no email printed); it lists only her biography Chasing Lost Time, not The Bohemian Queen (Scotland Street Press), so representation for this novel is likely but unconfirmed. Screen address reused from the agencies.json registry. Not in RCW's London 2026 guide in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on."
  },
  {
   "book_id": "one-for-sorrow-favel-parrett",
   "book": "One for Sorrow",
   "author": "Favel Parrett",
-  "agency": "Hachette Australia",
-  "agent_name": "",
-  "agent_email": "licensing@hachette.com.au",
-  "email_source_url": "https://www.hachette.com.au/rights-and-permissions",
+  "agency": "Jane Novak Literary Agency",
+  "agent_name": "Alice Cottrell",
+  "agent_email": "alice@janenovak.com",
+  "email_source_url": "gmail thread 1a1c9c54217fb288",
   "agent_source_url": "https://www.hachette.com.au/favel-parrett",
   "screen_contact": "Hachette Australia licensing (film, TV, animation and dramatic rights)",
-  "screen_email": "licensing@hachette.com.au",
-  "screen_source_url": "https://www.hachette.com.au/rights-and-permissions",
+  "screen_email": "alice@janenovak.com",
+  "screen_source_url": "gmail thread 1a1c9c54217fb288",
   "contact_page": "https://www.hachette.com.au/rights-and-permissions",
-  "agency_type": "publisher_fallback",
+  "agency_type": "independent",
   "confidence": "low",
-  "notes": "No literary agent found (searches and Hachette author page name none). Hachette Australia publishes One for Sorrow; its rights page (fetched 18 Nov) says film, TV, animation and other dramatic rights queries go to licensing@hachette.com.au. They may not control screen rights if Parrett has an agent."
+  "notes": "No literary agent found (searches and Hachette author page name none). Hachette Australia publishes One for Sorrow; its rights page (fetched 18 Nov) says film, TV, animation and other dramatic rights queries go to licensing@hachette.com.au. They may not control screen rights if Parrett has an agent. 19 Nov: Hachette Australia (Abbie Bryant, gmail thread 1a1edd22674c90cc) wrote the author retained dramatisation rights and is represented by Jane Novak Literary Agency; agent_ask queued to Alice Cottrell 19 Nov."
  },
  {
   "book_id": "amazons-don-delillo",
@@ -371,7 +371,8 @@
   "contact_page": "https://www.amheath.com/film-tv",
   "agency_type": "independent",
   "confidence": "medium",
-  "notes": "A.M. Heath author page (fetched 18 Nov) says 'Represented by Anna Webber' and 'We represent Jane on behalf of The Clegg Agency in New York', so the primary/US agency is The Clegg Agency (site not found; no address verified). enquiries@amheath.com is also printed on that author page and is the registry's verified contact. Tara has an open A.M. Heath thread (1a1a5d46b007377d, Florence Rees replied). Schoenbrun is a film director, so screen rights may sit with her US screen reps; not verified. UK publisher Hodder. Not in lists.json (A.M. Heath Autumn 2026 list). Asked via Rebecca Pittel, The Clegg Agency (rebecca@thecleggagency.com), who wrote to Tara 17 Nov 2026 offering title-by-title rights information (gmail thread 1a1e91fdd5c78ed0)."
+  "notes": "A.M. Heath author page (fetched 18 Nov) says 'Represented by Anna Webber' and 'We represent Jane on behalf of The Clegg Agency in New York', so the primary/US agency is The Clegg Agency (site not found; no address verified). enquiries@amheath.com is also printed on that author page and is the registry's verified contact. Tara has an open A.M. Heath thread (1a1a5d46b007377d, Florence Rees replied). Schoenbrun is a film director, so screen rights may sit with her US screen reps; not verified. UK publisher Hodder. Not in lists.json (A.M. Heath Autumn 2026 list). Asked via Rebecca Pittel, The Clegg Agency (rebecca@thecleggagency.com), who wrote to Tara 17 Nov 2026 offering title-by-title rights information (gmail thread 1a1e91fdd5c78ed0).",
+  "rights_answer": "not_available: Rebecca Pittel (The Clegg Agency) wrote 18 Nov 2026 the film/TV rights are held by the author for their own use (gmail thread 1a1edd22cdb1cf6b). show_public no."
  },
  {
   "book_id": "alfa-lilja-sigur-ard-ttir",
@@ -450,13 +451,13 @@
   "agent_email": "info@rcwlitagency.com",
   "email_source_url": "https://www.rcwlitagency.com/film-tv",
   "agent_source_url": "https://rcwlitagency.com/clients/murray-andrew-hunter",
-  "screen_contact": "No individual named; RCW Film & TV page (co-agents with screen agencies) - general address",
+  "screen_contact": "Katie Haines, The Agency (London) (per RCW, Lulu Rehman 18 Nov, gmail thread 1a1edd21ac893e47)",
   "screen_email": "info@rcwlitagency.com",
   "screen_source_url": "https://www.rcwlitagency.com/film-tv",
   "contact_page": "https://www.rcwlitagency.com/film-tv",
   "agency_type": "independent",
   "confidence": "high",
-  "notes": "RCW client page (fetched 18 Nov) says Represented by Peter Straus and lists Everything Happens So Much. info@rcwlitagency.com is the registry's verified contact. Peters@rcwlitagency.com appears in an earlier agents file but was sourced from another author's own site, not RCW's, so not used here. InkWell Management lists him as a client (US co-agent, no agent named). UK publisher Orion Fiction. RCW London 2026 catalogue lists per-title film agents; book not in lists.json."
+  "notes": "RCW client page (fetched 18 Nov) says Represented by Peter Straus and lists Everything Happens So Much. info@rcwlitagency.com is the registry's verified contact. Peters@rcwlitagency.com appears in an earlier agents file but was sourced from another author's own site, not RCW's, so not used here. InkWell Management lists him as a client (US co-agent, no agent named). UK publisher Orion Fiction. RCW London 2026 catalogue lists per-title film agents; book not in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on."
  },
  {
   "book_id": "the-patriot-ajay-chowdhury",
