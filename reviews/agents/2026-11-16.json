@@ -314,13 +314,13 @@
   "agent_email": "",
   "email_source_url": "",
   "agent_source_url": "https://www.rcwlitagency.com/authors/findlay-jean/",
-  "screen_contact": "Katie Haines, The Agency (London) (per RCW, Lulu Rehman 18 Nov, gmail thread 1a1edd21ac893e47)",
-  "screen_email": "info@rcwlitagency.com",
-  "screen_source_url": "https://www.rcwlitagency.com/film-tv",
+  "screen_contact": "Katie Haines, The Agency (London), via her assistant Rhys Hayes",
+  "screen_email": "rhayes@theagency.co.uk",
+  "screen_source_url": "https://theagency.co.uk/the-agents/katie-haines/",
   "contact_page": "https://www.rcwlitagency.com/film-tv",
   "agency_type": "independent",
   "confidence": "medium",
-  "notes": "RCW's author page for Jean Findlay names Peter Straus as agent (no email printed); it lists only her biography Chasing Lost Time, not The Bohemian Queen (Scotland Street Press), so representation for this novel is likely but unconfirmed. Screen address reused from the agencies.json registry. Not in RCW's London 2026 guide in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on."
+  "notes": "RCW's author page for Jean Findlay names Peter Straus as agent (no email printed); it lists only her biography Chasing Lost Time, not The Bohemian Queen (Scotland Street Press), so representation for this novel is likely but unconfirmed. Screen address reused from the agencies.json registry. Not in RCW's London 2026 guide in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on. 20 Nov: Sophie Kelleher (gmail thread 1a1f2f82c8f6f3fa) pointed to Katie's assistant Rhys Hayes; rhayes@theagency.co.uk verified on The Agency's Katie Haines page (Cloudflare-protected mailto, decoded). agent_ask for both titles queued to Rhys 20 Nov."
  },
  {
   "book_id": "one-for-sorrow-favel-parrett",
@@ -336,8 +336,8 @@
   "screen_source_url": "gmail thread 1a1c9c54217fb288",
   "contact_page": "https://www.hachette.com.au/rights-and-permissions",
   "agency_type": "independent",
-  "confidence": "low",
-  "notes": "No literary agent found (searches and Hachette author page name none). Hachette Australia publishes One for Sorrow; its rights page (fetched 18 Nov) says film, TV, animation and other dramatic rights queries go to licensing@hachette.com.au. They may not control screen rights if Parrett has an agent. 19 Nov: Hachette Australia (Abbie Bryant, gmail thread 1a1edd22674c90cc) wrote the author retained dramatisation rights and is represented by Jane Novak Literary Agency; agent_ask queued to Alice Cottrell 19 Nov."
+  "confidence": "high",
+  "notes": "No literary agent found (searches and Hachette author page name none). Hachette Australia publishes One for Sorrow; its rights page (fetched 18 Nov) says film, TV, animation and other dramatic rights queries go to licensing@hachette.com.au. They may not control screen rights if Parrett has an agent. 19 Nov: Hachette Australia (Abbie Bryant, gmail thread 1a1edd22674c90cc) wrote the author retained dramatisation rights and is represented by Jane Novak Literary Agency; agent_ask queued to Alice Cottrell 19 Nov. 20 Nov: Alice Cottrell replied (gmail thread 1a1f2f82002f3d07): JNLA holds film/TV rights, available, may show publicly. Recorded available, show_public yes."
  },
  {
   "book_id": "amazons-don-delillo",
@@ -451,13 +451,13 @@
   "agent_email": "info@rcwlitagency.com",
   "email_source_url": "https://www.rcwlitagency.com/film-tv",
   "agent_source_url": "https://rcwlitagency.com/clients/murray-andrew-hunter",
-  "screen_contact": "Katie Haines, The Agency (London) (per RCW, Lulu Rehman 18 Nov, gmail thread 1a1edd21ac893e47)",
-  "screen_email": "info@rcwlitagency.com",
-  "screen_source_url": "https://www.rcwlitagency.com/film-tv",
+  "screen_contact": "Katie Haines, The Agency (London), via her assistant Rhys Hayes",
+  "screen_email": "rhayes@theagency.co.uk",
+  "screen_source_url": "https://theagency.co.uk/the-agents/katie-haines/",
   "contact_page": "https://www.rcwlitagency.com/film-tv",
   "agency_type": "independent",
   "confidence": "high",
-  "notes": "RCW client page (fetched 18 Nov) says Represented by Peter Straus and lists Everything Happens So Much. info@rcwlitagency.com is the registry's verified contact. Peters@rcwlitagency.com appears in an earlier agents file but was sourced from another author's own site, not RCW's, so not used here. InkWell Management lists him as a client (US co-agent, no agent named). UK publisher Orion Fiction. RCW London 2026 catalogue lists per-title film agents; book not in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on."
+  "notes": "RCW client page (fetched 18 Nov) says Represented by Peter Straus and lists Everything Happens So Much. info@rcwlitagency.com is the registry's verified contact. Peters@rcwlitagency.com appears in an earlier agents file but was sourced from another author's own site, not RCW's, so not used here. InkWell Management lists him as a client (US co-agent, no agent named). UK publisher Orion Fiction. RCW London 2026 catalogue lists per-title film agents; book not in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on. 20 Nov: Sophie Kelleher (gmail thread 1a1f2f82c8f6f3fa) pointed to Katie's assistant Rhys Hayes; rhayes@theagency.co.uk verified on The Agency's Katie Haines page (Cloudflare-protected mailto, decoded). agent_ask for both titles queued to Rhys 20 Nov."
  },
  {
   "book_id": "the-patriot-ajay-chowdhury",
