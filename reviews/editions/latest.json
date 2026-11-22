@@ -1,541 +1,453 @@
 {
- "edition_id": "2026-11-16",
- "date_label": "16 November 2026",
- "window": "Reviews published 8 - 15 November 2026",
- "preheader": "34 books reviewed in the British papers this week, fiction and non-fiction, one line each.",
+ "edition_id": "2026-11-23",
+ "date_label": "23 November 2026",
+ "window": "Reviews published 13 - 22 November 2026",
+ "preheader": "29 books reviewed in the British papers this week, fiction and non-fiction, one line each.",
  "books": [
   {
-   "book": "This Cursed Beautiful Land",
-   "author": "Evan Gershkovich",
-   "subject": "Biography & memoir",
-   "line": "The American reporter wrongly jailed in Russia on spying charges tells the story of his ordeal.",
-   "lead": true,
-   "why": "A reporter caught in a spy case and held in Putin's Russia, told from the inside.",
+   "book": "Promise Me, America",
+   "author": "Joe Biden",
+   "subject": "Politics & world affairs",
+   "line": "The former president's memoir of policy wins and battles with Trump, which skirts his failed re-election bid.",
+   "lead": false,
+   "why": "",
    "reviews": [
     {
      "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/13/this-cursed-beautiful-land-by-evan-gershkovich-review-jailed-in-putins-russia",
+     "url": "https://www.theguardian.com/books/2026/nov/21/promise-me-america-joe-biden-memoir-review",
+     "verdict": "mixed"
+    }
+   ],
+   "book_id": "promise-me-america-joe-biden"
+  },
+  {
+   "book": "Belonging",
+   "author": "Sonia Gandhi",
+   "subject": "Biography & memoir",
+   "line": "The Italian-born kingmaker of Indian politics tells her own story after years of silence.",
+   "lead": true,
+   "why": "An Italian outsider who became the power broker of the world's largest democracy.",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/17/belonging-by-sonia-gandhi-review-indias-elder-stateswoman-breaks-her-silence"
+    }
+   ],
+   "book_id": "belonging-sonia-gandhi"
+  },
+  {
+   "book": "Abandoning a Cat",
+   "author": "Haruki Murakami",
+   "subject": "Biography & memoir",
+   "line": "The novelist traces the life of his estranged father, from adoption and abandonment to the horrors of the second world war.",
+   "lead": true,
+   "why": "A famous novelist uncovering his estranged father's wartime past.",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/19/abandoning-a-cat-by-haruki-murakami-review-an-intimate-meditation-on-family-and-memory"
+    }
+   ],
+   "book_id": "abandoning-a-cat-haruki-murakami"
+  },
+  {
+   "book": "The Man Who Broke Reality",
+   "author": "Philip Ball",
+   "subject": "Biography & memoir",
+   "line": "A portrait of the physicist Niels Bohr, explaining his discoveries and the passion that drove them.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/18/the-man-who-broke-reality-by-philip-ball-review-the-inspirational-genius-of-niels-bohr",
      "verdict": "warm"
     }
    ],
-   "book_id": "this-cursed-beautiful-land-evan-gershkovich"
+   "book_id": "the-man-who-broke-reality-philip-ball"
   },
   {
-   "book": "Killing the Pope: John Paul II and the Last Battle of the Cold War",
-   "author": "Serhii Plokhy",
-   "subject": "History",
-   "line": "Was the 1981 shooting of John Paul II a Soviet plot or the act of a lone gunman?",
+   "book": "Disclosure: Unravelling the Spycops Files",
+   "author": "Kate Wilson",
+   "subject": "Espionage",
+   "line": "An account of the undercover policing scandal, in which officers lied in court and deceived women into relationships.",
    "lead": true,
-   "why": "A shooting in St Peter's Square and a Cold War mystery over who was really behind it.",
+   "why": "Undercover officers living double lives inside protest groups, and the women they deceived.",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/florence-sutcliffe-braithwaite/madder-and-madder"
+    }
+   ],
+   "book_id": "disclosure-unravelling-the-spycops-files-kate-wilson"
+  },
+  {
+   "book": "Weimar: Life on the Edge of Catastrophe",
+   "author": "Katja Hoyer",
+   "subject": "History",
+   "line": "A history of Germany's Weimar years, the fragile democracy that ended in Nazism.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/christopher-clark/shouldered-umbrellas"
+    }
+   ],
+   "book_id": "weimar-life-on-the-edge-of-catastrophe-katja-hoyer"
+  },
+  {
+   "book": "Pax Economica: Left-Wing Visions of a Free Trade World",
+   "author": "Marc-William Palen",
+   "subject": "History",
+   "line": "How liberals, radicals, feminists and others on the left have championed free trade since the mid-19th century.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/alexander-zevin/peace-and-goodwill"
+    }
+   ],
+   "book_id": "pax-economica-left-wing-visions-of-a-free-trade-world-marc-william-palen"
+  },
+  {
+   "book": "Becoming Arab: The Formation of Arab Identity in the Medieval Middle East",
+   "author": "Yossef Rapoport",
+   "subject": "History",
+   "line": "How Arab identity took shape in the centuries after the rise of Islam.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/travis-zadeh/how-to-say-daqiq"
+    }
+   ],
+   "book_id": "becoming-arab-the-formation-of-arab-identity-in-the-medieval-middle-east-yossef-"
+  },
+  {
+   "book": "Up in the Air: A History of High-Rise Britain",
+   "author": "Holly Smith",
+   "subject": "History",
+   "line": "The story of the council tower blocks built for working-class tenants across postwar Britain.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/sam-wetherell/fishing-on-the-top-floor"
+    }
+   ],
+   "book_id": "up-in-the-air-a-history-of-high-rise-britain-holly-smith"
+  },
+  {
+   "book": "The Cultural Marxism Conspiracy",
+   "author": "A.J.A. Woods",
+   "subject": "Society & ideas",
+   "line": "Why the right blames the Frankfurt School for the decline of the West, and where the theory comes from.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/richard-seymour/imputations-of-malice"
+    }
+   ],
+   "book_id": "the-cultural-marxism-conspiracy-a-j-a-woods"
+  },
+  {
+   "book": "The Frenchmen: Or, My Life in Theory",
+   "author": "Emily Eakin",
+   "subject": "Society & ideas",
+   "line": "An account of the French theorists who fought each other in public over the biggest ideas of their day.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/hal-foster/we-create-our-own-reality"
+    }
+   ],
+   "book_id": "the-frenchmen-or-my-life-in-theory-emily-eakin"
+  },
+  {
+   "book": "Green Kingdom",
+   "author": "Ben Dark",
+   "subject": "Nature & place",
+   "line": "A gardener's natural history of the plant dynasties that dominate the green world.",
+   "lead": false,
+   "why": "",
    "reviews": [
     {
      "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/10/killing-the-pope-review-the-truth-behind-the-attempted-of-john-paul-ii"
+     "url": "https://www.theguardian.com/books/2026/nov/20/green-kingdom-by-ben-dark-review-a-luscious-natural-history-of-plant-life",
+     "verdict": "warm"
     }
    ],
-   "book_id": "killing-the-pope-john-paul-ii-and-the-last-battle-of-the-cold-war-serhii-plokhy"
+   "book_id": "green-kingdom-ben-dark"
   },
   {
-   "book": "Sleuth Hound: The Case of the Real Sherlock Holmes",
-   "author": "Lindsey Fitzharris",
-   "subject": "Biography & memoir",
-   "line": "The life of Joseph Bell, the surgeon who inspired Sherlock Holmes and pioneered work in forensics and nursing.",
-   "lead": true,
-   "why": "The real man behind Sherlock Holmes, a surgeon with a gift for deduction.",
+   "book": "A British Flora",
+   "author": "Geoffrey Grigson",
+   "subject": "Nature & place",
+   "line": "A poetic guide to British wild plants, full of myth and folklore.",
+   "lead": false,
+   "why": "",
    "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/culture/books/article/british-flora-aarons-beard-yellow-wort-by-geoffrey-grigson-review-gpm2nh27k"
+    }
+   ],
+   "book_id": "a-british-flora-geoffrey-grigson"
+  },
+  {
+   "book": "Ecological Explosions",
+   "author": "Daniel Simberloff",
+   "subject": "Nature & place",
+   "line": "A history of biological invasions and of the science that grew up to study them.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/john-whitfield/snail-eat-snail"
+    }
+   ],
+   "book_id": "ecological-explosions-daniel-simberloff"
+  },
+  {
+   "book": "Frank Capra: A Life",
+   "author": "Sam Wasson",
+   "subject": "Arts & culture",
+   "line": "How the director of It's a Wonderful Life built his name on films of the little man against the system.",
+   "lead": true,
+   "why": "The Hollywood director who sold America its own dream, and the man behind the myth.",
+   "reviews": [
+    {
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/culture/books/article/frank-capra-a-life-sam-wasson-review-jcjnpqjlp"
+    },
     {
      "pub": "Spectator",
-     "url": "https://spectator.com/article/haunted-by-the-ghost-of-sherlock-holmes/"
+     "url": "https://spectator.com/article/the-hypocrisy-of-frank-capras-populism/"
     }
    ],
-   "book_id": "sleuth-hound-the-case-of-the-real-sherlock-holmes-lindsey-fitzharris"
+   "book_id": "frank-capra-a-life-sam-wasson"
   },
   {
-   "book": "Emperor of Nothing: The Making of Larry David",
-   "author": "Blake J Harrison",
+   "book": "Edward Hopper: A Life",
+   "author": "Louis Shadwick",
    "subject": "Arts & culture",
-   "line": "A study of the comic genius of Larry David and how he was made.",
-   "lead": true,
-   "why": "A singular comic genius and the story of how he was made.",
-   "reviews": [
-    {
-     "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/emperor-of-nothing-the-making-of-larry-david-review-lzx3l07sd"
-    }
-   ],
-   "book_id": "emperor-of-nothing-the-making-of-larry-david-blake-j-harrison"
-  },
-  {
-   "book": "Look at Me",
-   "author": "Dustin Hoffman",
-   "subject": "Biography & memoir",
-   "line": "The star of The Graduate and Rain Man looks back on his life and career at 89.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece",
-     "verdict": "mixed"
-    }
-   ],
-   "book_id": "look-at-me-dustin-hoffman"
-  },
-  {
-   "book": "Lust: A Memoir",
-   "author": "Erika Lust",
-   "subject": "Biography & memoir",
-   "line": "Erika Lust's memoir, which raises the question of whether ethical porn is really ethical.",
+   "line": "A life of the painter of urban loneliness, and of the wife he could not have done without.",
    "lead": false,
    "why": "",
    "reviews": [
     {
      "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/lust-pleasure-performance-power-erika-lust-mary-katharine-tramontana-review-hsgrdf95w"
+     "url": "https://www.thetimes.com/culture/books/article/edward-hopper-a-life-louis-shadwick-review-0g5xrskp0"
     }
    ],
-   "book_id": "lust-a-memoir-erika-lust"
+   "book_id": "edward-hopper-a-life-louis-shadwick"
   },
   {
-   "book": "Ten Lives",
-   "author": "Mona Chalabi",
-   "subject": "Society & ideas",
-   "line": "A data journalist lays bare her own finances and those of ten people across the wealth spectrum.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/ten-lives-by-mona-chalabi-review-what-if-we-were-totally-honest-about-our-wealth"
-    }
-   ],
-   "book_id": "ten-lives-mona-chalabi"
-  },
-  {
-   "book": "Diversity Is Not Our Strength",
-   "author": "Katharine Birbalsingh",
-   "subject": "Society & ideas",
-   "line": "Britain's strictest head teacher argues that left and right have both got multiculturalism wrong.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/diversity-not-strength-how-left-right-broke-multiculturalism-katharine-birbalsingh-review-tsjs0z55z"
-    }
-   ],
-   "book_id": "diversity-is-not-our-strength-katharine-birbalsingh"
-  },
-  {
-   "book": "Wine: A Global History",
-   "author": "Kathleen Burk",
-   "subject": "Life & leisure",
-   "line": "Eight thousand years of wine, from ancient ritual and royal excess to prohibition and modern tastes.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/5c515153-7d92-44f5-8fe7-08bb7bf2cbfc"
-    }
-   ],
-   "book_id": "wine-a-global-history-kathleen-burk"
-  },
-  {
-   "book": "How to Begin",
-   "author": "Edmund de Waal",
+   "book": "Clint: The Man and the Movies",
+   "author": "Shawn Levy",
    "subject": "Arts & culture",
-   "line": "The potter and writer on learning ceramics, set beside his grandmother's letters to the poet Rilke.",
+   "line": "A biography of Clint Eastwood and the films that made him.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/6e2a591d-fffa-4155-80a7-b14aa442eb24",
-     "verdict": "warm"
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/david-bromwich/faster-than-you-ll-ever-be"
     }
    ],
-   "book_id": "how-to-begin-edmund-de-waal"
+   "book_id": "clint-the-man-and-the-movies-shawn-levy"
   },
   {
-   "book": "Objects of Desire",
-   "author": "Celia Paul",
-   "subject": "Arts & culture",
-   "line": "The painter's seven weeks in Venice become a meditation on grief, desire, art and solitude.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/f71ea01e-065d-4b1d-b6a5-9d8e336bcbeb",
-     "verdict": "warm"
-    }
-   ],
-   "book_id": "objects-of-desire-celia-paul"
-  },
-  {
-   "book": "Super-Beast: The Mysterious Life of Saki",
-   "author": "Oliver Soden",
+   "book": "A Chorus of Ears: On 'the Voice of the Poem'",
+   "author": "Denise Riley",
    "subject": "Books & writing",
-   "line": "A brisk biography of HH Munro, the Edwardian satirist who wrote as Saki.",
+   "line": "The poet asks what lyric voice is made of and what it is like inside a poet's head.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/b505c3bb-2947-443b-a591-f75f84bc30ef",
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/fiona-green/foxiness"
+    }
+   ],
+   "book_id": "a-chorus-of-ears-on-the-voice-of-the-poem-denise-riley"
+  },
+  {
+   "book": "The Sensualist",
+   "author": "Gary Shteyngart",
+   "subject": "Life & leisure",
+   "line": "The novelist celebrates the small pleasures, from martinis to capybara videos, that bring him joy.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/16/the-sensualist-by-gary-shteyngart-review-a-delectable-romp-through-lifes-pleasures",
      "verdict": "warm"
     }
    ],
-   "book_id": "super-beast-the-mysterious-life-of-saki-oliver-soden"
+   "book_id": "the-sensualist-gary-shteyngart"
   },
   {
-   "book": "Black Earth",
-   "author": "Kate London",
+   "book": "The Taper Man",
+   "author": "Nick Harkaway",
    "subject": "Crime & thriller fiction",
-   "line": "A police procedural set in the coalfields around Stoke.",
-   "lead": true,
-   "why": "A police procedural with a strong sense of place in the Stoke coalfields.",
-   "reviews": [
-    {
-     "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/best-new-crime-novels-books-fiction-read-november-2026-25fsp0lj0"
-    },
-    {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
-    }
-   ],
-   "book_id": "black-earth-kate-london"
-  },
-  {
-   "book": "The Hollow",
-   "author": "Michael Connelly",
-   "subject": "Crime & thriller fiction",
-   "line": "The latest crime novel from Michael Connelly.",
+   "line": "A new thriller from Nick Harkaway.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/20/the-best-recent-and-thrillers-review-roundup"
     }
    ],
-   "book_id": "the-hollow-michael-connelly"
+   "book_id": "the-taper-man-nick-harkaway"
   },
   {
-   "book": "Fall from Grace",
-   "author": "Leye Adenle",
+   "book": "Watch the Quiet Snow",
+   "author": "Mick Herron",
    "subject": "Crime & thriller fiction",
-   "line": "A new crime novel from Leye Adenle.",
+   "line": "A new thriller from Mick Herron.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/20/the-best-recent-and-thrillers-review-roundup"
     }
    ],
-   "book_id": "fall-from-grace-leye-adenle"
+   "book_id": "watch-the-quiet-snow-mick-herron"
   },
   {
-   "book": "The Patriot",
-   "author": "Ajay Chowdhury",
+   "book": "Revenge Plot",
+   "author": "Stephanie Wrobel",
    "subject": "Crime & thriller fiction",
-   "line": "A new crime novel from Ajay Chowdhury.",
+   "line": "A new thriller from Stephanie Wrobel.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/20/the-best-recent-and-thrillers-review-roundup"
     }
    ],
-   "book_id": "the-patriot-ajay-chowdhury"
+   "book_id": "revenge-plot-stephanie-wrobel"
   },
   {
-   "book": "Natural Order",
-   "author": "Matthew Aldrich",
+   "book": "The Voices of the Dead",
+   "author": "Nicola Upson",
    "subject": "Crime & thriller fiction",
-   "line": "A new crime novel from Matthew Aldrich.",
+   "line": "A new crime novel from Nicola Upson.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/20/the-best-recent-and-thrillers-review-roundup"
     }
    ],
-   "book_id": "natural-order-matthew-aldrich"
+   "book_id": "the-voices-of-the-dead-nicola-upson"
   },
   {
-   "book": "A Knock at the Door",
-   "author": "Louise Candlish",
-   "subject": "Crime & thriller fiction",
-   "line": "A new thriller from Louise Candlish.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
-    }
-   ],
-   "book_id": "a-knock-at-the-door-louise-candlish"
-  },
-  {
-   "book": "The Bells of Fortune",
-   "author": "Leonora Nattrass",
-   "subject": "Crime & thriller fiction",
-   "line": "A new crime novel from Leonora Nattrass.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
-    }
-   ],
-   "book_id": "the-bells-of-fortune-leonora-nattrass"
-  },
-  {
-   "book": "The Fresh Cut",
-   "author": "Antti Tuomainen",
-   "subject": "Crime & thriller fiction",
-   "line": "A new crime novel from Antti Tuomainen.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Literary Review",
-     "url": "https://literaryreview.co.uk/november-2026-crime-round-up"
-    }
-   ],
-   "book_id": "the-fresh-cut-antti-tuomainen"
-  },
-  {
-   "book": "Arendal",
-   "author": "Karl Ove Knausgaard",
+   "book": "Stories",
+   "author": "Annie Proulx",
    "subject": "Literary fiction",
-   "line": "A car breaks down on a frozen road and a mid-life marriage crisis comes to a head, in the fifth Morning Star novel.",
+   "line": "A collection of short stories from the author of Brokeback Mountain.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/e9e4d259-aaa3-4b64-bc65-1046a1f68ec0",
-     "verdict": "warm"
+     "pub": "Times/Sunday Times",
+     "url": "https://www.thetimes.com/culture/books/article/stories-annie-proulx-review-wq30qsntb"
     }
    ],
-   "book_id": "arendal-karl-ove-knausgaard"
+   "book_id": "stories-annie-proulx"
   },
   {
-   "book": "The Man With Many Names",
-   "author": "Georgi Gospodinov",
+   "book": "The Brightness",
+   "author": "Chad Harbach",
    "subject": "Literary fiction",
-   "line": "Forty short stories from the Bulgarian winner of the International Booker.",
+   "line": "Fifteen years on, a follow-up to The Art of Fielding about female friendship and the mess of early adulthood.",
    "lead": false,
    "why": "",
    "reviews": [
     {
      "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/the-man-with-many-names-by-georgi-gospodinov-review-playful-and-profound-tales-from-bulgaria",
-     "verdict": "warm"
+     "url": "https://www.theguardian.com/books/2026/nov/17/the-brightness-by-chad-harbach-review-an-ambitious-sequel-to-the-art-of-fielding"
     }
    ],
-   "book_id": "the-man-with-many-names-georgi-gospodinov"
+   "book_id": "the-brightness-chad-harbach"
   },
   {
-   "book": "Two Women",
-   "author": "Jacqueline Rose",
+   "book": "The Anniversary",
+   "author": "Andrea Bajani",
    "subject": "Literary fiction",
-   "line": "A fictional biography linking the author's sister, Gillian Rose, with the philosopher Edith Stein in alternating chapters.",
+   "line": "A short Italian novel, translated by Geoffrey Brock, about family and its hold on the self.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/09/two-women-by-jacqueline-rose-review-a-memorial-to-gillian-rose",
-     "verdict": "warm"
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/tim-parks/gnawing-at-the-table"
     }
    ],
-   "book_id": "two-women-jacqueline-rose"
+   "book_id": "the-anniversary-andrea-bajani"
   },
   {
-   "book": "Eisen",
-   "author": "Guzel Yakhina",
+   "book": "Gaining Ground",
+   "author": "Joan Barfoot",
+   "subject": "Literary fiction",
+   "line": "A reissued feminist novel imagining a sparer life for a woman outside the nuclear family.",
+   "lead": false,
+   "why": "",
+   "reviews": [
+    {
+     "pub": "LRB",
+     "url": "https://www.lrb.co.uk/the-paper/v48/n21/harriet-baker/the-magic-number"
+    }
+   ],
+   "book_id": "gaining-ground-joan-barfoot"
+  },
+  {
+   "book": "Gjak",
+   "author": "Dimosthenis Papamarkos",
    "subject": "Historical fiction",
-   "line": "A novel of Sergei Eisenstein's life, of art, censorship and inner torment in Soviet Russia.",
+   "line": "Linked stories of ambushes and vendettas in the bitter Greco-Turkish war of 1919-22, newly translated.",
    "lead": true,
-   "why": "A great Soviet film-maker's life of art, censorship and inner torment.",
-   "reviews": [
-    {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/52b69e5d-09f5-4ec4-9dec-e5e8681d8a07"
-    }
-   ],
-   "book_id": "eisen-guzel-yakhina"
-  },
-  {
-   "book": "The Bohemian Queen",
-   "author": "Jean Findlay",
-   "subject": "Historical fiction",
-   "line": "A novel about the shrewd sister of Charles I.",
-   "lead": true,
-   "why": "A shrewd royal woman at the heart of Stuart history.",
-   "reviews": [
-    {
-     "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/four-historical-novels-to-read-this-november-nwqg6llqr"
-    }
-   ],
-   "book_id": "the-bohemian-queen-jean-findlay"
-  },
-  {
-   "book": "One for Sorrow",
-   "author": "Favel Parrett",
-   "subject": "Historical fiction",
-   "line": "A wartime story of betrayal and desire that builds to a devastating climax.",
-   "lead": false,
-   "why": "",
+   "why": "Ambushes and blood feuds in a little-known war, told through linked lives.",
    "reviews": [
     {
      "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/13/one-for-sorrow-favel-parrett-new-novel-review",
+     "url": "https://www.theguardian.com/books/2026/nov/18/gjak-by-dimosthenis-papamarkos-review-sensational-tales-of-wartime-greek-struggle",
      "verdict": "warm"
     }
    ],
-   "book_id": "one-for-sorrow-favel-parrett"
+   "book_id": "gjak-dimosthenis-papamarkos"
   },
   {
-   "book": "Lessons in Harmony",
-   "author": "Jonathan Coe",
-   "subject": "Historical fiction",
-   "line": "Coe's novel built on the real friendship between Ralph Vaughan Williams and Maurice Ravel.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/lessons-in-harmony-jonathan-coe-review-c5tpc6c3s"
-    }
-   ],
-   "book_id": "lessons-in-harmony-jonathan-coe"
-  },
-  {
-   "book": "Amazons",
-   "author": "Don DeLillo",
+   "book": "Michael",
+   "author": "Bob Mortimer",
    "subject": "Other fiction",
-   "line": "DeLillo's 1980 sex comedy about a woman ice hockey player, first written under a pen name, now reissued.",
+   "line": "The comedian's novel about a troubled teenager in 1970s Middlesbrough.",
    "lead": false,
    "why": "",
    "reviews": [
     {
-     "pub": "FT",
-     "url": "https://www.ft.com/content/8d6e605d-d395-4d07-9905-17a8b826fe02"
-    },
-    {
-     "pub": "Times/Sunday Times",
-     "url": "https://www.thetimes.com/culture/books/article/amazons-intimate-memoir-first-woman-ever-play-national-hockey-league-cleo-birdwell-review-7smm5vjmh",
+     "pub": "Guardian",
+     "url": "https://www.theguardian.com/books/2026/nov/16/michael-by-bob-mortimer-review-heartwarming-quirkiness-from-the-comedian",
      "verdict": "warm"
     }
    ],
-   "book_id": "amazons-don-delillo"
-  },
-  {
-   "book": "Public Access Afterworld",
-   "author": "Jane Schoenbrun",
-   "subject": "Other fiction",
-   "line": "The film director's first novel, a wry horror story about the dark world behind our screens.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/12/public-access-afterworld-by-jane-schoenbrun-review-horror-in-the-tv-static",
-     "verdict": "warm"
-    }
-   ],
-   "book_id": "public-access-afterworld-jane-schoenbrun"
-  },
-  {
-   "book": "Alfa",
-   "author": "Lilja Sigurðardóttir",
-   "subject": "Other fiction",
-   "line": "A murder that should be impossible shakes faith in the all-seeing system that runs a near-future Iceland.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
-     "verdict": "warm"
-    }
-   ],
-   "book_id": "alfa-lilja-sigur-ard-ttir"
-  },
-  {
-   "book": "The Lost Spectacular",
-   "author": "Zoé Duhaime",
-   "subject": "Other fiction",
-   "line": "Two former friends wage a magical battle over a bookshop in a city much like Montreal.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
-     "verdict": "warm"
-    }
-   ],
-   "book_id": "the-lost-spectacular-zo-duhaime"
-  },
-  {
-   "book": "Look What the Cat Dragged In",
-   "author": "Jason Rekulak",
-   "subject": "Other fiction",
-   "line": "An illustrated horror novel about a grieving comic-book artist and the strange new cat she fosters.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
-     "verdict": "warm"
-    }
-   ],
-   "book_id": "look-what-the-cat-dragged-in-jason-rekulak"
-  },
-  {
-   "book": "China +100: Stories from a Century After the Outbreak",
-   "author": "Xueting C Ni (editor)",
-   "subject": "Other fiction",
-   "line": "Eleven Chinese writers imagine their country a hundred years after the first Covid outbreak.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup"
-    }
-   ],
-   "book_id": "china-100-stories-from-a-century-after-the-outbreak-xueting-c-ni-editor"
-  },
-  {
-   "book": "Everything Happens So Much",
-   "author": "Andrew H Murray",
-   "subject": "Other fiction",
-   "line": "A comic fantasy about a woman hooked on watching happier versions of her own life.",
-   "lead": false,
-   "why": "",
-   "reviews": [
-    {
-     "pub": "Guardian",
-     "url": "https://www.theguardian.com/books/2026/nov/11/the-best-recent-science-fiction-fantasy-and-horror-review-roundup",
-     "verdict": "mixed"
-    }
-   ],
-   "book_id": "everything-happens-so-much-andrew-h-murray"
+   "book_id": "michael-bob-mortimer"
   }
  ]
 }
