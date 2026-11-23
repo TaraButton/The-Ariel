@@ -11177,5 +11177,193 @@
    }
   ],
   "last_refresh_asked": ""
+ },
+ {
+  "agency": "FRA (Futerman, Rose & Associates)",
+  "domain": "futermanrose.co.uk",
+  "contact_email": "guy@futermanrose.co.uk",
+  "contact_quote": "guy@futermanrose.co.uk printed on https://www.futermanrose.co.uk/filmandtvrights.html and in the catalogue",
+  "received": "2026-11-16",
+  "source": "https://www.futermanrose.co.uk/filmandtvrights.html (Guy Rose sent it 16 Nov 2026); loaded 23 Nov 2026",
+  "file": "http://www.futermanrose.co.uk/FRA%20Rights%20Catalogue.pdf",
+  "guide_date": "undated (site thumbnail 'FRA rights catalogue 0925', c. Sept 2025)",
+  "note": "Some author/status pairings in the PDF text were column-jumbled and inferred from layout; option holder names for the Mendelson titles left out for that reason. Gordon Thomas (50+ works), Mendelson and Howe fuller lists available on request.",
+  "titles": [
+   {
+    "book": "The Kid on Slapton Beach",
+    "author": "Felicity Fair Thompson",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Kisses on a Postcard",
+    "author": "Terence Frisby",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "In the Hands of the Taliban",
+    "author": "Yvonne Ridley",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "The Walden of Bermondsey Series",
+    "author": "Peter Murphy",
+    "status": "available",
+    "note": "Rights are available to the complete series"
+   },
+   {
+    "book": "Seville",
+    "author": "Paul A. Mendelson",
+    "status": "available",
+    "note": "Previously under option, the rights to this title are now wholly available."
+   },
+   {
+    "book": "In the Matter of Isabel",
+    "author": "Paul A. Mendelson",
+    "status": "available",
+    "note": "Previously under option, the rights to this title are now wholly available."
+   },
+   {
+    "book": "The Forever Moment",
+    "author": "Paul A. Mendelson",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Must Have GSOH",
+    "author": "Paul A. Mendelson",
+    "status": "available",
+    "note": "Previously under option, the rights to this title are now wholly available."
+   },
+   {
+    "book": "Henry the Half-Time Hero",
+    "author": "Paul A. Mendelson",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "The Kelly Ann's Diary Series",
+    "author": "Liz Rettig",
+    "status": "available",
+    "note": "Rights are currently available to the complete series"
+   },
+   {
+    "book": "Diary of a C-List Celeb",
+    "author": "Paul Hendy",
+    "status": "available",
+    "note": "Previously under option with the BBC, rights to this series are now wholly available."
+   },
+   {
+    "book": "Who Killed Simon Peters?",
+    "author": "Paul Hendy",
+    "status": "available",
+    "note": "Previously under option with the BBC, rights to this series are now wholly available."
+   },
+   {
+    "book": "The Geraldine Steel Series",
+    "author": "Leigh Russell",
+    "status": "available",
+    "note": "Previously under option with Avalon, the rights to this series are now wholly available."
+   },
+   {
+    "book": "The Ben Schroeder Series",
+    "author": "Peter Murphy",
+    "status": "available",
+    "note": "Rights are available to the complete series."
+   },
+   {
+    "book": "Pawn's Gambit",
+    "author": "Harry Armstrong (Sir Derek Morris)",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Myra, Beyond Saddleworth",
+    "author": "Jean Rafferty",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Dubai PI",
+    "author": "Peter Anthony",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "The Devil's Tune",
+    "author": "Iain Duncan Smith",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "The Delivery Girl",
+    "author": "Tony McAndrew",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Death and Mr Pickwick",
+    "author": "Stephen Jarvis",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Shipwreck: The Strange Fate of The Morro Castle",
+    "author": "Gordon Thomas & Max Morgan-Witts",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Gideon's Spies: The Secret History of the Mossad",
+    "author": "Gordon Thomas",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Enola Gay: Mission to Hiroshima",
+    "author": "Gordon Thomas & Max Morgan-Witts",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Secret Wars: One Hundred Years of British Intelligence Inside MI5 and MI6",
+    "author": "Gordon Thomas",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Pontiff: The Vatican, the KGB, and the Year of the Three Popes",
+    "author": "Gordon Thomas & Max Morgan-Witts",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "The Day The Bubble Burst",
+    "author": "Gordon Thomas & Max Morgan-Witts",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   },
+   {
+    "book": "Mata Hari: The True Story",
+    "author": "Russell Warren Howe",
+    "status": "listed",
+    "note": "Rights for this work were optioned several times by Robert Altman (historic; current status not stated)"
+   },
+   {
+    "book": "Sleeping with the FBI",
+    "author": "Russell Warren Howe",
+    "status": "available",
+    "note": "Previously under option with Fugitive Media, the rights to this title are now wholly available."
+   },
+   {
+    "book": "The Hunt for Tokyo Rose",
+    "author": "Russell Warren Howe",
+    "status": "listed",
+    "note": "In the catalogue (header: 'Select book publications with film/TV rights available') but no title-level rights line."
+   }
+  ],
+  "last_refresh_asked": ""
  }
 ]

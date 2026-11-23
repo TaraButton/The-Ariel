@@ -320,7 +320,7 @@
   "contact_page": "https://www.rcwlitagency.com/film-tv",
   "agency_type": "independent",
   "confidence": "medium",
-  "notes": "RCW's author page for Jean Findlay names Peter Straus as agent (no email printed); it lists only her biography Chasing Lost Time, not The Bohemian Queen (Scotland Street Press), so representation for this novel is likely but unconfirmed. Screen address reused from the agencies.json registry. Not in RCW's London 2026 guide in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on. 20 Nov: Sophie Kelleher (gmail thread 1a1f2f82c8f6f3fa) pointed to Katie's assistant Rhys Hayes; rhayes@theagency.co.uk verified on The Agency's Katie Haines page (Cloudflare-protected mailto, decoded). agent_ask for both titles queued to Rhys 20 Nov."
+  "notes": "RCW's author page for Jean Findlay names Peter Straus as agent (no email printed); it lists only her biography Chasing Lost Time, not The Bohemian Queen (Scotland Street Press), so representation for this novel is likely but unconfirmed. Screen address reused from the agencies.json registry. Not in RCW's London 2026 guide in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on. 20 Nov: Sophie Kelleher (gmail thread 1a1f2f82c8f6f3fa) pointed to Katie's assistant Rhys Hayes; rhayes@theagency.co.uk verified on The Agency's Katie Haines page (Cloudflare-protected mailto, decoded). agent_ask for both titles queued to Rhys 20 Nov. 20 Nov: Rhys Hayes (gmail thread 1a1f810dcdc76403): Jean Findlay is NOT represented by Katie Haines; he has asked around The Agency and suggests rechecking with RCW. Status still unknown; flagged to Tara 23 Nov."
  },
  {
   "book_id": "one-for-sorrow-favel-parrett",
@@ -389,7 +389,7 @@
   "contact_page": "https://liljawriter.com/",
   "agency_type": "independent",
   "confidence": "medium",
-  "notes": "Author's own site (fetched 18 Nov) says literary rights and film rights are handled by Federico Ambrosini at the Salomonsson Agency; no email on her site. Agency address reused from registry (verified earlier on the Salomonsson site). No personal email for Ambrosini found. Tara emailed info@salomonssonagency.com on 9 Nov about Kill Shot (thread 1a1bfd8b7bec84e9), so within 14 days: mention Alfa briefly in a new thread. Her Reykjavik Noir trilogy was optioned by Glassriver (Dec 2024); Alfa is separate. UK publisher Simon & Schuster UK. Not in lists.json."
+  "notes": "Author's own site (fetched 18 Nov) says literary rights and film rights are handled by Federico Ambrosini at the Salomonsson Agency; no email on her site. Agency address reused from registry (verified earlier on the Salomonsson site). No personal email for Ambrosini found. Tara emailed info@salomonssonagency.com on 9 Nov about Kill Shot (thread 1a1bfd8b7bec84e9), so within 14 days: mention Alfa briefly in a new thread. Her Reykjavik Noir trilogy was optioned by Glassriver (Dec 2024); Alfa is separate. UK publisher Simon & Schuster UK. Not in lists.json. 20 Nov: Felicia Svedhage, agent assistant (gmail thread 1a1f81ac7437eafc): agency is holding off submitting this title for TV/film for the time being. Recorded not_available 23 Nov."
  },
  {
   "book_id": "the-lost-spectacular-zo-duhaime",
@@ -440,7 +440,7 @@
   "contact_page": "https://commapress.co.uk/contact",
   "agency_type": "publisher_fallback",
   "confidence": "medium",
-  "notes": "Anthology in Comma Press's +100 series; Comma contact page (fetched 18 Nov) prints ra.page@commapress.co.uk (shown as ra.page[at]commapress.co.uk) for anyone unsure whom to contact. Screen rights in individual stories likely sit with each contributor; ask Comma to direct. Comma warns of impersonators using similar addresses. Comma not in rights_sources.json; nothing in Gmail."
+  "notes": "Anthology in Comma Press's +100 series; Comma contact page (fetched 18 Nov) prints ra.page@commapress.co.uk (shown as ra.page[at]commapress.co.uk) for anyone unsure whom to contact. Screen rights in individual stories likely sit with each contributor; ask Comma to direct. Comma warns of impersonators using similar addresses. Comma not in rights_sources.json; nothing in Gmail. 20 Nov: Ra Page (Comma Press, wrote from commapress@yahoo.co.uk, gmail thread 1a1edd237f58c402): rights available, Comma looks after them, may be listed. Recorded available, show_public yes, 23 Nov."
  },
  {
   "book_id": "everything-happens-so-much-andrew-h-murray",
@@ -457,7 +457,7 @@
   "contact_page": "https://www.rcwlitagency.com/film-tv",
   "agency_type": "independent",
   "confidence": "high",
-  "notes": "RCW client page (fetched 18 Nov) says Represented by Peter Straus and lists Everything Happens So Much. info@rcwlitagency.com is the registry's verified contact. Peters@rcwlitagency.com appears in an earlier agents file but was sourced from another author's own site, not RCW's, so not used here. InkWell Management lists him as a client (US co-agent, no agent named). UK publisher Orion Fiction. RCW London 2026 catalogue lists per-title film agents; book not in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on. 20 Nov: Sophie Kelleher (gmail thread 1a1f2f82c8f6f3fa) pointed to Katie's assistant Rhys Hayes; rhayes@theagency.co.uk verified on The Agency's Katie Haines page (Cloudflare-protected mailto, decoded). agent_ask for both titles queued to Rhys 20 Nov."
+  "notes": "RCW client page (fetched 18 Nov) says Represented by Peter Straus and lists Everything Happens So Much. info@rcwlitagency.com is the registry's verified contact. Peters@rcwlitagency.com appears in an earlier agents file but was sourced from another author's own site, not RCW's, so not used here. InkWell Management lists him as a client (US co-agent, no agent named). UK publisher Orion Fiction. RCW London 2026 catalogue lists per-title film agents; book not in lists.json. 19 Nov: RCW said to contact Katie Haines at The Agency; no verified address for Katie, so asked via Sophie Kelleher (skelleher@theagency.co.uk, wrote to Tara 10 Nov) to pass on. 20 Nov: Sophie Kelleher (gmail thread 1a1f2f82c8f6f3fa) pointed to Katie's assistant Rhys Hayes; rhayes@theagency.co.uk verified on The Agency's Katie Haines page (Cloudflare-protected mailto, decoded). agent_ask for both titles queued to Rhys 20 Nov. 20 Nov: Rhys Hayes (gmail thread 1a1f810dcdc76403): Katie Haines represents Andrew Hunter Murray; rights to this title not available. Recorded 23 Nov."
  },
  {
   "book_id": "the-patriot-ajay-chowdhury",

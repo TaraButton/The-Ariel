@@ -1628,7 +1628,8 @@
   "book_ids": [
    "hot-type-jeff-jarvis"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "note_contact": "19 Nov 2026: David Miller (david.miller@garamondagency.com, cc Lisa Adams) asked Tara to get back in touch in the new year (gmail thread 1a1f36be2758b4e1). No guide asks before January 2027."
  },
  {
   "agency": "Writers House",
@@ -1837,7 +1838,8 @@
   "rights_guide": {
    "url": "https://www.futermanrose.co.uk/filmandtvrights.html",
    "kind": "film/TV",
-   "date": "sent by Guy Rose 16 Nov 2026; not yet loaded into lists.json (page fetch not permitted in the 17 Nov run)"
+   "date": "Undated catalogue (c. Sept 2025), sent by Guy Rose 16 Nov 2026; loaded into lists.json 23 Nov 2026",
+   "catalogue_pdf": "http://www.futermanrose.co.uk/FRA%20Rights%20Catalogue.pdf"
   },
   "book_ids": [],
   "guide_ask_sent": ""
@@ -2034,9 +2036,9 @@
   "aliases": [],
   "domain": "commapress.co.uk",
   "film_tv_contact": {
-   "name": "",
-   "email": "",
-   "source_url": ""
+   "name": "Ra Page (Comma Press looks after the screen rights to its anthologies, per his reply)",
+   "email": "ra.page@commapress.co.uk",
+   "source_url": "https://commapress.co.uk/contact"
   },
   "general_email": {
    "email": "ra.page@commapress.co.uk",
@@ -2050,7 +2052,8 @@
   "book_ids": [
    "china-100-stories-from-a-century-after-the-outbreak-xueting-c-ni-editor"
   ],
-  "guide_ask_sent": ""
+  "guide_ask_sent": "",
+  "note": "20 Nov 2026: Ra Page wrote from commapress@yahoo.co.uk (gmail thread 1a1edd237f58c402): China +100 available, may be listed; will send catalogue of forthcoming titles. agent_thanks queued 23 Nov."
  },
  {
   "agency": "The Clegg Agency",
