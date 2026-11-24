@@ -11365,5 +11365,205 @@
    }
   ],
   "last_refresh_asked": ""
+ },
+ {
+  "agency": "Comma Press",
+  "domain": "commapress.co.uk",
+  "contact_email": "ra.page@commapress.co.uk",
+  "received": "2026-11-23",
+  "source": "gmail thread 1a20906810f51a43 (George Forster, Marketing and Publicity Officer, from commapublishing@yahoo.com, cc rights@)",
+  "file": "Gmail attachment 'COMMA PRESS 2027 HIGHLIGHTS.pdf' in thread 1a20906810f51a43",
+  "guide_date": "Catalogue 2026/27",
+  "note": "Sales catalogue of forthcoming titles, not a film/TV rights guide: it has no screen-rights statements, so no title is marked available from it. Ra Page said earlier (thread 1a1edd237f58c402) that Comma looks after the screen rights to its anthologies; ask Comma per title.",
+  "titles": [
+   {
+    "book": "Safe as Houses",
+    "author": "Christine Poulson",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Kahramana",
+    "author": "Anoud",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Firmament: Stories from the New Bounds of Space",
+    "author": "ed. Teresa Anderson",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Under the Neem Tree",
+    "author": "Rania Mamoun",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Warning Signs",
+    "author": "Bidisha",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Dark Nature",
+    "author": "Sanjida Kay",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "The Buried",
+    "author": "Hassan Blasim",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Voices of Resistance: Diaries of Genocide (expanded edition)",
+    "author": "",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Extinction Level: Stories from the Anthropocene",
+    "author": "ed. Chris Hassall",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "The Butcher's Apron: Stories of Empire",
+    "author": "ed. Noor Hemani",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   },
+   {
+    "book": "Mona the Animal and Other Stories",
+    "author": "lisa luxx",
+    "status": "listed",
+    "note": "Forthcoming-titles catalogue; no film/TV rights wording, so not an answer on screen rights."
+   }
+  ],
+  "last_refresh_asked": ""
+ },
+ {
+  "agency": "Coombs Moylett Maclean Literary Agency (CMM)",
+  "domain": "cmm.agency",
+  "contact_email": "info@cmm.agency",
+  "received": "2026-11-24",
+  "source": "https://www.melleragency.com/uploaded/documents/cmm-rightsguide-london2026.pdf (published guide in agencies.json; loaded 24 Nov 2026)",
+  "file": "https://www.melleragency.com/uploaded/documents/cmm-rightsguide-london2026.pdf",
+  "guide_date": "March 2026 (London 2026)",
+  "note": "General rights catalogue organised by author, with a 'Rights Available' box per author; titles here are the ones each page names. Authors whose box has no film/TV line are left out. Film & TV co-agent per cmm.agency: Sheila David, Catapult Rights (no address printed).",
+  "titles": [
+   {
+    "book": "The Echo Left Behind",
+    "author": "Amanda Lees",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('TV and Film'); page also lists her WWII novels"
+   },
+   {
+    "book": "The Dead Room (and backlist incl. Dandy Gilver series)",
+    "author": "Catriona McPherson",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('TV and Film')"
+   },
+   {
+    "book": "Left Behind",
+    "author": "Joanna Dodd",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('TV and Film')"
+   },
+   {
+    "book": "Fall From Grace (Hallelujah trilogy)",
+    "author": "Leye Adenle",
+    "status": "available",
+    "note": "'Film & TV rights to the Hallelujah trilogy available'"
+   },
+   {
+    "book": "Easy Motion Tourist (Amaka series)",
+    "author": "Leye Adenle",
+    "status": "optioned",
+    "note": "'currently under TV option'"
+   },
+   {
+    "book": "The Beautiful Side of the Moon",
+    "author": "Leye Adenle",
+    "status": "optioned",
+    "note": "'has also been optioned for screen'"
+   },
+   {
+    "book": "Lisa Hall titles with Joffe Books",
+    "author": "Lisa Hall",
+    "status": "available",
+    "note": "'Joffe Books WEL plus German Rights ... TV and Film rights available'"
+   },
+   {
+    "book": "Vengeance Street; Being Dead is Easy (Bloodhound series)",
+    "author": "Louise Sharland",
+    "status": "available",
+    "note": "'Film & TV - on Bloodhound books'"
+   },
+   {
+    "book": "Witch Hunt",
+    "author": "Richard O'Rawe (with Bernadette O'Rawe)",
+    "status": "available",
+    "note": "'Severn House - WEL Rights, translation rights & Film & TV rights available The Witch Hunt'"
+   },
+   {
+    "book": "Northern Heist",
+    "author": "Richard O'Rawe",
+    "status": "optioned",
+    "note": "'had its TV and film rights optioned'"
+   },
+   {
+    "book": "Wife of the Accused (and earlier titles)",
+    "author": "Samantha King",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('TV and Film')"
+   },
+   {
+    "book": "The Homecoming; The Projectionist's Daughter",
+    "author": "Zoë Apostolides",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('Film & Television')"
+   },
+   {
+    "book": "Helen Batten titles (Sisters of the East End, The Scarlet Sisters, The Soldene Sisters)",
+    "author": "Helen Batten",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('Translation, Film & TV rights')"
+   },
+   {
+    "book": "The Padre",
+    "author": "Jennifer O'Leary",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('TV and Film')"
+   },
+   {
+    "book": "Malachi O'Doherty titles (Merrion Press / Faber)",
+    "author": "Malachi O'Doherty",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('Film & TV'); publisher column/rights pairing read from layout"
+   },
+   {
+    "book": "You're Not Broken",
+    "author": "Dr Sarah Woodhouse",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('Translation Film & TV')"
+   },
+   {
+    "book": "Introversion Uncovered",
+    "author": "Sophie Morris",
+    "status": "available",
+    "note": "Film & TV listed under 'Rights Available' on the author's page ('TV and Film')"
+   },
+   {
+    "book": "Lovejoy novels and standalones",
+    "author": "Jonathan Gash",
+    "status": "listed",
+    "note": "'All rights to the Lovejoy novels and his stand alone novels are available' (no separate film/TV line)"
+   }
+  ],
+  "last_refresh_asked": ""
  }
 ]
