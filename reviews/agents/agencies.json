@@ -25,7 +25,9 @@
    "date": "Embedded Airtable frontlist catalogue on https://www.aevitascreative.com/foreign; no season."
   },
   "book_ids": [
-   "felled-andrew-hankinson"
+   "felled-andrew-hankinson",
+   "weimar-life-on-the-edge-of-catastrophe-katja-hoyer",
+   "the-frenchmen-or-my-life-in-theory-emily-eakin"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "UK office lists History & Narrative Non-Fiction, Business & Politics, Memoir & Biography, Science & Technology."
@@ -263,7 +265,8 @@
    "this-cursed-beautiful-land-evan-gershkovich",
    "yakuza-a-400-year-history-of-the-japanese-underworld-andrew-rankin",
    "the-bohemian-queen-jean-findlay",
-   "everything-happens-so-much-andrew-h-murray"
+   "everything-happens-so-much-andrew-h-murray",
+   "a-chorus-of-ears-on-the-voice-of-the-poem-denise-riley"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "Film & TV page says it partners with screen agencies (The Agency, M42, United Agents, CAA etc.); site does not summarise non-fiction strengths."
@@ -327,7 +330,8 @@
   "book_ids": [
    "the-bookshop-andrew-pettegree",
    "the-last-invasion-of-england-arthur-der-weduwen",
-   "the-season-helen-garner"
+   "the-season-helen-garner",
+   "clint-the-man-and-the-movies-shawn-levy"
   ],
   "guide_ask_sent": ""
  },
@@ -356,7 +360,8 @@
   "book_ids": [
    "attention-seeking-behaviour-aea-varfis-van-warmelo",
    "the-age-of-confiscation-nicholas-mulder",
-   "ten-lives-mona-chalabi"
+   "ten-lives-mona-chalabi",
+   "the-man-who-broke-reality-philip-ball"
   ],
   "guide_ask_sent": "",
   "nonfiction_note": "LBF 2026 guide has a Non-Fiction section from p.34."
@@ -584,7 +589,10 @@
   "checked": "2026-11-04",
   "book_ids": [
    "out-of-chaos-a-global-history-of-the-nation-state-jon-wilson",
-   "songs-from-the-firefront-tim-winton"
+   "songs-from-the-firefront-tim-winton",
+   "the-voices-of-the-dead-nicola-upson",
+   "a-british-flora-geoffrey-grigson",
+   "watch-the-quiet-snow-mick-herron"
   ],
   "guide_ask_sent": ""
  },
@@ -1017,7 +1025,10 @@
   },
   "nonfiction_note": "Mainly fiction; has a non-fiction category. Note emails use .com while site is .co.uk (as printed).",
   "checked": "2026-11-04",
-  "book_ids": [],
+  "book_ids": [
+   "revenge-plot-stephanie-wrobel",
+   "edward-hopper-a-life-louis-shadwick"
+  ],
   "guide_ask_sent": ""
  },
  {
@@ -1311,7 +1322,8 @@
   "checked": "2026-11-04",
   "book_ids": [
    "blood-on-the-thames-murder-money-and-the-making-of-the-modern-detective-thomas-m",
-   "shakespeare-at-thirty-rory-loughnane"
+   "shakespeare-at-thirty-rory-loughnane",
+   "the-taper-man-nick-harkaway"
   ],
   "guide_ask_sent": ""
  },
@@ -1492,7 +1504,9 @@
   "book_ids": [
    "lords-of-serendipity-randy-boyagoda",
    "the-vivisectors-missouri-williams",
-   "natural-order-matthew-aldrich"
+   "natural-order-matthew-aldrich",
+   "promise-me-america-joe-biden",
+   "abandoning-a-cat-haruki-murakami"
   ],
   "guide_ask_sent": ""
  },
@@ -1814,7 +1828,9 @@
    "date": ""
   },
   "book_ids": [
-   "cold-war-city-david-e-barclay"
+   "cold-war-city-david-e-barclay",
+   "pax-economica-left-wing-visions-of-a-free-trade-world-marc-william-palen",
+   "becoming-arab-the-formation-of-arab-identity-in-the-medieval-middle-east-yossef-"
   ],
   "guide_ask_sent": "2026-11-10"
  },
@@ -2077,5 +2093,305 @@
   ],
   "guide_ask_sent": "",
   "first_answer": "2026-11-18 Public Access Afterworld not available (author keeps rights); no agent_thanks as Rebecca said 17 Nov they answer title by title"
+ },
+ {
+  "agency": "Verso Books",
+  "aliases": [],
+  "domain": "verso.co.uk",
+  "film_tv_contact": {
+   "name": "Federico Campagna (Verso rights and permissions)",
+   "email": "federico@verso.co.uk",
+   "source_url": "https://www.versobooks.com/pages/foreign-rights"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "the-cultural-marxism-conspiracy-a-j-a-woods",
+   "up-in-the-air-a-history-of-high-rise-britain-holly-smith"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "University of Chicago Press",
+  "aliases": [],
+  "domain": "press.uchicago.edu",
+  "film_tv_contact": {
+   "name": "University of Chicago Press Foreign Rights Department",
+   "email": "foreignrights@press.uchicago.edu",
+   "source_url": "https://press.uchicago.edu/Misc/Chicago/rights.html"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "ecological-explosions-daniel-simberloff"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Gruppo Feltrinelli (Feltrinelli Editore)",
+  "aliases": [],
+  "domain": "feltrinellieditore.it",
+  "film_tv_contact": {
+   "name": "Theo Collier, Rights Director, Gruppo Feltrinelli",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "the-anniversary-andrea-bajani"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Alfred A. Knopf (Knopf Doubleday Subsidiary Rights)",
+  "aliases": [],
+  "domain": "knopfdoubleday.com",
+  "film_tv_contact": {
+   "name": "Knopf Doubleday Subsidiary Rights Department (incl. performance rights)",
+   "email": "KnopfDoubledayRights@penguinrandomhouse.com",
+   "source_url": "https://knopfdoubleday.com/contact-us/"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "belonging-sonia-gandhi"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "David Halpern Literary Management",
+  "aliases": [],
+  "domain": "halpernliterary.com",
+  "film_tv_contact": {
+   "name": "David Halpern (no separate film/TV contact published)",
+   "email": "david@halpernliterary.com",
+   "source_url": "https://halpernliterary.com/"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "frank-capra-a-life-sam-wasson"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Denise Shannon Literary Agency",
+  "aliases": [],
+  "domain": "deniseshannonagency.com",
+  "film_tv_contact": {
+   "name": "Denise Shannon Literary Agency rights (handles film, TV and dramatic rights)",
+   "email": "info@deniseshannonagency.com",
+   "source_url": "https://deniseshannonagency.com/contact-us/"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "the-sensualist-gary-shteyngart"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Faber & Faber",
+  "aliases": [],
+  "domain": "faber.co.uk",
+  "film_tv_contact": {
+   "name": "Faber & Faber Rights",
+   "email": "garights@faber.co.uk",
+   "source_url": "https://www.faber.co.uk/contact-us/"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "gaining-ground-joan-barfoot"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Penguin Random House UK",
+  "aliases": [],
+  "domain": "penguin.co.uk",
+  "film_tv_contact": {
+   "name": "PRH UK Media Rights",
+   "email": "mediarights@penguinrandomhouse.co.uk",
+   "source_url": "https://www.penguin.co.uk/about/work-with-us/rights-and-permissions/rights/film-tv-and-stage"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "green-kingdom-ben-dark"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Darhansoff & Verrill Literary Agents",
+  "aliases": [],
+  "domain": "dvagency.com",
+  "film_tv_contact": {
+   "name": "Eric Amling, business director (media requests)",
+   "email": "info@dvagency.com",
+   "source_url": "https://www.dvagency.com/contact"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "stories-annie-proulx"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Patakis Publishers (Greek publisher)",
+  "aliases": [],
+  "domain": "patakis.gr",
+  "film_tv_contact": {
+   "name": "George Pantsios, Foreign Rights, Patakis",
+   "email": "",
+   "source_url": ""
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "gjak-dimosthenis-papamarkos"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "Weidenfeld & Nicolson (Orion, Hachette UK)",
+  "aliases": [],
+  "domain": "orionbooks.co.uk",
+  "film_tv_contact": {
+   "name": "Orion Rights department (W&N)",
+   "email": "rights.enquiries@orionbooks.co.uk",
+   "source_url": "https://www.weidenfeldandnicolson.co.uk/imprint/wandn/page/faq/"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "disclosure-unravelling-the-spycops-files-kate-wilson"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "The Gernert Company",
+  "aliases": [],
+  "domain": "thegernertco.com",
+  "film_tv_contact": {
+   "name": "The Gernert Company (film and television rights enquiries)",
+   "email": "info@thegernertco.com",
+   "source_url": "https://www.thegernertco.com/rights"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "the-brightness-chad-harbach"
+  ],
+  "guide_ask_sent": ""
+ },
+ {
+  "agency": "PBJ Management",
+  "aliases": [],
+  "domain": "pbjmanagement.co.uk",
+  "film_tv_contact": {
+   "name": "Claire Nightingale (Bob Mortimer's contact at PBJ)",
+   "email": "claire@pbjmanagement.co.uk",
+   "source_url": "https://www.pbjmanagement.co.uk/artists/bob-mortimer"
+  },
+  "general_email": {
+   "email": "",
+   "source_url": ""
+  },
+  "rights_guide": {
+   "url": "",
+   "kind": "",
+   "date": ""
+  },
+  "book_ids": [
+   "michael-bob-mortimer"
+  ],
+  "guide_ask_sent": ""
  }
 ]
