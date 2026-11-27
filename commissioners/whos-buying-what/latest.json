@@ -1,149 +1,122 @@
 {
- "edition_id": "2026-11-08",
- "date_label": "8 November 2026",
- "window": "Announcements 28 October - 8 November 2026",
- "intro": "A quiet week for factual orders, with the UK public broadcasters supplying almost all of it: renewals for proven formats, a BBC Arts history series and a digital spin-off of BBC Scotland's Murder Trial. Channel 4 also confirmed Married at First Sight UK will not return, saying the budget will go into new programmes.",
+ "edition_id": "2026-11-19",
+ "date_label": "20 November 2026",
+ "window": "Announcements 9 - 19 November 2026",
+ "intro": "Another lean fortnight for new factual orders. Channel 4 doubled the run of its Florida relocation series and added a third festive railway special, while Sky named the commissioners behind two new documentaries. ITVS has set the date for its next Independent Lens production call.",
  "commissions": [
   {
    "region": "UK",
    "broadcaster": "Channel 4",
-   "title": "The Hormone Fix",
-   "what": "One-off 60-minute factual special in which Davinia Taylor looks at how hormones shape sleep, mood, stress and energy, with experts and contributors. Due on Channel 4 next year.",
-   "commissioner": "Clemency Green (Senior Commissioning Editor) and Jo Street (Director of Commissioning, Nations & Regions)",
-   "producer": "Little Bird Films",
-   "date": "2026-11-04",
-   "url": "https://www.channel4.com/press/news/channel-4-commissions-hormone-fix-davinia-taylor"
+   "title": "Escape to Florida (series 2)",
+   "what": "Recommission of the lifestyle series following Britons who move to Florida for a new life, rising from 20 to 30 episodes. Supported by Northern Ireland Screen.",
+   "commissioner": "Jo Street (Director of Nations and Regions and Head of Lifestyle) and Jayne Stanger (Senior Commissioning Editor)",
+   "producer": "Waddell Media",
+   "date": "2026-11-12",
+   "url": "https://www.channel4.com/press/news/sunshine-success-waddell-media-channel-4-orders-more-escape-florida"
   },
   {
    "region": "UK",
-   "broadcaster": "Channel 4 (More4)",
-   "title": "Our Farm Next Door: Amanda, Clive and Kids (series 5 and 6)",
-   "what": "Double-series renewal for More4's top-rated show, following the Owen family as they restore a derelict Swaledale farmhouse alongside farm life at Ravenseat.",
-   "commissioner": "Jayne Stanger (Commissioning Editor)",
-   "producer": "Wise Owl Films",
-   "date": "2026-11-02",
-   "url": "https://www.channel4.com/press/news/our-farm-next-door-amanda-clive-and-kids-renewed-two-more-series-more4"
+   "broadcaster": "Channel 4",
+   "title": "Austrian Train At Christmas",
+   "what": "New 60-minute festive special riding the Südbahn line from Graz to Vienna over the Semmering Pass, narrated by Hugh Bonneville. The third in the run after Nordic and Alpine Train At Christmas; filming is under way.",
+   "commissioner": "Jayne Stanger (Senior Commissioning Editor, Lifestyle) and Jo Street (Director of Commissioning, Nations & Regions and Head of Lifestyle)",
+   "producer": "King of Sunshine Productions with WPP Media Motion Entertainment",
+   "date": "2026-11-10",
+   "url": "https://www.channel4.com/press/news/channel-4-embarks-another-festive-adventure-austrian-train-christmas"
+  },
+  {
+   "region": "UK",
+   "broadcaster": "Channel 4 (YouTube)",
+   "title": "I Exposed Newcastle's Hidden Camera Creators",
+   "what": "Digital documentary in the In Too Deep strand in which Tommy Murphy looks into creators who secretly film people on Newcastle's streets for social media. Backed by North East Screen; out now on Channel 4's YouTube channel.",
+   "commissioner": "Ellie Winstanley (Commissioning Editor, News and Current Affairs)",
+   "producer": "Rock Paper Productions",
+   "date": "2026-11-18",
+   "url": "https://www.channel4.com/press/news/new-channel-4-documentary-investigates-rise-secret-filming-and-exploitative-content"
   },
   {
    "region": "UK",
    "broadcaster": "Sky Documentaries",
-   "title": "The Fans Who Fought Back: The Battle for Blackpool",
-   "what": "Sky Original feature doc (1x60) on Blackpool FC's rise to the Premier League and the long supporter campaign against the Oyston family. Directed by James Newton; airs 21 November.",
-   "commissioner": "Phil Edgar-Jones (Executive Director, Unscripted Originals); Commissioning Editor Jo Hughes",
-   "producer": "South Shore Productions",
-   "date": "2026-11-03",
-   "url": "https://skygroup.sky/article/the-fans-who-fought-back"
+   "title": "Don't Forget Me: The Disappearance of Amy Fitzpatrick",
+   "what": "Three-part series (3x60) on the 2008 disappearance of 15-year-old Amy Fitzpatrick in Spain, with access to both sides of her divided family and the Irish police. On Sky and NOW from 29 November.",
+   "commissioner": "Phil Edgar-Jones (Executive Director, Unscripted Originals), Hayley Reynolds (Head of Documentary Commissioning) and Kathryn Taylor (Commissioning Editor)",
+   "producer": "The Slate Works",
+   "date": "2026-11-10",
+   "url": "https://skygroup.sky/article/what-happened-to-amy"
   },
   {
    "region": "UK",
-   "broadcaster": "BBC Two (BBC Arts)",
-   "title": "Beethoven: Rise of a Genius",
-   "what": "Three-part drama-documentary for the 200th anniversary of Beethoven's death, drawing on his letters, immersive sound design and Deaf contributors. Co-production with ZDF and PBS.",
-   "commissioner": "Suzy Klein (Head of BBC Arts and Classical Music TV); Commissioning Editor Mark Bell",
-   "producer": "72 Films",
-   "date": "2026-11-07",
-   "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-arts-beethoven-rise-of-a-genius"
-  },
+   "broadcaster": "Sky Arts",
+   "title": "Dangerous Debussy",
+   "what": "One-hour film on Claude Debussy's private life and the women around him, narrated by Bessie Carter with performances of his music. Premieres 1 December on Sky Arts and NOW.",
+   "commissioner": "Phil Edgar-Jones (Executive Director, Unscripted) and Benedetta Pinelli (Commissioning Editor)",
+   "producer": "Section 52 Films",
+   "date": "2026-11-17",
+   "url": "https://skygroup.sky/article/passion-betrayal-and-scandal-sky-arts-reveals-the-man-behind-the-music-in-dangerous-debussy-premiering-1-december"
+  }
+ ],
+ "funding": [
   {
-   "region": "UK",
-   "broadcaster": "BBC Scotland",
-   "title": "Inside Murder Trial: Death of a Dog Walker",
-   "what": "Nine-part video podcast for iPlayer and YouTube extending the Murder Trial strand, with a journalist and a defence KC analysing each day of the Aberfeldy murder trial.",
-   "commissioner": "Heather Kane-Darling (Commissioning Executive, BBC Scotland)",
-   "producer": "Firecrest Films",
-   "date": "2026-11-02",
-   "url": "https://www.bbc.co.uk/mediacentre/2026/bbc-scotland-murder-trial-podcast"
+   "region": "US",
+   "funder": "ITVS",
+   "title": "Independent Lens Production Call",
+   "what": "Co-production funding for standalone feature documentaries (60 to 90 minutes) on US stories, in mid to late production and aiming to finish post by summer 2028. Opens 4 January 2027 at 9am PST.",
+   "amount": "Up to $200,000 (co-production, not a grant)",
+   "url": "https://itvs.org/funds/independent-lens-production-call/"
   }
  ],
  "moves": [
   {
-   "region": "UK",
-   "name": "Alisa Pomeroy",
-   "change": "Channel 4's Head of Documentaries and Factual Entertainment becomes Head of Unscripted from January 2027, taking in Specialist Factual (announced 28 October).",
-   "date": "2026-10-28",
-   "url": "https://www.channel4.com/press/news/channel-4-appoints-alisa-pomeroy-head-unscripted"
-  },
-  {
-   "region": "UK",
-   "name": "Rhuanedd Richards",
-   "change": "Confirmed as Director, BBC Nations (Scotland, Wales, Northern Ireland and BBC Local in England) after serving in the role on an interim basis; joins the BBC Executive Committee.",
-   "date": "2026-11-03",
-   "url": "https://www.bbc.co.uk/mediacentre/2026/rhuanedd-richards-appointed-director-bbc-nations"
-  },
-  {
-   "region": "UK",
-   "name": "Kate Phillips",
-   "change": "BBC Chief Content Officer (and former Director of Unscripted) joins the BBC Board as an executive director.",
-   "date": "2026-11-03",
-   "url": "https://www.bbc.co.uk/mediacentre/2026/board-appoints-non-executive-director-dame-jayne-anne-gadhia"
+   "region": "US",
+   "name": "Allison Graff-Weisner",
+   "change": "Appointed Chief Development Officer at Sundance Institute.",
+   "date": "2026-11-10",
+   "url": "https://www.sundance.org/blogs/sundance-institute-appoints-allison-graff-weisner-as-chief-development-officer/"
   }
  ],
  "briefs": [],
- "funding": [
-  {
-   "region": "UK",
-   "funder": "BBC / North East Screen",
-   "title": "Digital Accelerator - funding awards",
-   "what": "Four North East indies (Adventure Alliance Films, FilmNova, Northern Child, Wander Films) each receive £100,000 to develop digital-first content for YouTube, TikTok and similar platforms.",
-   "amount": "",
-   "url": "https://www.bbc.co.uk/mediacentre/2026/digital-accelerator-initiative-north-east-production-companies"
-  }
- ],
  "trades": [
   {
-   "headline": "‘Jane Elliott Against The World,’ Oscar-Contending Documentary On Pioneering And Polarizing Educator, Heads To Theaters",
-   "url": "https://deadline.com/2026/11/jane-elliott-against-the-world-theatrical-release-1237215341/",
+   "headline": "Qatar’s Film Committee & UAE-Based Yango Play Explore Partnership Kicking Off With Falconry Doc Series ‘Elzam’",
+   "url": "https://deadline.com/2026/11/qatar-film-committee-uae-yango-play-explore-falconry-elzam-1237228915/",
    "source": "Deadline",
-   "date": "2026-11-06"
+   "date": "2026-11-19"
   },
   {
-   "headline": "New York Times Op-Docs Acquires Award-Winning Short ‘Listen’ Directed By Taliesin Black-Brown",
-   "url": "https://deadline.com/2026/11/listen-new-york-times-op-docs-acquisition-1237215310/",
+   "headline": "David Ellison Commits To Airing Alex Gibney ‘Musk’ Doc On HBO Max, Calls Skydance Investor “Greatest Entrepreneur Of Our Time”",
+   "url": "https://deadline.com/2026/11/david-ellison-elon-musk-skydance-hbo-alex-gibney-documentary-1237228013/",
    "source": "Deadline",
-   "date": "2026-11-06"
+   "date": "2026-11-18"
   },
   {
-   "headline": "Final Chapter Of ‘Mass Effect’ Studio BioWare To Be Told In Super Channel Feature Doc From Fennessey Films and Score G Productions",
-   "url": "https://deadline.com/2026/11/massive-effect-bioware-story-doc-super-channel-1237213018/",
+   "headline": "Radial Taps Nacelle Company For ‘Icons Unearthed’ Docs Featuring Harrison Ford, Arnold Schwarzenegger, Quentin Tarantino & ‘Transformers’",
+   "url": "https://deadline.com/2026/11/radial-entertainment-icons-unearthed-docs-1237227824/",
    "source": "Deadline",
-   "date": "2026-11-05"
+   "date": "2026-11-18"
   },
   {
-   "headline": "Magnolia Pictures To Qualify ‘Just Look Up’ For Oscars; Documentary Examines Climate Activist (And Standup Comedian) Michael Greenberg",
-   "url": "https://deadline.com/2026/11/just-look-up-theatrical-release-magnolia-pictures-1237213497/",
+   "headline": "‘NAZA’ Team Sticking To Plan To Release Shattering Documentary On The Guardian Website Within Weeks — IDFA",
+   "url": "https://deadline.com/2026/11/naza-panel-2026-idfa-festival-1237227793/",
    "source": "Deadline",
-   "date": "2026-11-04"
+   "date": "2026-11-18"
   },
   {
-   "headline": "Chanel Pysnik Departing As Head Of Nonfiction For Prince Harry & Meghan Markle’s Archewell Prods.",
-   "url": "https://deadline.com/2026/11/chanel-pysnik-exits-head-nonfiction-harry-meghan-archewell-1237212368/",
+   "headline": "Cinephil Boards Alexandru Solomon’s Romanian Election Doc ‘Small Expectations’ – IDFA",
+   "url": "https://deadline.com/2026/11/cinephil-alexandru-solomon-small-expectations-idfa-1237223722/",
    "source": "Deadline",
-   "date": "2026-11-03"
+   "date": "2026-11-14"
   },
   {
-   "headline": "Indiana Hoosiers’ Historic National Championship Run To Be Chronicled In Upcoming Doc ‘Misfits’ From Tom Brady’s Shadow Lion",
-   "url": "https://deadline.com/2026/11/indiana-university-national-championship-football-documentary-1237147262/",
+   "headline": "Stephanie Fuchs, Arianna Castoldi, Oscar Nominee Rémi Grellety Launch Autlook Collective, European Documentary Hub",
+   "url": "https://deadline.com/2026/11/autlook-collective-launch-stephanie-fuchs-arianna-castoldi-remi-grellety-interview-1237222700/",
    "source": "Deadline",
-   "date": "2026-11-02"
+   "date": "2026-11-13"
   },
   {
-   "headline": "Paramount+ Doc Series ‘The Real Wolf Of Wall Street’ Set For BBC & Stan",
-   "url": "https://deadline.com/2026/11/real-wolf-of-wall-street-bbc-stan-paramount-plus-1237209389/",
-   "source": "Deadline",
-   "date": "2026-11-02"
-  },
-  {
-   "headline": "Justin Timberlake to Release Four-Part ‘Tell-All’ Docuseries, Featuring Janet Jackson, on Apple (EXCLUSIVE)",
-   "url": "https://variety.com/2026/music/news/justin-timberlake-apple-docuseries-janet-jackson-1236937847/",
+   "headline": "Unauthorized ‘Gilmore Girls’ Doc ‘Drink Coffee, Talk Fast’ Sets Release Date as Series Alum Scott Patterson Joins as Producer (EXCLUSIVE)",
+   "url": "https://variety.com/2026/tv/news/gilmore-girls-documentary-scott-patterson-streaming-1236946597/",
    "source": "Variety",
-   "date": "2026-11-02"
-  },
-  {
-   "headline": "Tokyo: ‘Diamond Diplomacy’ Doc Tracks the History of Baseball in Japan and Its Impact on U.S. Relations",
-   "url": "https://www.hollywoodreporter.com/movies/movie-features/tokyo-diamond-diplomacy-doc-baseball-japan-shohei-ohtani-1236739515/",
-   "source": "The Hollywood Reporter",
-   "date": "2026-11-02"
+   "date": "2026-11-13"
   }
- ],
- "send_after": "2026-11-10T08:00:00Z"
+ ]
 }

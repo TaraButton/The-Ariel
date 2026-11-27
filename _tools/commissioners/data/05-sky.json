@@ -1,6 +1,6 @@
 {
  "broadcaster": "Sky",
- "checked": "2026-11-07",
+ "checked": "2026-11-19",
  "pitch_routes": [
   {
    "genre": "Documentaries (Sky Documentaries / Sky Crime true crime / NOW)",
@@ -46,22 +46,22 @@
    "remit": "Leads all Sky unscripted commissioning (documentaries, factual, entertainment, arts), reporting to Cecile Frot-Coutaz.",
    "recent_commissions": [
     {
+     "title": "Dangerous Debussy",
+     "desc": "1x60 Sky Arts film on Debussy's private life from Section 52 Films.",
+     "date": "2026-11",
+     "url": "https://skygroup.sky/article/passion-betrayal-and-scandal-sky-arts-reveals-the-man-behind-the-music-in-dangerous-debussy-premiering-1-december"
+    },
+    {
+     "title": "Don't Forget Me: The Disappearance of Amy Fitzpatrick",
+     "desc": "3x60 Sky Documentaries series from The Slate Works.",
+     "date": "2026-11",
+     "url": "https://skygroup.sky/article/what-happened-to-amy"
+    },
+    {
      "title": "The Wargame",
      "desc": "4x60 constructed doc/drama hybrid: senior UK politicians, military and intelligence chiefs respond to a simulated Russian attack (The Garden).",
      "date": "2026-06",
      "url": "https://www.advanced-television.com/2026/06/21/sky-announces-the-wargame-docuseries/"
-    },
-    {
-     "title": "The Manchester Arena Bomb (w/t)",
-     "desc": "1x100 feature doc marking the 10th anniversary of the attack (RAW).",
-     "date": "2026-05",
-     "url": "https://www.advanced-television.com/2026/05/06/sky-commissions-doc-to-mark-10th-anniversary-of-manchester-arena-bomb/"
-    },
-    {
-     "title": "The Lie That Exposed The Truth",
-     "desc": "3x60 Sky Documentaries series revisiting the Ellie Williams/Barrow grooming case (Sandpaper Films with Full Story Films).",
-     "date": "2026-04",
-     "url": "https://www.advanced-television.com/2026/04/29/sky-commissions-the-lie-that-exposed-the-truth-documentary/"
     }
    ],
    "pitch_route": "Not a direct pitch contact; documentary ideas go to SkyFactual@Sky.uk, entertainment to skyentertainmentideas@sky.uk.",
@@ -87,6 +87,12 @@
    ],
    "remit": "Heads Sky's documentary commissioning team: feature docs and limited series, true crime, investigative thrillers, personality docs.",
    "recent_commissions": [
+    {
+     "title": "Don't Forget Me: The Disappearance of Amy Fitzpatrick",
+     "desc": "3x60 Sky Documentaries series from The Slate Works.",
+     "date": "2026-11",
+     "url": "https://skygroup.sky/article/what-happened-to-amy"
+    },
     {
      "title": "Savage Mountain",
      "desc": "Sky Documentaries film on Kristin Harila's record 14-peaks climb and the controversy that followed (Field Productions).",
@@ -138,6 +144,12 @@
    "remit": "Documentaries.",
    "recent_commissions": [
     {
+     "title": "Don't Forget Me: The Disappearance of Amy Fitzpatrick",
+     "desc": "3x60 Sky Documentaries series from The Slate Works.",
+     "date": "2026-11",
+     "url": "https://skygroup.sky/article/what-happened-to-amy"
+    },
+    {
      "title": "Alien Autopsy (w/t)",
      "desc": "Docuseries on the 1995 Roswell 'alien autopsy' footage from Mindhouse; co-commissioned with Bruce Fletcher.",
      "date": "2025-08",
@@ -182,6 +194,32 @@
    "sources": [
     "https://www.advanced-television.com/2025/08/21/sky-unveils-slate-of-new-programming-at-edinburgh-tv-festival/",
     "https://www.c21media.net/news/sky-bolsters-unscripted-slate-with-gemma-collins-alien-autopsy-series/"
+   ]
+  },
+  {
+   "name": "Benedetta Pinelli",
+   "title": "Commissioning Editor (Sky Arts)",
+   "channels": [
+    "Sky Arts"
+   ],
+   "remit": "Arts documentaries for Sky Arts (named as commissioning editor on Dangerous Debussy).",
+   "recent_commissions": [
+    {
+     "title": "Dangerous Debussy",
+     "desc": "1x60 Sky Arts film on Debussy's private life from Section 52 Films; commissioned by Phil Edgar-Jones.",
+     "date": "2026-11",
+     "url": "https://skygroup.sky/article/passion-betrayal-and-scandal-sky-arts-reveals-the-man-behind-the-music-in-dangerous-debussy-premiering-1-december"
+    }
+   ],
+   "pitch_route": "",
+   "pitch_url": "",
+   "published_email": "",
+   "email_source_url": "",
+   "appointed": "",
+   "confidence": "medium",
+   "notes": "Added 19 Nov 2026 from Sky's own press release; exact title and remit to confirm.",
+   "sources": [
+    "https://skygroup.sky/article/passion-betrayal-and-scandal-sky-arts-reveals-the-man-behind-the-music-in-dangerous-debussy-premiering-1-december"
    ]
   }
  ]

@@ -134,7 +134,7 @@
     "what": "Grants for women and gender-expansive directors researching or developing a feature-length documentary.",
     "amount": "Research grants $10,000; development grants $20,000 (total pot $450,000 in 2026)",
     "eligibility": "Director identifies as a woman or gender-expansive; has completed at least one feature doc; feature-length (48+ min) independent nonfiction; based anywhere except countries under comprehensive US sanctions",
-    "status": "upcoming",
+    "status": "closed",
     "next_deadline": "",
     "next_window": "Next cycle tentatively opens December 2026",
     "last_deadline": "2026-02-04",
@@ -320,6 +320,52 @@
     "formats": [
       "feature",
       "short"
+    ],
+    "subjects": [],
+    "applicant": [
+      "any"
+    ]
+  },
+  {
+    "id": "itvs-independent-lens-production-call",
+    "name": "ITVS Independent Lens Production Call",
+    "org": "ITVS (Independent Television Service)",
+    "region": "US",
+    "country": "United States",
+    "type": "fund",
+    "stages": [
+      "production",
+      "post"
+    ],
+    "what": "Co-production funding for standalone feature documentaries (60 to 90 minutes) on US stories, aligned with Independent Lens.",
+    "amount": "Up to $200,000 (co-production agreement, not a grant)",
+    "eligibility": "Independent producers; US-based stories; mid to late production, aiming to complete post by summer 2028",
+    "status": "closed",
+    "next_deadline": "",
+    "next_window": "Opens 4 January 2027, 9am PST",
+    "last_deadline": "",
+    "apply_url": "https://itvs.org/funds/independent-lens-production-call/",
+    "published_email": "",
+    "email_source_url": "",
+    "notable": [],
+    "sources": [
+      "https://itvs.org/funds/independent-lens-production-call/"
+    ],
+    "checked": "2026-11-19",
+    "confidence": "high",
+    "notes": "Closing date not yet published.",
+    "uk_eligible": "no",
+    "money": "licence fee",
+    "max_award": "$200,000",
+    "open_to": {
+      "uk": "no",
+      "us": "yes",
+      "canada": "no",
+      "eu": "no",
+      "other": "no"
+    },
+    "formats": [
+      "feature"
     ],
     "subjects": [],
     "applicant": [
@@ -1024,7 +1070,7 @@
     "what": "Federal grants for humanities-based film, television, radio and digital media projects, for development or production.",
     "amount": "Development up to $75,000; production up to $700,000",
     "eligibility": "Organisations only (individual filmmakers typically apply via a nonprofit); see Notice of Funding Opportunity",
-    "status": "upcoming",
+    "status": "closed",
     "next_deadline": "2027-05-05",
     "next_window": "Updated guidelines to be posted before next deadline",
     "last_deadline": "",
@@ -1401,7 +1447,7 @@
     "what": "Cohort programme for up to six feature documentary teams, with mentored workshops, a pitch at Camden International Film Festival and industry meetings.",
     "amount": "",
     "eligibility": "Early to mid-career nonfiction filmmakers worldwide; feature-length (60+ min) in production or post; fee $25-$45",
-    "status": "upcoming",
+    "status": "closed",
     "next_deadline": "",
     "next_window": "Next cycle opens late 2026 to early 2027",
     "last_deadline": "2026-03-23",
@@ -1510,7 +1556,7 @@
     "what": "Cash and in-kind grants for Texas-based filmmakers working in any genre, including nonfiction.",
     "amount": "",
     "eligibility": "Texas-based filmmakers",
-    "status": "upcoming",
+    "status": "closed",
     "next_deadline": "",
     "next_window": "Feature films reopen spring 2027; short films reopen summer 2027",
     "last_deadline": "",
@@ -1652,7 +1698,7 @@
     "what": "Grants for nonfiction films at the intersection of science and storytelling, prioritising projects that spark interest in science among people who do not see themselves as science fans.",
     "amount": "Development up to $40,000; production up to $100,000; post-production up to $100,000",
     "eligibility": "US and international feature-length nonfiction projects; from the Fall 2026 cycle a project may be submitted at most twice",
-    "status": "upcoming",
+    "status": "closed",
     "next_deadline": "",
     "next_window": "Two cycles a year; 2027 Spring Cycle dates to be announced",
     "last_deadline": "",

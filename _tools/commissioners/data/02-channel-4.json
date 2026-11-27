@@ -1,6 +1,6 @@
 {
  "broadcaster": "Channel 4",
- "checked": "2026-11-07",
+ "checked": "2026-11-19",
  "pitch_routes": [
   {
    "genre": "All genres except News & Current Affairs and Sport",
@@ -651,7 +651,14 @@
     "4 streaming"
    ],
    "remit": "Untold, the digital-first current affairs strand for 16-34s.",
-   "recent_commissions": [],
+   "recent_commissions": [
+    {
+     "title": "I Exposed Newcastle's Hidden Camera Creators",
+     "desc": "Digital doc for the In Too Deep strand on Channel 4's YouTube, from Rock Paper Productions.",
+     "date": "2026-11",
+     "url": "https://www.channel4.com/press/news/new-channel-4-documentary-investigates-rise-secret-filming-and-exploitative-content"
+    }
+   ],
    "pitch_route": "News & Current Affairs is excluded from 4ideas; make contact directly with the relevant commissioner using the contacts on the N&CA brief page.",
    "pitch_url": "https://www.channel4.com/4producers/briefs/news-current-affairs",
    "published_email": "ewinstanley@channel4.co.uk",
@@ -676,22 +683,22 @@
    "remit": "Lifestyle, features, daytime and More4.",
    "recent_commissions": [
     {
+     "title": "Austrian Train At Christmas",
+     "date": "2026-11",
+     "url": "https://www.channel4.com/press/news/channel-4-embarks-another-festive-adventure-austrian-train-christmas",
+     "desc": "1x60 festive railway special from King of Sunshine Productions with WPP Media Motion Entertainment; with Jayne Stanger."
+    },
+    {
+     "title": "Escape to Florida (series 2)",
+     "date": "2026-11",
+     "url": "https://www.channel4.com/press/news/sunshine-success-waddell-media-channel-4-orders-more-escape-florida",
+     "desc": "30-part recommission from Waddell Media; with Jayne Stanger."
+    },
+    {
      "title": "The Hormone Fix",
      "desc": "1x60 factual special with Davinia Taylor from Little Bird Films; with Clemency Green.",
      "date": "Nov 2026",
      "url": "https://www.channel4.com/press/news/channel-4-commissions-hormone-fix-davinia-taylor"
-    },
-    {
-     "title": "Our Farm Next Door: Amanda, Clive and Kids",
-     "desc": "Double-series renewal for More4 from Wise Owl Films; with Jayne Stanger.",
-     "date": "Nov 2026",
-     "url": "https://www.channel4.com/press/news/our-farm-next-door-amanda-clive-and-kids-renewed-two-more-series-more4"
-    },
-    {
-     "title": "Scotland's Golden Coast",
-     "desc": "10x60 More4 lifestyle series from Firecrest Films; with Deborah Dunnett.",
-     "date": "Aug 2026",
-     "url": "https://www.channel4.com/press/news/channel-4-commissions-scotlands-golden-coast-firecrest-films"
     }
    ],
    "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
@@ -717,16 +724,22 @@
    "remit": "Lifestyle, daytime and features; More4.",
    "recent_commissions": [
     {
+     "title": "Austrian Train At Christmas",
+     "date": "2026-11",
+     "url": "https://www.channel4.com/press/news/channel-4-embarks-another-festive-adventure-austrian-train-christmas",
+     "desc": "1x60 festive railway special from King of Sunshine Productions with WPP Media Motion Entertainment."
+    },
+    {
+     "title": "Escape to Florida (series 2)",
+     "date": "2026-11",
+     "url": "https://www.channel4.com/press/news/sunshine-success-waddell-media-channel-4-orders-more-escape-florida",
+     "desc": "30-part recommission from Waddell Media."
+    },
+    {
      "title": "Our Farm Next Door: Amanda, Clive and Kids",
      "desc": "Two further series for More4 (More4's highest-rated show).",
      "date": "Nov 2026",
      "url": "https://www.channel4.com/press/news/our-farm-next-door-amanda-clive-and-kids-renewed-two-more-series-more4"
-    },
-    {
-     "title": "Narrow Escapes (series 3)",
-     "desc": "20-part waterways adventure series incl. first journey into Scotland.",
-     "date": "May 2026",
-     "url": "https://www.channel4.com/press/news/narrow-escapes-returns-channel-4-third-series-new-waterways-adventures-and-first-ever"
     }
    ],
    "pitch_route": "Pitch specific ideas via a Commissioning Editor using the 4ideas portal; do not pitch the same idea to more than one Comm Ed.",
