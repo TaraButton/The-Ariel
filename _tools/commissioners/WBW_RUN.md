@@ -34,7 +34,9 @@ Idea: Peter Morgan, 8 Nov 2026. Funding section: Tara (Howard found a funder to 
 ## Steps
 1. **Repo.** Attach and clone `TaraButton/the-ariel` (push access). `cd` into it. `git pull`.
    Edition id = today's date (Thursday, YYYY-MM-DD). If `_tools/commissioners/editions/<id>.json`
-   exists, stop: already done. Window = last Friday 00:00 to now (London).
+   exists, stop: already done. Window = the day after the newest edition already in
+   `_tools/commissioners/editions/` (its `edition_id`) to now (London), so a missed week is never skipped.
+   Clone shallow: `git clone --depth 1 https://github.com/TaraButton/the-ariel`.
 2. **Trades.** `SSL_CERT_FILE=/root/.ccr/ca-bundle.crt python3 -I _tools/commissioners/wbw_trades.py --since <window start> --out /tmp/wbw-trades.json`.
    Keep only headlines about documentary/factual/unscripted commissions, acquisitions, sales, deals,
    exec moves or funding (drop scripted films/series even if "true crime", interviews, awards-season
@@ -79,7 +81,13 @@ Idea: Peter Morgan, 8 Nov 2026. Funding section: Tara (Howard found a funder to 
 7. **Build.** `python3 _tools/commissioners/build.py && python3 _tools/commissioners/build_pages.py && python3 _tools/commissioners/wbw_build.py && python3 _tools/funders/build.py && python3 _tools/find/build.py && python3 _tools/sitemap_add.py`.
    All must succeed (wbw_build refuses Penske URLs in main items and non-https links).
 8. **Publish.** `git add _tools commissioners documentary-funding find-funding-and-buyers sitemap.xml && git commit -m "Who's Buying What: <id>" &&
-   git fetch origin main && git rebase origin/main && git push origin HEAD:main`. Confirm
-   https://theariel.tv/commissioners/whos-buying-what/<id>.html loads within a few minutes.
+   git -c push.negotiate=true push origin HEAD:main`.
+   If the push is rejected because main moved on: `git fetch --depth=50 origin main && git rebase --onto origin/main HEAD~1`
+   then push again the same way. Never `git fetch` without `--depth` and never a plain `git rebase origin/main`
+   in this shallow clone (that is what stalled the 19 and 26 Nov runs: both editions were built and never went live).
+   Confirm https://theariel.tv/commissioners/whos-buying-what/<id>.html loads within a few minutes.
+   **If it still will not publish:** save `git format-patch -1 --stdout` as a project doc named
+   `wbw-<id>-unpublished.patch`, and make the FIRST line of your SendUserMessage to Tara
+   "WHO'S BUYING WHAT DID NOT PUBLISH" with the reason. Never end the run quietly with an unpublished edition.
 9. **Summary.** Counts per section and per broadcaster, sources that could not be reached, list
    changes made, anything unsure. Never send email yourself; the backend does it.

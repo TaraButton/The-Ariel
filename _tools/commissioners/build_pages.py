@@ -67,9 +67,11 @@ def main():
                   {"@type": "ListItem", "position": 2, "name": b, "item": f"https://theariel.tv/commissioners/{ps}/"}]}]
         others = [o for o in groups if o is not g and o["region"] == r]
         related = "".join(f'<a href="/commissioners/{page_slug(o)}/">{e(o["broadcaster"])} commissioners</a>' for o in others)
-        title = f"{b} Commissioners: Who Commissions Factual and Documentary ({rname}, {date.today().year}) | The Ariel"
-        desc = (f"Who commissions factual and documentary at {b}: {len(cs)} commissioners, their remits, recent commissions and the official way to pitch. "
-                f"Every line sourced, checked {nice(checked)}. Free from The Ariel.")
+        title = f"{b} Commissioners {date.today().year}: Factual and Documentary Team | The Ariel"
+        names3 = ", ".join(c.get("name") for c in cs[:3] if c.get("name"))
+        more = f" and {len(cs) - 3} more" if len(cs) > 3 else ""
+        desc = (f"{b}'s factual and documentary commissioners: {names3}{more}. Their remits, what they have just commissioned and how to pitch. "
+                f"Checked {nice(checked)}. Free.")
         html_page = f'''<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">

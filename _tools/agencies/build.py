@@ -76,15 +76,35 @@ def main():
     for g in groups:
         r = g.get("region", "UK")
         secs.append(f'<h2 class="region-h" data-r="{r}">{"United Kingdom" if r == "UK" else "United States"} <span class="n">{len(g["agencies"])} agencies</span></h2><div class="grid">' + "".join(card(r, a) for a in g["agencies"]) + "</div>")
-    desc = f"The agencies and agents who represent documentary and unscripted talent and package projects for UK and US broadcasters and streamers: {n_ag} agencies, {n_p} named agents, every line sourced. Free from The Ariel."
+    desc = f"Which agencies represent unscripted and documentary producers, presenters and showrunners? {n_ag} UK and US agencies and {n_p} named agents who package and sell factual projects to broadcasters and streamers. Every line sourced. Free."
+    # FAQ built only from the data on the page (answers the questions people actually search)
+    TYPE = {"agency": "talent agencies with an unscripted or non-fiction department", "management": "management companies", "packager": "packagers and production-finance companies", "sales agent": "documentary sales agents"}
+    tc = {}
+    for g in groups:
+        for a in g["agencies"]:
+            tc[a.get("type") or "agency"] = tc.get(a.get("type") or "agency", 0) + 1
+    def short(nm): return re.split(r" [-(]", nm)[0].strip()
+    qa = []
+    for g in groups:
+        rn = "the UK" if g.get("region") == "UK" else "the US"
+        qa.append((f"Which agencies represent unscripted and documentary producers in {rn}?",
+                   f"We list {len(g['agencies'])} in {rn}: " + ", ".join(short(a["name"]) for a in g["agencies"]) + ". Each entry names its agents, recent deals and how to approach them."))
+    qa.append(("What types of agencies represent unscripted television creators?",
+               "In this database: " + "; ".join(f"{TYPE.get(k, k)} ({v})" for k, v in sorted(tc.items(), key=lambda x: -x[1])) + ". Talent agencies and managers represent people (presenters, showrunners, directors); packagers and sales agents help put projects together and sell them."))
+    n_route = sum(1 for g in groups for a in g["agencies"] if a.get("contact_url") or a.get("contact_route"))
+    qa.append(("How do I approach a documentary or unscripted agent?",
+               f"{n_route} of the {n_ag} agencies publish an approach route or submissions policy, linked on each entry under How to approach. Most do not accept unsolicited submissions, so check the policy first."))
+    faq_html = "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in qa)
+    faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}, ensure_ascii=False).replace("</", "<\\/")
     page = f'''<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Talent Agency Database: Documentary and Unscripted Agents, UK and US | The Ariel</title>
+<title>Agencies for Unscripted and Documentary Talent, UK and US ({date.today().year}) | The Ariel</title>
 <meta name="description" content="{e(desc)}"><link rel="canonical" href="https://theariel.tv/talent-agencies/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="The Ariel"><meta property="og:title" content="Talent Agency Database: documentary and unscripted agents">
 <meta property="og:description" content="{e(desc)}"><meta property="og:url" content="https://theariel.tv/talent-agencies/"><meta property="og:image" content="https://theariel.tv/link-card.png">
 <meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/ariel-icon.png">
+<script type="application/ld+json">{faq_ld}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
@@ -132,6 +152,7 @@ footer{{background:var(--ink);color:#D8D3C8;text-align:center;font-size:14px;pad
 </div></div>
 <main class="wrap">
 {"".join(secs)}
+<section class="note faq"><h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:32px;margin:0 0 6px">Quick answers</h2>{faq_html}</section>
 <div class="note"><p><strong>Agents: is your entry right?</strong> We build this from agencies&#8217; own sites and published announcements. To correct it, or to tell producers what you are looking for, email <a href="mailto:hello@theariel.tv?subject=Talent%20Agency%20Database">hello@theariel.tv</a>.</p>
 <p>Most agencies do not accept unsolicited submissions; where an agency publishes its policy we link it. Emails appear only where the agency prints them on its own site.</p></div>
 </main>

@@ -124,13 +124,13 @@ def build():
                for g in groups for c in g.get("commissioners", [])]
     qm_json = json.dumps(qm_data, ensure_ascii=False).replace("</", "<" + chr(92) + "/")
     qm_js = (Path(__file__).resolve().parent / "quickmatch.js").read_text()
-    desc = f"Who commissions factual and documentary at {names}: {total} commissioners, what they have recently commissioned and the official way to pitch each. Every line sourced, checked {nice_date(checked)}. Free download."
+    desc = f"Free list of {total} UK and US factual and documentary commissioners at the BBC, Channel 4, ITV, Channel 5, Sky, Netflix, Amazon, HBO and more: remits, recent commissions and how to pitch. Checked {nice_date(checked)}. Free download."
     page = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>UK and US TV Commissioners: Factual and Documentary | The Ariel</title>
+<title>TV Commissioners List {date.today().year}: UK and US Factual and Documentary | The Ariel</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="https://theariel.tv/commissioners/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="The Ariel">
